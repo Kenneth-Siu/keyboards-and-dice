@@ -7,7 +7,7 @@
         "node": "14.x"
     },
     "scripts": {
-        "start": "razzle start",
+        "dev": "razzle start",
         "build": "razzle build",
         "test": "razzle test --env=jsdom",
         "serve": "node build/server.js"
