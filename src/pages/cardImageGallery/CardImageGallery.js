@@ -28,7 +28,7 @@ export default function CardImageGallery() {
                 </div>
                 <div className="filter-pane">
                     <img className="background-image" src={filterBackground} />
-                    <div>
+                    <div className="color-filters">
                         <button><img className="mana" src={whiteManaSymbol} /></button>
                         <button><img className="mana" src={blueManaSymbol} /></button>
                         <button><img className="mana" src={blackManaSymbol} /></button>
@@ -37,7 +37,7 @@ export default function CardImageGallery() {
                         <button><img className="mana" src={goldManaSymbol} /></button>
                         <button><img className="mana" src={colorlessManaSymbol} /></button>
                     </div>
-                    <div>
+                    <div className="rarity-filters">
                         <button><img className="" src={commonSetSymbol} /></button>
                         <button><img className="" src={uncommonSetSymbol} /></button>
                         <button><img className="" src={rareSetSymbol} /></button>

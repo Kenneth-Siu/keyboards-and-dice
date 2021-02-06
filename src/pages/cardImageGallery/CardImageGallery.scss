@@ -57,8 +57,11 @@
 
     .filter-pane {
         position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        justify-content: space-around;
         bottom: 0;
-        @include responsive(width, 100%, $medium-container-width, $large-container-width);
+        @include responsive(width, 330px, $medium-container-width, $medium-container-width);
         display: flex;
         border-top-left-radius: 0.4rem;
         border-top-right-radius: 0.4rem;
@@ -78,9 +81,19 @@
             position: relative;
         }
 
+        .color-filters img {
+            width: 1rem;
+            height: 1rem;
+        }
+
+        .rarity-filters img {
+            height: 1rem;
+            width: 1.38rem;
+        }
+
         button {
             margin: 0.1rem;
-            padding: 0.4rem 0.5rem;
+            @include responsive(padding, 0.25rem 0.4rem, 0.4rem 0.5rem);
             background: none;
             color: $color-2;
             border-radius: 0.3rem;
@@ -89,13 +102,6 @@
 
             img {
                 display: block;
-                height: 1rem;
-                width: 1.38rem;
-            }
-
-            .mana {
-                width: 1rem;
-                height: 1rem;
             }
 
             &:hover, &:focus {
