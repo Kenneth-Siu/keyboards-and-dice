@@ -9,8 +9,9 @@ export default function Home() {
             <main className="home-page">
                 <h1>Terra 2170</h1>
                 <p>Blah blah blah</p>
-                <Link to="/card-image-gallery">❮ Card Image Gallery</Link>
-                <Link to="/draft">Draft now ❯</Link>
+                <Link to="/card-image-gallery">Card Image Gallery</Link>
+                <Link to="/draft">Draft now</Link>
+                <Link to="/faq">Rules FAQ</Link>
             </main>
         </>
     );

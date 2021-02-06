@@ -1,0 +1,109 @@
+@import "../colors.scss";
+@import "../responsive.scss";
+
+$navbar-small-height: 4rem;
+$navbar-medium-height: 3rem;
+$navbar-large-height: 3rem;
+
+@mixin navBarPageTopPadding {
+    @include responsive(padding-top, $navbar-small-height, $navbar-medium-height, $navbar-large-height);
+}
+
+.nav-bar {
+    z-index: 100;
+    display: block;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    @include responsive(height, $navbar-small-height, $navbar-medium-height, $navbar-large-height);
+
+    .background-image {
+        margin: -6px;
+        filter: blur(4px) brightness(0.4);
+        width: calc(100% + 12px);
+        height: calc(100% + 12px);
+        object-fit: cover;
+        position: absolute;
+    }
+
+    ul {
+        position: relative;
+        display: flex;
+        @include container;
+        @include responsive(flex-wrap, wrap, nowrap);
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .home {
+        flex-grow: 1;
+        @include responsive(width, 100%, auto);
+
+        a {
+            color: $color-2;
+            font-weight: 700;
+            font-size: 1.2rem;
+            height: 100%;
+            @include responsive(padding, 0.5rem 0.5rem, 0.9rem 0.8rem);
+        }
+    }
+
+    li:not(.home) a {
+        position: relative;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        @include responsive(padding, 0.5rem 0.5rem, 1.1rem 0.8rem);
+    }
+
+    li.is-current-page a::after,
+    li:not(.home) a:hover::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        transform: translateY(-3px);
+        border-bottom-width: 4px;
+        border-bottom-style: solid;
+    }
+
+    .keyboards-and-dice a {
+        color: $color-2;
+
+        &::after {
+            border-bottom-color: $color-2;
+        }
+    }
+
+    .card-image-gallery a {
+        color: $color-3;
+
+        &::after {
+            border-bottom-color: $color-3;
+        }
+    }
+
+    .faq a {
+        color: $color-4;
+
+        &::after {
+            border-bottom-color: $color-4;
+        }
+    }
+
+    .draft a {
+        color: $color-5;
+
+        &::after {
+            border-bottom-color: $color-5;
+        }
+    }
+}

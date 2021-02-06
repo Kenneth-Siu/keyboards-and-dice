@@ -1,6 +1,8 @@
-@import "../responsive.scss";
+@import "../../components/responsive.scss";
+@import "../../components/navBar/navBar.scss";
 
 .card-image-gallery-page {
+    @include navBarPageTopPadding;
     @include responsive(width, 100%, 100%, $large-container-width);
     @include responsive(margin, 0, 0 auto);
     text-align: center;
