@@ -2,7 +2,7 @@
 @import "../responsive.scss";
 
 $navbar-small-height: 4rem;
-$navbar-medium-height: 3rem;
+$navbar-medium-height: 4rem;
 $navbar-large-height: 3rem;
 
 @mixin navBarPageTopPadding {
@@ -30,7 +30,7 @@ $navbar-large-height: 3rem;
         position: relative;
         display: flex;
         @include container;
-        @include responsive(flex-wrap, wrap, nowrap);
+        @include responsive(flex-wrap, wrap, wrap, nowrap);
     }
 
     li {
@@ -44,14 +44,14 @@ $navbar-large-height: 3rem;
 
     .home {
         flex-grow: 1;
-        @include responsive(width, 100%, auto);
+        @include responsive(width, calc(100% - 4rem), calc(100% - 4rem), auto);
 
         a {
             color: $color-2;
             font-weight: 700;
             font-size: 1.2rem;
             height: 100%;
-            @include responsive(padding, 0.5rem 0.5rem, 0.9rem 0.8rem);
+            @include responsive(padding, 0.5rem 0.5rem, 0.5rem 0.5rem, 0.9rem 0.8rem);
         }
     }
 
@@ -60,7 +60,19 @@ $navbar-large-height: 3rem;
         font-weight: 500;
         text-transform: uppercase;
         font-size: 0.8rem;
-        @include responsive(padding, 0.5rem 0.5rem, 1.1rem 0.8rem);
+        @include responsive(padding, 0.5rem 0.5rem, 0.5rem 0.5rem, 1.1rem 0.8rem);
+
+        &.abbreviated {
+            display: none;
+        }
+        @media (max-width: 420px) {
+            &:not(.abbreviated) {
+                display: none;
+            }
+            &.abbreviated {
+                display: inline;
+            }
+        }
     }
 
     li.is-current-page a::after,
