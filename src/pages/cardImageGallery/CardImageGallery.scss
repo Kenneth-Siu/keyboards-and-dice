@@ -7,6 +7,19 @@
     @include responsive(margin, 0, 0 auto);
     text-align: center;
 
+    h1 {
+        font-weight: 700;
+        font-size: 1.4rem;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .num-of-cards {
+        font-weight: 300;
+        font-size: 0.8rem;
+        margin-bottom: 0.6rem;
+    }
+
     .card-grid {
         @include responsive(width, 98%, 98%, 989px);
         display: inline-flex;
