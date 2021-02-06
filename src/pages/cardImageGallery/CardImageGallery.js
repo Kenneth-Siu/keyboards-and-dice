@@ -11,7 +11,11 @@ export default function CardImageGallery() {
                 <h1>Card Image Gallery</h1>
                 <Link to="/">Home ❯</Link>
                 <Link to="/draft">Draft now ❯</Link>
-                { cardList.map(card => <img src={card.imageName} />) }
+                <div className="card-grid">
+                    {cardList.map((card) => (
+                        <img className="card" src={card.imageName} key={card.id} loading="lazy" />
+                    ))}
+                </div>
             </main>
         </>
     );

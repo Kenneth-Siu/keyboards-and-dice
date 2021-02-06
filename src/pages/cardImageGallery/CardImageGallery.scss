@@ -1,5 +1,41 @@
 @import "../responsive.scss";
 
 .card-image-gallery-page {
-    @include container;
+    @include responsive(width, 100%, 100%, $large-container-width);
+    @include responsive(margin, 0, 0 auto);
+    text-align: center;
+
+    .card-grid {
+        @include responsive(width, 98%, 98%, 989px);
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .card {
+        @media (max-width: 659px) {
+            width: 49.25%;
+            margin-right: 1.5%;
+            margin-bottom: 1.5%;
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+        }
+        @media (min-width: 660px) and (max-width: 919px) {
+            width: 32.75%;
+            margin-right: 0.875%;
+            margin-bottom: 0.875%;
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+        }
+        @media (min-width: 920px) {
+            width: 24.5%;
+            margin-right: 0.666%;
+            margin-bottom: 0.666%;
+            &:nth-child(4n) {
+                margin-right: 0;
+            }
+        }
+    }
 }
