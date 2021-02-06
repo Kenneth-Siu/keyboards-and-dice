@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import commonSetSymbol from "../../../data/commonSetSymbol.svg";
 import "./NotFound.scss";
 
 export default function NotFound() {
@@ -7,8 +8,11 @@ export default function NotFound() {
         <>
             <title>Page Not Found · Terra 2170</title>
             <main className="not-found-page">
-                <h1>Whoops!</h1>
-                <Link to="/">Home</Link>
+                <Link to="/">
+                    <img src={commonSetSymbol} />
+                </Link>
+                <h1>Whoops! There's nothing here...</h1>
+                <Link to="/">Back to safety</Link>
             </main>
         </>
     );
