@@ -18,7 +18,7 @@
     .num-of-cards {
         font-weight: 300;
         font-size: 0.8rem;
-        margin-bottom: 0.6rem;
+        margin-bottom: 0.8rem;
     }
 
     .card-grid {
@@ -104,14 +104,22 @@
                 display: block;
             }
 
-            &:hover, &:focus {
+            &:hover {
                 cursor: pointer;
                 background: rgba(255, 255, 255, 0.15);
+            }
+
+            &:focus {
+                border-color: $color-6;
                 outline: none;
             }
 
-            &.selected, &:active {
+            &.selected {
                 background: rgba(255, 255, 255, 0.3);
+            }
+
+            &:active {
+                background: rgba(255, 255, 255, 0.45);
             }
         }
     }
