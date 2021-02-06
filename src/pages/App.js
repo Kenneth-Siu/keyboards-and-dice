@@ -7,6 +7,7 @@ import NotFound from "./notFound/NotFound.js";
 import "./cssreset.css";
 import "./App.scss";
 import NavBar from "../components/navBar/navBar.js";
+import Faq from "./faq/Faq.js";
 
 export default function App() {
     return (
@@ -15,6 +16,7 @@ export default function App() {
             <Switch>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/card-image-gallery" component={CardImageGallery} />
+                <Route exact path="/faq" component={Faq} />
                 <Route exact path="/draft" component={Draft} />
                 <Route component={NotFound} />
             </Switch>

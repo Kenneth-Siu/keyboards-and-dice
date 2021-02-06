@@ -1,3 +1,96 @@
+@import "../../components/responsive.scss";
+@import "../../components/colors.scss";
+@import "../../components/navBar/navBar.scss";
+
 .faq-page {
-    
+    @include navBarPageTopPadding;
+    @include container;
+    line-height: 1.2;
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
+    padding-bottom: 0.5rem;
+
+    section {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin-bottom: 0.5rem;
+        @include responsive(flex-wrap, wrap, wrap, nowrap);
+        @include responsive(margin-top, 2rem, 2rem, 0);
+
+        > div {
+            flex-grow: 1;
+            margin-right: 1rem;
+        }
+
+        > img {
+            @include responsive(order, 0, 0, 1);
+            flex-grow: 0;
+            max-width: 375px;
+            @include responsive(width, 90%, 375px, 250px);
+            @include responsive(margin-bottom, 0.5rem, 0.5rem, 0);
+        }
+    }
+
+    h1 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.4rem;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    h2 {
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    h3 {
+        font-weight: 600;
+        font-size: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    b {
+        font-weight: bold;
+    }
+
+    em {
+        font-style: italic;
+    }
+
+    blockquote {
+        margin: 1rem;
+        padding: 0.5rem 1rem;
+        background-color: $color-4;
+    }
+
+    ol {
+        list-style-type: decimal;
+        list-style-position: outside;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        margin-left: 1.4rem;
+    }
+
+    ul {
+        list-style-type: disc;
+        list-style-position: outside;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        margin-left: 1.4rem;
+    }
+
+    p {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    li {
+        margin-top: 0.2rem;
+        margin-bottom: 0.2rem;
+    }
 }
