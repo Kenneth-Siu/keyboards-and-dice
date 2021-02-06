@@ -27,7 +27,6 @@ server
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta charset="utf-8" />
-        <title>Terra 2170</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         ${assets.client.css ? `<link rel="stylesheet" href="${assets.client.css}">` : ""}
         ${
@@ -36,9 +35,7 @@ server
                 : `<script src="${assets.client.js}" defer crossorigin></script>`
         }
     </head>
-    <body>
-        <div id="root">${markup}</div>
-    </body>
+    <body id="root">${markup}</body>
 </html>`
             );
         }
