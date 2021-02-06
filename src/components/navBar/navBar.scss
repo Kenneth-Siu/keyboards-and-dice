@@ -46,12 +46,22 @@ $navbar-large-height: 3rem;
         flex-grow: 1;
         @include responsive(width, calc(100% - 4rem), calc(100% - 4rem), auto);
 
+        img {
+            position: absolute;
+            height: 1.8rem;
+            width: 2.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0.5rem;
+        }
+
         a {
+            position: relative;
             color: $color-2;
             font-weight: 700;
             font-size: 1.2rem;
             height: 100%;
-            @include responsive(padding, 0.5rem 0.5rem, 0.5rem 0.5rem, 0.9rem 0.8rem);
+            @include responsive(padding, 0.5rem 0.5rem 0.5rem 3.4rem, 0.5rem 0.5rem 0.5rem 3.4rem, 0.9rem 0.8rem 0.9rem 3.5rem);
         }
     }
 
@@ -89,6 +99,8 @@ $navbar-large-height: 3rem;
 
     .keyboards-and-dice a {
         color: $color-2;
+        font-weight: 700;
+        font-size: 1.2rem;
 
         &::after {
             border-bottom-color: $color-2;
