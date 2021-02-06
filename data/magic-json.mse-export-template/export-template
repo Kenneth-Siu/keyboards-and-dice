@@ -1,0 +1,65 @@
+﻿mse version: 2.0.0
+short name: JS
+full name: JS Exporter
+position hint: 0
+version: 0.1.0
+
+depends on:
+	package: magic.mse-game
+	version: 2015-04-08
+
+game: magic
+file type: *.js
+
+script:
+	# Formats rules text w/ only italic tags.
+	imageNameFilter := replace@(match:"’|,|&", replace:"")
+	
+	colorIdentityFilter := replace@(match:"[0-9|X]", replace:"")+
+		replace@(match:"(.)(\\1)+", replace: "\\1")
+	
+	rarityFilter := {
+		shortRarity := substring(input, end:1)
+		to_upper(shortRarity)
+	}
+	
+	write_non_rules_text := {
+		name := card.name
+		imageName := imageNameFilter(name)
+		color := colorIdentityFilter(card.casting_cost)
+		id := cardNumber
+		rarity := rarityFilter(card.rarity)
+		"        \"name\": \""+name+"\",\n"
+		+"        \"imageName\": _"+cardNumber+",\n"
+		+"        \"color\": \""+color+"\",\n"
+		+"        \"id\": "+id+",\n"
+		+"        \"rarity\": \""+rarity+"\"\n"
+	}
+	
+	write_card := {
+		cardNonRulesText := write_non_rules_text()
+		comma := if cardNumber+1 != totalCards then ",\n" else ""
+		"    \{\n" + cardNonRulesText + "    \}" + comma
+	}
+	
+	write_cards := {
+		cardList := sort_list(cards, order_by: {input.card_number})
+		totalCards := length(cardList)
+		to_text(for each cardNumber:card in cardList do write_card())
+	}
+	
+	write_card_import := {
+		"import _" + cardNumber + " from \"./cardImages/" + imageNameFilter(card.name) + ".jpg\";\n"
+	}
+	
+	write_image_imports := {
+		cardList := sort_list(cards, order_by: {input.card_number})
+		totalCards := length(cardList)
+		to_text(for each cardNumber:card in cardList do write_card_import())
+	}
+	
+	to_string(write_image_imports()
+		+"const rawCardList = [\n"
+		+write_cards()
+		+"];\n"
+		+"export default rawCardList;\n")

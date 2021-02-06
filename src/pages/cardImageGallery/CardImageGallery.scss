@@ -1,3 +1,5 @@
+@import "../responsive.scss";
+
 .card-image-gallery-page {
-    
+    @include container;
 }
