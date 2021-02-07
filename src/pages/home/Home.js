@@ -73,7 +73,7 @@ export default function Home() {
                             <Link to="/downloads">Downloads</Link>
                         </h1>
                         <p>
-                            Find downloads for play online using Cockatrice, or for printing and proxying your own cube.
+                            Tools for playing online using <em>Cockatrice</em>, or for printing and proxying your own cube.
                         </p>
                         <p className="link">
                             <Link to="/downloads">ᐳ View downloads</Link>

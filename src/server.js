@@ -20,10 +20,8 @@ passport.use(
             callbackURL: "/api/login/facebook/return",
         },
         (accessToken, refreshToken, profile, done) => {
-            console.log({profile});
             UserRepo.findOrCreate(profile)
                 .then((user) => {
-                    console.log({user});
                     done(null, user);
                 })
                 .catch((err) => {
@@ -34,12 +32,10 @@ passport.use(
 );
 
 passport.serializeUser(function (user, done) {
-    console.log({user});
     done(null, user.id);
 });
 
 passport.deserializeUser(function (id, done) {
-    console.log({id});
     UserRepo.getUser(id)
         .then((user) => {
             done(null, user);

@@ -201,7 +201,8 @@ export default function Faq() {
                         <ul>
                             <li>
                                 The second ability triggers when blockers are declared and no blockers are declared for
-                                Dropship. The creature put into play tapped and attacking therefore cannot be blocked.
+                                Dropship. It is therefore too late for the creature put into play to have any blockers
+                                declared for it, so that creature effectively cannot be blocked.
                             </li>
                         </ul>
                     </div>
@@ -410,10 +411,13 @@ export default function Faq() {
                         <h3>Trojan Horse</h3>
                         <ul>
                             <li>
-                                The activated ability can be activated by any player, but will usually be activated by
-                                an opponent. Skipping a turn will only happen if Trojan Horse is on the battlefield as
-                                the ability resolves, so if Trojan Horse is removed in response to the ability going on
-                                the stack, nobody skips any turns.
+                                The last ability can be activated by any player, but will usually be activated by an
+                                opponent. The player activating the ability is the one who skips the turn.
+                            </li>
+                            <li>
+                                Skipping a turn will only happen if Trojan Horse is on the battlefield as the ability
+                                resolves, so if Trojan Horse is removed in response to the ability going on the stack,
+                                nobody skips any turns.
                             </li>
                         </ul>
                     </div>
