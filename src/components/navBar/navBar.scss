@@ -75,7 +75,7 @@ $navbar-large-height: 3rem;
         &.abbreviated {
             display: none;
         }
-        @media (max-width: 420px) {
+        @media (max-width: 520px) {
             &:not(.abbreviated) {
                 display: none;
             }
@@ -108,26 +108,34 @@ $navbar-large-height: 3rem;
     }
 
     .card-image-gallery a {
-        color: $color-3;
+        color: $color-3-light;
 
         &::after {
-            border-bottom-color: $color-3;
+            border-bottom-color: $color-3-light;
         }
     }
 
     .faq a {
-        color: $color-4;
+        color: $color-4-light;
 
         &::after {
-            border-bottom-color: $color-4;
+            border-bottom-color: $color-4-light;
         }
     }
 
     .draft a {
-        color: $color-5;
+        color: $color-5-light;
 
         &::after {
-            border-bottom-color: $color-5;
+            border-bottom-color: $color-5-light;
+        }
+    }
+
+    .downloads a {
+        color: $color-6-light;
+
+        &::after {
+            border-bottom-color: $color-6-light;
         }
     }
 }

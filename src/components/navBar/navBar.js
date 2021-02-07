@@ -43,6 +43,12 @@ export default function NavBar() {
                         Draft
                     </Link>
                 </li>
+                <li className={`downloads ${pathname.startsWith("/downloads") ? "is-current-page" : ""}`}>
+                    <Link to="/downloads">Downloads</Link>
+                    <Link to="/downloads" className="abbreviated" aria-hidden>
+                        Downloads
+                    </Link>
+                </li>
             </ul>
         </nav>
     );

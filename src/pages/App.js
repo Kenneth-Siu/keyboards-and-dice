@@ -4,10 +4,11 @@ import Home from "./home/Home.js";
 import CardImageGallery from "./cardImageGallery/CardImageGallery.js";
 import Draft from "./draft/Draft.js";
 import NotFound from "./notFound/NotFound.js";
-import "./cssreset.css";
-import "./App.scss";
 import NavBar from "../components/navBar/navBar.js";
 import Faq from "./faq/Faq.js";
+import Downloads from "./downloads/Downloads.js";
+import "./cssreset.css";
+import "./App.scss";
 
 export default function App() {
     return (
@@ -18,6 +19,7 @@ export default function App() {
                 <Route exact path="/card-image-gallery" component={CardImageGallery} />
                 <Route exact path="/faq" component={Faq} />
                 <Route exact path="/draft" component={Draft} />
+                <Route exact path="/downloads" component={Downloads} />
                 <Route component={NotFound} />
             </Switch>
         </>

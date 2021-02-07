@@ -1,3 +1,6 @@
+@import "../../components/responsive.scss";
+@import "../../components/navBar/navBar.scss";
+
 .home-page {
-    
+    @include navBarPageTopPadding;
 }
