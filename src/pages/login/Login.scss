@@ -1,0 +1,8 @@
+@import "../../components/responsive.scss";
+@import "../../components/colors.scss";
+@import "../../components/navBar/navBar.scss";
+
+.login-page {
+    @include navBarPageTopPadding;
+    @include container;
+}

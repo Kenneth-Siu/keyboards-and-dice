@@ -7,6 +7,7 @@ import NotFound from "./notFound/NotFound.js";
 import NavBar from "../components/navBar/navBar.js";
 import Faq from "./faq/Faq.js";
 import Downloads from "./downloads/Downloads.js";
+import Login from "./login/Login.js";
 import "./cssreset.css";
 import "./App.scss";
 
@@ -20,6 +21,7 @@ export default function App() {
                 <Route exact path="/faq" component={Faq} />
                 <Route exact path="/draft" component={Draft} />
                 <Route exact path="/downloads" component={Downloads} />
+                <Route exact path="/login" component={Login} />
                 <Route component={NotFound} />
             </Switch>
         </>
