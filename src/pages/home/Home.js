@@ -1,5 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import cardImageGallerySplash from "../../../data/cardImageGallerySplash.jpg";
+import draftSplash from "../../../data/draftSplash.jpg";
+import rulesFaqSplash from "../../../data/rulesFaqSplash.jpg";
+import downloadsSplash from "../../../data/downloadsSplash.jpg";
 import "./Home.scss";
 
 export default function Home() {
@@ -7,11 +11,75 @@ export default function Home() {
         <>
             <title>Terra 2170</title>
             <main className="home-page">
-                <h1>Terra 2170</h1>
-                <p>Blah blah blah</p>
-                <Link to="/card-image-gallery">Card Image Gallery</Link>
-                <Link to="/draft">Draft now</Link>
-                <Link to="/faq">Rules FAQ</Link>
+                <div className="card-image-gallery tile">
+                    <div className="splash">
+                        <img className="splashImage" src={cardImageGallerySplash} />
+                    </div>
+                    <div className="content">
+                        <h1>
+                            <Link to="/card-image-gallery">Card Image Gallery</Link>
+                        </h1>
+                        <p>
+                            <em>Terra 2170</em> is a science-fiction <em>Magic: the Gathering</em> expansion with 243
+                            cards and four new mechanics, created especially for drafting.
+                        </p>
+                        <p className="link">
+                            <Link to="/card-image-gallery">ᐳ See the cards</Link>
+                        </p>
+                    </div>
+                </div>
+
+                <div className="draft tile">
+                    <div className="splash">
+                        <img className="splashImage" src={draftSplash} />
+                    </div>
+                    <div className="content">
+                        <h1>
+                            <Link to="/draft">Draft Online</Link>
+                        </h1>
+                        <p>
+                            Grab some friends and draft <em>Terra 2170</em> in your browser! Don't have eight people? No
+                            problem, fill in the missing places with bots.
+                        </p>
+                        <p className="link">
+                            <Link to="/draft">ᐳ Try it out</Link>
+                        </p>
+                    </div>
+                </div>
+
+                <div className="faq tile">
+                    <div className="splash">
+                        <img className="splashImage" src={rulesFaqSplash} />
+                    </div>
+                    <div className="content">
+                        <h1>
+                            <Link to="/faq">Rules FAQ</Link>
+                        </h1>
+                        <p>
+                            Frequently asked questions about how the new mechanics work, and also on individual cards.
+                        </p>
+                        <p className="link">
+                            <Link to="/faq">ᐳ Find out more</Link>
+                        </p>
+                    </div>
+                </div>
+
+                <div className="downloads tile">
+                    <div className="splash">
+                        <img className="splashImage" src={downloadsSplash} />
+                    </div>
+                    <div className="content">
+                        <h1>
+                            <Link to="/downloads">Downloads</Link>
+                        </h1>
+                        <p>
+                            Find downloads for play online using Cockatrice, or for printing and proxying your own cube.
+                        </p>
+                        <p className="link">
+                            <Link to="/downloads">ᐳ View downloads</Link>
+                        </p>
+                    </div>
+                </div>
             </main>
         </>
     );
