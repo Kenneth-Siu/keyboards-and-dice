@@ -10,9 +10,10 @@ const router = express.Router();
 
 router.get("*", (req, res) => {
     const context = {};
+    const userDisplayName = (req.user && req.user.display_name) || "";
     const markup = renderToString(
         <StaticRouter context={context} location={req.url}>
-            <App userDisplayName={req.user && req.user.display_name} />
+            <App userDisplayName={userDisplayName} />
         </StaticRouter>
     );
     if (context.url) {
@@ -28,8 +29,8 @@ router.get("*", (req, res) => {
         ${assets.client.css ? `<link rel="stylesheet" href="${assets.client.css}">` : ""}
         ${
             process.env.NODE_ENV === "production"
-                ? `<script src="${assets.client.js}" defer></script>`
-                : `<script src="${assets.client.js}" defer crossorigin></script>`
+                ? `<script src="${assets.client.js}" user-display-name="${userDisplayName}" defer></script>`
+                : `<script src="${assets.client.js}" user-display-name="${userDisplayName}" defer crossorigin></script>`
         }
     </head>
     <body>

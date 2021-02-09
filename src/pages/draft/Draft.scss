@@ -1,3 +1,11 @@
+@import "../../components/responsive.scss";
+@import "../../components/colors.scss";
+@import "../../components/navBar/navBar.scss";
+
 .draft-page {
-    
+    @include navBarPageTopPadding;
+    @include container;
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
+    padding-bottom: 0.5rem;
 }
