@@ -18,9 +18,11 @@ app.use(urlencoded({ extended: false }));
 app.use(json());
 app.use(
     expressSession({
+        resave: false,
+        saveUninitialized: false,
         store: new (connectPgSimple(expressSession))({ pool: pool }),
         secret: process.env.EXPRESS_SESSION_SECRET,
-        cookie: { maxAge: 30 * 24 * 60 * 60 * 1000 }, // 30 days
+        cookie: { maxAge: 40 * 24 * 60 * 60 * 1000 }, // 40 days
     })
 );
 app.use(passport.initialize());
