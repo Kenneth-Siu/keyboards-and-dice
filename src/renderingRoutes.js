@@ -12,7 +12,7 @@ router.get("*", (req, res) => {
     const context = {};
     const markup = renderToString(
         <StaticRouter context={context} location={req.url}>
-            <App />
+            <App userDisplayName={req.user && req.user.display_name} />
         </StaticRouter>
     );
     if (context.url) {
