@@ -1,6 +1,6 @@
 import React from "react";
 import "./Login.scss";
-import commonSetSymbol from "../../../data/commonSetSymbol.svg";
+import terraSymbol from "../../../data/terraSymbol.svg";
 import facebookLogo from "../../../data/facebookIcon.svg";
 
 export default function Login() {
@@ -8,7 +8,7 @@ export default function Login() {
         <>
             <title>Log in · Terra 2170</title>
             <main className="login-page">
-                <img className="set-symbol" src={commonSetSymbol} />
+                <img className="terra-symbol" src={terraSymbol} />
                 <h1>Log in to continue</h1>
                 <div className="login-buttons">
                     <a className="facebook login-button" href="/api/login/facebook">
