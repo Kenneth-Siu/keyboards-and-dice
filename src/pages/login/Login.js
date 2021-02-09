@@ -11,6 +11,10 @@ export default function Login() {
                 <img className="terra-symbol" src={terraSymbol} />
                 <h1>Log in to continue</h1>
                 <div className="login-buttons">
+                    <a className="google login-button" href="/api/login/google">
+                        {/* <img src={googleLogo} /> */}
+                        Log in with Google
+                    </a>
                     <a className="facebook login-button" href="/api/login/facebook">
                         <img src={facebookLogo} />
                         Log in with Facebook
