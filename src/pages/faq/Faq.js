@@ -52,18 +52,13 @@ export default function Faq() {
                                 the creature. It is created and then attached in the same action.
                             </li>
                             <li>
-                                If the creature is not on the battlefield as you perform the arm action, the equipment
-                                is created and then not attached to anything.
+                                If the creature is not on the battlefield as you perform the arm action, no equipment is
+                                created.
                             </li>
                             <li>
                                 Some cards will instruct you that a creature enters the battlefield armed. This is a
                                 static ability that creates a replacement effect: "If you would put this creature onto
                                 the battlefield, instead put it onto the battlefield and arm it."
-                            </li>
-                            <li>
-                                Some cards will instruct you to "arm target creature". If the creature is not on the
-                                battlefield as the ability resolves, it will be countered by the game rules as normal
-                                for having no legal targets, and therefore no equipment is created.
                             </li>
                         </ul>
                     </div>
@@ -146,6 +141,25 @@ export default function Faq() {
                                 effect.
                             </li>
                             <li>You cannot teleport a card from an opponent's library.</li>
+                        </ul>
+                        <blockquote>
+                            <p>
+                                <b>TL;DR:</b>
+                                <ul>
+                                    <li>
+                                        Teleporting a card takes it out of the looked at/revealed cards. Cast the spell
+                                        for its teleport cost, finish resolving the effect with the teleported card
+                                        taken out, then resolve the teleported spell.
+                                    </li>
+                                    <li>
+                                        While resolving Mutate, finish revealing all the cards first, then choose
+                                        whether or not to teleport any cards, then put the mutated creature onto the
+                                        battlefield.
+                                    </li>
+                                </ul>
+                            </p>
+                        </blockquote>
+                        <ul>
                             <li>
                                 Teleporting a spell follows all the normal rules for casting a spell, except for timing
                                 in some circumstances.
