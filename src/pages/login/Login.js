@@ -1,7 +1,9 @@
 import React from "react";
 import "./Login.scss";
 import terraSymbol from "../../../data/terraSymbol.svg";
+import googleLogo from "../../../data/googleIcon.svg";
 import facebookLogo from "../../../data/facebookIcon.svg";
+import githubLogo from "../../../data/githubIcon.svg";
 
 export default function Login() {
     return (
@@ -9,19 +11,19 @@ export default function Login() {
             <title>Log in · Terra 2170</title>
             <main className="login-page">
                 <img className="terra-symbol" src={terraSymbol} />
-                <h1>Log in to continue</h1>
-                <div className="login-buttons">
+                <h1>You need to be logged in to continue</h1>
+                <div className="login-buttons-container">
                     <a className="google login-button" href="/api/login/google">
-                        {/* <img src={googleLogo} /> */}
-                        Log in with Google
+                        <img src={googleLogo} />
+                        Sign in with Google
                     </a>
                     <a className="facebook login-button" href="/api/login/facebook">
                         <img src={facebookLogo} />
-                        Log in with Facebook
+                        Sign in with Facebook
                     </a>
                     <a className="github login-button" href="/api/login/github">
-                        {/* <img src={githubLogo} /> */}
-                        Log in with GitHub
+                        <img src={githubLogo} />
+                        Sign in with GitHub
                     </a>
                 </div>
                 <p>
@@ -31,7 +33,7 @@ export default function Login() {
                 </p>
                 <p>
                     If you want me to delete your data (for whatever reason), just let me know via... whatever channels
-                    you have to me. I'll have a proper non-personal email address at some point... [WIP]
+                    you have to reach me. I'll have a proper non-personal email address here at some point...
                 </p>
             </main>
         </>
