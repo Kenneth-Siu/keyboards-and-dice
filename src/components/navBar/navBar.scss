@@ -76,7 +76,7 @@ $navbar-large-height: 3rem;
         &.abbreviated {
             display: none;
         }
-        @media (max-width: 520px) {
+        @media (max-width: 550px) {
             &:not(.abbreviated) {
                 display: none;
             }
