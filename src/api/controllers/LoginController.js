@@ -15,4 +15,10 @@ router.get("/facebook/return", passport.authenticate("facebook", { failureRedire
     res.redirect("/draft");
 });
 
+router.get("/github", passport.authenticate("github"));
+
+router.get("/github/return", passport.authenticate("github", { failureRedirect: "/login" }), (req, res) => {
+    res.redirect("/draft");
+});
+
 export default router;
