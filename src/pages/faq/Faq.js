@@ -1,9 +1,10 @@
 import React from "react";
+import karnTheIntrospective from "../../../data/cardImages/Karn the Introspective.jpg";
+import dropship from "../../../data/cardImages/Dropship.jpg";
 import supplyLineJet from "../../../data/cardImages/Supply-Line Jet.jpg";
 import undercroftEntangler from "../../../data/cardImages/Undercroft Entangler.jpg";
 import figmentOfDeath from "../../../data/cardImages/Figment of Death.jpg";
 import slipstreamHunter from "../../../data/cardImages/Slipstream Hunter.jpg";
-import dropship from "../../../data/cardImages/Dropship.jpg";
 import suspensionSquad from "../../../data/cardImages/Suspension Squad.jpg";
 import turnTheTideOfBattle from "../../../data/cardImages/Turn the Tide of Battle.jpg";
 import coordinateScrambler from "../../../data/cardImages/Coordinate Scrambler.jpg";
@@ -13,15 +14,25 @@ import matterRedistribution from "../../../data/cardImages/Matter Redistribution
 import nanoreplicatorZero from "../../../data/cardImages/Nanoreplicator Zero.jpg";
 import neutronFlow from "../../../data/cardImages/Neutron Flow.jpg";
 import cloningVats from "../../../data/cardImages/Cloning Vats.jpg";
+import murmurTheCleaner from "../../../data/cardImages/Murmur the Cleaner.jpg";
 import mysticOfTheUnder from "../../../data/cardImages/Mystic of the Under.jpg";
 import iridiumMagnetoKnife from "../../../data/cardImages/Iridium Magneto-Knife.jpg";
+import theMoirai from "../../../data/cardImages/The Moirai.jpg";
 import wantedSpeedster from "../../../data/cardImages/Wanted Speedster.jpg";
 import bioarchitect from "../../../data/cardImages/Bioarchitect.jpg";
-import matterDistributorAlpha from "../../../data/cardImages/Matter Distributor Alpha.jpg";
+import ingolfsCommand from "../../../data/cardImages/Ingolfs Command.jpg";
+import matterRedistributor from "../../../data/cardImages/Matter Redistributor.jpg";
 import titanOfShisukuSewers from "../../../data/cardImages/Titan of Shisuku Sewers.jpg";
 import acquisitorDelwani from "../../../data/cardImages/Acquisitor Delwani.jpg";
+import umidaKoto from "../../../data/cardImages/Umida Koto.jpg";
+import theAion from "../../../data/cardImages/The Aion.jpg";
+import formling from "../../../data/cardImages/Formling.jpg";
+import moxVoidstone from "../../../data/cardImages/Mox Voidstone.jpg";
 import mutagenicSerum from "../../../data/cardImages/Mutagenic Serum.jpg";
 import trojanHorse from "../../../data/cardImages/Trojan Horse.jpg";
+import hongWaiFactory from "../../../data/cardImages/Hong Wai Factory.jpg";
+import theMercuriteLens from "../../../data/cardImages/The Mercurite Lens.jpg";
+import terramorphicExpanse from "../../../data/cardImages/Terramorphic Expanse.jpg";
 import "./Faq.scss";
 
 export default function Faq() {
@@ -74,8 +85,8 @@ export default function Faq() {
                                 <em>triggered ability</em> with the following rules:
                             </p>
                             <p>
-                                "Whenever this creature attacks, if there is exactly one other attacking creature, this
-                                creature can't be blocked this turn."
+                                "Whenever this creature attacks with exactly one other attacking creature, this creature
+                                can't be blocked this turn."
                             </p>
                         </blockquote>
                         <ul>
@@ -85,7 +96,7 @@ export default function Faq() {
                             <li>
                                 If there isn't exactly one other attacking creature as the ability resolves (for
                                 example, if the other attacking creature is removed from play), then the ability will
-                                resolve and do nothing. The creature with infiltrate can be blocked this turn.
+                                still resolve and the creature can't be blocked this turn.
                             </li>
                         </ul>
                     </div>
@@ -209,6 +220,15 @@ export default function Faq() {
                 </section>
                 <h2>Individual Card FAQs</h2>
                 <section>
+                    <img src={karnTheIntrospective} />
+                    <div>
+                        <h3>Karn, the Introspective</h3>
+                        <ul>
+                            <li>Scan counters have no effect by themselves.</li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
                     <img src={dropship} />
                     <div>
                         <h3>Dropship</h3>
@@ -270,7 +290,10 @@ export default function Faq() {
                     <div>
                         <h3>Future Insight</h3>
                         <ul>
-                            <li>Put the cards into your library in any order.</li>
+                            <li>
+                                If X is 2 or less, you won't be able to put the full 3 cards into your hand and will
+                                have to make do with fewer.
+                            </li>
                         </ul>
                     </div>
                 </section>
@@ -329,6 +352,37 @@ export default function Faq() {
                     </div>
                 </section>
                 <section>
+                    <img src={murmurTheCleaner} />
+                    <div>
+                        <h3>Murmur, the Cleaner</h3>
+                        <ul>
+                            <li>
+                                Murmur's first ability doesn’t count as a creature entering the battlefield. Murmur was
+                                already on the battlefield; they only changed their types.
+                            </li>
+                            <li>
+                                If Murmur becomes a creature the same turn they enter the battlefield, they have
+                                summoning sickness like usual, unless granted haste.
+                            </li>
+                            <li>
+                                Murmur's first ability causes them to become a creature with the creature type Assassin.
+                                They remain a planeswalker with the planeswalker type Murmur. (They also retain any
+                                other card types or subtypes they may have had.) Each subtype is correlated to the
+                                proper card type: planeswalker is only a type (not a creature type), and Assassin is
+                                just a creature type (not a planeswalker type).
+                            </li>
+                            <li>
+                                If damage that can’t be prevented is dealt to Murmur after their first ability has
+                                resolved, that damage will have all applicable results: specifically, the damage is
+                                marked on Murmur (since they're a creature) and that damage causes that many loyalty
+                                counters to be removed from them (since they're a planeswalker). Even though they have
+                                indestructible, if Murmur has no loyalty counters on them, they're put into their
+                                owner’s graveyard.
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
                     <img src={mysticOfTheUnder} />
                     <div>
                         <h3>Mystic of the Under</h3>
@@ -348,6 +402,18 @@ export default function Faq() {
                             <li>
                                 Arming a creature triggers Iridium Magneto-Knife's triggered ability. (It creates an
                                 equipment, then attaches it to the creature.)
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <img src={theMoirai} />
+                    <div>
+                        <h3>The Moirai</h3>
+                        <ul>
+                            <li>
+                                The target is chosen at random as you put the triggered ability on the stack. Players
+                                can respond to this ability knowing what the target is.
                             </li>
                         </ul>
                     </div>
@@ -377,9 +443,42 @@ export default function Faq() {
                     </div>
                 </section>
                 <section>
-                    <img src={matterDistributorAlpha} />
+                    <img src={ingolfsCommand} />
                     <div>
-                        <h3>Matter Distributor Alpha</h3>
+                        <h3>
+                            Murmur's Command, Wormcaller's Command, Ingolf's Command, Vuissance's Command,
+                            Redistribution Command
+                        </h3>
+                        <ul>
+                            <li>
+                                You choose the X modes as you cast the spell and pay the appropriate mana cost. You must
+                                choose X different modes. Once modes are chosen, they can’t be changed.
+                            </li>
+                            <li>
+                                You can choose a mode only if you can choose legal targets for that mode. Ignore the
+                                targeting requirements for modes that aren’t chosen. For example, you can cast Ingolf's
+                                Command without targeting an enchantment provided you don’t choose the third mode.
+                            </li>
+                            <li>
+                                As the spell resolves, follow the instructions of the modes you chose in the order they
+                                are printed on the card. (The order won’t matter in most cases.)
+                            </li>
+                            <li>
+                                If a Command is copied, the effect that creates the copy will usually allow you to
+                                choose new targets for the copy, but you can’t choose new modes.
+                            </li>
+                            <li>
+                                If all targets for the chosen modes become illegal before the Command resolves, the
+                                spell won’t resolve and none of its effects will happen. If at least one target is still
+                                legal, the spell will resolve but will have no effect on any illegal targets.
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <img src={matterRedistributor} />
+                    <div>
+                        <h3>Matter Redistributor</h3>
                         <ul>
                             <li>
                                 For the first ability, you choose whether to put 1 or X charge counters on it as the
@@ -411,6 +510,59 @@ export default function Faq() {
                     </div>
                 </section>
                 <section>
+                    <img src={umidaKoto} />
+                    <div>
+                        <h3>Umida Koto</h3>
+                        <ul>
+                            <li>If a creature has multiple instances of mutate, each triggers separately.</li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <img src={theAion} />
+                    <div>
+                        <h3>The Aion</h3>
+                        <ul>
+                            <li>
+                                If you don't have enough cards in your graveyard to shuffle into your library, you
+                                shuffle no cards from your graveyard into your library.
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <img src={formling} />
+                    <div>
+                        <h3>Formling</h3>
+                        <ul>
+                            <li>
+                                If Formling becomes a copy of another creature with its second ability, it does not
+                                retain its original abilities.
+                            </li>
+                            <li>
+                                Copy effects are generally applied in layer 1. If in the same turn you previously
+                                activated Formling's first ability to give it infiltrate, it will become a copy of the
+                                other creature in layer 1 and then gain the infiltrate ability in layer 6. This results
+                                in Formling becoming a copy of the other creature and also having infiltrate. (The same
+                                principle can be applied to Formling's last ability of +1/-1 or -1/+1.)
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <img src={moxVoidstone} />
+                    <div>
+                        <h3>Mox Voidstone</h3>
+                        <ul>
+                            <li>
+                                Mox Voidstone has no mana cost. You can’t cast it unless an effect (such as that of
+                                teleport) allows you to cast it for an alternative cost or without paying its mana cost.
+                                Its converted mana cost is 0.
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
                     <img src={mutagenicSerum} />
                     <div>
                         <h3>Mutagenic Serum</h3>
@@ -432,6 +584,67 @@ export default function Faq() {
                                 Skipping a turn will only happen if Trojan Horse is on the battlefield as the ability
                                 resolves, so if Trojan Horse is removed in response to the ability going on the stack,
                                 nobody skips any turns.
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <img src={hongWaiFactory} />
+                    <div>
+                        <h3>Hong Wai Factory</h3>
+                        <ul>
+                            <li>
+                                For its second and third abilities, while resolving the ability you either remove no
+                                counters or two counters.
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <img src={theMercuriteLens} />
+                    <div>
+                        <h3>The Mercurite Lens</h3>
+                        <ul>
+                            <li>
+                                Remember that this is a search effect and not a "look at" or "reveal" effect. You cannot
+                                teleport cards using its ability.
+                            </li>
+                            <li>
+                                Any replacement effects are considered by The Mercurite Mirror when determining the
+                                types of mana a land can produce.
+                            </li>
+                            <li>
+                                Any change to a land’s type or splicing of text into a land can affect the types of mana
+                                a land can produce.
+                            </li>
+                            <li>The types of mana are white, blue, black, red, green, and colorless.</li>
+                            <li>
+                                The Mercurite Mirror checks the effects of all mana-producing abilities of lands you
+                                control, but it doesn’t check their costs or whether or not you are able to activate the
+                                ability.
+                            </li>
+                            <li>
+                                The Mercurite Mirror doesn’t care about any restrictions or riders your lands put on the
+                                mana they produce, such as Pillar of the Paruns and Hall of the Bandit Lord do. It just
+                                cares about types of mana.
+                            </li>
+                            <li>
+                                If you are somehow able to have multiple copies of The Mercurite Mirror, they won’t help
+                                each other produce mana. If you control The Mercurite Mirror, and all other lands you
+                                control either lack mana abilities or are other copies of The Mercurite Mirror, you may
+                                still activate The Mercurite Mirror's first ability — it just won’t produce any mana.
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <img src={terramorphicExpanse} />
+                    <div>
+                        <h3>Terramorphic Expanse</h3>
+                        <ul>
+                            <li>
+                                Remember that this is a search effect and not a "look at" or "reveal" effect. You cannot
+                                teleport cards using its ability.
                             </li>
                         </ul>
                     </div>

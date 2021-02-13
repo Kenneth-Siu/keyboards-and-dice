@@ -20,7 +20,7 @@ export default function Home() {
                             <Link to="/card-image-gallery">Card Image Gallery</Link>
                         </h1>
                         <p>
-                            <em>Terra 2170</em> is a science-fiction <em>Magic: the Gathering</em> expansion with 243
+                            <em>Terra 2170</em> is a science-fiction <em>Magic: the Gathering</em> expansion with 266
                             cards and four new mechanics, created especially for drafting.
                         </p>
                         <p className="link">
