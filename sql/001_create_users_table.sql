@@ -1,1 +1,4 @@
-CREATE TABLE users (id text, display_name text);
+CREATE TABLE users (
+    id TEXT PRIMARY KEY,
+    display_name TEXT NOT NULL
+);
