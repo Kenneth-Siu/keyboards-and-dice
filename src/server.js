@@ -4,10 +4,10 @@ import cookieParser from "cookie-parser";
 import { urlencoded, json } from "body-parser";
 import expressSession from "express-session";
 import connectPgSimple from "connect-pg-simple";
-import apiRoutes from "./apiRoutes.js";
-import renderingRoutes from "./renderingRoutes.js";
-import configurePassport from "./passportConfig.js";
-import pool from "./api/repositories/pool.js";
+import apiRoutes from "./backend/apiRoutes.js";
+import renderingRoutes from "./backend/renderingRoutes.js";
+import configurePassport from "./backend/passportConfig.js";
+import pool from "./backend/repositories/pool.js";
 
 configurePassport();
 

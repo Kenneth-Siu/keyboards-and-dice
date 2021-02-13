@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import PrivateRoute from "../PrivateRoute.js";
+import PrivateRoute from "./PrivateRoute.js";
 import Home from "./home/Home.js";
 import CardImageGallery from "./cardImageGallery/CardImageGallery.js";
 import Draft from "./draft/Draft.js";

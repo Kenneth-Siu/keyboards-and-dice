@@ -1,7 +1,7 @@
 import express from "express";
-import UserController from "./api/controllers/UserController.js";
-import LoginController from "./api/controllers/LoginController.js";
-import LogoutController from "./api/controllers/LogoutController.js";
+import UserController from "./controllers/UserController.js";
+import LoginController from "./controllers/LoginController.js";
+import LogoutController from "./controllers/LogoutController.js";
 
 const router = express.Router();
 

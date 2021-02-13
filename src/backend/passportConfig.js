@@ -2,7 +2,7 @@ import passport from "passport";
 import { Strategy as GoogleStrategy } from "passport-google-oauth20";
 import { Strategy as FacebookStrategy } from "passport-facebook";
 import { Strategy as GithubStrategy } from "passport-github2";
-import * as UserRepo from "./api/repositories/UserRepo.js";
+import * as UserRepo from "./repositories/UserRepo.js";
 
 export default function configurePassport() {
     passport.use(
