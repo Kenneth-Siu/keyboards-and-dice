@@ -41,8 +41,21 @@ INSERT INTO users(id, displayName) VALUES ('39', 'Bot Vivien');
 INSERT INTO users(id, displayName) VALUES ('40', 'Bot Vraska');
 INSERT INTO users(id, displayName) VALUES ('41', 'Bot Will');
 
+CREATE TABLE draftStatuses (
+    id SMALLINT PRIMARY KEY NOT NULL,
+    displayName TEXT NOT NULL
+);
+
+INSERT INTO draftStatuses(id, displayName) VALUES (0, 'Pending');
+INSERT INTO draftStatuses(id, displayName) VALUES (1, 'In Progress');
+INSERT INTO draftStatuses(id, displayName) VALUES (2, 'Complete');
+
 CREATE TABLE drafts (
-    id TEXT PRIMARY KEY NOT NULL
+    id TEXT PRIMARY KEY NOT NULL,
+    status SMALLINT NOT NULL,
+    CONSTRAINT fk_status
+        FOREIGN KEY(status)
+        REFERENCES draftStatuses(id)
 );
 
 CREATE TABLE players (

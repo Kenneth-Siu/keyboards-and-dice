@@ -46,3 +46,4 @@ DROP TABLE cards;
 DROP TABLE boosters;
 DROP TABLE players;
 DROP TABLE drafts;
+DROP TABLE draftStatuses;
