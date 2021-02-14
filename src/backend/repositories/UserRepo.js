@@ -8,7 +8,7 @@ export function findOrCreate(user) {
                 return result.rows[0];
             } else {
                 return pool
-                    .query("INSERT INTO users(id, display_name) VALUES ($1, $2) RETURNING *", [
+                    .query("INSERT INTO users(id, displayName) VALUES ($1, $2) RETURNING *", [
                         user.id,
                         user.displayName,
                     ])
