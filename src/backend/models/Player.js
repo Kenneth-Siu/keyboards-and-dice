@@ -6,6 +6,6 @@ export class Player {
     }
 
     static createFromDb(dbPlayer) {
-        return new Draft(dbPlayer.userId, dbPlayer.draftId, dbPlayer.seatNumber);
+        return new Player(dbPlayer.userId, dbPlayer.draftId, dbPlayer.seatNumber);
     }
 }
