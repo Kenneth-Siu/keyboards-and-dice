@@ -6,9 +6,9 @@ import DraftController from "./controllers/DraftController.js";
 
 const router = express.Router();
 
-router.use("/user", UserController);
+router.use("/users", UserController);
 router.use("/login", LoginController);
 router.use("/logout", LogoutController);
-router.use("/draft", DraftController);
+router.use("/drafts", DraftController);
 
 export default router;

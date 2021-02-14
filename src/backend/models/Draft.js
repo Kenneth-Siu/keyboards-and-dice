@@ -1,5 +1,5 @@
 export const DRAFT_STATUSES = Object.freeze({
-    0: "Pending",
+    0: "Ready to Start",
     1: "In Progress",
     2: "Complete",
 });

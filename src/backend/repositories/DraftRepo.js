@@ -3,9 +3,25 @@ import { Draft } from "../models/Draft.js";
 
 export function create(id) {
     return pool
-        .query("INSERT INTO drafts(id) VALUES ($1) RETURNING *", [id])
+        .query("INSERT INTO drafts(id, status) VALUES ($1, 0) RETURNING *", [id])
         .then((result) => {
             return Draft.createFromDb(result.rows[0]);
+        })
+        .catch((error) => {
+            console.log(error);
+            throw error;
+        });
+}
+
+export function find(id) {
+    return pool
+        .query("SELECT * FROM drafts WHERE id = $1", [id])
+        .then((result) => {
+            if (result.rows.length) {
+                return Draft.createFromDb(result.rows[0]);
+            } else {
+                return null;
+            }
         })
         .catch((error) => {
             console.log(error);

@@ -27,7 +27,8 @@
         "razzle-plugin-scss": "^3.3.13",
         "react": "^16.14.0",
         "react-dom": "^16.14.0",
-        "react-router-dom": "^5.2.0"
+        "react-router-dom": "^5.2.0",
+        "uuid": "^8.3.2"
     },
     "repository": {
         "type": "git",

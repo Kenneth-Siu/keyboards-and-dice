@@ -46,7 +46,7 @@ CREATE TABLE draftStatuses (
     displayName TEXT NOT NULL
 );
 
-INSERT INTO draftStatuses(id, displayName) VALUES (0, 'Pending');
+INSERT INTO draftStatuses(id, displayName) VALUES (0, 'Ready to Start');
 INSERT INTO draftStatuses(id, displayName) VALUES (1, 'In Progress');
 INSERT INTO draftStatuses(id, displayName) VALUES (2, 'Complete');
 
