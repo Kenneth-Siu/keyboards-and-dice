@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
+import { MdRefresh, MdContentCopy } from "react-icons/md";
+import copy from "copy-to-clipboard";
 import LoadingSpinner from "../../components/loadingSpinner/loadingSpinner.js";
 import "./Draft.scss";
 
 export default function Draft({ userDisplayName }) {
     const [drafts, setDrafts] = useState(null);
-    const [creatingOrJoiningDraft, setCreatingOrJoiningDraft] = useState(false);
+    const [busy, setBusy] = useState(false);
     const [joinDraftId, setJoinDraftId] = useState("");
     useEffect(getDrafts, []);
     return (
@@ -31,34 +33,54 @@ export default function Draft({ userDisplayName }) {
         }
         return (
             <>
-                <button onClick={getDrafts}>Refresh</button>
+                <button className="refresh-button" aria-label="Refresh" onClick={getDrafts} disabled={busy}>
+                    <MdRefresh />
+                </button>
                 <table>
+                    <thead>
+                        <tr>
+                            <th>Draft ID</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
                     <tbody>
                         {drafts.map((draft) => (
                             <tr key={draft.id}>
-                                <td>{draft.id}</td>
+                                <td className="draft-id">
+                                    <span className="mono-space">
+                                        {draft.id}
+                                        {draft.status === 0 ? (
+                                            <button aria-label="Copy" onClick={() => copy(draft.id)}>
+                                                <MdContentCopy />
+                                            </button>
+                                        ) : null}
+                                    </span>
+                                </td>
                                 <td>{draft.statusName}</td>
                             </tr>
                         ))}
                         <tr>
-                            <td>
-                                Join a draft by copying the draft ID here:
-                                <input
-                                    type="text"
-                                    pattern="/^[0-9a-f]{8}-[0-9a-f]{4}-[0-5][0-9a-f]{3}-[089ab][0-9a-f]{3}-[0-9a-f]{12}$/i"
-                                    placeholder="e.g. 718dc651-4c33-4d43-86b7-fe61f59d2f79"
-                                    value={joinDraftId}
-                                    onChange={(event) => setJoinDraftId(event.target.value)}
-                                ></input>
-                                <button onClick={joinDraft} disabled={creatingOrJoiningDraft}>
-                                    Join
-                                </button>
+                            <td className="join-draft" colSpan="2">
+                                Join a draft by pasting the draft ID here:
+                                <form>
+                                    <input
+                                        type="text"
+                                        pattern="/^[0-9a-f]{8}-[0-9a-f]{4}-[0-5][0-9a-f]{3}-[089ab][0-9a-f]{3}-[0-9a-f]{12}$/i"
+                                        placeholder="e.g. 718dc651-4c33-4d43-86b7-fe61f59d2f79"
+                                        value={joinDraftId}
+                                        onChange={(event) => setJoinDraftId(event.target.value)}
+                                        disabled={busy}
+                                    ></input>
+                                    <button onClick={joinDraft} disabled={busy}>
+                                        Join
+                                    </button>
+                                </form>
                             </td>
                         </tr>
                         <tr>
-                            <td>
-                                <button onClick={createDraft} disabled={creatingOrJoiningDraft}>
-                                    Or start your own
+                            <td className="create-draft" colSpan="2">
+                                <button onClick={createDraft} disabled={busy}>
+                                    Or create your own
                                 </button>
                             </td>
                         </tr>
@@ -69,20 +91,26 @@ export default function Draft({ userDisplayName }) {
     }
 
     function getDrafts() {
+        setBusy(true);
         fetch("/api/drafts")
             .then((response) => {
                 return response.json();
             })
             .then((drafts) => {
+                setBusy(false);
                 return setDrafts(drafts);
+            })
+            .catch(() => {
+                setBusy(false);
+                // TODO error message
             });
     }
 
     function joinDraft() {
-        setCreatingOrJoiningDraft(true);
+        setBusy(true);
         fetch(`/api/drafts/join/${joinDraftId}`, { method: "PUT" })
             .then((response) => {
-                setCreatingOrJoiningDraft(false);
+                setBusy(false);
                 if (!response.ok) {
                     throw "Response not ok";
                 }
@@ -92,23 +120,23 @@ export default function Draft({ userDisplayName }) {
                 getDrafts();
             })
             .catch(() => {
-                setCreatingOrJoiningDraft(false);
+                setBusy(false);
                 // TODO error message
             });
     }
 
     function createDraft() {
-        setCreatingOrJoiningDraft(true);
+        setBusy(true);
         fetch("/api/drafts", { method: "POST" })
             .then((response) => {
-                setCreatingOrJoiningDraft(false);
+                setBusy(false);
                 if (!response.ok) {
                     throw "Response not ok";
                 }
                 getDrafts();
             })
             .catch(() => {
-                setCreatingOrJoiningDraft(false);
+                setBusy(false);
                 // TODO error message
             });
     }
