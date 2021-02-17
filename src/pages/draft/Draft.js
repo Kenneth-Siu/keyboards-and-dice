@@ -54,7 +54,7 @@ export default function Draft({ userDisplayName }) {
                             drafts.map((draft) => (
                                 <tr key={draft.id}>
                                     <td className="draft-id">
-                                        <Link to={`/drafts/${draft.id}`} className="mono-space">{draft.id}</Link>
+                                        <Link to={`/draft/${draft.id}`} className="mono-space">{draft.id}</Link>
                                     </td>
                                     <td>{draft.statusName}</td>
                                     <td className="controls">
@@ -80,7 +80,7 @@ export default function Draft({ userDisplayName }) {
         return (
             <form className="create-draft">
                 <button onClick={createDraft} disabled={busy}>
-                    Create a draft here
+                    Create a draft
                 </button>
             </form>
         );
@@ -90,7 +90,7 @@ export default function Draft({ userDisplayName }) {
         return (
             <>
                 <form className="join-draft">
-                    <label for="draft-id">Or join a friend's draft:</label>
+                    <label htmlFor="draft-id">Or join a friend's draft:</label>
                     <input
                         id="draft-id"
                         type="text"
@@ -111,6 +111,9 @@ export default function Draft({ userDisplayName }) {
         setBusy(true);
         fetch("/api/drafts")
             .then((response) => {
+                if (!response.ok) {
+                    throw "Response not ok";
+                }
                 return response.json();
             })
             .then((drafts) => {
@@ -119,7 +122,7 @@ export default function Draft({ userDisplayName }) {
             })
             .catch(() => {
                 setBusy(false);
-                // TODO error message
+                // TODO error handling
             });
     }
 
@@ -131,14 +134,11 @@ export default function Draft({ userDisplayName }) {
                 if (!response.ok) {
                     throw "Response not ok";
                 }
-                if (response.status === 404) {
-                    // TODO bad session ID message
-                }
                 getDrafts();
             })
             .catch(() => {
                 setBusy(false);
-                // TODO error message
+                // TODO error handling
             });
     }
 
@@ -154,7 +154,7 @@ export default function Draft({ userDisplayName }) {
             })
             .catch(() => {
                 setBusy(false);
-                // TODO error message
+                // TODO error handling
             });
     }
 }

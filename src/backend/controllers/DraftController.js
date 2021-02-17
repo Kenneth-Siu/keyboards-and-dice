@@ -16,6 +16,20 @@ router.get("/", ensureLoggedIn, (req, res) => {
         });
 });
 
+router.get("/:draftId", ensureLoggedIn, (req, res) => {
+    DraftService.getDraft(req.params.draftId, req.user.id)
+        .then((draft) => {
+            res.send(draft);
+        })
+        .catch((err) => {
+            if (err.name === NotFoundErrorName) {
+                res.sendStatus(404);
+            } else {
+                res.sendStatus(500);
+            }
+        });
+});
+
 router.post("/", ensureLoggedIn, (req, res) => {
     DraftService.createDraft(req.user.id)
         .then(() => {
@@ -24,8 +38,9 @@ router.post("/", ensureLoggedIn, (req, res) => {
         .catch((err) => {
             if (err.name === DraftLimitReachedErrorName) {
                 res.status(400).send(err.message);
+            } else {
+                res.sendStatus(500);
             }
-            res.sendStatus(500);
         });
 });
 
@@ -38,6 +53,20 @@ router.put("/join/:draftId", ensureLoggedIn, (req, res) => {
             if (err.name === DraftLimitReachedErrorName) {
                 res.status(400).send(err.message);
             } else if (err.name === NotFoundErrorName) {
+                res.status(404).send(err.message);
+            } else {
+                res.sendStatus(500);
+            }
+        });
+});
+
+router.post("/start/:draftId", ensureLoggedIn, (req, res) => {
+    DraftService.startDraft(req.params.draftId, req.user.id)
+        .then(() => {
+            res.sendStatus(201);
+        })
+        .catch((err) => {
+            if (err.name === NotFoundErrorName) {
                 res.status(404).send(err.message);
             } else {
                 res.sendStatus(500);

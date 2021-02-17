@@ -1,9 +1,9 @@
 import pool from "./pool.js";
 import { Draft } from "../models/Draft.js";
 
-export function create(id) {
+export function create(id, userId) {
     return pool
-        .query("INSERT INTO drafts(id, status) VALUES ($1, 0) RETURNING *", [id])
+        .query("INSERT INTO drafts(id, ownerId, status) VALUES ($1, $2, 0) RETURNING *", [id, userId])
         .then((result) => {
             return Draft.createFromDb(result.rows[0]);
         })
@@ -32,11 +32,23 @@ export function find(id) {
 export function findAllForUser(userId) {
     return pool
         .query(
-            `SELECT drafts.id, drafts.status 
+            `SELECT drafts.id, drafts.ownerId, drafts.status 
             FROM players JOIN drafts ON players.draftId = drafts.id
             WHERE userId = $1`,
             [userId]
         )
+        .then((result) => {
+            return result.rows.map((row) => Draft.createFromDb(row));
+        })
+        .catch((error) => {
+            console.log(error);
+            throw error;
+        });
+}
+
+export function findAllOwnedByUser(userId) {
+    return pool
+        .query(`SELECT * FROM drafts WHERE ownerId = $1`, [userId])
         .then((result) => {
             return result.rows.map((row) => Draft.createFromDb(row));
         })

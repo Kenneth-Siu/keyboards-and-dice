@@ -52,6 +52,7 @@ INSERT INTO draftStatuses(id, displayName) VALUES (2, 'Complete');
 
 CREATE TABLE drafts (
     id TEXT PRIMARY KEY NOT NULL,
+    ownerId TEXT NOT NULL,
     status SMALLINT NOT NULL,
     CONSTRAINT fk_status
         FOREIGN KEY(status)

@@ -11,6 +11,7 @@ import Downloads from "./downloads/Downloads.js";
 import Login from "./login/Login.js";
 import "./cssreset.css";
 import "./App.scss";
+import SingleDraft from "./draft/SingleDraft.js";
 
 export default function App({ userDisplayName }) {
     return (
@@ -21,6 +22,7 @@ export default function App({ userDisplayName }) {
                 <Route exact path="/card-image-gallery" component={CardImageGallery} />
                 <Route exact path="/faq" component={Faq} />
                 <PrivateRoute exact path="/draft" component={Draft} authed={userDisplayName} userDisplayName={userDisplayName} />
+                <PrivateRoute exact path="/draft/:draftId" component={SingleDraft} authed={userDisplayName} />
                 <Route exact path="/downloads" component={Downloads} />
                 <Route exact path="/login" component={Login} />
                 <Route component={NotFound} />
