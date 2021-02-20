@@ -7,6 +7,6 @@ export class Booster {
     }
 
     static createFromDb(dbBooster) {
-        return new Booster(dbBooster.id, dbBooster.packnumber, dbBooster.picknumber, dbBooster.playerid);
+        return new Booster(dbBooster.id, dbBooster.pack_number, dbBooster.pick_number, dbBooster.player_id);
     }
 }

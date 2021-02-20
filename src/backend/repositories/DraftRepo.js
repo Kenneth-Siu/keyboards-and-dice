@@ -3,7 +3,7 @@ import { Draft } from "../models/Draft.js";
 
 export function create(id, userId) {
     return pool
-        .query("INSERT INTO drafts(id, ownerId, status) VALUES ($1, $2, 0) RETURNING *", [id, userId])
+        .query("INSERT INTO drafts(id, owner_id, status) VALUES ($1, $2, 0) RETURNING *", [id, userId])
         .then((result) => {
             return Draft.createFromDb(result.rows[0]);
         })
@@ -32,9 +32,9 @@ export function find(id) {
 export function findAllForUser(userId) {
     return pool
         .query(
-            `SELECT drafts.id, drafts.ownerId, drafts.status 
-            FROM players JOIN drafts ON players.draftId = drafts.id
-            WHERE userId = $1`,
+            `SELECT drafts.id, drafts.owner_id, drafts.status, drafts.created_at
+            FROM players JOIN drafts ON players.draft_id = drafts.id
+            WHERE user_id = $1`,
             [userId]
         )
         .then((result) => {
@@ -48,7 +48,7 @@ export function findAllForUser(userId) {
 
 export function findAllOwnedByUser(userId) {
     return pool
-        .query(`SELECT * FROM drafts WHERE ownerId = $1`, [userId])
+        .query(`SELECT * FROM drafts WHERE owner_id = $1`, [userId])
         .then((result) => {
             return result.rows.map((row) => Draft.createFromDb(row));
         })
@@ -60,7 +60,7 @@ export function findAllOwnedByUser(userId) {
 
 export function isOwnedByUser(id, userId) {
     return pool
-        .query(`SELECT * FROM drafts WHERE id = $1 AND ownerId = $2`, [id, userId])
+        .query(`SELECT * FROM drafts WHERE id = $1 AND owner_id = $2`, [id, userId])
         .then((result) => {
             return result.rows.length > 0;
         })

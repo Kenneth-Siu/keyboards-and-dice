@@ -40,7 +40,7 @@ export class StartDraftRepo {
     }
 
     async getHumanPlayers(draftId) {
-        const result = await this.client.query("SELECT * FROM players WHERE draftId = $1", [draftId]);
+        const result = await this.client.query("SELECT * FROM players WHERE draft_id = $1", [draftId]);
         return result.rows.map((row) => Player.createFromDb(row));
     }
 
@@ -50,7 +50,7 @@ export class StartDraftRepo {
         }
         const botUserIds = sampleSize(BOT_USER_IDS, numberToCreate);
         const result = await this.client.query(
-            `INSERT INTO players (userId, draftId)
+            `INSERT INTO players (user_id, draft_id)
             VALUES ${botUserIds.map((_, index) => `($${index + 2}, $1)`).join(", ")}
             RETURNING *`,
             [draftId, ...botUserIds]
@@ -61,11 +61,11 @@ export class StartDraftRepo {
     async assignSeatNumbers(playerIds) {
         await this.client.query(
             `UPDATE players
-            SET seatNumber = mappingTable.seatNumber
+            SET seat_number = mapping_table.seat_number
             FROM (
                 VALUES ${playerIds.map((playerId, index) => `(${playerId}, ${index})`).join(", ")}
-            ) AS mappingTable(id, seatNumber)
-            WHERE mappingTable.id = players.id`
+            ) AS mapping_table(id, seat_number)
+            WHERE mapping_table.id = players.id`
         );
     }
 
@@ -75,7 +75,7 @@ export class StartDraftRepo {
 
     async createAndGetBoosters(playerIds) {
         const result = await this.client.query(
-            `INSERT INTO boosters (packNumber, pickNumber, playerId) 
+            `INSERT INTO boosters (pack_number, pick_number, player_id) 
             VALUES ${playerIds.map((_, index) => `(1, 1, $${index + 1})`).join(", ")}
             RETURNING *`,
             [...playerIds]
@@ -88,7 +88,7 @@ export class StartDraftRepo {
             getBooster().map((card) => new Card(null, boosterId, card.id))
         );
         await this.client.query(
-            `INSERT INTO cards (boosterId, cardId)
+            `INSERT INTO cards (booster_id, card_id)
             VALUES ${cards.map((_, index) => `($${index * 2 + 1}, $${index * 2 + 2})`).join(", ")}`,
             flatMap(cards, (card) => [card.boosterId, card.cardId])
         );

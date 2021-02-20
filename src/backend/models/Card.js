@@ -6,6 +6,6 @@ export class Card {
     }
 
     static createFromDb(dbCard) {
-        return new Card(dbCard.id, dbCard.boosterid, dbCard.cardid);
+        return new Card(dbCard.id, dbCard.booster_id, dbCard.card_id);
     }
 }

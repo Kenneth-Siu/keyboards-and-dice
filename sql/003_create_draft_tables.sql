@@ -1,100 +1,101 @@
-INSERT INTO users(id, displayName) VALUES ('00', 'Bot Angrath');
-INSERT INTO users(id, displayName) VALUES ('01', 'Bot Arlinn');
-INSERT INTO users(id, displayName) VALUES ('02', 'Bot Ashiok');
-INSERT INTO users(id, displayName) VALUES ('03', 'Bot Basri');
-INSERT INTO users(id, displayName) VALUES ('04', 'Bot Calix');
-INSERT INTO users(id, displayName) VALUES ('05', 'Bot Chandra');
-INSERT INTO users(id, displayName) VALUES ('06', 'Bot Daretti');
-INSERT INTO users(id, displayName) VALUES ('07', 'Bot Davriel');
-INSERT INTO users(id, displayName) VALUES ('08', 'Bot Elspeth');
-INSERT INTO users(id, displayName) VALUES ('09', 'Bot Garruk');
-INSERT INTO users(id, displayName) VALUES ('10', 'Bot Huatli');
-INSERT INTO users(id, displayName) VALUES ('11', 'Bot Jace');
-INSERT INTO users(id, displayName) VALUES ('12', 'Bot Jaya');
-INSERT INTO users(id, displayName) VALUES ('13', 'Bot Yanggu');
-INSERT INTO users(id, displayName) VALUES ('14', 'Bot Kasmina');
-INSERT INTO users(id, displayName) VALUES ('15', 'Bot Kaya');
-INSERT INTO users(id, displayName) VALUES ('16', 'Bot Kiora');
-INSERT INTO users(id, displayName) VALUES ('17', 'Bot Koth');
-INSERT INTO users(id, displayName) VALUES ('18', 'Bot Liliana');
-INSERT INTO users(id, displayName) VALUES ('19', 'Bot Yanling');
-INSERT INTO users(id, displayName) VALUES ('20', 'Bot Nahiri');
-INSERT INTO users(id, displayName) VALUES ('21', 'Bot Narset');
-INSERT INTO users(id, displayName) VALUES ('22', 'Bot Niko');
-INSERT INTO users(id, displayName) VALUES ('23', 'Bot Nissa');
-INSERT INTO users(id, displayName) VALUES ('24', 'Bot Ob');
-INSERT INTO users(id, displayName) VALUES ('25', 'Bot Oko');
-INSERT INTO users(id, displayName) VALUES ('26', 'Bot Ral');
-INSERT INTO users(id, displayName) VALUES ('27', 'Bot Rowan');
-INSERT INTO users(id, displayName) VALUES ('28', 'Bot Saheeli');
-INSERT INTO users(id, displayName) VALUES ('29', 'Bot Samut');
-INSERT INTO users(id, displayName) VALUES ('30', 'Bot Sarkhan');
-INSERT INTO users(id, displayName) VALUES ('31', 'Bot Sorin');
-INSERT INTO users(id, displayName) VALUES ('32', 'Bot Tamiyo');
-INSERT INTO users(id, displayName) VALUES ('33', 'Bot Teferi');
-INSERT INTO users(id, displayName) VALUES ('34', 'Bot Tezzeret');
-INSERT INTO users(id, displayName) VALUES ('35', 'Bot Teyo');
-INSERT INTO users(id, displayName) VALUES ('36', 'Bot Tyvar');
-INSERT INTO users(id, displayName) VALUES ('37', 'Bot Tibalt');
-INSERT INTO users(id, displayName) VALUES ('38', 'Bot Ugin');
-INSERT INTO users(id, displayName) VALUES ('39', 'Bot Vivien');
-INSERT INTO users(id, displayName) VALUES ('40', 'Bot Vraska');
-INSERT INTO users(id, displayName) VALUES ('41', 'Bot Will');
+INSERT INTO users(id, display_name) VALUES ('00', 'Bot Angrath');
+INSERT INTO users(id, display_name) VALUES ('01', 'Bot Arlinn');
+INSERT INTO users(id, display_name) VALUES ('02', 'Bot Ashiok');
+INSERT INTO users(id, display_name) VALUES ('03', 'Bot Basri');
+INSERT INTO users(id, display_name) VALUES ('04', 'Bot Calix');
+INSERT INTO users(id, display_name) VALUES ('05', 'Bot Chandra');
+INSERT INTO users(id, display_name) VALUES ('06', 'Bot Daretti');
+INSERT INTO users(id, display_name) VALUES ('07', 'Bot Davriel');
+INSERT INTO users(id, display_name) VALUES ('08', 'Bot Elspeth');
+INSERT INTO users(id, display_name) VALUES ('09', 'Bot Garruk');
+INSERT INTO users(id, display_name) VALUES ('10', 'Bot Huatli');
+INSERT INTO users(id, display_name) VALUES ('11', 'Bot Jace');
+INSERT INTO users(id, display_name) VALUES ('12', 'Bot Jaya');
+INSERT INTO users(id, display_name) VALUES ('13', 'Bot Yanggu');
+INSERT INTO users(id, display_name) VALUES ('14', 'Bot Kasmina');
+INSERT INTO users(id, display_name) VALUES ('15', 'Bot Kaya');
+INSERT INTO users(id, display_name) VALUES ('16', 'Bot Kiora');
+INSERT INTO users(id, display_name) VALUES ('17', 'Bot Koth');
+INSERT INTO users(id, display_name) VALUES ('18', 'Bot Liliana');
+INSERT INTO users(id, display_name) VALUES ('19', 'Bot Yanling');
+INSERT INTO users(id, display_name) VALUES ('20', 'Bot Nahiri');
+INSERT INTO users(id, display_name) VALUES ('21', 'Bot Narset');
+INSERT INTO users(id, display_name) VALUES ('22', 'Bot Niko');
+INSERT INTO users(id, display_name) VALUES ('23', 'Bot Nissa');
+INSERT INTO users(id, display_name) VALUES ('24', 'Bot Ob');
+INSERT INTO users(id, display_name) VALUES ('25', 'Bot Oko');
+INSERT INTO users(id, display_name) VALUES ('26', 'Bot Ral');
+INSERT INTO users(id, display_name) VALUES ('27', 'Bot Rowan');
+INSERT INTO users(id, display_name) VALUES ('28', 'Bot Saheeli');
+INSERT INTO users(id, display_name) VALUES ('29', 'Bot Samut');
+INSERT INTO users(id, display_name) VALUES ('30', 'Bot Sarkhan');
+INSERT INTO users(id, display_name) VALUES ('31', 'Bot Sorin');
+INSERT INTO users(id, display_name) VALUES ('32', 'Bot Tamiyo');
+INSERT INTO users(id, display_name) VALUES ('33', 'Bot Teferi');
+INSERT INTO users(id, display_name) VALUES ('34', 'Bot Tezzeret');
+INSERT INTO users(id, display_name) VALUES ('35', 'Bot Teyo');
+INSERT INTO users(id, display_name) VALUES ('36', 'Bot Tyvar');
+INSERT INTO users(id, display_name) VALUES ('37', 'Bot Tibalt');
+INSERT INTO users(id, display_name) VALUES ('38', 'Bot Ugin');
+INSERT INTO users(id, display_name) VALUES ('39', 'Bot Vivien');
+INSERT INTO users(id, display_name) VALUES ('40', 'Bot Vraska');
+INSERT INTO users(id, display_name) VALUES ('41', 'Bot Will');
 
-CREATE TABLE draftStatuses (
+CREATE TABLE draft_statuses (
     id SMALLINT PRIMARY KEY NOT NULL,
-    displayName TEXT NOT NULL
+    display_name TEXT NOT NULL
 );
 
-INSERT INTO draftStatuses(id, displayName) VALUES (0, 'Ready to Start');
-INSERT INTO draftStatuses(id, displayName) VALUES (1, 'In Progress');
-INSERT INTO draftStatuses(id, displayName) VALUES (2, 'Complete');
+INSERT INTO draft_statuses(id, display_name) VALUES (0, 'Ready to Start');
+INSERT INTO draft_statuses(id, display_name) VALUES (1, 'In Progress');
+INSERT INTO draft_statuses(id, display_name) VALUES (2, 'Complete');
 
 CREATE TABLE drafts (
     id TEXT PRIMARY KEY NOT NULL,
-    ownerId TEXT NOT NULL,
+    owner_id TEXT NOT NULL,
     status SMALLINT NOT NULL,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
     CONSTRAINT fk_status
         FOREIGN KEY(status)
-        REFERENCES draftStatuses(id)
+        REFERENCES draft_statuses(id)
 );
 
 CREATE TABLE players (
     id SERIAL PRIMARY KEY NOT NULL,
-    userId TEXT NOT NULL,
-    draftId TEXT NOT NULL,
-    seatNumber SMALLINT,
+    user_id TEXT NOT NULL,
+    draft_id TEXT NOT NULL,
+    seat_number SMALLINT,
     CONSTRAINT fk_user
-        FOREIGN KEY(userId)
+        FOREIGN KEY(user_id)
         REFERENCES users(id),
     CONSTRAINT fk_draft
-        FOREIGN KEY(draftId)
+        FOREIGN KEY(draft_id)
         REFERENCES drafts(id)
 );
 
 CREATE TABLE boosters (
     id SERIAL PRIMARY KEY NOT NULL,
-    packNumber SMALLINT NOT NULL,
-    pickNumber SMALLINT NOT NULL,
-    playerId INTEGER,
+    pack_number SMALLINT NOT NULL,
+    pick_number SMALLINT NOT NULL,
+    player_id INTEGER,
     CONSTRAINT fk_player
-        FOREIGN KEY(playerId)
+        FOREIGN KEY(player_id)
         REFERENCES players(id)
 );
 
 CREATE TABLE cards (
     id SERIAL PRIMARY KEY NOT NULL,
-    boosterId INTEGER NOT NULL,
-    cardId SMALLINT NOT NULL,
+    booster_id INTEGER NOT NULL,
+    card_id SMALLINT NOT NULL,
     CONSTRAINT fk_booster
-        FOREIGN KEY(boosterId)
+        FOREIGN KEY(booster_id)
         REFERENCES boosters(id)
 );
 
 CREATE TABLE memories (
-    playerId INTEGER NOT NULL,
+    player_id INTEGER NOT NULL,
     memory TEXT,
     CONSTRAINT fk_player
-        FOREIGN KEY(playerId)
+        FOREIGN KEY(player_id)
         REFERENCES players(id)
 );

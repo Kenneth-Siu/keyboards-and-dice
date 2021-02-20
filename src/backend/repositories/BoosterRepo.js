@@ -3,7 +3,7 @@ import pool from "./pool.js";
 
 export function findAllForPlayer(playerId) {
     return pool
-        .query("SELECT * FROM boosters WHERE playerId = $1", [playerId])
+        .query("SELECT * FROM boosters WHERE player_id = $1", [playerId])
         .then((result) => {
             return result.rows.map((row) => Booster.createFromDb(row));
         })

@@ -1,4 +1,4 @@
 CREATE TABLE users (
     id TEXT PRIMARY KEY,
-    displayName TEXT NOT NULL
+    display_name TEXT NOT NULL
 );
