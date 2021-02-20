@@ -18,7 +18,7 @@ export default function SingleDraft() {
         <>
             <title>Draft · Terra 2170</title>
             <main className="single-draft-page">
-                <h1>Draftinnnnnng!</h1>
+                <h1>Draft{booster ? ` — Pack ${booster.packNumber} Pick ${booster.pickNumber}` : ""}</h1>
                 {busy ? <LoadingSpinner /> : booster ? boosterView() : readyToStartView()}
             </main>
         </>
