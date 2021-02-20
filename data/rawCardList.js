@@ -241,29 +241,31 @@ import _239 from "./cardImages/The Aion.jpg";
 import _240 from "./cardImages/Faraday Transmitter.jpg";
 import _241 from "./cardImages/Formling.jpg";
 import _242 from "./cardImages/Gravitic Collector.jpg";
-import _243 from "./cardImages/Hoverbike.jpg";
-import _244 from "./cardImages/Jetpack.jpg";
-import _245 from "./cardImages/Mox Voidstone.jpg";
-import _246 from "./cardImages/Mutagenic Serum.jpg";
-import _247 from "./cardImages/Prophetic Lens.jpg";
-import _248 from "./cardImages/Subspace Capacitor.jpg";
-import _249 from "./cardImages/Swallowers of Civilization.jpg";
-import _250 from "./cardImages/Trojan Horse.jpg";
-import _251 from "./cardImages/Adamantium Mine.jpg";
-import _252 from "./cardImages/Amanthoid Mine.jpg";
-import _253 from "./cardImages/Antimatter Mine.jpg";
-import _254 from "./cardImages/Distant Colony.jpg";
-import _255 from "./cardImages/Hexaferrum Mine.jpg";
-import _256 from "./cardImages/Hong Wai Factory.jpg";
-import _257 from "./cardImages/Hydromiel Mine.jpg";
-import _258 from "./cardImages/Hyperium Mine.jpg";
-import _259 from "./cardImages/The Mercurite Lens.jpg";
-import _260 from "./cardImages/Mercurite Mine.jpg";
-import _261 from "./cardImages/Orichalcix Mine.jpg";
-import _262 from "./cardImages/Quadrinix Mine.jpg";
-import _263 from "./cardImages/Siderite Mine.jpg";
-import _264 from "./cardImages/Spire of Industry.jpg";
-import _265 from "./cardImages/Terramorphic Expanse.jpg";
+import _243 from "./cardImages/Hexblade Ravager.jpg";
+import _244 from "./cardImages/Hoverbike.jpg";
+import _245 from "./cardImages/Jetpack.jpg";
+import _246 from "./cardImages/Mox Voidstone.jpg";
+import _247 from "./cardImages/Mutagenic Serum.jpg";
+import _248 from "./cardImages/Prophetic Lens.jpg";
+import _249 from "./cardImages/Slipstream Snapper.jpg";
+import _250 from "./cardImages/Subspace Capacitor.jpg";
+import _251 from "./cardImages/Swallowers of Civilization.jpg";
+import _252 from "./cardImages/Trojan Horse.jpg";
+import _253 from "./cardImages/Adamantium Mine.jpg";
+import _254 from "./cardImages/Amanthoid Mine.jpg";
+import _255 from "./cardImages/Antimatter Mine.jpg";
+import _256 from "./cardImages/Distant Colony.jpg";
+import _257 from "./cardImages/Hexaferrum Mine.jpg";
+import _258 from "./cardImages/Hong Wai Factory.jpg";
+import _259 from "./cardImages/Hydromiel Mine.jpg";
+import _260 from "./cardImages/Hyperium Mine.jpg";
+import _261 from "./cardImages/The Mercurite Lens.jpg";
+import _262 from "./cardImages/Mercurite Mine.jpg";
+import _263 from "./cardImages/Orichalcix Mine.jpg";
+import _264 from "./cardImages/Quadrinix Mine.jpg";
+import _265 from "./cardImages/Siderite Mine.jpg";
+import _266 from "./cardImages/Spire of Industry.jpg";
+import _267 from "./cardImages/Terramorphic Expanse.jpg";
 const rawCardList = [
     {
         "name": "Karn, the Introspective",
@@ -1967,164 +1969,178 @@ const rawCardList = [
         "rarity": "R"
     },
     {
-        "name": "Hoverbike",
+        "name": "Hexblade Ravager",
         "imageName": _243,
         "color": "",
         "id": 243,
+        "rarity": "C"
+    },
+    {
+        "name": "Hoverbike",
+        "imageName": _244,
+        "color": "",
+        "id": 244,
         "rarity": "U"
     },
     {
         "name": "Jetpack",
-        "imageName": _244,
+        "imageName": _245,
         "color": "",
-        "id": 244,
+        "id": 245,
         "rarity": "C"
     },
     {
         "name": "Mox Voidstone",
-        "imageName": _245,
+        "imageName": _246,
         "color": "",
-        "id": 245,
+        "id": 246,
         "rarity": "M"
     },
     {
         "name": "Mutagenic Serum",
-        "imageName": _246,
+        "imageName": _247,
         "color": "",
-        "id": 246,
+        "id": 247,
         "rarity": "R"
     },
     {
         "name": "Prophetic Lens",
-        "imageName": _247,
+        "imageName": _248,
         "color": "",
-        "id": 247,
+        "id": 248,
+        "rarity": "C"
+    },
+    {
+        "name": "Slipstream Snapper",
+        "imageName": _249,
+        "color": "",
+        "id": 249,
         "rarity": "C"
     },
     {
         "name": "Subspace Capacitor",
-        "imageName": _248,
+        "imageName": _250,
         "color": "",
-        "id": 248,
+        "id": 250,
         "rarity": "R"
     },
     {
         "name": "Swallowers of Civilization",
-        "imageName": _249,
+        "imageName": _251,
         "color": "",
-        "id": 249,
+        "id": 251,
         "rarity": "M"
     },
     {
         "name": "Trojan Horse",
-        "imageName": _250,
+        "imageName": _252,
         "color": "",
-        "id": 250,
+        "id": 252,
         "rarity": "U"
     },
     {
         "name": "Adamantium Mine",
-        "imageName": _251,
-        "color": "",
-        "id": 251,
-        "rarity": "C"
-    },
-    {
-        "name": "Amanthoid Mine",
-        "imageName": _252,
-        "color": "",
-        "id": 252,
-        "rarity": "C"
-    },
-    {
-        "name": "Antimatter Mine",
         "imageName": _253,
         "color": "",
         "id": 253,
         "rarity": "C"
     },
     {
-        "name": "Distant Colony",
+        "name": "Amanthoid Mine",
         "imageName": _254,
         "color": "",
         "id": 254,
         "rarity": "C"
     },
     {
-        "name": "Hexaferrum Mine",
+        "name": "Antimatter Mine",
         "imageName": _255,
         "color": "",
         "id": 255,
         "rarity": "C"
     },
     {
-        "name": "Hong Wai Factory",
+        "name": "Distant Colony",
         "imageName": _256,
         "color": "",
         "id": 256,
-        "rarity": "R"
+        "rarity": "C"
     },
     {
-        "name": "Hydromiel Mine",
+        "name": "Hexaferrum Mine",
         "imageName": _257,
         "color": "",
         "id": 257,
         "rarity": "C"
     },
     {
-        "name": "Hyperium Mine",
+        "name": "Hong Wai Factory",
         "imageName": _258,
         "color": "",
         "id": 258,
-        "rarity": "C"
-    },
-    {
-        "name": "The Mercurite Lens",
-        "imageName": _259,
-        "color": "",
-        "id": 259,
         "rarity": "R"
     },
     {
-        "name": "Mercurite Mine",
+        "name": "Hydromiel Mine",
+        "imageName": _259,
+        "color": "",
+        "id": 259,
+        "rarity": "C"
+    },
+    {
+        "name": "Hyperium Mine",
         "imageName": _260,
         "color": "",
         "id": 260,
         "rarity": "C"
     },
     {
-        "name": "Orichalcix Mine",
+        "name": "The Mercurite Lens",
         "imageName": _261,
         "color": "",
         "id": 261,
-        "rarity": "C"
+        "rarity": "R"
     },
     {
-        "name": "Quadrinix Mine",
+        "name": "Mercurite Mine",
         "imageName": _262,
         "color": "",
         "id": 262,
         "rarity": "C"
     },
     {
-        "name": "Siderite Mine",
+        "name": "Orichalcix Mine",
         "imageName": _263,
         "color": "",
         "id": 263,
         "rarity": "C"
     },
     {
-        "name": "Spire of Industry",
+        "name": "Quadrinix Mine",
         "imageName": _264,
         "color": "",
         "id": 264,
+        "rarity": "C"
+    },
+    {
+        "name": "Siderite Mine",
+        "imageName": _265,
+        "color": "",
+        "id": 265,
+        "rarity": "C"
+    },
+    {
+        "name": "Spire of Industry",
+        "imageName": _266,
+        "color": "",
+        "id": 266,
         "rarity": "R"
     },
     {
         "name": "Terramorphic Expanse",
-        "imageName": _265,
+        "imageName": _267,
         "color": "",
-        "id": 265,
+        "id": 267,
         "rarity": "C"
     }];
 export default rawCardList;
