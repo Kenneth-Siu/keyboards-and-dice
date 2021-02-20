@@ -27,9 +27,11 @@ export default function SingleDraft() {
     function boosterView() {
         return (
             <>
-                {cards.map((card) => (
-                    <img className="card" src={card.imageName} key={card.id} loading="lazy" />
-                ))}
+                <div className="booster">
+                    {cards.map((card) => (
+                        <img className="card" src={card.imageName} key={card.id} loading="lazy" />
+                    ))}
+                </div>
             </>
         );
     }
