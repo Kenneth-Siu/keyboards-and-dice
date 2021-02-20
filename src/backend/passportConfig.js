@@ -10,7 +10,7 @@ export default function configurePassport() {
             {
                 clientID: process.env.GOOGLE_CLIENT_ID,
                 clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-                callbackURL: "/api/login/google/return",
+                callbackURL: process.env.CALLBACK_URL_BASE + "/api/login/google/return",
             },
             (accessToken, refreshToken, profile, done) => {
                 UserRepo.findOrCreate(profile)
@@ -29,7 +29,7 @@ export default function configurePassport() {
             {
                 clientID: process.env.FACEBOOK_CLIENT_ID,
                 clientSecret: process.env.FACEBOOK_CLIENT_SECRET,
-                callbackURL: "/api/login/facebook/return",
+                callbackURL: process.env.CALLBACK_URL_BASE + "/api/login/facebook/return",
             },
             (accessToken, refreshToken, profile, done) => {
                 UserRepo.findOrCreate(profile)
@@ -48,7 +48,7 @@ export default function configurePassport() {
             {
                 clientID: process.env.GITHUB_CLIENT_ID,
                 clientSecret: process.env.GITHUB_CLIENT_SECRET,
-                callbackURL: "/api/login/github/return",
+                callbackURL: process.env.CALLBACK_URL_BASE + "/api/login/github/return",
             },
             (accessToken, refreshToken, profile, done) => {
                 UserRepo.findOrCreate(profile)
