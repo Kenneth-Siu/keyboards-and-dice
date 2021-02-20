@@ -5,7 +5,7 @@ export class Card {
         this.cardId = cardId;
     }
 
-    static createFromDb(dbPlayer) {
-        return new Player(dbPlayer.id, dbPlayer.userId, dbPlayer.draftId, dbPlayer.seatNumber);
+    static createFromDb(dbCard) {
+        return new Card(dbCard.id, dbCard.boosterid, dbCard.cardid);
     }
 }

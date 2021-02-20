@@ -16,6 +16,6 @@ export class Draft {
     }
 
     static createFromDb(dbDraft) {
-        return new Draft(dbDraft.id, dbDraft.ownerId, dbDraft.status);
+        return new Draft(dbDraft.id, dbDraft.ownerid, dbDraft.status);
     }
 }
