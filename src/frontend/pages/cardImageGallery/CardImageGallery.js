@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import cardList from "../../models/cardList.js";
+import cardList from "../../../shared/cardList.js";
 import filterBackground from "../../../../data/filterBackground.jpg";
 import whiteManaSymbol from "../../../../data/whiteManaSymbol.svg";
 import blueManaSymbol from "../../../../data/blueManaSymbol.svg";
