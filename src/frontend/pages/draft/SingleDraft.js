@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { DRAFT_STATUSES } from "../../../config";
 import LoadingSpinner from "../../components/loadingSpinner/loadingSpinner";
-import { getCard } from "../../models/cardList";
+import { getCard } from "../../../shared/cardList";
 import "./SingleDraft.scss";
 
 export default function SingleDraft() {

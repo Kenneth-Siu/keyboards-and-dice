@@ -13,6 +13,7 @@ export const BLUE_COLOR = "U";
 export const BLACK_COLOR = "B";
 export const RED_COLOR = "R";
 export const GREEN_COLOR = "G";
+export const COLORLESS_COLOR = "";
 
 export const DRAFT_STATUSES = Object.freeze({
     0: "Ready to Start",

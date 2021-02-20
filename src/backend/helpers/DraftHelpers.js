@@ -1,7 +1,9 @@
 import {
     BLACK_COLOR,
     BLUE_COLOR,
+    COLORLESS_COLOR,
     COMMONS_IN_PACK,
+    COMMON_RARITY,
     GREEN_COLOR,
     MYTHIC_RARITY,
     RARE_RARITY,
@@ -9,9 +11,9 @@ import {
     RED_COLOR,
     UNCOMMON_RARITY,
     WHITE_COLOR,
-} from "../config.js";
+} from "../../config.js";
 import cardList from "../../shared/cardList.js";
-import { random, sample, sampleSize } from "lodash";
+import { random, sample, sampleSize, shuffle } from "lodash";
 
 const mythics = cardList.filter((card) => card.rarity === MYTHIC_RARITY);
 const rares = cardList.filter((card) => card.rarity === RARE_RARITY);
@@ -21,9 +23,9 @@ const blueCommons = cardList.filter((card) => card.rarity === COMMON_RARITY && c
 const blackCommons = cardList.filter((card) => card.rarity === COMMON_RARITY && card.color === BLACK_COLOR);
 const redCommons = cardList.filter((card) => card.rarity === COMMON_RARITY && card.color === RED_COLOR);
 const greenCommons = cardList.filter((card) => card.rarity === COMMON_RARITY && card.color === GREEN_COLOR);
-const colorlessCommons = cardList.filter((card) => card.rarity === COMMON_RARITY && card.color === "");
+const colorlessCommons = cardList.filter((card) => card.rarity === COMMON_RARITY && card.color === COLORLESS_COLOR);
 
-export function createBooster() {
+export function getBooster() {
     return [getRareSlot(), ...getUncommonSlots(), ...getCommonSlots()];
 }
 
@@ -82,12 +84,12 @@ function getCommonSlots() {
         underrepresentedColors.forEach((freq) => freq.count++);
     }
 
-    return [
+    return shuffle([
         ...sampleSize(whiteCommons, colorFrequencies[0].count),
         ...sampleSize(blueCommons, colorFrequencies[1].count),
         ...sampleSize(blackCommons, colorFrequencies[2].count),
         ...sampleSize(redCommons, colorFrequencies[3].count),
         ...sampleSize(greenCommons, colorFrequencies[4].count),
         ...sampleSize(colorlessCommons, colorFrequencies[5].count),
-    ];
+    ]);
 }

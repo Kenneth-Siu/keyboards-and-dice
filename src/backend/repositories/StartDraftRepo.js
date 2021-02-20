@@ -1,10 +1,10 @@
 import pool from "./pool.js";
 import { Player } from "../models/Player.js";
 import { BOT_USER_IDS, DEFAULT_PLAYERS_IN_DRAFT, DRAFT_STATUSES } from "../../config.js";
-import rawCardList from "../../../data/rawCardList.js";
 import { flatMap, sampleSize, shuffle } from "lodash";
 import { Card } from "../models/Card.js";
 import { Booster } from "../models/Booster.js";
+import { getBooster } from "../helpers/DraftHelpers.js";
 
 export class StartDraftRepo {
     async startDraft(draftId) {
@@ -14,7 +14,10 @@ export class StartDraftRepo {
             await this.client.query("BEGIN");
 
             const humanPlayers = await this.getHumanPlayers(draftId);
-            const botPlayers = await this.createAndGetBotPlayers(DEFAULT_PLAYERS_IN_DRAFT - humanPlayers.length, draftId);
+            const botPlayers = await this.createAndGetBotPlayers(
+                DEFAULT_PLAYERS_IN_DRAFT - humanPlayers.length,
+                draftId
+            );
 
             const playerIds = shuffle([
                 ...botPlayers.map((player) => player.id),
@@ -82,7 +85,7 @@ export class StartDraftRepo {
 
     async createCards(boosterIds) {
         const cards = flatMap(boosterIds, (boosterId) =>
-            sampleSize(rawCardList, 15).map((card) => new Card(null, boosterId, card.id))
+            getBooster().map((card) => new Card(null, boosterId, card.id))
         );
         await this.client.query(
             `INSERT INTO cards (boosterId, cardId)
