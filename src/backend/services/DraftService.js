@@ -15,13 +15,13 @@ export function getDraft(draftId, userId) {
     return PlayerRepo.find(userId, draftId)
         .then((player) => {
             if (!player) {
-                throw NotFoundError(`Draft with ID ${draftId} not found`);
+                throw new NotFoundError(`Draft with ID ${draftId} not found`);
             }
             return DraftRepo.find(draftId);
         })
         .then((draft) => {
             if (!draft) {
-                throw NotFoundError(`Draft with ID ${draftId} not found`);
+                throw new NotFoundError(`Draft with ID ${draftId} not found`);
             }
             return draft;
         });
@@ -31,7 +31,7 @@ export function createDraft(userId) {
     return DraftRepo.findAllOwnedByUser(userId)
         .then((drafts) => {
             if (drafts.length > USER_MAX_OWNED_DRAFTS) {
-                throw DraftLimitReachedError(`Max ${USER_MAX_OWNED_DRAFTS} drafts owned at a time`);
+                throw new DraftLimitReachedError(`Max ${USER_MAX_OWNED_DRAFTS} drafts owned at a time`);
             } else {
                 return;
             }
@@ -48,7 +48,7 @@ export function joinDraft(draftId, userId) {
     return DraftRepo.find(draftId)
         .then((draft) => {
             if (!draft || draft.status !== DRAFT_STATUSES.READY_TO_START) {
-                throw NotFoundError(`Draft with ID ${draftId} not found`);
+                throw new NotFoundError(`Draft with ID ${draftId} not found`);
             }
             return PlayerRepo.find(userId, draftId);
         })
@@ -61,9 +61,9 @@ export function joinDraft(draftId, userId) {
 }
 
 export function startDraft(draftId, userId) {
-    return DraftRepo.isOwnedByUser(draftId, userId).then((isOwned) => {
-        if (!isOwned) {
-            throw NotFoundError(`Draft with ID ${draftId} not found`);
+    return DraftRepo.find(draftId).then((draft) => {
+        if (draft.ownerId !== userId || draft.status !== DRAFT_STATUSES.READY_TO_START) {
+            throw new NotFoundError(`Draft with ID ${draftId} not found`);
         }
         return repoStartDraft(draftId);
     });
