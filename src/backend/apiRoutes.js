@@ -10,5 +10,8 @@ router.use("/users", UserController);
 router.use("/login", LoginController);
 router.use("/logout", LogoutController);
 router.use("/drafts", DraftController);
+router.use((req, res) => {
+    res.sendStatus(404);
+});
 
 export default router;

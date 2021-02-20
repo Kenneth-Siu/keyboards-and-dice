@@ -7,7 +7,7 @@ import "./Draft.scss";
 
 export default function Draft({ userDisplayName }) {
     const [drafts, setDrafts] = useState(null);
-    const [busy, setBusy] = useState(false);
+    const [busy, setBusy] = useState(true);
     const [joinDraftId, setJoinDraftId] = useState("");
     useEffect(getDrafts, []);
     return (
@@ -120,15 +120,16 @@ export default function Draft({ userDisplayName }) {
                 setBusy(false);
                 return setDrafts(drafts);
             })
-            .catch(() => {
+            .catch((err) => {
                 setBusy(false);
                 // TODO error handling
+                console.log(err);
             });
     }
 
     function joinDraft() {
         setBusy(true);
-        fetch(`/api/drafts/join/${joinDraftId.trim()}`, { method: "PUT" })
+        fetch(`/api/drafts/${joinDraftId.trim()}/join`, { method: "PUT" })
             .then((response) => {
                 setBusy(false);
                 if (!response.ok) {
@@ -136,9 +137,10 @@ export default function Draft({ userDisplayName }) {
                 }
                 getDrafts();
             })
-            .catch(() => {
+            .catch((err) => {
                 setBusy(false);
                 // TODO error handling
+                console.log(err);
             });
     }
 
@@ -152,9 +154,10 @@ export default function Draft({ userDisplayName }) {
                 }
                 getDrafts();
             })
-            .catch(() => {
+            .catch((err) => {
                 setBusy(false);
                 // TODO error handling
+                console.log(err);
             });
     }
 }

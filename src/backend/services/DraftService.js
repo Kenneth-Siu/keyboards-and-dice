@@ -6,6 +6,9 @@ import { DRAFT_STATUSES } from "../models/Draft.js";
 import { StartDraftRepo } from "../repositories/StartDraftRepo.js";
 import * as DraftRepo from "../repositories/DraftRepo.js";
 import * as PlayerRepo from "../repositories/PlayerRepo.js";
+import * as BoosterRepo from "../repositories/BoosterRepo.js";
+import * as CardRepo from "../repositories/CardRepo.js";
+import { minBy } from "lodash";
 
 export function getDraftsForUser(userId) {
     return DraftRepo.findAllForUser(userId);
@@ -24,6 +27,30 @@ export function getDraft(draftId, userId) {
                 throw new NotFoundError(`Draft with ID ${draftId} not found`);
             }
             return draft;
+        });
+}
+
+export function getBooster(draftId, userId) {
+    return PlayerRepo.find(userId, draftId)
+        .then((player) => {
+            if (!player) {
+                throw new NotFoundError(`Draft with ID ${draftId} not found`);
+            }
+            return BoosterRepo.findAllForPlayer(player.id);
+        })
+        .then((boosters) => {
+            if (boosters.length === 0) {
+                return null;
+            }
+            const booster = minBy(boosters, (booster) => booster.packNumber * 15 + booster.pickNumber);
+            return Promise.all([booster, CardRepo.findAllForBooster(booster.id)]);
+        })
+        .then(([booster, cards]) => {
+            return {
+                packNumber: booster.packNumber,
+                pickNumber: booster.pickNumber,
+                cards: cards.map((card) => card.cardId),
+            };
         });
 }
 

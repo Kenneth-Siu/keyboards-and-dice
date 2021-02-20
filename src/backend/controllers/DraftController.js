@@ -30,6 +30,20 @@ router.get("/:draftId", ensureLoggedIn, (req, res) => {
         });
 });
 
+router.get("/:draftId/booster", ensureLoggedIn, (req, res) => {
+    DraftService.getBooster(req.params.draftId, req.user.id)
+        .then((booster) => {
+            res.send(booster);
+        })
+        .catch((err) => {
+            if (err.name === NotFoundErrorName) {
+                res.sendStatus(404);
+            } else {
+                res.sendStatus(500);
+            }
+        });
+})
+
 router.post("/", ensureLoggedIn, (req, res) => {
     DraftService.createDraft(req.user.id)
         .then(() => {
@@ -44,7 +58,7 @@ router.post("/", ensureLoggedIn, (req, res) => {
         });
 });
 
-router.put("/join/:draftId", ensureLoggedIn, (req, res) => {
+router.put("/:draftId/join", ensureLoggedIn, (req, res) => {
     DraftService.joinDraft(req.params.draftId, req.user.id)
         .then(() => {
             res.sendStatus(201);
@@ -60,7 +74,7 @@ router.put("/join/:draftId", ensureLoggedIn, (req, res) => {
         });
 });
 
-router.post("/start/:draftId", ensureLoggedIn, (req, res) => {
+router.post("/:draftId/start", ensureLoggedIn, (req, res) => {
     DraftService.startDraft(req.params.draftId, req.user.id)
         .then(() => {
             res.sendStatus(201);
