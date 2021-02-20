@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link, useLocation } from "react-router-dom";
-import terraSplashImage from "../../../data/terraSplash.jpg";
-import commonSetSymbol from "../../../data/commonSetSymbol.svg";
+import terraSplashImage from "../../../../data/terraSplash.jpg";
+import commonSetSymbol from "../../../../data/commonSetSymbol.svg";
 import "./navBar.scss";
 
 export default function NavBar() {

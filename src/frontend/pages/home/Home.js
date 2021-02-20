@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import cardImageGallerySplash from "../../../data/cardImageGallerySplash.jpg";
-import draftSplash from "../../../data/draftSplash.jpg";
-import rulesFaqSplash from "../../../data/rulesFaqSplash.jpg";
-import downloadsSplash from "../../../data/downloadsSplash.jpg";
+import cardImageGallerySplash from "../../../../data/cardImageGallerySplash.jpg";
+import draftSplash from "../../../../data/draftSplash.jpg";
+import rulesFaqSplash from "../../../../data/rulesFaqSplash.jpg";
+import downloadsSplash from "../../../../data/downloadsSplash.jpg";
 import "./Home.scss";
 
 export default function Home() {

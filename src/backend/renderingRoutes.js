@@ -1,4 +1,4 @@
-import App from "../pages/App.js";
+import App from "../frontend/pages/App.js";
 import React from "react";
 import express from "express";
 import { StaticRouter } from "react-router-dom";

@@ -1,4 +1,4 @@
-import App from "./pages/App.js";
+import App from "./frontend/pages/App.js";
 import { BrowserRouter } from "react-router-dom";
 import React from "react";
 import { hydrate } from "react-dom";

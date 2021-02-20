@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import cardList from "../../models/cardList.js";
-import filterBackground from "../../../data/filterBackground.jpg";
-import whiteManaSymbol from "../../../data/whiteManaSymbol.svg";
-import blueManaSymbol from "../../../data/blueManaSymbol.svg";
-import blackManaSymbol from "../../../data/blackManaSymbol.svg";
-import redManaSymbol from "../../../data/redManaSymbol.svg";
-import greenManaSymbol from "../../../data/greenManaSymbol.svg";
-import goldManaSymbol from "../../../data/goldManaSymbol.svg";
-import colorlessManaSymbol from "../../../data/colorlessManaSymbol.svg";
-import commonSetSymbol from "../../../data/commonSetSymbol.svg";
-import uncommonSetSymbol from "../../../data/uncommonSetSymbol.svg";
-import rareSetSymbol from "../../../data/rareSetSymbol.svg";
-import mythicSetSymbol from "../../../data/mythicSetSymbol.svg";
+import filterBackground from "../../../../data/filterBackground.jpg";
+import whiteManaSymbol from "../../../../data/whiteManaSymbol.svg";
+import blueManaSymbol from "../../../../data/blueManaSymbol.svg";
+import blackManaSymbol from "../../../../data/blackManaSymbol.svg";
+import redManaSymbol from "../../../../data/redManaSymbol.svg";
+import greenManaSymbol from "../../../../data/greenManaSymbol.svg";
+import goldManaSymbol from "../../../../data/goldManaSymbol.svg";
+import colorlessManaSymbol from "../../../../data/colorlessManaSymbol.svg";
+import commonSetSymbol from "../../../../data/commonSetSymbol.svg";
+import uncommonSetSymbol from "../../../../data/uncommonSetSymbol.svg";
+import rareSetSymbol from "../../../../data/rareSetSymbol.svg";
+import mythicSetSymbol from "../../../../data/mythicSetSymbol.svg";
 import "./CardImageGallery.scss";
 
 export default function CardImageGallery() {

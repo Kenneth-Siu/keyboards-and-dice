@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { DRAFT_STATUSES } from "../../backend/models/Draft";
+import { DRAFT_STATUSES } from "../../../backend/models/Draft";
 import LoadingSpinner from "../../components/loadingSpinner/loadingSpinner";
 import { getCard } from "../../models/cardList";
 import "./SingleDraft.scss";

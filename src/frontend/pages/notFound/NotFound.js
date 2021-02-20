@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import terraSymbol from "../../../data/terraSymbol.svg";
+import terraSymbol from "../../../../data/terraSymbol.svg";
 import "./NotFound.scss";
 
 export default function NotFound() {
