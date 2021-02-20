@@ -3,6 +3,7 @@ import { USER_MAX_OWNED_DRAFTS } from "../config.js";
 import DraftLimitReachedError from "../errors/DraftLimitReachedError.js";
 import NotFoundError from "../errors/NotFoundError.js";
 import { DRAFT_STATUSES } from "../models/Draft.js";
+import { startDraft as repoStartDraft } from "../repositories/startDraft.js";
 import * as DraftRepo from "../repositories/DraftRepo.js";
 import * as PlayerRepo from "../repositories/PlayerRepo.js";
 
@@ -46,18 +47,16 @@ export function createDraft(userId) {
 export function joinDraft(draftId, userId) {
     return DraftRepo.find(draftId)
         .then((draft) => {
-            if (!draft || draft.statusName !== DRAFT_STATUSES.2) {
+            if (!draft || draft.status !== DRAFT_STATUSES.READY_TO_START) {
                 throw NotFoundError(`Draft with ID ${draftId} not found`);
             }
-            return;
+            return PlayerRepo.find(userId, draftId);
         })
-        .then(() => {
-            return PlayerRepo.find(userId, draftId).then((player) => {
-                if (!player) {
-                    return PlayerRepo.create(userId, draftId);
-                }
-                return;
-            });
+        .then((player) => {
+            if (!player) {
+                return PlayerRepo.create(userId, draftId);
+            }
+            return;
         });
 }
 
@@ -66,5 +65,6 @@ export function startDraft(draftId, userId) {
         if (!isOwned) {
             throw NotFoundError(`Draft with ID ${draftId} not found`);
         }
+        return repoStartDraft(draftId);
     });
 }

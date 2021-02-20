@@ -13,6 +13,23 @@ export function create(userId, draftId) {
         });
 }
 
+export function createManyForDraft(userIds, draftId) {
+    return pool
+        .query(
+            `INSERT INTO players (userId, draftId)
+            VALUES ${userIds.map((_, index) => `($${index + 2}, $1)`).join(", ")}
+            RETURNING *;`,
+            [draftId, ...userIds]
+        )
+        .then((result) => {
+            return result.rows.map((row) => Player.createFromDb(row));
+        })
+        .catch((error) => {
+            console.log(error);
+            throw error;
+        });
+}
+
 export function find(userId, draftId) {
     return pool
         .query("SELECT * FROM players WHERE userId = $1 AND draftId = $2", [userId, draftId])
@@ -33,17 +50,10 @@ export function findAllForUser(userId) {
     return pool
         .query("SELECT * FROM players WHERE userId = $1", [userId])
         .then((result) => {
-            return result.rows.map(row => Player.createFromDb(row));
+            return result.rows.map((row) => Player.createFromDb(row));
         })
         .catch((error) => {
             console.log(error);
             throw error;
         });
-}
-
-export function updateSeat(playerId, seatNumber) {
-    return pool.query("UPDATE players SET seatNumber = $1 WHERE id = $2", [seatNumber, playerId]).catch((error) => {
-        console.log(error);
-        throw error;
-    });
 }

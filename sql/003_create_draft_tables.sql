@@ -83,7 +83,7 @@ CREATE TABLE boosters (
 );
 
 CREATE TABLE cards (
-    internalId SERIAL PRIMARY KEY NOT NULL,
+    id SERIAL PRIMARY KEY NOT NULL,
     boosterId INTEGER NOT NULL,
     cardId SMALLINT NOT NULL,
     CONSTRAINT fk_booster

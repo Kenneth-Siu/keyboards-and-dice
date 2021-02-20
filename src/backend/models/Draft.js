@@ -1,7 +1,10 @@
 export const DRAFT_STATUSES = Object.freeze({
     0: "Ready to Start",
+    READY_TO_START: 0,
     1: "In Progress",
+    IN_PROGRESS: 1,
     2: "Complete",
+    COMPLETE: 2
 });
 
 export class Draft {

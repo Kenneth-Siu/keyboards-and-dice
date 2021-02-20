@@ -57,3 +57,15 @@ export function findAllOwnedByUser(userId) {
             throw error;
         });
 }
+
+export function isOwnedByUser(id, userId) {
+    return pool
+        .query(`SELECT * FROM drafts WHERE id = $1 AND ownerId = $2`, [id, userId])
+        .then((result) => {
+            return result.rows.length > 0;
+        })
+        .catch((error) => {
+            console.log(error);
+            throw error;
+        });
+}
