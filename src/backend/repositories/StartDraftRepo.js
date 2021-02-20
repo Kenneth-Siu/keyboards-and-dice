@@ -1,7 +1,6 @@
 import pool from "./pool.js";
-import { DRAFT_STATUSES } from "../models/Draft.js";
 import { Player } from "../models/Player.js";
-import { BOT_USER_IDS, DEFAULT_PLAYERS_IN_DRAFT } from "../config.js";
+import { BOT_USER_IDS, DEFAULT_PLAYERS_IN_DRAFT, DRAFT_STATUSES } from "../../config.js";
 import rawCardList from "../../../data/rawCardList.js";
 import { flatMap, sampleSize, shuffle } from "lodash";
 import { Card } from "../models/Card.js";

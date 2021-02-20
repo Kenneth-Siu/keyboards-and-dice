@@ -1,8 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
-import { USER_MAX_OWNED_DRAFTS } from "../config.js";
+import { USER_MAX_OWNED_DRAFTS, DRAFT_STATUSES } from "../../config.js";
 import DraftLimitReachedError from "../errors/DraftLimitReachedError.js";
 import NotFoundError from "../errors/NotFoundError.js";
-import { DRAFT_STATUSES } from "../models/Draft.js";
 import { StartDraftRepo } from "../repositories/StartDraftRepo.js";
 import * as DraftRepo from "../repositories/DraftRepo.js";
 import * as PlayerRepo from "../repositories/PlayerRepo.js";

@@ -1,6 +1,15 @@
 export const USER_MAX_OWNED_DRAFTS = 10;
 export const DEFAULT_PLAYERS_IN_DRAFT = 8;
 
+export const DRAFT_STATUSES = Object.freeze({
+    0: "Ready to Start",
+    READY_TO_START: 0,
+    1: "In Progress",
+    IN_PROGRESS: 1,
+    2: "Complete",
+    COMPLETE: 2
+});
+
 export const BOT_USER_IDS = [
     "00",
     "01",
