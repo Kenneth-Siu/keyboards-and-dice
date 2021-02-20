@@ -61,18 +61,18 @@ export default function SingleDraft() {
                     setBusy(false);
                     return;
                 }
-                return fetch(`/api/drafts/${draftId}/booster`);
-            })
-            .then((response) => {
-                if (!response.ok) {
-                    throw "Response not ok";
-                }
-                return response.json();
-            })
-            .then((responseBooster) => {
-                setBooster(responseBooster);
-                setCards(responseBooster.cards.map((cardId) => getCard(cardId)));
-                setBusy(false);
+                return fetch(`/api/drafts/${draftId}/booster`)
+                    .then((response) => {
+                        if (!response.ok) {
+                            throw "Response not ok";
+                        }
+                        return response.json();
+                    })
+                    .then((responseBooster) => {
+                        setBooster(responseBooster);
+                        setCards(responseBooster.cards.map((cardId) => getCard(cardId)));
+                        setBusy(false);
+                    });
             })
             .catch((err) => {
                 // TODO error handling
