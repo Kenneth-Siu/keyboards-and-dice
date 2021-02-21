@@ -30,6 +30,8 @@ export async function getDraft(draftId, userId) {
     if (!draft) {
         throw new NotFoundError(`Draft with ID ${draftId} not found`);
     }
+    const players = await PlayerRepo.findDisplayNamesForDraft(draftId);
+    draft.players = players.map((player) => ({ seatNumber: player.seatNumber, displayName: player.displayName }));
     return draft;
 }
 

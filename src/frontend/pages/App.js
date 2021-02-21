@@ -22,7 +22,7 @@ export default function App({ userDisplayName }) {
                 <Route exact path="/card-image-gallery" component={CardImageGallery} />
                 <Route exact path="/faq" component={Faq} />
                 <PrivateRoute exact path="/draft" component={Draft} authed={userDisplayName} userDisplayName={userDisplayName} />
-                <PrivateRoute exact path="/draft/:draftId" component={SingleDraft} authed={userDisplayName} />
+                <PrivateRoute exact path="/draft/:draftId" component={SingleDraft} authed={userDisplayName} userDisplayName={userDisplayName} />
                 <Route exact path="/downloads" component={Downloads} />
                 <Route exact path="/login" component={Login} />
                 <Route component={NotFound} />

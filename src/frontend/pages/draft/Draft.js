@@ -59,13 +59,22 @@ export default function Draft({ userDisplayName }) {
                                     <tr key={draft.id}>
                                         <td className="draft-id">
                                             <div>
-                                                <span className="mono-space">
+                                                <div className="mono-space">
                                                     <Link to={`/draft/${draft.id}`}>{draft.id}</Link>
-                                                </span>
+                                                </div>
                                                 {draft.players
                                                     .sort((a, b) => a.seatNumber - b.seatNumber)
-                                                    .map((player) => (
-                                                        <span className="player-name">{player.displayName}</span>
+                                                    .map((player, index) => (
+                                                        <div
+                                                            className={`player-name ${
+                                                                player.displayName === userDisplayName
+                                                                    ? "current-user"
+                                                                    : ""
+                                                            }`}
+                                                            key={index}
+                                                        >
+                                                            {player.displayName}
+                                                        </div>
                                                     ))}
                                             </div>
                                         </td>
