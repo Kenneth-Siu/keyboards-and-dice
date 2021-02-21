@@ -143,11 +143,19 @@
                     margin-right: 0;
                 }
             }
-            @media (min-width: 1536px) {
+            @media (min-width: 1536px) and (max-width: 1839px) {
                 width: 16.25%;
                 margin-right: 0.5%;
                 margin-bottom: 0.5%;
                 &:nth-child(6n) {
+                    margin-right: 0;
+                }
+            }
+            @media (min-width: 1840px) {
+                width: 14%;
+                margin-right: 0.333%;
+                margin-bottom: 0.333%;
+                &:nth-child(7n) {
                     margin-right: 0;
                 }
             }
