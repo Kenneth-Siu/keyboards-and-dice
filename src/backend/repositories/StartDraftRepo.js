@@ -32,7 +32,6 @@ export class StartDraftRepo {
             await this.client.query("COMMIT");
         } catch (error) {
             await this.client.query("ROLLBACK");
-            console.log(error);
             throw error;
         } finally {
             this.client.release();
@@ -40,7 +39,11 @@ export class StartDraftRepo {
     }
 
     async getHumanPlayers(draftId) {
-        const result = await this.client.query("SELECT * FROM players WHERE draft_id = $1", [draftId]);
+        const result = await this.client.query(
+            `SELECT * FROM players 
+            WHERE draft_id = $1`,
+            [draftId]
+        );
         return result.rows.map((row) => Player.createFromDb(row));
     }
 
@@ -70,7 +73,12 @@ export class StartDraftRepo {
     }
 
     async setDraftToInProgress(draftId) {
-        await this.client.query(`UPDATE drafts SET status = ${DRAFT_STATUSES.IN_PROGRESS} WHERE id = $1`, [draftId]);
+        await this.client.query(
+            `UPDATE drafts 
+            SET status = ${DRAFT_STATUSES.IN_PROGRESS} 
+            WHERE id = $1`,
+            [draftId]
+        );
     }
 
     async createAndGetBoosters(playerIds) {

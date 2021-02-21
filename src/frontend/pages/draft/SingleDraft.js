@@ -48,52 +48,48 @@ export default function SingleDraft() {
 
     function getDraft() {
         setBusy(true);
-        fetch(`/api/drafts/${draftId}`)
-            .then((response) => {
-                if (!response.ok) {
+        (async () => {
+            try {
+                const r = await fetch(`/api/drafts/${draftId}`);
+                if (!r.ok) {
                     throw "Response not ok";
                 }
-                return response.json();
-            })
-            .then((responseDraft) => {
+                const responseDraft = await r.json();
                 setDraft(responseDraft);
                 if (responseDraft.status === DRAFT_STATUSES.READY_TO_START) {
                     setBusy(false);
                     return;
                 }
-                return fetch(`/api/drafts/${draftId}/booster`)
-                    .then((response) => {
-                        if (!response.ok) {
-                            throw "Response not ok";
-                        }
-                        return response.json();
-                    })
-                    .then((responseBooster) => {
-                        setBooster(responseBooster);
-                        setCards(responseBooster.cards.map((cardId) => getCard(cardId)));
-                        setBusy(false);
-                    });
-            })
-            .catch((err) => {
+                const r2 = await fetch(`/api/drafts/${draftId}/booster`);
+                if (!r2.ok) {
+                    throw "Response not ok";
+                }
+                const responseBooster = await r2.json();
+                setBooster(responseBooster);
+                setCards(responseBooster.cards.map((cardId) => getCard(cardId)));
+                setBusy(false);
+            } catch (err) {
                 // TODO error handling
                 setBusy(false);
                 console.log(err);
-            });
+            }
+        })();
     }
 
     function startDraft() {
         setBusy(true);
-        fetch(`/api/drafts/${draftId}/start`, { method: "POST" })
-            .then((response) => {
-                if (!response.ok) {
+        (async () => {
+            try {
+                const r = await fetch(`/api/drafts/${draftId}/start`, { method: "POST" });
+                if (!r.ok) {
                     throw "Response not ok";
                 }
                 getDraft();
-            })
-            .catch((err) => {
+            } catch (err) {
                 // TODO error handling
                 setBusy(false);
                 console.log(err);
-            });
+            }
+        })();
     }
 }

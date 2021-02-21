@@ -1,7 +1,10 @@
 export const USER_MAX_OWNED_DRAFTS = 10;
 export const DEFAULT_PLAYERS_IN_DRAFT = 8;
 export const RARE_TO_MYTHIC_RATIO = 7;
+export const RARES_IN_PACK = 1;
+export const UNCOMMONS_IN_PACK = 3;
 export const COMMONS_IN_PACK = 10;
+export const CARDS_IN_PACK = RARES_IN_PACK + UNCOMMONS_IN_PACK + COMMONS_IN_PACK;
 
 export const MYTHIC_RARITY = "M";
 export const RARE_RARITY = "R";

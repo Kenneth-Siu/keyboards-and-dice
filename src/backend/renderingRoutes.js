@@ -10,7 +10,7 @@ const router = express.Router();
 
 router.get("*", (req, res) => {
     const context = {};
-    const userDisplayName = (req.user && req.user.display_name) || "";
+    const userDisplayName = (req.user && req.user.displayName) || "";
     const markup = renderToString(
         <StaticRouter context={context} location={req.url}>
             <App userDisplayName={userDisplayName} />

@@ -12,4 +12,8 @@ export class Draft {
     static createFromDb(dbDraft) {
         return new Draft(dbDraft.id, dbDraft.owner_id, dbDraft.status, new Date(dbDraft.created_at));
     }
+
+    static createManyFromDb(dbDrafts) {
+        return dbDrafts.map(dbDraft => Draft.createFromDb(dbDraft));
+    }
 }

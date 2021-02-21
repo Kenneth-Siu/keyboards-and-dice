@@ -48,13 +48,17 @@ export default function Draft({ userDisplayName }) {
                     <tbody>
                         {drafts.length === 0 ? (
                             <tr>
-                                <td className="no-drafts" colSpan="2">You aren't in any drafts at the moment... <span className="emoji">🌧</span></td>
+                                <td className="no-drafts" colSpan="2">
+                                    You aren't in any drafts at the moment... <span className="emoji">🌧</span>
+                                </td>
                             </tr>
                         ) : (
                             drafts.map((draft) => (
                                 <tr key={draft.id}>
                                     <td className="draft-id">
-                                        <Link to={`/draft/${draft.id}`} className="mono-space">{draft.id}</Link>
+                                        <Link to={`/draft/${draft.id}`} className="mono-space">
+                                            {draft.id}
+                                        </Link>
                                     </td>
                                     <td>{draft.statusName}</td>
                                     <td className="controls">
@@ -109,55 +113,54 @@ export default function Draft({ userDisplayName }) {
 
     function getDrafts() {
         setBusy(true);
-        fetch("/api/drafts")
-            .then((response) => {
-                if (!response.ok) {
+        (async () => {
+            try {
+                const r = await fetch("/api/drafts");
+                if (!r.ok) {
                     throw "Response not ok";
                 }
-                return response.json();
-            })
-            .then((drafts) => {
+                const drafts = await r.json();
                 setBusy(false);
-                return setDrafts(drafts);
-            })
-            .catch((err) => {
+                setDrafts(drafts);
+            } catch (err) {
                 setBusy(false);
                 // TODO error handling
                 console.log(err);
-            });
+            }
+        })();
     }
 
     function joinDraft() {
         setBusy(true);
-        fetch(`/api/drafts/${joinDraftId.trim()}/join`, { method: "PUT" })
-            .then((response) => {
-                setBusy(false);
-                if (!response.ok) {
+        (async () => {
+            try {
+                const r = await fetch(`/api/drafts/${joinDraftId.trim()}/join`, { method: "PUT" });
+                if (!r.ok) {
                     throw "Response not ok";
                 }
                 getDrafts();
-            })
-            .catch((err) => {
+            } catch (err) {
                 setBusy(false);
                 // TODO error handling
                 console.log(err);
-            });
+            }
+        })();
     }
 
     function createDraft() {
         setBusy(true);
-        fetch("/api/drafts", { method: "POST" })
-            .then((response) => {
-                setBusy(false);
-                if (!response.ok) {
+        (async () => {
+            try {
+                const r = await fetch("/api/drafts", { method: "POST" });
+                if (!r.ok) {
                     throw "Response not ok";
                 }
                 getDrafts();
-            })
-            .catch((err) => {
+            } catch (err) {
                 setBusy(false);
                 // TODO error handling
                 console.log(err);
-            });
+            }
+        })();
     }
 }

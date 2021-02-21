@@ -8,7 +8,8 @@ router.get("/", (req, res) => {
         .then((user) => {
             res.send(user);
         })
-        .catch((error) => {
+        .catch((err) => {
+            console.log(err);
             res.sendStatus(500);
         });
 });

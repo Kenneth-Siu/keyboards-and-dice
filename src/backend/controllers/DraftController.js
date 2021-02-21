@@ -11,7 +11,8 @@ router.get("/", ensureLoggedIn, (req, res) => {
         .then((drafts) => {
             res.send(drafts);
         })
-        .catch(() => {
+        .catch((err) => {
+            console.log(err);
             res.sendStatus(500);
         });
 });
@@ -25,6 +26,7 @@ router.get("/:draftId", ensureLoggedIn, (req, res) => {
             if (err.name === NotFoundErrorName) {
                 res.sendStatus(404);
             } else {
+                console.log(err);
                 res.sendStatus(500);
             }
         });
@@ -39,6 +41,7 @@ router.get("/:draftId/booster", ensureLoggedIn, (req, res) => {
             if (err.name === NotFoundErrorName) {
                 res.sendStatus(404);
             } else {
+                console.log(err);
                 res.sendStatus(500);
             }
         });
@@ -53,6 +56,7 @@ router.post("/", ensureLoggedIn, (req, res) => {
             if (err.name === DraftLimitReachedErrorName) {
                 res.status(400).send(err.message);
             } else {
+                console.log(err);
                 res.sendStatus(500);
             }
         });
@@ -69,6 +73,7 @@ router.put("/:draftId/join", ensureLoggedIn, (req, res) => {
             } else if (err.name === NotFoundErrorName) {
                 res.status(404).send(err.message);
             } else {
+                console.log(err);
                 res.sendStatus(500);
             }
         });
@@ -83,6 +88,7 @@ router.post("/:draftId/start", ensureLoggedIn, (req, res) => {
             if (err.name === NotFoundErrorName) {
                 res.status(404).send(err.message);
             } else {
+                console.log(err);
                 res.sendStatus(500);
             }
         });
