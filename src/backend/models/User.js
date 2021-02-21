@@ -7,4 +7,8 @@ export class User {
     static createFromDb(dbUser) {
         return new User(dbUser.id, dbUser.display_name);
     }
+
+    static createManyFromDb(dbUsers) {
+        return dbUsers.map(dbUser => User.createFromDb(dbUser));
+    }
 }

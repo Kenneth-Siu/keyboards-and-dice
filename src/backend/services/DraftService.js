@@ -10,7 +10,15 @@ import * as CardRepo from "../repositories/CardRepo.js";
 import { minBy } from "lodash";
 
 export async function getDraftsForUser(userId) {
-    return await DraftRepo.findAllForUser(userId);
+    const drafts = await DraftRepo.findAllForUser(userId);
+    const players = await PlayerRepo.findDisplayNamesForManyDrafts(drafts.map((draft) => draft.id));
+
+    drafts.forEach((draft) => {
+        draft.players = players
+            .filter((player) => player.draftId === draft.id)
+            .map((player) => ({ seatNumber: player.seatNumber, displayName: player.displayName }));
+    });
+    return drafts;
 }
 
 export async function getDraft(draftId, userId) {

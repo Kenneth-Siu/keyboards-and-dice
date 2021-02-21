@@ -451,8 +451,9 @@ export default function Faq() {
                         </h3>
                         <ul>
                             <li>
-                                You choose the X modes as you cast the spell and pay the appropriate mana cost. You must
-                                choose X different modes. Once modes are chosen, they can’t be changed.
+                                You choose the modes as you cast the spell and pay the appropriate mana cost. You must
+                                choose up to X different modes, but no more than the modes printed on the card. Once
+                                modes are chosen, they can’t be changed.
                             </li>
                             <li>
                                 You can choose a mode only if you can choose legal targets for that mode. Ignore the

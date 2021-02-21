@@ -23,7 +23,7 @@ export async function findOrCreate(user) {
     }
 }
 
-export async function getUser(id) {
+export async function find(id) {
     try {
         const result = await pool.query(
             `SELECT * FROM users 
@@ -31,6 +31,18 @@ export async function getUser(id) {
             [id]
         );
         return User.createFromDb(result.rows[0]);
+    } catch (error) {
+        throw error;
+    }
+}
+
+export async function findMany(ids) {
+    try {
+        const result = await pool.query(
+            `SELECT * FROM users
+            WHERE id IN (${ids.map((_, index) => `$${index + 1}`).join(", ")})`
+        );
+        return User.createManyFromDb(result.rows);
     } catch (error) {
         throw error;
     }

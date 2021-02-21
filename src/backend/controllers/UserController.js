@@ -4,7 +4,7 @@ import * as UserRepo from "../repositories/UserRepo.js";
 const router = express.Router();
 
 router.get("/", (req, res) => {
-    UserRepo.getUser(1)
+    UserRepo.find(1)
         .then((user) => {
             res.send(user);
         })

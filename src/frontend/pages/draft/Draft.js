@@ -53,26 +53,39 @@ export default function Draft({ userDisplayName }) {
                                 </td>
                             </tr>
                         ) : (
-                            drafts.map((draft) => (
-                                <tr key={draft.id}>
-                                    <td className="draft-id">
-                                        <Link to={`/draft/${draft.id}`} className="mono-space">
-                                            {draft.id}
-                                        </Link>
-                                    </td>
-                                    <td>{draft.statusName}</td>
-                                    <td className="controls">
-                                        {draft.status === 0 ? (
-                                            <button className="copy" aria-label="Copy" onClick={() => copy(draft.id)}>
-                                                <MdContentCopy />
+                            drafts
+                                .sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt))
+                                .map((draft) => (
+                                    <tr key={draft.id}>
+                                        <td className="draft-id">
+                                            <div>
+                                                <span className="mono-space">
+                                                    <Link to={`/draft/${draft.id}`}>{draft.id}</Link>
+                                                </span>
+                                                {draft.players
+                                                    .sort((a, b) => a.seatNumber - b.seatNumber)
+                                                    .map((player) => (
+                                                        <span className="player-name">{player.displayName}</span>
+                                                    ))}
+                                            </div>
+                                        </td>
+                                        <td>{draft.statusName}</td>
+                                        <td className="controls">
+                                            {draft.status === 0 ? (
+                                                <button
+                                                    className="copy"
+                                                    aria-label="Copy"
+                                                    onClick={() => copy(draft.id)}
+                                                >
+                                                    <MdContentCopy />
+                                                </button>
+                                            ) : null}
+                                            <button className="delete" aria-label="Delete" onClick={() => {}}>
+                                                <MdDelete />
                                             </button>
-                                        ) : null}
-                                        <button className="delete" aria-label="Delete" onClick={() => {}}>
-                                            <MdDelete />
-                                        </button>
-                                    </td>
-                                </tr>
-                            ))
+                                        </td>
+                                    </tr>
+                                ))
                         )}
                     </tbody>
                 </table>

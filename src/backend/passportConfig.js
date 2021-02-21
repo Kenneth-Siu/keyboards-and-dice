@@ -67,7 +67,7 @@ export default function configurePassport() {
     });
 
     passport.deserializeUser(function (id, done) {
-        UserRepo.getUser(id)
+        UserRepo.find(id)
             .then((user) => {
                 done(null, user);
             })

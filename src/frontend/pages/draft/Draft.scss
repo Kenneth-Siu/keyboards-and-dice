@@ -52,9 +52,13 @@
     table {
         width: 100%;
 
+        th {
+            font-weight: 600;
+        }
+
         th,
         td {
-            border: 1px solid darken($color-2, 10%);
+            border: 2px solid darken($color-2, 30%);
             padding: 0.2rem;
             text-align: center;
             vertical-align: middle;
@@ -71,15 +75,53 @@
                 font-style: normal;
             }
         }
-    
-        .mono-space {
-            font-family: monospace;
-            font-size: 1rem;
-            display: inline-flex;
+
+        .draft-id {
+            padding: 0;
+        }
+
+        .draft-id > div {
+            display: flex;
+            flex-wrap: wrap;
             justify-content: center;
-            align-items: center;
         }
     
+        .mono-space {
+            width: 100%;
+            font-family: monospace;
+            font-size: 1rem;
+            margin: 0.5rem 0;
+        }
+    
+        .player-name {
+            font-size: 0.8rem;
+            margin: 0 0.2rem 0.2rem;
+            padding: 0.3rem 0;
+            flex-grow: 1;
+            max-width: 15%;
+            border-radius: 1rem;
+        }
+
+        tr:nth-child(2n) {
+            .player-name:nth-child(2n) {
+                background-color: darken($color-2, 10%);
+            }
+    
+            .player-name:nth-child(2n+1) {
+                background-color: darken($color-2, 5%);
+            }
+        }
+
+        tr:nth-child(2n+1) {
+            .player-name:nth-child(2n) {
+                background-color: darken($color-2, 5%);
+            }
+    
+            .player-name:nth-child(2n+1) {
+                background-color: darken($color-2, 10%);
+            }
+        }
+
         .controls button {
             font-size: 1rem;
             border: none;
