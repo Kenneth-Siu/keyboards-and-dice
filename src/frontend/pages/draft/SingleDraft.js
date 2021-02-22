@@ -8,6 +8,7 @@ import "./SingleDraft.scss";
 import { MdChevronLeft, MdChevronRight, MdContentCopy } from "react-icons/md";
 import copy from "copy-to-clipboard";
 import { asyncTry } from "../../helpers/asyncTry";
+import PlayerPill from "../../components/playerPill/PlayerPill";
 
 export default function SingleDraft({ loggedInUser }) {
     const { draftId } = useParams();
@@ -23,29 +24,42 @@ export default function SingleDraft({ loggedInUser }) {
             <title>Draft · Terra 2170</title>
             <main className="single-draft-page">
                 <h1>Draft{booster ? ` — Pack ${booster.packNumber} Pick ${booster.pickNumber}` : ""}</h1>
-                {busy ? <LoadingSpinner /> : booster ? boosterView() : readyToStartView()}
+                {busy ? (
+                    <LoadingSpinner />
+                ) : (
+                    <>
+                        <PlayerList />
+                        {booster ? <BoosterView /> : <ReadyToStartView />}
+                    </>
+                )}
             </main>
         </>
     );
 
-    function readyToStartView() {
+    function PlayerList() {
+        return (
+            <div className={`player-list ${booster ? "draft-in-progress" : "ready-to-start"}`}>
+                {booster && (
+                    <PlayerPill
+                        player={draft.sortedPlayers[draft.sortedPlayers.length - 1]}
+                        loggedInUserId={loggedInUser.id}
+                    />
+                )}
+                {draft.sortedPlayers.map((player, index) => (
+                    <React.Fragment key={index}>
+                        {booster && <Chevron />}
+                        <PlayerPill player={player} loggedInUserId={loggedInUser.id} />
+                    </React.Fragment>
+                ))}
+                {booster && <Chevron />}
+                {booster && <PlayerPill player={draft.sortedPlayers[0]} loggedInUserId={loggedInUser.id} />}
+            </div>
+        );
+    }
+
+    function ReadyToStartView() {
         return (
             <>
-                <div className="ready-to-start players">
-                    {draft.players
-                        .sort((a, b) => a.seatNumber - b.seatNumber)
-                        .map((player, index) => (
-                            <span
-                                className="player-name"
-                                key={index}
-                                className={`player-name ${
-                                    player.userId === loggedInUser.id ? "current-user" : ""
-                                }`}
-                            >
-                                {player.displayName}
-                            </span>
-                        ))}
-                </div>
                 <p>
                     Invite your friends! Send them your draft ID: <span className="mono-space">{draftId}</span>
                     <button className="copy" aria-label="Copy" onClick={() => copy(draft.id)}>
@@ -62,56 +76,18 @@ export default function SingleDraft({ loggedInUser }) {
         );
     }
 
-    function boosterView() {
+    function BoosterView() {
         return (
-            <>
-                <div className="in-progress players">
-                    <span
-                        className="player-name"
-                        className={`player-name ${
-                            draft.players.find((player) => player.seatNumber === draft.players.length - 1)
-                                .userId === loggedInUser.id
-                                ? "current-user"
-                                : ""
-                        }`}
-                    >
-                        {draft.players.find((player) => player.seatNumber === draft.players.length - 1).displayName}
-                    </span>
-                    {draft.players
-                        .sort((a, b) => a.seatNumber - b.seatNumber)
-                        .map((player, index) => (
-                            <>
-                                {booster.packNumber === 2 ? <MdChevronRight /> : <MdChevronLeft />}
-                                <span
-                                    className="player-name"
-                                    key={index}
-                                    className={`player-name ${
-                                        player.userId === loggedInUser.id ? "current-user" : ""
-                                    }`}
-                                >
-                                    {player.displayName}
-                                </span>
-                            </>
-                        ))}
-                    {booster.packNumber === 2 ? <MdChevronRight /> : <MdChevronLeft />}
-                    <span
-                        className="player-name"
-                        className={`player-name ${
-                            draft.players.find((player) => player.seatNumber === 0).userId === loggedInUser.id
-                                ? "current-user"
-                                : ""
-                        }`}
-                    >
-                        {draft.players.find((player) => player.seatNumber === 0).displayName}
-                    </span>
-                </div>
-                <div className="booster">
-                    {cards.map((card) => (
-                        <img className="card" src={card.imageName} key={card.id} loading="lazy" />
-                    ))}
-                </div>
-            </>
+            <div className="booster">
+                {cards.map((card) => (
+                    <img className="card" src={card.imageName} key={card.id} loading="lazy" />
+                ))}
+            </div>
         );
+    }
+
+    function Chevron() {
+        return booster.packNumber === 2 ? <MdChevronRight /> : <MdChevronLeft />;
     }
 
     function getDraft() {
@@ -119,6 +95,7 @@ export default function SingleDraft({ loggedInUser }) {
         asyncTry(
             async () => {
                 const responseDraft = await DraftsApi.getDraft(draftId);
+                responseDraft.sortedPlayers = responseDraft.players.sort((a, b) => a.seatNumber - b.seatNumber);
                 setDraft(responseDraft);
                 if (responseDraft.status === DRAFT_STATUSES.READY_TO_START) {
                     setBusy(false);

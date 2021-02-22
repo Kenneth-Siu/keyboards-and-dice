@@ -6,6 +6,7 @@ import LoadingSpinner from "../../components/loadingSpinner/LoadingSpinner.js";
 import * as DraftsApi from "../../api/DraftsApi.js";
 import "./Draft.scss";
 import { asyncTry } from "../../helpers/asyncTry.js";
+import PlayerPill from "../../components/playerPill/PlayerPill.js";
 
 export default function Draft({ loggedInUser }) {
     const [drafts, setDrafts] = useState(null);
@@ -25,86 +26,81 @@ export default function Draft({ loggedInUser }) {
                         <button className="refresh-button" aria-label="Refresh" onClick={getDrafts} disabled={busy}>
                             <MdRefresh />
                         </button>
-                        {showDraftsTable(drafts)}
-                        {showCreateDraftForm()}
-                        {showJoinDraftForm()}
+                        <DraftsTable />
+                        <CreateDraftForm />
+                        <JoinDraftForm />
                     </>
                 )}
             </main>
         </>
     );
 
-    function showDraftsTable(drafts) {
+    function DraftsTable() {
         if (!drafts) {
             return null;
         }
         return (
-            <>
-                <table>
-                    <thead>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Draft ID</th>
+                        <th colSpan="2">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {drafts.length === 0 ? (
                         <tr>
-                            <th>Draft ID</th>
-                            <th colSpan="2">Status</th>
+                            <td className="no-drafts" colSpan="2">
+                                You aren't in any drafts at the moment... <span className="emoji">🌧</span>
+                            </td>
                         </tr>
-                    </thead>
-                    <tbody>
-                        {drafts.length === 0 ? (
-                            <tr>
-                                <td className="no-drafts" colSpan="2">
-                                    You aren't in any drafts at the moment... <span className="emoji">🌧</span>
-                                </td>
-                            </tr>
-                        ) : (
-                            drafts
-                                .sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt))
-                                .map((draft) => (
-                                    <tr key={draft.id}>
-                                        <td className="draft-id">
-                                            <div>
-                                                <div className="mono-space">
-                                                    <Link to={`/draft/${draft.id}`}>{draft.id}</Link>
-                                                </div>
-                                                {draft.players
-                                                    .sort((a, b) => a.seatNumber - b.seatNumber)
-                                                    .map((player, index) => (
-                                                        <div
-                                                            className={`player-name ${
-                                                                player.userId === loggedInUser.id
-                                                                    ? "current-user"
-                                                                    : ""
-                                                            }`}
-                                                            key={index}
-                                                        >
-                                                            {player.displayName}
-                                                        </div>
-                                                    ))}
-                                            </div>
-                                        </td>
-                                        <td>{draft.statusName}</td>
-                                        <td className="controls">
-                                            {draft.status === 0 ? (
-                                                <button
-                                                    className="copy"
-                                                    aria-label="Copy"
-                                                    onClick={() => copy(draft.id)}
-                                                >
-                                                    <MdContentCopy />
-                                                </button>
-                                            ) : null}
-                                            <button className="delete" aria-label="Delete" onClick={() => {}}>
-                                                <MdDelete />
-                                            </button>
-                                        </td>
-                                    </tr>
-                                ))
-                        )}
-                    </tbody>
-                </table>
-            </>
+                    ) : (
+                        drafts
+                            .sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt))
+                            .map((draft) => <DraftsTableRow draft={draft} key={draft.id} />)
+                    )}
+                </tbody>
+            </table>
         );
     }
 
-    function showCreateDraftForm() {
+    function DraftsTableRow({ draft, ...rest }) {
+        return (
+            <tr {...rest}>
+                <td className="draft-id">
+                    <div>
+                        <div className="mono-space">
+                            <Link to={`/draft/${draft.id}`}>{draft.id}</Link>
+                        </div>
+                        {draft.players
+                            .sort((a, b) => a.seatNumber - b.seatNumber)
+                            .map((player, index) => (
+                                <PlayerPill player={player} loggedInUserId={loggedInUser.id} key={index} />
+                            ))}
+                    </div>
+                </td>
+                <td>{draft.statusName}</td>
+                <td className="controls">
+                    {draft.status === 0 ? (
+                        <button className="copy" aria-label="Copy" onClick={() => copy(draft.id)}>
+                            <MdContentCopy />
+                        </button>
+                    ) : null}
+                    <button
+                        className="delete"
+                        aria-label="Delete"
+                        onClick={() => {
+                            /* TODO */
+                        }}
+                    >
+                        <MdDelete />
+                    </button>
+                </td>
+            </tr>
+        );
+    }
+
+    function CreateDraftForm() {
         return (
             <form className="create-draft">
                 <button onClick={createDraft} disabled={busy}>
@@ -114,24 +110,22 @@ export default function Draft({ loggedInUser }) {
         );
     }
 
-    function showJoinDraftForm() {
+    function JoinDraftForm() {
         return (
-            <>
-                <form className="join-draft">
-                    <label htmlFor="draft-id">Or join a friend's draft:</label>
-                    <input
-                        id="draft-id"
-                        type="text"
-                        placeholder="e.g. 718dc651-4c33-4d43-86b7-fe61f59d2f79"
-                        value={joinDraftId}
-                        onChange={(event) => setJoinDraftId(event.target.value)}
-                        disabled={busy}
-                    ></input>
-                    <button onClick={joinDraft} disabled={busy}>
-                        Join
-                    </button>
-                </form>
-            </>
+            <form className="join-draft">
+                <label htmlFor="draft-id">Or join a friend's draft:</label>
+                <input
+                    id="draft-id"
+                    type="text"
+                    placeholder="e.g. 718dc651-4c33-4d43-86b7-fe61f59d2f79"
+                    value={joinDraftId}
+                    onChange={(event) => setJoinDraftId(event.target.value)}
+                    disabled={busy}
+                ></input>
+                <button onClick={joinDraft} disabled={busy}>
+                    Join
+                </button>
+            </form>
         );
     }
 

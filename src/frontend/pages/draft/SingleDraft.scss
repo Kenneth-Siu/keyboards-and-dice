@@ -16,7 +16,7 @@
         margin-bottom: 0.6rem;
     }
 
-    .players {
+    .player-list {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -26,7 +26,7 @@
             margin-bottom: 2rem;
         }
 
-        &.in-progress {
+        &.draft-in-progress {
             svg {
                 font-size: 1.5rem;
                 margin: 0.2rem 0;
@@ -34,28 +34,23 @@
 
             svg:first-of-type,
             svg:last-of-type,
-            .player-name:first-of-type,
-            .player-name:last-of-type {
+            .player-pill:first-of-type,
+            .player-pill:last-of-type {
                 opacity: 0.3;
             }
         }
     }
 
-    .player-name {
-        font-size: 0.8rem;
+    .player-pill {
         margin: 0.2rem 0.2rem;
-        padding: 0.35rem 0.7rem;
         flex-shrink: 0;
-        border-radius: 1rem;
 
         &.current-user {
             background-color: $color-5-light !important;
         }
-
         &:nth-child(2n) {
             background-color: darken($color-2, 5%);
         }
-
         &:nth-child(2n + 1) {
             background-color: darken($color-2, 10%);
         }

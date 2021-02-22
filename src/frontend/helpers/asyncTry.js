@@ -3,7 +3,7 @@ export function asyncTry(tryCallback, catchCallback) {
         try {
             await tryCallback();
         } catch (err) {
-            catchCallback();
+            await catchCallback();
             console.log(err);
         }
     })();

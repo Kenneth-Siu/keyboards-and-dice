@@ -93,12 +93,9 @@
             margin: 0.5rem 0 0.3rem;
         }
 
-        .player-name {
-            font-size: 0.8rem;
+        .player-pill {
             margin: 0.2rem 0.2rem;
-            padding: 0.35rem 0.7rem;
             flex-shrink: 0;
-            border-radius: 1rem;
 
             &.current-user {
                 background-color: $color-5-light !important;
@@ -106,21 +103,21 @@
         }
 
         tr:nth-child(2n) {
-            .player-name:nth-child(2n) {
+            .player-pill:nth-child(2n) {
                 background-color: darken($color-2, 5%);
             }
 
-            .player-name:nth-child(2n + 1) {
+            .player-pill:nth-child(2n + 1) {
                 background-color: darken($color-2, 10%);
             }
         }
 
         tr:nth-child(2n + 1) {
-            .player-name:nth-child(2n) {
+            .player-pill:nth-child(2n) {
                 background-color: darken($color-2, 10%);
             }
 
-            .player-name:nth-child(2n + 1) {
+            .player-pill:nth-child(2n + 1) {
                 background-color: darken($color-2, 5%);
             }
         }
