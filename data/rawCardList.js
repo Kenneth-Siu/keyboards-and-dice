@@ -58,32 +58,32 @@ import _56 from "./cardImages/Exiled Xenologist.jpg";
 import _57 from "./cardImages/Future Insight.jpg";
 import _58 from "./cardImages/Guidance Pods.jpg";
 import _59 from "./cardImages/Holoship Fleet.jpg";
-import _60 from "./cardImages/Kitefin Racer.jpg";
-import _61 from "./cardImages/Kushak Exile.jpg";
-import _62 from "./cardImages/Lambert Stealth Bomber.jpg";
-import _63 from "./cardImages/Lost in Space.jpg";
-import _64 from "./cardImages/Matter Redistribution.jpg";
-import _65 from "./cardImages/Migratory City.jpg";
-import _66 from "./cardImages/Military Intelligence.jpg";
-import _67 from "./cardImages/Mindmelded Sysadmin.jpg";
-import _68 from "./cardImages/Nanoreplicator Zero.jpg";
-import _69 from "./cardImages/Neutron Flow.jpg";
-import _70 from "./cardImages/Open Speculation.jpg";
-import _71 from "./cardImages/Plasma Reclaimer.jpg";
-import _72 from "./cardImages/Reconstruction Specialist.jpg";
-import _73 from "./cardImages/Scorned Researcher.jpg";
-import _74 from "./cardImages/Slipstream Distorter.jpg";
-import _75 from "./cardImages/Solar Power Transmitters.jpg";
-import _76 from "./cardImages/Supercoolant Technician.jpg";
-import _77 from "./cardImages/Tactical Freeze Ray.jpg";
-import _78 from "./cardImages/Thought Dampener.jpg";
-import _79 from "./cardImages/Threat Profiling.jpg";
-import _80 from "./cardImages/Time Paradox.jpg";
-import _81 from "./cardImages/Transcend Space-Time.jpg";
-import _82 from "./cardImages/Umida Security Protocols.jpg";
-import _83 from "./cardImages/Undercroft Entangler.jpg";
-import _84 from "./cardImages/Voyages End.jpg";
-import _85 from "./cardImages/Wai Advance Prototype.jpg";
+import _60 from "./cardImages/Hong Wai Prototype.jpg";
+import _61 from "./cardImages/Kitefin Racer.jpg";
+import _62 from "./cardImages/Kushak Exile.jpg";
+import _63 from "./cardImages/Lambert Stealth Bomber.jpg";
+import _64 from "./cardImages/Lost in Space.jpg";
+import _65 from "./cardImages/Matter Redistribution.jpg";
+import _66 from "./cardImages/Migratory City.jpg";
+import _67 from "./cardImages/Military Intelligence.jpg";
+import _68 from "./cardImages/Mindmelded Sysadmin.jpg";
+import _69 from "./cardImages/Nanoreplicator Zero.jpg";
+import _70 from "./cardImages/Neutron Flow.jpg";
+import _71 from "./cardImages/Open Speculation.jpg";
+import _72 from "./cardImages/Plasma Reclaimer.jpg";
+import _73 from "./cardImages/Reconstruction Specialist.jpg";
+import _74 from "./cardImages/Scorned Researcher.jpg";
+import _75 from "./cardImages/Slipstream Distorter.jpg";
+import _76 from "./cardImages/Solar Power Transmitters.jpg";
+import _77 from "./cardImages/Supercoolant Technician.jpg";
+import _78 from "./cardImages/Tactical Freeze Ray.jpg";
+import _79 from "./cardImages/Thought Dampener.jpg";
+import _80 from "./cardImages/Threat Profiling.jpg";
+import _81 from "./cardImages/Time Paradox.jpg";
+import _82 from "./cardImages/Transcend Space-Time.jpg";
+import _83 from "./cardImages/Umida Security Protocols.jpg";
+import _84 from "./cardImages/Undercroft Entangler.jpg";
+import _85 from "./cardImages/Voyages End.jpg";
 import _86 from "./cardImages/Back to Work.jpg";
 import _87 from "./cardImages/Backalley Trafficker.jpg";
 import _88 from "./cardImages/Boardroom Keeper.jpg";
@@ -238,36 +238,39 @@ import _236 from "./cardImages/Maleck Umida Division Head.jpg";
 import _237 from "./cardImages/Troposphere Drifter.jpg";
 import _238 from "./cardImages/Umida Koto.jpg";
 import _239 from "./cardImages/The Aion.jpg";
-import _240 from "./cardImages/Faraday Transmitter.jpg";
-import _241 from "./cardImages/Formling.jpg";
-import _242 from "./cardImages/Foundry Analyst.jpg";
-import _243 from "./cardImages/Gravitic Collector.jpg";
-import _244 from "./cardImages/Hexblade Ravager.jpg";
-import _245 from "./cardImages/Hoverbike.jpg";
-import _246 from "./cardImages/Jetpack.jpg";
-import _247 from "./cardImages/Mox Voidstone.jpg";
-import _248 from "./cardImages/Mutagenic Serum.jpg";
-import _249 from "./cardImages/Prophetic Lens.jpg";
-import _250 from "./cardImages/Shiryu Refinery.jpg";
-import _251 from "./cardImages/Slipstream Snapper.jpg";
-import _252 from "./cardImages/Subspace Capacitor.jpg";
-import _253 from "./cardImages/Swallowers of Civilization.jpg";
-import _254 from "./cardImages/Trojan Horse.jpg";
-import _255 from "./cardImages/Adamantium Mine.jpg";
-import _256 from "./cardImages/Amanthoid Mine.jpg";
-import _257 from "./cardImages/Antimatter Mine.jpg";
-import _258 from "./cardImages/Distant Colony.jpg";
-import _259 from "./cardImages/Hexaferrum Mine.jpg";
-import _260 from "./cardImages/Hong Wai Factory.jpg";
-import _261 from "./cardImages/Hydromiel Mine.jpg";
-import _262 from "./cardImages/Hyperium Mine.jpg";
-import _263 from "./cardImages/The Mercurite Lens.jpg";
-import _264 from "./cardImages/Mercurite Mine.jpg";
-import _265 from "./cardImages/Orichalcix Mine.jpg";
-import _266 from "./cardImages/Quadrinix Mine.jpg";
-import _267 from "./cardImages/Siderite Mine.jpg";
-import _268 from "./cardImages/Spire of Industry.jpg";
-import _269 from "./cardImages/Terramorphic Expanse.jpg";
+import _240 from "./cardImages/Chameleon Suit.jpg";
+import _241 from "./cardImages/Faraday Transmitter.jpg";
+import _242 from "./cardImages/Formling.jpg";
+import _243 from "./cardImages/Foundry Analyst.jpg";
+import _244 from "./cardImages/Gravitic Collector.jpg";
+import _245 from "./cardImages/Hexblade Ravager.jpg";
+import _246 from "./cardImages/Hong Wai Refinery.jpg";
+import _247 from "./cardImages/Hoverbike.jpg";
+import _248 from "./cardImages/Jetpack.jpg";
+import _249 from "./cardImages/Mox Voidstone.jpg";
+import _250 from "./cardImages/Museum of Antiquities.jpg";
+import _251 from "./cardImages/Mutagenic Serum.jpg";
+import _252 from "./cardImages/Prophetic Lens.jpg";
+import _253 from "./cardImages/Scrapyard Construct.jpg";
+import _254 from "./cardImages/Slipstream Snapper.jpg";
+import _255 from "./cardImages/Subspace Capacitor.jpg";
+import _256 from "./cardImages/Surveillance Probes.jpg";
+import _257 from "./cardImages/Swallowers of Civilization.jpg";
+import _258 from "./cardImages/Trojan Horse.jpg";
+import _259 from "./cardImages/Adamantium Mine.jpg";
+import _260 from "./cardImages/Amanthoid Mine.jpg";
+import _261 from "./cardImages/Antimatter Mine.jpg";
+import _262 from "./cardImages/Distant Colony.jpg";
+import _263 from "./cardImages/Hexaferrum Mine.jpg";
+import _264 from "./cardImages/Hong Wai Factory.jpg";
+import _265 from "./cardImages/Hydromiel Mine.jpg";
+import _266 from "./cardImages/Hyperium Mine.jpg";
+import _267 from "./cardImages/The Mercurite Lens.jpg";
+import _268 from "./cardImages/Mercurite Mine.jpg";
+import _269 from "./cardImages/Orichalcix Mine.jpg";
+import _270 from "./cardImages/Quadrinix Mine.jpg";
+import _271 from "./cardImages/Siderite Mine.jpg";
+import _272 from "./cardImages/Spire of Industry.jpg";
 const rawCardList = [
     {
         "name": "Karn, the Introspective",
@@ -690,186 +693,186 @@ const rawCardList = [
         "rarity": "R"
     },
     {
-        "name": "Kitefin Racer",
+        "name": "Hong Wai Prototype",
         "imageName": _60,
         "color": "U",
         "id": 60,
-        "rarity": "C"
+        "rarity": "U"
     },
     {
-        "name": "Kushak Exile",
+        "name": "Kitefin Racer",
         "imageName": _61,
         "color": "U",
         "id": 61,
         "rarity": "C"
     },
     {
-        "name": "Lambert Stealth Bomber",
+        "name": "Kushak Exile",
         "imageName": _62,
         "color": "U",
         "id": 62,
+        "rarity": "C"
+    },
+    {
+        "name": "Lambert Stealth Bomber",
+        "imageName": _63,
+        "color": "U",
+        "id": 63,
         "rarity": "U"
     },
     {
         "name": "Lost in Space",
-        "imageName": _63,
+        "imageName": _64,
         "color": "U",
-        "id": 63,
+        "id": 64,
         "rarity": "C"
     },
     {
         "name": "Matter Redistribution",
-        "imageName": _64,
+        "imageName": _65,
         "color": "U",
-        "id": 64,
+        "id": 65,
         "rarity": "U"
     },
     {
         "name": "Migratory City",
-        "imageName": _65,
+        "imageName": _66,
         "color": "U",
-        "id": 65,
+        "id": 66,
         "rarity": "C"
     },
     {
         "name": "Military Intelligence",
-        "imageName": _66,
+        "imageName": _67,
         "color": "U",
-        "id": 66,
+        "id": 67,
         "rarity": "U"
     },
     {
         "name": "Mindmelded Sysadmin",
-        "imageName": _67,
+        "imageName": _68,
         "color": "U",
-        "id": 67,
+        "id": 68,
         "rarity": "C"
     },
     {
         "name": "Nanoreplicator Zero",
-        "imageName": _68,
+        "imageName": _69,
         "color": "U",
-        "id": 68,
+        "id": 69,
         "rarity": "R"
     },
     {
         "name": "Neutron Flow",
-        "imageName": _69,
-        "color": "U",
-        "id": 69,
-        "rarity": "C"
-    },
-    {
-        "name": "Open Speculation",
         "imageName": _70,
         "color": "U",
         "id": 70,
         "rarity": "C"
     },
     {
-        "name": "Plasma Reclaimer",
+        "name": "Open Speculation",
         "imageName": _71,
         "color": "U",
         "id": 71,
         "rarity": "C"
     },
     {
-        "name": "Reconstruction Specialist",
+        "name": "Plasma Reclaimer",
         "imageName": _72,
         "color": "U",
         "id": 72,
         "rarity": "C"
     },
     {
-        "name": "Scorned Researcher",
+        "name": "Reconstruction Specialist",
         "imageName": _73,
         "color": "U",
         "id": 73,
-        "rarity": "U"
+        "rarity": "C"
     },
     {
-        "name": "Slipstream Distorter",
+        "name": "Scorned Researcher",
         "imageName": _74,
         "color": "U",
         "id": 74,
         "rarity": "U"
     },
     {
-        "name": "Solar Power Transmitters",
+        "name": "Slipstream Distorter",
         "imageName": _75,
         "color": "U",
         "id": 75,
         "rarity": "U"
     },
     {
-        "name": "Supercoolant Technician",
+        "name": "Solar Power Transmitters",
         "imageName": _76,
         "color": "U",
         "id": 76,
         "rarity": "U"
     },
     {
-        "name": "Tactical Freeze Ray",
+        "name": "Supercoolant Technician",
         "imageName": _77,
         "color": "U",
         "id": 77,
+        "rarity": "U"
+    },
+    {
+        "name": "Tactical Freeze Ray",
+        "imageName": _78,
+        "color": "U",
+        "id": 78,
         "rarity": "C"
     },
     {
         "name": "Thought Dampener",
-        "imageName": _78,
+        "imageName": _79,
         "color": "U",
-        "id": 78,
+        "id": 79,
         "rarity": "U"
     },
     {
         "name": "Threat Profiling",
-        "imageName": _79,
+        "imageName": _80,
         "color": "U",
-        "id": 79,
+        "id": 80,
         "rarity": "C"
     },
     {
         "name": "Time Paradox",
-        "imageName": _80,
+        "imageName": _81,
         "color": "U",
-        "id": 80,
+        "id": 81,
         "rarity": "M"
     },
     {
         "name": "Transcend Space-Time",
-        "imageName": _81,
-        "color": "U",
-        "id": 81,
-        "rarity": "R"
-    },
-    {
-        "name": "Umida Security Protocols",
         "imageName": _82,
         "color": "U",
         "id": 82,
         "rarity": "R"
     },
     {
-        "name": "Undercroft Entangler",
+        "name": "Umida Security Protocols",
         "imageName": _83,
         "color": "U",
         "id": 83,
-        "rarity": "C"
+        "rarity": "R"
     },
     {
-        "name": "Voyage’s End",
+        "name": "Undercroft Entangler",
         "imageName": _84,
         "color": "U",
         "id": 84,
         "rarity": "C"
     },
     {
-        "name": "Wai Advance Prototype",
+        "name": "Voyage’s End",
         "imageName": _85,
         "color": "U",
         "id": 85,
-        "rarity": "U"
+        "rarity": "C"
     },
     {
         "name": "Back to Work",
@@ -1950,213 +1953,234 @@ const rawCardList = [
         "rarity": "M"
     },
     {
-        "name": "Faraday Transmitter",
+        "name": "Chameleon Suit",
         "imageName": _240,
         "color": "",
         "id": 240,
-        "rarity": "R"
+        "rarity": "C"
     },
     {
-        "name": "Formling",
+        "name": "Faraday Transmitter",
         "imageName": _241,
         "color": "",
         "id": 241,
         "rarity": "R"
     },
     {
-        "name": "Foundry Analyst",
+        "name": "Formling",
         "imageName": _242,
         "color": "",
         "id": 242,
+        "rarity": "R"
+    },
+    {
+        "name": "Foundry Analyst",
+        "imageName": _243,
+        "color": "",
+        "id": 243,
         "rarity": "U"
     },
     {
         "name": "Gravitic Collector",
-        "imageName": _243,
+        "imageName": _244,
         "color": "",
-        "id": 243,
+        "id": 244,
         "rarity": "R"
     },
     {
         "name": "Hexblade Ravager",
-        "imageName": _244,
-        "color": "",
-        "id": 244,
-        "rarity": "C"
-    },
-    {
-        "name": "Hoverbike",
         "imageName": _245,
         "color": "",
         "id": 245,
-        "rarity": "U"
+        "rarity": "C"
     },
     {
-        "name": "Jetpack",
+        "name": "Hong Wai Refinery",
         "imageName": _246,
         "color": "",
         "id": 246,
+        "rarity": "R"
+    },
+    {
+        "name": "Hoverbike",
+        "imageName": _247,
+        "color": "",
+        "id": 247,
+        "rarity": "C"
+    },
+    {
+        "name": "Jetpack",
+        "imageName": _248,
+        "color": "",
+        "id": 248,
         "rarity": "C"
     },
     {
         "name": "Mox Voidstone",
-        "imageName": _247,
+        "imageName": _249,
         "color": "",
-        "id": 247,
+        "id": 249,
         "rarity": "M"
     },
     {
-        "name": "Mutagenic Serum",
-        "imageName": _248,
+        "name": "Museum of Antiquities",
+        "imageName": _250,
         "color": "",
-        "id": 248,
+        "id": 250,
+        "rarity": "U"
+    },
+    {
+        "name": "Mutagenic Serum",
+        "imageName": _251,
+        "color": "",
+        "id": 251,
         "rarity": "R"
     },
     {
         "name": "Prophetic Lens",
-        "imageName": _249,
+        "imageName": _252,
         "color": "",
-        "id": 249,
+        "id": 252,
         "rarity": "C"
     },
     {
-        "name": "Shiryu Refinery",
-        "imageName": _250,
+        "name": "Scrapyard Construct",
+        "imageName": _253,
         "color": "",
-        "id": 250,
-        "rarity": "R"
+        "id": 253,
+        "rarity": "C"
     },
     {
         "name": "Slipstream Snapper",
-        "imageName": _251,
+        "imageName": _254,
         "color": "",
-        "id": 251,
+        "id": 254,
         "rarity": "C"
     },
     {
         "name": "Subspace Capacitor",
-        "imageName": _252,
-        "color": "",
-        "id": 252,
-        "rarity": "R"
-    },
-    {
-        "name": "Swallowers of Civilization",
-        "imageName": _253,
-        "color": "",
-        "id": 253,
-        "rarity": "M"
-    },
-    {
-        "name": "Trojan Horse",
-        "imageName": _254,
-        "color": "",
-        "id": 254,
-        "rarity": "U"
-    },
-    {
-        "name": "Adamantium Mine",
         "imageName": _255,
         "color": "",
         "id": 255,
-        "rarity": "C"
+        "rarity": "R"
     },
     {
-        "name": "Amanthoid Mine",
+        "name": "Surveillance Probes",
         "imageName": _256,
         "color": "",
         "id": 256,
         "rarity": "C"
     },
     {
-        "name": "Antimatter Mine",
+        "name": "Swallowers of Civilization",
         "imageName": _257,
         "color": "",
         "id": 257,
-        "rarity": "C"
+        "rarity": "M"
     },
     {
-        "name": "Distant Colony",
+        "name": "Trojan Horse",
         "imageName": _258,
         "color": "",
         "id": 258,
-        "rarity": "C"
+        "rarity": "U"
     },
     {
-        "name": "Hexaferrum Mine",
+        "name": "Adamantium Mine",
         "imageName": _259,
         "color": "",
         "id": 259,
         "rarity": "C"
     },
     {
-        "name": "Hong Wai Factory",
+        "name": "Amanthoid Mine",
         "imageName": _260,
         "color": "",
         "id": 260,
-        "rarity": "R"
+        "rarity": "C"
     },
     {
-        "name": "Hydromiel Mine",
+        "name": "Antimatter Mine",
         "imageName": _261,
         "color": "",
         "id": 261,
         "rarity": "C"
     },
     {
-        "name": "Hyperium Mine",
+        "name": "Distant Colony",
         "imageName": _262,
         "color": "",
         "id": 262,
         "rarity": "C"
     },
     {
-        "name": "The Mercurite Lens",
+        "name": "Hexaferrum Mine",
         "imageName": _263,
         "color": "",
         "id": 263,
-        "rarity": "R"
-    },
-    {
-        "name": "Mercurite Mine",
-        "imageName": _264,
-        "color": "",
-        "id": 264,
         "rarity": "C"
     },
     {
-        "name": "Orichalcix Mine",
+        "name": "Hong Wai Factory",
+        "imageName": _264,
+        "color": "",
+        "id": 264,
+        "rarity": "R"
+    },
+    {
+        "name": "Hydromiel Mine",
         "imageName": _265,
         "color": "",
         "id": 265,
         "rarity": "C"
     },
     {
-        "name": "Quadrinix Mine",
+        "name": "Hyperium Mine",
         "imageName": _266,
         "color": "",
         "id": 266,
         "rarity": "C"
     },
     {
-        "name": "Siderite Mine",
+        "name": "The Mercurite Lens",
         "imageName": _267,
         "color": "",
         "id": 267,
-        "rarity": "C"
-    },
-    {
-        "name": "Spire of Industry",
-        "imageName": _268,
-        "color": "",
-        "id": 268,
         "rarity": "R"
     },
     {
-        "name": "Terramorphic Expanse",
+        "name": "Mercurite Mine",
+        "imageName": _268,
+        "color": "",
+        "id": 268,
+        "rarity": "C"
+    },
+    {
+        "name": "Orichalcix Mine",
         "imageName": _269,
         "color": "",
         "id": 269,
         "rarity": "C"
+    },
+    {
+        "name": "Quadrinix Mine",
+        "imageName": _270,
+        "color": "",
+        "id": 270,
+        "rarity": "C"
+    },
+    {
+        "name": "Siderite Mine",
+        "imageName": _271,
+        "color": "",
+        "id": 271,
+        "rarity": "C"
+    },
+    {
+        "name": "Spire of Industry",
+        "imageName": _272,
+        "color": "",
+        "id": 272,
+        "rarity": "R"
     }];
 export default rawCardList;
