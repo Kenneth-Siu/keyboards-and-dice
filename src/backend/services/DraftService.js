@@ -63,7 +63,7 @@ export async function getBooster(draftId, userId) {
 
 export async function createDraft(userId) {
     const drafts = await DraftRepo.findAllOwnedByUser(userId);
-    if (drafts.length > USER_MAX_OWNED_DRAFTS) {
+    if (drafts.length >= USER_MAX_OWNED_DRAFTS) {
         throw new DraftLimitReachedError(`Max ${USER_MAX_OWNED_DRAFTS} drafts owned at a time`);
     }
     const draft = await DraftRepo.create(uuidv4(), userId);
