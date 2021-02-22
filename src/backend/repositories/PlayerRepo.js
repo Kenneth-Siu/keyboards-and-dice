@@ -61,7 +61,7 @@ export async function findAllForUser(userId) {
 export async function findDisplayNamesForManyDrafts(draftIds) {
     try {
         const result = await pool.query(
-            `SELECT players.draft_id, players.seat_number, users.display_name
+            `SELECT players.draft_id, players.seat_number, players.user_id, users.display_name
             FROM players JOIN users ON players.user_id = users.id
             WHERE players.draft_id IN (${draftIds.map((_, index) => `$${index + 1}`).join(", ")})`,
             [...draftIds]
@@ -69,6 +69,7 @@ export async function findDisplayNamesForManyDrafts(draftIds) {
         return result.rows.map((row) => ({
             draftId: row.draft_id,
             seatNumber: row.seat_number,
+            userId: row.user_id,
             displayName: row.display_name,
         }));
     } catch (error) {
@@ -79,7 +80,7 @@ export async function findDisplayNamesForManyDrafts(draftIds) {
 export async function findDisplayNamesForDraft(draftId) {
     try {
         const result = await pool.query(
-            `SELECT players.draft_id, players.seat_number, users.display_name
+            `SELECT players.draft_id, players.seat_number, players.user_id, users.display_name
             FROM players JOIN users ON players.user_id = users.id
             WHERE players.draft_id = $1`,
             [draftId]
@@ -87,6 +88,7 @@ export async function findDisplayNamesForDraft(draftId) {
         return result.rows.map((row) => ({
             draftId: row.draft_id,
             seatNumber: row.seat_number,
+            userId: row.user_id,
             displayName: row.display_name,
         }));
     } catch (error) {

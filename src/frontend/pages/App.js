@@ -13,7 +13,7 @@ import "./cssreset.css";
 import "./App.scss";
 import SingleDraft from "./draft/SingleDraft.js";
 
-export default function App({ userDisplayName }) {
+export default function App({ loggedInUser }) {
     return (
         <>
             <NavBar />
@@ -25,15 +25,15 @@ export default function App({ userDisplayName }) {
                     exact
                     path="/draft"
                     component={Draft}
-                    authed={userDisplayName}
-                    userDisplayName={userDisplayName}
+                    authed={!!loggedInUser}
+                    loggedInUser={loggedInUser}
                 />
                 <PrivateRoute
                     exact
                     path="/draft/:draftId"
                     component={SingleDraft}
-                    authed={userDisplayName}
-                    userDisplayName={userDisplayName}
+                    authed={!!loggedInUser}
+                    loggedInUser={loggedInUser}
                 />
                 <Route exact path="/downloads" component={Downloads} />
                 <Route exact path="/login" component={Login} />

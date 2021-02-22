@@ -9,7 +9,7 @@ import { MdChevronLeft, MdChevronRight, MdContentCopy } from "react-icons/md";
 import copy from "copy-to-clipboard";
 import { asyncTry } from "../../helpers/asyncTry";
 
-export default function SingleDraft({ userDisplayName }) {
+export default function SingleDraft({ loggedInUser }) {
     const { draftId } = useParams();
 
     const [draft, setDraft] = useState(null);
@@ -39,7 +39,7 @@ export default function SingleDraft({ userDisplayName }) {
                                 className="player-name"
                                 key={index}
                                 className={`player-name ${
-                                    player.displayName === userDisplayName ? "current-user" : ""
+                                    player.userId === loggedInUser.id ? "current-user" : ""
                                 }`}
                             >
                                 {player.displayName}
@@ -70,7 +70,7 @@ export default function SingleDraft({ userDisplayName }) {
                         className="player-name"
                         className={`player-name ${
                             draft.players.find((player) => player.seatNumber === draft.players.length - 1)
-                                .displayName === userDisplayName
+                                .userId === loggedInUser.id
                                 ? "current-user"
                                 : ""
                         }`}
@@ -86,7 +86,7 @@ export default function SingleDraft({ userDisplayName }) {
                                     className="player-name"
                                     key={index}
                                     className={`player-name ${
-                                        player.displayName === userDisplayName ? "current-user" : ""
+                                        player.userId === loggedInUser.id ? "current-user" : ""
                                     }`}
                                 >
                                     {player.displayName}
@@ -97,7 +97,7 @@ export default function SingleDraft({ userDisplayName }) {
                     <span
                         className="player-name"
                         className={`player-name ${
-                            draft.players.find((player) => player.seatNumber === 0).displayName === userDisplayName
+                            draft.players.find((player) => player.seatNumber === 0).userId === loggedInUser.id
                                 ? "current-user"
                                 : ""
                         }`}

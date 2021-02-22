@@ -7,7 +7,7 @@ import * as DraftsApi from "../../api/DraftsApi.js";
 import "./Draft.scss";
 import { asyncTry } from "../../helpers/asyncTry.js";
 
-export default function Draft({ userDisplayName }) {
+export default function Draft({ loggedInUser }) {
     const [drafts, setDrafts] = useState(null);
     const [busy, setBusy] = useState(true);
     const [joinDraftId, setJoinDraftId] = useState("");
@@ -17,7 +17,7 @@ export default function Draft({ userDisplayName }) {
             <title>Draft · Terra 2170</title>
             <main className="draft-page">
                 <h1>Draft</h1>
-                <p>Hi, {userDisplayName}!</p>
+                <p>Hi, {loggedInUser.displayName}!</p>
                 {!drafts ? (
                     <LoadingSpinner />
                 ) : (
@@ -69,7 +69,7 @@ export default function Draft({ userDisplayName }) {
                                                     .map((player, index) => (
                                                         <div
                                                             className={`player-name ${
-                                                                player.displayName === userDisplayName
+                                                                player.userId === loggedInUser.id
                                                                     ? "current-user"
                                                                     : ""
                                                             }`}

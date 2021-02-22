@@ -16,7 +16,11 @@ export async function getDraftsForUser(userId) {
     drafts.forEach((draft) => {
         draft.players = players
             .filter((player) => player.draftId === draft.id)
-            .map((player) => ({ seatNumber: player.seatNumber, displayName: player.displayName }));
+            .map((player) => ({
+                seatNumber: player.seatNumber,
+                userId: player.userId,
+                displayName: player.displayName,
+            }));
     });
     return drafts;
 }
@@ -31,7 +35,11 @@ export async function getDraft(draftId, userId) {
         throw new NotFoundError(`Draft with ID ${draftId} not found`);
     }
     const players = await PlayerRepo.findDisplayNamesForDraft(draftId);
-    draft.players = players.map((player) => ({ seatNumber: player.seatNumber, displayName: player.displayName }));
+    draft.players = players.map((player) => ({
+        seatNumber: player.seatNumber,
+        userId: player.userId,
+        displayName: player.displayName,
+    }));
     return draft;
 }
 
