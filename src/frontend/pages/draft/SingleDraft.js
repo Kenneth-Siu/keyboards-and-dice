@@ -3,9 +3,11 @@ import { useParams } from "react-router-dom";
 import { DEFAULT_PLAYERS_IN_DRAFT, DRAFT_STATUSES } from "../../../config";
 import LoadingSpinner from "../../components/loadingSpinner/loadingSpinner";
 import { getCard } from "../../../shared/cardList";
+import * as DraftsApi from "../../api/DraftsApi.js";
 import "./SingleDraft.scss";
 import { MdChevronLeft, MdChevronRight, MdContentCopy } from "react-icons/md";
 import copy from "copy-to-clipboard";
+import { asyncTry } from "../../helpers/asyncTry";
 
 export default function SingleDraft({ userDisplayName }) {
     const { draftId } = useParams();
@@ -114,48 +116,34 @@ export default function SingleDraft({ userDisplayName }) {
 
     function getDraft() {
         setBusy(true);
-        (async () => {
-            try {
-                const r = await fetch(`/api/drafts/${draftId}`);
-                if (!r.ok) {
-                    throw "Response not ok";
-                }
-                const responseDraft = await r.json();
+        asyncTry(
+            async () => {
+                const responseDraft = await DraftsApi.getDraft(draftId);
                 setDraft(responseDraft);
                 if (responseDraft.status === DRAFT_STATUSES.READY_TO_START) {
                     setBusy(false);
                     return;
                 }
-                const r2 = await fetch(`/api/drafts/${draftId}/booster`);
-                if (!r2.ok) {
-                    throw "Response not ok";
-                }
-                const responseBooster = await r2.json();
+                const responseBooster = await DraftsApi.getBooster(draftId);
                 setBooster(responseBooster);
                 setCards(responseBooster.cards.map((cardId) => getCard(cardId)));
                 setBusy(false);
-            } catch (err) {
-                // TODO error handling
+            },
+            () => {
                 setBusy(false);
-                console.log(err);
             }
-        })();
+        );
     }
 
     function startDraft() {
         setBusy(true);
-        (async () => {
-            try {
-                const r = await fetch(`/api/drafts/${draftId}/start`, { method: "POST" });
-                if (!r.ok) {
-                    throw "Response not ok";
-                }
+        asyncTry(
+            async () => {
                 getDraft();
-            } catch (err) {
-                // TODO error handling
+            },
+            () => {
                 setBusy(false);
-                console.log(err);
             }
-        })();
+        );
     }
 }

@@ -462,7 +462,7 @@ export default function Faq() {
                             </li>
                             <li>
                                 As the spell resolves, follow the instructions of the modes you chose in the order they
-                                are printed on the card. (The order won’t matter in most cases.)
+                                are printed on the card.
                             </li>
                             <li>
                                 If a Command is copied, the effect that creates the copy will usually allow you to

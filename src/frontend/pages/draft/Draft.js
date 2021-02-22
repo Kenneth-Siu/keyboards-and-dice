@@ -3,7 +3,9 @@ import { MdRefresh, MdContentCopy, MdDelete } from "react-icons/md";
 import { Link } from "react-router-dom";
 import copy from "copy-to-clipboard";
 import LoadingSpinner from "../../components/loadingSpinner/loadingSpinner.js";
+import * as DraftsApi from "../../api/DraftsApi.js";
 import "./Draft.scss";
+import { asyncTry } from "../../helpers/asyncTry.js";
 
 export default function Draft({ userDisplayName }) {
     const [drafts, setDrafts] = useState(null);
@@ -135,54 +137,41 @@ export default function Draft({ userDisplayName }) {
 
     function getDrafts() {
         setBusy(true);
-        (async () => {
-            try {
-                const r = await fetch("/api/drafts");
-                if (!r.ok) {
-                    throw "Response not ok";
-                }
-                const drafts = await r.json();
+        asyncTry(
+            async () => {
+                const drafts = await DraftsApi.getDrafts();
                 setBusy(false);
                 setDrafts(drafts);
-            } catch (err) {
+            },
+            () => {
                 setBusy(false);
-                // TODO error handling
-                console.log(err);
             }
-        })();
+        );
     }
 
     function joinDraft() {
         setBusy(true);
-        (async () => {
-            try {
-                const r = await fetch(`/api/drafts/${joinDraftId.trim()}/join`, { method: "PUT" });
-                if (!r.ok) {
-                    throw "Response not ok";
-                }
+        asyncTry(
+            async () => {
+                await DraftsApi.joinDraft(joinDraftId.trim());
                 getDrafts();
-            } catch (err) {
+            },
+            () => {
                 setBusy(false);
-                // TODO error handling
-                console.log(err);
             }
-        })();
+        );
     }
 
     function createDraft() {
         setBusy(true);
-        (async () => {
-            try {
-                const r = await fetch("/api/drafts", { method: "POST" });
-                if (!r.ok) {
-                    throw "Response not ok";
-                }
+        asyncTry(
+            async () => {
+                await DraftsApi.createDraft();
                 getDrafts();
-            } catch (err) {
+            },
+            () => {
                 setBusy(false);
-                // TODO error handling
-                console.log(err);
             }
-        })();
+        );
     }
 }
