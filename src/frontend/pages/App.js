@@ -5,7 +5,7 @@ import Home from "./home/Home.js";
 import CardImageGallery from "./cardImageGallery/CardImageGallery.js";
 import Draft from "./draft/Draft.js";
 import NotFound from "./notFound/NotFound.js";
-import NavBar from "../components/navBar/navBar.js";
+import NavBar from "../components/navBar/NavBar.js";
 import Faq from "./faq/Faq.js";
 import Downloads from "./downloads/Downloads.js";
 import Login from "./login/Login.js";

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { MdRefresh, MdContentCopy, MdDelete } from "react-icons/md";
 import { Link } from "react-router-dom";
 import copy from "copy-to-clipboard";
-import LoadingSpinner from "../../components/loadingSpinner/loadingSpinner.js";
+import LoadingSpinner from "../../components/loadingSpinner/LoadingSpinner.js";
 import * as DraftsApi from "../../api/DraftsApi.js";
 import "./Draft.scss";
 import { asyncTry } from "../../helpers/asyncTry.js";

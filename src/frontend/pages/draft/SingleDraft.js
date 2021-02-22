@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { DEFAULT_PLAYERS_IN_DRAFT, DRAFT_STATUSES } from "../../../config";
-import LoadingSpinner from "../../components/loadingSpinner/loadingSpinner";
+import LoadingSpinner from "../../components/loadingSpinner/LoadingSpinner.js";
 import { getCard } from "../../../shared/cardList";
 import * as DraftsApi from "../../api/DraftsApi.js";
 import "./SingleDraft.scss";
