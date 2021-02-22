@@ -116,6 +116,7 @@ export default function SingleDraft({ loggedInUser }) {
         setBusy(true);
         asyncTry(
             async () => {
+                await DraftsApi.startDraft(draftId);
                 getDraft();
             },
             () => {

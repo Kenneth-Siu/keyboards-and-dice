@@ -102,17 +102,17 @@ export default function Draft({ loggedInUser }) {
 
     function CreateDraftForm() {
         return (
-            <form className="create-draft">
+            <div className="create-draft">
                 <button onClick={createDraft} disabled={busy}>
                     Create a draft
                 </button>
-            </form>
+            </div>
         );
     }
 
     function JoinDraftForm() {
         return (
-            <form className="join-draft">
+            <div className="join-draft">
                 <label htmlFor="draft-id">Or join a friend's draft:</label>
                 <input
                     id="draft-id"
@@ -125,7 +125,7 @@ export default function Draft({ loggedInUser }) {
                 <button onClick={joinDraft} disabled={busy}>
                     Join
                 </button>
-            </form>
+            </div>
         );
     }
 

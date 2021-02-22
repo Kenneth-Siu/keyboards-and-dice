@@ -44,15 +44,10 @@
     .player-pill {
         margin: 0.2rem 0.2rem;
         flex-shrink: 0;
+        background-color: darken($color-2, 5%);
 
         &.current-user {
-            background-color: $color-5-light !important;
-        }
-        &:nth-child(2n) {
-            background-color: darken($color-2, 5%);
-        }
-        &:nth-child(2n + 1) {
-            background-color: darken($color-2, 10%);
+            background-color: $color-5-light;
         }
     }
 
@@ -97,6 +92,7 @@
         border-radius: 2rem;
         line-height: 1;
         margin: 0 0.4rem;
+        cursor: pointer;
     }
 
     .booster {
