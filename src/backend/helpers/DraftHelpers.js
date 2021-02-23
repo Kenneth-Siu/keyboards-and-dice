@@ -39,13 +39,23 @@ function getRareSlot() {
 function getUncommonSlots() {
     const uncommonSlots = [];
     uncommonSlots.push(sample(uncommons));
-    uncommonSlots.push(sample(uncommons.filter((card) => card.color !== uncommonSlots[0].color)));
+    uncommonSlots.push(sample(uncommons.filter((card) => !isUncommonSameColorSlot(card, uncommonSlots[0]))));
     uncommonSlots.push(
         sample(
-            uncommons.filter((card) => card.color !== uncommonSlots[0].color && card.color !== uncommonSlots[1].color)
+            uncommons.filter(
+                (card) =>
+                    !isUncommonSameColorSlot(card, uncommonSlots[0]) && !isUncommonSameColorSlot(card, uncommonSlots[1])
+            )
         )
     );
     return uncommonSlots;
+}
+
+function isUncommonSameColorSlot(cardA, cardB) {
+    return (
+        cardA.color === cardB.color ||
+        ((cardA.length > 1 || cardA.length === 0) && (cardB.length > 1 || cardB.length === 0))
+    );
 }
 
 function getCommonSlots() {
