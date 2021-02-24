@@ -13,14 +13,14 @@
         font-weight: 700;
         font-size: 1.4rem;
         margin-top: 1rem;
-        margin-bottom: 0.6rem;
+        margin-bottom: 0.8rem;
     }
 
     .player-list {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        margin-bottom: 0.4rem;
+        margin-bottom: 0.8rem;
 
         &.ready-to-start {
             margin-bottom: 2rem;
@@ -82,7 +82,8 @@
         }
     }
 
-    .start-draft {
+    .start-draft,
+    .submit-pick {
         font-size: 1rem;
         font-weight: 600;
         padding: 0.4rem 0.8rem;
@@ -93,6 +94,11 @@
         line-height: 1;
         margin: 0 0.4rem;
         cursor: pointer;
+
+        &:disabled {
+            opacity: 0.2;
+            cursor: default;
+        }
     }
 
     .booster {
@@ -101,7 +107,21 @@
         justify-content: flex-start;
         width: 98%;
 
-        .card {
+        button {
+            padding: 0;
+            background-color: none;
+            border: none;
+            cursor: pointer;
+
+            &:focus {
+                outline: 2px $color-5-strong solid;
+            }
+
+            &.selected {
+                box-shadow: 0 0 0.2rem 0.2rem $color-5-strong;
+                outline: 2px $color-5-strong solid;
+            }
+
             @media (max-width: 659px) {
                 width: 49.25%;
                 margin-right: 1.5%;
@@ -150,6 +170,11 @@
                     margin-right: 0;
                 }
             }
+        }
+
+        .card {
+            width: 100%;
+            display: block;
         }
     }
 }

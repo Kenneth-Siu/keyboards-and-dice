@@ -2,7 +2,7 @@ import { v4 as uuidv4 } from "uuid";
 import { USER_MAX_OWNED_DRAFTS, DRAFT_STATUSES, CARDS_IN_PACK } from "../../config.js";
 import DraftLimitReachedError from "../errors/DraftLimitReachedError.js";
 import NotFoundError from "../errors/NotFoundError.js";
-import { StartDraftRepo } from "../repositories/StartDraftRepo.js";
+import { DraftOperations } from "../repositories/DraftOperations.js";
 import * as DraftRepo from "../repositories/DraftRepo.js";
 import * as PlayerRepo from "../repositories/PlayerRepo.js";
 import * as BoosterRepo from "../repositories/BoosterRepo.js";
@@ -28,11 +28,11 @@ export async function getDraftsForUser(userId) {
 export async function getDraft(draftId, userId) {
     const player = await PlayerRepo.find(userId, draftId);
     if (!player) {
-        throw new NotFoundError(`Draft with ID ${draftId} not found`);
+        throw new NotFoundError(`Draft not found`);
     }
     const draft = await DraftRepo.find(draftId);
     if (!draft) {
-        throw new NotFoundError(`Draft with ID ${draftId} not found`);
+        throw new NotFoundError(`Draft not found`);
     }
     const players = await PlayerRepo.findDisplayNamesForDraft(draftId);
     draft.players = players.map((player) => ({
@@ -46,7 +46,7 @@ export async function getDraft(draftId, userId) {
 export async function getBooster(draftId, userId) {
     const player = await PlayerRepo.find(userId, draftId);
     if (!player) {
-        throw new NotFoundError(`Draft with ID ${draftId} not found`);
+        throw new NotFoundError(`Draft not found`);
     }
     const boosters = await BoosterRepo.findAllForPlayer(player.id);
     if (boosters.length === 0) {
@@ -73,7 +73,7 @@ export async function createDraft(userId) {
 export async function joinDraft(draftId, userId) {
     const draft = await DraftRepo.find(draftId);
     if (!draft || draft.status !== DRAFT_STATUSES.READY_TO_START) {
-        throw new NotFoundError(`Draft with ID ${draftId} not found`);
+        throw new NotFoundError(`Draft not found`);
     }
     const player = await PlayerRepo.find(userId, draftId);
     if (!player) {
@@ -85,7 +85,27 @@ export async function joinDraft(draftId, userId) {
 export async function startDraft(draftId, userId) {
     const draft = await DraftRepo.find(draftId);
     if (!draft || draft.ownerId !== userId || draft.status !== DRAFT_STATUSES.READY_TO_START) {
-        throw new NotFoundError(`Draft with ID ${draftId} not found`);
+        throw new NotFoundError(`Draft not found`);
     }
-    return await new StartDraftRepo().startDraft(draftId);
+    return await new DraftOperations().startDraft(draftId);
+}
+
+export async function makePick(draftId, userId, packNumber, pickNumber, cardId) {
+    const player = await PlayerRepo.find(userId, draftId);
+    if (!player) {
+        throw new NotFoundError(`Card not found`);
+    }
+    const boosters = await BoosterRepo.findAllForPlayer(player.id);
+    if (boosters.length === 0) {
+        throw new NotFoundError("Card not found");
+    }
+    const booster = minBy(boosters, (booster_1) => booster_1.packNumber * CARDS_IN_PACK + booster_1.pickNumber);
+    if (booster.packNumber !== packNumber || booster.pickNumber !== pickNumber) {
+        throw new NotFoundError("Card not found");
+    }
+    const card = await CardRepo.findCard(booster.id, cardId);
+    if (!card) {
+        throw new NotFoundError("Card not found");
+    }
+    await new DraftOperations().makePick(draftId, player.id, booster, card);
 }

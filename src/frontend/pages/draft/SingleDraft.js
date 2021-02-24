@@ -15,8 +15,8 @@ export default function SingleDraft({ loggedInUser }) {
 
     const [draft, setDraft] = useState(null);
     const [booster, setBooster] = useState(null);
-    const [cards, setCards] = useState([]);
     const [busy, setBusy] = useState(true);
+    const [selectedCardIndex, setSelectedCardIndex] = useState(null);
     useEffect(getDraft, []);
 
     return (
@@ -78,11 +78,22 @@ export default function SingleDraft({ loggedInUser }) {
 
     function BoosterView() {
         return (
-            <div className="booster">
-                {cards.map((card) => (
-                    <img className="card" src={card.imageName} key={card.id} loading="lazy" />
-                ))}
-            </div>
+            <>
+                <div className="booster">
+                    {booster.cards.map((card, index) => (
+                        <button
+                            onClick={() => setSelectedCardIndex(index)}
+                            key={index}
+                            className={`${selectedCardIndex === index ? "selected" : ""}`}
+                        >
+                            <img className="card" src={card.imageName} loading="lazy" />
+                        </button>
+                    ))}
+                </div>
+                <button onClick={submitPick} className="submit-pick" disabled={selectedCardIndex === null}>
+                    Submit Pick
+                </button>
+            </>
         );
     }
 
@@ -96,14 +107,15 @@ export default function SingleDraft({ loggedInUser }) {
             async () => {
                 const responseDraft = await DraftsApi.getDraft(draftId);
                 responseDraft.sortedPlayers = responseDraft.players.sort((a, b) => a.seatNumber - b.seatNumber);
-                setDraft(responseDraft);
                 if (responseDraft.status === DRAFT_STATUSES.READY_TO_START) {
+                    setDraft(responseDraft);
                     setBusy(false);
                     return;
                 }
                 const responseBooster = await DraftsApi.getBooster(draftId);
+                responseBooster.cards = responseBooster.cards.map((cardId) => getCard(cardId));
+                setDraft(responseDraft);
                 setBooster(responseBooster);
-                setCards(responseBooster.cards.map((cardId) => getCard(cardId)));
                 setBusy(false);
             },
             () => {
@@ -117,6 +129,24 @@ export default function SingleDraft({ loggedInUser }) {
         asyncTry(
             async () => {
                 await DraftsApi.startDraft(draftId);
+                getDraft();
+            },
+            () => {
+                setBusy(false);
+            }
+        );
+    }
+
+    function submitPick() {
+        setBusy(true);
+        asyncTry(
+            async () => {
+                await DraftsApi.submitPick(
+                    draftId,
+                    booster.packNumber,
+                    booster.pickNumber,
+                    booster.cards[selectedCardIndex].id
+                );
                 getDraft();
             },
             () => {

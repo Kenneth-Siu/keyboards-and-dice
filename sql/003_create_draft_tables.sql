@@ -77,7 +77,7 @@ CREATE TABLE boosters (
     id SERIAL PRIMARY KEY NOT NULL,
     pack_number SMALLINT NOT NULL,
     pick_number SMALLINT NOT NULL,
-    player_id INTEGER,
+    player_id INTEGER NOT NULL,
     CONSTRAINT fk_player
         FOREIGN KEY(player_id)
         REFERENCES players(id)
@@ -94,7 +94,7 @@ CREATE TABLE cards (
 
 CREATE TABLE memories (
     player_id INTEGER NOT NULL,
-    memory TEXT,
+    memory TEXT NOT NULL,
     CONSTRAINT fk_player
         FOREIGN KEY(player_id)
         REFERENCES players(id)

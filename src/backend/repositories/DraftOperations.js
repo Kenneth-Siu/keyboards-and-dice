@@ -1,15 +1,14 @@
 import pool from "./pool.js";
 import { Player } from "../models/Player.js";
-import { BOT_USER_IDS, DEFAULT_PLAYERS_IN_DRAFT, DRAFT_STATUSES } from "../../config.js";
+import { BOT_USER_IDS, CARDS_IN_PACK, DEFAULT_PLAYERS_IN_DRAFT, DRAFT_STATUSES } from "../../config.js";
 import { flatMap, sampleSize, shuffle } from "lodash";
 import { Card } from "../models/Card.js";
 import { Booster } from "../models/Booster.js";
 import { getBooster } from "../helpers/DraftHelpers.js";
 
-export class StartDraftRepo {
+export class DraftOperations {
     async startDraft(draftId) {
         this.client = await pool.connect();
-
         try {
             await this.client.query("BEGIN");
 
@@ -29,6 +28,35 @@ export class StartDraftRepo {
             const boosters = await this.createAndGetBoosters(playerIds);
             await this.createCards(boosters.map((booster) => booster.id));
 
+            // TODO All bots make picks
+
+            await this.client.query("COMMIT");
+        } catch (error) {
+            await this.client.query("ROLLBACK");
+            throw error;
+        } finally {
+            this.client.release();
+        }
+    }
+
+    async makePick(draftId, playerId, booster, card) {
+        this.client = await pool.connect();
+        try {
+            await this.client.query("BEGIN");
+
+            await this.deleteCard(card);
+            await this.createPick(playerId, card);
+            const players = await this.getPlayers(draftId);
+            if (booster.pickNumber < CARDS_IN_PACK) {
+                await this.moveBooster(players, booster);
+                // TODO Make picks
+            } else {
+                await this.deleteBooster(booster);
+                const boosters = await this.createAndGetBoosters(players.map((player) => player.id));
+                await this.createCards(boosters.map((booster) => booster.id));
+                // TODO All bots make picks
+            }
+
             await this.client.query("COMMIT");
         } catch (error) {
             await this.client.query("ROLLBACK");
@@ -44,12 +72,12 @@ export class StartDraftRepo {
             WHERE draft_id = $1`,
             [draftId]
         );
-        return result.rows.map((row) => Player.createFromDb(row));
+        return Player.createManyFromDb(result.rows);
     }
 
     async createAndGetBotPlayers(numberToCreate, draftId) {
         if (numberToCreate < 1) {
-            return Promise.resolve([]);
+            return [];
         }
         const botUserIds = sampleSize(BOT_USER_IDS, numberToCreate);
         const result = await this.client.query(
@@ -58,7 +86,7 @@ export class StartDraftRepo {
             RETURNING *`,
             [draftId, ...botUserIds]
         );
-        return result.rows.map((row) => Player.createFromDb(row));
+        return Player.createManyFromDb(result.rows);
     }
 
     async assignSeatNumbers(playerIds) {
@@ -88,7 +116,7 @@ export class StartDraftRepo {
             RETURNING *`,
             [...playerIds]
         );
-        return result.rows.map((row) => Booster.createFromDb(row));
+        return Booster.createManyFromDb(result.rows);
     }
 
     async createCards(boosterIds) {
@@ -99,6 +127,58 @@ export class StartDraftRepo {
             `INSERT INTO cards (booster_id, card_id)
             VALUES ${cards.map((_, index) => `($${index * 2 + 1}, $${index * 2 + 2})`).join(", ")}`,
             flatMap(cards, (card) => [card.boosterId, card.cardId])
+        );
+    }
+
+    async deleteCard(card) {
+        await this.client.query(
+            `DELETE FROM cards
+            WHERE id = $1`,
+            [card.id]
+        );
+    }
+
+    async createPick(playerId, card) {
+        await this.client.query(
+            `INSERT INTO picks (player_id, card_id)
+            VALUES ($1, $2)`,
+            [playerId, card.cardId]
+        );
+    }
+
+    async getPlayers(draftId) {
+        const result = await this.client.query(
+            `SELECT * FROM players
+            WHERE draft_id = $1`,
+            [draftId]
+        );
+        return Player.createManyFromDb(result.rows);
+    }
+
+    async moveBooster(players, booster) {
+        const currentSeat = players.find((player) => player.id === booster.playerId).seatNumber;
+        const nextSeat = this.getNextSeat(booster, currentSeat);
+        const nextPlayer = players.find((player) => player.seatNumber === nextSeat);
+        await this.client.query(
+            `UPDATE boosters
+            SET player_id = $1
+            WHERE id = $2`,
+            [nextPlayer.id, booster.id]
+        );
+    }
+
+    getNextSeat(booster, seatNumber, playersInDraft) {
+        if (booster.packNumber === 2) {
+            return seatNumber + 1 >= playersInDraft ? 0 : seatNumber + 1;
+        }
+        return seatNumber - 1 < 0 ? playersInDraft - 1 : seatNumber - 1;
+    }
+
+    async deleteBooster(booster) {
+        await this.client.query(
+            `DELETE FROM boosters
+            WHERE id = $1`,
+            [booster.id]
         );
     }
 }

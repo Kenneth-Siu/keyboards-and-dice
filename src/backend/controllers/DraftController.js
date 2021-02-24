@@ -45,7 +45,7 @@ router.get("/:draftId/booster", ensureLoggedIn, (req, res) => {
                 res.sendStatus(500);
             }
         });
-})
+});
 
 router.post("/", ensureLoggedIn, (req, res) => {
     DraftService.createDraft(req.user.id)
@@ -81,6 +81,25 @@ router.put("/:draftId/join", ensureLoggedIn, (req, res) => {
 
 router.post("/:draftId/start", ensureLoggedIn, (req, res) => {
     DraftService.startDraft(req.params.draftId, req.user.id)
+        .then(() => {
+            res.sendStatus(201);
+        })
+        .catch((err) => {
+            if (err.name === NotFoundErrorName) {
+                res.status(404).send(err.message);
+            } else {
+                console.log(err);
+                res.sendStatus(500);
+            }
+        });
+});
+
+router.post("/:draftId/pick", ensureLoggedIn, (req, res) => {
+    if (!req.body || !req.body.packNumber || !req.body.pickNumber || !Number.isInteger(req.body.cardId)) {
+        res.sendStatus(400);
+        return;
+    }
+    DraftService.makePick(req.params.draftId, req.user.id, req.body.packNumber, req.body.pickNumber, req.body.cardId)
         .then(() => {
             res.sendStatus(201);
         })

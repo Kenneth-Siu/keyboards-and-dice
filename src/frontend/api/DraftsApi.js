@@ -1,4 +1,4 @@
-import { get, post, put } from "./Api";
+import { get, post, put } from "./Api.js";
 
 const baseUrl = "/api/drafts";
 
@@ -24,4 +24,8 @@ export async function createDraft() {
 
 export async function startDraft(draftId) {
     return await post(baseUrl + `/${draftId}/start`);
+}
+
+export async function submitPick(draftId, packNumber, pickNumber, cardId) {
+    return await post(baseUrl + `/${draftId}/pick`, { packNumber: packNumber, pickNumber: pickNumber, cardId: cardId });
 }
