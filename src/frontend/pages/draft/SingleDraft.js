@@ -27,7 +27,7 @@ export default function SingleDraft({ loggedInUser }) {
                 <h1>
                     Draft
                     {draft && draft.status === DRAFT_STATUSES.IN_PROGRESS
-                        ? ` — Pack ${draft.packNumber}${booster ? `, Pick ${booster.pickNumber}` : ""}`
+                        ? ` — Pack ${draft.packNumber}${booster && booster.pickNumber ? `, Pick ${booster.pickNumber}` : ""}`
                         : ""}
                 </h1>
                 {draft && <PlayerList />}
@@ -45,7 +45,7 @@ export default function SingleDraft({ loggedInUser }) {
         }
         return (
             <>
-                {booster ? <BoosterView /> : <RefreshButtonView />}
+                {booster.cards ? <BoosterView /> : <RefreshButtonView />}
                 <PicksView />
             </>
         );
@@ -160,7 +160,7 @@ export default function SingleDraft({ loggedInUser }) {
                         }
                         const responsePicks = await DraftsApi.getPicks(draftId);
                         setDraft(responseDraft);
-                        responseBooster.cards && setBooster(responseBooster);
+                        setBooster(responseBooster);
                         setPicks(responsePicks.map((cardId) => getCard(cardId)));
                         break;
 
