@@ -50,7 +50,7 @@ export async function getBooster(draftId, userId) {
     }
     const boosters = await BoosterRepo.findAllForPlayer(player.id);
     if (boosters.length === 0) {
-        return null;
+        return {};
     }
     const booster = minBy(boosters, (booster_1) => booster_1.packNumber * CARDS_IN_PACK + booster_1.pickNumber);
     const cards = await CardRepo.findAllForBooster(booster.id);

@@ -37,9 +37,10 @@ export default function SingleDraft({ loggedInUser }) {
     );
 
     function PlayerList() {
+        const draftInProgress = draft.status === DRAFT_STATUSES.IN_PROGRESS;
         return (
-            <div className={`player-list ${booster ? "draft-in-progress" : "ready-to-start"}`}>
-                {booster && (
+            <div className={`player-list ${draftInProgress ? "draft-in-progress" : "ready-to-start"}`}>
+                {draftInProgress && (
                     <PlayerPill
                         player={draft.sortedPlayers[draft.sortedPlayers.length - 1]}
                         loggedInUserId={loggedInUser.id}
@@ -47,12 +48,12 @@ export default function SingleDraft({ loggedInUser }) {
                 )}
                 {draft.sortedPlayers.map((player, index) => (
                     <React.Fragment key={index}>
-                        {booster && <Chevron />}
+                        {draftInProgress && <Chevron />}
                         <PlayerPill player={player} loggedInUserId={loggedInUser.id} />
                     </React.Fragment>
                 ))}
-                {booster && <Chevron />}
-                {booster && <PlayerPill player={draft.sortedPlayers[0]} loggedInUserId={loggedInUser.id} />}
+                {draftInProgress && <Chevron />}
+                {draftInProgress && <PlayerPill player={draft.sortedPlayers[0]} loggedInUserId={loggedInUser.id} />}
             </div>
         );
     }
@@ -107,15 +108,24 @@ export default function SingleDraft({ loggedInUser }) {
             async () => {
                 const responseDraft = await DraftsApi.getDraft(draftId);
                 responseDraft.sortedPlayers = responseDraft.players.sort((a, b) => a.seatNumber - b.seatNumber);
-                if (responseDraft.status === DRAFT_STATUSES.READY_TO_START) {
-                    setDraft(responseDraft);
-                    setBusy(false);
-                    return;
+
+                switch (responseDraft.status) {
+                    case DRAFT_STATUSES.READY_TO_START:
+                        setDraft(responseDraft);
+                        break;
+
+                    case DRAFT_STATUSES.IN_PROGRESS:
+                        const responseBooster = await DraftsApi.getBooster(draftId);
+                        if (responseBooster.cards) {
+                            responseBooster.cards = responseBooster.cards.map((cardId) => getCard(cardId));
+                            setBooster(responseBooster);
+                        }
+                        setDraft(responseDraft);
+                        break;
+
+                    default:
+                        break;
                 }
-                const responseBooster = await DraftsApi.getBooster(draftId);
-                responseBooster.cards = responseBooster.cards.map((cardId) => getCard(cardId));
-                setDraft(responseDraft);
-                setBooster(responseBooster);
                 setBusy(false);
             },
             () => {
