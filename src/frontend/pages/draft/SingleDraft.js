@@ -129,8 +129,8 @@ export default function SingleDraft({ loggedInUser }) {
             <div className="picks-view">
                 <h1>Deck</h1>
                 <div className="picks">
-                    {picks.map((pick) => (
-                        <img key={pick.id} src={pick.imageName} loading="lazy" />
+                    {picks.map((pick, index) => (
+                        <img key={index} src={pick.imageName} loading="lazy" />
                     ))}
                 </div>
             </div>
