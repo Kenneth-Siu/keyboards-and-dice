@@ -15,6 +15,7 @@ export default function SingleDraft({ loggedInUser }) {
 
     const [draft, setDraft] = useState(null);
     const [booster, setBooster] = useState(null);
+    const [picks, setPicks] = useState([]);
     const [busy, setBusy] = useState(true);
     const [selectedCardIndex, setSelectedCardIndex] = useState(null);
     useEffect(getDraft, []);
@@ -30,18 +31,25 @@ export default function SingleDraft({ loggedInUser }) {
                         : ""}
                 </h1>
                 {draft && <PlayerList />}
-                {busy ? (
-                    <LoadingSpinner />
-                ) : draft.status === DRAFT_STATUSES.READY_TO_START ? (
-                    <ReadyToStartView />
-                ) : booster ? (
-                    <BoosterView />
-                ) : (
-                    <RefreshButtonView />
-                )}
+                <MainView />
             </main>
         </>
     );
+
+    function MainView() {
+        if (busy) {
+            return <LoadingSpinner />;
+        }
+        if (draft.status === DRAFT_STATUSES.READY_TO_START) {
+            return <ReadyToStartView />;
+        }
+        return (
+            <>
+                {booster ? <BoosterView /> : <RefreshButtonView />}
+                <PicksView />
+            </>
+        );
+    }
 
     function PlayerList() {
         const draftInProgress = draft.status === DRAFT_STATUSES.IN_PROGRESS;
@@ -116,6 +124,19 @@ export default function SingleDraft({ loggedInUser }) {
         );
     }
 
+    function PicksView() {
+        return (
+            <div className="picks-view">
+                <h1>Deck</h1>
+                <div className="picks">
+                    {picks.map((pick) => (
+                        <img key={pick.id} src={pick.imageName} loading="lazy" />
+                    ))}
+                </div>
+            </div>
+        );
+    }
+
     function Chevron() {
         return draft.packNumber === 2 ? <MdChevronRight /> : <MdChevronLeft />;
     }
@@ -136,9 +157,14 @@ export default function SingleDraft({ loggedInUser }) {
                         const responseBooster = await DraftsApi.getBooster(draftId);
                         if (responseBooster.cards) {
                             responseBooster.cards = responseBooster.cards.map((cardId) => getCard(cardId));
-                            setBooster(responseBooster);
                         }
+                        const responsePicks = await DraftsApi.getPicks(draftId);
                         setDraft(responseDraft);
+                        responseBooster.cards && setBooster(responseBooster);
+                        setPicks(responsePicks.map((cardId) => getCard(cardId)));
+                        break;
+
+                    case DRAFT_STATUSES.COMPLETE:
                         break;
 
                     default:

@@ -47,6 +47,19 @@ router.get("/:draftId/booster", ensureLoggedIn, (req, res) => {
         });
 });
 
+router.get("/:draftId/picks", ensureLoggedIn, (req, res) => {
+    DraftService.getPicks(req.params.draftId, req.user.id)
+        .then((picks) => res.send(picks))
+        .catch((err) => {
+            if (err.name === NotFoundErrorName) {
+                res.sendStatus(404);
+            } else {
+                console.log(err);
+                res.sendStatus(500);
+            }
+        });
+});
+
 router.post("/", ensureLoggedIn, (req, res) => {
     DraftService.createDraft(req.user.id)
         .then(() => {

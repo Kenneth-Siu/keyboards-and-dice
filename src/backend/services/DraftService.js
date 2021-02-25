@@ -7,6 +7,7 @@ import * as DraftRepo from "../repositories/DraftRepo.js";
 import * as PlayerRepo from "../repositories/PlayerRepo.js";
 import * as BoosterRepo from "../repositories/BoosterRepo.js";
 import * as CardRepo from "../repositories/CardRepo.js";
+import * as PickRepo from "../repositories/PickRepo.js";
 import { minBy } from "lodash";
 
 export async function getDraftsForUser(userId) {
@@ -59,6 +60,15 @@ export async function getBooster(draftId, userId) {
         pickNumber: booster.pickNumber,
         cards: cards.map((card) => card.cardId),
     };
+}
+
+export async function getPicks(draftId, userId) {
+    const player = await PlayerRepo.find(userId, draftId);
+    if (!player) {
+        throw new NotFoundError(`Draft not found`);
+    }
+    const picks = await PickRepo.findAllForPlayer(player.id);
+    return picks.map((pick) => pick.cardId);
 }
 
 export async function createDraft(userId) {

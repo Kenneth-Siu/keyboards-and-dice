@@ -206,4 +206,26 @@
             }
         }
     }
+
+    .picks-view {
+        h1 {
+            text-align: left;
+            margin-left: 1%;
+        }
+        .picks {
+            display: inline-flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            width: 98%;
+
+            img {
+                width: 14%;
+                margin-right: 0.333%;
+                margin-bottom: 0.333%;
+                &:nth-child(7n) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
 }

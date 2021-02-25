@@ -14,6 +14,10 @@ export async function getBooster(draftId) {
     return await get(baseUrl + `/${draftId}/booster`);
 }
 
+export async function getPicks(draftId) {
+    return await get(baseUrl + `/${draftId}/picks`);
+}
+
 export async function joinDraft(draftId) {
     return await put(baseUrl + `/${draftId}/join`);
 }
