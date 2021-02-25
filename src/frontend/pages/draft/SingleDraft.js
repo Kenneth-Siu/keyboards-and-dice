@@ -196,6 +196,7 @@ export default function SingleDraft({ loggedInUser }) {
         asyncTry(
             async () => {
                 await DraftsApi.submitPick(draftId, booster.pickNumber, booster.cards[selectedCardIndex].id);
+                setSelectedCardIndex(null);
                 getDraft();
             },
             () => {
