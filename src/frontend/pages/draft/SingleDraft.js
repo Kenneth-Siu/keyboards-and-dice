@@ -5,7 +5,7 @@ import LoadingSpinner from "../../components/loadingSpinner/LoadingSpinner.js";
 import { getCard } from "../../../shared/cardList";
 import * as DraftsApi from "../../api/DraftsApi.js";
 import "./SingleDraft.scss";
-import { MdChevronLeft, MdChevronRight, MdContentCopy } from "react-icons/md";
+import { MdChevronLeft, MdChevronRight, MdContentCopy, MdRefresh } from "react-icons/md";
 import copy from "copy-to-clipboard";
 import { asyncTry } from "../../helpers/asyncTry";
 import PlayerPill from "../../components/playerPill/PlayerPill";
@@ -23,14 +23,21 @@ export default function SingleDraft({ loggedInUser }) {
         <>
             <title>Draft · Terra 2170</title>
             <main className="single-draft-page">
-                <h1>Draft{booster ? ` — Pack ${booster.packNumber} Pick ${booster.pickNumber}` : ""}</h1>
+                <h1>
+                    Draft
+                    {draft && draft.status === DRAFT_STATUSES.IN_PROGRESS
+                        ? ` — Pack ${draft.packNumber}${booster ? `, Pick ${booster.pickNumber}` : ""}`
+                        : ""}
+                </h1>
+                {draft && <PlayerList />}
                 {busy ? (
                     <LoadingSpinner />
+                ) : draft.status === DRAFT_STATUSES.READY_TO_START ? (
+                    <ReadyToStartView />
+                ) : booster ? (
+                    <BoosterView />
                 ) : (
-                    <>
-                        <PlayerList />
-                        {booster ? <BoosterView /> : <ReadyToStartView />}
-                    </>
+                    <RefreshButtonView />
                 )}
             </main>
         </>
@@ -98,8 +105,19 @@ export default function SingleDraft({ loggedInUser }) {
         );
     }
 
+    function RefreshButtonView() {
+        return (
+            <div className="refresh-button-view">
+                <h2>Waiting for others to make their picks...</h2>
+                <button className="refresh-button" aria-label="Refresh" onClick={getDraft} disabled={busy}>
+                    <MdRefresh />
+                </button>
+            </div>
+        );
+    }
+
     function Chevron() {
-        return booster.packNumber === 2 ? <MdChevronRight /> : <MdChevronLeft />;
+        return draft.packNumber === 2 ? <MdChevronRight /> : <MdChevronLeft />;
     }
 
     function getDraft() {
@@ -151,12 +169,7 @@ export default function SingleDraft({ loggedInUser }) {
         setBusy(true);
         asyncTry(
             async () => {
-                await DraftsApi.submitPick(
-                    draftId,
-                    booster.packNumber,
-                    booster.pickNumber,
-                    booster.cards[selectedCardIndex].id
-                );
+                await DraftsApi.submitPick(draftId, booster.pickNumber, booster.cards[selectedCardIndex].id);
                 getDraft();
             },
             () => {

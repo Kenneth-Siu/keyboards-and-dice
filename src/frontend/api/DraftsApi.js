@@ -26,6 +26,6 @@ export async function startDraft(draftId) {
     return await post(baseUrl + `/${draftId}/start`);
 }
 
-export async function submitPick(draftId, packNumber, pickNumber, cardId) {
-    return await post(baseUrl + `/${draftId}/pick`, { packNumber: packNumber, pickNumber: pickNumber, cardId: cardId });
+export async function submitPick(draftId, pickNumber, cardId) {
+    return await post(baseUrl + `/${draftId}/pick`, { pickNumber: pickNumber, cardId: cardId });
 }

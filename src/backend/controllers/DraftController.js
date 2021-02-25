@@ -95,11 +95,11 @@ router.post("/:draftId/start", ensureLoggedIn, (req, res) => {
 });
 
 router.post("/:draftId/pick", ensureLoggedIn, (req, res) => {
-    if (!req.body || !req.body.packNumber || !req.body.pickNumber || !Number.isInteger(req.body.cardId)) {
+    if (!req.body || !req.body.pickNumber || !Number.isInteger(req.body.cardId)) {
         res.sendStatus(400);
         return;
     }
-    DraftService.makePick(req.params.draftId, req.user.id, req.body.packNumber, req.body.pickNumber, req.body.cardId)
+    DraftService.makePick(req.params.draftId, req.user.id, req.body.pickNumber, req.body.cardId)
         .then(() => {
             res.sendStatus(201);
         })

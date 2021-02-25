@@ -54,6 +54,7 @@ CREATE TABLE drafts (
     id TEXT PRIMARY KEY NOT NULL,
     owner_id TEXT NOT NULL,
     status SMALLINT NOT NULL,
+    pack_number SMALLINT,
     created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
     CONSTRAINT fk_status
         FOREIGN KEY(status)
@@ -75,7 +76,6 @@ CREATE TABLE players (
 
 CREATE TABLE boosters (
     id SERIAL PRIMARY KEY NOT NULL,
-    pack_number SMALLINT NOT NULL,
     pick_number SMALLINT NOT NULL,
     player_id INTEGER NOT NULL,
     CONSTRAINT fk_player

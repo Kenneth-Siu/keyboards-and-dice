@@ -5,6 +5,7 @@ import { flatMap, sampleSize, shuffle } from "lodash";
 import { Card } from "../models/Card.js";
 import { Booster } from "../models/Booster.js";
 import { getBooster } from "../helpers/DraftHelpers.js";
+import { Draft } from "../models/Draft.js";
 
 export class DraftOperations {
     async startDraft(draftId) {
@@ -28,8 +29,6 @@ export class DraftOperations {
             const boosters = await this.createAndGetBoosters(playerIds);
             await this.createCards(boosters.map((booster) => booster.id));
 
-            // TODO All bots make picks
-
             await this.client.query("COMMIT");
         } catch (error) {
             await this.client.query("ROLLBACK");
@@ -37,6 +36,8 @@ export class DraftOperations {
         } finally {
             this.client.release();
         }
+
+            // TODO All bots make picks
     }
 
     async makePick(draftId, playerId, booster, card) {
@@ -49,12 +50,13 @@ export class DraftOperations {
             const players = await this.getPlayers(draftId);
             if (booster.pickNumber < CARDS_IN_PACK) {
                 await this.moveBooster(players, booster);
-                // TODO Make picks
             } else {
                 await this.deleteBooster(booster);
-                const boosters = await this.createAndGetBoosters(players.map((player) => player.id));
-                await this.createCards(boosters.map((booster) => booster.id));
-                // TODO All bots make picks
+                const draft = await this.getDraft(draftId);
+                if (draft.packNumber < 3) {
+                    const boosters = await this.createAndGetBoosters(players.map((player) => player.id));
+                    await this.createCards(boosters.map((booster) => booster.id));
+                }
             }
 
             await this.client.query("COMMIT");
@@ -64,6 +66,7 @@ export class DraftOperations {
         } finally {
             this.client.release();
         }
+        // TODO All bots make picks
     }
 
     async getHumanPlayers(draftId) {
@@ -103,7 +106,7 @@ export class DraftOperations {
     async setDraftToInProgress(draftId) {
         await this.client.query(
             `UPDATE drafts 
-            SET status = ${DRAFT_STATUSES.IN_PROGRESS} 
+            SET status = ${DRAFT_STATUSES.IN_PROGRESS}, pack_number = 1
             WHERE id = $1`,
             [draftId]
         );
@@ -111,8 +114,8 @@ export class DraftOperations {
 
     async createAndGetBoosters(playerIds) {
         const result = await this.client.query(
-            `INSERT INTO boosters (pack_number, pick_number, player_id) 
-            VALUES ${playerIds.map((_, index) => `(1, 1, $${index + 1})`).join(", ")}
+            `INSERT INTO boosters (pick_number, player_id) 
+            VALUES ${playerIds.map((_, index) => `(1, $${index + 1})`).join(", ")}
             RETURNING *`,
             [...playerIds]
         );
@@ -157,7 +160,7 @@ export class DraftOperations {
 
     async moveBooster(players, booster) {
         const currentSeat = players.find((player) => player.id === booster.playerId).seatNumber;
-        const nextSeat = this.getNextSeat(booster, currentSeat);
+        const nextSeat = this.getNextSeat(booster, currentSeat, players.length);
         const nextPlayer = players.find((player) => player.seatNumber === nextSeat);
         await this.client.query(
             `UPDATE boosters
@@ -180,5 +183,14 @@ export class DraftOperations {
             WHERE id = $1`,
             [booster.id]
         );
+    }
+
+    async getDraft(draftId) {
+        const result = await this.client.query(
+            `SELECT * FROM drafts
+            WHERE id = $1`,
+            [draftId]
+        );
+        return Draft.createFromDb(result.rows[0]);
     }
 }

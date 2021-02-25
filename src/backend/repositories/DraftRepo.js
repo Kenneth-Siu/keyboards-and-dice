@@ -35,8 +35,9 @@ export async function find(id) {
 export async function findAllForUser(userId) {
     try {
         const result = await pool.query(
-            `SELECT drafts.id, drafts.owner_id, drafts.status, drafts.created_at
-            FROM players JOIN drafts ON players.draft_id = drafts.id
+            `SELECT drafts.id, drafts.owner_id, drafts.status, drafts.pack_number, drafts.created_at
+            FROM players
+                JOIN drafts ON players.draft_id = drafts.id
             WHERE user_id = $1`,
             [userId]
         );

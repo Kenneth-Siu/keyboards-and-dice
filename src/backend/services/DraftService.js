@@ -11,7 +11,8 @@ import { minBy } from "lodash";
 
 export async function getDraftsForUser(userId) {
     const drafts = await DraftRepo.findAllForUser(userId);
-    const players = await PlayerRepo.findDisplayNamesForManyDrafts(drafts.map((draft) => draft.id));
+    const players =
+        drafts.length > 0 ? await PlayerRepo.findDisplayNamesForManyDrafts(drafts.map((draft) => draft.id)) : [];
 
     drafts.forEach((draft) => {
         draft.players = players
@@ -52,10 +53,9 @@ export async function getBooster(draftId, userId) {
     if (boosters.length === 0) {
         return {};
     }
-    const booster = minBy(boosters, (booster_1) => booster_1.packNumber * CARDS_IN_PACK + booster_1.pickNumber);
+    const booster = minBy(boosters, (booster_1) => booster_1.pickNumber);
     const cards = await CardRepo.findAllForBooster(booster.id);
     return {
-        packNumber: booster.packNumber,
         pickNumber: booster.pickNumber,
         cards: cards.map((card) => card.cardId),
     };
@@ -90,7 +90,7 @@ export async function startDraft(draftId, userId) {
     return await new DraftOperations().startDraft(draftId);
 }
 
-export async function makePick(draftId, userId, packNumber, pickNumber, cardId) {
+export async function makePick(draftId, userId, pickNumber, cardId) {
     const player = await PlayerRepo.find(userId, draftId);
     if (!player) {
         throw new NotFoundError(`Card not found`);
@@ -99,8 +99,8 @@ export async function makePick(draftId, userId, packNumber, pickNumber, cardId) 
     if (boosters.length === 0) {
         throw new NotFoundError("Card not found");
     }
-    const booster = minBy(boosters, (booster_1) => booster_1.packNumber * CARDS_IN_PACK + booster_1.pickNumber);
-    if (booster.packNumber !== packNumber || booster.pickNumber !== pickNumber) {
+    const booster = minBy(boosters, (booster_1) => booster_1.pickNumber);
+    if (booster.pickNumber !== pickNumber) {
         throw new NotFoundError("Card not found");
     }
     const card = await CardRepo.findCard(booster.id, cardId);

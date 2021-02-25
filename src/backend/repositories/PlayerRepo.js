@@ -62,7 +62,8 @@ export async function findDisplayNamesForManyDrafts(draftIds) {
     try {
         const result = await pool.query(
             `SELECT players.draft_id, players.seat_number, players.user_id, users.display_name
-            FROM players JOIN users ON players.user_id = users.id
+            FROM players 
+                JOIN users ON players.user_id = users.id
             WHERE players.draft_id IN (${draftIds.map((_, index) => `$${index + 1}`).join(", ")})`,
             [...draftIds]
         );
@@ -81,7 +82,8 @@ export async function findDisplayNamesForDraft(draftId) {
     try {
         const result = await pool.query(
             `SELECT players.draft_id, players.seat_number, players.user_id, users.display_name
-            FROM players JOIN users ON players.user_id = users.id
+            FROM players 
+                JOIN users ON players.user_id = users.id
             WHERE players.draft_id = $1`,
             [draftId]
         );
