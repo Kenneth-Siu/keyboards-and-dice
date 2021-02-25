@@ -277,1910 +277,2183 @@ const rawCardList = [
         "imageName": _0,
         "color": "",
         "id": 0,
-        "rarity": "M"
+        "rarity": "M",
+        "notes": {grade: "A"}
     },
     {
         "name": "Ajani, Sunchaser",
         "imageName": _1,
         "color": "W",
         "id": 1,
-        "rarity": "M"
+        "rarity": "M",
+        "notes": {grade: "A"}
     },
     {
         "name": "Biomech Team",
         "imageName": _2,
         "color": "W",
         "id": 2,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C"}
     },
     {
         "name": "Bring to Justice",
         "imageName": _3,
         "color": "W",
         "id": 3,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "B-"}
     },
     {
         "name": "Cache Mapper",
         "imageName": _4,
         "color": "W",
         "id": 4,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C+"}
     },
     {
         "name": "Comms Disruptor",
         "imageName": _5,
         "color": "W",
         "id": 5,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B"}
     },
     {
         "name": "Community Officer",
         "imageName": _6,
         "color": "W",
         "id": 6,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "D"}
     },
     {
         "name": "Control Overseer",
         "imageName": _7,
         "color": "W",
         "id": 7,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "C+"}
     },
     {
         "name": "Cryonics Facility",
         "imageName": _8,
         "color": "W",
         "id": 8,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "C"}
     },
     {
         "name": "Cultural Renaissance",
         "imageName": _9,
         "color": "W",
         "id": 9,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B"}
     },
     {
         "name": "Diplomat’s Prerogative",
         "imageName": _10,
         "color": "W",
         "id": 10,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B+"}
     },
     {
         "name": "Dropship",
         "imageName": _11,
         "color": "W",
         "id": 11,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B+"}
     },
     {
         "name": "Emergency Landing",
         "imageName": _12,
         "color": "W",
         "id": 12,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C+"}
     },
     {
         "name": "Eviction Notice",
         "imageName": _13,
         "color": "W",
         "id": 13,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C+"}
     },
     {
         "name": "Glorious Resistance",
         "imageName": _14,
         "color": "W",
         "id": 14,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "D"}
     },
     {
         "name": "Head Detective",
         "imageName": _15,
         "color": "W",
         "id": 15,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B+"}
     },
     {
         "name": "Heimdall Combat Gear",
         "imageName": _16,
         "color": "W",
         "id": 16,
-        "rarity": "M"
+        "rarity": "M",
+        "notes": {grade: "A"}
     },
     {
         "name": "Helios Comms Satellite",
         "imageName": _17,
         "color": "W",
         "id": 17,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B"}
     },
     {
         "name": "The Hemera",
         "imageName": _18,
         "color": "W",
         "id": 18,
-        "rarity": "M"
+        "rarity": "M",
+        "notes": {grade: "B+"}
     },
     {
         "name": "Heroic Act",
         "imageName": _19,
         "color": "W",
         "id": 19,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C"}
     },
     {
         "name": "High Judge’s Decree",
         "imageName": _20,
         "color": "W",
         "id": 20,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B+"}
     },
     {
         "name": "Keep the Peace",
         "imageName": _21,
         "color": "W",
         "id": 21,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "F"}
     },
     {
         "name": "Leiden Air Platform",
         "imageName": _22,
         "color": "W",
         "id": 22,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C-"}
     },
     {
         "name": "Mongrel Companion",
         "imageName": _23,
         "color": "W",
         "id": 23,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "D"}
     },
     {
         "name": "Observation Blimp",
         "imageName": _24,
         "color": "W",
         "id": 24,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B-"}
     },
     {
         "name": "Personal Forcefield",
         "imageName": _25,
         "color": "W",
         "id": 25,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "D+"}
     },
     {
         "name": "Police Badge",
         "imageName": _26,
         "color": "W",
         "id": 26,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "D"}
     },
     {
         "name": "Raise the Alarm",
         "imageName": _27,
         "color": "W",
         "id": 27,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "D+"}
     },
     {
         "name": "Rangor Watchmen",
         "imageName": _28,
         "color": "W",
         "id": 28,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "D+"}
     },
     {
         "name": "Reconnaisance Mule",
         "imageName": _29,
         "color": "W",
         "id": 29,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "D+"}
     },
     {
         "name": "Remote Paralyzer",
         "imageName": _30,
         "color": "W",
         "id": 30,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C-"}
     },
     {
         "name": "Salvation Class Warship",
         "imageName": _31,
         "color": "W",
         "id": 31,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "C+"}
     },
     {
         "name": "Sandstorm Pathfinders",
         "imageName": _32,
         "color": "W",
         "id": 32,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C"}
     },
     {
         "name": "Special Circumstances",
         "imageName": _33,
         "color": "W",
         "id": 33,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B+"}
     },
     {
         "name": "Starlight Crusade Orator",
         "imageName": _34,
         "color": "W",
         "id": 34,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B"}
     },
     {
         "name": "Supply-Line Jet",
         "imageName": _35,
         "color": "W",
         "id": 35,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B"}
     },
     {
         "name": "Suppression Patrol",
         "imageName": _36,
         "color": "W",
         "id": 36,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C"}
     },
     {
         "name": "Suspension Squad",
         "imageName": _37,
         "color": "W",
         "id": 37,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B"}
     },
     {
         "name": "Time Traveller",
         "imageName": _38,
         "color": "W",
         "id": 38,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "A"}
     },
     {
         "name": "Turn the Tide of Battle",
         "imageName": _39,
         "color": "W",
         "id": 39,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B"}
     },
     {
         "name": "Undercover Agent",
         "imageName": _40,
         "color": "W",
         "id": 40,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "C"}
     },
     {
         "name": "Wartime Recruitment",
         "imageName": _41,
         "color": "W",
         "id": 41,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "D"}
     },
     {
         "name": "Warzone Mentor",
         "imageName": _42,
         "color": "W",
         "id": 42,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C+"}
     },
     {
         "name": "Wiendahl Carrier",
         "imageName": _43,
         "color": "W",
         "id": 43,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B+"}
     },
     {
         "name": "Ambassadorship",
         "imageName": _44,
         "color": "U",
         "id": 44,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B-"}
     },
     {
         "name": "Arrester Droid",
         "imageName": _45,
         "color": "U",
         "id": 45,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C-"}
     },
     {
         "name": "Atmospheric Survey",
         "imageName": _46,
         "color": "U",
         "id": 46,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C"}
     },
     {
         "name": "Brain Drain",
         "imageName": _47,
         "color": "U",
         "id": 47,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C-"}
     },
     {
         "name": "Breakdown",
         "imageName": _48,
         "color": "U",
         "id": 48,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C+"}
     },
     {
         "name": "Build Better",
         "imageName": _49,
         "color": "U",
         "id": 49,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "D+"}
     },
     {
         "name": "The Chronos",
         "imageName": _50,
         "color": "U",
         "id": 50,
-        "rarity": "M"
+        "rarity": "M",
+        "notes": {grade: "B-"}
     },
     {
         "name": "Cloud Darter",
         "imageName": _51,
         "color": "U",
         "id": 51,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B+"}
     },
     {
         "name": "Collapse Consciousness",
         "imageName": _52,
         "color": "U",
         "id": 52,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "C+"}
     },
     {
         "name": "Coordinate Scrambler",
         "imageName": _53,
         "color": "U",
         "id": 53,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B-"}
     },
     {
         "name": "Engine Welder",
         "imageName": _54,
         "color": "U",
         "id": 54,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C+"}
     },
     {
         "name": "Escape the City",
         "imageName": _55,
         "color": "U",
         "id": 55,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B"}
     },
     {
         "name": "Exiled Xenologist",
         "imageName": _56,
         "color": "U",
         "id": 56,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B"}
     },
     {
         "name": "Future Insight",
         "imageName": _57,
         "color": "U",
         "id": 57,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B+"}
     },
     {
         "name": "Guidance Pods",
         "imageName": _58,
         "color": "U",
         "id": 58,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C+"}
     },
     {
         "name": "Holoship Fleet",
         "imageName": _59,
         "color": "U",
         "id": 59,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "A"}
     },
     {
         "name": "Hong Wai Prototype",
         "imageName": _60,
         "color": "U",
         "id": 60,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B"}
     },
     {
         "name": "Kitefin Racer",
         "imageName": _61,
         "color": "U",
         "id": 61,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C"}
     },
     {
         "name": "Kushak Exile",
         "imageName": _62,
         "color": "U",
         "id": 62,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "D"}
     },
     {
         "name": "Lambert Stealth Bomber",
         "imageName": _63,
         "color": "U",
         "id": 63,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B-"}
     },
     {
         "name": "Lost in Space",
         "imageName": _64,
         "color": "U",
         "id": 64,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C-"}
     },
     {
         "name": "Matter Redistribution",
         "imageName": _65,
         "color": "U",
         "id": 65,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B-"}
     },
     {
         "name": "Migratory City",
         "imageName": _66,
         "color": "U",
         "id": 66,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C-"}
     },
     {
         "name": "Military Intelligence",
         "imageName": _67,
         "color": "U",
         "id": 67,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "C+"}
     },
     {
         "name": "Mindmelded Sysadmin",
         "imageName": _68,
         "color": "U",
         "id": 68,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C"}
     },
     {
         "name": "Nanoreplicator Zero",
         "imageName": _69,
         "color": "U",
         "id": 69,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "A-"}
     },
     {
         "name": "Neutron Flow",
         "imageName": _70,
         "color": "U",
         "id": 70,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C"}
     },
     {
         "name": "Open Speculation",
         "imageName": _71,
         "color": "U",
         "id": 71,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C-"}
     },
     {
         "name": "Plasma Reclaimer",
         "imageName": _72,
         "color": "U",
         "id": 72,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "D"}
     },
     {
         "name": "Reconstruction Specialist",
         "imageName": _73,
         "color": "U",
         "id": 73,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C-"}
     },
     {
         "name": "Scorned Researcher",
         "imageName": _74,
         "color": "U",
         "id": 74,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B+"}
     },
     {
         "name": "Slipstream Distorter",
         "imageName": _75,
         "color": "U",
         "id": 75,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B"}
     },
     {
         "name": "Solar Power Transmitters",
         "imageName": _76,
         "color": "U",
         "id": 76,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B-"}
     },
     {
         "name": "Supercoolant Technician",
         "imageName": _77,
         "color": "U",
         "id": 77,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B"}
     },
     {
         "name": "Tactical Freeze Ray",
         "imageName": _78,
         "color": "U",
         "id": 78,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "D"}
     },
     {
         "name": "Thought Dampener",
         "imageName": _79,
         "color": "U",
         "id": 79,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B-"}
     },
     {
         "name": "Threat Profiling",
         "imageName": _80,
         "color": "U",
         "id": 80,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "D+"}
     },
     {
         "name": "Time Paradox",
         "imageName": _81,
         "color": "U",
         "id": 81,
-        "rarity": "M"
+        "rarity": "M",
+        "notes": {grade: "D"}
     },
     {
         "name": "Transcend Space-Time",
         "imageName": _82,
         "color": "U",
         "id": 82,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B"}
     },
     {
         "name": "Umida Security Protocols",
         "imageName": _83,
         "color": "U",
         "id": 83,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "D-"}
     },
     {
         "name": "Undercroft Entangler",
         "imageName": _84,
         "color": "U",
         "id": 84,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "B-"}
     },
     {
         "name": "Voyage’s End",
         "imageName": _85,
         "color": "U",
         "id": 85,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C"}
     },
     {
         "name": "Back to Work",
         "imageName": _86,
         "color": "B",
         "id": 86,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C"}
     },
     {
         "name": "Backalley Trafficker",
         "imageName": _87,
         "color": "B",
         "id": 87,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "C"}
     },
     {
         "name": "Boardroom Keeper",
         "imageName": _88,
         "color": "B",
         "id": 88,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C"}
     },
     {
         "name": "Brain Rewiring",
         "imageName": _89,
         "color": "B",
         "id": 89,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C-"}
     },
     {
         "name": "Cloning Vats",
         "imageName": _90,
         "color": "B",
         "id": 90,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B+"}
     },
     {
         "name": "Contract Killer",
         "imageName": _91,
         "color": "B",
         "id": 91,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "C+"}
     },
     {
         "name": "Corporate Spy",
         "imageName": _92,
         "color": "B",
         "id": 92,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C-"}
     },
     {
         "name": "Crux of Space-Time",
         "imageName": _93,
         "color": "B",
         "id": 93,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "A-"}
     },
     {
         "name": "Disassemble",
         "imageName": _94,
         "color": "B",
         "id": 94,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "B-"}
     },
     {
         "name": "Engineered Endemic",
         "imageName": _95,
         "color": "B",
         "id": 95,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "A-"}
     },
     {
         "name": "Figment of Death",
         "imageName": _96,
         "color": "B",
         "id": 96,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C"}
     },
     {
         "name": "Gambling Ring",
         "imageName": _97,
         "color": "B",
         "id": 97,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B-"}
     },
     {
         "name": "Grasp of The Left Hand",
         "imageName": _98,
         "color": "B",
         "id": 98,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "A-"}
     },
     {
         "name": "Hypercollider",
         "imageName": _99,
         "color": "B",
         "id": 99,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B-"}
     },
     {
         "name": "Interrogate",
         "imageName": _100,
         "color": "B",
         "id": 100,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C-"}
     },
     {
         "name": "Mesmerising Performance",
         "imageName": _101,
         "color": "B",
         "id": 101,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "D-"}
     },
     {
         "name": "Mindmeld Torturer",
         "imageName": _102,
         "color": "B",
         "id": 102,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C"}
     },
     {
         "name": "Mortality",
         "imageName": _103,
         "color": "B",
         "id": 103,
-        "rarity": "M"
+        "rarity": "M",
+        "notes": {grade: "B+"}
     },
     {
         "name": "Murmur, the Cleaner",
         "imageName": _104,
         "color": "B",
         "id": 104,
-        "rarity": "M"
+        "rarity": "M",
+        "notes": {grade: "A-"}
     },
     {
         "name": "Mystic of the Under",
         "imageName": _105,
         "color": "B",
         "id": 105,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B-"}
     },
     {
         "name": "Neural Devourer",
         "imageName": _106,
         "color": "B",
         "id": 106,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B-"}
     },
     {
         "name": "Peacekeeper Satellite",
         "imageName": _107,
         "color": "B",
         "id": 107,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B"}
     },
     {
         "name": "Prototype Evader",
         "imageName": _108,
         "color": "B",
         "id": 108,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C-"}
     },
     {
         "name": "Punitive Counterstrike",
         "imageName": _109,
         "color": "B",
         "id": 109,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C+"}
     },
     {
         "name": "Rebuild Stronger",
         "imageName": _110,
         "color": "B",
         "id": 110,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "D"}
     },
     {
         "name": "Reincarnation Program",
         "imageName": _111,
         "color": "B",
         "id": 111,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C"}
     },
     {
         "name": "Rumormonger",
         "imageName": _112,
         "color": "B",
         "id": 112,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C"}
     },
     {
         "name": "Rumors and Whispers",
         "imageName": _113,
         "color": "B",
         "id": 113,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B-"}
     },
     {
         "name": "Security Detail",
         "imageName": _114,
         "color": "B",
         "id": 114,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C-"}
     },
     {
         "name": "Sewer Slitherer",
         "imageName": _115,
         "color": "B",
         "id": 115,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C-"}
     },
     {
         "name": "Shiryu Collector",
         "imageName": _116,
         "color": "B",
         "id": 116,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "D+"}
     },
     {
         "name": "Silent Infiltrator",
         "imageName": _117,
         "color": "B",
         "id": 117,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B+"}
     },
     {
         "name": "Sink into the Oceans",
         "imageName": _118,
         "color": "B",
         "id": 118,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C-"}
     },
     {
         "name": "Surprise Round",
         "imageName": _119,
         "color": "B",
         "id": 119,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C"}
     },
     {
         "name": "The Tartarus",
         "imageName": _120,
         "color": "B",
         "id": 120,
-        "rarity": "M"
+        "rarity": "M",
+        "notes": {grade: "B+"}
     },
     {
         "name": "Tragedy of War",
         "imageName": _121,
         "color": "B",
         "id": 121,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B+"}
     },
     {
         "name": "Tundra Strider",
         "imageName": _122,
         "color": "B",
         "id": 122,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B"}
     },
     {
         "name": "Undercity Janitor",
         "imageName": _123,
         "color": "B",
         "id": 123,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "C"}
     },
     {
         "name": "Urban Revenant",
         "imageName": _124,
         "color": "B",
         "id": 124,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B-"}
     },
     {
         "name": "Warapur Company Contract",
         "imageName": _125,
         "color": "B",
         "id": 125,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B+"}
     },
     {
         "name": "Warapur Company Drudge",
         "imageName": _126,
         "color": "B",
         "id": 126,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C-"}
     },
     {
         "name": "Warapur Company Enforcer",
         "imageName": _127,
         "color": "B",
         "id": 127,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C"}
     },
     {
         "name": "Warship Sinistra",
         "imageName": _128,
         "color": "B",
         "id": 128,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B"}
     },
     {
         "name": "Adopted Wanderer",
         "imageName": _129,
         "color": "R",
         "id": 129,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C-"}
     },
     {
         "name": "Al Maham Protector",
         "imageName": _130,
         "color": "R",
         "id": 130,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C-"}
     },
     {
         "name": "Alpha Squad Captain",
         "imageName": _131,
         "color": "R",
         "id": 131,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C-"}
     },
     {
         "name": "Battle Flow",
         "imageName": _132,
         "color": "R",
         "id": 132,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C-"}
     },
     {
         "name": "Bergstadt Roboticists",
         "imageName": _133,
         "color": "R",
         "id": 133,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B"}
     },
     {
         "name": "Chentsov Scylla",
         "imageName": _134,
         "color": "R",
         "id": 134,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B"}
     },
     {
         "name": "Combined Effort",
         "imageName": _135,
         "color": "R",
         "id": 135,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B+"}
     },
     {
         "name": "Coordinated Assault",
         "imageName": _136,
         "color": "R",
         "id": 136,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B"}
     },
     {
         "name": "Coulomb Chargers",
         "imageName": _137,
         "color": "R",
         "id": 137,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B-"}
     },
     {
         "name": "Electric Arc",
         "imageName": _138,
         "color": "R",
         "id": 138,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B-"}
     },
     {
         "name": "Execute Takeover Protocol",
         "imageName": _139,
         "color": "R",
         "id": 139,
-        "rarity": "M"
+        "rarity": "M",
+        "notes": {grade: "B+"}
     },
     {
         "name": "Flagship Warapur",
         "imageName": _140,
         "color": "R",
         "id": 140,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "A-"}
     },
     {
         "name": "Frantic Investigator",
         "imageName": _141,
         "color": "R",
         "id": 141,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B"}
     },
     {
         "name": "Genius or Grifter",
         "imageName": _142,
         "color": "R",
         "id": 142,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "C+"}
     },
     {
         "name": "Guerilla Fighters",
         "imageName": _143,
         "color": "R",
         "id": 143,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C"}
     },
     {
         "name": "Hired Artillery",
         "imageName": _144,
         "color": "R",
         "id": 144,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C+"}
     },
     {
         "name": "Homeostimulation Suit",
         "imageName": _145,
         "color": "R",
         "id": 145,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C"}
     },
     {
         "name": "Hyperadrenaline",
         "imageName": _146,
         "color": "R",
         "id": 146,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "D+"}
     },
     {
         "name": "Iridium Magneto-Knife",
         "imageName": _147,
         "color": "R",
         "id": 147,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B"}
     },
     {
         "name": "Leave Behind",
         "imageName": _148,
         "color": "R",
         "id": 148,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "A-"}
     },
     {
         "name": "Mindmeld Battlesuit",
         "imageName": _149,
         "color": "R",
         "id": 149,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "A-"}
     },
     {
         "name": "The Moirai",
         "imageName": _150,
         "color": "R",
         "id": 150,
-        "rarity": "M"
+        "rarity": "M",
+        "notes": {grade: "B+"}
     },
     {
         "name": "Ohmwrecker",
         "imageName": _151,
         "color": "R",
         "id": 151,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C"}
     },
     {
         "name": "Rangor Contractor",
         "imageName": _152,
         "color": "R",
         "id": 152,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C-"}
     },
     {
         "name": "Reckless Troubleshooter",
         "imageName": _153,
         "color": "R",
         "id": 153,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B"}
     },
     {
         "name": "Reverse Polarity",
         "imageName": _154,
         "color": "R",
         "id": 154,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "D"}
     },
     {
         "name": "Rip Space-Time",
         "imageName": _155,
         "color": "R",
         "id": 155,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C"}
     },
     {
         "name": "Rocket Salvo",
         "imageName": _156,
         "color": "R",
         "id": 156,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C+"}
     },
     {
         "name": "Scavenged X-17",
         "imageName": _157,
         "color": "R",
         "id": 157,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "C+"}
     },
     {
         "name": "Scrapyard Salvager",
         "imageName": _158,
         "color": "R",
         "id": 158,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "C+"}
     },
     {
         "name": "Self-Destruct Sequence",
         "imageName": _159,
         "color": "R",
         "id": 159,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C"}
     },
     {
         "name": "Slagthrower",
         "imageName": _160,
         "color": "R",
         "id": 160,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C"}
     },
     {
         "name": "Slipstream Hunter",
         "imageName": _161,
         "color": "R",
         "id": 161,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B"}
     },
     {
         "name": "Supervolcanic Fallout",
         "imageName": _162,
         "color": "R",
         "id": 162,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "D+"}
     },
     {
         "name": "Supply Runner",
         "imageName": _163,
         "color": "R",
         "id": 163,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C"}
     },
     {
         "name": "Take Hostage",
         "imageName": _164,
         "color": "R",
         "id": 164,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C-"}
     },
     {
         "name": "Throw to the Wind",
         "imageName": _165,
         "color": "R",
         "id": 165,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C-"}
     },
     {
         "name": "Vulcan Devastators",
         "imageName": _166,
         "color": "R",
         "id": 166,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C"}
     },
     {
         "name": "Walking Furnace",
         "imageName": _167,
         "color": "R",
         "id": 167,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B-"}
     },
     {
         "name": "Wanted Speedster",
         "imageName": _168,
         "color": "R",
         "id": 168,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B-"}
     },
     {
         "name": "Wild Game Huntmaster",
         "imageName": _169,
         "color": "R",
         "id": 169,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B+"}
     },
     {
         "name": "Wormcaller’s Assurance",
         "imageName": _170,
         "color": "R",
         "id": 170,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "C+"}
     },
     {
         "name": "Al Maham Pathfinder",
         "imageName": _171,
         "color": "G",
         "id": 171,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B"}
     },
     {
         "name": "Al Maham Traders",
         "imageName": _172,
         "color": "G",
         "id": 172,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C+"}
     },
     {
         "name": "Angling Constrictor",
         "imageName": _173,
         "color": "G",
         "id": 173,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B"}
     },
     {
         "name": "Baljurashi Wanderer",
         "imageName": _174,
         "color": "G",
         "id": 174,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C-"}
     },
     {
         "name": "Basirah Composite",
         "imageName": _175,
         "color": "G",
         "id": 175,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "C"}
     },
     {
         "name": "Bioarchitect",
         "imageName": _176,
         "color": "G",
         "id": 176,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "C+"}
     },
     {
         "name": "Biocourier",
         "imageName": _177,
         "color": "G",
         "id": 177,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C+"}
     },
     {
         "name": "Brood Ambush",
         "imageName": _178,
         "color": "G",
         "id": 178,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C"}
     },
     {
         "name": "Deep into the Subconscious",
         "imageName": _179,
         "color": "G",
         "id": 179,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C-"}
     },
     {
         "name": "Deep Jungle Hunter",
         "imageName": _180,
         "color": "G",
         "id": 180,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "C"}
     },
     {
         "name": "Ecosystem Collapse",
         "imageName": _181,
         "color": "G",
         "id": 181,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B-"}
     },
     {
         "name": "Escaped Test Subject",
         "imageName": _182,
         "color": "G",
         "id": 182,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "D+"}
     },
     {
         "name": "Experimental Mutagenics",
         "imageName": _183,
         "color": "G",
         "id": 183,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B-"}
     },
     {
         "name": "Frontier Anatomist",
         "imageName": _184,
         "color": "G",
         "id": 184,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B-"}
     },
     {
         "name": "Genome Toggle",
         "imageName": _185,
         "color": "G",
         "id": 185,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B"}
     },
     {
         "name": "Gestation Cycle",
         "imageName": _186,
         "color": "G",
         "id": 186,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "C"}
     },
     {
         "name": "Growth Genetics",
         "imageName": _187,
         "color": "G",
         "id": 187,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C-"}
     },
     {
         "name": "Hunted Coadjulate",
         "imageName": _188,
         "color": "G",
         "id": 188,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C+"}
     },
     {
         "name": "Incubation Hulk",
         "imageName": _189,
         "color": "G",
         "id": 189,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B-"}
     },
     {
         "name": "The Kishar",
         "imageName": _190,
         "color": "G",
         "id": 190,
-        "rarity": "M"
+        "rarity": "M",
+        "notes": {grade: "B"}
     },
     {
         "name": "Kushak Brood Warden",
         "imageName": _191,
         "color": "G",
         "id": 191,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "C+"}
     },
     {
         "name": "Kushak Device",
         "imageName": _192,
         "color": "G",
         "id": 192,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B-"}
     },
     {
         "name": "Kushak Interference",
         "imageName": _193,
         "color": "G",
         "id": 193,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B"}
     },
     {
         "name": "Kushak Research Council",
         "imageName": _194,
         "color": "G",
         "id": 194,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B"}
     },
     {
         "name": "Kushak Subject Prime",
         "imageName": _195,
         "color": "G",
         "id": 195,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "C+"}
     },
     {
         "name": "Lifestrider",
         "imageName": _196,
         "color": "G",
         "id": 196,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C+"}
     },
     {
         "name": "Myth of Baljurashi",
         "imageName": _197,
         "color": "G",
         "id": 197,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B"}
     },
     {
         "name": "Radium Tracker",
         "imageName": _198,
         "color": "G",
         "id": 198,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C+"}
     },
     {
         "name": "Reverse Gravity",
         "imageName": _199,
         "color": "G",
         "id": 199,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B-"}
     },
     {
         "name": "Rogue Servitor",
         "imageName": _200,
         "color": "G",
         "id": 200,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C"}
     },
     {
         "name": "SAM Team",
         "imageName": _201,
         "color": "G",
         "id": 201,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C-"}
     },
     {
         "name": "Screeching Terror",
         "imageName": _202,
         "color": "G",
         "id": 202,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C"}
     },
     {
         "name": "Sewer Ambush",
         "imageName": _203,
         "color": "G",
         "id": 203,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "B-"}
     },
     {
         "name": "Sewer Monster",
         "imageName": _204,
         "color": "G",
         "id": 204,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C+"}
     },
     {
         "name": "Spawning Grounds",
         "imageName": _205,
         "color": "G",
         "id": 205,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "C"}
     },
     {
         "name": "Supply Scavengers",
         "imageName": _206,
         "color": "G",
         "id": 206,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C"}
     },
     {
         "name": "Suppressor of Worlds",
         "imageName": _207,
         "color": "G",
         "id": 207,
-        "rarity": "M"
+        "rarity": "M",
+        "notes": {grade: "B+"}
     },
     {
         "name": "Surge of Fervor",
         "imageName": _208,
         "color": "G",
         "id": 208,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B"}
     },
     {
         "name": "Terraforming Works",
         "imageName": _209,
         "color": "G",
         "id": 209,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "C+"}
     },
     {
         "name": "Ultramagnetic Interference",
         "imageName": _210,
         "color": "G",
         "id": 210,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "B-"}
     },
     {
         "name": "Uncharted Lands",
         "imageName": _211,
         "color": "G",
         "id": 211,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C"}
     },
     {
         "name": "Unstable Growth",
         "imageName": _212,
         "color": "G",
         "id": 212,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "D+"}
     },
     {
         "name": "High Judge Zephynius",
         "imageName": _213,
         "color": "WU",
         "id": 213,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B+"}
     },
     {
         "name": "Wings of the Law",
         "imageName": _214,
         "color": "WU",
         "id": 214,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B"}
     },
     {
         "name": "Murmur’s Command",
         "imageName": _215,
         "color": "UB",
         "id": 215,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "A-"}
     },
     {
         "name": "Seekerpede",
         "imageName": _216,
         "color": "UB",
         "id": 216,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B-"}
     },
     {
         "name": "Shadowlight Infiltrator",
         "imageName": _217,
         "color": "UB",
         "id": 217,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B"}
     },
     {
         "name": "Thousand Spares",
         "imageName": _218,
         "color": "BR",
         "id": 218,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B+"}
     },
     {
         "name": "Warapur Company Guard",
         "imageName": _219,
         "color": "BR",
         "id": 219,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B"}
     },
     {
         "name": "Canyon Skitterer",
         "imageName": _220,
         "color": "RG",
         "id": 220,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B"}
     },
     {
         "name": "The Honored Wormcaller",
         "imageName": _221,
         "color": "RG",
         "id": 221,
-        "rarity": "M"
+        "rarity": "M",
+        "notes": {grade: "A"}
     },
     {
         "name": "Wormcaller’s Command",
         "imageName": _222,
         "color": "RG",
         "id": 222,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B+"}
     },
     {
         "name": "Ingolf, the Catalyst",
         "imageName": _223,
         "color": "GW",
         "id": 223,
-        "rarity": "M"
+        "rarity": "M",
+        "notes": {grade: "B+"}
     },
     {
         "name": "Ingolf’s Command",
         "imageName": _224,
         "color": "GW",
         "id": 224,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B"}
     },
     {
         "name": "Support Misdirector",
         "imageName": _225,
         "color": "GW",
         "id": 225,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B"}
     },
     {
         "name": "Publicity Officer",
         "imageName": _226,
         "color": "WB",
         "id": 226,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B-"}
     },
     {
         "name": "Representative Vuissance",
         "imageName": _227,
         "color": "WB",
         "id": 227,
-        "rarity": "M"
+        "rarity": "M",
+        "notes": {grade: "B-"}
     },
     {
         "name": "Vuissance’s Command",
         "imageName": _228,
         "color": "WB",
         "id": 228,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "A-"}
     },
     {
         "name": "Matter Redistributor",
         "imageName": _229,
         "color": "UR",
         "id": 229,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B-"}
     },
     {
         "name": "Neutron Evader",
         "imageName": _230,
         "color": "UR",
         "id": 230,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B"}
     },
     {
         "name": "Redistribution Command",
         "imageName": _231,
         "color": "UR",
         "id": 231,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B+"}
     },
     {
         "name": "Sewer Dredgers",
         "imageName": _232,
         "color": "BG",
         "id": 232,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B"}
     },
     {
         "name": "Titan of Shisuku Sewers",
         "imageName": _233,
         "color": "BG",
         "id": 233,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B"}
     },
     {
         "name": "Acquisitor Delwani",
         "imageName": _234,
         "color": "RW",
         "id": 234,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B+"}
     },
     {
         "name": "Rangor Irregulars",
         "imageName": _235,
         "color": "RW",
         "id": 235,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B-"}
     },
     {
         "name": "Maleck, Umida Division Head",
         "imageName": _236,
         "color": "GU",
         "id": 236,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B+"}
     },
     {
         "name": "Troposphere Drifter",
         "imageName": _237,
         "color": "GU",
         "id": 237,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B"}
     },
     {
         "name": "Umida Koto",
         "imageName": _238,
         "color": "BGU",
         "id": 238,
-        "rarity": "M"
+        "rarity": "M",
+        "notes": {grade: "B+"}
     },
     {
         "name": "The Aion",
         "imageName": _239,
         "color": "",
         "id": 239,
-        "rarity": "M"
+        "rarity": "M",
+        "notes": {grade: "B"}
     },
     {
         "name": "Chameleon Suit",
         "imageName": _240,
         "color": "",
         "id": 240,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "D"}
     },
     {
         "name": "Faraday Transmitter",
         "imageName": _241,
         "color": "",
         "id": 241,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "D+"}
     },
     {
         "name": "Formling",
         "imageName": _242,
         "color": "",
         "id": 242,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B"}
     },
     {
         "name": "Foundry Analyst",
         "imageName": _243,
         "color": "",
         "id": 243,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "B-"}
     },
     {
         "name": "Gravitic Collector",
         "imageName": _244,
         "color": "",
         "id": 244,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B"}
     },
     {
         "name": "Hexblade Ravager",
         "imageName": _245,
         "color": "",
         "id": 245,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "D"}
     },
     {
         "name": "Hong Wai Refinery",
         "imageName": _246,
         "color": "",
         "id": 246,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "F"}
     },
     {
         "name": "Hoverbike",
         "imageName": _247,
         "color": "",
         "id": 247,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "D+"}
     },
     {
         "name": "Jetpack",
         "imageName": _248,
         "color": "",
         "id": 248,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "D+"}
     },
     {
         "name": "Mox Voidstone",
         "imageName": _249,
         "color": "",
         "id": 249,
-        "rarity": "M"
+        "rarity": "M",
+        "notes": {grade: "F"}
     },
     {
         "name": "Museum of Antiquities",
         "imageName": _250,
         "color": "",
         "id": 250,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "D"}
     },
     {
         "name": "Mutagenic Serum",
         "imageName": _251,
         "color": "",
         "id": 251,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "C+"}
     },
     {
         "name": "Prophetic Lens",
         "imageName": _252,
         "color": "",
         "id": 252,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C-"}
     },
     {
         "name": "Scrapyard Construct",
         "imageName": _253,
         "color": "",
         "id": 253,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "D"}
     },
     {
         "name": "Slipstream Snapper",
         "imageName": _254,
         "color": "",
         "id": 254,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "D"}
     },
     {
         "name": "Subspace Capacitor",
         "imageName": _255,
         "color": "",
         "id": 255,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B-"}
     },
     {
         "name": "Surveillance Probes",
         "imageName": _256,
         "color": "",
         "id": 256,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "D+"}
     },
     {
         "name": "Swallowers of Civilization",
         "imageName": _257,
         "color": "",
         "id": 257,
-        "rarity": "M"
+        "rarity": "M",
+        "notes": {grade: "D"}
     },
     {
         "name": "Trojan Horse",
         "imageName": _258,
         "color": "",
         "id": 258,
-        "rarity": "U"
+        "rarity": "U",
+        "notes": {grade: "C-"}
     },
     {
         "name": "Adamantium Mine",
         "imageName": _259,
         "color": "",
         "id": 259,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C+"}
     },
     {
         "name": "Amanthoid Mine",
         "imageName": _260,
         "color": "",
         "id": 260,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C+"}
     },
     {
         "name": "Antimatter Mine",
         "imageName": _261,
         "color": "",
         "id": 261,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C+"}
     },
     {
         "name": "Distant Colony",
         "imageName": _262,
         "color": "",
         "id": 262,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "D+"}
     },
     {
         "name": "Hexaferrum Mine",
         "imageName": _263,
         "color": "",
         "id": 263,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C+"}
     },
     {
         "name": "Hong Wai Factory",
         "imageName": _264,
         "color": "",
         "id": 264,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "B-"}
     },
     {
         "name": "Hydromiel Mine",
         "imageName": _265,
         "color": "",
         "id": 265,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C+"}
     },
     {
         "name": "Hyperium Mine",
         "imageName": _266,
         "color": "",
         "id": 266,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C+"}
     },
     {
         "name": "The Mercurite Lens",
         "imageName": _267,
         "color": "",
         "id": 267,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "C"}
     },
     {
         "name": "Mercurite Mine",
         "imageName": _268,
         "color": "",
         "id": 268,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C+"}
     },
     {
         "name": "Orichalcix Mine",
         "imageName": _269,
         "color": "",
         "id": 269,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C+"}
     },
     {
         "name": "Quadrinix Mine",
         "imageName": _270,
         "color": "",
         "id": 270,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C+"}
     },
     {
         "name": "Siderite Mine",
         "imageName": _271,
         "color": "",
         "id": 271,
-        "rarity": "C"
+        "rarity": "C",
+        "notes": {grade: "C+"}
     },
     {
         "name": "Spire of Industry",
         "imageName": _272,
         "color": "",
         "id": 272,
-        "rarity": "R"
+        "rarity": "R",
+        "notes": {grade: "C+"}
     }];
 export default rawCardList;
