@@ -32,7 +32,6 @@ import mutagenicSerum from "../../../../data/cardImages/Mutagenic Serum.jpg";
 import trojanHorse from "../../../../data/cardImages/Trojan Horse.jpg";
 import hongWaiFactory from "../../../../data/cardImages/Hong Wai Factory.jpg";
 import theMercuriteLens from "../../../../data/cardImages/The Mercurite Lens.jpg";
-import terramorphicExpanse from "../../../../data/cardImages/Terramorphic Expanse.jpg";
 import "./Faq.scss";
 
 export default function Faq() {
@@ -634,18 +633,6 @@ export default function Faq() {
                                 each other produce mana. If you control The Mercurite Mirror, and all other lands you
                                 control either lack mana abilities or are other copies of The Mercurite Mirror, you may
                                 still activate The Mercurite Mirror's first ability — it just won’t produce any mana.
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-                <section>
-                    <img src={terramorphicExpanse} />
-                    <div>
-                        <h3>Terramorphic Expanse</h3>
-                        <ul>
-                            <li>
-                                Remember that this is a search effect and not a "look at" or "reveal" effect. You cannot
-                                teleport cards using its ability.
                             </li>
                         </ul>
                     </div>
