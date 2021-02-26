@@ -128,10 +128,9 @@ export default function SingleDraft({ loggedInUser }) {
 
     function DeckView() {
         const piles = [[], [], [], [], [], [], [], []];
-        while (picks.length) {
-            const pick = picks.shift();
+        picks.forEach((pick) => {
             piles[Math.min(7, pick.manaValue)].push(pick);
-        }
+        });
         return (
             <div className="deck-view">
                 <h1>Deck</h1>
