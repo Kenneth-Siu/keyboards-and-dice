@@ -30,6 +30,9 @@ export async function find(id) {
             WHERE id = $1`,
             [id]
         );
+        if (result.rows.length === 0) {
+            return null;
+        }
         return User.createFromDb(result.rows[0]);
     } catch (error) {
         throw error;

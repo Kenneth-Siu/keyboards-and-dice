@@ -26,6 +26,18 @@ app.use(
     })
 );
 app.use(passport.initialize());
+app.use((err, req, res, next) => {
+    if (err) {
+        req.logout();
+        if (!req.originalUrl === "/login") {
+            next();
+        } else {
+            res.redirect("/login");
+        }
+    } else {
+        next();
+    }
+})
 app.use(passport.session());
 app.use("/api", apiRoutes);
 app.use(express.static(process.env.RAZZLE_PUBLIC_DIR));

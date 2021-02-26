@@ -1,3 +1,10 @@
+DROP TABLE memories;
+DROP TABLE cards;
+DROP TABLE boosters;
+DROP TABLE players;
+DROP TABLE drafts;
+DROP TABLE draft_statuses;
+
 DELETE FROM users WHERE id = '00';
 DELETE FROM users WHERE id = '01';
 DELETE FROM users WHERE id = '02';
@@ -40,10 +47,3 @@ DELETE FROM users WHERE id = '38';
 DELETE FROM users WHERE id = '39';
 DELETE FROM users WHERE id = '40';
 DELETE FROM users WHERE id = '41';
-
-DROP TABLE memories;
-DROP TABLE cards;
-DROP TABLE boosters;
-DROP TABLE players;
-DROP TABLE drafts;
-DROP TABLE draft_statuses;
