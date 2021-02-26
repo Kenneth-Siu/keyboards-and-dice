@@ -14,7 +14,7 @@ import _12 from "./cardImages/Emergency Landing.jpg";
 import _13 from "./cardImages/Eviction Notice.jpg";
 import _14 from "./cardImages/Glorious Resistance.jpg";
 import _15 from "./cardImages/Head Detective.jpg";
-import _16 from "./cardImages/Heimdall Combat Gear.jpg";
+import _16 from "./cardImages/Heimdall Mk III.jpg";
 import _17 from "./cardImages/Helios Comms Satellite.jpg";
 import _18 from "./cardImages/The Hemera.jpg";
 import _19 from "./cardImages/Heroic Act.jpg";
@@ -125,8 +125,8 @@ import _123 from "./cardImages/Undercity Janitor.jpg";
 import _124 from "./cardImages/Urban Revenant.jpg";
 import _125 from "./cardImages/Warapur Company Contract.jpg";
 import _126 from "./cardImages/Warapur Company Drudge.jpg";
-import _127 from "./cardImages/Warapur Company Enforcer.jpg";
-import _128 from "./cardImages/Warship Sinistra.jpg";
+import _127 from "./cardImages/Warship Sinistra.jpg";
+import _128 from "./cardImages/Wasteland Enforcer.jpg";
 import _129 from "./cardImages/Adopted Wanderer.jpg";
 import _130 from "./cardImages/Al Maham Protector.jpg";
 import _131 from "./cardImages/Alpha Squad Captain.jpg";
@@ -199,7 +199,7 @@ import _197 from "./cardImages/Myth of Baljurashi.jpg";
 import _198 from "./cardImages/Radium Tracker.jpg";
 import _199 from "./cardImages/Reverse Gravity.jpg";
 import _200 from "./cardImages/Rogue Servitor.jpg";
-import _201 from "./cardImages/SAM Team.jpg";
+import _201 from "./cardImages/S.A.M. Team.jpg";
 import _202 from "./cardImages/Screeching Terror.jpg";
 import _203 from "./cardImages/Sewer Ambush.jpg";
 import _204 from "./cardImages/Sewer Monster.jpg";
@@ -276,2184 +276,2743 @@ const rawCardList = [
         "name": "Karn, the Introspective",
         "imageName": _0,
         "color": "",
+        "type": "Legendary Planeswalker — Karn ",
         "id": 0,
         "rarity": "M",
-        "notes": {grade: "A"}
+        "notes": {grade: "A",
+colorIdentity: ""}
     },
     {
         "name": "Ajani, Sunchaser",
         "imageName": _1,
         "color": "W",
+        "type": "Legendary Planeswalker — Ajani ",
         "id": 1,
         "rarity": "M",
-        "notes": {grade: "A"}
+        "notes": {grade: "A",
+colorIdentity: "W"}
     },
     {
         "name": "Biomech Team",
         "imageName": _2,
         "color": "W",
+        "type": "Creature — Police Engineer Medic ",
         "id": 2,
         "rarity": "C",
-        "notes": {grade: "C"}
+        "notes": {grade: "C",
+colorIdentity: "W"}
     },
     {
         "name": "Bring to Justice",
         "imageName": _3,
         "color": "W",
+        "type": "Sorcery",
         "id": 3,
         "rarity": "C",
-        "notes": {grade: "B-"}
+        "notes": {grade: "B-",
+colorIdentity: "W"}
     },
     {
         "name": "Cache Mapper",
         "imageName": _4,
         "color": "W",
+        "type": "Creature — Rebel Scout ",
         "id": 4,
         "rarity": "C",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: "W"}
     },
     {
         "name": "Comms Disruptor",
         "imageName": _5,
         "color": "W",
+        "type": "Artifact — Equipment ",
         "id": 5,
         "rarity": "R",
-        "notes": {grade: "B"}
+        "notes": {grade: "B-",
+colorIdentity: "W"}
     },
     {
         "name": "Community Officer",
         "imageName": _6,
         "color": "W",
+        "type": "Artifact Creature — Police Mech ",
         "id": 6,
         "rarity": "C",
-        "notes": {grade: "D"}
+        "notes": {grade: "D",
+colorIdentity: "W"}
     },
     {
         "name": "Control Overseer",
         "imageName": _7,
         "color": "W",
+        "type": "Creature — Police Advisor ",
         "id": 7,
         "rarity": "U",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: "W"}
     },
     {
         "name": "Cryonics Facility",
         "imageName": _8,
         "color": "W",
+        "type": "Artifact",
         "id": 8,
         "rarity": "U",
-        "notes": {grade: "C"}
+        "notes": {grade: "C",
+colorIdentity: "W"}
     },
     {
         "name": "Cultural Renaissance",
         "imageName": _9,
         "color": "W",
+        "type": "Enchantment",
         "id": 9,
         "rarity": "R",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: "W"}
     },
     {
         "name": "Diplomat’s Prerogative",
         "imageName": _10,
         "color": "W",
+        "type": "Enchantment — Aura ",
         "id": 10,
         "rarity": "U",
-        "notes": {grade: "B+"}
+        "notes": {grade: "B+",
+colorIdentity: "W"}
     },
     {
         "name": "Dropship",
         "imageName": _11,
         "color": "W",
+        "type": "Artifact Creature — Military Carrier ",
         "id": 11,
         "rarity": "R",
-        "notes": {grade: "B+"}
+        "notes": {grade: "B+",
+colorIdentity: "W"}
     },
     {
         "name": "Emergency Landing",
         "imageName": _12,
         "color": "W",
+        "type": "Sorcery",
         "id": 12,
         "rarity": "C",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: "W"}
     },
     {
         "name": "Eviction Notice",
         "imageName": _13,
         "color": "W",
+        "type": "Enchantment",
         "id": 13,
         "rarity": "C",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: "W"}
     },
     {
         "name": "Glorious Resistance",
         "imageName": _14,
         "color": "W",
+        "type": "Sorcery",
         "id": 14,
         "rarity": "C",
-        "notes": {grade: "D"}
+        "notes": {grade: "D",
+colorIdentity: "W"}
     },
     {
         "name": "Head Detective",
         "imageName": _15,
         "color": "W",
+        "type": "Creature — Police Advisor ",
         "id": 15,
         "rarity": "U",
-        "notes": {grade: "B+"}
+        "notes": {grade: "B+",
+colorIdentity: "W"}
     },
     {
-        "name": "Heimdall Combat Gear",
+        "name": "Heimdall Mk III",
         "imageName": _16,
         "color": "W",
+        "type": "Legendary Artifact — Equipment ",
         "id": 16,
         "rarity": "M",
-        "notes": {grade: "A"}
+        "notes": {grade: "A",
+colorIdentity: "W"}
     },
     {
         "name": "Helios Comms Satellite",
         "imageName": _17,
         "color": "W",
+        "type": "Artifact Creature — Station ",
         "id": 17,
         "rarity": "R",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: "W"}
     },
     {
         "name": "The Hemera",
         "imageName": _18,
         "color": "W",
+        "type": "Legendary Artifact Creature — Battleship ",
         "id": 18,
         "rarity": "M",
-        "notes": {grade: "B+"}
+        "notes": {grade: "B+",
+colorIdentity: "W"}
     },
     {
         "name": "Heroic Act",
         "imageName": _19,
         "color": "W",
+        "type": "Instant",
         "id": 19,
         "rarity": "C",
-        "notes": {grade: "C"}
+        "notes": {grade: "C",
+colorIdentity: "W"}
     },
     {
         "name": "High Judge’s Decree",
         "imageName": _20,
         "color": "W",
+        "type": "Instant",
         "id": 20,
         "rarity": "R",
-        "notes": {grade: "B+"}
+        "notes": {grade: "B+",
+colorIdentity: "W"}
     },
     {
         "name": "Keep the Peace",
         "imageName": _21,
         "color": "W",
+        "type": "Sorcery",
         "id": 21,
         "rarity": "C",
-        "notes": {grade: "F"}
+        "notes": {grade: "F",
+colorIdentity: "W"}
     },
     {
         "name": "Leiden Air Platform",
         "imageName": _22,
         "color": "W",
+        "type": "Artifact Creature — Military Carrier ",
         "id": 22,
         "rarity": "C",
-        "notes": {grade: "C-"}
+        "notes": {grade: "C-",
+colorIdentity: "W"}
     },
     {
         "name": "Mongrel Companion",
         "imageName": _23,
         "color": "W",
+        "type": "Artifact Creature — Police Mech Dog ",
         "id": 23,
         "rarity": "C",
-        "notes": {grade: "D"}
+        "notes": {grade: "D",
+colorIdentity: "W"}
     },
     {
         "name": "Observation Blimp",
         "imageName": _24,
         "color": "W",
+        "type": "Artifact Creature — Police Airship ",
         "id": 24,
         "rarity": "U",
-        "notes": {grade: "B-"}
+        "notes": {grade: "B-",
+colorIdentity: "W"}
     },
     {
         "name": "Personal Forcefield",
         "imageName": _25,
         "color": "W",
+        "type": "Artifact — Equipment ",
         "id": 25,
         "rarity": "C",
-        "notes": {grade: "D+"}
+        "notes": {grade: "D+",
+colorIdentity: "W"}
     },
     {
         "name": "Police Badge",
         "imageName": _26,
         "color": "W",
+        "type": "Artifact — Equipment ",
         "id": 26,
         "rarity": "U",
-        "notes": {grade: "D"}
+        "notes": {grade: "D",
+colorIdentity: "W"}
     },
     {
         "name": "Raise the Alarm",
         "imageName": _27,
         "color": "W",
+        "type": "Instant",
         "id": 27,
         "rarity": "C",
-        "notes": {grade: "D+"}
+        "notes": {grade: "D+",
+colorIdentity: "W"}
     },
     {
         "name": "Rangor Watchmen",
         "imageName": _28,
         "color": "W",
+        "type": "Creature — Rebel Commando ",
         "id": 28,
         "rarity": "C",
-        "notes": {grade: "D+"}
+        "notes": {grade: "D+",
+colorIdentity: "W"}
     },
     {
         "name": "Reconnaisance Mule",
         "imageName": _29,
         "color": "W",
+        "type": "Artifact Creature — Military Mech ",
         "id": 29,
         "rarity": "C",
-        "notes": {grade: "D+"}
+        "notes": {grade: "D+",
+colorIdentity: "W"}
     },
     {
         "name": "Remote Paralyzer",
         "imageName": _30,
         "color": "W",
+        "type": "Creature — Police Saboteur ",
         "id": 30,
         "rarity": "C",
-        "notes": {grade: "C-"}
+        "notes": {grade: "C-",
+colorIdentity: "W"}
     },
     {
         "name": "Salvation Class Warship",
         "imageName": _31,
         "color": "W",
+        "type": "Artifact Creature — Military Cruiser ",
         "id": 31,
         "rarity": "U",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: "W"}
     },
     {
         "name": "Sandstorm Pathfinders",
         "imageName": _32,
         "color": "W",
+        "type": "Creature — Rebel Scout ",
         "id": 32,
         "rarity": "C",
-        "notes": {grade: "C"}
+        "notes": {grade: "C",
+colorIdentity: "W"}
     },
     {
         "name": "Special Circumstances",
         "imageName": _33,
         "color": "W",
+        "type": "Creature — Police Commando ",
         "id": 33,
         "rarity": "R",
-        "notes": {grade: "B+"}
+        "notes": {grade: "B+",
+colorIdentity: "W"}
     },
     {
         "name": "Starlight Crusade Orator",
         "imageName": _34,
         "color": "W",
+        "type": "Creature — Advisor ",
         "id": 34,
         "rarity": "U",
-        "notes": {grade: "B"}
+        "notes": {grade: "B-",
+colorIdentity: "W"}
     },
     {
         "name": "Supply-Line Jet",
         "imageName": _35,
         "color": "W",
+        "type": "Artifact Creature — Rebel Fighter ",
         "id": 35,
         "rarity": "U",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: "W"}
     },
     {
         "name": "Suppression Patrol",
         "imageName": _36,
         "color": "W",
+        "type": "Artifact Creature — Police Mech ",
         "id": 36,
         "rarity": "C",
-        "notes": {grade: "C"}
+        "notes": {grade: "C",
+colorIdentity: "W"}
     },
     {
         "name": "Suspension Squad",
         "imageName": _37,
         "color": "W",
+        "type": "Creature — Military Commando ",
         "id": 37,
         "rarity": "U",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: "W"}
     },
     {
         "name": "Time Traveller",
         "imageName": _38,
         "color": "W",
+        "type": "Creature — Researcher ",
         "id": 38,
         "rarity": "R",
-        "notes": {grade: "A"}
+        "notes": {grade: "A-",
+colorIdentity: "W"}
     },
     {
         "name": "Turn the Tide of Battle",
         "imageName": _39,
         "color": "W",
+        "type": "Sorcery",
         "id": 39,
         "rarity": "U",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: "W"}
     },
     {
         "name": "Undercover Agent",
         "imageName": _40,
         "color": "W",
+        "type": "Creature — Rebel Saboteur ",
         "id": 40,
         "rarity": "U",
-        "notes": {grade: "C"}
+        "notes": {grade: "C",
+colorIdentity: "W"}
     },
     {
         "name": "Wartime Recruitment",
         "imageName": _41,
         "color": "W",
+        "type": "Enchantment",
         "id": 41,
         "rarity": "U",
-        "notes": {grade: "D"}
+        "notes": {grade: "D",
+colorIdentity: "W"}
     },
     {
         "name": "Warzone Mentor",
         "imageName": _42,
         "color": "W",
+        "type": "Creature — Military Assault ",
         "id": 42,
         "rarity": "C",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: "W"}
     },
     {
         "name": "Wiendahl Carrier",
         "imageName": _43,
         "color": "W",
+        "type": "Artifact Creature — Carrier ",
         "id": 43,
         "rarity": "R",
-        "notes": {grade: "B+"}
+        "notes": {grade: "B+",
+colorIdentity: "W"}
     },
     {
         "name": "Ambassadorship",
         "imageName": _44,
         "color": "U",
+        "type": "Enchantment — Aura ",
         "id": 44,
         "rarity": "R",
-        "notes": {grade: "B-"}
+        "notes": {grade: "B-",
+colorIdentity: "U"}
     },
     {
         "name": "Arrester Droid",
         "imageName": _45,
         "color": "U",
+        "type": "Artifact Creature — Police Mech ",
         "id": 45,
         "rarity": "C",
-        "notes": {grade: "C-"}
+        "notes": {grade: "C-",
+colorIdentity: "U"}
     },
     {
         "name": "Atmospheric Survey",
         "imageName": _46,
         "color": "U",
+        "type": "Instant",
         "id": 46,
         "rarity": "C",
-        "notes": {grade: "C"}
+        "notes": {grade: "C",
+colorIdentity: "U"}
     },
     {
         "name": "Brain Drain",
         "imageName": _47,
         "color": "U",
+        "type": "Instant",
         "id": 47,
         "rarity": "C",
-        "notes": {grade: "C-"}
+        "notes": {grade: "C-",
+colorIdentity: "U"}
     },
     {
         "name": "Breakdown",
         "imageName": _48,
         "color": "U",
+        "type": "Enchantment — Aura ",
         "id": 48,
         "rarity": "C",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: "U"}
     },
     {
         "name": "Build Better",
         "imageName": _49,
         "color": "U",
+        "type": "Instant",
         "id": 49,
         "rarity": "U",
-        "notes": {grade: "D+"}
+        "notes": {grade: "D+",
+colorIdentity: "U"}
     },
     {
         "name": "The Chronos",
         "imageName": _50,
         "color": "U",
+        "type": "Legendary Artifact Creature — Battleship ",
         "id": 50,
         "rarity": "M",
-        "notes": {grade: "B-"}
+        "notes": {grade: "B-",
+colorIdentity: "U"}
     },
     {
         "name": "Cloud Darter",
         "imageName": _51,
         "color": "U",
+        "type": "Artifact Creature — Police Fighter ",
         "id": 51,
         "rarity": "R",
-        "notes": {grade: "B+"}
+        "notes": {grade: "B+",
+colorIdentity: "U"}
     },
     {
         "name": "Collapse Consciousness",
         "imageName": _52,
         "color": "U",
+        "type": "Instant",
         "id": 52,
         "rarity": "U",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: "U"}
     },
     {
         "name": "Coordinate Scrambler",
         "imageName": _53,
         "color": "U",
+        "type": "Creature — Saboteur ",
         "id": 53,
         "rarity": "R",
-        "notes": {grade: "B-"}
+        "notes": {grade: "B-",
+colorIdentity: "U"}
     },
     {
         "name": "Engine Welder",
         "imageName": _54,
         "color": "U",
+        "type": "Creature — Engineer ",
         "id": 54,
         "rarity": "C",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: "U"}
     },
     {
         "name": "Escape the City",
         "imageName": _55,
         "color": "U",
+        "type": "Instant",
         "id": 55,
         "rarity": "U",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: "U"}
     },
     {
         "name": "Exiled Xenologist",
         "imageName": _56,
         "color": "U",
+        "type": "Creature — Researcher ",
         "id": 56,
         "rarity": "U",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: "U"}
     },
     {
         "name": "Future Insight",
         "imageName": _57,
         "color": "U",
+        "type": "Instant",
         "id": 57,
         "rarity": "R",
-        "notes": {grade: "B+"}
+        "notes": {grade: "B+",
+colorIdentity: "U"}
     },
     {
         "name": "Guidance Pods",
         "imageName": _58,
         "color": "U",
+        "type": "Artifact Creature — Corporate Shuttle ",
         "id": 58,
         "rarity": "C",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: "U"}
     },
     {
         "name": "Holoship Fleet",
         "imageName": _59,
         "color": "U",
+        "type": "Artifact Creature — Hologram Cruiser ",
         "id": 59,
         "rarity": "R",
-        "notes": {grade: "A"}
+        "notes": {grade: "A",
+colorIdentity: "U"}
     },
     {
         "name": "Hong Wai Prototype",
         "imageName": _60,
         "color": "U",
+        "type": "Artifact Creature — Fighter ",
         "id": 60,
         "rarity": "U",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: "U"}
     },
     {
         "name": "Kitefin Racer",
         "imageName": _61,
         "color": "U",
+        "type": "Artifact Creature — Fish Mech Mutant ",
         "id": 61,
         "rarity": "C",
-        "notes": {grade: "C"}
+        "notes": {grade: "C",
+colorIdentity: "U"}
     },
     {
         "name": "Kushak Exile",
         "imageName": _62,
         "color": "U",
+        "type": "Creature — Xeno Mutant ",
         "id": 62,
         "rarity": "C",
-        "notes": {grade: "D"}
+        "notes": {grade: "D",
+colorIdentity: "U"}
     },
     {
         "name": "Lambert Stealth Bomber",
         "imageName": _63,
         "color": "U",
+        "type": "Artifact Creature — Cruiser ",
         "id": 63,
         "rarity": "U",
-        "notes": {grade: "B-"}
+        "notes": {grade: "B-",
+colorIdentity: "U"}
     },
     {
         "name": "Lost in Space",
         "imageName": _64,
         "color": "U",
+        "type": "Sorcery",
         "id": 64,
         "rarity": "C",
-        "notes": {grade: "C-"}
+        "notes": {grade: "C-",
+colorIdentity: "U"}
     },
     {
         "name": "Matter Redistribution",
         "imageName": _65,
         "color": "U",
+        "type": "Instant",
         "id": 65,
         "rarity": "U",
-        "notes": {grade: "B-"}
+        "notes": {grade: "B-",
+colorIdentity: "U"}
     },
     {
         "name": "Migratory City",
         "imageName": _66,
         "color": "U",
+        "type": "Artifact Creature — Mech ",
         "id": 66,
         "rarity": "C",
-        "notes": {grade: "C-"}
+        "notes": {grade: "C-",
+colorIdentity: "U"}
     },
     {
         "name": "Military Intelligence",
         "imageName": _67,
         "color": "U",
+        "type": "Enchantment",
         "id": 67,
         "rarity": "U",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: "U"}
     },
     {
         "name": "Mindmelded Sysadmin",
         "imageName": _68,
         "color": "U",
+        "type": "Artifact Creature — Mutant Saboteur ",
         "id": 68,
         "rarity": "C",
-        "notes": {grade: "C"}
+        "notes": {grade: "C",
+colorIdentity: "U"}
     },
     {
         "name": "Nanoreplicator Zero",
         "imageName": _69,
         "color": "U",
+        "type": "Artifact Creature — Nanobot ",
         "id": 69,
         "rarity": "R",
-        "notes": {grade: "A-"}
+        "notes": {grade: "A-",
+colorIdentity: "U"}
     },
     {
         "name": "Neutron Flow",
         "imageName": _70,
         "color": "U",
+        "type": "Sorcery",
         "id": 70,
         "rarity": "C",
-        "notes": {grade: "C"}
+        "notes": {grade: "C",
+colorIdentity: "U"}
     },
     {
         "name": "Open Speculation",
         "imageName": _71,
         "color": "U",
+        "type": "Instant",
         "id": 71,
         "rarity": "C",
-        "notes": {grade: "C-"}
+        "notes": {grade: "C-",
+colorIdentity: "U"}
     },
     {
         "name": "Plasma Reclaimer",
         "imageName": _72,
         "color": "U",
+        "type": "Artifact Creature — Mech ",
         "id": 72,
         "rarity": "C",
-        "notes": {grade: "D"}
+        "notes": {grade: "D",
+colorIdentity: "U"}
     },
     {
         "name": "Reconstruction Specialist",
         "imageName": _73,
         "color": "U",
+        "type": "Creature — Police Advisor ",
         "id": 73,
         "rarity": "C",
-        "notes": {grade: "C-"}
+        "notes": {grade: "C-",
+colorIdentity: "U"}
     },
     {
         "name": "Scorned Researcher",
         "imageName": _74,
         "color": "U",
+        "type": "Creature — Mutant Researcher ",
         "id": 74,
         "rarity": "U",
-        "notes": {grade: "B+"}
+        "notes": {grade: "B+",
+colorIdentity: "U"}
     },
     {
         "name": "Slipstream Distorter",
         "imageName": _75,
         "color": "U",
+        "type": "Artifact Creature — Police Mech ",
         "id": 75,
         "rarity": "U",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: "U"}
     },
     {
         "name": "Solar Power Transmitters",
         "imageName": _76,
         "color": "U",
+        "type": "Artifact",
         "id": 76,
         "rarity": "U",
-        "notes": {grade: "B-"}
+        "notes": {grade: "B-",
+colorIdentity: "U"}
     },
     {
         "name": "Supercoolant Technician",
         "imageName": _77,
         "color": "U",
+        "type": "Creature — Corporate Engineer ",
         "id": 77,
         "rarity": "U",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: "U"}
     },
     {
         "name": "Tactical Freeze Ray",
         "imageName": _78,
         "color": "U",
+        "type": "Instant",
         "id": 78,
         "rarity": "C",
-        "notes": {grade: "D"}
+        "notes": {grade: "D",
+colorIdentity: "U"}
     },
     {
         "name": "Thought Dampener",
         "imageName": _79,
         "color": "U",
+        "type": "Artifact Creature — Police Mech ",
         "id": 79,
         "rarity": "U",
-        "notes": {grade: "B-"}
+        "notes": {grade: "B-",
+colorIdentity: "U"}
     },
     {
         "name": "Threat Profiling",
         "imageName": _80,
         "color": "U",
+        "type": "Instant",
         "id": 80,
         "rarity": "C",
-        "notes": {grade: "D+"}
+        "notes": {grade: "D+",
+colorIdentity: "U"}
     },
     {
         "name": "Time Paradox",
         "imageName": _81,
         "color": "U",
+        "type": "Instant",
         "id": 81,
         "rarity": "M",
-        "notes": {grade: "D"}
+        "notes": {grade: "D",
+colorIdentity: "U"}
     },
     {
         "name": "Transcend Space-Time",
         "imageName": _82,
         "color": "U",
+        "type": "Enchantment",
         "id": 82,
         "rarity": "R",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: "U"}
     },
     {
         "name": "Umida Security Protocols",
         "imageName": _83,
         "color": "U",
+        "type": "Instant",
         "id": 83,
         "rarity": "R",
-        "notes": {grade: "D-"}
+        "notes": {grade: "D-",
+colorIdentity: "U"}
     },
     {
         "name": "Undercroft Entangler",
         "imageName": _84,
         "color": "U",
+        "type": "Artifact Creature — Police Mech Saboteur ",
         "id": 84,
         "rarity": "C",
-        "notes": {grade: "B-"}
+        "notes": {grade: "B-",
+colorIdentity: "U"}
     },
     {
         "name": "Voyage’s End",
         "imageName": _85,
         "color": "U",
+        "type": "Instant",
         "id": 85,
         "rarity": "C",
-        "notes": {grade: "C"}
+        "notes": {grade: "C",
+colorIdentity: "U"}
     },
     {
         "name": "Back to Work",
         "imageName": _86,
         "color": "B",
+        "type": "Sorcery",
         "id": 86,
         "rarity": "C",
-        "notes": {grade: "C"}
+        "notes": {grade: "C",
+colorIdentity: "B"}
     },
     {
         "name": "Backalley Trafficker",
         "imageName": _87,
         "color": "B",
+        "type": "Creature — Advisor ",
         "id": 87,
         "rarity": "U",
-        "notes": {grade: "C"}
+        "notes": {grade: "C",
+colorIdentity: "B"}
     },
     {
         "name": "Boardroom Keeper",
         "imageName": _88,
         "color": "B",
+        "type": "Creature — Corporate Assassin ",
         "id": 88,
         "rarity": "C",
-        "notes": {grade: "C"}
+        "notes": {grade: "C",
+colorIdentity: "B"}
     },
     {
         "name": "Brain Rewiring",
         "imageName": _89,
         "color": "B",
+        "type": "Sorcery",
         "id": 89,
         "rarity": "C",
-        "notes": {grade: "C-"}
+        "notes": {grade: "C-",
+colorIdentity: "B"}
     },
     {
         "name": "Cloning Vats",
         "imageName": _90,
         "color": "B",
+        "type": "Artifact",
         "id": 90,
         "rarity": "R",
-        "notes": {grade: "B+"}
+        "notes": {grade: "B+",
+colorIdentity: "B"}
     },
     {
         "name": "Contract Killer",
         "imageName": _91,
         "color": "B",
+        "type": "Creature — Mercenary Assassin ",
         "id": 91,
         "rarity": "R",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: "B"}
     },
     {
         "name": "Corporate Spy",
         "imageName": _92,
         "color": "B",
+        "type": "Creature — Corporate Saboteur ",
         "id": 92,
         "rarity": "C",
-        "notes": {grade: "C-"}
+        "notes": {grade: "C-",
+colorIdentity: "B"}
     },
     {
         "name": "Crux of Space-Time",
         "imageName": _93,
         "color": "B",
+        "type": "Sorcery",
         "id": 93,
         "rarity": "R",
-        "notes": {grade: "A-"}
+        "notes": {grade: "A-",
+colorIdentity: "B"}
     },
     {
         "name": "Disassemble",
         "imageName": _94,
         "color": "B",
+        "type": "Sorcery",
         "id": 94,
         "rarity": "C",
-        "notes": {grade: "B-"}
+        "notes": {grade: "B-",
+colorIdentity: "B"}
     },
     {
         "name": "Engineered Endemic",
         "imageName": _95,
         "color": "B",
+        "type": "Enchantment",
         "id": 95,
         "rarity": "R",
-        "notes": {grade: "A-"}
+        "notes": {grade: "A-",
+colorIdentity: "B"}
     },
     {
         "name": "Figment of Death",
         "imageName": _96,
         "color": "B",
+        "type": "Creature — Nightmare Hallucination ",
         "id": 96,
         "rarity": "C",
-        "notes": {grade: "C"}
+        "notes": {grade: "C",
+colorIdentity: "B"}
     },
     {
         "name": "Gambling Ring",
         "imageName": _97,
         "color": "B",
+        "type": "Enchantment",
         "id": 97,
         "rarity": "U",
-        "notes": {grade: "B-"}
+        "notes": {grade: "B-",
+colorIdentity: "B"}
     },
     {
         "name": "Grasp of The Left Hand",
         "imageName": _98,
         "color": "B",
+        "type": "Instant",
         "id": 98,
         "rarity": "U",
-        "notes": {grade: "A-"}
+        "notes": {grade: "A-",
+colorIdentity: "B"}
     },
     {
         "name": "Hypercollider",
         "imageName": _99,
         "color": "B",
+        "type": "Artifact",
         "id": 99,
         "rarity": "R",
-        "notes": {grade: "B-"}
+        "notes": {grade: "B-",
+colorIdentity: "B"}
     },
     {
         "name": "Interrogate",
         "imageName": _100,
         "color": "B",
+        "type": "Instant",
         "id": 100,
         "rarity": "C",
-        "notes": {grade: "C-"}
+        "notes": {grade: "C-",
+colorIdentity: "B"}
     },
     {
         "name": "Mesmerising Performance",
         "imageName": _101,
         "color": "B",
+        "type": "Instant",
         "id": 101,
         "rarity": "U",
-        "notes": {grade: "D-"}
+        "notes": {grade: "D-",
+colorIdentity: "B"}
     },
     {
         "name": "Mindmeld Torturer",
         "imageName": _102,
         "color": "B",
+        "type": "Creature — Mercenary Assassin ",
         "id": 102,
         "rarity": "C",
-        "notes": {grade: "C"}
+        "notes": {grade: "C",
+colorIdentity: "B"}
     },
     {
         "name": "Mortality",
         "imageName": _103,
         "color": "B",
+        "type": "Creature — Nightmare Hallucination ",
         "id": 103,
         "rarity": "M",
-        "notes": {grade: "B+"}
+        "notes": {grade: "B+",
+colorIdentity: "B"}
     },
     {
         "name": "Murmur, the Cleaner",
         "imageName": _104,
         "color": "B",
+        "type": "Legendary Planeswalker — Murmur ",
         "id": 104,
         "rarity": "M",
-        "notes": {grade: "A-"}
+        "notes": {grade: "A-",
+colorIdentity: "B"}
     },
     {
         "name": "Mystic of the Under",
         "imageName": _105,
         "color": "B",
+        "type": "Artifact Creature — Mech Advisor ",
         "id": 105,
         "rarity": "U",
-        "notes": {grade: "B-"}
+        "notes": {grade: "B-",
+colorIdentity: "B"}
     },
     {
         "name": "Neural Devourer",
         "imageName": _106,
         "color": "B",
+        "type": "Creature — Squid Mutant ",
         "id": 106,
         "rarity": "U",
-        "notes": {grade: "B-"}
+        "notes": {grade: "B-",
+colorIdentity: "B"}
     },
     {
         "name": "Peacekeeper Satellite",
         "imageName": _107,
         "color": "B",
+        "type": "Artifact Creature — Station ",
         "id": 107,
         "rarity": "R",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: "B"}
     },
     {
         "name": "Prototype Evader",
         "imageName": _108,
         "color": "B",
+        "type": "Artifact Creature — Fighter ",
         "id": 108,
         "rarity": "C",
-        "notes": {grade: "C-"}
+        "notes": {grade: "C-",
+colorIdentity: "B"}
     },
     {
         "name": "Punitive Counterstrike",
         "imageName": _109,
         "color": "B",
+        "type": "Instant",
         "id": 109,
         "rarity": "C",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: "B"}
     },
     {
         "name": "Rebuild Stronger",
         "imageName": _110,
         "color": "B",
+        "type": "Sorcery",
         "id": 110,
         "rarity": "U",
-        "notes": {grade: "D"}
+        "notes": {grade: "D",
+colorIdentity: "B"}
     },
     {
         "name": "Reincarnation Program",
         "imageName": _111,
         "color": "B",
+        "type": "Instant",
         "id": 111,
         "rarity": "C",
-        "notes": {grade: "C"}
+        "notes": {grade: "C",
+colorIdentity: "B"}
     },
     {
         "name": "Rumormonger",
         "imageName": _112,
         "color": "B",
+        "type": "Creature — Mercenary Saboteur ",
         "id": 112,
         "rarity": "C",
-        "notes": {grade: "C"}
+        "notes": {grade: "C",
+colorIdentity: "B"}
     },
     {
         "name": "Rumors and Whispers",
         "imageName": _113,
         "color": "B",
+        "type": "Enchantment",
         "id": 113,
         "rarity": "U",
-        "notes": {grade: "B-"}
+        "notes": {grade: "B-",
+colorIdentity: "B"}
     },
     {
         "name": "Security Detail",
         "imageName": _114,
         "color": "B",
+        "type": "Artifact Creature — Corporate Mech ",
         "id": 114,
         "rarity": "C",
-        "notes": {grade: "C-"}
+        "notes": {grade: "C-",
+colorIdentity: "B"}
     },
     {
         "name": "Sewer Slitherer",
         "imageName": _115,
         "color": "B",
+        "type": "Artifact Creature — Mech Leech Mutant ",
         "id": 115,
         "rarity": "C",
-        "notes": {grade: "C-"}
+        "notes": {grade: "C-",
+colorIdentity: "B"}
     },
     {
         "name": "Shiryu Collector",
         "imageName": _116,
         "color": "B",
+        "type": "Artifact Creature — Mech ",
         "id": 116,
         "rarity": "C",
-        "notes": {grade: "D+"}
+        "notes": {grade: "D+",
+colorIdentity: "B"}
     },
     {
         "name": "Silent Infiltrator",
         "imageName": _117,
         "color": "B",
+        "type": "Creature — Mercenary Saboteur ",
         "id": 117,
         "rarity": "U",
-        "notes": {grade: "B+"}
+        "notes": {grade: "B+",
+colorIdentity: "B"}
     },
     {
         "name": "Sink into the Oceans",
         "imageName": _118,
         "color": "B",
+        "type": "Enchantment — Aura ",
         "id": 118,
         "rarity": "C",
-        "notes": {grade: "C-"}
+        "notes": {grade: "C-",
+colorIdentity: "B"}
     },
     {
         "name": "Surprise Round",
         "imageName": _119,
         "color": "B",
+        "type": "Instant",
         "id": 119,
         "rarity": "C",
-        "notes": {grade: "C"}
+        "notes": {grade: "C",
+colorIdentity: "B"}
     },
     {
         "name": "The Tartarus",
         "imageName": _120,
         "color": "B",
+        "type": "Legendary Artifact Creature — Battleship ",
         "id": 120,
         "rarity": "M",
-        "notes": {grade: "B+"}
+        "notes": {grade: "B+",
+colorIdentity: "B"}
     },
     {
         "name": "Tragedy of War",
         "imageName": _121,
         "color": "B",
+        "type": "Sorcery",
         "id": 121,
         "rarity": "U",
-        "notes": {grade: "B+"}
+        "notes": {grade: "B+",
+colorIdentity: "B"}
     },
     {
         "name": "Tundra Strider",
         "imageName": _122,
         "color": "B",
+        "type": "Creature — Corporate Assassin ",
         "id": 122,
         "rarity": "U",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: "B"}
     },
     {
         "name": "Undercity Janitor",
         "imageName": _123,
         "color": "B",
+        "type": "Artifact Creature — Mech Mercenary ",
         "id": 123,
         "rarity": "U",
-        "notes": {grade: "C"}
+        "notes": {grade: "C",
+colorIdentity: "B"}
     },
     {
         "name": "Urban Revenant",
         "imageName": _124,
         "color": "B",
+        "type": "Creature — Nightmare Hallucination ",
         "id": 124,
         "rarity": "U",
-        "notes": {grade: "B-"}
+        "notes": {grade: "B-",
+colorIdentity: "B"}
     },
     {
         "name": "Warapur Company Contract",
         "imageName": _125,
         "color": "B",
+        "type": "Instant",
         "id": 125,
         "rarity": "R",
-        "notes": {grade: "B+"}
+        "notes": {grade: "B+",
+colorIdentity: "B"}
     },
     {
         "name": "Warapur Company Drudge",
         "imageName": _126,
         "color": "B",
+        "type": "Artifact Creature — Mech Mercenary ",
         "id": 126,
         "rarity": "C",
-        "notes": {grade: "C-"}
-    },
-    {
-        "name": "Warapur Company Enforcer",
-        "imageName": _127,
-        "color": "B",
-        "id": 127,
-        "rarity": "C",
-        "notes": {grade: "C"}
+        "notes": {grade: "C-",
+colorIdentity: "B"}
     },
     {
         "name": "Warship Sinistra",
+        "imageName": _127,
+        "color": "B",
+        "type": "Artifact Creature — Cruiser ",
+        "id": 127,
+        "rarity": "R",
+        "notes": {grade: "B",
+colorIdentity: "B"}
+    },
+    {
+        "name": "Wasteland Enforcer",
         "imageName": _128,
         "color": "B",
+        "type": "Artifact Creature — Mech Mercenary ",
         "id": 128,
-        "rarity": "R",
-        "notes": {grade: "B"}
+        "rarity": "C",
+        "notes": {grade: "C",
+colorIdentity: "B"}
     },
     {
         "name": "Adopted Wanderer",
         "imageName": _129,
         "color": "R",
+        "type": "Artifact Creature — Mech Nomad ",
         "id": 129,
         "rarity": "C",
-        "notes": {grade: "C-"}
+        "notes": {grade: "C-",
+colorIdentity: "B"}
     },
     {
         "name": "Al Maham Protector",
         "imageName": _130,
         "color": "R",
+        "type": "Artifact Creature — Mech Nomad ",
         "id": 130,
         "rarity": "C",
-        "notes": {grade: "C-"}
+        "notes": {grade: "C-",
+colorIdentity: "R"}
     },
     {
         "name": "Alpha Squad Captain",
         "imageName": _131,
         "color": "R",
+        "type": "Creature — Rebel Assault ",
         "id": 131,
         "rarity": "C",
-        "notes": {grade: "C-"}
+        "notes": {grade: "C-",
+colorIdentity: "R"}
     },
     {
         "name": "Battle Flow",
         "imageName": _132,
         "color": "R",
+        "type": "Instant",
         "id": 132,
         "rarity": "C",
-        "notes": {grade: "C-"}
+        "notes": {grade: "C-",
+colorIdentity: "R"}
     },
     {
         "name": "Bergstadt Roboticists",
         "imageName": _133,
         "color": "R",
+        "type": "Creature — Engineer ",
         "id": 133,
         "rarity": "U",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: "R"}
     },
     {
         "name": "Chentsov Scylla",
         "imageName": _134,
         "color": "R",
+        "type": "Artifact Creature — Mech ",
         "id": 134,
         "rarity": "R",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: "R"}
     },
     {
         "name": "Combined Effort",
         "imageName": _135,
         "color": "R",
+        "type": "Instant",
         "id": 135,
         "rarity": "U",
-        "notes": {grade: "B+"}
+        "notes": {grade: "B+",
+colorIdentity: "R"}
     },
     {
         "name": "Coordinated Assault",
         "imageName": _136,
         "color": "R",
+        "type": "Instant",
         "id": 136,
         "rarity": "U",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: "R"}
     },
     {
         "name": "Coulomb Chargers",
         "imageName": _137,
         "color": "R",
+        "type": "Artifact Creature — Mech Assault ",
         "id": 137,
         "rarity": "R",
-        "notes": {grade: "B-"}
+        "notes": {grade: "B-",
+colorIdentity: "R"}
     },
     {
         "name": "Electric Arc",
         "imageName": _138,
         "color": "R",
+        "type": "Sorcery",
         "id": 138,
         "rarity": "U",
-        "notes": {grade: "B-"}
+        "notes": {grade: "B-",
+colorIdentity: "R"}
     },
     {
         "name": "Execute Takeover Protocol",
         "imageName": _139,
         "color": "R",
+        "type": "Sorcery",
         "id": 139,
         "rarity": "M",
-        "notes": {grade: "B+"}
+        "notes": {grade: "B+",
+colorIdentity: "R"}
     },
     {
         "name": "Flagship Warapur",
         "imageName": _140,
         "color": "R",
+        "type": "Artifact Creature — Mercenary Cruiser ",
         "id": 140,
         "rarity": "R",
-        "notes": {grade: "A-"}
+        "notes": {grade: "A-",
+colorIdentity: "R"}
     },
     {
         "name": "Frantic Investigator",
         "imageName": _141,
         "color": "R",
+        "type": "Creature — Researcher ",
         "id": 141,
         "rarity": "U",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: "R"}
     },
     {
         "name": "Genius or Grifter",
         "imageName": _142,
         "color": "R",
+        "type": "Instant",
         "id": 142,
         "rarity": "U",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: "R"}
     },
     {
         "name": "Guerilla Fighters",
         "imageName": _143,
         "color": "R",
+        "type": "Creature — Rebel Assault ",
         "id": 143,
         "rarity": "C",
-        "notes": {grade: "C"}
+        "notes": {grade: "C",
+colorIdentity: "R"}
     },
     {
         "name": "Hired Artillery",
         "imageName": _144,
         "color": "R",
+        "type": "Artifact Creature — Mech Mercenary ",
         "id": 144,
         "rarity": "C",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: "R"}
     },
     {
         "name": "Homeostimulation Suit",
         "imageName": _145,
         "color": "R",
+        "type": "Artifact — Equipment ",
         "id": 145,
         "rarity": "C",
-        "notes": {grade: "C"}
+        "notes": {grade: "C",
+colorIdentity: "R"}
     },
     {
         "name": "Hyperadrenaline",
         "imageName": _146,
         "color": "R",
+        "type": "Instant",
         "id": 146,
         "rarity": "C",
-        "notes": {grade: "D+"}
+        "notes": {grade: "D+",
+colorIdentity: "R"}
     },
     {
         "name": "Iridium Magneto-Knife",
         "imageName": _147,
         "color": "R",
+        "type": "Artifact — Equipment ",
         "id": 147,
         "rarity": "U",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: "R"}
     },
     {
         "name": "Leave Behind",
         "imageName": _148,
         "color": "R",
+        "type": "Sorcery",
         "id": 148,
         "rarity": "R",
-        "notes": {grade: "A-"}
+        "notes": {grade: "A-",
+colorIdentity: "R"}
     },
     {
         "name": "Mindmeld Battlesuit",
         "imageName": _149,
         "color": "R",
+        "type": "Artifact — Equipment ",
         "id": 149,
         "rarity": "R",
-        "notes": {grade: "A-"}
+        "notes": {grade: "A-",
+colorIdentity: "R"}
     },
     {
         "name": "The Moirai",
         "imageName": _150,
         "color": "R",
+        "type": "Legendary Artifact Creature — Battleship ",
         "id": 150,
         "rarity": "M",
-        "notes": {grade: "B+"}
+        "notes": {grade: "B+",
+colorIdentity: "R"}
     },
     {
         "name": "Ohmwrecker",
         "imageName": _151,
         "color": "R",
+        "type": "Artifact Creature — Mech Assault ",
         "id": 151,
         "rarity": "C",
-        "notes": {grade: "C"}
+        "notes": {grade: "C",
+colorIdentity: "R"}
     },
     {
         "name": "Rangor Contractor",
         "imageName": _152,
         "color": "R",
+        "type": "Creature — Mercenary Commando ",
         "id": 152,
         "rarity": "C",
-        "notes": {grade: "C-"}
+        "notes": {grade: "C-",
+colorIdentity: "R"}
     },
     {
         "name": "Reckless Troubleshooter",
         "imageName": _153,
         "color": "R",
+        "type": "Creature — Mercenary Saboteur ",
         "id": 153,
         "rarity": "R",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: "R"}
     },
     {
         "name": "Reverse Polarity",
         "imageName": _154,
         "color": "R",
+        "type": "Sorcery",
         "id": 154,
         "rarity": "U",
-        "notes": {grade: "D"}
+        "notes": {grade: "D",
+colorIdentity: "R"}
     },
     {
         "name": "Rip Space-Time",
         "imageName": _155,
         "color": "R",
+        "type": "Instant",
         "id": 155,
         "rarity": "C",
-        "notes": {grade: "C"}
+        "notes": {grade: "C",
+colorIdentity: "R"}
     },
     {
         "name": "Rocket Salvo",
         "imageName": _156,
         "color": "R",
+        "type": "Instant",
         "id": 156,
         "rarity": "C",
-        "notes": {grade: "C+"}
+        "notes": {grade: "B-",
+colorIdentity: "R"}
     },
     {
         "name": "Scavenged X-17",
         "imageName": _157,
         "color": "R",
+        "type": "Artifact Creature — Rebel Mech Assault ",
         "id": 157,
         "rarity": "U",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: "R"}
     },
     {
         "name": "Scrapyard Salvager",
         "imageName": _158,
         "color": "R",
+        "type": "Artifact Creature — Mech Engineer ",
         "id": 158,
         "rarity": "R",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: "R"}
     },
     {
         "name": "Self-Destruct Sequence",
         "imageName": _159,
         "color": "R",
+        "type": "Sorcery",
         "id": 159,
         "rarity": "C",
-        "notes": {grade: "C"}
+        "notes": {grade: "C",
+colorIdentity: "R"}
     },
     {
         "name": "Slagthrower",
         "imageName": _160,
         "color": "R",
+        "type": "Artifact Creature — Mech ",
         "id": 160,
         "rarity": "C",
-        "notes": {grade: "C"}
+        "notes": {grade: "C",
+colorIdentity: "R"}
     },
     {
         "name": "Slipstream Hunter",
         "imageName": _161,
         "color": "R",
+        "type": "Artifact Creature — Mech Cat Nomad ",
         "id": 161,
         "rarity": "U",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: "R"}
     },
     {
         "name": "Supervolcanic Fallout",
         "imageName": _162,
         "color": "R",
+        "type": "Sorcery",
         "id": 162,
         "rarity": "C",
-        "notes": {grade: "D+"}
+        "notes": {grade: "D+",
+colorIdentity: "R"}
     },
     {
         "name": "Supply Runner",
         "imageName": _163,
         "color": "R",
+        "type": "Artifact Creature — Rebel Mech Assault ",
         "id": 163,
         "rarity": "C",
-        "notes": {grade: "C"}
+        "notes": {grade: "C",
+colorIdentity: "R"}
     },
     {
         "name": "Take Hostage",
         "imageName": _164,
         "color": "R",
+        "type": "Sorcery",
         "id": 164,
         "rarity": "C",
-        "notes": {grade: "C-"}
+        "notes": {grade: "C-",
+colorIdentity: "R"}
     },
     {
         "name": "Throw to the Wind",
         "imageName": _165,
         "color": "R",
+        "type": "Sorcery",
         "id": 165,
         "rarity": "C",
-        "notes": {grade: "C-"}
+        "notes": {grade: "C-",
+colorIdentity: "R"}
     },
     {
         "name": "Vulcan Devastators",
         "imageName": _166,
         "color": "R",
+        "type": "Artifact Creature — Mech Assault ",
         "id": 166,
         "rarity": "C",
-        "notes": {grade: "C"}
+        "notes": {grade: "C",
+colorIdentity: "R"}
     },
     {
         "name": "Walking Furnace",
         "imageName": _167,
         "color": "R",
+        "type": "Artifact Creature — Mech Nomad ",
         "id": 167,
         "rarity": "U",
-        "notes": {grade: "B-"}
+        "notes": {grade: "B-",
+colorIdentity: "R"}
     },
     {
         "name": "Wanted Speedster",
         "imageName": _168,
         "color": "R",
+        "type": "Creature — Mercenary Commando ",
         "id": 168,
         "rarity": "U",
-        "notes": {grade: "B-"}
+        "notes": {grade: "B-",
+colorIdentity: "R"}
     },
     {
         "name": "Wild Game Huntmaster",
         "imageName": _169,
         "color": "R",
+        "type": "Creature — Nomad ",
         "id": 169,
         "rarity": "U",
-        "notes": {grade: "B+"}
+        "notes": {grade: "B+",
+colorIdentity: "R"}
     },
     {
         "name": "Wormcaller’s Assurance",
         "imageName": _170,
         "color": "R",
+        "type": "Sorcery",
         "id": 170,
         "rarity": "R",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: "R"}
     },
     {
         "name": "Al Maham Pathfinder",
         "imageName": _171,
         "color": "G",
+        "type": "Creature — Nomad ",
         "id": 171,
         "rarity": "U",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: "G"}
     },
     {
         "name": "Al Maham Traders",
         "imageName": _172,
         "color": "G",
+        "type": "Creature — Nomad ",
         "id": 172,
         "rarity": "C",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: "G"}
     },
     {
         "name": "Angling Constrictor",
         "imageName": _173,
         "color": "G",
+        "type": "Creature — Fish Squid Mutant ",
         "id": 173,
         "rarity": "R",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: "G"}
     },
     {
         "name": "Baljurashi Wanderer",
         "imageName": _174,
         "color": "G",
+        "type": "Artifact Creature — Mech Mutant Nomad ",
         "id": 174,
         "rarity": "C",
-        "notes": {grade: "C-"}
+        "notes": {grade: "C-",
+colorIdentity: "G"}
     },
     {
         "name": "Basirah Composite",
         "imageName": _175,
         "color": "G",
+        "type": "Artifact Creature — Mech Mutant ",
         "id": 175,
         "rarity": "U",
-        "notes": {grade: "C"}
+        "notes": {grade: "C",
+colorIdentity: "G"}
     },
     {
         "name": "Bioarchitect",
         "imageName": _176,
         "color": "G",
+        "type": "Creature — Xeno Researcher ",
         "id": 176,
         "rarity": "R",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: "G"}
     },
     {
         "name": "Biocourier",
         "imageName": _177,
         "color": "G",
+        "type": "Artifact Creature — Corporate Mech ",
         "id": 177,
         "rarity": "C",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: "G"}
     },
     {
         "name": "Brood Ambush",
         "imageName": _178,
         "color": "G",
+        "type": "Instant",
         "id": 178,
         "rarity": "C",
-        "notes": {grade: "C"}
+        "notes": {grade: "C",
+colorIdentity: "G"}
     },
     {
         "name": "Deep into the Subconscious",
         "imageName": _179,
         "color": "G",
+        "type": "Instant",
         "id": 179,
         "rarity": "C",
-        "notes": {grade: "C-"}
+        "notes": {grade: "C-",
+colorIdentity: "G"}
     },
     {
         "name": "Deep Jungle Hunter",
         "imageName": _180,
         "color": "G",
+        "type": "Creature — Snake Mutant ",
         "id": 180,
         "rarity": "U",
-        "notes": {grade: "C"}
+        "notes": {grade: "C",
+colorIdentity: "G"}
     },
     {
         "name": "Ecosystem Collapse",
         "imageName": _181,
         "color": "G",
+        "type": "Sorcery",
         "id": 181,
         "rarity": "U",
-        "notes": {grade: "B-"}
+        "notes": {grade: "B-",
+colorIdentity: "G"}
     },
     {
         "name": "Escaped Test Subject",
         "imageName": _182,
         "color": "G",
+        "type": "Creature — Mutant ",
         "id": 182,
         "rarity": "C",
-        "notes": {grade: "D+"}
+        "notes": {grade: "D+",
+colorIdentity: "G"}
     },
     {
         "name": "Experimental Mutagenics",
         "imageName": _183,
         "color": "G",
+        "type": "Sorcery",
         "id": 183,
         "rarity": "U",
-        "notes": {grade: "B-"}
+        "notes": {grade: "B-",
+colorIdentity: "G"}
     },
     {
         "name": "Frontier Anatomist",
         "imageName": _184,
         "color": "G",
+        "type": "Artifact Creature — Mech Medic ",
         "id": 184,
         "rarity": "U",
-        "notes": {grade: "B-"}
+        "notes": {grade: "B-",
+colorIdentity: "G"}
     },
     {
         "name": "Genome Toggle",
         "imageName": _185,
         "color": "G",
+        "type": "Sorcery",
         "id": 185,
         "rarity": "R",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: "G"}
     },
     {
         "name": "Gestation Cycle",
         "imageName": _186,
         "color": "G",
+        "type": "Sorcery",
         "id": 186,
         "rarity": "U",
-        "notes": {grade: "C"}
+        "notes": {grade: "C",
+colorIdentity: "G"}
     },
     {
         "name": "Growth Genetics",
         "imageName": _187,
         "color": "G",
+        "type": "Enchantment — Aura ",
         "id": 187,
         "rarity": "C",
-        "notes": {grade: "C-"}
+        "notes": {grade: "C-",
+colorIdentity: "G"}
     },
     {
         "name": "Hunted Coadjulate",
         "imageName": _188,
         "color": "G",
+        "type": "Creature — Mutant ",
         "id": 188,
         "rarity": "C",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: "G"}
     },
     {
         "name": "Incubation Hulk",
         "imageName": _189,
         "color": "G",
+        "type": "Creature — Xeno Incubator ",
         "id": 189,
         "rarity": "R",
-        "notes": {grade: "B-"}
+        "notes": {grade: "B-",
+colorIdentity: "G"}
     },
     {
         "name": "The Kishar",
         "imageName": _190,
         "color": "G",
+        "type": "Legendary Artifact Creature — Battleship ",
         "id": 190,
         "rarity": "M",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: "G"}
     },
     {
         "name": "Kushak Brood Warden",
         "imageName": _191,
         "color": "G",
+        "type": "Creature — Xeno Propagator ",
         "id": 191,
         "rarity": "U",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: "G"}
     },
     {
         "name": "Kushak Device",
         "imageName": _192,
         "color": "G",
+        "type": "Artifact",
         "id": 192,
         "rarity": "R",
-        "notes": {grade: "B-"}
+        "notes": {grade: "B-",
+colorIdentity: "G"}
     },
     {
         "name": "Kushak Interference",
         "imageName": _193,
         "color": "G",
+        "type": "Instant",
         "id": 193,
         "rarity": "R",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: "G"}
     },
     {
         "name": "Kushak Research Council",
         "imageName": _194,
         "color": "G",
+        "type": "Creature — Xeno Researcher Advisor ",
         "id": 194,
         "rarity": "R",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: "G"}
     },
     {
         "name": "Kushak Subject Prime",
         "imageName": _195,
         "color": "G",
+        "type": "Creature — Xeno Mutant ",
         "id": 195,
         "rarity": "U",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: "G"}
     },
     {
         "name": "Lifestrider",
         "imageName": _196,
         "color": "G",
+        "type": "Creature — Elk Mutant Nomad ",
         "id": 196,
         "rarity": "C",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: "G"}
     },
     {
         "name": "Myth of Baljurashi",
         "imageName": _197,
         "color": "G",
+        "type": "Creature — Plant Mutant Nomad ",
         "id": 197,
         "rarity": "U",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: "G"}
     },
     {
         "name": "Radium Tracker",
         "imageName": _198,
         "color": "G",
+        "type": "Creature — Dog Mutant ",
         "id": 198,
         "rarity": "C",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: "G"}
     },
     {
         "name": "Reverse Gravity",
         "imageName": _199,
         "color": "G",
+        "type": "Sorcery",
         "id": 199,
         "rarity": "U",
-        "notes": {grade: "B-"}
+        "notes": {grade: "B-",
+colorIdentity: "G"}
     },
     {
         "name": "Rogue Servitor",
         "imageName": _200,
         "color": "G",
+        "type": "Artifact Creature — Nanobot ",
         "id": 200,
         "rarity": "C",
-        "notes": {grade: "C"}
+        "notes": {grade: "C",
+colorIdentity: "G"}
     },
     {
-        "name": "SAM Team",
+        "name": "S.A.M. Team",
         "imageName": _201,
         "color": "G",
+        "type": "Artifact Creature — Rebel Mech ",
         "id": 201,
         "rarity": "C",
-        "notes": {grade: "C-"}
+        "notes": {grade: "C-",
+colorIdentity: "G"}
     },
     {
         "name": "Screeching Terror",
         "imageName": _202,
         "color": "G",
+        "type": "Creature — Insect Mutant ",
         "id": 202,
         "rarity": "C",
-        "notes": {grade: "C"}
+        "notes": {grade: "C",
+colorIdentity: "G"}
     },
     {
         "name": "Sewer Ambush",
         "imageName": _203,
         "color": "G",
+        "type": "Sorcery",
         "id": 203,
         "rarity": "C",
-        "notes": {grade: "B-"}
+        "notes": {grade: "B-",
+colorIdentity: "G"}
     },
     {
         "name": "Sewer Monster",
         "imageName": _204,
         "color": "G",
+        "type": "Creature — Frog Mutant ",
         "id": 204,
         "rarity": "C",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: "G"}
     },
     {
         "name": "Spawning Grounds",
         "imageName": _205,
         "color": "G",
+        "type": "Enchantment",
         "id": 205,
         "rarity": "U",
-        "notes": {grade: "C"}
+        "notes": {grade: "C",
+colorIdentity: "G"}
     },
     {
         "name": "Supply Scavengers",
         "imageName": _206,
         "color": "G",
+        "type": "Creature — Rebel Commando ",
         "id": 206,
         "rarity": "C",
-        "notes": {grade: "C"}
+        "notes": {grade: "C",
+colorIdentity: "G"}
     },
     {
         "name": "Suppressor of Worlds",
         "imageName": _207,
         "color": "G",
+        "type": "Artifact Creature — Mech Mutant ",
         "id": 207,
         "rarity": "M",
-        "notes": {grade: "B+"}
+        "notes": {grade: "B+",
+colorIdentity: "G"}
     },
     {
         "name": "Surge of Fervor",
         "imageName": _208,
         "color": "G",
+        "type": "Instant",
         "id": 208,
         "rarity": "U",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: "G"}
     },
     {
         "name": "Terraforming Works",
         "imageName": _209,
         "color": "G",
+        "type": "Enchantment",
         "id": 209,
         "rarity": "R",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: "G"}
     },
     {
         "name": "Ultramagnetic Interference",
         "imageName": _210,
         "color": "G",
+        "type": "Instant",
         "id": 210,
         "rarity": "C",
-        "notes": {grade: "B-"}
+        "notes": {grade: "B-",
+colorIdentity: "G"}
     },
     {
         "name": "Uncharted Lands",
         "imageName": _211,
         "color": "G",
+        "type": "Enchantment — Aura ",
         "id": 211,
         "rarity": "C",
-        "notes": {grade: "C"}
+        "notes": {grade: "C",
+colorIdentity: "G"}
     },
     {
         "name": "Unstable Growth",
         "imageName": _212,
         "color": "G",
+        "type": "Sorcery",
         "id": 212,
         "rarity": "C",
-        "notes": {grade: "D+"}
+        "notes": {grade: "D+",
+colorIdentity: "G"}
     },
     {
         "name": "High Judge Zephynius",
         "imageName": _213,
         "color": "WU",
+        "type": "Legendary Creature — Advisor ",
         "id": 213,
         "rarity": "R",
-        "notes": {grade: "B+"}
+        "notes": {grade: "B+",
+colorIdentity: "WU"}
     },
     {
         "name": "Wings of the Law",
         "imageName": _214,
         "color": "WU",
+        "type": "Artifact Creature — Police Mech ",
         "id": 214,
         "rarity": "U",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: "WU"}
     },
     {
         "name": "Murmur’s Command",
         "imageName": _215,
         "color": "UB",
+        "type": "Instant",
         "id": 215,
         "rarity": "R",
-        "notes": {grade: "A-"}
+        "notes": {grade: "A-",
+colorIdentity: "UB"}
     },
     {
         "name": "Seekerpede",
         "imageName": _216,
         "color": "UB",
+        "type": "Artifact Creature — Mech Insect ",
         "id": 216,
         "rarity": "U",
-        "notes": {grade: "B-"}
+        "notes": {grade: "B-",
+colorIdentity: "UB"}
     },
     {
         "name": "Shadowlight Infiltrator",
         "imageName": _217,
         "color": "UB",
+        "type": "Creature — Corporate Saboteur ",
         "id": 217,
         "rarity": "R",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: "UB"}
     },
     {
         "name": "Thousand Spares",
         "imageName": _218,
         "color": "BR",
+        "type": "Legendary Artifact Creature — Mech ",
         "id": 218,
         "rarity": "R",
-        "notes": {grade: "B+"}
+        "notes": {grade: "B+",
+colorIdentity: "BR"}
     },
     {
         "name": "Warapur Company Guard",
         "imageName": _219,
         "color": "BR",
+        "type": "Creature — Dog Mutant Mercenary ",
         "id": 219,
         "rarity": "U",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: "BR"}
     },
     {
         "name": "Canyon Skitterer",
         "imageName": _220,
         "color": "RG",
+        "type": "Artifact Creature — Mech Insect ",
         "id": 220,
         "rarity": "U",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: "RG"}
     },
     {
         "name": "The Honored Wormcaller",
         "imageName": _221,
         "color": "RG",
+        "type": "Legendary Creature — Nomad ",
         "id": 221,
         "rarity": "M",
-        "notes": {grade: "A"}
+        "notes": {grade: "A",
+colorIdentity: "RG"}
     },
     {
         "name": "Wormcaller’s Command",
         "imageName": _222,
         "color": "RG",
+        "type": "Instant",
         "id": 222,
         "rarity": "R",
-        "notes": {grade: "B+"}
+        "notes": {grade: "B+",
+colorIdentity: "RG"}
     },
     {
         "name": "Ingolf, the Catalyst",
         "imageName": _223,
         "color": "GW",
+        "type": "Legendary Creature — Rebel Commando ",
         "id": 223,
         "rarity": "M",
-        "notes": {grade: "B+"}
+        "notes": {grade: "B+",
+colorIdentity: "GW"}
     },
     {
         "name": "Ingolf’s Command",
         "imageName": _224,
         "color": "GW",
+        "type": "Instant",
         "id": 224,
         "rarity": "R",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: "GW"}
     },
     {
         "name": "Support Misdirector",
         "imageName": _225,
         "color": "GW",
+        "type": "Creature — Rebel Saboteur ",
         "id": 225,
         "rarity": "U",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: "GW"}
     },
     {
         "name": "Publicity Officer",
         "imageName": _226,
         "color": "WB",
+        "type": "Artifact Creature — Mech Advisor ",
         "id": 226,
         "rarity": "U",
-        "notes": {grade: "B-"}
+        "notes": {grade: "B-",
+colorIdentity: "WB"}
     },
     {
         "name": "Representative Vuissance",
         "imageName": _227,
         "color": "WB",
+        "type": "Legendary Creature — Advisor ",
         "id": 227,
         "rarity": "M",
-        "notes": {grade: "B-"}
+        "notes": {grade: "B-",
+colorIdentity: "WB"}
     },
     {
         "name": "Vuissance’s Command",
         "imageName": _228,
         "color": "WB",
+        "type": "Instant",
         "id": 228,
         "rarity": "R",
-        "notes": {grade: "A-"}
+        "notes": {grade: "A-",
+colorIdentity: "WB"}
     },
     {
         "name": "Matter Redistributor",
         "imageName": _229,
         "color": "UR",
+        "type": "Artifact",
         "id": 229,
         "rarity": "R",
-        "notes": {grade: "B-"}
+        "notes": {grade: "B-",
+colorIdentity: "UR"}
     },
     {
         "name": "Neutron Evader",
         "imageName": _230,
         "color": "UR",
+        "type": "Artifact Creature — Fighter ",
         "id": 230,
         "rarity": "U",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: "UR"}
     },
     {
         "name": "Redistribution Command",
         "imageName": _231,
         "color": "UR",
+        "type": "Instant",
         "id": 231,
         "rarity": "R",
-        "notes": {grade: "B+"}
+        "notes": {grade: "B+",
+colorIdentity: "UR"}
     },
     {
         "name": "Sewer Dredgers",
         "imageName": _232,
         "color": "BG",
+        "type": "Creature — Mercenary Commando ",
         "id": 232,
         "rarity": "U",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: "BG"}
     },
     {
         "name": "Titan of Shisuku Sewers",
         "imageName": _233,
         "color": "BG",
+        "type": "Legendary Creature — Turtle Mutant ",
         "id": 233,
         "rarity": "R",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: "BG"}
     },
     {
         "name": "Acquisitor Delwani",
         "imageName": _234,
         "color": "RW",
+        "type": "Legendary Creature — Rebel Saboteur ",
         "id": 234,
         "rarity": "R",
-        "notes": {grade: "B+"}
+        "notes": {grade: "B+",
+colorIdentity: "RW"}
     },
     {
         "name": "Rangor Irregulars",
         "imageName": _235,
         "color": "RW",
+        "type": "Creature — Rebel Assault ",
         "id": 235,
         "rarity": "U",
-        "notes": {grade: "B-"}
+        "notes": {grade: "B-",
+colorIdentity: "RW"}
     },
     {
         "name": "Maleck, Umida Division Head",
         "imageName": _236,
         "color": "GU",
+        "type": "Legendary Creature — Corporate Researcher ",
         "id": 236,
         "rarity": "R",
-        "notes": {grade: "B+"}
+        "notes": {grade: "B+",
+colorIdentity: "GU"}
     },
     {
         "name": "Troposphere Drifter",
         "imageName": _237,
         "color": "GU",
+        "type": "Creature — Squid Mutant ",
         "id": 237,
         "rarity": "U",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: "GU"}
     },
     {
         "name": "Umida Koto",
         "imageName": _238,
         "color": "BGU",
+        "type": "Legendary Planeswalker — Umida ",
         "id": 238,
         "rarity": "M",
-        "notes": {grade: "B+"}
+        "notes": {grade: "B+",
+colorIdentity: "BGU"}
     },
     {
         "name": "The Aion",
         "imageName": _239,
         "color": "",
+        "type": "Legendary Artifact Creature — Battleship ",
         "id": 239,
         "rarity": "M",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: ""}
     },
     {
         "name": "Chameleon Suit",
         "imageName": _240,
         "color": "",
+        "type": "Artifact — Equipment ",
         "id": 240,
         "rarity": "C",
-        "notes": {grade: "D"}
+        "notes": {grade: "D",
+colorIdentity: ""}
     },
     {
         "name": "Faraday Transmitter",
         "imageName": _241,
         "color": "",
+        "type": "Artifact",
         "id": 241,
         "rarity": "R",
-        "notes": {grade: "D+"}
+        "notes": {grade: "D+",
+colorIdentity: ""}
     },
     {
         "name": "Formling",
         "imageName": _242,
         "color": "",
+        "type": "Artifact Creature — Mech ",
         "id": 242,
         "rarity": "R",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: ""}
     },
     {
         "name": "Foundry Analyst",
         "imageName": _243,
         "color": "",
+        "type": "Artifact Creature — Mech ",
         "id": 243,
         "rarity": "U",
-        "notes": {grade: "B-"}
+        "notes": {grade: "B-",
+colorIdentity: ""}
     },
     {
         "name": "Gravitic Collector",
         "imageName": _244,
         "color": "",
+        "type": "Artifact Creature — Station ",
         "id": 244,
         "rarity": "R",
-        "notes": {grade: "B"}
+        "notes": {grade: "B",
+colorIdentity: "UR"}
     },
     {
         "name": "Hexblade Ravager",
         "imageName": _245,
         "color": "",
+        "type": "Artifact Creature — Mech ",
         "id": 245,
         "rarity": "C",
-        "notes": {grade: "D"}
+        "notes": {grade: "D",
+colorIdentity: ""}
     },
     {
         "name": "Hong Wai Refinery",
         "imageName": _246,
         "color": "",
+        "type": "Artifact",
         "id": 246,
         "rarity": "R",
-        "notes": {grade: "F"}
+        "notes": {grade: "F",
+colorIdentity: ""}
     },
     {
         "name": "Hoverbike",
         "imageName": _247,
         "color": "",
+        "type": "Artifact — Equipment ",
         "id": 247,
         "rarity": "C",
-        "notes": {grade: "D+"}
+        "notes": {grade: "D+",
+colorIdentity: ""}
     },
     {
         "name": "Jetpack",
         "imageName": _248,
         "color": "",
+        "type": "Artifact — Equipment ",
         "id": 248,
         "rarity": "C",
-        "notes": {grade: "D+"}
+        "notes": {grade: "D+",
+colorIdentity: ""}
     },
     {
         "name": "Mox Voidstone",
         "imageName": _249,
         "color": "",
+        "type": "Legendary Artifact",
         "id": 249,
         "rarity": "M",
-        "notes": {grade: "F"}
+        "notes": {grade: "F",
+colorIdentity: ""}
     },
     {
         "name": "Museum of Antiquities",
         "imageName": _250,
         "color": "",
+        "type": "Artifact",
         "id": 250,
         "rarity": "U",
-        "notes": {grade: "D"}
+        "notes": {grade: "D",
+colorIdentity: ""}
     },
     {
         "name": "Mutagenic Serum",
         "imageName": _251,
         "color": "",
+        "type": "Artifact",
         "id": 251,
         "rarity": "R",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: ""}
     },
     {
         "name": "Prophetic Lens",
         "imageName": _252,
         "color": "",
+        "type": "Artifact",
         "id": 252,
         "rarity": "C",
-        "notes": {grade: "C-"}
+        "notes": {grade: "C-",
+colorIdentity: "",
+addsMana: "WUBRG"}
     },
     {
         "name": "Scrapyard Construct",
         "imageName": _253,
         "color": "",
+        "type": "Artifact Creature — Mech Nomad ",
         "id": 253,
         "rarity": "C",
-        "notes": {grade: "D"}
+        "notes": {grade: "D",
+colorIdentity: ""}
     },
     {
         "name": "Slipstream Snapper",
         "imageName": _254,
         "color": "",
+        "type": "Artifact Creature — Mech ",
         "id": 254,
         "rarity": "C",
-        "notes": {grade: "D"}
+        "notes": {grade: "D",
+colorIdentity: ""}
     },
     {
         "name": "Subspace Capacitor",
         "imageName": _255,
         "color": "",
+        "type": "Artifact",
         "id": 255,
         "rarity": "R",
-        "notes": {grade: "B-"}
+        "notes": {grade: "B-",
+colorIdentity: ""}
     },
     {
         "name": "Surveillance Probes",
         "imageName": _256,
         "color": "",
+        "type": "Artifact",
         "id": 256,
         "rarity": "C",
-        "notes": {grade: "D+"}
+        "notes": {grade: "D+",
+colorIdentity: ""}
     },
     {
         "name": "Swallowers of Civilization",
         "imageName": _257,
         "color": "",
+        "type": "Artifact Creature — Mech Mutant ",
         "id": 257,
         "rarity": "M",
-        "notes": {grade: "D"}
+        "notes": {grade: "D",
+colorIdentity: ""}
     },
     {
         "name": "Trojan Horse",
         "imageName": _258,
         "color": "",
+        "type": "Artifact",
         "id": 258,
         "rarity": "U",
-        "notes": {grade: "C-"}
+        "notes": {grade: "C-",
+colorIdentity: ""}
     },
     {
         "name": "Adamantium Mine",
         "imageName": _259,
         "color": "",
+        "type": "Land",
         "id": 259,
         "rarity": "C",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: "RG",
+addsMana: "RG"}
     },
     {
         "name": "Amanthoid Mine",
         "imageName": _260,
         "color": "",
+        "type": "Land",
         "id": 260,
         "rarity": "C",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: "GW",
+addsMana: "GW"}
     },
     {
         "name": "Antimatter Mine",
         "imageName": _261,
         "color": "",
+        "type": "Land",
         "id": 261,
         "rarity": "C",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: "UR",
+addsMana: "UR"}
     },
     {
         "name": "Distant Colony",
         "imageName": _262,
         "color": "",
+        "type": "Land",
         "id": 262,
         "rarity": "C",
-        "notes": {grade: "D+"}
+        "notes": {grade: "D+",
+colorIdentity: "",
+addsMana: "WUBRG"}
     },
     {
         "name": "Hexaferrum Mine",
         "imageName": _263,
         "color": "",
+        "type": "Land",
         "id": 263,
         "rarity": "C",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: "BR",
+addsMana: "BR"}
     },
     {
         "name": "Hong Wai Factory",
         "imageName": _264,
         "color": "",
+        "type": "Land",
         "id": 264,
         "rarity": "R",
-        "notes": {grade: "B-"}
+        "notes": {grade: "B-",
+colorIdentity: ""}
     },
     {
         "name": "Hydromiel Mine",
         "imageName": _265,
         "color": "",
+        "type": "Land",
         "id": 265,
         "rarity": "C",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: "WU",
+addsMana: "WU"}
     },
     {
         "name": "Hyperium Mine",
         "imageName": _266,
         "color": "",
+        "type": "Land",
         "id": 266,
         "rarity": "C",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: "UB",
+addsMana: "UB"}
     },
     {
         "name": "The Mercurite Lens",
         "imageName": _267,
         "color": "",
+        "type": "Legendary Land",
         "id": 267,
         "rarity": "R",
-        "notes": {grade: "C"}
+        "notes": {grade: "C",
+colorIdentity: "WUBRG"}
     },
     {
         "name": "Mercurite Mine",
         "imageName": _268,
         "color": "",
+        "type": "Land",
         "id": 268,
         "rarity": "C",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: "BG",
+addsMana: "BG"}
     },
     {
         "name": "Orichalcix Mine",
         "imageName": _269,
         "color": "",
+        "type": "Land",
         "id": 269,
         "rarity": "C",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: "RW",
+addsMana: "RW"}
     },
     {
         "name": "Quadrinix Mine",
         "imageName": _270,
         "color": "",
+        "type": "Land",
         "id": 270,
         "rarity": "C",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: "GU",
+addsMana: "GU"}
     },
     {
         "name": "Siderite Mine",
         "imageName": _271,
         "color": "",
+        "type": "Land",
         "id": 271,
         "rarity": "C",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: "WB",
+addsMana: "WB"}
     },
     {
         "name": "Spire of Industry",
         "imageName": _272,
         "color": "",
+        "type": "Land",
         "id": 272,
         "rarity": "R",
-        "notes": {grade: "C+"}
+        "notes": {grade: "C+",
+colorIdentity: "",
+addsMana: "WUBRG"}
     }];
 export default rawCardList;
