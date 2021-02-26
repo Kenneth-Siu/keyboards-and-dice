@@ -5,5 +5,6 @@ export default class Card {
         this.imageName = rawCard.imageName;
         this.color = rawCard.color;
         this.rarity = rawCard.rarity;
+        this.grade = rawCard.notes.grade;
     }
 }

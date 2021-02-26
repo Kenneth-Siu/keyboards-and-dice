@@ -7,6 +7,7 @@ import { Booster } from "../models/Booster.js";
 import { getBooster } from "../helpers/DraftHelpers.js";
 import { Draft } from "../models/Draft.js";
 import { Bot } from "../helpers/Bot.js";
+import { Pick } from "../models/Pick.js";
 
 export class DraftOperations {
     async startDraft(draftId) {
@@ -99,7 +100,14 @@ export class DraftOperations {
         );
         const boosterCards = Card.createManyFromDb(cardsResult.rows);
 
-        const bot = new Bot();
+        const picksResult = await this.client.query(
+            `SELECT * FROM picks
+            WHERE player_id = $1`,
+            [player_id]
+        );
+        const picks = Pick.createManyFromDb(picksResult.rows);
+
+        const bot = new Bot(picks);
         const pickCard = bot.decidePick(boosterCards);
 
         await this.pickOperations(draftId, player_id, booster, pickCard);
