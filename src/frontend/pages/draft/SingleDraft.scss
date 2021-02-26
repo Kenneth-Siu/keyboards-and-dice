@@ -208,23 +208,42 @@
         }
     }
 
-    .picks-view {
+    .deck-view {
         h1 {
             text-align: left;
             margin-left: 1%;
         }
-        .picks {
+        .deck {
+            position: relative;
             display: inline-flex;
             flex-wrap: wrap;
             justify-content: flex-start;
             width: 98%;
 
-            img {
-                width: 14%;
-                margin-right: 0.333%;
-                margin-bottom: 0.333%;
-                &:nth-child(7n) {
+            .pile {
+                position: relative;
+                width: 12.3%;
+                margin-right: 0.2285%;
+                &:nth-child(8n) {
                     margin-right: 0;
+                }
+
+                div {
+                    width: 100%;
+                    padding-top: 15%;
+                    position: absolute;
+                    &:hover {
+                        z-index: 1;
+                    }
+                }
+
+                img {
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    display: block;
+                    position: absolute;
+                    pointer-events: none;
                 }
             }
         }

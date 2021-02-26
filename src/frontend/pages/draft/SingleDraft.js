@@ -27,7 +27,9 @@ export default function SingleDraft({ loggedInUser }) {
                 <h1>
                     Draft
                     {draft && draft.status === DRAFT_STATUSES.IN_PROGRESS
-                        ? ` — Pack ${draft.packNumber}${booster && booster.pickNumber ? `, Pick ${booster.pickNumber}` : ""}`
+                        ? ` — Pack ${draft.packNumber}${
+                              booster && booster.pickNumber ? `, Pick ${booster.pickNumber}` : ""
+                          }`
                         : ""}
                 </h1>
                 {draft && <PlayerList />}
@@ -46,7 +48,7 @@ export default function SingleDraft({ loggedInUser }) {
         return (
             <>
                 {booster.cards ? <BoosterView /> : <RefreshButtonView />}
-                <PicksView />
+                <DeckView />
             </>
         );
     }
@@ -124,13 +126,24 @@ export default function SingleDraft({ loggedInUser }) {
         );
     }
 
-    function PicksView() {
+    function DeckView() {
+        const piles = [[], [], [], [], [], [], [], []];
+        while (picks.length) {
+            const pick = picks.shift();
+            piles[Math.min(7, pick.manaValue)].push(pick);
+        }
         return (
-            <div className="picks-view">
+            <div className="deck-view">
                 <h1>Deck</h1>
-                <div className="picks">
-                    {picks.map((pick, index) => (
-                        <img key={index} src={pick.imageName} loading="lazy" />
+                <div className="deck">
+                    {piles.map((pile, pileIndex) => (
+                        <div key={pileIndex} className="pile">
+                            {pile.map((pick, pickIndex) => (
+                                <div key={pickIndex} style={{ marginTop: `${pickIndex * 15}%` }}>
+                                    <img src={pick.imageName} loading="lazy" />
+                                </div>
+                            ))}
+                        </div>
                     ))}
                 </div>
             </div>
