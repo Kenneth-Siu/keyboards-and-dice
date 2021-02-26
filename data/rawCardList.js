@@ -275,6 +275,7 @@ const rawCardList = [
     {
         "name": "Karn, the Introspective",
         "imageName": _0,
+        "cost": "3",
         "color": "",
         "type": "Legendary Planeswalker — Karn ",
         "id": 0,
@@ -285,6 +286,7 @@ colorIdentity: ""}
     {
         "name": "Ajani, Sunchaser",
         "imageName": _1,
+        "cost": "2WW",
         "color": "W",
         "type": "Legendary Planeswalker — Ajani ",
         "id": 1,
@@ -295,6 +297,7 @@ colorIdentity: "W"}
     {
         "name": "Biomech Team",
         "imageName": _2,
+        "cost": "1W",
         "color": "W",
         "type": "Creature — Police Engineer Medic ",
         "id": 2,
@@ -305,6 +308,7 @@ colorIdentity: "W"}
     {
         "name": "Bring to Justice",
         "imageName": _3,
+        "cost": "2W",
         "color": "W",
         "type": "Sorcery",
         "id": 3,
@@ -315,6 +319,7 @@ colorIdentity: "W"}
     {
         "name": "Cache Mapper",
         "imageName": _4,
+        "cost": "2W",
         "color": "W",
         "type": "Creature — Rebel Scout ",
         "id": 4,
@@ -325,6 +330,7 @@ colorIdentity: "W"}
     {
         "name": "Comms Disruptor",
         "imageName": _5,
+        "cost": "1W",
         "color": "W",
         "type": "Artifact — Equipment ",
         "id": 5,
@@ -335,6 +341,7 @@ colorIdentity: "W"}
     {
         "name": "Community Officer",
         "imageName": _6,
+        "cost": "3W",
         "color": "W",
         "type": "Artifact Creature — Police Mech ",
         "id": 6,
@@ -345,6 +352,7 @@ colorIdentity: "W"}
     {
         "name": "Control Overseer",
         "imageName": _7,
+        "cost": "3W",
         "color": "W",
         "type": "Creature — Police Advisor ",
         "id": 7,
@@ -355,6 +363,7 @@ colorIdentity: "W"}
     {
         "name": "Cryonics Facility",
         "imageName": _8,
+        "cost": "3W",
         "color": "W",
         "type": "Artifact",
         "id": 8,
@@ -365,6 +374,7 @@ colorIdentity: "W"}
     {
         "name": "Cultural Renaissance",
         "imageName": _9,
+        "cost": "1WW",
         "color": "W",
         "type": "Enchantment",
         "id": 9,
@@ -375,6 +385,7 @@ colorIdentity: "W"}
     {
         "name": "Diplomat’s Prerogative",
         "imageName": _10,
+        "cost": "2W",
         "color": "W",
         "type": "Enchantment — Aura ",
         "id": 10,
@@ -385,6 +396,7 @@ colorIdentity: "W"}
     {
         "name": "Dropship",
         "imageName": _11,
+        "cost": "2W",
         "color": "W",
         "type": "Artifact Creature — Military Carrier ",
         "id": 11,
@@ -395,6 +407,7 @@ colorIdentity: "W"}
     {
         "name": "Emergency Landing",
         "imageName": _12,
+        "cost": "3W",
         "color": "W",
         "type": "Sorcery",
         "id": 12,
@@ -405,6 +418,7 @@ colorIdentity: "W"}
     {
         "name": "Eviction Notice",
         "imageName": _13,
+        "cost": "1W",
         "color": "W",
         "type": "Enchantment",
         "id": 13,
@@ -415,6 +429,7 @@ colorIdentity: "W"}
     {
         "name": "Glorious Resistance",
         "imageName": _14,
+        "cost": "2W",
         "color": "W",
         "type": "Sorcery",
         "id": 14,
@@ -425,6 +440,7 @@ colorIdentity: "W"}
     {
         "name": "Head Detective",
         "imageName": _15,
+        "cost": "2WW",
         "color": "W",
         "type": "Creature — Police Advisor ",
         "id": 15,
@@ -435,6 +451,7 @@ colorIdentity: "W"}
     {
         "name": "Heimdall Mk III",
         "imageName": _16,
+        "cost": "4WW",
         "color": "W",
         "type": "Legendary Artifact — Equipment ",
         "id": 16,
@@ -445,6 +462,7 @@ colorIdentity: "W"}
     {
         "name": "Helios Comms Satellite",
         "imageName": _17,
+        "cost": "2W",
         "color": "W",
         "type": "Artifact Creature — Station ",
         "id": 17,
@@ -455,6 +473,7 @@ colorIdentity: "W"}
     {
         "name": "The Hemera",
         "imageName": _18,
+        "cost": "5WW",
         "color": "W",
         "type": "Legendary Artifact Creature — Battleship ",
         "id": 18,
@@ -465,6 +484,7 @@ colorIdentity: "W"}
     {
         "name": "Heroic Act",
         "imageName": _19,
+        "cost": "W",
         "color": "W",
         "type": "Instant",
         "id": 19,
@@ -475,6 +495,7 @@ colorIdentity: "W"}
     {
         "name": "High Judge’s Decree",
         "imageName": _20,
+        "cost": "1W",
         "color": "W",
         "type": "Instant",
         "id": 20,
@@ -485,6 +506,7 @@ colorIdentity: "W"}
     {
         "name": "Keep the Peace",
         "imageName": _21,
+        "cost": "W",
         "color": "W",
         "type": "Sorcery",
         "id": 21,
@@ -495,6 +517,7 @@ colorIdentity: "W"}
     {
         "name": "Leiden Air Platform",
         "imageName": _22,
+        "cost": "4W",
         "color": "W",
         "type": "Artifact Creature — Military Carrier ",
         "id": 22,
@@ -505,6 +528,7 @@ colorIdentity: "W"}
     {
         "name": "Mongrel Companion",
         "imageName": _23,
+        "cost": "W",
         "color": "W",
         "type": "Artifact Creature — Police Mech Dog ",
         "id": 23,
@@ -515,6 +539,7 @@ colorIdentity: "W"}
     {
         "name": "Observation Blimp",
         "imageName": _24,
+        "cost": "3W",
         "color": "W",
         "type": "Artifact Creature — Police Airship ",
         "id": 24,
@@ -525,6 +550,7 @@ colorIdentity: "W"}
     {
         "name": "Personal Forcefield",
         "imageName": _25,
+        "cost": "1W",
         "color": "W",
         "type": "Artifact — Equipment ",
         "id": 25,
@@ -535,6 +561,7 @@ colorIdentity: "W"}
     {
         "name": "Police Badge",
         "imageName": _26,
+        "cost": "1W",
         "color": "W",
         "type": "Artifact — Equipment ",
         "id": 26,
@@ -545,6 +572,7 @@ colorIdentity: "W"}
     {
         "name": "Raise the Alarm",
         "imageName": _27,
+        "cost": "1W",
         "color": "W",
         "type": "Instant",
         "id": 27,
@@ -555,6 +583,7 @@ colorIdentity: "W"}
     {
         "name": "Rangor Watchmen",
         "imageName": _28,
+        "cost": "1W",
         "color": "W",
         "type": "Creature — Rebel Commando ",
         "id": 28,
@@ -565,6 +594,7 @@ colorIdentity: "W"}
     {
         "name": "Reconnaisance Mule",
         "imageName": _29,
+        "cost": "5W",
         "color": "W",
         "type": "Artifact Creature — Military Mech ",
         "id": 29,
@@ -575,6 +605,7 @@ colorIdentity: "W"}
     {
         "name": "Remote Paralyzer",
         "imageName": _30,
+        "cost": "1W",
         "color": "W",
         "type": "Creature — Police Saboteur ",
         "id": 30,
@@ -585,6 +616,7 @@ colorIdentity: "W"}
     {
         "name": "Salvation Class Warship",
         "imageName": _31,
+        "cost": "3W",
         "color": "W",
         "type": "Artifact Creature — Military Cruiser ",
         "id": 31,
@@ -595,6 +627,7 @@ colorIdentity: "W"}
     {
         "name": "Sandstorm Pathfinders",
         "imageName": _32,
+        "cost": "3W",
         "color": "W",
         "type": "Creature — Rebel Scout ",
         "id": 32,
@@ -605,6 +638,7 @@ colorIdentity: "W"}
     {
         "name": "Special Circumstances",
         "imageName": _33,
+        "cost": "3WW",
         "color": "W",
         "type": "Creature — Police Commando ",
         "id": 33,
@@ -615,6 +649,7 @@ colorIdentity: "W"}
     {
         "name": "Starlight Crusade Orator",
         "imageName": _34,
+        "cost": "1WW",
         "color": "W",
         "type": "Creature — Advisor ",
         "id": 34,
@@ -625,6 +660,7 @@ colorIdentity: "W"}
     {
         "name": "Supply-Line Jet",
         "imageName": _35,
+        "cost": "1WW",
         "color": "W",
         "type": "Artifact Creature — Rebel Fighter ",
         "id": 35,
@@ -635,6 +671,7 @@ colorIdentity: "W"}
     {
         "name": "Suppression Patrol",
         "imageName": _36,
+        "cost": "2W",
         "color": "W",
         "type": "Artifact Creature — Police Mech ",
         "id": 36,
@@ -645,6 +682,7 @@ colorIdentity: "W"}
     {
         "name": "Suspension Squad",
         "imageName": _37,
+        "cost": "2W",
         "color": "W",
         "type": "Creature — Military Commando ",
         "id": 37,
@@ -655,6 +693,7 @@ colorIdentity: "W"}
     {
         "name": "Time Traveller",
         "imageName": _38,
+        "cost": "3WW",
         "color": "W",
         "type": "Creature — Researcher ",
         "id": 38,
@@ -665,6 +704,7 @@ colorIdentity: "W"}
     {
         "name": "Turn the Tide of Battle",
         "imageName": _39,
+        "cost": "3WW",
         "color": "W",
         "type": "Sorcery",
         "id": 39,
@@ -675,6 +715,7 @@ colorIdentity: "W"}
     {
         "name": "Undercover Agent",
         "imageName": _40,
+        "cost": "W",
         "color": "W",
         "type": "Creature — Rebel Saboteur ",
         "id": 40,
@@ -685,6 +726,7 @@ colorIdentity: "W"}
     {
         "name": "Wartime Recruitment",
         "imageName": _41,
+        "cost": "2W",
         "color": "W",
         "type": "Enchantment",
         "id": 41,
@@ -695,6 +737,7 @@ colorIdentity: "W"}
     {
         "name": "Warzone Mentor",
         "imageName": _42,
+        "cost": "2W",
         "color": "W",
         "type": "Creature — Military Assault ",
         "id": 42,
@@ -705,6 +748,7 @@ colorIdentity: "W"}
     {
         "name": "Wiendahl Carrier",
         "imageName": _43,
+        "cost": "4WW",
         "color": "W",
         "type": "Artifact Creature — Carrier ",
         "id": 43,
@@ -715,6 +759,7 @@ colorIdentity: "W"}
     {
         "name": "Ambassadorship",
         "imageName": _44,
+        "cost": "2UU",
         "color": "U",
         "type": "Enchantment — Aura ",
         "id": 44,
@@ -725,6 +770,7 @@ colorIdentity: "U"}
     {
         "name": "Arrester Droid",
         "imageName": _45,
+        "cost": "2U",
         "color": "U",
         "type": "Artifact Creature — Police Mech ",
         "id": 45,
@@ -735,6 +781,7 @@ colorIdentity: "U"}
     {
         "name": "Atmospheric Survey",
         "imageName": _46,
+        "cost": "1U",
         "color": "U",
         "type": "Instant",
         "id": 46,
@@ -745,6 +792,7 @@ colorIdentity: "U"}
     {
         "name": "Brain Drain",
         "imageName": _47,
+        "cost": "1U",
         "color": "U",
         "type": "Instant",
         "id": 47,
@@ -755,6 +803,7 @@ colorIdentity: "U"}
     {
         "name": "Breakdown",
         "imageName": _48,
+        "cost": "1UU",
         "color": "U",
         "type": "Enchantment — Aura ",
         "id": 48,
@@ -765,6 +814,7 @@ colorIdentity: "U"}
     {
         "name": "Build Better",
         "imageName": _49,
+        "cost": "2UU",
         "color": "U",
         "type": "Instant",
         "id": 49,
@@ -775,6 +825,7 @@ colorIdentity: "U"}
     {
         "name": "The Chronos",
         "imageName": _50,
+        "cost": "5UU",
         "color": "U",
         "type": "Legendary Artifact Creature — Battleship ",
         "id": 50,
@@ -785,6 +836,7 @@ colorIdentity: "U"}
     {
         "name": "Cloud Darter",
         "imageName": _51,
+        "cost": "1UU",
         "color": "U",
         "type": "Artifact Creature — Police Fighter ",
         "id": 51,
@@ -795,6 +847,7 @@ colorIdentity: "U"}
     {
         "name": "Collapse Consciousness",
         "imageName": _52,
+        "cost": "1UU",
         "color": "U",
         "type": "Instant",
         "id": 52,
@@ -805,6 +858,7 @@ colorIdentity: "U"}
     {
         "name": "Coordinate Scrambler",
         "imageName": _53,
+        "cost": "2U",
         "color": "U",
         "type": "Creature — Saboteur ",
         "id": 53,
@@ -815,6 +869,7 @@ colorIdentity: "U"}
     {
         "name": "Engine Welder",
         "imageName": _54,
+        "cost": "2U",
         "color": "U",
         "type": "Creature — Engineer ",
         "id": 54,
@@ -825,6 +880,7 @@ colorIdentity: "U"}
     {
         "name": "Escape the City",
         "imageName": _55,
+        "cost": "4UU",
         "color": "U",
         "type": "Instant",
         "id": 55,
@@ -835,6 +891,7 @@ colorIdentity: "U"}
     {
         "name": "Exiled Xenologist",
         "imageName": _56,
+        "cost": "1U",
         "color": "U",
         "type": "Creature — Researcher ",
         "id": 56,
@@ -845,6 +902,7 @@ colorIdentity: "U"}
     {
         "name": "Future Insight",
         "imageName": _57,
+        "cost": "2UU",
         "color": "U",
         "type": "Instant",
         "id": 57,
@@ -855,6 +913,7 @@ colorIdentity: "U"}
     {
         "name": "Guidance Pods",
         "imageName": _58,
+        "cost": "U",
         "color": "U",
         "type": "Artifact Creature — Corporate Shuttle ",
         "id": 58,
@@ -865,6 +924,7 @@ colorIdentity: "U"}
     {
         "name": "Holoship Fleet",
         "imageName": _59,
+        "cost": "4UU",
         "color": "U",
         "type": "Artifact Creature — Hologram Cruiser ",
         "id": 59,
@@ -875,6 +935,7 @@ colorIdentity: "U"}
     {
         "name": "Hong Wai Prototype",
         "imageName": _60,
+        "cost": "2U",
         "color": "U",
         "type": "Artifact Creature — Fighter ",
         "id": 60,
@@ -885,6 +946,7 @@ colorIdentity: "U"}
     {
         "name": "Kitefin Racer",
         "imageName": _61,
+        "cost": "3U",
         "color": "U",
         "type": "Artifact Creature — Fish Mech Mutant ",
         "id": 61,
@@ -895,6 +957,7 @@ colorIdentity: "U"}
     {
         "name": "Kushak Exile",
         "imageName": _62,
+        "cost": "5U",
         "color": "U",
         "type": "Creature — Xeno Mutant ",
         "id": 62,
@@ -905,6 +968,7 @@ colorIdentity: "U"}
     {
         "name": "Lambert Stealth Bomber",
         "imageName": _63,
+        "cost": "5U",
         "color": "U",
         "type": "Artifact Creature — Cruiser ",
         "id": 63,
@@ -915,6 +979,7 @@ colorIdentity: "U"}
     {
         "name": "Lost in Space",
         "imageName": _64,
+        "cost": "4U",
         "color": "U",
         "type": "Sorcery",
         "id": 64,
@@ -925,6 +990,7 @@ colorIdentity: "U"}
     {
         "name": "Matter Redistribution",
         "imageName": _65,
+        "cost": "4UU",
         "color": "U",
         "type": "Instant",
         "id": 65,
@@ -935,6 +1001,7 @@ colorIdentity: "U"}
     {
         "name": "Migratory City",
         "imageName": _66,
+        "cost": "1U",
         "color": "U",
         "type": "Artifact Creature — Mech ",
         "id": 66,
@@ -945,6 +1012,7 @@ colorIdentity: "U"}
     {
         "name": "Military Intelligence",
         "imageName": _67,
+        "cost": "1U",
         "color": "U",
         "type": "Enchantment",
         "id": 67,
@@ -955,6 +1023,7 @@ colorIdentity: "U"}
     {
         "name": "Mindmelded Sysadmin",
         "imageName": _68,
+        "cost": "1U",
         "color": "U",
         "type": "Artifact Creature — Mutant Saboteur ",
         "id": 68,
@@ -965,6 +1034,7 @@ colorIdentity: "U"}
     {
         "name": "Nanoreplicator Zero",
         "imageName": _69,
+        "cost": "3UU",
         "color": "U",
         "type": "Artifact Creature — Nanobot ",
         "id": 69,
@@ -975,6 +1045,7 @@ colorIdentity: "U"}
     {
         "name": "Neutron Flow",
         "imageName": _70,
+        "cost": "2U",
         "color": "U",
         "type": "Sorcery",
         "id": 70,
@@ -985,6 +1056,7 @@ colorIdentity: "U"}
     {
         "name": "Open Speculation",
         "imageName": _71,
+        "cost": "3U",
         "color": "U",
         "type": "Instant",
         "id": 71,
@@ -995,6 +1067,7 @@ colorIdentity: "U"}
     {
         "name": "Plasma Reclaimer",
         "imageName": _72,
+        "cost": "3U",
         "color": "U",
         "type": "Artifact Creature — Mech ",
         "id": 72,
@@ -1005,6 +1078,7 @@ colorIdentity: "U"}
     {
         "name": "Reconstruction Specialist",
         "imageName": _73,
+        "cost": "4U",
         "color": "U",
         "type": "Creature — Police Advisor ",
         "id": 73,
@@ -1015,6 +1089,7 @@ colorIdentity: "U"}
     {
         "name": "Scorned Researcher",
         "imageName": _74,
+        "cost": "4U",
         "color": "U",
         "type": "Creature — Mutant Researcher ",
         "id": 74,
@@ -1025,6 +1100,7 @@ colorIdentity: "U"}
     {
         "name": "Slipstream Distorter",
         "imageName": _75,
+        "cost": "3U",
         "color": "U",
         "type": "Artifact Creature — Police Mech ",
         "id": 75,
@@ -1035,6 +1111,7 @@ colorIdentity: "U"}
     {
         "name": "Solar Power Transmitters",
         "imageName": _76,
+        "cost": "2U",
         "color": "U",
         "type": "Artifact",
         "id": 76,
@@ -1045,6 +1122,7 @@ colorIdentity: "U"}
     {
         "name": "Supercoolant Technician",
         "imageName": _77,
+        "cost": "1U",
         "color": "U",
         "type": "Creature — Corporate Engineer ",
         "id": 77,
@@ -1055,6 +1133,7 @@ colorIdentity: "U"}
     {
         "name": "Tactical Freeze Ray",
         "imageName": _78,
+        "cost": "U",
         "color": "U",
         "type": "Instant",
         "id": 78,
@@ -1065,6 +1144,7 @@ colorIdentity: "U"}
     {
         "name": "Thought Dampener",
         "imageName": _79,
+        "cost": "2U",
         "color": "U",
         "type": "Artifact Creature — Police Mech ",
         "id": 79,
@@ -1075,6 +1155,7 @@ colorIdentity: "U"}
     {
         "name": "Threat Profiling",
         "imageName": _80,
+        "cost": "1U",
         "color": "U",
         "type": "Instant",
         "id": 80,
@@ -1085,6 +1166,7 @@ colorIdentity: "U"}
     {
         "name": "Time Paradox",
         "imageName": _81,
+        "cost": "6UU",
         "color": "U",
         "type": "Instant",
         "id": 81,
@@ -1095,6 +1177,7 @@ colorIdentity: "U"}
     {
         "name": "Transcend Space-Time",
         "imageName": _82,
+        "cost": "3U",
         "color": "U",
         "type": "Enchantment",
         "id": 82,
@@ -1105,6 +1188,7 @@ colorIdentity: "U"}
     {
         "name": "Umida Security Protocols",
         "imageName": _83,
+        "cost": "1U",
         "color": "U",
         "type": "Instant",
         "id": 83,
@@ -1115,6 +1199,7 @@ colorIdentity: "U"}
     {
         "name": "Undercroft Entangler",
         "imageName": _84,
+        "cost": "3U",
         "color": "U",
         "type": "Artifact Creature — Police Mech Saboteur ",
         "id": 84,
@@ -1125,6 +1210,7 @@ colorIdentity: "U"}
     {
         "name": "Voyage’s End",
         "imageName": _85,
+        "cost": "1U",
         "color": "U",
         "type": "Instant",
         "id": 85,
@@ -1135,6 +1221,7 @@ colorIdentity: "U"}
     {
         "name": "Back to Work",
         "imageName": _86,
+        "cost": "3B",
         "color": "B",
         "type": "Sorcery",
         "id": 86,
@@ -1145,6 +1232,7 @@ colorIdentity: "B"}
     {
         "name": "Backalley Trafficker",
         "imageName": _87,
+        "cost": "2B",
         "color": "B",
         "type": "Creature — Advisor ",
         "id": 87,
@@ -1155,6 +1243,7 @@ colorIdentity: "B"}
     {
         "name": "Boardroom Keeper",
         "imageName": _88,
+        "cost": "2B",
         "color": "B",
         "type": "Creature — Corporate Assassin ",
         "id": 88,
@@ -1165,6 +1254,7 @@ colorIdentity: "B"}
     {
         "name": "Brain Rewiring",
         "imageName": _89,
+        "cost": "1B",
         "color": "B",
         "type": "Sorcery",
         "id": 89,
@@ -1175,6 +1265,7 @@ colorIdentity: "B"}
     {
         "name": "Cloning Vats",
         "imageName": _90,
+        "cost": "2B",
         "color": "B",
         "type": "Artifact",
         "id": 90,
@@ -1185,6 +1276,7 @@ colorIdentity: "B"}
     {
         "name": "Contract Killer",
         "imageName": _91,
+        "cost": "BB",
         "color": "B",
         "type": "Creature — Mercenary Assassin ",
         "id": 91,
@@ -1195,6 +1287,7 @@ colorIdentity: "B"}
     {
         "name": "Corporate Spy",
         "imageName": _92,
+        "cost": "1B",
         "color": "B",
         "type": "Creature — Corporate Saboteur ",
         "id": 92,
@@ -1205,6 +1298,7 @@ colorIdentity: "B"}
     {
         "name": "Crux of Space-Time",
         "imageName": _93,
+        "cost": "3BB",
         "color": "B",
         "type": "Sorcery",
         "id": 93,
@@ -1215,6 +1309,7 @@ colorIdentity: "B"}
     {
         "name": "Disassemble",
         "imageName": _94,
+        "cost": "3B",
         "color": "B",
         "type": "Sorcery",
         "id": 94,
@@ -1225,6 +1320,7 @@ colorIdentity: "B"}
     {
         "name": "Engineered Endemic",
         "imageName": _95,
+        "cost": "1B",
         "color": "B",
         "type": "Enchantment",
         "id": 95,
@@ -1235,6 +1331,7 @@ colorIdentity: "B"}
     {
         "name": "Figment of Death",
         "imageName": _96,
+        "cost": "3B",
         "color": "B",
         "type": "Creature — Nightmare Hallucination ",
         "id": 96,
@@ -1245,6 +1342,7 @@ colorIdentity: "B"}
     {
         "name": "Gambling Ring",
         "imageName": _97,
+        "cost": "1BB",
         "color": "B",
         "type": "Enchantment",
         "id": 97,
@@ -1255,6 +1353,7 @@ colorIdentity: "B"}
     {
         "name": "Grasp of The Left Hand",
         "imageName": _98,
+        "cost": "B",
         "color": "B",
         "type": "Instant",
         "id": 98,
@@ -1265,6 +1364,7 @@ colorIdentity: "B"}
     {
         "name": "Hypercollider",
         "imageName": _99,
+        "cost": "BB",
         "color": "B",
         "type": "Artifact",
         "id": 99,
@@ -1275,6 +1375,7 @@ colorIdentity: "B"}
     {
         "name": "Interrogate",
         "imageName": _100,
+        "cost": "1B",
         "color": "B",
         "type": "Instant",
         "id": 100,
@@ -1285,6 +1386,7 @@ colorIdentity: "B"}
     {
         "name": "Mesmerising Performance",
         "imageName": _101,
+        "cost": "2B",
         "color": "B",
         "type": "Instant",
         "id": 101,
@@ -1295,6 +1397,7 @@ colorIdentity: "B"}
     {
         "name": "Mindmeld Torturer",
         "imageName": _102,
+        "cost": "2B",
         "color": "B",
         "type": "Creature — Mercenary Assassin ",
         "id": 102,
@@ -1305,6 +1408,7 @@ colorIdentity: "B"}
     {
         "name": "Mortality",
         "imageName": _103,
+        "cost": "9BB",
         "color": "B",
         "type": "Creature — Nightmare Hallucination ",
         "id": 103,
@@ -1315,6 +1419,7 @@ colorIdentity: "B"}
     {
         "name": "Murmur, the Cleaner",
         "imageName": _104,
+        "cost": "3BB",
         "color": "B",
         "type": "Legendary Planeswalker — Murmur ",
         "id": 104,
@@ -1325,6 +1430,7 @@ colorIdentity: "B"}
     {
         "name": "Mystic of the Under",
         "imageName": _105,
+        "cost": "1B",
         "color": "B",
         "type": "Artifact Creature — Mech Advisor ",
         "id": 105,
@@ -1335,6 +1441,7 @@ colorIdentity: "B"}
     {
         "name": "Neural Devourer",
         "imageName": _106,
+        "cost": "2B",
         "color": "B",
         "type": "Creature — Squid Mutant ",
         "id": 106,
@@ -1345,6 +1452,7 @@ colorIdentity: "B"}
     {
         "name": "Peacekeeper Satellite",
         "imageName": _107,
+        "cost": "2B",
         "color": "B",
         "type": "Artifact Creature — Station ",
         "id": 107,
@@ -1355,6 +1463,7 @@ colorIdentity: "B"}
     {
         "name": "Prototype Evader",
         "imageName": _108,
+        "cost": "2B",
         "color": "B",
         "type": "Artifact Creature — Fighter ",
         "id": 108,
@@ -1365,6 +1474,7 @@ colorIdentity: "B"}
     {
         "name": "Punitive Counterstrike",
         "imageName": _109,
+        "cost": "XBB",
         "color": "B",
         "type": "Instant",
         "id": 109,
@@ -1375,6 +1485,7 @@ colorIdentity: "B"}
     {
         "name": "Rebuild Stronger",
         "imageName": _110,
+        "cost": "4B",
         "color": "B",
         "type": "Sorcery",
         "id": 110,
@@ -1385,6 +1496,7 @@ colorIdentity: "B"}
     {
         "name": "Reincarnation Program",
         "imageName": _111,
+        "cost": "B",
         "color": "B",
         "type": "Instant",
         "id": 111,
@@ -1395,6 +1507,7 @@ colorIdentity: "B"}
     {
         "name": "Rumormonger",
         "imageName": _112,
+        "cost": "2B",
         "color": "B",
         "type": "Creature — Mercenary Saboteur ",
         "id": 112,
@@ -1405,6 +1518,7 @@ colorIdentity: "B"}
     {
         "name": "Rumors and Whispers",
         "imageName": _113,
+        "cost": "3B",
         "color": "B",
         "type": "Enchantment",
         "id": 113,
@@ -1415,6 +1529,7 @@ colorIdentity: "B"}
     {
         "name": "Security Detail",
         "imageName": _114,
+        "cost": "1B",
         "color": "B",
         "type": "Artifact Creature — Corporate Mech ",
         "id": 114,
@@ -1425,6 +1540,7 @@ colorIdentity: "B"}
     {
         "name": "Sewer Slitherer",
         "imageName": _115,
+        "cost": "4B",
         "color": "B",
         "type": "Artifact Creature — Mech Leech Mutant ",
         "id": 115,
@@ -1435,6 +1551,7 @@ colorIdentity: "B"}
     {
         "name": "Shiryu Collector",
         "imageName": _116,
+        "cost": "5B",
         "color": "B",
         "type": "Artifact Creature — Mech ",
         "id": 116,
@@ -1445,6 +1562,7 @@ colorIdentity: "B"}
     {
         "name": "Silent Infiltrator",
         "imageName": _117,
+        "cost": "3B",
         "color": "B",
         "type": "Creature — Mercenary Saboteur ",
         "id": 117,
@@ -1455,6 +1573,7 @@ colorIdentity: "B"}
     {
         "name": "Sink into the Oceans",
         "imageName": _118,
+        "cost": "1B",
         "color": "B",
         "type": "Enchantment — Aura ",
         "id": 118,
@@ -1465,6 +1584,7 @@ colorIdentity: "B"}
     {
         "name": "Surprise Round",
         "imageName": _119,
+        "cost": "B",
         "color": "B",
         "type": "Instant",
         "id": 119,
@@ -1475,6 +1595,7 @@ colorIdentity: "B"}
     {
         "name": "The Tartarus",
         "imageName": _120,
+        "cost": "5BB",
         "color": "B",
         "type": "Legendary Artifact Creature — Battleship ",
         "id": 120,
@@ -1485,6 +1606,7 @@ colorIdentity: "B"}
     {
         "name": "Tragedy of War",
         "imageName": _121,
+        "cost": "3BB",
         "color": "B",
         "type": "Sorcery",
         "id": 121,
@@ -1495,6 +1617,7 @@ colorIdentity: "B"}
     {
         "name": "Tundra Strider",
         "imageName": _122,
+        "cost": "1BB",
         "color": "B",
         "type": "Creature — Corporate Assassin ",
         "id": 122,
@@ -1505,6 +1628,7 @@ colorIdentity: "B"}
     {
         "name": "Undercity Janitor",
         "imageName": _123,
+        "cost": "3B",
         "color": "B",
         "type": "Artifact Creature — Mech Mercenary ",
         "id": 123,
@@ -1515,6 +1639,7 @@ colorIdentity: "B"}
     {
         "name": "Urban Revenant",
         "imageName": _124,
+        "cost": "3B",
         "color": "B",
         "type": "Creature — Nightmare Hallucination ",
         "id": 124,
@@ -1525,6 +1650,7 @@ colorIdentity: "B"}
     {
         "name": "Warapur Company Contract",
         "imageName": _125,
+        "cost": "1BB",
         "color": "B",
         "type": "Instant",
         "id": 125,
@@ -1535,6 +1661,7 @@ colorIdentity: "B"}
     {
         "name": "Warapur Company Drudge",
         "imageName": _126,
+        "cost": "B",
         "color": "B",
         "type": "Artifact Creature — Mech Mercenary ",
         "id": 126,
@@ -1545,6 +1672,7 @@ colorIdentity: "B"}
     {
         "name": "Warship Sinistra",
         "imageName": _127,
+        "cost": "4BB",
         "color": "B",
         "type": "Artifact Creature — Cruiser ",
         "id": 127,
@@ -1555,6 +1683,7 @@ colorIdentity: "B"}
     {
         "name": "Wasteland Enforcer",
         "imageName": _128,
+        "cost": "1B",
         "color": "B",
         "type": "Artifact Creature — Mech Mercenary ",
         "id": 128,
@@ -1565,6 +1694,7 @@ colorIdentity: "B"}
     {
         "name": "Adopted Wanderer",
         "imageName": _129,
+        "cost": "1R",
         "color": "R",
         "type": "Artifact Creature — Mech Nomad ",
         "id": 129,
@@ -1575,6 +1705,7 @@ colorIdentity: "B"}
     {
         "name": "Al Maham Protector",
         "imageName": _130,
+        "cost": "4R",
         "color": "R",
         "type": "Artifact Creature — Mech Nomad ",
         "id": 130,
@@ -1585,6 +1716,7 @@ colorIdentity: "R"}
     {
         "name": "Alpha Squad Captain",
         "imageName": _131,
+        "cost": "R",
         "color": "R",
         "type": "Creature — Rebel Assault ",
         "id": 131,
@@ -1595,6 +1727,7 @@ colorIdentity: "R"}
     {
         "name": "Battle Flow",
         "imageName": _132,
+        "cost": "1R",
         "color": "R",
         "type": "Instant",
         "id": 132,
@@ -1605,6 +1738,7 @@ colorIdentity: "R"}
     {
         "name": "Bergstadt Roboticists",
         "imageName": _133,
+        "cost": "3R",
         "color": "R",
         "type": "Creature — Engineer ",
         "id": 133,
@@ -1615,6 +1749,7 @@ colorIdentity: "R"}
     {
         "name": "Chentsov Scylla",
         "imageName": _134,
+        "cost": "XR",
         "color": "R",
         "type": "Artifact Creature — Mech ",
         "id": 134,
@@ -1625,6 +1760,7 @@ colorIdentity: "R"}
     {
         "name": "Combined Effort",
         "imageName": _135,
+        "cost": "R",
         "color": "R",
         "type": "Instant",
         "id": 135,
@@ -1635,6 +1771,7 @@ colorIdentity: "R"}
     {
         "name": "Coordinated Assault",
         "imageName": _136,
+        "cost": "R",
         "color": "R",
         "type": "Instant",
         "id": 136,
@@ -1645,6 +1782,7 @@ colorIdentity: "R"}
     {
         "name": "Coulomb Chargers",
         "imageName": _137,
+        "cost": "4R",
         "color": "R",
         "type": "Artifact Creature — Mech Assault ",
         "id": 137,
@@ -1655,6 +1793,7 @@ colorIdentity: "R"}
     {
         "name": "Electric Arc",
         "imageName": _138,
+        "cost": "2RR",
         "color": "R",
         "type": "Sorcery",
         "id": 138,
@@ -1665,6 +1804,7 @@ colorIdentity: "R"}
     {
         "name": "Execute Takeover Protocol",
         "imageName": _139,
+        "cost": "4RR",
         "color": "R",
         "type": "Sorcery",
         "id": 139,
@@ -1675,6 +1815,7 @@ colorIdentity: "R"}
     {
         "name": "Flagship Warapur",
         "imageName": _140,
+        "cost": "3RR",
         "color": "R",
         "type": "Artifact Creature — Mercenary Cruiser ",
         "id": 140,
@@ -1685,6 +1826,7 @@ colorIdentity: "R"}
     {
         "name": "Frantic Investigator",
         "imageName": _141,
+        "cost": "1R",
         "color": "R",
         "type": "Creature — Researcher ",
         "id": 141,
@@ -1695,6 +1837,7 @@ colorIdentity: "R"}
     {
         "name": "Genius or Grifter",
         "imageName": _142,
+        "cost": "3R",
         "color": "R",
         "type": "Instant",
         "id": 142,
@@ -1705,6 +1848,7 @@ colorIdentity: "R"}
     {
         "name": "Guerilla Fighters",
         "imageName": _143,
+        "cost": "3R",
         "color": "R",
         "type": "Creature — Rebel Assault ",
         "id": 143,
@@ -1715,6 +1859,7 @@ colorIdentity: "R"}
     {
         "name": "Hired Artillery",
         "imageName": _144,
+        "cost": "2R",
         "color": "R",
         "type": "Artifact Creature — Mech Mercenary ",
         "id": 144,
@@ -1725,6 +1870,7 @@ colorIdentity: "R"}
     {
         "name": "Homeostimulation Suit",
         "imageName": _145,
+        "cost": "R",
         "color": "R",
         "type": "Artifact — Equipment ",
         "id": 145,
@@ -1735,6 +1881,7 @@ colorIdentity: "R"}
     {
         "name": "Hyperadrenaline",
         "imageName": _146,
+        "cost": "1R",
         "color": "R",
         "type": "Instant",
         "id": 146,
@@ -1745,6 +1892,7 @@ colorIdentity: "R"}
     {
         "name": "Iridium Magneto-Knife",
         "imageName": _147,
+        "cost": "1R",
         "color": "R",
         "type": "Artifact — Equipment ",
         "id": 147,
@@ -1755,6 +1903,7 @@ colorIdentity: "R"}
     {
         "name": "Leave Behind",
         "imageName": _148,
+        "cost": "3RR",
         "color": "R",
         "type": "Sorcery",
         "id": 148,
@@ -1765,6 +1914,7 @@ colorIdentity: "R"}
     {
         "name": "Mindmeld Battlesuit",
         "imageName": _149,
+        "cost": "1RR",
         "color": "R",
         "type": "Artifact — Equipment ",
         "id": 149,
@@ -1775,6 +1925,7 @@ colorIdentity: "R"}
     {
         "name": "The Moirai",
         "imageName": _150,
+        "cost": "5RR",
         "color": "R",
         "type": "Legendary Artifact Creature — Battleship ",
         "id": 150,
@@ -1785,6 +1936,7 @@ colorIdentity: "R"}
     {
         "name": "Ohmwrecker",
         "imageName": _151,
+        "cost": "3R",
         "color": "R",
         "type": "Artifact Creature — Mech Assault ",
         "id": 151,
@@ -1795,6 +1947,7 @@ colorIdentity: "R"}
     {
         "name": "Rangor Contractor",
         "imageName": _152,
+        "cost": "2R",
         "color": "R",
         "type": "Creature — Mercenary Commando ",
         "id": 152,
@@ -1805,6 +1958,7 @@ colorIdentity: "R"}
     {
         "name": "Reckless Troubleshooter",
         "imageName": _153,
+        "cost": "R",
         "color": "R",
         "type": "Creature — Mercenary Saboteur ",
         "id": 153,
@@ -1815,6 +1969,7 @@ colorIdentity: "R"}
     {
         "name": "Reverse Polarity",
         "imageName": _154,
+        "cost": "2R",
         "color": "R",
         "type": "Sorcery",
         "id": 154,
@@ -1825,6 +1980,7 @@ colorIdentity: "R"}
     {
         "name": "Rip Space-Time",
         "imageName": _155,
+        "cost": "4R",
         "color": "R",
         "type": "Instant",
         "id": 155,
@@ -1835,6 +1991,7 @@ colorIdentity: "R"}
     {
         "name": "Rocket Salvo",
         "imageName": _156,
+        "cost": "1R",
         "color": "R",
         "type": "Instant",
         "id": 156,
@@ -1845,6 +2002,7 @@ colorIdentity: "R"}
     {
         "name": "Scavenged X-17",
         "imageName": _157,
+        "cost": "2R",
         "color": "R",
         "type": "Artifact Creature — Rebel Mech Assault ",
         "id": 157,
@@ -1855,6 +2013,7 @@ colorIdentity: "R"}
     {
         "name": "Scrapyard Salvager",
         "imageName": _158,
+        "cost": "1R",
         "color": "R",
         "type": "Artifact Creature — Mech Engineer ",
         "id": 158,
@@ -1865,6 +2024,7 @@ colorIdentity: "R"}
     {
         "name": "Self-Destruct Sequence",
         "imageName": _159,
+        "cost": "3R",
         "color": "R",
         "type": "Sorcery",
         "id": 159,
@@ -1875,6 +2035,7 @@ colorIdentity: "R"}
     {
         "name": "Slagthrower",
         "imageName": _160,
+        "cost": "2R",
         "color": "R",
         "type": "Artifact Creature — Mech ",
         "id": 160,
@@ -1885,6 +2046,7 @@ colorIdentity: "R"}
     {
         "name": "Slipstream Hunter",
         "imageName": _161,
+        "cost": "3R",
         "color": "R",
         "type": "Artifact Creature — Mech Cat Nomad ",
         "id": 161,
@@ -1895,6 +2057,7 @@ colorIdentity: "R"}
     {
         "name": "Supervolcanic Fallout",
         "imageName": _162,
+        "cost": "2R",
         "color": "R",
         "type": "Sorcery",
         "id": 162,
@@ -1905,6 +2068,7 @@ colorIdentity: "R"}
     {
         "name": "Supply Runner",
         "imageName": _163,
+        "cost": "1R",
         "color": "R",
         "type": "Artifact Creature — Rebel Mech Assault ",
         "id": 163,
@@ -1915,6 +2079,7 @@ colorIdentity: "R"}
     {
         "name": "Take Hostage",
         "imageName": _164,
+        "cost": "2R",
         "color": "R",
         "type": "Sorcery",
         "id": 164,
@@ -1925,6 +2090,7 @@ colorIdentity: "R"}
     {
         "name": "Throw to the Wind",
         "imageName": _165,
+        "cost": "1R",
         "color": "R",
         "type": "Sorcery",
         "id": 165,
@@ -1935,6 +2101,7 @@ colorIdentity: "R"}
     {
         "name": "Vulcan Devastators",
         "imageName": _166,
+        "cost": "5R",
         "color": "R",
         "type": "Artifact Creature — Mech Assault ",
         "id": 166,
@@ -1945,6 +2112,7 @@ colorIdentity: "R"}
     {
         "name": "Walking Furnace",
         "imageName": _167,
+        "cost": "1RR",
         "color": "R",
         "type": "Artifact Creature — Mech Nomad ",
         "id": 167,
@@ -1955,6 +2123,7 @@ colorIdentity: "R"}
     {
         "name": "Wanted Speedster",
         "imageName": _168,
+        "cost": "3R",
         "color": "R",
         "type": "Creature — Mercenary Commando ",
         "id": 168,
@@ -1965,6 +2134,7 @@ colorIdentity: "R"}
     {
         "name": "Wild Game Huntmaster",
         "imageName": _169,
+        "cost": "2RR",
         "color": "R",
         "type": "Creature — Nomad ",
         "id": 169,
@@ -1975,6 +2145,7 @@ colorIdentity: "R"}
     {
         "name": "Wormcaller’s Assurance",
         "imageName": _170,
+        "cost": "2R",
         "color": "R",
         "type": "Sorcery",
         "id": 170,
@@ -1985,6 +2156,7 @@ colorIdentity: "R"}
     {
         "name": "Al Maham Pathfinder",
         "imageName": _171,
+        "cost": "2G",
         "color": "G",
         "type": "Creature — Nomad ",
         "id": 171,
@@ -1995,6 +2167,7 @@ colorIdentity: "G"}
     {
         "name": "Al Maham Traders",
         "imageName": _172,
+        "cost": "2G",
         "color": "G",
         "type": "Creature — Nomad ",
         "id": 172,
@@ -2005,6 +2178,7 @@ colorIdentity: "G"}
     {
         "name": "Angling Constrictor",
         "imageName": _173,
+        "cost": "2G",
         "color": "G",
         "type": "Creature — Fish Squid Mutant ",
         "id": 173,
@@ -2015,6 +2189,7 @@ colorIdentity: "G"}
     {
         "name": "Baljurashi Wanderer",
         "imageName": _174,
+        "cost": "3GG",
         "color": "G",
         "type": "Artifact Creature — Mech Mutant Nomad ",
         "id": 174,
@@ -2025,6 +2200,7 @@ colorIdentity: "G"}
     {
         "name": "Basirah Composite",
         "imageName": _175,
+        "cost": "4G",
         "color": "G",
         "type": "Artifact Creature — Mech Mutant ",
         "id": 175,
@@ -2035,6 +2211,7 @@ colorIdentity: "G"}
     {
         "name": "Bioarchitect",
         "imageName": _176,
+        "cost": "1G",
         "color": "G",
         "type": "Creature — Xeno Researcher ",
         "id": 176,
@@ -2045,6 +2222,7 @@ colorIdentity: "G"}
     {
         "name": "Biocourier",
         "imageName": _177,
+        "cost": "3G",
         "color": "G",
         "type": "Artifact Creature — Corporate Mech ",
         "id": 177,
@@ -2055,6 +2233,7 @@ colorIdentity: "G"}
     {
         "name": "Brood Ambush",
         "imageName": _178,
+        "cost": "3G",
         "color": "G",
         "type": "Instant",
         "id": 178,
@@ -2065,6 +2244,7 @@ colorIdentity: "G"}
     {
         "name": "Deep into the Subconscious",
         "imageName": _179,
+        "cost": "1G",
         "color": "G",
         "type": "Instant",
         "id": 179,
@@ -2075,6 +2255,7 @@ colorIdentity: "G"}
     {
         "name": "Deep Jungle Hunter",
         "imageName": _180,
+        "cost": "3G",
         "color": "G",
         "type": "Creature — Snake Mutant ",
         "id": 180,
@@ -2085,6 +2266,7 @@ colorIdentity: "G"}
     {
         "name": "Ecosystem Collapse",
         "imageName": _181,
+        "cost": "4GG",
         "color": "G",
         "type": "Sorcery",
         "id": 181,
@@ -2095,6 +2277,7 @@ colorIdentity: "G"}
     {
         "name": "Escaped Test Subject",
         "imageName": _182,
+        "cost": "G",
         "color": "G",
         "type": "Creature — Mutant ",
         "id": 182,
@@ -2105,6 +2288,7 @@ colorIdentity: "G"}
     {
         "name": "Experimental Mutagenics",
         "imageName": _183,
+        "cost": "1G",
         "color": "G",
         "type": "Sorcery",
         "id": 183,
@@ -2115,6 +2299,7 @@ colorIdentity: "G"}
     {
         "name": "Frontier Anatomist",
         "imageName": _184,
+        "cost": "1G",
         "color": "G",
         "type": "Artifact Creature — Mech Medic ",
         "id": 184,
@@ -2125,6 +2310,7 @@ colorIdentity: "G"}
     {
         "name": "Genome Toggle",
         "imageName": _185,
+        "cost": "4GG",
         "color": "G",
         "type": "Sorcery",
         "id": 185,
@@ -2135,6 +2321,7 @@ colorIdentity: "G"}
     {
         "name": "Gestation Cycle",
         "imageName": _186,
+        "cost": "G",
         "color": "G",
         "type": "Sorcery",
         "id": 186,
@@ -2145,6 +2332,7 @@ colorIdentity: "G"}
     {
         "name": "Growth Genetics",
         "imageName": _187,
+        "cost": "5GG",
         "color": "G",
         "type": "Enchantment — Aura ",
         "id": 187,
@@ -2155,6 +2343,7 @@ colorIdentity: "G"}
     {
         "name": "Hunted Coadjulate",
         "imageName": _188,
+        "cost": "3G",
         "color": "G",
         "type": "Creature — Mutant ",
         "id": 188,
@@ -2165,6 +2354,7 @@ colorIdentity: "G"}
     {
         "name": "Incubation Hulk",
         "imageName": _189,
+        "cost": "4GG",
         "color": "G",
         "type": "Creature — Xeno Incubator ",
         "id": 189,
@@ -2175,6 +2365,7 @@ colorIdentity: "G"}
     {
         "name": "The Kishar",
         "imageName": _190,
+        "cost": "5GG",
         "color": "G",
         "type": "Legendary Artifact Creature — Battleship ",
         "id": 190,
@@ -2185,6 +2376,7 @@ colorIdentity: "G"}
     {
         "name": "Kushak Brood Warden",
         "imageName": _191,
+        "cost": "3G",
         "color": "G",
         "type": "Creature — Xeno Propagator ",
         "id": 191,
@@ -2195,6 +2387,7 @@ colorIdentity: "G"}
     {
         "name": "Kushak Device",
         "imageName": _192,
+        "cost": "3GG",
         "color": "G",
         "type": "Artifact",
         "id": 192,
@@ -2205,6 +2398,7 @@ colorIdentity: "G"}
     {
         "name": "Kushak Interference",
         "imageName": _193,
+        "cost": "2G",
         "color": "G",
         "type": "Instant",
         "id": 193,
@@ -2215,6 +2409,7 @@ colorIdentity: "G"}
     {
         "name": "Kushak Research Council",
         "imageName": _194,
+        "cost": "2GG",
         "color": "G",
         "type": "Creature — Xeno Researcher Advisor ",
         "id": 194,
@@ -2225,6 +2420,7 @@ colorIdentity: "G"}
     {
         "name": "Kushak Subject Prime",
         "imageName": _195,
+        "cost": "5GG",
         "color": "G",
         "type": "Creature — Xeno Mutant ",
         "id": 195,
@@ -2235,6 +2431,7 @@ colorIdentity: "G"}
     {
         "name": "Lifestrider",
         "imageName": _196,
+        "cost": "1G",
         "color": "G",
         "type": "Creature — Elk Mutant Nomad ",
         "id": 196,
@@ -2245,6 +2442,7 @@ colorIdentity: "G"}
     {
         "name": "Myth of Baljurashi",
         "imageName": _197,
+        "cost": "4G",
         "color": "G",
         "type": "Creature — Plant Mutant Nomad ",
         "id": 197,
@@ -2255,6 +2453,7 @@ colorIdentity: "G"}
     {
         "name": "Radium Tracker",
         "imageName": _198,
+        "cost": "3G",
         "color": "G",
         "type": "Creature — Dog Mutant ",
         "id": 198,
@@ -2265,6 +2464,7 @@ colorIdentity: "G"}
     {
         "name": "Reverse Gravity",
         "imageName": _199,
+        "cost": "4GG",
         "color": "G",
         "type": "Sorcery",
         "id": 199,
@@ -2275,6 +2475,7 @@ colorIdentity: "G"}
     {
         "name": "Rogue Servitor",
         "imageName": _200,
+        "cost": "1G",
         "color": "G",
         "type": "Artifact Creature — Nanobot ",
         "id": 200,
@@ -2285,6 +2486,7 @@ colorIdentity: "G"}
     {
         "name": "S.A.M. Team",
         "imageName": _201,
+        "cost": "2G",
         "color": "G",
         "type": "Artifact Creature — Rebel Mech ",
         "id": 201,
@@ -2295,6 +2497,7 @@ colorIdentity: "G"}
     {
         "name": "Screeching Terror",
         "imageName": _202,
+        "cost": "4GG",
         "color": "G",
         "type": "Creature — Insect Mutant ",
         "id": 202,
@@ -2305,6 +2508,7 @@ colorIdentity: "G"}
     {
         "name": "Sewer Ambush",
         "imageName": _203,
+        "cost": "2G",
         "color": "G",
         "type": "Sorcery",
         "id": 203,
@@ -2315,6 +2519,7 @@ colorIdentity: "G"}
     {
         "name": "Sewer Monster",
         "imageName": _204,
+        "cost": "7GG",
         "color": "G",
         "type": "Creature — Frog Mutant ",
         "id": 204,
@@ -2325,6 +2530,7 @@ colorIdentity: "G"}
     {
         "name": "Spawning Grounds",
         "imageName": _205,
+        "cost": "G",
         "color": "G",
         "type": "Enchantment",
         "id": 205,
@@ -2335,6 +2541,7 @@ colorIdentity: "G"}
     {
         "name": "Supply Scavengers",
         "imageName": _206,
+        "cost": "2G",
         "color": "G",
         "type": "Creature — Rebel Commando ",
         "id": 206,
@@ -2345,6 +2552,7 @@ colorIdentity: "G"}
     {
         "name": "Suppressor of Worlds",
         "imageName": _207,
+        "cost": "4GG",
         "color": "G",
         "type": "Artifact Creature — Mech Mutant ",
         "id": 207,
@@ -2355,6 +2563,7 @@ colorIdentity: "G"}
     {
         "name": "Surge of Fervor",
         "imageName": _208,
+        "cost": "2G",
         "color": "G",
         "type": "Instant",
         "id": 208,
@@ -2365,6 +2574,7 @@ colorIdentity: "G"}
     {
         "name": "Terraforming Works",
         "imageName": _209,
+        "cost": "2G",
         "color": "G",
         "type": "Enchantment",
         "id": 209,
@@ -2375,6 +2585,7 @@ colorIdentity: "G"}
     {
         "name": "Ultramagnetic Interference",
         "imageName": _210,
+        "cost": "2G",
         "color": "G",
         "type": "Instant",
         "id": 210,
@@ -2385,6 +2596,7 @@ colorIdentity: "G"}
     {
         "name": "Uncharted Lands",
         "imageName": _211,
+        "cost": "2G",
         "color": "G",
         "type": "Enchantment — Aura ",
         "id": 211,
@@ -2395,6 +2607,7 @@ colorIdentity: "G"}
     {
         "name": "Unstable Growth",
         "imageName": _212,
+        "cost": "2GG",
         "color": "G",
         "type": "Sorcery",
         "id": 212,
@@ -2405,6 +2618,7 @@ colorIdentity: "G"}
     {
         "name": "High Judge Zephynius",
         "imageName": _213,
+        "cost": "2WU",
         "color": "WU",
         "type": "Legendary Creature — Advisor ",
         "id": 213,
@@ -2415,6 +2629,7 @@ colorIdentity: "WU"}
     {
         "name": "Wings of the Law",
         "imageName": _214,
+        "cost": "WU",
         "color": "WU",
         "type": "Artifact Creature — Police Mech ",
         "id": 214,
@@ -2425,6 +2640,7 @@ colorIdentity: "WU"}
     {
         "name": "Murmur’s Command",
         "imageName": _215,
+        "cost": "XUB",
         "color": "UB",
         "type": "Instant",
         "id": 215,
@@ -2435,6 +2651,7 @@ colorIdentity: "UB"}
     {
         "name": "Seekerpede",
         "imageName": _216,
+        "cost": "2UB",
         "color": "UB",
         "type": "Artifact Creature — Mech Insect ",
         "id": 216,
@@ -2445,6 +2662,7 @@ colorIdentity: "UB"}
     {
         "name": "Shadowlight Infiltrator",
         "imageName": _217,
+        "cost": "1UB",
         "color": "UB",
         "type": "Creature — Corporate Saboteur ",
         "id": 217,
@@ -2455,6 +2673,7 @@ colorIdentity: "UB"}
     {
         "name": "Thousand Spares",
         "imageName": _218,
+        "cost": "BR",
         "color": "BR",
         "type": "Legendary Artifact Creature — Mech ",
         "id": 218,
@@ -2465,6 +2684,7 @@ colorIdentity: "BR"}
     {
         "name": "Warapur Company Guard",
         "imageName": _219,
+        "cost": "1BR",
         "color": "BR",
         "type": "Creature — Dog Mutant Mercenary ",
         "id": 219,
@@ -2475,6 +2695,7 @@ colorIdentity: "BR"}
     {
         "name": "Canyon Skitterer",
         "imageName": _220,
+        "cost": "2RG",
         "color": "RG",
         "type": "Artifact Creature — Mech Insect ",
         "id": 220,
@@ -2485,6 +2706,7 @@ colorIdentity: "RG"}
     {
         "name": "The Honored Wormcaller",
         "imageName": _221,
+        "cost": "3RG",
         "color": "RG",
         "type": "Legendary Creature — Nomad ",
         "id": 221,
@@ -2495,6 +2717,7 @@ colorIdentity: "RG"}
     {
         "name": "Wormcaller’s Command",
         "imageName": _222,
+        "cost": "XRG",
         "color": "RG",
         "type": "Instant",
         "id": 222,
@@ -2505,6 +2728,7 @@ colorIdentity: "RG"}
     {
         "name": "Ingolf, the Catalyst",
         "imageName": _223,
+        "cost": "2GW",
         "color": "GW",
         "type": "Legendary Creature — Rebel Commando ",
         "id": 223,
@@ -2515,6 +2739,7 @@ colorIdentity: "GW"}
     {
         "name": "Ingolf’s Command",
         "imageName": _224,
+        "cost": "XGW",
         "color": "GW",
         "type": "Instant",
         "id": 224,
@@ -2525,6 +2750,7 @@ colorIdentity: "GW"}
     {
         "name": "Support Misdirector",
         "imageName": _225,
+        "cost": "2GW",
         "color": "GW",
         "type": "Creature — Rebel Saboteur ",
         "id": 225,
@@ -2535,6 +2761,7 @@ colorIdentity: "GW"}
     {
         "name": "Publicity Officer",
         "imageName": _226,
+        "cost": "1WB",
         "color": "WB",
         "type": "Artifact Creature — Mech Advisor ",
         "id": 226,
@@ -2545,6 +2772,7 @@ colorIdentity: "WB"}
     {
         "name": "Representative Vuissance",
         "imageName": _227,
+        "cost": "2WB",
         "color": "WB",
         "type": "Legendary Creature — Advisor ",
         "id": 227,
@@ -2555,6 +2783,7 @@ colorIdentity: "WB"}
     {
         "name": "Vuissance’s Command",
         "imageName": _228,
+        "cost": "XWB",
         "color": "WB",
         "type": "Instant",
         "id": 228,
@@ -2565,6 +2794,7 @@ colorIdentity: "WB"}
     {
         "name": "Matter Redistributor",
         "imageName": _229,
+        "cost": "UR",
         "color": "UR",
         "type": "Artifact",
         "id": 229,
@@ -2575,6 +2805,7 @@ colorIdentity: "UR"}
     {
         "name": "Neutron Evader",
         "imageName": _230,
+        "cost": "2UR",
         "color": "UR",
         "type": "Artifact Creature — Fighter ",
         "id": 230,
@@ -2585,6 +2816,7 @@ colorIdentity: "UR"}
     {
         "name": "Redistribution Command",
         "imageName": _231,
+        "cost": "XUR",
         "color": "UR",
         "type": "Instant",
         "id": 231,
@@ -2595,6 +2827,7 @@ colorIdentity: "UR"}
     {
         "name": "Sewer Dredgers",
         "imageName": _232,
+        "cost": "1BG",
         "color": "BG",
         "type": "Creature — Mercenary Commando ",
         "id": 232,
@@ -2605,6 +2838,7 @@ colorIdentity: "BG"}
     {
         "name": "Titan of Shisuku Sewers",
         "imageName": _233,
+        "cost": "4BG",
         "color": "BG",
         "type": "Legendary Creature — Turtle Mutant ",
         "id": 233,
@@ -2615,6 +2849,7 @@ colorIdentity: "BG"}
     {
         "name": "Acquisitor Delwani",
         "imageName": _234,
+        "cost": "1RW",
         "color": "RW",
         "type": "Legendary Creature — Rebel Saboteur ",
         "id": 234,
@@ -2625,6 +2860,7 @@ colorIdentity: "RW"}
     {
         "name": "Rangor Irregulars",
         "imageName": _235,
+        "cost": "1RW",
         "color": "RW",
         "type": "Creature — Rebel Assault ",
         "id": 235,
@@ -2635,6 +2871,7 @@ colorIdentity: "RW"}
     {
         "name": "Maleck, Umida Division Head",
         "imageName": _236,
+        "cost": "GU",
         "color": "GU",
         "type": "Legendary Creature — Corporate Researcher ",
         "id": 236,
@@ -2645,6 +2882,7 @@ colorIdentity: "GU"}
     {
         "name": "Troposphere Drifter",
         "imageName": _237,
+        "cost": "1GU",
         "color": "GU",
         "type": "Creature — Squid Mutant ",
         "id": 237,
@@ -2655,6 +2893,7 @@ colorIdentity: "GU"}
     {
         "name": "Umida Koto",
         "imageName": _238,
+        "cost": "1BGU",
         "color": "BGU",
         "type": "Legendary Planeswalker — Umida ",
         "id": 238,
@@ -2665,6 +2904,7 @@ colorIdentity: "BGU"}
     {
         "name": "The Aion",
         "imageName": _239,
+        "cost": "7",
         "color": "",
         "type": "Legendary Artifact Creature — Battleship ",
         "id": 239,
@@ -2675,6 +2915,7 @@ colorIdentity: ""}
     {
         "name": "Chameleon Suit",
         "imageName": _240,
+        "cost": "1",
         "color": "",
         "type": "Artifact — Equipment ",
         "id": 240,
@@ -2685,6 +2926,7 @@ colorIdentity: ""}
     {
         "name": "Faraday Transmitter",
         "imageName": _241,
+        "cost": "3",
         "color": "",
         "type": "Artifact",
         "id": 241,
@@ -2695,6 +2937,7 @@ colorIdentity: ""}
     {
         "name": "Formling",
         "imageName": _242,
+        "cost": "5",
         "color": "",
         "type": "Artifact Creature — Mech ",
         "id": 242,
@@ -2705,6 +2948,7 @@ colorIdentity: ""}
     {
         "name": "Foundry Analyst",
         "imageName": _243,
+        "cost": "3",
         "color": "",
         "type": "Artifact Creature — Mech ",
         "id": 243,
@@ -2715,6 +2959,7 @@ colorIdentity: ""}
     {
         "name": "Gravitic Collector",
         "imageName": _244,
+        "cost": "4",
         "color": "",
         "type": "Artifact Creature — Station ",
         "id": 244,
@@ -2725,6 +2970,7 @@ colorIdentity: "UR"}
     {
         "name": "Hexblade Ravager",
         "imageName": _245,
+        "cost": "7",
         "color": "",
         "type": "Artifact Creature — Mech ",
         "id": 245,
@@ -2735,6 +2981,7 @@ colorIdentity: ""}
     {
         "name": "Hong Wai Refinery",
         "imageName": _246,
+        "cost": "3",
         "color": "",
         "type": "Artifact",
         "id": 246,
@@ -2745,6 +2992,7 @@ colorIdentity: ""}
     {
         "name": "Hoverbike",
         "imageName": _247,
+        "cost": "3",
         "color": "",
         "type": "Artifact — Equipment ",
         "id": 247,
@@ -2755,6 +3003,7 @@ colorIdentity: ""}
     {
         "name": "Jetpack",
         "imageName": _248,
+        "cost": "2",
         "color": "",
         "type": "Artifact — Equipment ",
         "id": 248,
@@ -2765,6 +3014,7 @@ colorIdentity: ""}
     {
         "name": "Mox Voidstone",
         "imageName": _249,
+        "cost": "",
         "color": "",
         "type": "Legendary Artifact",
         "id": 249,
@@ -2775,6 +3025,7 @@ colorIdentity: ""}
     {
         "name": "Museum of Antiquities",
         "imageName": _250,
+        "cost": "3",
         "color": "",
         "type": "Artifact",
         "id": 250,
@@ -2785,6 +3036,7 @@ colorIdentity: ""}
     {
         "name": "Mutagenic Serum",
         "imageName": _251,
+        "cost": "3",
         "color": "",
         "type": "Artifact",
         "id": 251,
@@ -2795,6 +3047,7 @@ colorIdentity: ""}
     {
         "name": "Prophetic Lens",
         "imageName": _252,
+        "cost": "2",
         "color": "",
         "type": "Artifact",
         "id": 252,
@@ -2806,6 +3059,7 @@ addsMana: "WUBRG"}
     {
         "name": "Scrapyard Construct",
         "imageName": _253,
+        "cost": "4",
         "color": "",
         "type": "Artifact Creature — Mech Nomad ",
         "id": 253,
@@ -2816,6 +3070,7 @@ colorIdentity: ""}
     {
         "name": "Slipstream Snapper",
         "imageName": _254,
+        "cost": "2",
         "color": "",
         "type": "Artifact Creature — Mech ",
         "id": 254,
@@ -2826,6 +3081,7 @@ colorIdentity: ""}
     {
         "name": "Subspace Capacitor",
         "imageName": _255,
+        "cost": "2",
         "color": "",
         "type": "Artifact",
         "id": 255,
@@ -2836,6 +3092,7 @@ colorIdentity: ""}
     {
         "name": "Surveillance Probes",
         "imageName": _256,
+        "cost": "2",
         "color": "",
         "type": "Artifact",
         "id": 256,
@@ -2846,6 +3103,7 @@ colorIdentity: ""}
     {
         "name": "Swallowers of Civilization",
         "imageName": _257,
+        "cost": "2",
         "color": "",
         "type": "Artifact Creature — Mech Mutant ",
         "id": 257,
@@ -2856,6 +3114,7 @@ colorIdentity: ""}
     {
         "name": "Trojan Horse",
         "imageName": _258,
+        "cost": "4",
         "color": "",
         "type": "Artifact",
         "id": 258,
@@ -2866,6 +3125,7 @@ colorIdentity: ""}
     {
         "name": "Adamantium Mine",
         "imageName": _259,
+        "cost": "",
         "color": "",
         "type": "Land",
         "id": 259,
@@ -2877,6 +3137,7 @@ addsMana: "RG"}
     {
         "name": "Amanthoid Mine",
         "imageName": _260,
+        "cost": "",
         "color": "",
         "type": "Land",
         "id": 260,
@@ -2888,6 +3149,7 @@ addsMana: "GW"}
     {
         "name": "Antimatter Mine",
         "imageName": _261,
+        "cost": "",
         "color": "",
         "type": "Land",
         "id": 261,
@@ -2899,6 +3161,7 @@ addsMana: "UR"}
     {
         "name": "Distant Colony",
         "imageName": _262,
+        "cost": "",
         "color": "",
         "type": "Land",
         "id": 262,
@@ -2910,6 +3173,7 @@ addsMana: "WUBRG"}
     {
         "name": "Hexaferrum Mine",
         "imageName": _263,
+        "cost": "",
         "color": "",
         "type": "Land",
         "id": 263,
@@ -2921,6 +3185,7 @@ addsMana: "BR"}
     {
         "name": "Hong Wai Factory",
         "imageName": _264,
+        "cost": "",
         "color": "",
         "type": "Land",
         "id": 264,
@@ -2931,6 +3196,7 @@ colorIdentity: ""}
     {
         "name": "Hydromiel Mine",
         "imageName": _265,
+        "cost": "",
         "color": "",
         "type": "Land",
         "id": 265,
@@ -2942,6 +3208,7 @@ addsMana: "WU"}
     {
         "name": "Hyperium Mine",
         "imageName": _266,
+        "cost": "",
         "color": "",
         "type": "Land",
         "id": 266,
@@ -2953,6 +3220,7 @@ addsMana: "UB"}
     {
         "name": "The Mercurite Lens",
         "imageName": _267,
+        "cost": "",
         "color": "",
         "type": "Legendary Land",
         "id": 267,
@@ -2963,6 +3231,7 @@ colorIdentity: "WUBRG"}
     {
         "name": "Mercurite Mine",
         "imageName": _268,
+        "cost": "",
         "color": "",
         "type": "Land",
         "id": 268,
@@ -2974,6 +3243,7 @@ addsMana: "BG"}
     {
         "name": "Orichalcix Mine",
         "imageName": _269,
+        "cost": "",
         "color": "",
         "type": "Land",
         "id": 269,
@@ -2985,6 +3255,7 @@ addsMana: "RW"}
     {
         "name": "Quadrinix Mine",
         "imageName": _270,
+        "cost": "",
         "color": "",
         "type": "Land",
         "id": 270,
@@ -2996,6 +3267,7 @@ addsMana: "GU"}
     {
         "name": "Siderite Mine",
         "imageName": _271,
+        "cost": "",
         "color": "",
         "type": "Land",
         "id": 271,
@@ -3007,6 +3279,7 @@ addsMana: "WB"}
     {
         "name": "Spire of Industry",
         "imageName": _272,
+        "cost": "",
         "color": "",
         "type": "Land",
         "id": 272,
