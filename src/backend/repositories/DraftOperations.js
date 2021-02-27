@@ -67,12 +67,14 @@ export class DraftOperations {
             await this.moveBooster(draft, players, booster);
         } else {
             await this.deleteBooster(booster);
-            if (draft.packNumber < 3) {
-                const existingBoosters = await this.getAllBoostersForDraft(draftId);
-                if (existingBoosters.length === 0) {
+            const existingBoosters = await this.getAllBoostersForDraft(draftId);
+            if (existingBoosters.length === 0) {
+                if (draft.packNumber < 3) {
                     const newBoosters = await this.createAndGetBoosters(players.map((player) => player.id));
                     await this.createCards(newBoosters.map((booster) => booster.id));
                     await this.setDraftPackNumber(draft);
+                } else {
+                    await this.setDraftToComplete(draftId);
                 }
             }
         }
@@ -162,6 +164,15 @@ export class DraftOperations {
         await this.client.query(
             `UPDATE drafts 
             SET status = ${DRAFT_STATUSES.IN_PROGRESS}, pack_number = 1
+            WHERE id = $1`,
+            [draftId]
+        );
+    }
+
+    async setDraftToComplete(draftId) {
+        await this.client.query(
+            `UPDATE drafts 
+            SET status = ${DRAFT_STATUSES.COMPLETE}, pack_number = NULL
             WHERE id = $1`,
             [draftId]
         );
