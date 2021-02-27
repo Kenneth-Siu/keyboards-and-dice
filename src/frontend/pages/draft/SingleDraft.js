@@ -24,7 +24,7 @@ export default function SingleDraft({ loggedInUser }) {
     });
     const [picksLoadedBefore, setPicksLoadedBefore] = useState(false);
     const [draftBusy, setDraftBusy] = useState(true);
-    const [picksBusy, setPicksBusy] = useState(true);
+    const [picksBusy, setPicksBusy] = useState(false);
     const [selectedCardIndex, setSelectedCardIndex] = useState(null);
     useEffect(getDraft, []);
 
@@ -156,7 +156,8 @@ export default function SingleDraft({ loggedInUser }) {
                                 <div
                                     key={pickIndex}
                                     className="card"
-                                    style={{ top: `${pickIndex * 1.85}vw`, height: `1.85vw` }}
+                                    style={{ top: `${pickIndex * 1.85}vw`, height: `${pickIndex === pile.length - 1 ? 16.664 : 1.85}vw` }}
+                                    onClick={() => moveToCreatureSideboard(pileIndex, pickIndex)}
                                 >
                                     <img src={pick.imageName} loading="lazy" />
                                 </div>
@@ -175,7 +176,8 @@ export default function SingleDraft({ loggedInUser }) {
                                 <div
                                     key={pickIndex}
                                     className="card"
-                                    style={{ top: `${pickIndex * 1.85}vw`, height: `1.85vw` }}
+                                    style={{ top: `${pickIndex * 1.85}vw`, height: `${pickIndex === pile.length - 1 ? 16.664 : 1.85}vw` }}
+                                    onClick={() => moveToNonCreatureSideboard(pileIndex, pickIndex)}
                                 >
                                     <img src={pick.imageName} loading="lazy" />
                                 </div>
@@ -195,7 +197,8 @@ export default function SingleDraft({ loggedInUser }) {
                                 <div
                                     key={pickIndex}
                                     className="card"
-                                    style={{ top: `${pickIndex * 1.85}vw`, height: `1.85vw` }}
+                                    style={{ top: `${pickIndex * 1.85}vw`, height: `${pickIndex === pile.length - 1 ? 16.664 : 1.85}vw` }}
+                                    onClick={() => moveToCreatureDeck(pileIndex, pickIndex)}
                                 >
                                     <img src={pick.imageName} loading="lazy" />
                                 </div>
@@ -214,7 +217,8 @@ export default function SingleDraft({ loggedInUser }) {
                                 <div
                                     key={pickIndex}
                                     className="card"
-                                    style={{ top: `${pickIndex * 1.85}vw`, height: `1.85vw` }}
+                                    style={{ top: `${pickIndex * 1.85}vw`, height: `${pickIndex === pile.length - 1 ? 16.664 : 1.85}vw` }}
+                                    onClick={() => moveToNonCreatureDeck(pileIndex, pickIndex)}
                                 >
                                     <img src={pick.imageName} loading="lazy" />
                                 </div>
@@ -310,8 +314,8 @@ export default function SingleDraft({ loggedInUser }) {
                 } else {
                     piles.deckRow1[column].push(submittedCard);
                 }
-                setPiles(piles);
-                updateCookie();
+                setPiles({...piles});
+                updateCookie(piles);
                 getDraft();
             },
             () => {
@@ -320,12 +324,12 @@ export default function SingleDraft({ loggedInUser }) {
         );
     }
 
-    function updateCookie() {
+    function updateCookie(pileToUse) {
         const cookiePiles = {
-            deckRow0: piles.deckRow0.map((column) => column.map((card) => card.id)),
-            deckRow1: piles.deckRow1.map((column) => column.map((card) => card.id)),
-            sideboardRow0: piles.sideboardRow0.map((column) => column.map((card) => card.id)),
-            sideboardRow1: piles.sideboardRow1.map((column) => column.map((card) => card.id)),
+            deckRow0: pileToUse.deckRow0.map((column) => column.map((card) => card.id)),
+            deckRow1: pileToUse.deckRow1.map((column) => column.map((card) => card.id)),
+            sideboardRow0: pileToUse.sideboardRow0.map((column) => column.map((card) => card.id)),
+            sideboardRow1: pileToUse.sideboardRow1.map((column) => column.map((card) => card.id)),
         };
         document.cookie = `draft-${draftId}=${JSON.stringify(cookiePiles)}`;
     }
@@ -340,7 +344,6 @@ export default function SingleDraft({ loggedInUser }) {
                 sideboardRow1: [[], [], [], [], [], [], [], []],
             };
             cards.forEach((card) => {
-                console.log(card);
                 const column = card.manaValue === 0 ? 7 : Math.min(6, card.manaValue - 1);
                 if (card.type.includes("Creature")) {
                     tempPiles.deckRow0[column].push(card);
@@ -385,5 +388,33 @@ export default function SingleDraft({ loggedInUser }) {
             }
         });
         setPiles(cookiePiles);
+    }
+
+    function moveToCreatureSideboard(column, row) {
+        piles.sideboardRow0[column].push(piles.deckRow0[column][row]);
+        piles.deckRow0[column].splice(row, 1);
+        setPiles({...piles});
+        updateCookie(piles);
+    }
+
+    function moveToNonCreatureSideboard(column, row) {
+        piles.sideboardRow1[column].push(piles.deckRow1[column][row]);
+        piles.deckRow1[column].splice(row, 1);
+        setPiles({...piles});
+        updateCookie(piles);
+    }
+
+    function moveToCreatureDeck(column, row) {
+        piles.deckRow0[column].push(piles.sideboardRow0[column][row]);
+        piles.sideboardRow0[column].splice(row, 1);
+        setPiles({...piles});
+        updateCookie(piles);
+    }
+
+    function moveToNonCreatureDeck(column, row) {
+        piles.deckRow1[column].push(piles.sideboardRow1[column][row]);
+        piles.sideboardRow1[column].splice(row, 1);
+        setPiles({...piles});
+        updateCookie(piles);
     }
 }
