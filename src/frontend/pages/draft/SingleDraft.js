@@ -26,6 +26,7 @@ export default function SingleDraft({ loggedInUser }) {
     const [draftBusy, setDraftBusy] = useState(true);
     const [picksBusy, setPicksBusy] = useState(false);
     const [selectedCardIndex, setSelectedCardIndex] = useState(null);
+    const [deckCopied, setDeckCopied] = useState(false);
     useEffect(getDraft, []);
 
     function isBusy() {
@@ -145,6 +146,11 @@ export default function SingleDraft({ loggedInUser }) {
     function DeckView() {
         return (
             <div className="deck-view">
+                {draft.status === DRAFT_STATUSES.COMPLETE && (
+                    <button className={`copy-deck-button${deckCopied ? " deck-copied" : ""}`} onClick={copyDeck}>
+                        {deckCopied ? "Deck copied!" : "Copy deck to clipboard"}
+                    </button>
+                )}
                 <h1>
                     Deck{" "}
                     <small>({flattenDeep(piles.deckRow0).length + flattenDeep(piles.deckRow1).length} cards)</small>
@@ -253,6 +259,23 @@ export default function SingleDraft({ loggedInUser }) {
 
     function Chevron() {
         return draft.packNumber === 2 ? <MdChevronRight /> : <MdChevronLeft />;
+    }
+
+    function copyDeck() {
+        const mainBoard = [...flattenDeep(piles.deckRow0), ...flattenDeep(piles.deckRow1)].map(
+            (card) => `1 ${card.name}`
+        );
+        const sideBoard = [...flattenDeep(piles.sideboardRow0), ...flattenDeep(piles.sideboardRow1)].map(
+            (card) => `1 ${card.name}`
+        );
+        sideBoard.push("10 Plains", "10 Island", "10 Swamp", "10 Mountain", "10 Forest");
+
+        copy(mainBoard.join("\n") + "\n\n" + sideBoard.join("\n"));
+
+        setDeckCopied(true);
+        setTimeout(() => {
+            setDeckCopied(false);
+        }, 5000);
     }
 
     function getDraft() {

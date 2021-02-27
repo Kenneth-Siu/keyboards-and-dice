@@ -216,6 +216,27 @@
     }
 
     .deck-view {
+        position: relative;
+
+        .copy-deck-button {
+            position: absolute;
+            right: 1vw;
+            top: 0;
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 0.3rem 0.6rem;
+            color: $color-1;
+            border: 2px solid $color-1;
+            background: none;
+            border-radius: 2rem;
+            line-height: 1;
+            margin: 0 0.4rem;
+            cursor: pointer;
+    
+            &.deck-copied {
+                opacity: 0.2;
+            }
+        }
         h1 {
             text-align: left;
             margin-left: 1vw;
