@@ -1,0 +1,93 @@
+﻿mse version: 2.0.0
+short name: Cockatrice
+full name: Cockatrice Exporter
+position hint: 0
+version: 0.1.0
+
+depends on:
+	package: magic.mse-game
+	version: 2015-04-08
+
+game: magic
+file type: *.xml
+
+script:
+	imageNameFilter := replace@(match:"’|,|&", replace:"")
+	
+	colorFilter := replace@(match:"[0-9|X]", replace:"")+
+		replace@(match:"(.)(\\1)+", replace: "\\1")
+	
+	rarityFilter := {
+		shortRarity := substring(input, end:1)
+		to_upper(shortRarity)
+	}
+	
+	write_non_rules_text := {
+		color := colorFilter(card.casting_cost)
+		type := card.type
+		id := cardNumber
+		rarity := rarityFilter(card.rarity)
+		notes := card.notes
+		
+		splitNotes := split_text(card.notes, match: ",")
+		
+		colorIdentityNotes := split_text(filter_list(splitNotes, filter: { contains(input, match:"colorIdentity:") })[0], match: "\"")
+		colorIdentity := colorIdentityNotes[length(colorIdentityNotes) - 2]
+		
+		relatedNotes := filter_list(splitNotes, filter: { contains(input, match:"cockatrice_related:") })
+		relatedNote := if length(relatedNotes) > 0 then (split_text(relatedNotes[0], match:"\"")) else []
+		related := if length(relatedNote) > 0 then (relatedNote[length(relatedNote) - 2]) else ""
+		
+		attach := length(filter_list(splitNotes, filter: { contains(input, match:"cockatrice_related_attach:") })) > 0
+		
+		countNotes := filter_list(splitNotes, filter: { contains(input, match:"cockatrice_related_count:") })
+		countNote := if length(countNotes) > 0 then (split_text(countNotes[0], match:"\"")) else []
+		count := if length(countNote) > 0 then trim(countNote[length(countNote) - 2]) else ""
+		
+		"        \<name>{imageNameFilter(card.name)}\</name>\n"
+		+"        \<text>{card.rule_text}\</text>\n"
+		+"        \<prop>\n"
+		+"            \<layout>normal\</layout>\n"
+		+"            \<side>front\</side>\n"
+		+"            \<type>{card.type}\</type>\n"
+		+"            \<maintype>{card.super_type}\</maintype>\n"
+		+"            \<manacost>{card.casting_cost}\</manacost>\n"
+		+"            \<cmc>{card.cmc}\</cmc>\n"
+		+(if color != "" then "            \<colors>{color}\</colors>\n" else "")
+		+(if colorIdentity != "" then "            \<coloridentity>{colorIdentity}\</coloridentity>\n" else "")
+		+(if card.pt != "" then "            \<pt>{card.pt}\</pt>\n" else "")
+		+(if card.loyalty != "" then "            \<loyalty>{card.loyalty}\</loyalty>\n" else "")
+		+"        \</prop>\n"
+		+"        \<set rarity=\"{card.rarity}\">T2170\</set>\n"
+		+(if related != "" then "        \<related{if attach then " attach=\"attach\"" else ""}{if count != "" then " count=\"{count}\"" else ""}>{related}\</related>\n" else "")
+		+(if card.shape != "token" then "" else "        \<token>1\</token>\n")
+		+"        \<tablerow>{if contains(card.super_type, match:"Creature") then 2 else if contains(card.super_type, match:"Land") then 0 else if contains(card.super_type, match:"Instant") or contains(card.super_type, match:"Sorcery") then 3 else 1}\</tablerow>\n"
+		+(if contains(card.notes, match:"cockatrice_cipt") then "        \<cipt>1\</cipt>\n" else "")
+	}
+	
+	write_card := {
+		cardNonRulesText := write_non_rules_text()
+		"    \<card>\n" 
+		+cardNonRulesText 
+		+"    \</card>\n"
+	}
+	
+	write_cards := {
+		cardList := sort_list(cards, order_by: {input.card_number})
+		totalCards := length(cardList)
+		to_text(for each cardNumber:card in cardList do write_card())
+	}
+	
+	to_string("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+		+"<cockatrice_carddatabase version=\"4\">\n"
+		+"    <set>\n"
+		+"        <name>T2170</name>\n"
+		+"        <longname>Terra 2170</longname>\n"
+		+"        <settype>Custom</settype>\n"
+		+"        <releasedate>2021-02-27</releasedate>\n"
+		+"    </set>\n"
+		+"    <cards>\n"
+		+write_cards()
+		+"    </cards>\n"
+		+"</cockatrice_carddatabase>\n"
+		)
