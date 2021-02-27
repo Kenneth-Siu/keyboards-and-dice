@@ -9,16 +9,28 @@ import { MdChevronLeft, MdChevronRight, MdContentCopy, MdRefresh } from "react-i
 import copy from "copy-to-clipboard";
 import { asyncTry } from "../../helpers/asyncTry";
 import PlayerPill from "../../components/playerPill/PlayerPill";
+import { flattenDeep } from "lodash";
 
 export default function SingleDraft({ loggedInUser }) {
     const { draftId } = useParams();
 
     const [draft, setDraft] = useState(null);
     const [booster, setBooster] = useState(null);
-    const [picks, setPicks] = useState([]);
-    const [busy, setBusy] = useState(true);
+    const [piles, setPiles] = useState({
+        deckRow0: [[], [], [], [], [], [], [], []],
+        deckRow1: [[], [], [], [], [], [], [], []],
+        sideboardRow0: [[], [], [], [], [], [], [], []],
+        sideboardRow1: [[], [], [], [], [], [], [], []],
+    });
+    const [picksLoadedBefore, setPicksLoadedBefore] = useState(false);
+    const [draftBusy, setDraftBusy] = useState(true);
+    const [picksBusy, setPicksBusy] = useState(true);
     const [selectedCardIndex, setSelectedCardIndex] = useState(null);
     useEffect(getDraft, []);
+
+    function isBusy() {
+        return draftBusy || picksBusy;
+    }
 
     return (
         <>
@@ -39,11 +51,14 @@ export default function SingleDraft({ loggedInUser }) {
     );
 
     function MainView() {
-        if (busy) {
+        if (isBusy()) {
             return <LoadingSpinner />;
         }
         if (draft.status === DRAFT_STATUSES.READY_TO_START) {
             return <ReadyToStartView />;
+        }
+        if (draft.status === DRAFT_STATUSES.COMPLETE) {
+            return <DeckView />;
         }
         return (
             <>
@@ -119,7 +134,7 @@ export default function SingleDraft({ loggedInUser }) {
         return (
             <div className="refresh-button-view">
                 <h2>Waiting for others to make their picks...</h2>
-                <button className="refresh-button" aria-label="Refresh" onClick={getDraft} disabled={busy}>
+                <button className="refresh-button" aria-label="Refresh" onClick={getDraft} disabled={isBusy()}>
                     <MdRefresh />
                 </button>
             </div>
@@ -127,18 +142,80 @@ export default function SingleDraft({ loggedInUser }) {
     }
 
     function DeckView() {
-        const piles = [[], [], [], [], [], [], [], []];
-        picks.forEach((pick) => {
-            piles[Math.min(7, pick.manaValue)].push(pick);
-        });
         return (
             <div className="deck-view">
                 <h1>Deck</h1>
-                <div className="deck">
-                    {piles.map((pile, pileIndex) => (
-                        <div key={pileIndex} className="pile">
+                <div className="row">
+                    {piles.deckRow0.map((pile, pileIndex) => (
+                        <div
+                            key={pileIndex}
+                            className="column"
+                            style={{ height: `${Math.max(0, pile.length - 1) * 1.85 + 16.664}vw` }}
+                        >
                             {pile.map((pick, pickIndex) => (
-                                <div key={pickIndex} style={{ marginTop: `${pickIndex * 15}%` }}>
+                                <div
+                                    key={pickIndex}
+                                    className="card"
+                                    style={{ top: `${pickIndex * 1.85}vw`, height: `1.85vw` }}
+                                >
+                                    <img src={pick.imageName} loading="lazy" />
+                                </div>
+                            ))}
+                        </div>
+                    ))}
+                </div>
+                <div className="row">
+                    {piles.deckRow1.map((pile, pileIndex) => (
+                        <div
+                            key={pileIndex}
+                            className="column"
+                            style={{ height: `${Math.max(0, pile.length - 1) * 1.85 + 16.664}vw` }}
+                        >
+                            {pile.map((pick, pickIndex) => (
+                                <div
+                                    key={pickIndex}
+                                    className="card"
+                                    style={{ top: `${pickIndex * 1.85}vw`, height: `1.85vw` }}
+                                >
+                                    <img src={pick.imageName} loading="lazy" />
+                                </div>
+                            ))}
+                        </div>
+                    ))}
+                </div>
+                <h1>Sideboard</h1>
+                <div className="row">
+                    {piles.sideboardRow0.map((pile, pileIndex) => (
+                        <div
+                            key={pileIndex}
+                            className="column"
+                            style={{ height: `${Math.max(0, pile.length - 1) * 1.85 + 16.664}vw` }}
+                        >
+                            {pile.map((pick, pickIndex) => (
+                                <div
+                                    key={pickIndex}
+                                    className="card"
+                                    style={{ top: `${pickIndex * 1.85}vw`, height: `1.85vw` }}
+                                >
+                                    <img src={pick.imageName} loading="lazy" />
+                                </div>
+                            ))}
+                        </div>
+                    ))}
+                </div>
+                <div className="row">
+                    {piles.sideboardRow1.map((pile, pileIndex) => (
+                        <div
+                            key={pileIndex}
+                            className="column"
+                            style={{ height: `${Math.max(0, pile.length - 1) * 1.85 + 16.664}vw` }}
+                        >
+                            {pile.map((pick, pickIndex) => (
+                                <div
+                                    key={pickIndex}
+                                    className="card"
+                                    style={{ top: `${pickIndex * 1.85}vw`, height: `1.85vw` }}
+                                >
                                     <img src={pick.imageName} loading="lazy" />
                                 </div>
                             ))}
@@ -154,7 +231,7 @@ export default function SingleDraft({ loggedInUser }) {
     }
 
     function getDraft() {
-        setBusy(true);
+        setDraftBusy(true);
         asyncTry(
             async () => {
                 const responseDraft = await DraftsApi.getDraft(draftId);
@@ -170,50 +247,143 @@ export default function SingleDraft({ loggedInUser }) {
                         if (responseBooster.cards) {
                             responseBooster.cards = responseBooster.cards.map((cardId) => getCard(cardId));
                         }
-                        const responsePicks = await DraftsApi.getPicks(draftId);
                         setDraft(responseDraft);
                         setBooster(responseBooster);
-                        setPicks(responsePicks.map((cardId) => getCard(cardId)));
+                        if (!picksLoadedBefore) {
+                            getPicks();
+                        }
                         break;
 
                     case DRAFT_STATUSES.COMPLETE:
+                        setDraft(responseDraft);
                         break;
 
                     default:
                         break;
                 }
-                setBusy(false);
+                setDraftBusy(false);
             },
             () => {
-                setBusy(false);
+                setDraftBusy(false);
+            }
+        );
+    }
+
+    function getPicks() {
+        setPicksBusy(true);
+        asyncTry(
+            async () => {
+                const responsePicks = await DraftsApi.getPicks(draftId);
+                updatePicksState(responsePicks.map((cardId) => getCard(cardId)));
+                setPicksLoadedBefore(true);
+                setPicksBusy(false);
+            },
+            () => {
+                setPicksBusy(false);
             }
         );
     }
 
     function startDraft() {
-        setBusy(true);
+        setDraftBusy(true);
         asyncTry(
             async () => {
                 await DraftsApi.startDraft(draftId);
                 getDraft();
             },
             () => {
-                setBusy(false);
+                setDraftBusy(false);
             }
         );
     }
 
     function submitPick() {
-        setBusy(true);
+        setDraftBusy(true);
         asyncTry(
             async () => {
-                await DraftsApi.submitPick(draftId, booster.pickNumber, booster.cards[selectedCardIndex].id);
+                const submittedCard = booster.cards[selectedCardIndex];
+                await DraftsApi.submitPick(draftId, booster.pickNumber, submittedCard.id);
                 setSelectedCardIndex(null);
+                const column = submittedCard.manaValue === 0 ? 7 : Math.min(6, submittedCard.manaValue - 1);
+                if (submittedCard.type.includes("Creature")) {
+                    piles.deckRow0[column].push(submittedCard);
+                } else {
+                    piles.deckRow1[column].push(submittedCard);
+                }
+                setPiles(piles);
+                updateCookie();
                 getDraft();
             },
             () => {
-                setBusy(false);
+                setDraftBusy(false);
             }
         );
+    }
+
+    function updateCookie() {
+        const cookiePiles = {
+            deckRow0: piles.deckRow0.map((column) => column.map((card) => card.id)),
+            deckRow1: piles.deckRow1.map((column) => column.map((card) => card.id)),
+            sideboardRow0: piles.sideboardRow0.map((column) => column.map((card) => card.id)),
+            sideboardRow1: piles.sideboardRow1.map((column) => column.map((card) => card.id)),
+        };
+        document.cookie = `draft-${draftId}=${JSON.stringify(cookiePiles)}`;
+    }
+
+    function updatePicksState(cards) {
+        const storedJson = document.cookie.split("; ").find((row) => row.startsWith(`draft-${draftId}=`));
+        if (!storedJson) {
+            const tempPiles = {
+                deckRow0: [[], [], [], [], [], [], [], []],
+                deckRow1: [[], [], [], [], [], [], [], []],
+                sideboardRow0: [[], [], [], [], [], [], [], []],
+                sideboardRow1: [[], [], [], [], [], [], [], []],
+            };
+            cards.forEach((card) => {
+                console.log(card);
+                const column = card.manaValue === 0 ? 7 : Math.min(6, card.manaValue - 1);
+                if (card.type.includes("Creature")) {
+                    tempPiles.deckRow0[column].push(card);
+                } else {
+                    tempPiles.deckRow1[column].push(card);
+                }
+            });
+            setPiles(tempPiles);
+            return;
+        }
+        const jsonPiles = JSON.parse(storedJson.split("=")[1]);
+        const cookiePiles = {
+            deckRow0: jsonPiles.deckRow0.map((column) => column.map((cardId) => getCard(cardId))),
+            deckRow1: jsonPiles.deckRow1.map((column) => column.map((cardId) => getCard(cardId))),
+            sideboardRow0: jsonPiles.sideboardRow0.map((column) => column.map((cardId) => getCard(cardId))),
+            sideboardRow1: jsonPiles.sideboardRow1.map((column) => column.map((cardId) => getCard(cardId))),
+        };
+
+        // Figure out missing cards
+        const cookieCards = [
+            ...flattenDeep(cookiePiles.deckRow0),
+            ...flattenDeep(cookiePiles.deckRow1),
+            ...flattenDeep(cookiePiles.sideboardRow0),
+            ...flattenDeep(cookiePiles.sideboardRow1),
+        ];
+        const missingCards = [];
+        while (cards.length) {
+            const card = cards.shift();
+            const index = cookieCards.findIndex((cookieCard) => cookieCard.id === card.id);
+            if (index !== -1) {
+                cookieCards.splice(index, 1);
+            } else {
+                missingCards.push(card);
+            }
+        }
+        missingCards.forEach((card) => {
+            const column = card.manaValue === 0 ? 7 : Math.min(6, card.manaValue - 1);
+            if (card.type.includes("Creature")) {
+                cookiePiles.deckRow0[column].push(card);
+            } else {
+                cookiePiles.deckRow1[column].push(card);
+            }
+        });
+        setPiles(cookiePiles);
     }
 }

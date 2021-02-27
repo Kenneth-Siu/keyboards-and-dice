@@ -175,6 +175,7 @@
 
         .card {
             width: 100%;
+            border-radius: 4.1% / 2.91%;
             display: block;
         }
     }
@@ -211,16 +212,18 @@
     .deck-view {
         h1 {
             text-align: left;
-            margin-left: 1%;
+            margin-left: 1vw;
         }
-        .deck {
-            position: relative;
+        .row {
             display: inline-flex;
-            flex-wrap: wrap;
             justify-content: flex-start;
             width: 98%;
+            margin-bottom: 0.5%;
+            padding: 0.5% 0.5%;
+            background-color: darken($color-2, 5%);
+            border-radius: 0.7rem;
 
-            .pile {
+            .column {
                 position: relative;
                 width: 12.3%;
                 margin-right: 0.2285%;
@@ -228,22 +231,21 @@
                     margin-right: 0;
                 }
 
-                div {
-                    width: 100%;
-                    padding-top: 15%;
+                div.card {
                     position: absolute;
-                    &:hover {
-                        z-index: 1;
-                    }
-                }
-
-                img {
                     top: 0;
                     left: 0;
                     width: 100%;
-                    display: block;
-                    position: absolute;
-                    pointer-events: none;
+                    &:hover {
+                        z-index: 1;
+                    }
+
+                    img {
+                        display: block;
+                        pointer-events: none;
+                        width: 100%;
+                        border-radius: 4.1% / 2.91%;
+                    }
                 }
             }
         }

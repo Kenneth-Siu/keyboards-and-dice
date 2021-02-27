@@ -35,6 +35,11 @@ export default function Login() {
                     If you want me to delete your data (for whatever reason), just let me know via... whatever channels
                     you have to reach me. I'll have a proper non-personal email address here at some point...
                 </p>
+                <p>
+                    This section of the website also uses cookies to store your login session and your preferences on
+                    card sorting during any individual draft. I do not use the information for anything else. By logging
+                    in, you give your consent for this information to be stored in cookies in this way.
+                </p>
             </main>
         </>
     );
