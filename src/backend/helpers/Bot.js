@@ -31,8 +31,6 @@ export class Bot {
             card.power += this.getBoostFromColorPreference(card);
         });
 
-        console.log(cards);
-
         const pick = maxBy(cards, (card) => card.power);
 
         return boosterCards.find((card) => card.cardId === pick.id);
