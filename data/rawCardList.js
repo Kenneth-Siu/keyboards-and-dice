@@ -280,7 +280,7 @@ const rawCardList = [
         "type": "Legendary Planeswalker — Karn ",
         "id": 0,
         "rarity": "M",
-        "notes": {grade: "A",
+        "notes": {grade: "A-",
 colorIdentity: ""}
     },
     {
@@ -291,7 +291,7 @@ colorIdentity: ""}
         "type": "Legendary Planeswalker — Ajani ",
         "id": 1,
         "rarity": "M",
-        "notes": {grade: "A",
+        "notes": {grade: "A-",
 colorIdentity: "W"}
     },
     {
@@ -643,7 +643,7 @@ colorIdentity: "W"}
         "type": "Creature — Police Commando ",
         "id": 33,
         "rarity": "R",
-        "notes": {grade: "B+",
+        "notes": {grade: "A-",
 colorIdentity: "W"}
     },
     {
@@ -929,7 +929,7 @@ colorIdentity: "U"}
         "type": "Artifact Creature — Hologram Cruiser ",
         "id": 59,
         "rarity": "R",
-        "notes": {grade: "A",
+        "notes": {grade: "A-",
 colorIdentity: "U"}
     },
     {
@@ -1754,7 +1754,7 @@ colorIdentity: "R"}
         "type": "Artifact Creature — Mech ",
         "id": 134,
         "rarity": "R",
-        "notes": {grade: "B",
+        "notes": {grade: "A-",
 colorIdentity: "R"}
     },
     {
@@ -2354,7 +2354,7 @@ colorIdentity: "G"}
     {
         "name": "Incubation Hulk",
         "imageName": _189,
-        "cost": "4GG",
+        "cost": "5GG",
         "color": "G",
         "type": "Creature — Xeno Incubator ",
         "id": 189,
@@ -3086,7 +3086,7 @@ colorIdentity: ""}
         "type": "Artifact",
         "id": 255,
         "rarity": "R",
-        "notes": {grade: "B-",
+        "notes": {grade: "C",
 colorIdentity: ""}
     },
     {
