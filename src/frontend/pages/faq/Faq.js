@@ -1,5 +1,5 @@
 import React from "react";
-import karnTheIntrospective from "../../../../data/cardImages/Karn the Introspective.jpg";
+import karnTheSeeker from "../../../../data/cardImages/Karn the Seeker.jpg";
 import dropship from "../../../../data/cardImages/Dropship.jpg";
 import supplyLineJet from "../../../../data/cardImages/Supply-Line Jet.jpg";
 import undercroftEntangler from "../../../../data/cardImages/Undercroft Entangler.jpg";
@@ -31,7 +31,7 @@ import moxVoidstone from "../../../../data/cardImages/Mox Voidstone.jpg";
 import mutagenicSerum from "../../../../data/cardImages/Mutagenic Serum.jpg";
 import trojanHorse from "../../../../data/cardImages/Trojan Horse.jpg";
 import hongWaiFactory from "../../../../data/cardImages/Hong Wai Factory.jpg";
-import theMercuriteLens from "../../../../data/cardImages/The Mercurite Lens.jpg";
+import theMartianLens from "../../../../data/cardImages/The Martian Lens.jpg";
 import "./Faq.scss";
 
 export default function Faq() {
@@ -219,9 +219,9 @@ export default function Faq() {
                 </section>
                 <h2>Individual Card FAQs</h2>
                 <section>
-                    <img src={karnTheIntrospective} />
+                    <img src={karnTheSeeker} />
                     <div>
-                        <h3>Karn, the Introspective</h3>
+                        <h3>Karn, the Seeker</h3>
                         <ul>
                             <li>Scan counters have no effect by themselves.</li>
                         </ul>
@@ -601,17 +601,17 @@ export default function Faq() {
                     </div>
                 </section>
                 <section>
-                    <img src={theMercuriteLens} />
+                    <img src={theMartianLens} />
                     <div>
-                        <h3>The Mercurite Lens</h3>
+                        <h3>The Martian Lens</h3>
                         <ul>
                             <li>
                                 Remember that this is a search effect and not a "look at" or "reveal" effect. You cannot
                                 teleport cards using its ability.
                             </li>
                             <li>
-                                Any replacement effects are considered by The Mercurite Mirror when determining the
-                                types of mana a land can produce.
+                                Any replacement effects are considered by The Martian Lens when determining the types of
+                                mana a land can produce.
                             </li>
                             <li>
                                 Any change to a land’s type or splicing of text into a land can affect the types of mana
@@ -619,20 +619,20 @@ export default function Faq() {
                             </li>
                             <li>The types of mana are white, blue, black, red, green, and colorless.</li>
                             <li>
-                                The Mercurite Mirror checks the effects of all mana-producing abilities of lands you
+                                The Martian Lens checks the effects of all mana-producing abilities of lands you
                                 control, but it doesn’t check their costs or whether or not you are able to activate the
                                 ability.
                             </li>
                             <li>
-                                The Mercurite Mirror doesn’t care about any restrictions or riders your lands put on the
+                                The Martian Lens doesn’t care about any restrictions or riders your lands put on the
                                 mana they produce, such as Pillar of the Paruns and Hall of the Bandit Lord do. It just
                                 cares about types of mana.
                             </li>
                             <li>
-                                If you are somehow able to have multiple copies of The Mercurite Mirror, they won’t help
-                                each other produce mana. If you control The Mercurite Mirror, and all other lands you
-                                control either lack mana abilities or are other copies of The Mercurite Mirror, you may
-                                still activate The Mercurite Mirror's first ability — it just won’t produce any mana.
+                                If you are somehow able to have multiple copies of The Martian Lens, they won’t help
+                                each other produce mana. If you control The Martian Lens, and all other lands you
+                                control either lack mana abilities or are other copies of The Martian Lens, you may
+                                still activate The Martian Lens's first ability — it just won’t produce any mana.
                             </li>
                         </ul>
                     </div>

@@ -2,7 +2,7 @@
 short name: JS
 full name: JS Exporter
 position hint: 0
-version: 0.1.0
+version: 0.2.0
 
 depends on:
 	package: magic.mse-game
@@ -12,10 +12,10 @@ game: magic
 file type: *.js
 
 script:
-	# Formats rules text w/ only italic tags.
+	
 	imageNameFilter := replace@(match:"’|,|&", replace:"")
 	
-	colorIdentityFilter := replace@(match:"[0-9|X]", replace:"")+
+	colorFilter := replace@(match:"[0-9|X]", replace:"")+
 		replace@(match:"(.)(\\1)+", replace: "\\1")
 	
 	rarityFilter := {
@@ -24,36 +24,34 @@ script:
 	}
 	
 	write_non_rules_text := {
-		name := card.name
-		imageName := imageNameFilter(name)
-		color := colorIdentityFilter(card.casting_cost)
-		id := cardNumber
-		rarity := rarityFilter(card.rarity)
-		"        \"name\": \""+name+"\",\n"
-		+"        \"imageName\": _"+cardNumber+",\n"
-		+"        \"color\": \""+color+"\",\n"
-		+"        \"id\": "+id+",\n"
-		+"        \"rarity\": \""+rarity+"\"\n"
+		"        \"name\": \"{card.name}\",\n"
+		+"        \"imageName\": _{cardNumber},\n"
+		+"        \"cost\": \"{card.casting_cost}\",\n"
+		+"        \"color\": \"{colorFilter(card.casting_cost)}\",\n"
+		+"        \"type\": \"{card.type}\",\n"
+		+"        \"id\": {cardNumber},\n"
+		+"        \"rarity\": \"{rarityFilter(card.rarity)}\",\n"
+		+"        \"notes\": \{\n{card.notes}\n        \}\n"
 	}
 	
 	write_card := {
 		cardNonRulesText := write_non_rules_text()
 		comma := if cardNumber+1 != totalCards then ",\n" else ""
-		"    \{\n" + cardNonRulesText + "    \}" + comma
+		"    \{\n{cardNonRulesText}    \}" + comma
 	}
 	
 	write_cards := {
-		cardList := sort_list(cards, order_by: {input.card_number})
+		cardList := filter_list(sort_list(cards, order_by: {input.card_number}), filter: { input.shape != "token" })
 		totalCards := length(cardList)
 		to_text(for each cardNumber:card in cardList do write_card())
 	}
 	
 	write_card_import := {
-		"import _" + cardNumber + " from \"./cardImages/" + imageNameFilter(card.name) + ".jpg\";\n"
+		"import _{cardNumber} from \"./cardImages/{imageNameFilter(card.name)}.jpg\";\n"
 	}
 	
 	write_image_imports := {
-		cardList := sort_list(cards, order_by: {input.card_number})
+		cardList := filter_list(sort_list(cards, order_by: {input.card_number}), filter: { input.shape != "token" })
 		totalCards := length(cardList)
 		to_text(for each cardNumber:card in cardList do write_card_import())
 	}
