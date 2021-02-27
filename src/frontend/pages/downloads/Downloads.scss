@@ -1,3 +1,58 @@
+@import "../../components/responsive.scss";
+@import "../../components/colors.scss";
+@import "../../components/navBar/NavBar.scss";
+
 .downloads-page {
-    
+    @include navBarPageTopPadding;
+    @include container;
+    line-height: 1.2;
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
+    padding-bottom: 0.5rem;
+
+    h1 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.4rem;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    h2 {
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    b {
+        font-weight: bold;
+    }
+
+    p {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .mono-space {
+        width: 100%;
+        font-family: monospace;
+        font-size: 0.95rem;
+        border: solid 1px darken($color-2, 20%);
+        padding: 0 0.2rem;
+        border-radius: 0.2rem;
+    }
+
+    ol {
+        list-style-type: decimal;
+        list-style-position: outside;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        margin-left: 1.4rem;
+    }
+
+    li {
+        margin-top: 0.2rem;
+        margin-bottom: 0.2rem;
+    }
 }
