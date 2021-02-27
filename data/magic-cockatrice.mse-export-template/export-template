@@ -12,7 +12,6 @@ game: magic
 file type: *.xml
 
 script:
-	imageNameFilter := replace@(match:"’|,|&", replace:"")
 	
 	colorFilter := replace@(match:"[0-9|X]", replace:"")+
 		replace@(match:"(.)(\\1)+", replace: "\\1")
@@ -21,6 +20,9 @@ script:
 		shortRarity := substring(input, end:1)
 		to_upper(shortRarity)
 	}
+	
+	imageNameFilter := replace@(match:"’|,|&", replace:"")
+	urlEncode := replace@(match:" ", replace:"%20")
 	
 	write_non_rules_text := {
 		color := colorFilter(card.casting_cost)
@@ -44,7 +46,7 @@ script:
 		countNote := if length(countNotes) > 0 then (split_text(countNotes[0], match:"\"")) else []
 		count := if length(countNote) > 0 then trim(countNote[length(countNote) - 2]) else ""
 		
-		"        \<name>{imageNameFilter(card.name)}\</name>\n"
+		"        \<name>{card.name}\</name>\n"
 		+"        \<text>{card.rule_text}\</text>\n"
 		+"        \<prop>\n"
 		+"            \<layout>normal\</layout>\n"
@@ -58,7 +60,7 @@ script:
 		+(if card.pt != "" then "            \<pt>{card.pt}\</pt>\n" else "")
 		+(if card.loyalty != "" then "            \<loyalty>{card.loyalty}\</loyalty>\n" else "")
 		+"        \</prop>\n"
-		+"        \<set rarity=\"{card.rarity}\">T2170\</set>\n"
+		+"        \<set rarity=\"{card.rarity}\" picurl=\"https://kenneth-siu.github.io/terra-2170-card-images/{urlEncode(imageNameFilter(card.name))}.jpg\">T2170\</set>\n"
 		+(if related != "" then "        \<related{if attach then " attach=\"attach\"" else ""}{if count != "" then " count=\"{count}\"" else ""}>{related}\</related>\n" else "")
 		+(if card.shape != "token" then "" else "        \<token>1\</token>\n")
 		+"        \<tablerow>{if contains(card.super_type, match:"Creature") then 2 else if contains(card.super_type, match:"Land") then 0 else if contains(card.super_type, match:"Instant") or contains(card.super_type, match:"Sorcery") then 3 else 1}\</tablerow>\n"

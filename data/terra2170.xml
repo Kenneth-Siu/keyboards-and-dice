@@ -20,12 +20,12 @@
             <coloridentity>W</coloridentity>
             <pt>1/1</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Military.jpg">T2170</set>
         <token>1</token>
         <tablerow>2</tablerow>
     </card>
     <card>
-        <name>Karn the Seeker</name>
+        <name>Karn, the Seeker</name>
         <text></text>
         <prop>
             <layout>normal</layout>
@@ -36,7 +36,7 @@
             <cmc>3</cmc>
             <loyalty>3</loyalty>
         </prop>
-        <set rarity="mythic rare">T2170</set>
+        <set rarity="mythic rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Karn%20the%20Seeker.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -52,12 +52,12 @@
             <coloridentity>W</coloridentity>
             <pt>2/2</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Police.jpg">T2170</set>
         <token>1</token>
         <tablerow>2</tablerow>
     </card>
     <card>
-        <name>Ajani Sunchaser</name>
+        <name>Ajani, Sunchaser</name>
         <text></text>
         <prop>
             <layout>normal</layout>
@@ -70,7 +70,7 @@
             <coloridentity>W</coloridentity>
             <loyalty>5</loyalty>
         </prop>
-        <set rarity="mythic rare">T2170</set>
+        <set rarity="mythic rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Ajani%20Sunchaser.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -86,7 +86,7 @@
             <coloridentity>B</coloridentity>
             <pt>1/1</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Assassin.jpg">T2170</set>
         <token>1</token>
         <tablerow>2</tablerow>
     </card>
@@ -104,7 +104,7 @@
             <coloridentity>W</coloridentity>
             <pt>2/2</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Biomech%20Team.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -120,7 +120,7 @@
             <coloridentity>G</coloridentity>
             <pt>6/6</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Mutant.jpg">T2170</set>
         <token>1</token>
         <tablerow>2</tablerow>
     </card>
@@ -137,7 +137,7 @@
             <colors>W</colors>
             <coloridentity>W</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Bring%20to%20Justice.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -153,7 +153,7 @@
             <coloridentity>G</coloridentity>
             <pt>2/2</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Xeno%20Propagator.jpg">T2170</set>
         <related count="3">Xeno Scion</related>
         <token>1</token>
         <tablerow>2</tablerow>
@@ -172,7 +172,7 @@
             <coloridentity>W</coloridentity>
             <pt>2/2</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Cache%20Mapper.jpg">T2170</set>
         <related>Equipment</related>
         <tablerow>2</tablerow>
     </card>
@@ -189,7 +189,7 @@
             <coloridentity>G</coloridentity>
             <pt>1/1</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Xeno%20Scion.jpg">T2170</set>
         <token>1</token>
         <tablerow>2</tablerow>
     </card>
@@ -208,7 +208,7 @@ Equip 1</text>
             <colors>W</colors>
             <coloridentity>W</coloridentity>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Comms%20Disruptor.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -224,7 +224,7 @@ Equip 1</text>
             <coloridentity>RG</coloridentity>
             <pt>5/5</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Shaitan.jpg">T2170</set>
         <token>1</token>
         <tablerow>2</tablerow>
     </card>
@@ -242,7 +242,7 @@ Equip 1</text>
             <coloridentity>W</coloridentity>
             <pt>3/3</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Community%20Officer.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -257,7 +257,7 @@ Equip 2</text>
             <manacost></manacost>
             <cmc>0</cmc>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Equipment.jpg">T2170</set>
         <token>1</token>
         <tablerow>1</tablerow>
     </card>
@@ -275,7 +275,7 @@ Equip 2</text>
             <coloridentity>W</coloridentity>
             <pt>3/2</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Control%20Overseer.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -290,7 +290,7 @@ Equip 2</text>
             <cmc>0</cmc>
             <pt>1/1</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Mech.jpg">T2170</set>
         <token>1</token>
         <tablerow>2</tablerow>
     </card>
@@ -307,7 +307,7 @@ Equip 2</text>
             <colors>W</colors>
             <coloridentity>W</coloridentity>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Cryonics%20Facility.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -322,7 +322,7 @@ Equip 2</text>
             <cmc>0</cmc>
             <pt>3/3</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Wildschwein.jpg">T2170</set>
         <token>1</token>
         <tablerow>2</tablerow>
     </card>
@@ -340,11 +340,11 @@ Equip 2</text>
             <colors>W</colors>
             <coloridentity>W</coloridentity>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Cultural%20Renaissance.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
-        <name>Diplomats Prerogative</name>
+        <name>Diplomat’s Prerogative</name>
         <text>Enchant creature
 Enchanted creature has indestructible and can’t attack, block, or be sacrificed.</text>
         <prop>
@@ -357,7 +357,7 @@ Enchanted creature has indestructible and can’t attack, block, or be sacrifice
             <colors>W</colors>
             <coloridentity>W</coloridentity>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Diplomats%20Prerogative.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -376,7 +376,7 @@ Whenever Dropship attacks and isn’t blocked, you may put a creature card exile
             <coloridentity>W</coloridentity>
             <pt>2/3</pt>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Dropship.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -393,7 +393,7 @@ Create two 1/1 white Military creature tokens.</text>
             <colors>W</colors>
             <coloridentity>W</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Emergency%20Landing.jpg">T2170</set>
         <related count="2">Military</related>
         <tablerow>3</tablerow>
     </card>
@@ -410,7 +410,7 @@ Create two 1/1 white Military creature tokens.</text>
             <colors>W</colors>
             <coloridentity>W</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Eviction%20Notice.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -426,7 +426,7 @@ Create two 1/1 white Military creature tokens.</text>
             <colors>W</colors>
             <coloridentity>W</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Glorious%20Resistance.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -444,7 +444,7 @@ When Head Detective enters the battlefield, you may exile another target creatur
             <coloridentity>W</coloridentity>
             <pt>2/2</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Head%20Detective.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -462,7 +462,7 @@ Equip 6</text>
             <colors>W</colors>
             <coloridentity>W</coloridentity>
         </prop>
-        <set rarity="mythic rare">T2170</set>
+        <set rarity="mythic rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Heimdall%20Mk%20III.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -481,7 +481,7 @@ At the beginning of each upkeep, put a charge counter on Helios Comms Satellite.
             <coloridentity>W</coloridentity>
             <pt>2/2</pt>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Helios%20Comms%20Satellite.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -499,7 +499,7 @@ Whenever The Hemera enters the battlefield or attacks, arm each other creature y
             <coloridentity>W</coloridentity>
             <pt>6/6</pt>
         </prop>
-        <set rarity="mythic rare">T2170</set>
+        <set rarity="mythic rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/The%20Hemera.jpg">T2170</set>
         <related count="x">Equipment</related>
         <tablerow>2</tablerow>
     </card>
@@ -516,12 +516,12 @@ Whenever The Hemera enters the battlefield or attacks, arm each other creature y
             <colors>W</colors>
             <coloridentity>W</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Heroic%20Act.jpg">T2170</set>
         <related>Equipment</related>
         <tablerow>3</tablerow>
     </card>
     <card>
-        <name>High Judges Decree</name>
+        <name>High Judge’s Decree</name>
         <text>Exile target attacking creature.
 Teleport 0 (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)</text>
         <prop>
@@ -534,7 +534,7 @@ Teleport 0 (You may cast this card for its teleport cost while you’re looking 
             <colors>W</colors>
             <coloridentity>W</coloridentity>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/High%20Judges%20Decree.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -551,7 +551,7 @@ Teleport W (You may cast this card for its teleport cost while you’re looking 
             <colors>W</colors>
             <coloridentity>W</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Keep%20the%20Peace.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -569,7 +569,7 @@ Teleport 2W (You may cast this card for its teleport cost while you’re looking
             <coloridentity>W</coloridentity>
             <pt>3/3</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Leiden%20Air%20Platform.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -586,7 +586,7 @@ Teleport 2W (You may cast this card for its teleport cost while you’re looking
             <coloridentity>W</coloridentity>
             <pt>1/2</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Mongrel%20Companion.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -604,7 +604,7 @@ When Observation Blimp enters the battlefield, draw a card, then scry 1.</text>
             <coloridentity>W</coloridentity>
             <pt>2/2</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Observation%20Blimp.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -621,7 +621,7 @@ Equip 3</text>
             <colors>W</colors>
             <coloridentity>W</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Personal%20Forcefield.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -639,7 +639,7 @@ Equip 2</text>
             <colors>W</colors>
             <coloridentity>W</coloridentity>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Police%20Badge.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -655,7 +655,7 @@ Equip 2</text>
             <colors>W</colors>
             <coloridentity>W</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Raise%20the%20Siren.jpg">T2170</set>
         <related count="2">Military</related>
         <tablerow>3</tablerow>
     </card>
@@ -673,7 +673,7 @@ Equip 2</text>
             <coloridentity>W</coloridentity>
             <pt>2/2</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Rangor%20Watchmen.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -691,7 +691,7 @@ W, T: You gain 1 life.</text>
             <coloridentity>W</coloridentity>
             <pt>3/7</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Reconnaisance%20Mule.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -708,7 +708,7 @@ W, T: You gain 1 life.</text>
             <coloridentity>W</coloridentity>
             <pt>1/2</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Remote%20Paralyzer.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -726,7 +726,7 @@ Whenever you gain life, arm target creature you control. (Create a colorless Equ
             <coloridentity>W</coloridentity>
             <pt>3/2</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Salvation%20Class%20Warship.jpg">T2170</set>
         <related>Equipment</related>
         <tablerow>2</tablerow>
     </card>
@@ -744,7 +744,7 @@ Whenever you gain life, arm target creature you control. (Create a colorless Equ
             <coloridentity>W</coloridentity>
             <pt>3/3</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Sandstorm%20Pathfinders.jpg">T2170</set>
         <related>Equipment</related>
         <tablerow>2</tablerow>
     </card>
@@ -765,7 +765,7 @@ Whenever one or more Police creatures you control block, create a 2/2 white Poli
             <coloridentity>W</coloridentity>
             <pt>2/4</pt>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Special%20Circumstances.jpg">T2170</set>
         <related>Police</related>
         <tablerow>2</tablerow>
     </card>
@@ -784,7 +784,7 @@ Other creatures you control get +1/+1 as long as you control four or more creatu
             <coloridentity>W</coloridentity>
             <pt>*/*</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Starlight%20Crusade%20Orator.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -802,7 +802,7 @@ Supply-Line Jet enters the battlefield armed. (Create a colorless Equipment arti
             <coloridentity>W</coloridentity>
             <pt>1/2</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Supply-Line%20Jet.jpg">T2170</set>
         <related>Equipment</related>
         <tablerow>2</tablerow>
     </card>
@@ -821,7 +821,7 @@ When Suppression Patrol enters the battlefield, tap target creature an opponent 
             <coloridentity>W</coloridentity>
             <pt>2/2</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Suppression%20Patrol.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -838,7 +838,7 @@ When Suppression Patrol enters the battlefield, tap target creature an opponent 
             <coloridentity>W</coloridentity>
             <pt>3/2</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Suspension%20Squad.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -856,7 +856,7 @@ When Time Traveller enters the battlefield, you choose which creatures attack th
             <coloridentity>W</coloridentity>
             <pt>2/2</pt>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Time%20Traveller.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -873,7 +873,7 @@ If you have less life than an opponent, you gain 5 life. Otherwise, you gain 3 l
             <colors>W</colors>
             <coloridentity>W</coloridentity>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Turn%20the%20Tide%20of%20Battle.jpg">T2170</set>
         <related count="5">Military</related>
         <tablerow>3</tablerow>
     </card>
@@ -891,7 +891,7 @@ If you have less life than an opponent, you gain 5 life. Otherwise, you gain 3 l
             <coloridentity>W</coloridentity>
             <pt>2/1</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Undercover%20Agent.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -907,7 +907,7 @@ If you have less life than an opponent, you gain 5 life. Otherwise, you gain 3 l
             <colors>W</colors>
             <coloridentity>W</coloridentity>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Wartime%20Recruitment.jpg">T2170</set>
         <related count="2">Military</related>
         <tablerow>1</tablerow>
     </card>
@@ -926,7 +926,7 @@ When Warzone Mentor enters the battlefield, create a 1/1 white Military creature
             <coloridentity>W</coloridentity>
             <pt>2/1</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Warzone%20Mentor.jpg">T2170</set>
         <related>Military</related>
         <tablerow>2</tablerow>
     </card>
@@ -945,7 +945,7 @@ Whenever you gain life, you may pay X, where X is less than or equal to the amou
             <coloridentity>W</coloridentity>
             <pt>4/5</pt>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Wiendahl%20Carrier.jpg">T2170</set>
         <related count="x">Military</related>
         <tablerow>2</tablerow>
     </card>
@@ -964,7 +964,7 @@ At the beginning of your upkeep, enchanted permanent’s owner draws a card.</te
             <colors>U</colors>
             <coloridentity>U</coloridentity>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Ambassadorship.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -982,7 +982,7 @@ When Arrester Droid enters the battlefield, you may return another creature you 
             <coloridentity>U</coloridentity>
             <pt>2/2</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Arrester%20Droid.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -999,7 +999,7 @@ Teleport 1U (You may cast this card for its teleport cost while you’re looking
             <colors>U</colors>
             <coloridentity>U</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Atmospheric%20Survey.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -1015,7 +1015,7 @@ Teleport 1U (You may cast this card for its teleport cost while you’re looking
             <colors>U</colors>
             <coloridentity>U</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Brain%20Drain.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -1033,7 +1033,7 @@ Enchanted permanent doesn’t untap during its controller’s untap step and its
             <colors>U</colors>
             <coloridentity>U</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Breakdown.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -1049,7 +1049,7 @@ Enchanted permanent doesn’t untap during its controller’s untap step and its
             <colors>U</colors>
             <coloridentity>U</coloridentity>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Build%20Better.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -1068,7 +1068,7 @@ Whenever The Chronos enters the battlefield or attacks, take an extra turn after
             <coloridentity>U</coloridentity>
             <pt>6/6</pt>
         </prop>
-        <set rarity="mythic rare">T2170</set>
+        <set rarity="mythic rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/The%20Chronos.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -1087,7 +1087,7 @@ Teleport 1U (You may cast this card for its teleport cost while you’re looking
             <coloridentity>U</coloridentity>
             <pt>3/1</pt>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Cloud%20Darter.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -1104,7 +1104,7 @@ Teleport 1U (You may cast this card for its teleport cost while you’re looking
             <colors>U</colors>
             <coloridentity>U</coloridentity>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Collapse%20Consciousness.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -1121,7 +1121,7 @@ Teleport 1U (You may cast this card for its teleport cost while you’re looking
             <coloridentity>U</coloridentity>
             <pt>2/2</pt>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Coordinate%20Scrambler.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -1138,7 +1138,7 @@ Teleport 1U (You may cast this card for its teleport cost while you’re looking
             <coloridentity>U</coloridentity>
             <pt>2/3</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Engine%20Welder.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -1155,7 +1155,7 @@ Teleport 2UU (You may cast this card for its teleport cost while you’re lookin
             <colors>U</colors>
             <coloridentity>U</coloridentity>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Escape%20the%20City.jpg">T2170</set>
         <related count="2">Mech</related>
         <tablerow>3</tablerow>
     </card>
@@ -1173,7 +1173,7 @@ Teleport 2UU (You may cast this card for its teleport cost while you’re lookin
             <coloridentity>U</coloridentity>
             <pt>0/3</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Exiled%20Xenologist.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -1189,7 +1189,7 @@ Teleport 2UU (You may cast this card for its teleport cost while you’re lookin
             <colors>U</colors>
             <coloridentity>U</coloridentity>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Future%20Insight.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -1207,7 +1207,7 @@ Guidance Pods gets +1/+0 as long as there are two or more instants and/or sorcer
             <coloridentity>U</coloridentity>
             <pt>1/2</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Guidance%20Pods.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -1224,7 +1224,7 @@ Guidance Pods gets +1/+0 as long as there are two or more instants and/or sorcer
             <coloridentity>U</coloridentity>
             <pt>0/0</pt>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Holoship%20Fleet.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -1242,7 +1242,7 @@ At the beginning of your upkeep, return an artifact you control to its owner’s
             <coloridentity>U</coloridentity>
             <pt>4/3</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Hong%20Wai%20Prototype.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -1260,7 +1260,7 @@ Flying</text>
             <coloridentity>U</coloridentity>
             <pt>2/3</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Kitefin%20Racer.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -1278,7 +1278,7 @@ Mutate (When this creature dies, reveal cards from the top of your library until
             <coloridentity>U</coloridentity>
             <pt>3/4</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Kushak%20Exile.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -1296,7 +1296,7 @@ Whenever Lambert Stealth Bomber attacks and isn’t blocked, switch its power an
             <coloridentity>U</coloridentity>
             <pt>1/5</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Lambert%20Stealth%20Bomber.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -1313,7 +1313,7 @@ Teleport 3U (You may cast this card for its teleport cost while you’re looking
             <colors>U</colors>
             <coloridentity>U</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Lost%20in%20Space.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -1331,7 +1331,7 @@ Target player returns a creature they control to its owner’s hand.</text>
             <colors>U</colors>
             <coloridentity>U</coloridentity>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Matter%20Redistribution.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -1348,7 +1348,7 @@ Target player returns a creature they control to its owner’s hand.</text>
             <coloridentity>U</coloridentity>
             <pt>0/5</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Migratory%20City.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -1364,7 +1364,7 @@ Target player returns a creature they control to its owner’s hand.</text>
             <colors>U</colors>
             <coloridentity>U</coloridentity>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Military%20Intelligence.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -1382,7 +1382,7 @@ When Mindmelded Sysadmin enters the battlefield, look at the top five cards of y
             <coloridentity>U</coloridentity>
             <pt>1/1</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Mindmelded%20Sysadmin.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -1399,7 +1399,7 @@ When Mindmelded Sysadmin enters the battlefield, look at the top five cards of y
             <coloridentity>U</coloridentity>
             <pt>2/1</pt>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Nanoreplicator%20Zero.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -1415,7 +1415,7 @@ When Mindmelded Sysadmin enters the battlefield, look at the top five cards of y
             <colors>U</colors>
             <coloridentity>U</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Neutron%20Flow.jpg">T2170</set>
         <related>Mech</related>
         <tablerow>3</tablerow>
     </card>
@@ -1432,7 +1432,7 @@ When Mindmelded Sysadmin enters the battlefield, look at the top five cards of y
             <colors>U</colors>
             <coloridentity>U</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Open%20Speculation.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -1449,7 +1449,7 @@ When Mindmelded Sysadmin enters the battlefield, look at the top five cards of y
             <coloridentity>U</coloridentity>
             <pt>3/3</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Plasma%20Reclaimer.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -1466,7 +1466,7 @@ When Mindmelded Sysadmin enters the battlefield, look at the top five cards of y
             <coloridentity>U</coloridentity>
             <pt>2/2</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Reconstruction%20Specialist.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -1484,7 +1484,7 @@ Mutate (When this creature dies, reveal cards from the top of your library until
             <coloridentity>U</coloridentity>
             <pt>2/1</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Scorned%20Researcher.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -1504,7 +1504,7 @@ Teleport 1U (You may cast this card for its teleport cost while you’re looking
             <coloridentity>U</coloridentity>
             <pt>2/4</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Slipstream%20Distorter.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -1521,7 +1521,7 @@ Teleport 1U (You may cast this card for its teleport cost while you’re looking
             <colors>U</colors>
             <coloridentity>U</coloridentity>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Solar%20Power%20Transmitters.jpg">T2170</set>
         <related>Mech</related>
         <tablerow>1</tablerow>
     </card>
@@ -1540,7 +1540,7 @@ Teleport 1U (You may cast this card for its teleport cost while you’re looking
             <coloridentity>U</coloridentity>
             <pt>1/2</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Supercoolant%20Technician.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -1557,7 +1557,7 @@ Teleport U (You may cast this card for its teleport cost while you’re looking 
             <colors>U</colors>
             <coloridentity>U</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Tactical%20Freeze%20Ray.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -1574,7 +1574,7 @@ Teleport U (You may cast this card for its teleport cost while you’re looking 
             <coloridentity>U</coloridentity>
             <pt>1/3</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Thought%20Dampener.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -1591,7 +1591,7 @@ Create a 1/1 colorless Mech artifact creature token.</text>
             <colors>U</colors>
             <coloridentity>U</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Threat%20Profiling.jpg">T2170</set>
         <related>Mech</related>
         <tablerow>3</tablerow>
     </card>
@@ -1609,7 +1609,7 @@ Teleport 3UU (You may cast this card for its teleport cost while you’re lookin
             <colors>U</colors>
             <coloridentity>U</coloridentity>
         </prop>
-        <set rarity="mythic rare">T2170</set>
+        <set rarity="mythic rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Time%20Paradox.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -1625,7 +1625,7 @@ Teleport 3UU (You may cast this card for its teleport cost while you’re lookin
             <colors>U</colors>
             <coloridentity>U</coloridentity>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Transcend%20Space-Time.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -1642,7 +1642,7 @@ Teleport 0 (You may cast this card for its teleport cost while you’re looking 
             <colors>U</colors>
             <coloridentity>U</coloridentity>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Umida%20Security%20Protocols.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -1660,11 +1660,11 @@ When Undercroft Entangler enters the battlefield, you may return target creature
             <coloridentity>U</coloridentity>
             <pt>1/2</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Undercroft%20Entangler.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
-        <name>Voyages End</name>
+        <name>Voyage’s End</name>
         <text>Return target creature to its owner’s hand. Scry 1.</text>
         <prop>
             <layout>normal</layout>
@@ -1676,7 +1676,7 @@ When Undercroft Entangler enters the battlefield, you may return target creature
             <colors>U</colors>
             <coloridentity>U</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Voyages%20End.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -1693,7 +1693,7 @@ Return up to two target creature cards from your graveyard to your hand.</text>
             <colors>B</colors>
             <coloridentity>B</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Back%20to%20Work.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -1711,7 +1711,7 @@ Pay 1 life, discard two cards: Create a 1/1 colorless Mech artifact creature tok
             <coloridentity>B</coloridentity>
             <pt>3/2</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Backalley%20Trafficker.jpg">T2170</set>
         <related>Mech</related>
         <tablerow>2</tablerow>
     </card>
@@ -1730,7 +1730,7 @@ Lifelink</text>
             <coloridentity>B</coloridentity>
             <pt>1/4</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Boardroom%20Keeper.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -1747,7 +1747,7 @@ Create a 1/1 colorless Mech artifact creature token.</text>
             <colors>B</colors>
             <coloridentity>B</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Brain%20Rewiring.jpg">T2170</set>
         <related>Mech</related>
         <tablerow>3</tablerow>
     </card>
@@ -1765,7 +1765,7 @@ T: Create a tapped token that’s a copy of an exiled creature card, then put th
             <colors>B</colors>
             <coloridentity>B</coloridentity>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Cloning%20Vats.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -1784,7 +1784,7 @@ Whenever you lose life during your turn, return Contract Killer from your gravey
             <coloridentity>B</coloridentity>
             <pt>2/1</pt>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Contract%20Killer.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -1802,7 +1802,7 @@ Whenever Corporate Spy deals combat damage to a player, look at the top card of 
             <coloridentity>B</coloridentity>
             <pt>1/1</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Corporate%20Spy.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -1820,7 +1820,7 @@ Whenever Corporate Spy deals combat damage to a player, look at the top card of 
             <colors>B</colors>
             <coloridentity>B</coloridentity>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Crux%20of%20Space-Time.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -1837,7 +1837,7 @@ Teleport 4B (You may cast this card for its teleport cost while you’re looking
             <colors>B</colors>
             <coloridentity>B</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Disassemble.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -1854,7 +1854,7 @@ Nonartifact creatures with the chosen name get -6/-6.</text>
             <colors>B</colors>
             <coloridentity>B</coloridentity>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Engineered%20Endemic.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -1871,7 +1871,7 @@ Nonartifact creatures with the chosen name get -6/-6.</text>
             <coloridentity>B</coloridentity>
             <pt>2/3</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Figment%20of%20Death.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -1887,7 +1887,7 @@ Nonartifact creatures with the chosen name get -6/-6.</text>
             <colors>B</colors>
             <coloridentity>B</coloridentity>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Gambling%20Ring.jpg">T2170</set>
         <related>Mech</related>
         <tablerow>1</tablerow>
     </card>
@@ -1904,7 +1904,7 @@ Nonartifact creatures with the chosen name get -6/-6.</text>
             <colors>B</colors>
             <coloridentity>B</coloridentity>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Grasp%20of%20The%20Left%20Hand.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -1920,7 +1920,7 @@ Nonartifact creatures with the chosen name get -6/-6.</text>
             <colors>B</colors>
             <coloridentity>B</coloridentity>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Hypercollider.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -1937,7 +1937,7 @@ Draw two cards.</text>
             <colors>B</colors>
             <coloridentity>B</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Interrogate.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -1953,7 +1953,7 @@ Draw two cards.</text>
             <colors>B</colors>
             <coloridentity>B</coloridentity>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Mesmerising%20Performance.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -1971,7 +1971,7 @@ When Mindmeld Torturer dies, each opponent loses 2 life and you gain 2 life.</te
             <coloridentity>B</coloridentity>
             <pt>1/1</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Mindmeld%20Torturer.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -1990,11 +1990,11 @@ Mutate (When this creature dies, reveal cards from the top of your library until
             <coloridentity>B</coloridentity>
             <pt>6/6</pt>
         </prop>
-        <set rarity="mythic rare">T2170</set>
+        <set rarity="mythic rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Mortality.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
-        <name>Murmur the Cleaner</name>
+        <name>Murmur, the Cleaner</name>
         <text></text>
         <prop>
             <layout>normal</layout>
@@ -2007,7 +2007,7 @@ Mutate (When this creature dies, reveal cards from the top of your library until
             <coloridentity>B</coloridentity>
             <loyalty>4</loyalty>
         </prop>
-        <set rarity="mythic rare">T2170</set>
+        <set rarity="mythic rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Murmur%20the%20Cleaner.jpg">T2170</set>
         <related>Assassin</related>
         <tablerow>1</tablerow>
     </card>
@@ -2025,7 +2025,7 @@ Mutate (When this creature dies, reveal cards from the top of your library until
             <coloridentity>B</coloridentity>
             <pt>2/2</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Mystic%20of%20the%20Under.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -2043,7 +2043,7 @@ Creatures you control can’t attack unless exactly two creatures attack.</text>
             <coloridentity>B</coloridentity>
             <pt>3/3</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Neural%20Devourer.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -2063,7 +2063,7 @@ At the beginning of each upkeep, put a charge counter on Peacekeeper Satellite.
             <coloridentity>B</coloridentity>
             <pt>2/2</pt>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Peacekeeper%20Satellite.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -2081,7 +2081,7 @@ Discard a card: Prototype Evader gets +1/+1 until end of turn. Activate this abi
             <coloridentity>B</coloridentity>
             <pt>2/1</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Prototype%20Evader.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -2098,7 +2098,7 @@ Target creature gets -X/-X until end of turn.</text>
             <colors>B</colors>
             <coloridentity>B</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Punitive%20Counterstrike.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -2114,7 +2114,7 @@ Target creature gets -X/-X until end of turn.</text>
             <colors>B</colors>
             <coloridentity>B</coloridentity>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Rebuild%20Stronger.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -2130,7 +2130,7 @@ Target creature gets -X/-X until end of turn.</text>
             <colors>B</colors>
             <coloridentity>B</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Reincarnation%20Program.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -2148,7 +2148,7 @@ Target creature gets -X/-X until end of turn.</text>
             <coloridentity>B</coloridentity>
             <pt>3/2</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Rumormonger.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -2165,7 +2165,7 @@ Each creature you control that’s an Assassin or a Saboteur has deathtouch.</te
             <colors>B</colors>
             <coloridentity>B</coloridentity>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Rumors%20and%20Whispers.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -2183,7 +2183,7 @@ Teleport 2B (You may cast this card for its teleport cost while you’re looking
             <coloridentity>B</coloridentity>
             <pt>2/1</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Security%20Detail.jpg">T2170</set>
         <related>Mech</related>
         <tablerow>2</tablerow>
     </card>
@@ -2202,7 +2202,7 @@ Mutate (When this creature dies, reveal cards from the top of your library until
             <coloridentity>B</coloridentity>
             <pt>3/3</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Sewer%20Slitherer.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -2219,7 +2219,7 @@ Mutate (When this creature dies, reveal cards from the top of your library until
             <coloridentity>B</coloridentity>
             <pt>4/6</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Shiryu%20Collector.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -2236,7 +2236,7 @@ Mutate (When this creature dies, reveal cards from the top of your library until
             <coloridentity>B</coloridentity>
             <pt>4/2</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Silent%20Infiltrator.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -2253,7 +2253,7 @@ When Sink into the Oceans is put into a graveyard from the battlefield, each opp
             <colors>B</colors>
             <coloridentity>B</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Sink%20into%20the%20Oceans.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -2269,7 +2269,7 @@ When Sink into the Oceans is put into a graveyard from the battlefield, each opp
             <colors>B</colors>
             <coloridentity>B</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Surprise%20Round.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -2287,7 +2287,7 @@ Whenever The Tartarus enters the battlefield or attacks, you may put target crea
             <coloridentity>B</coloridentity>
             <pt>6/6</pt>
         </prop>
-        <set rarity="mythic rare">T2170</set>
+        <set rarity="mythic rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/The%20Tartarus.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -2303,7 +2303,7 @@ Whenever The Tartarus enters the battlefield or attacks, you may put target crea
             <colors>B</colors>
             <coloridentity>B</coloridentity>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Tragedy%20of%20War.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -2322,7 +2322,7 @@ Teleport 4B (You may cast this card for its teleport cost while you’re looking
             <coloridentity>B</coloridentity>
             <pt>2/3</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Tundra%20Strider.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -2339,7 +2339,7 @@ Teleport 4B (You may cast this card for its teleport cost while you’re looking
             <coloridentity>B</coloridentity>
             <pt>4/3</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Undercity%20Janitor.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -2357,7 +2357,7 @@ Mutate (When this creature dies, reveal cards from the top of your library until
             <coloridentity>B</coloridentity>
             <pt>1/1</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Urban%20Revenant.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -2374,7 +2374,7 @@ Teleport 0 (You may cast this card for its teleport cost while you’re looking 
             <colors>B</colors>
             <coloridentity>B</coloridentity>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Warapur%20Company%20Contract.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -2391,7 +2391,7 @@ Teleport 0 (You may cast this card for its teleport cost while you’re looking 
             <coloridentity>B</coloridentity>
             <pt>1/1</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Warapur%20Company%20Drudge.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -2409,7 +2409,7 @@ B, Pay 2 life, Sacrifice another nonland permanent: Choose a card name. Reveal c
             <coloridentity>B</coloridentity>
             <pt>5/4</pt>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Warship%20Sinistra.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -2426,7 +2426,7 @@ B, Pay 2 life, Sacrifice another nonland permanent: Choose a card name. Reveal c
             <coloridentity>B</coloridentity>
             <pt>3/3</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Wasteland%20Enforcer.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -2444,7 +2444,7 @@ Whenever Adopted Wanderer attacks or blocks, sacrifice an artifact at end of com
             <coloridentity>B</coloridentity>
             <pt>4/3</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Adopted%20Wanderer.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -2462,7 +2462,7 @@ Whenever a creature you control becomes the target of a spell, Al Maham Protecto
             <coloridentity>R</coloridentity>
             <pt>5/4</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Al%20Maham%20Protector.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -2479,7 +2479,7 @@ Whenever a creature you control becomes the target of a spell, Al Maham Protecto
             <coloridentity>R</coloridentity>
             <pt>1/1</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Alpha%20Squad%20Captain.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -2495,7 +2495,7 @@ Whenever a creature you control becomes the target of a spell, Al Maham Protecto
             <colors>R</colors>
             <coloridentity>R</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Battle%20Flow.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -2512,7 +2512,7 @@ Whenever a creature you control becomes the target of a spell, Al Maham Protecto
             <coloridentity>R</coloridentity>
             <pt>1/1</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Bergstadt%20Roboticists.jpg">T2170</set>
         <related>Wildschwein</related>
         <tablerow>2</tablerow>
     </card>
@@ -2530,7 +2530,7 @@ Whenever a creature you control becomes the target of a spell, Al Maham Protecto
             <coloridentity>R</coloridentity>
             <pt>1/1</pt>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Chentsov%20Scylla.jpg">T2170</set>
         <related count="x">Equipment</related>
         <tablerow>2</tablerow>
     </card>
@@ -2547,7 +2547,7 @@ Whenever a creature you control becomes the target of a spell, Al Maham Protecto
             <colors>R</colors>
             <coloridentity>R</coloridentity>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Combined%20Effort.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -2563,7 +2563,7 @@ Whenever a creature you control becomes the target of a spell, Al Maham Protecto
             <colors>R</colors>
             <coloridentity>R</coloridentity>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Coordinated%20Assault.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -2580,7 +2580,7 @@ Whenever a creature you control becomes the target of a spell, Al Maham Protecto
             <coloridentity>R</coloridentity>
             <pt>6/1</pt>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Coulomb%20Chargers.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -2597,7 +2597,7 @@ Teleport 2R (You may cast this card for its teleport cost while you’re looking
             <colors>R</colors>
             <coloridentity>R</coloridentity>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Electric%20Arc.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -2613,7 +2613,7 @@ Teleport 2R (You may cast this card for its teleport cost while you’re looking
             <colors>R</colors>
             <coloridentity>R</coloridentity>
         </prop>
-        <set rarity="mythic rare">T2170</set>
+        <set rarity="mythic rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Execute%20Takeover%20Protocol.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -2632,7 +2632,7 @@ Sacrifice four artifacts: Flagship Warapur deals 4 damage to any target.</text>
             <coloridentity>R</coloridentity>
             <pt>4/4</pt>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Flagship%20Warapur.jpg">T2170</set>
         <related>Mech</related>
         <tablerow>2</tablerow>
     </card>
@@ -2650,7 +2650,7 @@ Sacrifice four artifacts: Flagship Warapur deals 4 damage to any target.</text>
             <coloridentity>R</coloridentity>
             <pt>2/1</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Frantic%20Investigator.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -2666,7 +2666,7 @@ Sacrifice four artifacts: Flagship Warapur deals 4 damage to any target.</text>
             <colors>R</colors>
             <coloridentity>R</coloridentity>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Genius%20or%20Grifter.jpg">T2170</set>
         <related count="x">Equipment</related>
         <tablerow>3</tablerow>
     </card>
@@ -2685,7 +2685,7 @@ Guerilla Fighters enters the battlefield armed. (Create a colorless Equipment ar
             <coloridentity>R</coloridentity>
             <pt>3/1</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Guerilla%20Fighters.jpg">T2170</set>
         <related>Equipment</related>
         <tablerow>2</tablerow>
     </card>
@@ -2703,7 +2703,7 @@ Guerilla Fighters enters the battlefield armed. (Create a colorless Equipment ar
             <coloridentity>R</coloridentity>
             <pt>3/2</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Hired%20Artillery.jpg">T2170</set>
         <related>Equipment</related>
         <tablerow>2</tablerow>
     </card>
@@ -2722,7 +2722,7 @@ Equip 1</text>
             <colors>R</colors>
             <coloridentity>R</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Homeostimulation%20Suit.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -2738,7 +2738,7 @@ Equip 1</text>
             <colors>R</colors>
             <coloridentity>R</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Hyperadrenaline.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -2756,7 +2756,7 @@ Equip 2</text>
             <colors>R</colors>
             <coloridentity>R</coloridentity>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Iridium%20Magneto-Knife.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -2772,7 +2772,7 @@ Equip 2</text>
             <colors>R</colors>
             <coloridentity>R</coloridentity>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Leave%20Behind.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -2790,7 +2790,7 @@ Teleport 1R (You may cast this card for its teleport cost while you’re looking
             <colors>R</colors>
             <coloridentity>R</coloridentity>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Mindmeld%20Battlesuit.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -2808,7 +2808,7 @@ Whenever The Moirai enters the battlefield or attacks, it deals 2 damage to targ
             <coloridentity>R</coloridentity>
             <pt>6/6</pt>
         </prop>
-        <set rarity="mythic rare">T2170</set>
+        <set rarity="mythic rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/The%20Moirai.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -2826,7 +2826,7 @@ Teleport 1R (You may cast this card for its teleport cost while you’re looking
             <coloridentity>R</coloridentity>
             <pt>5/4</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Ohmwrecker.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -2845,7 +2845,7 @@ Teleport 1R (You may cast this card for its teleport cost while you’re looking
             <coloridentity>R</coloridentity>
             <pt>3/2</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Rangor%20Contractor.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -2864,7 +2864,7 @@ Whenever Reckless Troubleshooter deals combat damage to a player, exile that man
             <coloridentity>R</coloridentity>
             <pt>1/1</pt>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Reckless%20Troubleshooter.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -2881,7 +2881,7 @@ Put target artifact card from a graveyard onto the battlefield under your contro
             <colors>R</colors>
             <coloridentity>R</coloridentity>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Reverse%20Polarity.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -2898,7 +2898,7 @@ Teleport 2R (You may cast this card for its teleport cost while you’re looking
             <colors>R</colors>
             <coloridentity>R</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Rip%20Space-Time.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -2914,7 +2914,7 @@ Teleport 2R (You may cast this card for its teleport cost while you’re looking
             <colors>R</colors>
             <coloridentity>R</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Rocket%20Salvo.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -2932,7 +2932,7 @@ Scavenged X-17 gets +1/+0 for each artifact you control.</text>
             <coloridentity>R</coloridentity>
             <pt>0/4</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Scavenged%20X-17.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -2949,7 +2949,7 @@ Scavenged X-17 gets +1/+0 for each artifact you control.</text>
             <coloridentity>R</coloridentity>
             <pt>2/1</pt>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Scrapyard%20Salvager.jpg">T2170</set>
         <related count="2">Mech</related>
         <tablerow>2</tablerow>
     </card>
@@ -2966,7 +2966,7 @@ Scavenged X-17 gets +1/+0 for each artifact you control.</text>
             <colors>R</colors>
             <coloridentity>R</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Self-Destruct%20Sequence.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -2983,7 +2983,7 @@ Scavenged X-17 gets +1/+0 for each artifact you control.</text>
             <coloridentity>R</coloridentity>
             <pt>3/2</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Slagthrower.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -3001,7 +3001,7 @@ Teleport 1R (You may cast this card for its teleport cost while you’re looking
             <coloridentity>R</coloridentity>
             <pt>4/3</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Slipstream%20Hunter.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -3017,7 +3017,7 @@ Teleport 1R (You may cast this card for its teleport cost while you’re looking
             <colors>R</colors>
             <coloridentity>R</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Supervolcanic%20Fallout.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -3034,7 +3034,7 @@ Teleport 1R (You may cast this card for its teleport cost while you’re looking
             <coloridentity>R</coloridentity>
             <pt>2/2</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Supply%20Runner.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -3050,7 +3050,7 @@ Teleport 1R (You may cast this card for its teleport cost while you’re looking
             <colors>R</colors>
             <coloridentity>R</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Take%20Hostage.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -3068,7 +3068,7 @@ Teleport R (You may cast this card for its teleport cost while you’re looking 
             <colors>R</colors>
             <coloridentity>R</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Throw%20to%20the%20Wind.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -3085,7 +3085,7 @@ Teleport R (You may cast this card for its teleport cost while you’re looking 
             <coloridentity>R</coloridentity>
             <pt>6/5</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Vulcan%20Devastators.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -3102,7 +3102,7 @@ Teleport R (You may cast this card for its teleport cost while you’re looking 
             <coloridentity>R</coloridentity>
             <pt>2/1</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Walking%20Furnace.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -3119,7 +3119,7 @@ Teleport R (You may cast this card for its teleport cost while you’re looking 
             <coloridentity>R</coloridentity>
             <pt>2/1</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Wanted%20Speedster.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -3136,11 +3136,11 @@ Teleport R (You may cast this card for its teleport cost while you’re looking 
             <coloridentity>R</coloridentity>
             <pt>2/2</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Wild%20Game%20Huntmaster.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
-        <name>Wormcallers Assurance</name>
+        <name>Wormcaller’s Assurance</name>
         <text>If a source you control would deal damage this turn, it deals double that damage instead.
 Teleport 0 (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)</text>
         <prop>
@@ -3153,7 +3153,7 @@ Teleport 0 (You may cast this card for its teleport cost while you’re looking 
             <colors>R</colors>
             <coloridentity>R</coloridentity>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Wormcallers%20Assurance.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -3171,7 +3171,7 @@ Whenever a creature you control becomes the target of a spell, creatures you con
             <coloridentity>G</coloridentity>
             <pt>2/2</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Al%20Maham%20Pathfinder.jpg">T2170</set>
         <related>Mech</related>
         <tablerow>2</tablerow>
     </card>
@@ -3189,7 +3189,7 @@ Whenever a creature you control becomes the target of a spell, creatures you con
             <coloridentity>G</coloridentity>
             <pt>3/2</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Al%20Maham%20Traders.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -3207,7 +3207,7 @@ Mutate</text>
             <coloridentity>G</coloridentity>
             <pt>3/3</pt>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Angling%20Constrictor.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -3224,7 +3224,7 @@ Mutate</text>
             <coloridentity>G</coloridentity>
             <pt>5/5</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Baljurashi%20Wanderer.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -3241,7 +3241,7 @@ Mutate</text>
             <coloridentity>G</coloridentity>
             <pt>4/4</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Basirah%20Composite.jpg">T2170</set>
         <related count="2">Xeno Scion</related>
         <tablerow>2</tablerow>
     </card>
@@ -3259,7 +3259,7 @@ Mutate</text>
             <coloridentity>G</coloridentity>
             <pt>1/1</pt>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Bioarchitect.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -3276,7 +3276,7 @@ Mutate</text>
             <coloridentity>G</coloridentity>
             <pt>2/2</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Biocourier.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -3293,7 +3293,7 @@ Each creature you control that’s a Mutant or a Xeno gets +1/+1 until end of tu
             <colors>G</colors>
             <coloridentity>G</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Brood%20Ambush.jpg">T2170</set>
         <related count="2">Xeno Scion</related>
         <tablerow>3</tablerow>
     </card>
@@ -3310,7 +3310,7 @@ Each creature you control that’s a Mutant or a Xeno gets +1/+1 until end of tu
             <colors>G</colors>
             <coloridentity>G</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Deep%20into%20the%20Subconscious.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -3328,7 +3328,7 @@ As Deep Jungle Hunter enters the battlefield, sacrifice any number of other crea
             <coloridentity>G</coloridentity>
             <pt>3/3</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Deep%20Jungle%20Hunter.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -3348,7 +3348,7 @@ As Deep Jungle Hunter enters the battlefield, sacrifice any number of other crea
             <colors>G</colors>
             <coloridentity>G</coloridentity>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Ecosystem%20Collapse.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -3366,7 +3366,7 @@ Teleport 3G (You may cast this card for its teleport cost while you’re looking
             <coloridentity>G</coloridentity>
             <pt>0/1</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Escaped%20Test%20Subject.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -3383,7 +3383,7 @@ Teleport 3G (You may cast this card for its teleport cost while you’re looking
             <colors>G</colors>
             <coloridentity>G</coloridentity>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Experimental%20Mutagenics.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -3400,7 +3400,7 @@ Teleport 3G (You may cast this card for its teleport cost while you’re looking
             <coloridentity>G</coloridentity>
             <pt>1/3</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Frontier%20Anatomist.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -3416,7 +3416,7 @@ Teleport 3G (You may cast this card for its teleport cost while you’re looking
             <colors>G</colors>
             <coloridentity>G</coloridentity>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Genome%20Toggle.jpg">T2170</set>
         <related count="x">Mutant</related>
         <tablerow>3</tablerow>
     </card>
@@ -3433,7 +3433,7 @@ Teleport 3G (You may cast this card for its teleport cost while you’re looking
             <colors>G</colors>
             <coloridentity>G</coloridentity>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Gestation%20Cycle.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -3450,7 +3450,7 @@ Enchanted creature gets +6/+6 and has reach.</text>
             <colors>G</colors>
             <coloridentity>G</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Growth%20Genetics.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -3467,7 +3467,7 @@ Enchanted creature gets +6/+6 and has reach.</text>
             <coloridentity>G</coloridentity>
             <pt>3/2</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Hunted%20Coadjulate.jpg">T2170</set>
         <related>Mech</related>
         <tablerow>2</tablerow>
     </card>
@@ -3485,7 +3485,7 @@ Enchanted creature gets +6/+6 and has reach.</text>
             <coloridentity>G</coloridentity>
             <pt>4/4</pt>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Incubation%20Hulk.jpg">T2170</set>
         <related count="3">Xeno Propagator</related>
         <tablerow>2</tablerow>
     </card>
@@ -3504,7 +3504,7 @@ Whenever The Kishar enters the battlefield or attacks, create three 1/1 green Xe
             <coloridentity>G</coloridentity>
             <pt>6/6</pt>
         </prop>
-        <set rarity="mythic rare">T2170</set>
+        <set rarity="mythic rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/The%20Kishar.jpg">T2170</set>
         <related count="3">Xeno Scion</related>
         <tablerow>2</tablerow>
     </card>
@@ -3522,7 +3522,7 @@ Whenever The Kishar enters the battlefield or attacks, create three 1/1 green Xe
             <coloridentity>G</coloridentity>
             <pt>3/3</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Kushak%20Brood%20Warden.jpg">T2170</set>
         <related count="2">Xeno Scion</related>
         <tablerow>2</tablerow>
     </card>
@@ -3539,7 +3539,7 @@ Whenever The Kishar enters the battlefield or attacks, create three 1/1 green Xe
             <colors>G</colors>
             <coloridentity>G</coloridentity>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Kushak%20Device.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -3556,7 +3556,7 @@ Teleport 0 (You may cast this card for its teleport cost while you’re looking 
             <colors>G</colors>
             <coloridentity>G</coloridentity>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Kushak%20Interference.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -3573,7 +3573,7 @@ Teleport 0 (You may cast this card for its teleport cost while you’re looking 
             <coloridentity>G</coloridentity>
             <pt>4/3</pt>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Kushak%20Research%20Council.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -3592,7 +3592,7 @@ Each other creature you control that’s a Mutant or a Xeno gets +1/+1.
             <coloridentity>G</coloridentity>
             <pt>6/6</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Kushak%20Subject%20Prime.jpg">T2170</set>
         <related>Xeno Scion</related>
         <tablerow>2</tablerow>
     </card>
@@ -3611,7 +3611,7 @@ Each other creature you control that’s a Mutant or a Xeno gets +1/+1.
             <coloridentity>G</coloridentity>
             <pt>1/2</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Lifestrider.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -3629,7 +3629,7 @@ Mutate (When this creature dies, reveal cards from the top of your library until
             <coloridentity>G</coloridentity>
             <pt>2/2</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Myth%20of%20Baljurashi.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -3646,7 +3646,7 @@ Mutate (When this creature dies, reveal cards from the top of your library until
             <coloridentity>G</coloridentity>
             <pt>4/1</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Radium%20Tracker.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -3662,7 +3662,7 @@ Mutate (When this creature dies, reveal cards from the top of your library until
             <colors>G</colors>
             <coloridentity>G</coloridentity>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Reverse%20Gravity.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -3680,7 +3680,7 @@ When Rogue Servitor enters the battlefield, you may pay 2. When you do, put a +1
             <coloridentity>G</coloridentity>
             <pt>2/2</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Rogue%20Servitor.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -3698,7 +3698,7 @@ Reach</text>
             <coloridentity>G</coloridentity>
             <pt>3/2</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/S.A.M.%20Team.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -3716,7 +3716,7 @@ Screeching Terror can’t be blocked by creatures with power 2 or less.</text>
             <coloridentity>G</coloridentity>
             <pt>6/6</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Screeching%20Terror.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -3733,7 +3733,7 @@ Put a +1/+1 counter on target creature you control. Then that creature fights ta
             <colors>G</colors>
             <coloridentity>G</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Sewer%20Ambush.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -3751,7 +3751,7 @@ Mutate (When this creature dies, reveal cards from the top of your library until
             <coloridentity>G</coloridentity>
             <pt>5/5</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Sewer%20Monster.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -3768,7 +3768,7 @@ G, Sacrifice Spawning Grounds: Create a 1/1 green Xeno Scion creature token for 
             <colors>G</colors>
             <coloridentity>G</coloridentity>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Spawning%20Grounds.jpg">T2170</set>
         <related count="x">Xeno Scion</related>
         <tablerow>1</tablerow>
     </card>
@@ -3787,7 +3787,7 @@ G, Sacrifice Spawning Grounds: Create a 1/1 green Xeno Scion creature token for 
             <coloridentity>G</coloridentity>
             <pt>3/2</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Supply%20Scavengers.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -3806,7 +3806,7 @@ Whenever an opponent activates their first non-mana ability each turn, counter t
             <coloridentity>G</coloridentity>
             <pt>6/6</pt>
         </prop>
-        <set rarity="mythic rare">T2170</set>
+        <set rarity="mythic rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Suppressor%20of%20Worlds.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -3822,7 +3822,7 @@ Whenever an opponent activates their first non-mana ability each turn, counter t
             <colors>G</colors>
             <coloridentity>G</coloridentity>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Surge%20of%20Fervor.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -3838,7 +3838,7 @@ Whenever an opponent activates their first non-mana ability each turn, counter t
             <colors>G</colors>
             <coloridentity>G</coloridentity>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Terraforming%20Works.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -3855,7 +3855,7 @@ Teleport 4G (You may cast this card for its teleport cost while you’re looking
             <colors>G</colors>
             <coloridentity>G</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Ultramagnetic%20Interference.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -3873,7 +3873,7 @@ Enchanted land has “T: Add two mana of any one color.”</text>
             <colors>G</colors>
             <coloridentity>G</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Uncharted%20Lands.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -3889,7 +3889,7 @@ Enchanted land has “T: Add two mana of any one color.”</text>
             <colors>G</colors>
             <coloridentity>G</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Unstable%20Growth.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -3907,7 +3907,7 @@ Creatures your opponents control enter the battlefield tapped.</text>
             <coloridentity>WU</coloridentity>
             <pt>1/3</pt>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/High%20Judge%20Zephynius.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -3925,11 +3925,11 @@ Whenever another permanent you control leaves the battlefield, put a +1/+1 count
             <coloridentity>WU</coloridentity>
             <pt>1/1</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Wings%20of%20the%20Law.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
-        <name>Murmurs Command</name>
+        <name>Murmur’s Command</name>
         <text>Choose up to X —
 • Target creature gets -3/-0 until end of turn.
 • Target creature gets -0/-3 until end of turn.
@@ -3946,7 +3946,7 @@ Whenever another permanent you control leaves the battlefield, put a +1/+1 count
             <colors>UB</colors>
             <coloridentity>UB</coloridentity>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Murmurs%20Command.jpg">T2170</set>
         <related>Assassin</related>
         <tablerow>3</tablerow>
     </card>
@@ -3965,7 +3965,7 @@ Pay 1 life: Untap Seekerpede.</text>
             <coloridentity>UB</coloridentity>
             <pt>1/6</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Seekerpede.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -3985,7 +3985,7 @@ Whenever Shadowlight Infiltrator deals combat damage to a player, choose one —
             <coloridentity>UB</coloridentity>
             <pt>1/3</pt>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Shadowlight%20Infiltrator.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -4002,7 +4002,7 @@ Whenever Shadowlight Infiltrator deals combat damage to a player, choose one —
             <coloridentity>BR</coloridentity>
             <pt>3/2</pt>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Thousand%20Spares.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -4019,7 +4019,7 @@ Whenever Shadowlight Infiltrator deals combat damage to a player, choose one —
             <coloridentity>BR</coloridentity>
             <pt>3/3</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Warapur%20Company%20Guard.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -4036,7 +4036,7 @@ Whenever Shadowlight Infiltrator deals combat damage to a player, choose one —
             <coloridentity>RG</coloridentity>
             <pt>4/3</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Canyon%20Skitterer.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -4055,12 +4055,12 @@ At the beginning of combat on your turn, you may create Shaitan, a legendary 5/5
             <coloridentity>RG</coloridentity>
             <pt>2/2</pt>
         </prop>
-        <set rarity="mythic rare">T2170</set>
+        <set rarity="mythic rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/The%20Honored%20Wormcaller.jpg">T2170</set>
         <related>Shaitan</related>
         <tablerow>2</tablerow>
     </card>
     <card>
-        <name>Wormcallers Command</name>
+        <name>Wormcaller’s Command</name>
         <text>Choose up to X —
 • Put a +1/+1 counter on target creature.
 • Target creature you control fights target
@@ -4079,11 +4079,11 @@ At the beginning of combat on your turn, you may create Shaitan, a legendary 5/5
             <colors>RG</colors>
             <coloridentity>RG</coloridentity>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Wormcallers%20Command.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
-        <name>Ingolf the Catalyst</name>
+        <name>Ingolf, the Catalyst</name>
         <text>When Ingolf, the Catalyst enters the battlefield, create a 5/5 colorless Mech artifact creature token.
 When Ingolf dies, destroy each creature with power 4 or greater.</text>
         <prop>
@@ -4097,12 +4097,12 @@ When Ingolf dies, destroy each creature with power 4 or greater.</text>
             <coloridentity>GW</coloridentity>
             <pt>1/1</pt>
         </prop>
-        <set rarity="mythic rare">T2170</set>
+        <set rarity="mythic rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Ingolf%20the%20Catalyst.jpg">T2170</set>
         <related>Mech</related>
         <tablerow>2</tablerow>
     </card>
     <card>
-        <name>Ingolfs Command</name>
+        <name>Ingolf’s Command</name>
         <text>Choose up to X —
 • Arm target creature you control.
 • Target creature gets +2/+2 and gains hexproof
@@ -4120,7 +4120,7 @@ When Ingolf dies, destroy each creature with power 4 or greater.</text>
             <colors>GW</colors>
             <coloridentity>GW</coloridentity>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Ingolfs%20Command.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -4137,7 +4137,7 @@ When Ingolf dies, destroy each creature with power 4 or greater.</text>
             <coloridentity>GW</coloridentity>
             <pt>1/1</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Support%20Misdirector.jpg">T2170</set>
         <related count="2">Mech</related>
         <tablerow>2</tablerow>
     </card>
@@ -4157,7 +4157,7 @@ When Ingolf dies, destroy each creature with power 4 or greater.</text>
             <coloridentity>WB</coloridentity>
             <pt>3/3</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Publicity%20Officer.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -4175,11 +4175,11 @@ Whenever a creature dies, if it wasn’t sacrificed, remove an authority counter
             <coloridentity>WB</coloridentity>
             <pt>2/3</pt>
         </prop>
-        <set rarity="mythic rare">T2170</set>
+        <set rarity="mythic rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Representative%20Vuissance.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
-        <name>Vuissances Command</name>
+        <name>Vuissance’s Command</name>
         <text>Choose up to X —
 • Target player discards a card.
 • Target player sacrifices a creature.
@@ -4196,7 +4196,7 @@ Whenever a creature dies, if it wasn’t sacrificed, remove an authority counter
             <colors>WB</colors>
             <coloridentity>WB</coloridentity>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Vuissances%20Command.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -4213,7 +4213,7 @@ T, Remove X charge counters from Matter Redistributor: Look at the top twice X c
             <colors>UR</colors>
             <coloridentity>UR</coloridentity>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Matter%20Redistributor.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -4232,7 +4232,7 @@ Teleport UR (You may cast this card for its teleport cost while you’re looking
             <coloridentity>UR</coloridentity>
             <pt>3/2</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Neutron%20Evader.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -4255,7 +4255,7 @@ Teleport UR (You may cast this card for its teleport cost while you’re looking
             <colors>UR</colors>
             <coloridentity>UR</coloridentity>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Redistribution%20Command.jpg">T2170</set>
         <related>Mech</related>
         <tablerow>3</tablerow>
     </card>
@@ -4273,7 +4273,7 @@ Teleport UR (You may cast this card for its teleport cost while you’re looking
             <coloridentity>BG</coloridentity>
             <pt>3/2</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Sewer%20Dredgers.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -4290,7 +4290,7 @@ Teleport UR (You may cast this card for its teleport cost while you’re looking
             <coloridentity>BG</coloridentity>
             <pt>4/4</pt>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Titan%20of%20Shisuku%20Sewers.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -4308,7 +4308,7 @@ Whenever Acquisitor Delwani deals combat damage to a player, arm each Rebel crea
             <coloridentity>RW</coloridentity>
             <pt>2/3</pt>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Acquisitor%20Delwani.jpg">T2170</set>
         <related count="x">Equipment</related>
         <tablerow>2</tablerow>
     </card>
@@ -4326,11 +4326,11 @@ Whenever Acquisitor Delwani deals combat damage to a player, arm each Rebel crea
             <coloridentity>RW</coloridentity>
             <pt>2/2</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Rangor%20Irregulars.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
-        <name>Maleck Umida Division Head</name>
+        <name>Maleck, Umida Division Head</name>
         <text>At the beginning of your draw step, you may draw an additional card. If you do, skip each main phase this turn.</text>
         <prop>
             <layout>normal</layout>
@@ -4343,7 +4343,7 @@ Whenever Acquisitor Delwani deals combat damage to a player, arm each Rebel crea
             <coloridentity>GU</coloridentity>
             <pt>1/1</pt>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Maleck%20Umida%20Division%20Head.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -4362,7 +4362,7 @@ Flying
             <coloridentity>GU</coloridentity>
             <pt>2/2</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Troposphere%20Drifter.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -4379,7 +4379,7 @@ Flying
             <coloridentity>BGU</coloridentity>
             <loyalty>3</loyalty>
         </prop>
-        <set rarity="mythic rare">T2170</set>
+        <set rarity="mythic rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Umida%20Koto.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -4395,7 +4395,7 @@ Whenever The Aion enters the battlefield or attacks, shuffle four cards from you
             <cmc>7</cmc>
             <pt>6/6</pt>
         </prop>
-        <set rarity="mythic rare">T2170</set>
+        <set rarity="mythic rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/The%20Aion.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -4410,7 +4410,7 @@ Equip 2</text>
             <manacost>1</manacost>
             <cmc>1</cmc>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Chameleon%20Suit.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -4425,7 +4425,7 @@ Sacrifice Faraday Transmitter: Return target artifact to its owner’s hand.</te
             <manacost>3</manacost>
             <cmc>3</cmc>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Faraday%20Transmitter.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -4443,7 +4443,7 @@ Sacrifice Faraday Transmitter: Return target artifact to its owner’s hand.</te
             <cmc>5</cmc>
             <pt>3/3</pt>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Formling.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -4459,7 +4459,7 @@ Sacrifice Faraday Transmitter: Return target artifact to its owner’s hand.</te
             <cmc>3</cmc>
             <pt>2/2</pt>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Foundry%20Analyst.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -4477,7 +4477,7 @@ At the beginning of each upkeep, put a charge counter on Gravitic Collector.
             <coloridentity>UR</coloridentity>
             <pt>2/2</pt>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Gravitic%20Collector.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -4492,7 +4492,7 @@ At the beginning of each upkeep, put a charge counter on Gravitic Collector.
             <cmc>7</cmc>
             <pt>5/7</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Hexblade%20Ravager.jpg">T2170</set>
         <related>Equipment</related>
         <tablerow>2</tablerow>
     </card>
@@ -4507,7 +4507,7 @@ At the beginning of each upkeep, put a charge counter on Gravitic Collector.
             <manacost>3</manacost>
             <cmc>3</cmc>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Hong%20Wai%20Refinery.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -4522,7 +4522,7 @@ Equip 3</text>
             <manacost>3</manacost>
             <cmc>3</cmc>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Hoverbike.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -4538,7 +4538,7 @@ Teleport 2 (You may cast this card for its teleport cost while you’re looking 
             <manacost>2</manacost>
             <cmc>2</cmc>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Jetpack.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -4553,7 +4553,7 @@ Teleport 0 (You may cast this card for its teleport cost while you’re looking 
             <manacost></manacost>
             <cmc>0</cmc>
         </prop>
-        <set rarity="mythic rare">T2170</set>
+        <set rarity="mythic rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Mox%20Voidstone.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -4567,7 +4567,7 @@ Teleport 0 (You may cast this card for its teleport cost while you’re looking 
             <manacost>3</manacost>
             <cmc>3</cmc>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Museum%20of%20Antiquities.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -4582,7 +4582,7 @@ You may reveal Mutagenic Serum from your opening hand. If you do and you have fe
             <manacost>3</manacost>
             <cmc>3</cmc>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Mutagenic%20Serum.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -4597,7 +4597,7 @@ You may reveal Mutagenic Serum from your opening hand. If you do and you have fe
             <manacost>2</manacost>
             <cmc>2</cmc>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Prophetic%20Lens.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -4612,7 +4612,7 @@ You may reveal Mutagenic Serum from your opening hand. If you do and you have fe
             <cmc>4</cmc>
             <pt>3/3</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Scrapyard%20Construct.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -4627,7 +4627,7 @@ You may reveal Mutagenic Serum from your opening hand. If you do and you have fe
             <cmc>2</cmc>
             <pt>2/2</pt>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Slipstream%20Snapper.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -4643,7 +4643,7 @@ Whenever you cast a spell from your library, if there are 5 or more charge count
             <manacost>2</manacost>
             <cmc>2</cmc>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Subspace%20Capacitor.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -4658,7 +4658,7 @@ T, Remove a charge counter from Surveillance Probes: Target creature you control
             <manacost>2</manacost>
             <cmc>2</cmc>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Surveillance%20Probes.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -4674,7 +4674,7 @@ When you cast Swallowers of Civilization, destroy target permanent.</text>
             <cmc>2</cmc>
             <pt>8/8</pt>
         </prop>
-        <set rarity="mythic rare">T2170</set>
+        <set rarity="mythic rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Swallowers%20of%20Civilization.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -4690,7 +4690,7 @@ Tap an untapped creature you control: Look at the top card of target player’s 
             <manacost>4</manacost>
             <cmc>4</cmc>
         </prop>
-        <set rarity="uncommon">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Trojan%20Horse.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -4707,7 +4707,7 @@ R/GR/GR/G, T, Sacrifice Adamantium Mine: Scry 2. (R/G can be paid with either R 
             <cmc>0</cmc>
             <coloridentity>RG</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Adamantium%20Mine.jpg">T2170</set>
         <tablerow>0</tablerow>
         <cipt>1</cipt>
     </card>
@@ -4726,7 +4726,7 @@ Scry 2. (G/W can be paid with either G or W.)</text>
             <cmc>0</cmc>
             <coloridentity>GW</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Amanthoid%20Mine.jpg">T2170</set>
         <tablerow>0</tablerow>
         <cipt>1</cipt>
     </card>
@@ -4745,7 +4745,7 @@ Scry 2. (U/R can be paid with either U or R.)</text>
             <cmc>0</cmc>
             <coloridentity>UR</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Antimatter%20Mine.jpg">T2170</set>
         <tablerow>0</tablerow>
         <cipt>1</cipt>
     </card>
@@ -4762,7 +4762,7 @@ T: Add C.
             <manacost></manacost>
             <cmc>0</cmc>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Distant%20Colony.jpg">T2170</set>
         <tablerow>0</tablerow>
     </card>
     <card>
@@ -4780,7 +4780,7 @@ Scry 2. (B/R can be paid with either B or R.)</text>
             <cmc>0</cmc>
             <coloridentity>BR</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Hexaferrum%20Mine.jpg">T2170</set>
         <tablerow>0</tablerow>
         <cipt>1</cipt>
     </card>
@@ -4798,7 +4798,7 @@ Scry 2. (B/R can be paid with either B or R.)</text>
             <manacost></manacost>
             <cmc>0</cmc>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Hong%20Wai%20Factory.jpg">T2170</set>
         <tablerow>0</tablerow>
     </card>
     <card>
@@ -4816,7 +4816,7 @@ Scry 2. (W/U can be paid with either W or U.)</text>
             <cmc>0</cmc>
             <coloridentity>WU</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Hydromiel%20Mine.jpg">T2170</set>
         <tablerow>0</tablerow>
         <cipt>1</cipt>
     </card>
@@ -4835,7 +4835,7 @@ Scry 2. (U/B can be paid with either U or B.)</text>
             <cmc>0</cmc>
             <coloridentity>UB</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Hyperium%20Mine.jpg">T2170</set>
         <tablerow>0</tablerow>
         <cipt>1</cipt>
     </card>
@@ -4853,7 +4853,7 @@ WUBRG, T, Sacrifice The Martian Lens: Search your library for any number of land
             <cmc>0</cmc>
             <coloridentity>WUBRG</coloridentity>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/The%20Martian%20Lens.jpg">T2170</set>
         <tablerow>0</tablerow>
         <cipt>1</cipt>
     </card>
@@ -4872,7 +4872,7 @@ Scry 2. (B/G can be paid with either B or G.)</text>
             <cmc>0</cmc>
             <coloridentity>BG</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Mercurite%20Mine.jpg">T2170</set>
         <tablerow>0</tablerow>
         <cipt>1</cipt>
     </card>
@@ -4891,7 +4891,7 @@ Scry 2. (R/W can be paid with either R or W.)</text>
             <cmc>0</cmc>
             <coloridentity>RW</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Orichalcix%20Mine.jpg">T2170</set>
         <tablerow>0</tablerow>
         <cipt>1</cipt>
     </card>
@@ -4910,7 +4910,7 @@ Scry 2. (G/U can be paid with either G or U.)</text>
             <cmc>0</cmc>
             <coloridentity>GU</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Quadrinix%20Mine.jpg">T2170</set>
         <tablerow>0</tablerow>
         <cipt>1</cipt>
     </card>
@@ -4929,7 +4929,7 @@ Scry 2. (W/B can be paid with either W or B.)</text>
             <cmc>0</cmc>
             <coloridentity>WB</coloridentity>
         </prop>
-        <set rarity="common">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Siderite%20Mine.jpg">T2170</set>
         <tablerow>0</tablerow>
         <cipt>1</cipt>
     </card>
@@ -4945,7 +4945,7 @@ T, Pay 1 life: Add one mana of any color. Activate this ability only if you cont
             <manacost></manacost>
             <cmc>0</cmc>
         </prop>
-        <set rarity="rare">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Spire%20of%20Industry.jpg">T2170</set>
         <tablerow>0</tablerow>
     </card>
     </cards>
