@@ -43,6 +43,7 @@ export default function SingleDraft({ loggedInUser }) {
                               booster && booster.pickNumber ? `, Pick ${booster.pickNumber}` : ""
                           }`
                         : ""}
+                    {draft && draft.status === DRAFT_STATUSES.COMPLETE ? " Complete!" : ""}
                 </h1>
                 {draft && <PlayerList />}
                 <MainView />
@@ -144,7 +145,10 @@ export default function SingleDraft({ loggedInUser }) {
     function DeckView() {
         return (
             <div className="deck-view">
-                <h1>Deck</h1>
+                <h1>
+                    Deck{" "}
+                    <small>({flattenDeep(piles.deckRow0).length + flattenDeep(piles.deckRow1).length} cards)</small>
+                </h1>
                 <div className="row">
                     {piles.deckRow0.map((pile, pileIndex) => (
                         <div
@@ -156,7 +160,10 @@ export default function SingleDraft({ loggedInUser }) {
                                 <div
                                     key={pickIndex}
                                     className="card"
-                                    style={{ top: `${pickIndex * 1.85}vw`, height: `${pickIndex === pile.length - 1 ? 16.664 : 1.85}vw` }}
+                                    style={{
+                                        top: `${pickIndex * 1.85}vw`,
+                                        height: `${pickIndex === pile.length - 1 ? 16.664 : 1.85}vw`,
+                                    }}
                                     onClick={() => moveToCreatureSideboard(pileIndex, pickIndex)}
                                 >
                                     <img src={pick.imageName} loading="lazy" />
@@ -176,7 +183,10 @@ export default function SingleDraft({ loggedInUser }) {
                                 <div
                                     key={pickIndex}
                                     className="card"
-                                    style={{ top: `${pickIndex * 1.85}vw`, height: `${pickIndex === pile.length - 1 ? 16.664 : 1.85}vw` }}
+                                    style={{
+                                        top: `${pickIndex * 1.85}vw`,
+                                        height: `${pickIndex === pile.length - 1 ? 16.664 : 1.85}vw`,
+                                    }}
                                     onClick={() => moveToNonCreatureSideboard(pileIndex, pickIndex)}
                                 >
                                     <img src={pick.imageName} loading="lazy" />
@@ -185,7 +195,12 @@ export default function SingleDraft({ loggedInUser }) {
                         </div>
                     ))}
                 </div>
-                <h1>Sideboard</h1>
+                <h1>
+                    Sideboard{" "}
+                    <small>
+                        ({flattenDeep(piles.sideboardRow0).length + flattenDeep(piles.sideboardRow1).length} cards)
+                    </small>
+                </h1>
                 <div className="row">
                     {piles.sideboardRow0.map((pile, pileIndex) => (
                         <div
@@ -197,7 +212,10 @@ export default function SingleDraft({ loggedInUser }) {
                                 <div
                                     key={pickIndex}
                                     className="card"
-                                    style={{ top: `${pickIndex * 1.85}vw`, height: `${pickIndex === pile.length - 1 ? 16.664 : 1.85}vw` }}
+                                    style={{
+                                        top: `${pickIndex * 1.85}vw`,
+                                        height: `${pickIndex === pile.length - 1 ? 16.664 : 1.85}vw`,
+                                    }}
                                     onClick={() => moveToCreatureDeck(pileIndex, pickIndex)}
                                 >
                                     <img src={pick.imageName} loading="lazy" />
@@ -217,7 +235,10 @@ export default function SingleDraft({ loggedInUser }) {
                                 <div
                                     key={pickIndex}
                                     className="card"
-                                    style={{ top: `${pickIndex * 1.85}vw`, height: `${pickIndex === pile.length - 1 ? 16.664 : 1.85}vw` }}
+                                    style={{
+                                        top: `${pickIndex * 1.85}vw`,
+                                        height: `${pickIndex === pile.length - 1 ? 16.664 : 1.85}vw`,
+                                    }}
                                     onClick={() => moveToNonCreatureDeck(pileIndex, pickIndex)}
                                 >
                                     <img src={pick.imageName} loading="lazy" />
@@ -260,6 +281,9 @@ export default function SingleDraft({ loggedInUser }) {
 
                     case DRAFT_STATUSES.COMPLETE:
                         setDraft(responseDraft);
+                        if (!picksLoadedBefore) {
+                            getPicks();
+                        }
                         break;
 
                     default:
@@ -314,7 +338,7 @@ export default function SingleDraft({ loggedInUser }) {
                 } else {
                     piles.deckRow1[column].push(submittedCard);
                 }
-                setPiles({...piles});
+                setPiles({ ...piles });
                 updateCookie(piles);
                 getDraft();
             },
@@ -393,28 +417,28 @@ export default function SingleDraft({ loggedInUser }) {
     function moveToCreatureSideboard(column, row) {
         piles.sideboardRow0[column].push(piles.deckRow0[column][row]);
         piles.deckRow0[column].splice(row, 1);
-        setPiles({...piles});
+        setPiles({ ...piles });
         updateCookie(piles);
     }
 
     function moveToNonCreatureSideboard(column, row) {
         piles.sideboardRow1[column].push(piles.deckRow1[column][row]);
         piles.deckRow1[column].splice(row, 1);
-        setPiles({...piles});
+        setPiles({ ...piles });
         updateCookie(piles);
     }
 
     function moveToCreatureDeck(column, row) {
         piles.deckRow0[column].push(piles.sideboardRow0[column][row]);
         piles.sideboardRow0[column].splice(row, 1);
-        setPiles({...piles});
+        setPiles({ ...piles });
         updateCookie(piles);
     }
 
     function moveToNonCreatureDeck(column, row) {
         piles.deckRow1[column].push(piles.sideboardRow1[column][row]);
         piles.sideboardRow1[column].splice(row, 1);
-        setPiles({...piles});
+        setPiles({ ...piles });
         updateCookie(piles);
     }
 }
