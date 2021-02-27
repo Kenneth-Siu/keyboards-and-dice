@@ -31,6 +31,8 @@ export class Bot {
             card.power += this.getBoostFromColorPreference(card);
         });
 
+        console.log(cards);
+
         const pick = maxBy(cards, (card) => card.power);
 
         return boosterCards.find((card) => card.cardId === pick.id);
@@ -41,8 +43,11 @@ export class Bot {
         const colorWeightings = cardColors.map(
             (color) => this.colorPreferences.find((pref) => pref.color === color).weighting
         );
-
-        return Math.min(...colorWeightings);
+        if (colorWeightings.length) {
+            return Math.min(...colorWeightings);
+        } else {
+            return 0;
+        }
     }
 
     getBasePower(card) {
