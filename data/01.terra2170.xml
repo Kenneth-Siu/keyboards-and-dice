@@ -643,7 +643,7 @@ Equip 2</text>
         <tablerow>1</tablerow>
     </card>
     <card>
-        <name>Raise the Alarm</name>
+        <name>Raise the Siren</name>
         <text>Create two 1/1 white Military creature tokens.</text>
         <prop>
             <layout>normal</layout>

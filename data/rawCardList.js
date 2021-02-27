@@ -25,7 +25,7 @@ import _23 from "./cardImages/Mongrel Companion.jpg";
 import _24 from "./cardImages/Observation Blimp.jpg";
 import _25 from "./cardImages/Personal Forcefield.jpg";
 import _26 from "./cardImages/Police Badge.jpg";
-import _27 from "./cardImages/Raise the Alarm.jpg";
+import _27 from "./cardImages/Raise the Siren.jpg";
 import _28 from "./cardImages/Rangor Watchmen.jpg";
 import _29 from "./cardImages/Reconnaisance Mule.jpg";
 import _30 from "./cardImages/Remote Paralyzer.jpg";
@@ -657,7 +657,7 @@ colorIdentity: "W"
         }
     },
     {
-        "name": "Raise the Alarm",
+        "name": "Raise the Siren",
         "imageName": _27,
         "cost": "1W",
         "manaValue": 2,
