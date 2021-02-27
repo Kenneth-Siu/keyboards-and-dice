@@ -27,6 +27,7 @@ script:
 		"        \"name\": \"{card.name}\",\n"
 		+"        \"imageName\": _{cardNumber},\n"
 		+"        \"cost\": \"{card.casting_cost}\",\n"
+		+"        \"manaValue\": {card.cmc},\n"
 		+"        \"color\": \"{colorFilter(card.casting_cost)}\",\n"
 		+"        \"type\": \"{card.type}\",\n"
 		+"        \"id\": {cardNumber},\n"
