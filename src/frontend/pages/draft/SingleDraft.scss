@@ -29,7 +29,7 @@
         margin-bottom: 0.8rem;
 
         &.ready-to-start {
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
         }
 
         &.draft-in-progress {
@@ -60,7 +60,7 @@
     p {
         margin-right: auto;
         margin-left: auto;
-        margin-bottom: 2.2rem;
+        margin-bottom: 1.2rem;
         width: 98%;
         line-height: 1.4rem;
     }
@@ -218,29 +218,84 @@
     .deck-view {
         position: relative;
 
+        .deck-heading {
+            width: 98%;
+            display: inline-flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 0.1rem;
+            margin-bottom: 1rem;
+
+            h1 {
+                margin: 0;
+            }
+        }
+
+        .basics-control-panel {
+            display: flex;
+            align-items: center;
+
+            .basic-control {
+                display: flex;
+                align-items: center;
+                margin: 0 0.2rem;
+                button {
+                    border: none;
+                    background: none;
+                    padding: 0;
+                    line-height: 0;
+                    font-size: 1rem;
+                    cursor: pointer;
+
+                    &:disabled {
+                        opacity: 0.8;
+                        cursor: default;
+                    }
+                }
+
+                .symbol-div {
+                    position: relative;
+                    height: 1.3rem;
+                    width: 1.3rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                    margin: 0 0.1rem;
+                }
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+
+                    &.fade {
+                        opacity: 0.2;
+                    }
+                }
+            }
+        }
+
         .copy-deck-button {
-            position: absolute;
-            right: 1vw;
-            top: 0;
             font-size: 0.8rem;
             font-weight: 600;
-            padding: 0.3rem 0.6rem;
+            padding: 0.4rem 0.6rem;
             color: $color-1;
             border: 2px solid $color-1;
             background: none;
             border-radius: 2rem;
             line-height: 1;
             margin: 0 0.4rem;
+            width: 10.25rem;
             cursor: pointer;
-    
+
             &.deck-copied {
                 opacity: 0.2;
             }
         }
-        h1 {
-            text-align: left;
-            margin-left: 1vw;
-        }
+
         .row {
             display: inline-flex;
             justify-content: flex-start;

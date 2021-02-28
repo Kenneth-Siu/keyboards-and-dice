@@ -5,11 +5,23 @@ import LoadingSpinner from "../../components/loadingSpinner/LoadingSpinner.js";
 import { getCard } from "../../../shared/cardList";
 import * as DraftsApi from "../../api/DraftsApi.js";
 import "./SingleDraft.scss";
-import { MdChevronLeft, MdChevronRight, MdContentCopy, MdRefresh } from "react-icons/md";
+import {
+    MdAddCircleOutline,
+    MdChevronLeft,
+    MdChevronRight,
+    MdContentCopy,
+    MdRefresh,
+    MdRemoveCircleOutline,
+} from "react-icons/md";
 import copy from "copy-to-clipboard";
 import { asyncTry } from "../../helpers/asyncTry";
 import PlayerPill from "../../components/playerPill/PlayerPill";
 import { flattenDeep } from "lodash";
+import whiteManaSymbol from "../../../../data/whiteManaSymbol.svg";
+import blueManaSymbol from "../../../../data/blueManaSymbol.svg";
+import blackManaSymbol from "../../../../data/blackManaSymbol.svg";
+import redManaSymbol from "../../../../data/redManaSymbol.svg";
+import greenManaSymbol from "../../../../data/greenManaSymbol.svg";
 
 export default function SingleDraft({ loggedInUser }) {
     const { draftId } = useParams();
@@ -27,6 +39,11 @@ export default function SingleDraft({ loggedInUser }) {
     const [picksBusy, setPicksBusy] = useState(false);
     const [selectedCardIndex, setSelectedCardIndex] = useState(null);
     const [deckCopied, setDeckCopied] = useState(false);
+    const [numberOfPlains, setNumberOfPlains] = useState(0);
+    const [numberOfIslands, setNumberOfIslands] = useState(0);
+    const [numberOfSwamps, setNumberOfSwamps] = useState(0);
+    const [numberOfMountains, setNumberOfMountains] = useState(0);
+    const [numberOfForests, setNumberOfForests] = useState(0);
     useEffect(getDraft, []);
 
     function isBusy() {
@@ -143,18 +160,100 @@ export default function SingleDraft({ loggedInUser }) {
         );
     }
 
+    function BasicLandControl({ iconUrl, landState, setLandState }) {
+        return (
+            <div className="basic-control">
+                <button onClick={() => setLandState(landState - 1)} disabled={landState <= 0}>
+                    <MdRemoveCircleOutline />
+                </button>
+                <div className="symbol-div">
+                    <img src={iconUrl} className={landState > 0 ? "fade" : ""} />
+                    {landState > 0 ? landState : ""}
+                </div>
+                <button onClick={() => setLandState(landState + 1)}>
+                    <MdAddCircleOutline />
+                </button>
+            </div>
+        );
+    }
+
+    function setPlains(num) {
+        setNumberOfPlains(num);
+        updateCookie(piles, [num, numberOfIslands, numberOfSwamps, numberOfMountains, numberOfForests]);
+    }
+
+    function setIslands(num) {
+        setNumberOfIslands(num);
+        updateCookie(piles, [numberOfPlains, num, numberOfSwamps, numberOfMountains, numberOfForests]);
+    }
+
+    function setSwamps(num) {
+        setNumberOfSwamps(num);
+        updateCookie(piles, [numberOfPlains, numberOfIslands, num, numberOfMountains, numberOfForests]);
+    }
+
+    function setMountains(num) {
+        setNumberOfMountains(num);
+        updateCookie(piles, [numberOfPlains, numberOfIslands, numberOfSwamps, num, numberOfForests]);
+    }
+
+    function setForests(num) {
+        setNumberOfForests(num);
+        updateCookie(piles, [numberOfPlains, numberOfIslands, numberOfSwamps, numberOfMountains, num]);
+    }
+
+    function totalBasics() {
+        return numberOfPlains + numberOfIslands + numberOfSwamps + numberOfMountains + numberOfForests;
+    }
+
     function DeckView() {
         return (
             <div className="deck-view">
-                {draft.status === DRAFT_STATUSES.COMPLETE && (
-                    <button className={`copy-deck-button${deckCopied ? " deck-copied" : ""}`} onClick={copyDeck}>
-                        {deckCopied ? "Deck copied!" : "Copy deck to clipboard"}
-                    </button>
-                )}
-                <h1>
-                    Deck{" "}
-                    <small>({flattenDeep(piles.deckRow0).length + flattenDeep(piles.deckRow1).length} cards)</small>
-                </h1>
+                <div className="deck-heading">
+                    <h1>
+                        Deck{" "}
+                        <small>
+                            ({flattenDeep(piles.deckRow0).length + flattenDeep(piles.deckRow1).length} cards
+                            {totalBasics() > 0 ? `, ${totalBasics()} basics` : ""})
+                        </small>
+                    </h1>
+                    {draft.status === DRAFT_STATUSES.COMPLETE && (
+                        <div className="basics-control-panel">
+                            Basic lands:
+                            <BasicLandControl
+                                iconUrl={whiteManaSymbol}
+                                landState={numberOfPlains}
+                                setLandState={setPlains}
+                            />
+                            <BasicLandControl
+                                iconUrl={blueManaSymbol}
+                                landState={numberOfIslands}
+                                setLandState={setIslands}
+                            />
+                            <BasicLandControl
+                                iconUrl={blackManaSymbol}
+                                landState={numberOfSwamps}
+                                setLandState={setSwamps}
+                            />
+                            <BasicLandControl
+                                iconUrl={redManaSymbol}
+                                landState={numberOfMountains}
+                                setLandState={setMountains}
+                            />
+                            <BasicLandControl
+                                iconUrl={greenManaSymbol}
+                                landState={numberOfForests}
+                                setLandState={setForests}
+                            />
+                        </div>
+                    )}
+                    {draft.status === DRAFT_STATUSES.COMPLETE && (
+                        <button className={`copy-deck-button${deckCopied ? " deck-copied" : ""}`} onClick={copyDeck}>
+                            {deckCopied ? "Deck copied!" : "Copy deck to clipboard"}
+                        </button>
+                    )}
+                </div>
+
                 <div className="row">
                     {piles.deckRow0.map((pile, pileIndex) => (
                         <div
@@ -265,6 +364,21 @@ export default function SingleDraft({ loggedInUser }) {
         const mainBoard = [...flattenDeep(piles.deckRow0), ...flattenDeep(piles.deckRow1)].map(
             (card) => `1 ${card.name}`
         );
+        if (numberOfPlains) {
+            mainBoard.push(`${numberOfPlains} Plains`);
+        }
+        if (numberOfIslands) {
+            mainBoard.push(`${numberOfIslands} Island`);
+        }
+        if (numberOfSwamps) {
+            mainBoard.push(`${numberOfSwamps} Swamp`);
+        }
+        if (numberOfMountains) {
+            mainBoard.push(`${numberOfMountains} Mountain`);
+        }
+        if (numberOfForests) {
+            mainBoard.push(`${numberOfForests} Forest`);
+        }
         const sideBoard = [...flattenDeep(piles.sideboardRow0), ...flattenDeep(piles.sideboardRow1)].map(
             (card) => `1 ${card.name}`
         );
@@ -371,12 +485,13 @@ export default function SingleDraft({ loggedInUser }) {
         );
     }
 
-    function updateCookie(pileToUse) {
+    function updateCookie(pileToUse, lands) {
         const cookiePiles = {
             deckRow0: pileToUse.deckRow0.map((column) => column.map((card) => card.id)),
             deckRow1: pileToUse.deckRow1.map((column) => column.map((card) => card.id)),
             sideboardRow0: pileToUse.sideboardRow0.map((column) => column.map((card) => card.id)),
             sideboardRow1: pileToUse.sideboardRow1.map((column) => column.map((card) => card.id)),
+            lands: lands,
         };
         document.cookie = `draft-${draftId}=${JSON.stringify(cookiePiles)}`;
     }
@@ -408,6 +523,14 @@ export default function SingleDraft({ loggedInUser }) {
             sideboardRow0: jsonPiles.sideboardRow0.map((column) => column.map((cardId) => getCard(cardId))),
             sideboardRow1: jsonPiles.sideboardRow1.map((column) => column.map((cardId) => getCard(cardId))),
         };
+        const lands = jsonPiles.lands;
+        if (lands) {
+            setNumberOfPlains(lands[0]);
+            setNumberOfIslands(lands[1]);
+            setNumberOfSwamps(lands[2]);
+            setNumberOfMountains(lands[3]);
+            setNumberOfForests(lands[4]);
+        }
 
         // Figure out missing cards
         const cookieCards = [
