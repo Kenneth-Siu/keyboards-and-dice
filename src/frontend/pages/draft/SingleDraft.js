@@ -177,6 +177,95 @@ export default function SingleDraft({ loggedInUser }) {
         );
     }
 
+    function DeckView() {
+        return (
+            <div className="deck-view">
+                <div className="deck-heading">
+                    <h1>
+                        Deck{" "}
+                        <small>
+                            ({flattenDeep(piles.deckRow0).length + flattenDeep(piles.deckRow1).length} cards
+                            {totalBasics() > 0 ? `, ${totalBasics()} basics` : ""})
+                        </small>
+                    </h1>
+                    {draft.status === DRAFT_STATUSES.COMPLETE && (
+                        <>
+                            <BasicsControlPanel />
+                            <CopyDeckButton />
+                        </>
+                    )}
+                </div>
+                <CardRow row={piles.deckRow0} cardOnClick={moveToCreatureSideboard} />
+                <CardRow row={piles.deckRow1} cardOnClick={moveToNonCreatureSideboard} />
+                <div className="deck-heading">
+                    <h1>
+                        Sideboard{" "}
+                        <small>
+                            ({flattenDeep(piles.sideboardRow0).length + flattenDeep(piles.sideboardRow1).length} cards)
+                        </small>
+                    </h1>
+                </div>
+                <CardRow row={piles.sideboardRow0} cardOnClick={moveToCreatureDeck} />
+                <CardRow row={piles.sideboardRow1} cardOnClick={moveToNonCreatureDeck} />
+            </div>
+        );
+    }
+
+    function BasicsControlPanel() {
+        return (
+            <div className="basics-control-panel">
+                Basic lands:
+                <BasicLandControl iconUrl={whiteManaSymbol} landState={numberOfPlains} setLandState={setPlains} />
+                <BasicLandControl iconUrl={blueManaSymbol} landState={numberOfIslands} setLandState={setIslands} />
+                <BasicLandControl iconUrl={blackManaSymbol} landState={numberOfSwamps} setLandState={setSwamps} />
+                <BasicLandControl iconUrl={redManaSymbol} landState={numberOfMountains} setLandState={setMountains} />
+                <BasicLandControl iconUrl={greenManaSymbol} landState={numberOfForests} setLandState={setForests} />
+            </div>
+        );
+    }
+
+    function CopyDeckButton() {
+        return (
+            <button className={`copy-deck-button${deckCopied ? " deck-copied" : ""}`} onClick={copyDeck}>
+                {deckCopied ? "Deck copied!" : "Copy deck to clipboard"}
+            </button>
+        );
+    }
+
+    function CardRow({ row, cardOnClick }) {
+        const nameBarHeight = 1.85;
+        const cardHeight = 16.664;
+        return (
+            <div className="card-row">
+                {row.map((pile, pileIndex) => (
+                    <div
+                        key={pileIndex}
+                        className="column"
+                        style={{ height: `${Math.max(0, pile.length - 1) * nameBarHeight + cardHeight}vw` }}
+                    >
+                        {pile.map((pick, pickIndex) => (
+                            <div
+                                key={pickIndex}
+                                className="card"
+                                style={{
+                                    top: `${pickIndex * nameBarHeight}vw`,
+                                    height: `${pickIndex === pile.length - 1 ? cardHeight : nameBarHeight}vw`,
+                                }}
+                                onClick={() => cardOnClick(pileIndex, pickIndex)}
+                            >
+                                <img src={pick.imageName} loading="lazy" />
+                            </div>
+                        ))}
+                    </div>
+                ))}
+            </div>
+        );
+    }
+
+    function Chevron() {
+        return draft.packNumber === 2 ? <MdChevronRight /> : <MdChevronLeft />;
+    }
+
     function setPlains(num) {
         setNumberOfPlains(num);
         updateCookie(piles, [num, numberOfIslands, numberOfSwamps, numberOfMountains, numberOfForests]);
@@ -204,160 +293,6 @@ export default function SingleDraft({ loggedInUser }) {
 
     function totalBasics() {
         return numberOfPlains + numberOfIslands + numberOfSwamps + numberOfMountains + numberOfForests;
-    }
-
-    function DeckView() {
-        return (
-            <div className="deck-view">
-                <div className="deck-heading">
-                    <h1>
-                        Deck{" "}
-                        <small>
-                            ({flattenDeep(piles.deckRow0).length + flattenDeep(piles.deckRow1).length} cards
-                            {totalBasics() > 0 ? `, ${totalBasics()} basics` : ""})
-                        </small>
-                    </h1>
-                    {draft.status === DRAFT_STATUSES.COMPLETE && (
-                        <div className="basics-control-panel">
-                            Basic lands:
-                            <BasicLandControl
-                                iconUrl={whiteManaSymbol}
-                                landState={numberOfPlains}
-                                setLandState={setPlains}
-                            />
-                            <BasicLandControl
-                                iconUrl={blueManaSymbol}
-                                landState={numberOfIslands}
-                                setLandState={setIslands}
-                            />
-                            <BasicLandControl
-                                iconUrl={blackManaSymbol}
-                                landState={numberOfSwamps}
-                                setLandState={setSwamps}
-                            />
-                            <BasicLandControl
-                                iconUrl={redManaSymbol}
-                                landState={numberOfMountains}
-                                setLandState={setMountains}
-                            />
-                            <BasicLandControl
-                                iconUrl={greenManaSymbol}
-                                landState={numberOfForests}
-                                setLandState={setForests}
-                            />
-                        </div>
-                    )}
-                    {draft.status === DRAFT_STATUSES.COMPLETE && (
-                        <button className={`copy-deck-button${deckCopied ? " deck-copied" : ""}`} onClick={copyDeck}>
-                            {deckCopied ? "Deck copied!" : "Copy deck to clipboard"}
-                        </button>
-                    )}
-                </div>
-
-                <div className="row">
-                    {piles.deckRow0.map((pile, pileIndex) => (
-                        <div
-                            key={pileIndex}
-                            className="column"
-                            style={{ height: `${Math.max(0, pile.length - 1) * 1.85 + 16.664}vw` }}
-                        >
-                            {pile.map((pick, pickIndex) => (
-                                <div
-                                    key={pickIndex}
-                                    className="card"
-                                    style={{
-                                        top: `${pickIndex * 1.85}vw`,
-                                        height: `${pickIndex === pile.length - 1 ? 16.664 : 1.85}vw`,
-                                    }}
-                                    onClick={() => moveToCreatureSideboard(pileIndex, pickIndex)}
-                                >
-                                    <img src={pick.imageName} loading="lazy" />
-                                </div>
-                            ))}
-                        </div>
-                    ))}
-                </div>
-                <div className="row">
-                    {piles.deckRow1.map((pile, pileIndex) => (
-                        <div
-                            key={pileIndex}
-                            className="column"
-                            style={{ height: `${Math.max(0, pile.length - 1) * 1.85 + 16.664}vw` }}
-                        >
-                            {pile.map((pick, pickIndex) => (
-                                <div
-                                    key={pickIndex}
-                                    className="card"
-                                    style={{
-                                        top: `${pickIndex * 1.85}vw`,
-                                        height: `${pickIndex === pile.length - 1 ? 16.664 : 1.85}vw`,
-                                    }}
-                                    onClick={() => moveToNonCreatureSideboard(pileIndex, pickIndex)}
-                                >
-                                    <img src={pick.imageName} loading="lazy" />
-                                </div>
-                            ))}
-                        </div>
-                    ))}
-                </div>
-                <h1>
-                    Sideboard{" "}
-                    <small>
-                        ({flattenDeep(piles.sideboardRow0).length + flattenDeep(piles.sideboardRow1).length} cards)
-                    </small>
-                </h1>
-                <div className="row">
-                    {piles.sideboardRow0.map((pile, pileIndex) => (
-                        <div
-                            key={pileIndex}
-                            className="column"
-                            style={{ height: `${Math.max(0, pile.length - 1) * 1.85 + 16.664}vw` }}
-                        >
-                            {pile.map((pick, pickIndex) => (
-                                <div
-                                    key={pickIndex}
-                                    className="card"
-                                    style={{
-                                        top: `${pickIndex * 1.85}vw`,
-                                        height: `${pickIndex === pile.length - 1 ? 16.664 : 1.85}vw`,
-                                    }}
-                                    onClick={() => moveToCreatureDeck(pileIndex, pickIndex)}
-                                >
-                                    <img src={pick.imageName} loading="lazy" />
-                                </div>
-                            ))}
-                        </div>
-                    ))}
-                </div>
-                <div className="row">
-                    {piles.sideboardRow1.map((pile, pileIndex) => (
-                        <div
-                            key={pileIndex}
-                            className="column"
-                            style={{ height: `${Math.max(0, pile.length - 1) * 1.85 + 16.664}vw` }}
-                        >
-                            {pile.map((pick, pickIndex) => (
-                                <div
-                                    key={pickIndex}
-                                    className="card"
-                                    style={{
-                                        top: `${pickIndex * 1.85}vw`,
-                                        height: `${pickIndex === pile.length - 1 ? 16.664 : 1.85}vw`,
-                                    }}
-                                    onClick={() => moveToNonCreatureDeck(pileIndex, pickIndex)}
-                                >
-                                    <img src={pick.imageName} loading="lazy" />
-                                </div>
-                            ))}
-                        </div>
-                    ))}
-                </div>
-            </div>
-        );
-    }
-
-    function Chevron() {
-        return draft.packNumber === 2 ? <MdChevronRight /> : <MdChevronLeft />;
     }
 
     function copyDeck() {
