@@ -2,6 +2,15 @@
 @import "../../components/colors.scss";
 @import "../../components/navBar/NavBar.scss";
 
+@mixin bigButton {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 0.4rem 0.8rem;
+    color: $color-2;
+    background-color: $color-5-strong;
+    margin: 0 0.4rem;
+}
+
 .single-draft-page {
     @include navBarPageTopPadding;
     padding-bottom: 0.5rem;
@@ -51,21 +60,6 @@
         }
     }
 
-    .invite-your-friends {
-        margin-right: auto;
-        margin-left: auto;
-        margin-bottom: 1.2rem;
-        width: 98%;
-        line-height: 1.4rem;
-    }
-
-    .mono-space {
-        font-family: monospace;
-        font-size: 1rem;
-        padding: 0.1rem 0;
-        margin-left: 0.2rem;
-    }
-
     .copy {
         position: absolute;
         font-size: 1rem;
@@ -82,23 +76,8 @@
         }
     }
 
-    .start-draft,
     .submit-pick {
-        font-size: 1.4rem;
-        font-weight: 600;
-        padding: 0.4rem 0.8rem;
-        color: $color-2;
-        border: none;
-        background-color: $color-5-strong;
-        border-radius: 2rem;
-        line-height: 1;
-        margin: 0 0.4rem;
-        cursor: pointer;
-
-        &:disabled {
-            opacity: 0.2;
-            cursor: default;
-        }
+        @include bigButton;
     }
 
     .booster {
@@ -275,11 +254,8 @@
             color: $color-1;
             border: 2px solid $color-1;
             background: none;
-            border-radius: 2rem;
-            line-height: 1;
             margin: 0 0.4rem;
             width: 10.25rem;
-            cursor: pointer;
 
             &.deck-copied {
                 opacity: 0.2;

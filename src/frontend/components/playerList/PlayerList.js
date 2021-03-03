@@ -15,7 +15,7 @@ export function PlayerList({ players, loggedInUser, chevronDirection }) {
                     {chevronDirection && (chevronDirection === CHEVRON_DIRECTION.LEFT || index === 0) && (
                         <Chevron chevronDirection={chevronDirection} />
                     )}
-                    <PlayerPill player={player} loggedInUserId={loggedInUser.id} />
+                    <PlayerPill player={player} />
                     {chevronDirection &&
                         (chevronDirection === CHEVRON_DIRECTION.RIGHT || index === players.length - 1) && (
                             <Chevron chevronDirection={chevronDirection} />
@@ -24,22 +24,22 @@ export function PlayerList({ players, loggedInUser, chevronDirection }) {
             ))}
         </>
     );
-}
 
-function Chevron({ chevronDirection }) {
-    if (chevronDirection === CHEVRON_DIRECTION.LEFT) {
-        return <MdChevronLeft className="player-list-chevron" />;
+    function Chevron({ chevronDirection }) {
+        if (chevronDirection === CHEVRON_DIRECTION.LEFT) {
+            return <MdChevronLeft className="player-list-chevron" />;
+        }
+        if (chevronDirection === CHEVRON_DIRECTION.RIGHT) {
+            return <MdChevronRight className="player-list-chevron" />;
+        }
+        return null;
     }
-    if (chevronDirection === CHEVRON_DIRECTION.RIGHT) {
-        return <MdChevronRight className="player-list-chevron" />;
-    }
-    return null;
-}
 
-function PlayerPill({ player, loggedInUserId }) {
-    return (
-        <span className={`player-pill ${player.userId === loggedInUserId ? "current-user" : ""}`}>
-            {player.displayName}
-        </span>
-    );
+    function PlayerPill({ player }) {
+        return (
+            <span className={`player-pill ${player.userId === loggedInUser.id ? "current-user" : ""}`}>
+                {player.displayName}
+            </span>
+        );
+    }
 }

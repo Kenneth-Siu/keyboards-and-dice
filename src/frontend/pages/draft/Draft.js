@@ -5,7 +5,7 @@ import LoadingSpinner from "../../components/loadingSpinner/LoadingSpinner.js";
 import { getCard } from "../../../shared/cardList";
 import * as DraftsApi from "../../api/DraftsApi.js";
 import "./Draft.scss";
-import { MdAddCircleOutline, MdContentCopy, MdRefresh, MdRemoveCircleOutline } from "react-icons/md";
+import { MdAddCircleOutline, MdRefresh, MdRemoveCircleOutline } from "react-icons/md";
 import copy from "copy-to-clipboard";
 import { asyncTry } from "../../helpers/asyncTry";
 import { flattenDeep } from "lodash";
@@ -16,6 +16,8 @@ import redManaSymbol from "../../../../data/redManaSymbol.svg";
 import greenManaSymbol from "../../../../data/greenManaSymbol.svg";
 import * as CookieHelper from "../../helpers/CookieHelper.js";
 import { CHEVRON_DIRECTION, PlayerList } from "../../components/playerList/PlayerList";
+import { ReadyToStartView } from "./ReadyToStartView";
+import { Button } from "../../components/button/Button";
 
 export default function SingleDraft({ loggedInUser }) {
     const { draftId } = useParams();
@@ -81,7 +83,13 @@ export default function SingleDraft({ loggedInUser }) {
 
     function MainView() {
         if (draftStatus === DRAFT_STATUSES.READY_TO_START) {
-            return <ReadyToStartView />;
+            return (
+                <ReadyToStartView
+                    draftId={draftId}
+                    numberOfBots={Math.max(0, DEFAULT_PLAYERS_IN_DRAFT - playersInSeatOrder.length)}
+                    startDraftCallback={() => getDraft()}
+                />
+            );
         }
         if (draftStatus === DRAFT_STATUSES.COMPLETE) {
             return picksLoading ? <LoadingSpinner /> : <DeckView />;
@@ -90,25 +98,6 @@ export default function SingleDraft({ loggedInUser }) {
             <>
                 {boosterLoading ? <LoadingSpinner /> : boosterCards ? <BoosterView /> : <RefreshButtonView />}
                 {picksLoading ? <LoadingSpinner /> : <DeckView />}
-            </>
-        );
-    }
-
-    function ReadyToStartView() {
-        return (
-            <>
-                <p className="invite-your-friends">
-                    Invite your friends! Send them your draft ID: <span className="mono-space">{draftId}</span>
-                    <button className="copy" aria-label="Copy" onClick={() => copy(draftId)}>
-                        <MdContentCopy />
-                    </button>
-                </p>
-                <button onClick={startDraft} className="start-draft">
-                    Start the draft!
-                    {playersInSeatOrder.length < DEFAULT_PLAYERS_IN_DRAFT
-                        ? ` (With ${DEFAULT_PLAYERS_IN_DRAFT - playersInSeatOrder.length} bots)`
-                        : ""}
-                </button>
             </>
         );
     }
@@ -127,9 +116,9 @@ export default function SingleDraft({ loggedInUser }) {
                         </button>
                     ))}
                 </div>
-                <button onClick={submitPick} className="submit-pick" disabled={selectedCardIndex === null}>
+                <Button onClick={submitPick} className="submit-pick" disabled={selectedCardIndex === null}>
                     Submit Pick
-                </button>
+                </Button>
             </>
         );
     }
@@ -211,9 +200,9 @@ export default function SingleDraft({ loggedInUser }) {
 
     function CopyDeckButton() {
         return (
-            <button className={`copy-deck-button${deckCopied ? " deck-copied" : ""}`} onClick={copyDeck}>
+            <Button className={`copy-deck-button${deckCopied ? " deck-copied" : ""}`} onClick={copyDeck}>
                 {deckCopied ? "Deck copied!" : "Copy deck to clipboard"}
-            </button>
+            </Button>
         );
     }
 
@@ -375,16 +364,6 @@ export default function SingleDraft({ loggedInUser }) {
             () => {
                 setPicksLoading(false);
             }
-        );
-    }
-
-    function startDraft() {
-        asyncTry(
-            async () => {
-                await DraftsApi.startDraft(draftId);
-                getDraft();
-            },
-            () => {}
         );
     }
 

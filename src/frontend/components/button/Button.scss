@@ -1,0 +1,11 @@
+.button {
+    border: none;
+    border-radius: 100rem;
+    line-height: 1;
+    cursor: pointer;
+
+    &:disabled {
+        opacity: 0.2;
+        cursor: default;
+    }
+}
