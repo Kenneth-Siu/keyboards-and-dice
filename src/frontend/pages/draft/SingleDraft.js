@@ -22,12 +22,11 @@ import blueManaSymbol from "../../../../data/blueManaSymbol.svg";
 import blackManaSymbol from "../../../../data/blackManaSymbol.svg";
 import redManaSymbol from "../../../../data/redManaSymbol.svg";
 import greenManaSymbol from "../../../../data/greenManaSymbol.svg";
+import * as CookieHelper from "../../helpers/CookieHelper.js";
 
 export default function SingleDraft({ loggedInUser }) {
     const { draftId } = useParams();
 
-    const [draft, setDraft] = useState(null);
-    const [booster, setBooster] = useState(null);
     const [piles, setPiles] = useState({
         deckRow0: [[], [], [], [], [], [], [], []],
         deckRow1: [[], [], [], [], [], [], [], []],
@@ -35,20 +34,25 @@ export default function SingleDraft({ loggedInUser }) {
         sideboardRow1: [[], [], [], [], [], [], [], []],
     });
     const [picksLoadedBefore, setPicksLoadedBefore] = useState(false);
-    const [draftBusy, setDraftBusy] = useState(true);
-    const [picksBusy, setPicksBusy] = useState(false);
     const [selectedCardIndex, setSelectedCardIndex] = useState(null);
     const [deckCopied, setDeckCopied] = useState(false);
+
     const [numberOfPlains, setNumberOfPlains] = useState(0);
     const [numberOfIslands, setNumberOfIslands] = useState(0);
     const [numberOfSwamps, setNumberOfSwamps] = useState(0);
     const [numberOfMountains, setNumberOfMountains] = useState(0);
     const [numberOfForests, setNumberOfForests] = useState(0);
-    useEffect(getDraft, []);
 
-    function isBusy() {
-        return draftBusy || picksBusy;
-    }
+    const [firstTimeDraftLoading, setFirstTimeDraftLoading] = useState(true);
+    const [boosterLoading, setBoosterLoading] = useState(false);
+    const [picksLoading, setPicksLoading] = useState(false);
+    const [playersInSeatOrder, setPlayersInSeatOrder] = useState([]);
+    const [draftStatus, setDraftStatus] = useState(null);
+    const [boosterCards, setBoosterCards] = useState(null);
+    const [packNumber, setPackNumber] = useState(null);
+    const [pickNumber, setPickNumber] = useState(null);
+
+    useEffect(getDraft, []);
 
     return (
         <>
@@ -56,55 +60,56 @@ export default function SingleDraft({ loggedInUser }) {
             <main className="single-draft-page">
                 <h1>
                     Draft
-                    {draft && draft.status === DRAFT_STATUSES.IN_PROGRESS
-                        ? ` — Pack ${draft.packNumber}${
-                              booster && booster.pickNumber ? `, Pick ${booster.pickNumber}` : ""
-                          }`
+                    {draftStatus === DRAFT_STATUSES.IN_PROGRESS
+                        ? ` — Pack ${packNumber}${pickNumber !== null ? `, Pick ${pickNumber}` : ""}`
                         : ""}
-                    {draft && draft.status === DRAFT_STATUSES.COMPLETE ? " Complete!" : ""}
+                    {draftStatus === DRAFT_STATUSES.COMPLETE ? " Complete!" : ""}
                 </h1>
-                {draft && <PlayerList />}
-                <MainView />
+                {firstTimeDraftLoading ? (
+                    <LoadingSpinner />
+                ) : (
+                    <>
+                        <PlayerList />
+                        <MainView />
+                    </>
+                )}
             </main>
         </>
     );
 
     function MainView() {
-        if (isBusy()) {
-            return <LoadingSpinner />;
-        }
-        if (draft.status === DRAFT_STATUSES.READY_TO_START) {
+        if (draftStatus === DRAFT_STATUSES.READY_TO_START) {
             return <ReadyToStartView />;
         }
-        if (draft.status === DRAFT_STATUSES.COMPLETE) {
-            return <DeckView />;
+        if (draftStatus === DRAFT_STATUSES.COMPLETE) {
+            return picksLoading ? <LoadingSpinner /> : <DeckView />;
         }
         return (
             <>
-                {booster.cards ? <BoosterView /> : <RefreshButtonView />}
-                <DeckView />
+                {boosterLoading ? <LoadingSpinner /> : boosterCards ? <BoosterView /> : <RefreshButtonView />}
+                {picksLoading ? <LoadingSpinner /> : <DeckView />}
             </>
         );
     }
 
     function PlayerList() {
-        const draftInProgress = draft.status === DRAFT_STATUSES.IN_PROGRESS;
+        const isDraftInProgress = draftStatus === DRAFT_STATUSES.IN_PROGRESS;
         return (
-            <div className={`player-list ${draftInProgress ? "draft-in-progress" : "ready-to-start"}`}>
-                {draftInProgress && (
+            <div className={`player-list ${isDraftInProgress ? "draft-in-progress" : "ready-to-start"}`}>
+                {isDraftInProgress && (
                     <PlayerPill
-                        player={draft.sortedPlayers[draft.sortedPlayers.length - 1]}
+                        player={playersInSeatOrder[playersInSeatOrder.length - 1]}
                         loggedInUserId={loggedInUser.id}
                     />
                 )}
-                {draft.sortedPlayers.map((player, index) => (
+                {playersInSeatOrder.map((player, index) => (
                     <React.Fragment key={index}>
-                        {draftInProgress && <Chevron />}
+                        {isDraftInProgress && <Chevron />}
                         <PlayerPill player={player} loggedInUserId={loggedInUser.id} />
                     </React.Fragment>
                 ))}
-                {draftInProgress && <Chevron />}
-                {draftInProgress && <PlayerPill player={draft.sortedPlayers[0]} loggedInUserId={loggedInUser.id} />}
+                {isDraftInProgress && <Chevron />}
+                {isDraftInProgress && <PlayerPill player={playersInSeatOrder[0]} loggedInUserId={loggedInUser.id} />}
             </div>
         );
     }
@@ -114,14 +119,14 @@ export default function SingleDraft({ loggedInUser }) {
             <>
                 <p>
                     Invite your friends! Send them your draft ID: <span className="mono-space">{draftId}</span>
-                    <button className="copy" aria-label="Copy" onClick={() => copy(draft.id)}>
+                    <button className="copy" aria-label="Copy" onClick={() => copy(draftId)}>
                         <MdContentCopy />
                     </button>
                 </p>
                 <button onClick={startDraft} className="start-draft">
                     Start the draft!
-                    {draft.players.length < DEFAULT_PLAYERS_IN_DRAFT
-                        ? ` (With ${DEFAULT_PLAYERS_IN_DRAFT - draft.players.length} bots)`
+                    {playersInSeatOrder.length < DEFAULT_PLAYERS_IN_DRAFT
+                        ? ` (With ${DEFAULT_PLAYERS_IN_DRAFT - playersInSeatOrder.length} bots)`
                         : ""}
                 </button>
             </>
@@ -132,7 +137,7 @@ export default function SingleDraft({ loggedInUser }) {
         return (
             <>
                 <div className="booster">
-                    {booster.cards.map((card, index) => (
+                    {boosterCards.map((card, index) => (
                         <button
                             onClick={() => setSelectedCardIndex(index)}
                             key={index}
@@ -153,7 +158,7 @@ export default function SingleDraft({ loggedInUser }) {
         return (
             <div className="refresh-button-view">
                 <h2>Waiting for others to make their picks...</h2>
-                <button className="refresh-button" aria-label="Refresh" onClick={getDraft} disabled={isBusy()}>
+                <button className="refresh-button" aria-label="Refresh" onClick={getDraft}>
                     <MdRefresh />
                 </button>
             </div>
@@ -188,7 +193,7 @@ export default function SingleDraft({ loggedInUser }) {
                             {totalBasics() > 0 ? `, ${totalBasics()} basics` : ""})
                         </small>
                     </h1>
-                    {draft.status === DRAFT_STATUSES.COMPLETE && (
+                    {draftStatus === DRAFT_STATUSES.COMPLETE && (
                         <>
                             <BasicsControlPanel />
                             <CopyDeckButton />
@@ -263,7 +268,7 @@ export default function SingleDraft({ loggedInUser }) {
     }
 
     function Chevron() {
-        return draft.packNumber === 2 ? <MdChevronRight /> : <MdChevronLeft />;
+        return packNumber === 2 ? <MdChevronRight /> : <MdChevronLeft />;
     }
 
     function setPlains(num) {
@@ -328,31 +333,26 @@ export default function SingleDraft({ loggedInUser }) {
     }
 
     function getDraft() {
-        setDraftBusy(true);
         asyncTry(
             async () => {
                 const responseDraft = await DraftsApi.getDraft(draftId);
-                responseDraft.sortedPlayers = responseDraft.players.sort((a, b) => a.seatNumber - b.seatNumber);
+                setPlayersInSeatOrder(responseDraft.players.sort((a, b) => a.seatNumber - b.seatNumber));
+                setDraftStatus(responseDraft.status);
+                setPackNumber(responseDraft.packNumber);
+                setFirstTimeDraftLoading(false);
 
                 switch (responseDraft.status) {
                     case DRAFT_STATUSES.READY_TO_START:
-                        setDraft(responseDraft);
                         break;
 
                     case DRAFT_STATUSES.IN_PROGRESS:
-                        const responseBooster = await DraftsApi.getBooster(draftId);
-                        if (responseBooster.cards) {
-                            responseBooster.cards = responseBooster.cards.map((cardId) => getCard(cardId));
-                        }
-                        setDraft(responseDraft);
-                        setBooster(responseBooster);
+                        getBooster();
                         if (!picksLoadedBefore) {
                             getPicks();
                         }
                         break;
 
                     case DRAFT_STATUSES.COMPLETE:
-                        setDraft(responseDraft);
                         if (!picksLoadedBefore) {
                             getPicks();
                         }
@@ -361,48 +361,63 @@ export default function SingleDraft({ loggedInUser }) {
                     default:
                         break;
                 }
-                setDraftBusy(false);
             },
             () => {
-                setDraftBusy(false);
+                setBoosterLoading(false);
+            }
+        );
+    }
+
+    function getBooster() {
+        setBoosterLoading(true);
+        asyncTry(
+            async () => {
+                const response = await DraftsApi.getBooster(draftId);
+                if (response.cards) {
+                    setBoosterCards(response.cards.map((cardId) => getCard(cardId)));
+                }
+                if (response.pickNumber !== undefined) {
+                    setPickNumber(response.pickNumber);
+                }
+                setBoosterLoading(false);
+            },
+            () => {
+                setBoosterLoading(false);
             }
         );
     }
 
     function getPicks() {
-        setPicksBusy(true);
+        setPicksLoading(true);
         asyncTry(
             async () => {
                 const responsePicks = await DraftsApi.getPicks(draftId);
                 updatePicksState(responsePicks.map((cardId) => getCard(cardId)));
                 setPicksLoadedBefore(true);
-                setPicksBusy(false);
+                setPicksLoading(false);
             },
             () => {
-                setPicksBusy(false);
+                setPicksLoading(false);
             }
         );
     }
 
     function startDraft() {
-        setDraftBusy(true);
         asyncTry(
             async () => {
                 await DraftsApi.startDraft(draftId);
                 getDraft();
             },
-            () => {
-                setDraftBusy(false);
-            }
+            () => {}
         );
     }
 
     function submitPick() {
-        setDraftBusy(true);
+        setBoosterLoading(true);
         asyncTry(
             async () => {
-                const submittedCard = booster.cards[selectedCardIndex];
-                await DraftsApi.submitPick(draftId, booster.pickNumber, submittedCard.id);
+                const submittedCard = boosterCards[selectedCardIndex];
+                await DraftsApi.submitPick(draftId, pickNumber, submittedCard.id);
                 setSelectedCardIndex(null);
                 const column = submittedCard.manaValue === 0 ? 7 : Math.min(6, submittedCard.manaValue - 1);
                 if (submittedCard.type.includes("Creature")) {
@@ -415,7 +430,7 @@ export default function SingleDraft({ loggedInUser }) {
                 getDraft();
             },
             () => {
-                setDraftBusy(false);
+                setBoosterLoading(false);
             }
         );
     }
@@ -428,37 +443,24 @@ export default function SingleDraft({ loggedInUser }) {
             sideboardRow1: pileToUse.sideboardRow1.map((column) => column.map((card) => card.id)),
             lands: lands,
         };
-        document.cookie = `draft-${draftId}=${JSON.stringify(cookiePiles)}`;
+        CookieHelper.set(`draft-${draftId}`, cookiePiles);
     }
 
     function updatePicksState(cards) {
-        const storedJson = document.cookie.split("; ").find((row) => row.startsWith(`draft-${draftId}=`));
-        if (!storedJson) {
-            const tempPiles = {
-                deckRow0: [[], [], [], [], [], [], [], []],
-                deckRow1: [[], [], [], [], [], [], [], []],
-                sideboardRow0: [[], [], [], [], [], [], [], []],
-                sideboardRow1: [[], [], [], [], [], [], [], []],
-            };
-            cards.forEach((card) => {
-                const column = card.manaValue === 0 ? 7 : Math.min(6, card.manaValue - 1);
-                if (card.type.includes("Creature")) {
-                    tempPiles.deckRow0[column].push(card);
-                } else {
-                    tempPiles.deckRow1[column].push(card);
-                }
-            });
-            setPiles(tempPiles);
-            return;
-        }
-        const jsonPiles = JSON.parse(storedJson.split("=")[1]);
+        const cookiePilesOfCardIds = CookieHelper.get(`draft-${draftId}`, {
+            deckRow0: [[], [], [], [], [], [], [], []],
+            deckRow1: [[], [], [], [], [], [], [], []],
+            sideboardRow0: [[], [], [], [], [], [], [], []],
+            sideboardRow1: [[], [], [], [], [], [], [], []],
+            lands: [0, 0, 0, 0, 0],
+        });
         const cookiePiles = {
-            deckRow0: jsonPiles.deckRow0.map((column) => column.map((cardId) => getCard(cardId))),
-            deckRow1: jsonPiles.deckRow1.map((column) => column.map((cardId) => getCard(cardId))),
-            sideboardRow0: jsonPiles.sideboardRow0.map((column) => column.map((cardId) => getCard(cardId))),
-            sideboardRow1: jsonPiles.sideboardRow1.map((column) => column.map((cardId) => getCard(cardId))),
+            deckRow0: cookiePilesOfCardIds.deckRow0.map((column) => column.map((cardId) => getCard(cardId))),
+            deckRow1: cookiePilesOfCardIds.deckRow1.map((column) => column.map((cardId) => getCard(cardId))),
+            sideboardRow0: cookiePilesOfCardIds.sideboardRow0.map((column) => column.map((cardId) => getCard(cardId))),
+            sideboardRow1: cookiePilesOfCardIds.sideboardRow1.map((column) => column.map((cardId) => getCard(cardId))),
         };
-        const lands = jsonPiles.lands;
+        const lands = cookiePilesOfCardIds.lands;
         if (lands) {
             setNumberOfPlains(lands[0]);
             setNumberOfIslands(lands[1]);

@@ -2,9 +2,9 @@ import React from "react";
 import karnTheSeeker from "../../../../data/cardImages/Karn the Seeker.jpg";
 import dropship from "../../../../data/cardImages/Dropship.jpg";
 import supplyLineJet from "../../../../data/cardImages/Supply-Line Jet.jpg";
-import undercroftEntangler from "../../../../data/cardImages/Undercroft Entangler.jpg";
-import figmentOfDeath from "../../../../data/cardImages/Figment of Death.jpg";
-import slipstreamHunter from "../../../../data/cardImages/Slipstream Hunter.jpg";
+import boardroomKeeper from "../../../../data/cardImages/Boardroom Keeper.jpg";
+import radiumTracker from "../../../../data/cardImages/Radium Tracker.jpg";
+import plasmaReclaimer from "../../../../data/cardImages/Plasma Reclaimer.jpg";
 import suspensionSquad from "../../../../data/cardImages/Suspension Squad.jpg";
 import turnTheTideOfBattle from "../../../../data/cardImages/Turn the Tide of Battle.jpg";
 import coordinateScrambler from "../../../../data/cardImages/Coordinate Scrambler.jpg";
@@ -18,6 +18,7 @@ import murmurTheCleaner from "../../../../data/cardImages/Murmur the Cleaner.jpg
 import mysticOfTheUnder from "../../../../data/cardImages/Mystic of the Under.jpg";
 import iridiumMagnetoKnife from "../../../../data/cardImages/Iridium Magneto-Knife.jpg";
 import theMoirai from "../../../../data/cardImages/The Moirai.jpg";
+import throwToTheWind from "../../../../data/cardImages/Throw to the Wind.jpg";
 import wantedSpeedster from "../../../../data/cardImages/Wanted Speedster.jpg";
 import bioarchitect from "../../../../data/cardImages/Bioarchitect.jpg";
 import ingolfsCommand from "../../../../data/cardImages/Ingolfs Command.jpg";
@@ -74,7 +75,7 @@ export default function Faq() {
                     </div>
                 </section>
                 <section>
-                    <img src={undercroftEntangler} />
+                    <img src={boardroomKeeper} />
                     <div>
                         <h2>Infiltrate</h2>
                         <blockquote>
@@ -101,7 +102,7 @@ export default function Faq() {
                     </div>
                 </section>
                 <section>
-                    <img src={figmentOfDeath} />
+                    <img src={radiumTracker} />
                     <div>
                         <h2>Mutate</h2>
                         <blockquote>
@@ -127,7 +128,7 @@ export default function Faq() {
                     </div>
                 </section>
                 <section>
-                    <img src={slipstreamHunter} />
+                    <img src={plasmaReclaimer} />
                     <div>
                         <h2>Teleport</h2>
                         <blockquote>
@@ -155,19 +156,18 @@ export default function Faq() {
                         <blockquote>
                             <p>
                                 <b>TL;DR:</b>
-                                <ul>
-                                    <li>
-                                        Teleporting a card takes it out of the looked at/revealed cards. Cast the spell
-                                        for its teleport cost, finish resolving the effect with the teleported card
-                                        taken out, then resolve the teleported spell.
-                                    </li>
-                                    <li>
-                                        While resolving Mutate, finish revealing all the cards first, then choose
-                                        whether or not to teleport any cards, then put the mutated creature onto the
-                                        battlefield.
-                                    </li>
-                                </ul>
                             </p>
+                            <ul>
+                                <li>
+                                    Teleporting a card takes it out of the looked at/revealed cards. Cast the spell for
+                                    its teleport cost, finish resolving the effect with the teleported card taken out,
+                                    then resolve the teleported spell.
+                                </li>
+                                <li>
+                                    While resolving Mutate, finish revealing all the cards first, then choose whether or
+                                    not to teleport any cards, then put the mutated creature onto the battlefield.
+                                </li>
+                            </ul>
                         </blockquote>
                         <ul>
                             <li>
@@ -414,6 +414,15 @@ export default function Faq() {
                                 The target is chosen at random as you put the triggered ability on the stack. Players
                                 can respond to this ability knowing what the target is.
                             </li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <img src={throwToTheWind} />
+                    <div>
+                        <h3>Throw to the Wind</h3>
+                        <ul>
+                            <li>You still have to discard the card, even if you cast it for its teleport cost.</li>
                         </ul>
                     </div>
                 </section>
