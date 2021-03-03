@@ -6,7 +6,7 @@ import LoadingSpinner from "../../components/loadingSpinner/LoadingSpinner.js";
 import * as DraftsApi from "../../api/DraftsApi.js";
 import "./Draft.scss";
 import { asyncTry } from "../../helpers/asyncTry.js";
-import PlayerPill from "../../components/playerPill/PlayerPill.js";
+import { PlayerList } from "./PlayerList.js";
 
 export default function Draft({ loggedInUser }) {
     const [drafts, setDrafts] = useState(null);
@@ -72,11 +72,10 @@ export default function Draft({ loggedInUser }) {
                         <div className="mono-space">
                             <Link to={`/draft/${draft.id}`}>{draft.id}</Link>
                         </div>
-                        {draft.players
-                            .sort((a, b) => a.seatNumber - b.seatNumber)
-                            .map((player, index) => (
-                                <PlayerPill player={player} loggedInUserId={loggedInUser.id} key={index} />
-                            ))}
+                        <PlayerList
+                            players={draft.players.sort((a, b) => a.seatNumber - b.seatNumber)}
+                            loggedInUser={loggedInUser}
+                        />
                     </div>
                 </td>
                 <td>{draft.statusName}</td>

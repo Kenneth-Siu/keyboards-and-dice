@@ -1,0 +1,21 @@
+.player-pill-div {
+    display: flex;
+    align-items: center;
+
+    &:first-of-type .player-list-chevron:first-of-type,
+    &:last-of-type .player-list-chevron:last-of-type {
+        opacity: 0.3;
+    }
+
+    .player-pill {
+        margin: 0.2rem 0.2rem;
+        padding: 0.35rem 0.7rem;
+        font-size: 0.8rem;
+        border-radius: 1rem;
+    }
+
+    .player-list-chevron {
+        font-size: 1.5rem;
+        margin: 0.2rem 0;
+    }
+}

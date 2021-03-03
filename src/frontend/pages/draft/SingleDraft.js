@@ -5,17 +5,9 @@ import LoadingSpinner from "../../components/loadingSpinner/LoadingSpinner.js";
 import { getCard } from "../../../shared/cardList";
 import * as DraftsApi from "../../api/DraftsApi.js";
 import "./SingleDraft.scss";
-import {
-    MdAddCircleOutline,
-    MdChevronLeft,
-    MdChevronRight,
-    MdContentCopy,
-    MdRefresh,
-    MdRemoveCircleOutline,
-} from "react-icons/md";
+import { MdAddCircleOutline, MdContentCopy, MdRefresh, MdRemoveCircleOutline } from "react-icons/md";
 import copy from "copy-to-clipboard";
 import { asyncTry } from "../../helpers/asyncTry";
-import PlayerPill from "../../components/playerPill/PlayerPill";
 import { flattenDeep } from "lodash";
 import whiteManaSymbol from "../../../../data/whiteManaSymbol.svg";
 import blueManaSymbol from "../../../../data/blueManaSymbol.svg";
@@ -23,6 +15,7 @@ import blackManaSymbol from "../../../../data/blackManaSymbol.svg";
 import redManaSymbol from "../../../../data/redManaSymbol.svg";
 import greenManaSymbol from "../../../../data/greenManaSymbol.svg";
 import * as CookieHelper from "../../helpers/CookieHelper.js";
+import { CHEVRON_DIRECTION, PlayerList } from "./PlayerList";
 
 export default function SingleDraft({ loggedInUser }) {
     const { draftId } = useParams();
@@ -69,7 +62,16 @@ export default function SingleDraft({ loggedInUser }) {
                     <LoadingSpinner />
                 ) : (
                     <>
-                        <PlayerList />
+                        <div className={`player-list`}>
+                            <PlayerList
+                                players={playersInSeatOrder}
+                                loggedInUser={loggedInUser}
+                                chevronDirection={
+                                    draftStatus === DRAFT_STATUSES.IN_PROGRESS &&
+                                    (packNumber === 2 ? CHEVRON_DIRECTION.RIGHT : CHEVRON_DIRECTION.LEFT)
+                                }
+                            />
+                        </div>
                         <MainView />
                     </>
                 )}
@@ -89,28 +91,6 @@ export default function SingleDraft({ loggedInUser }) {
                 {boosterLoading ? <LoadingSpinner /> : boosterCards ? <BoosterView /> : <RefreshButtonView />}
                 {picksLoading ? <LoadingSpinner /> : <DeckView />}
             </>
-        );
-    }
-
-    function PlayerList() {
-        const isDraftInProgress = draftStatus === DRAFT_STATUSES.IN_PROGRESS;
-        return (
-            <div className={`player-list ${isDraftInProgress ? "draft-in-progress" : "ready-to-start"}`}>
-                {isDraftInProgress && (
-                    <PlayerPill
-                        player={playersInSeatOrder[playersInSeatOrder.length - 1]}
-                        loggedInUserId={loggedInUser.id}
-                    />
-                )}
-                {playersInSeatOrder.map((player, index) => (
-                    <React.Fragment key={index}>
-                        {isDraftInProgress && <Chevron />}
-                        <PlayerPill player={player} loggedInUserId={loggedInUser.id} />
-                    </React.Fragment>
-                ))}
-                {isDraftInProgress && <Chevron />}
-                {isDraftInProgress && <PlayerPill player={playersInSeatOrder[0]} loggedInUserId={loggedInUser.id} />}
-            </div>
         );
     }
 
@@ -265,10 +245,6 @@ export default function SingleDraft({ loggedInUser }) {
                 ))}
             </div>
         );
-    }
-
-    function Chevron() {
-        return packNumber === 2 ? <MdChevronRight /> : <MdChevronLeft />;
     }
 
     function setPlains(num) {

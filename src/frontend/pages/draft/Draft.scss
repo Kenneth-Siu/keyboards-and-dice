@@ -94,8 +94,6 @@
         }
 
         .player-pill {
-            margin: 0.2rem 0.2rem;
-            flex-shrink: 0;
             background-color: darken($color-2, 5%);
 
             &.current-user {
