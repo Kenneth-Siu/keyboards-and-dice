@@ -2,46 +2,98 @@
 @import "../../components/colors.scss";
 @import "../../components/navBar/NavBar.scss";
 
-.draft-page {
+.single-draft-page {
     @include navBarPageTopPadding;
-    @include container;
-    padding-right: 0.3rem;
-    padding-left: 0.3rem;
     padding-bottom: 0.5rem;
     position: relative;
+    text-align: center;
 
     h1 {
         text-align: center;
         font-weight: 700;
         font-size: 1.4rem;
         margin-top: 1rem;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.8rem;
+
+        small {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: lighten($color-1, 30%);
+        }
     }
 
-    p {
-        text-align: center;
-        margin-top: 0.5rem;
-        margin-bottom: 1rem;
-        line-height: 1.2;
+    h2 {
+        text-align: left;
+        font-weight: 700;
+        font-size: 1.4rem;
+        margin: 0;
+        width: 15rem;
+
+        small {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: lighten($color-1, 30%);
+        }
     }
 
-    button {
+    .player-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 0.8rem;
+
+        .player-pill {
+            background-color: darken($color-2, 5%);
+    
+            &.current-user {
+                background-color: $color-5-light;
+            }
+        }
+    }
+
+    .invite-your-friends {
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 1.2rem;
+        width: 98%;
+        line-height: 1.4rem;
+    }
+
+    .mono-space {
+        font-family: monospace;
+        font-size: 1rem;
+        padding: 0.1rem 0;
+        margin-left: 0.2rem;
+    }
+
+    .copy {
+        position: absolute;
+        font-size: 1rem;
+        line-height: 1;
+        border: none;
+        background: none;
+        padding: 0.2rem;
+        margin: 0 0.2rem;
         cursor: pointer;
+        transform: translateY(0.1rem);
+
         svg {
             display: block;
         }
     }
 
-    .refresh-button {
-        padding: 0;
-        line-height: 1;
-        color: $color-1;
-        font-size: 1.2rem;
+    .start-draft,
+    .submit-pick {
+        font-size: 1.4rem;
+        font-weight: 600;
+        padding: 0.4rem 0.8rem;
+        color: $color-2;
         border: none;
-        background: none;
-        position: absolute;
-        right: 0.3rem;
-        transform: translateY(-100%);
+        background-color: $color-5-strong;
+        border-radius: 2rem;
+        line-height: 1;
+        margin: 0 0.4rem;
+        cursor: pointer;
 
         &:disabled {
             opacity: 0.2;
@@ -49,96 +101,226 @@
         }
     }
 
-    table {
-        width: 100%;
+    .booster {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 98%;
+        margin-bottom: 0.8rem;
 
-        th {
-            font-weight: 600;
-        }
-
-        th,
-        td {
-            border: 2px solid darken($color-2, 30%);
-            padding: 0.2rem;
-            text-align: center;
-            vertical-align: middle;
-        }
-
-        .no-drafts {
-            padding: 1.6rem 0.2rem;
-            font-size: 1.2rem;
-            font-style: italic;
-            font-weight: 200;
-            color: lighten($color-1, 20%);
-
-            .emoji {
-                font-style: normal;
-            }
-        }
-
-        .draft-id {
+        button {
             padding: 0;
-        }
-
-        .draft-id > div {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .mono-space {
-            width: 100%;
-            font-family: monospace;
-            font-size: 1rem;
-            margin: 0.5rem 0 0.3rem;
-        }
-
-        .player-pill {
-            background-color: darken($color-2, 5%);
-
-            &.current-user {
-                background-color: $color-5-light;
-            }
-        }
-
-        .controls button {
-            font-size: 1rem;
+            background-color: none;
             border: none;
-            background: none;
-            padding: 0.2rem;
-            margin: 0 0.1rem;
+            cursor: pointer;
 
-            &.delete svg {
-                fill: crimson;
+            &:focus {
+                outline: 2px $color-5-strong solid;
             }
+
+            &.selected {
+                box-shadow: 0 0 0.2rem 0.2rem $color-5-strong;
+                outline: 2px $color-5-strong solid;
+            }
+
+            @media (max-width: 659px) {
+                width: 49.25%;
+                margin-right: 1.5%;
+                margin-bottom: 1.5%;
+                &:nth-child(2n) {
+                    margin-right: 0;
+                }
+            }
+            @media (min-width: 660px) and (max-width: 919px) {
+                width: 32.75%;
+                margin-right: 0.875%;
+                margin-bottom: 0.875%;
+                &:nth-child(3n) {
+                    margin-right: 0;
+                }
+            }
+            @media (min-width: 920px) and (max-width: 1223px) {
+                width: 24.5%;
+                margin-right: 0.666%;
+                margin-bottom: 0.666%;
+                &:nth-child(4n) {
+                    margin-right: 0;
+                }
+            }
+            @media (min-width: 1223px) and (max-width: 1535px) {
+                width: 19.52%;
+                margin-right: 0.6%;
+                margin-bottom: 0.6%;
+                &:nth-child(5n) {
+                    margin-right: 0;
+                }
+            }
+            @media (min-width: 1536px) and (max-width: 1839px) {
+                width: 16.25%;
+                margin-right: 0.5%;
+                margin-bottom: 0.5%;
+                &:nth-child(6n) {
+                    margin-right: 0;
+                }
+            }
+            @media (min-width: 1840px) {
+                width: 14%;
+                margin-right: 0.333%;
+                margin-bottom: 0.333%;
+                &:nth-child(7n) {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .card {
+            width: 100%;
+            border-radius: 4.1% / 2.91%;
+            display: block;
         }
     }
 
-    .create-draft,
-    .join-draft {
-        text-align: center;
-        margin: 0.5rem 0;
-
-        input {
-            margin: 0 0.4rem;
-            font-size: 0.8rem;
-            font-family: monospace;
-            width: 16rem;
+    .refresh-button-view {
+        h2 {
+            margin-top: 3rem;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: darken($color-2, 40%);
         }
 
-        button {
-            font-size: 0.8rem;
-            font-weight: 600;
-            padding: 0.4rem 0.8rem;
-            color: $color-2;
-            border: none;
-            background-color: $color-5-strong;
-            border-radius: 2rem;
+        .refresh-button {
+            margin-top: 2rem;
+            color: darken($color-2, 40%);
+            padding: 0;
             line-height: 1;
+            font-size: 8rem;
+            border: none;
+            background: none;
+            cursor: pointer;
+
+            svg {
+                display: block;
+            }
 
             &:disabled {
                 opacity: 0.2;
                 cursor: default;
+            }
+        }
+    }
+
+    .deck-view {
+        position: relative;
+
+        .deck-heading {
+            width: 98%;
+            display: inline-flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 0.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .basics-control-panel {
+            display: flex;
+            align-items: center;
+
+            .basic-control {
+                display: flex;
+                align-items: center;
+                margin: 0 0.2rem;
+                button {
+                    border: none;
+                    background: none;
+                    padding: 0;
+                    line-height: 0;
+                    font-size: 1rem;
+                    cursor: pointer;
+
+                    &:disabled {
+                        opacity: 0.8;
+                        cursor: default;
+                    }
+                }
+
+                .symbol-div {
+                    position: relative;
+                    height: 1.3rem;
+                    width: 1.3rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                    margin: 0 0.1rem;
+                }
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+
+                    &.fade {
+                        opacity: 0.2;
+                    }
+                }
+            }
+        }
+
+        .copy-deck-button {
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 0.4rem 0.6rem;
+            color: $color-1;
+            border: 2px solid $color-1;
+            background: none;
+            border-radius: 2rem;
+            line-height: 1;
+            margin: 0 0.4rem;
+            width: 10.25rem;
+            cursor: pointer;
+
+            &.deck-copied {
+                opacity: 0.2;
+            }
+        }
+
+        .card-row {
+            display: inline-flex;
+            justify-content: flex-start;
+            width: 98%;
+            margin-bottom: 0.5%;
+            padding: 0.5% 0.5%;
+            background-color: darken($color-2, 5%);
+            border-radius: 0.7rem;
+
+            .column {
+                position: relative;
+                width: 12.3%;
+                margin-right: 0.2285%;
+                // height: Set in JavaScript
+                // top: Set in JavaScript
+                &:nth-child(8n) {
+                    margin-right: 0;
+                }
+
+                div.card {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    &:hover {
+                        z-index: 1;
+                    }
+
+                    img {
+                        display: block;
+                        pointer-events: none;
+                        width: 100%;
+                        border-radius: 4.1% / 2.91%;
+                    }
+                }
             }
         }
     }

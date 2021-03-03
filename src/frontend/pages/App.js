@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import PrivateRoute from "./PrivateRoute.js";
 import Home from "./home/Home.js";
 import CardImageGallery from "./cardImageGallery/CardImageGallery.js";
-import Draft from "./draft/Draft.js";
+import Drafts from "./drafts/Drafts.js";
 import NotFound from "./notFound/NotFound.js";
 import NavBar from "../components/navBar/NavBar.js";
 import Faq from "./faq/Faq.js";
@@ -11,7 +11,7 @@ import Downloads from "./downloads/Downloads.js";
 import Login from "./login/Login.js";
 import "./cssreset.css";
 import "./App.scss";
-import SingleDraft from "./draft/SingleDraft.js";
+import Draft from "./draft/Draft.js";
 
 export default function App({ loggedInUser }) {
     return (
@@ -24,14 +24,14 @@ export default function App({ loggedInUser }) {
                 <PrivateRoute
                     exact
                     path="/draft"
-                    component={Draft}
+                    component={Drafts}
                     authed={!!loggedInUser}
                     loggedInUser={loggedInUser}
                 />
                 <PrivateRoute
                     exact
                     path="/draft/:draftId"
-                    component={SingleDraft}
+                    component={Draft}
                     authed={!!loggedInUser}
                     loggedInUser={loggedInUser}
                 />
