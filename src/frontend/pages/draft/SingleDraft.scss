@@ -22,22 +22,36 @@
         }
     }
 
+    h2 {
+        text-align: left;
+        font-weight: 700;
+        font-size: 1.4rem;
+        margin: 0;
+        width: 15rem;
+
+        small {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: lighten($color-1, 30%);
+        }
+    }
+
     .player-list {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         margin-bottom: 0.8rem;
-    }
 
-    .player-pill {
-        background-color: darken($color-2, 5%);
-
-        &.current-user {
-            background-color: $color-5-light;
+        .player-pill {
+            background-color: darken($color-2, 5%);
+    
+            &.current-user {
+                background-color: $color-5-light;
+            }
         }
     }
 
-    p {
+    .invite-your-friends {
         margin-right: auto;
         margin-left: auto;
         margin-bottom: 1.2rem;
@@ -205,12 +219,6 @@
             align-items: center;
             padding: 0 0.1rem;
             margin-bottom: 1rem;
-
-            h1 {
-                margin: 0;
-                width: 15rem;
-                text-align: left;
-            }
         }
 
         .basics-control-panel {

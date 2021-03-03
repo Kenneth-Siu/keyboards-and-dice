@@ -97,7 +97,7 @@ export default function SingleDraft({ loggedInUser }) {
     function ReadyToStartView() {
         return (
             <>
-                <p>
+                <p className="invite-your-friends">
                     Invite your friends! Send them your draft ID: <span className="mono-space">{draftId}</span>
                     <button className="copy" aria-label="Copy" onClick={() => copy(draftId)}>
                         <MdContentCopy />
@@ -166,13 +166,13 @@ export default function SingleDraft({ loggedInUser }) {
         return (
             <div className="deck-view">
                 <div className="deck-heading">
-                    <h1>
+                    <h2>
                         Deck{" "}
                         <small>
                             ({flattenDeep(piles.deckRow0).length + flattenDeep(piles.deckRow1).length} cards
                             {totalBasics() > 0 ? `, ${totalBasics()} basics` : ""})
                         </small>
-                    </h1>
+                    </h2>
                     {draftStatus === DRAFT_STATUSES.COMPLETE && (
                         <>
                             <BasicsControlPanel />
@@ -183,12 +183,12 @@ export default function SingleDraft({ loggedInUser }) {
                 <CardRow row={piles.deckRow0} cardOnClick={moveToCreatureSideboard} />
                 <CardRow row={piles.deckRow1} cardOnClick={moveToNonCreatureSideboard} />
                 <div className="deck-heading">
-                    <h1>
+                    <h2>
                         Sideboard{" "}
                         <small>
                             ({flattenDeep(piles.sideboardRow0).length + flattenDeep(piles.sideboardRow1).length} cards)
                         </small>
-                    </h1>
+                    </h2>
                 </div>
                 <CardRow row={piles.sideboardRow0} cardOnClick={moveToCreatureDeck} />
                 <CardRow row={piles.sideboardRow1} cardOnClick={moveToNonCreatureDeck} />
