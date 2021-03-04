@@ -1,0 +1,10 @@
+@import "../../components/colors.scss";
+
+.refresh-button-view {
+    p {
+        margin-top: 3rem;
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: darken($color-2, 40%);
+    }
+}

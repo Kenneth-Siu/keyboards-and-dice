@@ -12,8 +12,8 @@ import { PicksView } from "./PicksView";
 import { BasicsControlPanel } from "./BasicsControlPanel";
 import { flatten } from "lodash";
 import copy from "copy-to-clipboard";
-import { RotatingLoadingIcon } from "../../components/rotatingLoadingIcon/RotatingLoadingIcon";
 import { BoosterView } from "./BoosterView";
+import { RefreshButtonView } from "./WaitingOnBoosterView";
 
 export default function SingleDraft({ loggedInUser }) {
     const { draftId } = useParams();
@@ -76,12 +76,14 @@ export default function SingleDraft({ loggedInUser }) {
                             <ReadyToStartView
                                 draftId={draftId}
                                 numberOfBots={Math.max(0, DEFAULT_PLAYERS_IN_DRAFT - playersInSeatOrder.length)}
-                                startDraftCallback={() => getDraft()}
+                                startDraftCallback={getDraft}
                                 isOwner={isDraftOwner}
                             />
                         )}
                         {draftStatus === DRAFT_STATUSES.IN_PROGRESS &&
-                            (boosterLoading ? (
+                            (boosterCards === null ? (
+                                <RefreshButtonView getDraft={getDraft} />
+                            ) : boosterLoading ? (
                                 <div
                                     className={`booster-loading ${
                                         pickNumber === null || pickNumber < 8 ? "two-rows" : "one-row"
@@ -89,10 +91,8 @@ export default function SingleDraft({ loggedInUser }) {
                                 >
                                     <LoadingSpinner />
                                 </div>
-                            ) : boosterCards ? (
-                                <BoosterView cards={boosterCards} submitPick={submitPick} />
                             ) : (
-                                <RefreshButtonView />
+                                <BoosterView cards={boosterCards} submitPick={submitPick} />
                             ))}
                         {draftStatus !== DRAFT_STATUSES.READY_TO_START && (
                             <PicksView
@@ -227,13 +227,4 @@ export default function SingleDraft({ loggedInUser }) {
 
         copy(deck.join("\n") + "\n\n" + sideboard.join("\n"));
     }
-}
-
-function RefreshButtonView() {
-    return (
-        <div className="refresh-button-view">
-            <h2>Waiting for others to make their picks...</h2>
-            <RotatingLoadingIcon />
-        </div>
-    );
 }

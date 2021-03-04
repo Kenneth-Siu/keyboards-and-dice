@@ -37,36 +37,6 @@
         }
     }
 
-    
-
-    .refresh-button-view {
-        h2 {
-            margin-top: 3rem;
-            font-size: 1.4rem;
-            font-weight: 600;
-            color: darken($color-2, 40%);
-        }
-
-        .refresh-button {
-            margin-top: 2rem;
-            color: darken($color-2, 40%);
-            padding: 0;
-            line-height: 1;
-            font-size: 8rem;
-            border: none;
-            background: none;
-            cursor: pointer;
-
-            svg {
-                display: block;
-            }
-
-            &:disabled {
-                opacity: 0.2;
-                cursor: default;
-            }
-        }
-    }
 
     
 

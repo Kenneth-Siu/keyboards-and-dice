@@ -1,9 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { PillButton } from "../../components/pillButton/PillButton";
 import "./CopyDeckButton.scss";
 
 export function CopyDeckButton({ copyCallback }) {
     const [deckCopied, setDeckCopied] = useState(false);
+    const timeoutRef = useRef();
+
+    const confirmationMessageDuration = 5000;
+
+    useEffect(() => {
+        return () => {
+            if (timeoutRef.current !== null) {
+                clearTimeout(timeoutRef.current);
+            }
+        };
+    }, []);
 
     return (
         <PillButton className={`copy-deck-button${deckCopied ? " deck-copied" : ""}`} onClick={onClick}>
@@ -13,10 +24,12 @@ export function CopyDeckButton({ copyCallback }) {
 
     function onClick() {
         copyCallback();
+        if (deckCopied) {
+            clearTimeout(timeoutRef.current);
+        }
         setDeckCopied(true);
-        setTimeout(() => {
-            setDeckCopied(false);   // Still triggers if you navigate away from the page.
-            // TODO set up unsubscribe in a useEffect cleanup function
-        }, 5000);
+        timeoutRef.current = setTimeout(() => {
+            setDeckCopied(false);
+        }, confirmationMessageDuration);
     }
 }
