@@ -102,7 +102,7 @@
             <cmc>2</cmc>
             <colors>W</colors>
             <coloridentity>W</coloridentity>
-            <pt>2/2</pt>
+            <pt>2/1</pt>
         </prop>
         <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Biomech%20Team.jpg">T2170</set>
         <tablerow>2</tablerow>
@@ -879,7 +879,7 @@ If you have less life than an opponent, you gain 5 life. Otherwise, you gain 3 l
     </card>
     <card>
         <name>Undercover Agent</name>
-        <text>As long as Undercover Agent is equipped, it can’t be blocked by creatures with mana value 4 or greater.</text>
+        <text>As long as Undercover Agent is equipped, it gets +1/+1 and can’t be blocked by creatures with mana value 4 or greater.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
