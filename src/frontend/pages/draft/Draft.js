@@ -5,7 +5,6 @@ import LoadingSpinner from "../../components/loadingSpinner/LoadingSpinner.js";
 import { getCard } from "../../../shared/cardList";
 import * as DraftsApi from "../../api/DraftsApi.js";
 import "./Draft.scss";
-import { MdRefresh } from "react-icons/md";
 import { asyncTry } from "../../helpers/asyncTry";
 import { CHEVRON_DIRECTION, PlayerList } from "../../components/playerList/PlayerList";
 import { ReadyToStartView } from "./ReadyToStartView";
@@ -14,6 +13,7 @@ import { PicksView } from "./PicksView";
 import { BasicsControlPanel } from "./BasicsControlPanel";
 import { flatten } from "lodash";
 import copy from "copy-to-clipboard";
+import { RotatingLoadingIcon } from "../../components/rotatingLoadingIcon/RotatingLoadingIcon";
 
 export default function SingleDraft({ loggedInUser }) {
     const { draftId } = useParams();
@@ -93,7 +93,15 @@ export default function SingleDraft({ loggedInUser }) {
                     />
                 )}
                 {draftStatus === DRAFT_STATUSES.IN_PROGRESS &&
-                    (boosterLoading ? <LoadingSpinner /> : boosterCards ? <BoosterView /> : <RefreshButtonView />)}
+                    (boosterLoading ? (
+                        <div className={`booster-loading ${pickNumber === null || pickNumber < 8 ? "two-rows" : "one-row"}`}>
+                            <LoadingSpinner />
+                        </div>
+                    ) : boosterCards ? (
+                        <BoosterView />
+                    ) : (
+                        <RefreshButtonView />
+                    ))}
                 {draftStatus !== DRAFT_STATUSES.READY_TO_START && (
                     <PicksView
                         showDeckbuilderPanels={draftStatus === DRAFT_STATUSES.COMPLETE}
@@ -148,9 +156,7 @@ export default function SingleDraft({ loggedInUser }) {
         return (
             <div className="refresh-button-view">
                 <h2>Waiting for others to make their picks...</h2>
-                <button className="refresh-button" aria-label="Refresh" onClick={getDraft}>
-                    <MdRefresh />
-                </button>
+                <RotatingLoadingIcon />
             </div>
         );
     }
