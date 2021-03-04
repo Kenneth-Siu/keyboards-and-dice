@@ -34,6 +34,7 @@ export default function SingleDraft({ loggedInUser }) {
     const [boosterCards, setBoosterCards] = useState(null);
     const [packNumber, setPackNumber] = useState(null);
     const [pickNumber, setPickNumber] = useState(null);
+    const [isDraftOwner, setIsDraftOwner] = useState(false);
 
     const [basics, setBasics] = useState({
         plains: 0,
@@ -88,6 +89,7 @@ export default function SingleDraft({ loggedInUser }) {
                         draftId={draftId}
                         numberOfBots={Math.max(0, DEFAULT_PLAYERS_IN_DRAFT - playersInSeatOrder.length)}
                         startDraftCallback={() => getDraft()}
+                        isOwner={isDraftOwner}
                     />
                 )}
                 {draftStatus === DRAFT_STATUSES.IN_PROGRESS &&
@@ -160,6 +162,7 @@ export default function SingleDraft({ loggedInUser }) {
                 setPlayersInSeatOrder(responseDraft.players.sort((a, b) => a.seatNumber - b.seatNumber));
                 setDraftStatus(responseDraft.status);
                 setPackNumber(responseDraft.packNumber);
+                setIsDraftOwner(responseDraft.ownerId === loggedInUser.id);
                 setDraftLoaded(true);
 
                 switch (responseDraft.status) {

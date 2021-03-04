@@ -21,7 +21,7 @@ export default function Drafts({ loggedInUser }) {
                 <p>
                     Hi, {loggedInUser.displayName}!{" "}
                     <small>
-                        If this is not you, <a href="/api/logout">click here</a> to log out.
+                        If this is not you, <a href="/api/logout">log out here</a>.
                     </small>
                 </p>
                 {!drafts ? (

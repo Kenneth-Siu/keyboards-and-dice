@@ -2,20 +2,22 @@
 @import "../../components/mixins.scss";
 @import "../../components/colors.scss";
 
-.invite-your-friends {
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 1.2rem;
-    width: 98%;
-    line-height: 1.4rem;
-
-    .mono-space {
-        font-family: monospace;
-        font-size: 1rem;
-        padding: 0.1rem 0;
-        margin-left: 0.2rem;
+.ready-to-start-view {
+    p {
+        margin: 2rem;
+        margin-right: auto;
+        margin-left: auto;
+        width: 98%;
+        line-height: 1.4rem;
+    
+        .mono-space {
+            font-family: monospace;
+            font-size: 1rem;
+            padding: 0.1rem 0;
+            margin-left: 0.2rem;
+        }
     }
-
+    
     .copy {
         @include button;
         position: absolute;
@@ -28,9 +30,25 @@
             display: block;
         }
     }
+    
+    .start-draft {
+        @include bigButton;
+        background-color: $color-5-strong;
+    }
+
+    svg {
+        font-size: 10rem;
+        color: darken($color-2, 30%);
+        animation: rotation 10s infinite linear;
+    }
 }
 
-.pill-button.start-draft {
-    @include bigButton;
-    background-color: $color-5-strong;
-}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+

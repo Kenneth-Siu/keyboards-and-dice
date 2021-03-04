@@ -11,7 +11,8 @@ export default function Login() {
             <title>Log in · Terra 2170</title>
             <main className="login-page">
                 <img className="terra-symbol" src={terraSymbol} />
-                <h1>You need to be logged in to continue</h1>
+                <h1>Please sign in to continue</h1>
+                <h2>Why? TL;DR: It's to make sure you're not a spammer.</h2>
                 <div className="login-buttons-container">
                     <a className="google login-button" href="/api/login/google">
                         <img src={googleLogo} />
