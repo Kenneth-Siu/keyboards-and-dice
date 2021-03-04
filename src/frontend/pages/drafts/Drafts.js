@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { MdContentCopy, MdDelete } from "react-icons/md";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import copy from "copy-to-clipboard";
 import LoadingSpinner from "../../components/loadingSpinner/LoadingSpinner.js";
 import * as DraftsApi from "../../api/DraftsApi.js";
@@ -9,6 +9,7 @@ import { PlayerList } from "../../components/playerList/PlayerList.js";
 import "./Drafts.scss";
 
 export default function Drafts({ loggedInUser }) {
+    const history = useHistory();
     const [drafts, setDrafts] = useState(null);
     const [busy, setBusy] = useState(true);
     const [joinDraftId, setJoinDraftId] = useState("");
@@ -79,7 +80,7 @@ export default function Drafts({ loggedInUser }) {
                 <td className="draft-id">
                     <div>
                         <div className="mono-space">
-                            <Link to={`/draft/${draft.id}`}>{draft.id}</Link>
+                            <Link to={`/drafts/${draft.id}`}>{draft.id}</Link>
                         </div>
                         <PlayerList
                             players={draft.players.sort((a, b) => a.seatNumber - b.seatNumber)}
@@ -157,8 +158,9 @@ export default function Drafts({ loggedInUser }) {
         setBusy(true);
         asyncTry(
             async () => {
-                await DraftsApi.joinDraft(joinDraftId.trim());
-                getDrafts();
+                const draftId = joinDraftId.trim();
+                await DraftsApi.joinDraft(draftId);
+                history.push(`/drafts/${draftId}`);
             },
             () => {
                 setBusy(false);

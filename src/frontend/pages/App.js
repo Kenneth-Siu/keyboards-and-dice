@@ -23,14 +23,14 @@ export default function App({ loggedInUser }) {
                 <Route exact path="/faq" component={Faq} />
                 <PrivateRoute
                     exact
-                    path="/draft"
+                    path="/drafts"
                     component={Drafts}
                     authed={!!loggedInUser}
                     loggedInUser={loggedInUser}
                 />
                 <PrivateRoute
                     exact
-                    path="/draft/:draftId"
+                    path="/drafts/:draftId"
                     component={Draft}
                     authed={!!loggedInUser}
                     loggedInUser={loggedInUser}

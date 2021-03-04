@@ -9,7 +9,7 @@
         margin-left: auto;
         width: 98%;
         line-height: 1.4rem;
-    
+
         .mono-space {
             font-family: monospace;
             font-size: 1rem;
@@ -17,7 +17,7 @@
             margin-left: 0.2rem;
         }
     }
-    
+
     .copy {
         @include button;
         position: absolute;
@@ -30,25 +30,9 @@
             display: block;
         }
     }
-    
+
     .start-draft {
         @include bigButton;
         background-color: $color-5-strong;
     }
-
-    svg {
-        font-size: 10rem;
-        color: darken($color-2, 30%);
-        animation: rotation 10s infinite linear;
-    }
 }
-
-@keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(359deg);
-    }
-  }
-

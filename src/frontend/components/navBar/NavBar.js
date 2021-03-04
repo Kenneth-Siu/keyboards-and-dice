@@ -38,8 +38,8 @@ export default function NavBar() {
                     </Link>
                 </li>
                 <li className={`draft ${pathname.startsWith("/draft") ? "is-current-page" : ""}`}>
-                    <Link to="/draft">Draft Online</Link>
-                    <Link to="/draft" className="abbreviated" aria-hidden>
+                    <Link to="/drafts">Draft Online</Link>
+                    <Link to="/drafts" className="abbreviated" aria-hidden>
                         Draft
                     </Link>
                 </li>

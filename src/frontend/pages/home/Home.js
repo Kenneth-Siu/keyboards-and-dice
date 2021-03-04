@@ -35,14 +35,14 @@ export default function Home() {
                     </div>
                     <div className="content">
                         <h1>
-                            <Link to="/draft">Draft Online</Link>
+                            <Link to="/drafts">Draft Online</Link>
                         </h1>
                         <p>
                             Grab some friends and draft <em>Terra 2170</em> in your browser! Don't have eight people? No
                             problem, fill in the missing places with bots.
                         </p>
                         <p className="link">
-                            <Link to="/draft">ᐳ Try it out</Link>
+                            <Link to="/drafts">ᐳ Try it out</Link>
                         </p>
                     </div>
                 </div>
