@@ -31,7 +31,7 @@ export class DraftOperations {
             const boosters = await this.createAndGetBoosters(playerIds);
             await this.createCards(boosters.map((booster) => booster.id));
 
-            this.makeBotPicks(draftId);
+            await this.makeBotPicks(draftId);
 
             await this.client.query("COMMIT");
         } catch (error) {
@@ -47,7 +47,7 @@ export class DraftOperations {
         try {
             await this.client.query("BEGIN");
 
-            this.pickOperations(draftId, playerId, booster, card);
+            await this.pickOperations(draftId, playerId, booster, card);
 
             await this.client.query("COMMIT");
         } catch (error) {
