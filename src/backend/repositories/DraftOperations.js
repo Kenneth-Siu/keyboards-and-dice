@@ -78,7 +78,7 @@ export class DraftOperations {
                 }
             }
         }
-        this.makeBotPicks(draftId);
+        await this.makeBotPicks(draftId);
     }
 
     async makeBotPicks(draftId) {
