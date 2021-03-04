@@ -23,7 +23,7 @@ export async function joinDraft(draftId) {
 }
 
 export async function createDraft() {
-    return await post(baseUrl);
+    return await post(baseUrl, null, true);
 }
 
 export async function startDraft(draftId) {

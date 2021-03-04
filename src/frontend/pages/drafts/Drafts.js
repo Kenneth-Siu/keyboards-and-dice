@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { MdContentCopy, MdDelete } from "react-icons/md";
-import { Link, useHistory } from "react-router-dom";
-import copy from "copy-to-clipboard";
+import { useHistory } from "react-router-dom";
 import LoadingSpinner from "../../components/loadingSpinner/LoadingSpinner.js";
 import * as DraftsApi from "../../api/DraftsApi.js";
 import { asyncTry } from "../../helpers/asyncTry.js";
-import { PlayerList } from "../../components/playerList/PlayerList.js";
+import { CreateDraftForm } from "./CreateDraftForm.js";
 import "./Drafts.scss";
+import { JoinDraftForm } from "./JoinDraftForm.js";
+import { DraftsTable } from "./DraftsTable.js";
 
 export default function Drafts({ loggedInUser }) {
     const history = useHistory();
@@ -29,116 +29,19 @@ export default function Drafts({ loggedInUser }) {
                     <LoadingSpinner />
                 ) : (
                     <>
-                        <DraftsTable />
-                        <CreateDraftForm />
-                        <JoinDraftForm />
+                        <DraftsTable drafts={drafts} loggedInUser={loggedInUser} deleteDraft={deleteDraft} />
+                        <CreateDraftForm createDraft={createDraft} busy={busy} />
+                        <JoinDraftForm
+                            joinDraftId={joinDraftId}
+                            setJoinDraftId={setJoinDraftId}
+                            joinDraft={joinDraft}
+                            busy={busy}
+                        />
                     </>
                 )}
             </main>
         </>
     );
-
-    function DraftsTable() {
-        if (!drafts) {
-            return null;
-        }
-        if (drafts.length === 0) {
-            return (
-                <table>
-                    <tbody>
-                        <tr>
-                            <td className="no-drafts" colSpan="2">
-                                You aren't in any drafts at the moment... <span className="emoji">🌧</span>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            );
-        }
-        return (
-            <table>
-                <thead>
-                    <tr>
-                        <th>Draft ID</th>
-                        <th colSpan="2">Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {drafts
-                        .sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt))
-                        .map((draft) => (
-                            <DraftsTableRow draft={draft} key={draft.id} />
-                        ))}
-                </tbody>
-            </table>
-        );
-    }
-
-    function DraftsTableRow({ draft, ...rest }) {
-        return (
-            <tr {...rest}>
-                <td className="draft-id">
-                    <div>
-                        <div className="mono-space">
-                            <Link to={`/drafts/${draft.id}`}>{draft.id}</Link>
-                        </div>
-                        <PlayerList
-                            players={draft.players.sort((a, b) => a.seatNumber - b.seatNumber)}
-                            loggedInUser={loggedInUser}
-                        />
-                    </div>
-                </td>
-                <td colSpan={draft.ownerId === loggedInUser.id ? 1 : 2}>{draft.statusName}</td>
-                {draft.ownerId === loggedInUser.id && (
-                    <td className="controls">
-                        {draft.status === 0 ? (
-                            <button className="copy" aria-label="Copy" onClick={() => copy(draft.id)}>
-                                <MdContentCopy />
-                            </button>
-                        ) : null}
-                        <button
-                            className="delete"
-                            aria-label="Delete"
-                            onClick={() => {
-                                deleteDraft(draft.id);
-                            }}
-                        >
-                            <MdDelete />
-                        </button>
-                    </td>
-                )}
-            </tr>
-        );
-    }
-
-    function CreateDraftForm() {
-        return (
-            <div className="create-draft">
-                <button onClick={createDraft} disabled={busy}>
-                    Create a draft
-                </button>
-            </div>
-        );
-    }
-
-    function JoinDraftForm() {
-        return (
-            <div className="join-draft">
-                <label htmlFor="draft-id">Or join a friend's draft:</label>
-                <input
-                    id="draft-id"
-                    type="text"
-                    placeholder="e.g. 718dc651-4c33-4d43-86b7-fe61f59d2f79"
-                    value={joinDraftId}
-                    onChange={(event) => setJoinDraftId(event.target.value)}
-                    disabled={busy}
-                ></input>
-                <button onClick={joinDraft} disabled={busy}>
-                    Join
-                </button>
-            </div>
-        );
-    }
 
     function getDrafts() {
         setBusy(true);
@@ -172,8 +75,8 @@ export default function Drafts({ loggedInUser }) {
         setBusy(true);
         asyncTry(
             async () => {
-                await DraftsApi.createDraft();
-                getDrafts();
+                const { draftId } = await DraftsApi.createDraft();
+                history.push(`/drafts/${draftId}`);
             },
             () => {
                 setBusy(false);

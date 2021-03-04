@@ -78,6 +78,7 @@ export async function createDraft(userId) {
     }
     const draft = await DraftRepo.create(uuidv4(), userId);
     await PlayerRepo.create(userId, draft.id);
+    return draft.id;
 }
 
 export async function joinDraft(draftId, userId) {

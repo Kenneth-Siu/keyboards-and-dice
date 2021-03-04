@@ -62,8 +62,8 @@ router.get("/:draftId/picks", ensureLoggedIn, (req, res) => {
 
 router.post("/", ensureLoggedIn, (req, res) => {
     DraftService.createDraft(req.user.id)
-        .then(() => {
-            res.sendStatus(201);
+        .then((draftId) => {
+            res.send({ draftId });
         })
         .catch((err) => {
             if (err.name === DraftLimitReachedErrorName) {
