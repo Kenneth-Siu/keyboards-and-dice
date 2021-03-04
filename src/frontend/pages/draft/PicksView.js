@@ -87,10 +87,10 @@ export function PicksView({
 
     function getFromCookie(cards) {
         const cookiePicksCardIds = CookieHelper.get(cookieName, {
-            deckCreatures: getEmptyRow(),
-            deckNonCreatures: getEmptyRow(),
-            sideboardCreatures: getEmptyRow(),
-            sideboardNonCreatures: getEmptyRow(),
+            deckCreatures: [[], [], [], [], [], [], [], []],
+            deckNonCreatures: [[], [], [], [], [], [], [], []],
+            sideboardCreatures: [[], [], [], [], [], [], [], []],
+            sideboardNonCreatures: [[], [], [], [], [], [], [], []],
         });
         const cookieDeckCreatures = cookiePicksCardIds.deckCreatures.map((column) =>
             column.map((cardId) => getCard(cardId))
@@ -126,10 +126,6 @@ export function PicksView({
             sideboardCreatures: cookieSideboardCreatures,
             sideboardNonCreatures: cookieSideboardNonCreatures,
         });
-    }
-
-    function getEmptyRow() {
-        return [[], [], [], [], [], [], [], []];
     }
 
     function reckonNewCards(incomingCards, existingCards) {

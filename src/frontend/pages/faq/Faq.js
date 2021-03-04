@@ -10,7 +10,6 @@ import turnTheTideOfBattle from "../../../../data/cardImages/Turn the Tide of Ba
 import coordinateScrambler from "../../../../data/cardImages/Coordinate Scrambler.jpg";
 import futureInsight from "../../../../data/cardImages/Future Insight.jpg";
 import lambertStealthBomber from "../../../../data/cardImages/Lambert Stealth Bomber.jpg";
-import matterRedistribution from "../../../../data/cardImages/Matter Redistribution.jpg";
 import nanoreplicatorZero from "../../../../data/cardImages/Nanoreplicator Zero.jpg";
 import neutronFlow from "../../../../data/cardImages/Neutron Flow.jpg";
 import cloningVats from "../../../../data/cardImages/Cloning Vats.jpg";
@@ -305,15 +304,6 @@ export default function Faq() {
                                 Effects that switch power and toughness apply after all other effects that change power
                                 and/or toughness, regardless of which effect was created first.
                             </li>
-                        </ul>
-                    </div>
-                </section>
-                <section>
-                    <img src={matterRedistribution} />
-                    <div>
-                        <h3>Matter Redistribution</h3>
-                        <ul>
-                            <li>The targeted player chooses which of their creatures to return.</li>
                         </ul>
                     </div>
                 </section>

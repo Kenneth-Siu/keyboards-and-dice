@@ -6,6 +6,7 @@ import blackManaSymbol from "../../../../data/blackManaSymbol.svg";
 import redManaSymbol from "../../../../data/redManaSymbol.svg";
 import greenManaSymbol from "../../../../data/greenManaSymbol.svg";
 import { MdAddCircleOutline, MdRemoveCircleOutline } from "react-icons/md";
+import "./BasicsControlPanel.scss";
 
 export function BasicsControlPanel({ draftId, basicsLoaded, setBasicsLoaded, basics, setBasics }) {
     const cookieName = `draft-${draftId}-lands`;

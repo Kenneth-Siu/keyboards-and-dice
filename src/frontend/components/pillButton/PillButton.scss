@@ -1,0 +1,6 @@
+@import "../mixins.scss";
+
+.pill-button {
+    @include button;
+    border-radius: 100rem;
+}

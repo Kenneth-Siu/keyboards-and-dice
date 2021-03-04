@@ -1,4 +1,5 @@
 @import "../../components/responsive.scss";
+@import "../../components/mixins.scss";
 @import "../../components/navBar/NavBar.scss";
 
 .card-image-gallery-page {
@@ -30,6 +31,7 @@
     }
 
     .card {
+        @include card-image;
         @media (max-width: 659px) {
             width: 49.25%;
             margin-right: 1.5%;

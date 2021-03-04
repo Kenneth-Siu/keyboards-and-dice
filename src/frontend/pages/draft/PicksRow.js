@@ -1,10 +1,11 @@
 import React from "react";
+import "./PicksRow.scss";
 
 export function PicksRow({ row, cardOnClick }) {
     const nameBarHeight = 1.85;
     const cardHeight = 16.664;
     return (
-        <div className="card-row">
+        <div className="picks-row">
             {row.map((pile, pileIndex) => (
                 <div
                     key={pileIndex}

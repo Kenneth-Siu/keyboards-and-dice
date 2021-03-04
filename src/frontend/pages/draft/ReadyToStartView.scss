@@ -1,4 +1,6 @@
 @import "./Draft.scss";
+@import "../../components/mixins.scss";
+@import "../../components/colors.scss";
 
 .invite-your-friends {
     margin-right: auto;
@@ -13,8 +15,22 @@
         padding: 0.1rem 0;
         margin-left: 0.2rem;
     }
+
+    .copy {
+        @include button;
+        position: absolute;
+        font-size: 1rem;
+        padding: 0.2rem;
+        margin: 0 0.2rem;
+        transform: translateY(0.1rem);
+
+        svg {
+            display: block;
+        }
+    }
 }
 
-.start-draft {
+.pill-button.start-draft {
     @include bigButton;
+    background-color: $color-5-strong;
 }

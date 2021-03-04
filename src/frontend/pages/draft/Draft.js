@@ -9,7 +9,7 @@ import { MdRefresh } from "react-icons/md";
 import { asyncTry } from "../../helpers/asyncTry";
 import { CHEVRON_DIRECTION, PlayerList } from "../../components/playerList/PlayerList";
 import { ReadyToStartView } from "./ReadyToStartView";
-import { Button } from "../../components/button/Button";
+import { PillButton } from "../../components/pillButton/PillButton";
 import { PicksView } from "./PicksView";
 import { BasicsControlPanel } from "./BasicsControlPanel";
 import { flatten } from "lodash";
@@ -135,9 +135,9 @@ export default function SingleDraft({ loggedInUser }) {
                         </button>
                     ))}
                 </div>
-                <Button onClick={submitPick} className="submit-pick" disabled={selectedCardIndex === null}>
+                <PillButton onClick={submitPick} className="submit-pick" disabled={selectedCardIndex === null}>
                     Submit Pick
-                </Button>
+                </PillButton>
             </>
         );
     }

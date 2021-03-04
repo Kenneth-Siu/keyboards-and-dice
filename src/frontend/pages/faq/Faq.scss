@@ -1,5 +1,6 @@
 @import "../../components/responsive.scss";
 @import "../../components/colors.scss";
+@import "../../components/mixins.scss";
 @import "../../components/navBar/NavBar.scss";
 
 .faq-page {
@@ -24,6 +25,7 @@
         }
 
         > img {
+            @include card-image;
             @include responsive(order, 0, 0, 1);
             flex-grow: 0;
             max-width: 375px;

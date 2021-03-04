@@ -1,13 +1,14 @@
 import React, { useState } from "react";
-import { Button } from "../../components/button/Button";
+import { PillButton } from "../../components/pillButton/PillButton";
+import "./CopyDeckButton.scss";
 
 export function CopyDeckButton({ copyCallback }) {
     const [deckCopied, setDeckCopied] = useState(false);
 
     return (
-        <Button className={`copy-deck-button${deckCopied ? " deck-copied" : ""}`} onClick={onClick}>
+        <PillButton className={`copy-deck-button${deckCopied ? " deck-copied" : ""}`} onClick={onClick}>
             {deckCopied ? "Deck copied!" : "Copy deck to clipboard"}
-        </Button>
+        </PillButton>
     );
 
     function onClick() {

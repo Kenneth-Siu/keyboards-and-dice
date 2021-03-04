@@ -31,20 +31,6 @@
         }
     }
 
-    h2 {
-        text-align: left;
-        font-weight: 700;
-        font-size: 1.4rem;
-        margin: 0;
-        width: 15rem;
-
-        small {
-            font-size: 1.2rem;
-            font-weight: 500;
-            color: lighten($color-1, 30%);
-        }
-    }
-
     .player-list {
         display: flex;
         justify-content: center;
@@ -53,26 +39,10 @@
 
         .player-pill {
             background-color: darken($color-2, 5%);
-    
+
             &.current-user {
                 background-color: $color-5-light;
             }
-        }
-    }
-
-    .copy {
-        position: absolute;
-        font-size: 1rem;
-        line-height: 1;
-        border: none;
-        background: none;
-        padding: 0.2rem;
-        margin: 0 0.2rem;
-        cursor: pointer;
-        transform: translateY(0.1rem);
-
-        svg {
-            display: block;
         }
     }
 
@@ -188,116 +158,5 @@
         }
     }
 
-    .picks-view {
-        position: relative;
-
-        .picks-heading {
-            width: 98%;
-            display: inline-flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 0.1rem;
-            margin-bottom: 1rem;
-        }
-
-        .basics-control-panel {
-            display: flex;
-            align-items: center;
-
-            .basic-control {
-                display: flex;
-                align-items: center;
-                margin: 0 0.2rem;
-                button {
-                    border: none;
-                    background: none;
-                    padding: 0;
-                    line-height: 0;
-                    font-size: 1rem;
-                    cursor: pointer;
-
-                    &:disabled {
-                        opacity: 0.8;
-                        cursor: default;
-                    }
-                }
-
-                .symbol-div {
-                    position: relative;
-                    height: 1.3rem;
-                    width: 1.3rem;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    font-weight: 600;
-                    font-size: 1.2rem;
-                    margin: 0 0.1rem;
-                }
-                img {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    height: 100%;
-                    width: 100%;
-
-                    &.fade {
-                        opacity: 0.2;
-                    }
-                }
-            }
-        }
-
-        .copy-deck-button {
-            font-size: 0.8rem;
-            font-weight: 600;
-            padding: 0.4rem 0.6rem;
-            color: $color-1;
-            border: 2px solid $color-1;
-            background: none;
-            margin: 0 0.4rem;
-            width: 10.25rem;
-
-            &.deck-copied {
-                opacity: 0.2;
-            }
-        }
-
-        .card-row {
-            display: inline-flex;
-            justify-content: flex-start;
-            width: 98%;
-            margin-bottom: 0.5%;
-            padding: 0.5% 0.5%;
-            background-color: darken($color-2, 5%);
-            border-radius: 0.7rem;
-
-            .column {
-                position: relative;
-                width: 12.3%;
-                margin-right: 0.2285%;
-                // height: Set in JavaScript
-                // top: Set in JavaScript
-                &:nth-child(8n) {
-                    margin-right: 0;
-                }
-
-                div.card {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    &:hover {
-                        z-index: 1;
-                    }
-
-                    img {
-                        display: block;
-                        pointer-events: none;
-                        width: 100%;
-                        border-radius: 4.1% / 2.91%;
-                    }
-                }
-            }
-        }
-    }
+    
 }

@@ -2,7 +2,7 @@ import React from "react";
 import copy from "copy-to-clipboard";
 import { MdContentCopy } from "react-icons/md";
 import "./ReadyToStartView.scss";
-import { Button } from "../../components/button/Button";
+import { PillButton } from "../../components/pillButton/PillButton";
 
 export function ReadyToStartView({ draftId, numberOfBots, startDraftCallback }) {
     return (
@@ -13,10 +13,10 @@ export function ReadyToStartView({ draftId, numberOfBots, startDraftCallback }) 
                     <MdContentCopy />
                 </button>
             </p>
-            <Button onClick={startDraft} className="start-draft">
+            <PillButton onClick={startDraft} className="start-draft">
                 Start the draft!
                 {numberOfBots > 0 ? ` (With ${numberOfBots} bots)` : ""}
-            </Button>
+            </PillButton>
         </>
     );
 

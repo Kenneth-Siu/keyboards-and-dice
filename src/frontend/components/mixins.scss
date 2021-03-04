@@ -1,0 +1,15 @@
+@mixin button {
+    border: none;
+    background: none;
+    line-height: 1;
+    cursor: pointer;
+
+    &:disabled {
+        opacity: 0.3;
+        cursor: default;
+    }
+}
+
+@mixin card-image {
+    border-radius: 4.1% / 2.91%;
+}
