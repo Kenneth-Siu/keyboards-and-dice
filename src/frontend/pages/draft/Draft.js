@@ -11,16 +11,19 @@ import { CHEVRON_DIRECTION, PlayerList } from "../../components/playerList/Playe
 import { ReadyToStartView } from "./ReadyToStartView";
 import { Button } from "../../components/button/Button";
 import { PicksView } from "./PicksView";
+import { BasicsControlPanel } from "./BasicsControlPanel";
 
 export default function SingleDraft({ loggedInUser }) {
     const { draftId } = useParams();
 
     const [selectedCardIndex, setSelectedCardIndex] = useState(null);
 
-    const [deckCreatures, setDeckCreatures] = useState([[], [], [], [], [], [], [], []]);
-    const [deckNonCreatures, setDeckNonCreatures] = useState([[], [], [], [], [], [], [], []]);
-    const [sideboardCreatures, setSideboardCreatures] = useState([[], [], [], [], [], [], [], []]);
-    const [sideboardNonCreatures, setSideboardNonCreatures] = useState([[], [], [], [], [], [], [], []]);
+    const [picks, setPicks] = useState({
+        deckCreatures: [[], [], [], [], [], [], [], []],
+        deckNonCreatures: [[], [], [], [], [], [], [], []],
+        sideboardCreatures: [[], [], [], [], [], [], [], []],
+        sideboardNonCreatures: [[], [], [], [], [], [], [], []],
+    });
 
     const [firstTimeDraftLoading, setFirstTimeDraftLoading] = useState(true);
     const [boosterLoading, setBoosterLoading] = useState(false);
@@ -37,6 +40,7 @@ export default function SingleDraft({ loggedInUser }) {
     const [numberOfForests, setNumberOfForests] = useState(0);
 
     const [picksLoaded, setPicksLoaded] = useState(false);
+    const [landsLoaded, setLandsLoaded] = useState(false);
 
     useEffect(getDraft, []);
 
@@ -91,25 +95,32 @@ export default function SingleDraft({ loggedInUser }) {
                             draftId,
                             picksLoaded,
                             setPicksLoaded,
-                            deckCreatures,
-                            setDeckCreatures,
-                            deckNonCreatures,
-                            setDeckNonCreatures,
-                            sideboardCreatures,
-                            setSideboardCreatures,
-                            sideboardNonCreatures,
-                            setSideboardNonCreatures,
-                            numberOfPlains,
-                            setNumberOfPlains,
-                            numberOfIslands,
-                            setNumberOfIslands,
-                            numberOfSwamps,
-                            setNumberOfSwamps,
-                            numberOfMountains,
-                            setNumberOfMountains,
-                            numberOfForests,
-                            setNumberOfForests,
+                            picks,
+                            setPicks,
+                            copyPicksToClipboard,
                         }}
+                        basicsControlPanel={
+                            <BasicsControlPanel
+                                {...{
+                                    draftId,
+                                    numberOfPlains,
+                                    setNumberOfPlains,
+                                    numberOfIslands,
+                                    setNumberOfIslands,
+                                    numberOfSwamps,
+                                    setNumberOfSwamps,
+                                    numberOfMountains,
+                                    setNumberOfMountains,
+                                    numberOfForests,
+                                    setNumberOfForests,
+                                    landsLoaded,
+                                    setLandsLoaded,
+                                }}
+                            />
+                        }
+                        totalBasics={
+                            numberOfPlains + numberOfIslands + numberOfSwamps + numberOfMountains + numberOfForests
+                        }
                     />
                 )}
             </>
@@ -206,11 +217,11 @@ export default function SingleDraft({ loggedInUser }) {
                 setSelectedCardIndex(null);
                 const column = submittedCard.manaValue === 0 ? 7 : Math.min(6, submittedCard.manaValue - 1);
                 if (submittedCard.type.includes("Creature")) {
-                    deckCreatures[column].push(submittedCard);
-                    setDeckCreatures([...deckCreatures]);
+                    picks.deckCreatures[column].push(submittedCard);
+                    setPicks({ ...picks });
                 } else {
-                    deckNonCreatures[column].push(submittedCard);
-                    setDeckNonCreatures([...deckNonCreatures]);
+                    picks.deckNonCreatures[column].push(submittedCard);
+                    setPicks({ ...picks });
                 }
                 getDraft();
             },
@@ -218,5 +229,32 @@ export default function SingleDraft({ loggedInUser }) {
                 setBoosterLoading(false);
             }
         );
+    }
+
+    function copyPicksToClipboard() {
+        const deck = [...flatten(picks.deckCreatures), ...flatten(picks.deckNonCreatures)].map(
+            (card) => `1 ${card.name}`
+        );
+        if (numberOfPlains) {
+            deck.push(`${numberOfPlains} Plains`);
+        }
+        if (numberOfIslands) {
+            deck.push(`${numberOfIslands} Island`);
+        }
+        if (numberOfSwamps) {
+            deck.push(`${numberOfSwamps} Swamp`);
+        }
+        if (numberOfMountains) {
+            deck.push(`${numberOfMountains} Mountain`);
+        }
+        if (numberOfForests) {
+            deck.push(`${numberOfForests} Forest`);
+        }
+        const sideboard = [...flatten(picks.sideboardCreatures), ...flatten(picks.sideboardNonCreatures)].map(
+            (card) => `1 ${card.name}`
+        );
+        sideboard.push("10 Plains", "10 Island", "10 Swamp", "10 Mountain", "10 Forest");
+
+        copy(deck.join("\n") + "\n\n" + sideboard.join("\n"));
     }
 }

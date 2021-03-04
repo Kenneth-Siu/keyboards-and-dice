@@ -1,42 +1,26 @@
 import { flatten } from "lodash";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import LoadingSpinner from "../../components/loadingSpinner/LoadingSpinner";
 import { asyncTry } from "../../helpers/asyncTry";
 import * as CookieHelper from "../../helpers/CookieHelper.js";
-import { BasicsControlPanel } from "./BasicsControlPanel";
 import { CopyDeckButton } from "./CopyDeckButton";
 import { PicksRow } from "./PicksRow";
 import * as DraftsApi from "../../api/DraftsApi.js";
 import { getCard } from "../../../shared/cardList";
 import "./PicksView.scss";
-import copy from "copy-to-clipboard";
 
 export function PicksView({
     draftId,
     picksLoaded,
     setPicksLoaded,
-    deckCreatures,
-    setDeckCreatures,
-    deckNonCreatures,
-    setDeckNonCreatures,
-    sideboardCreatures,
-    setSideboardCreatures,
-    sideboardNonCreatures,
-    setSideboardNonCreatures,
+    picks,
+    setPicks,
     showDeckbuilderPanels,
-    numberOfPlains,
-    setNumberOfPlains,
-    numberOfIslands,
-    setNumberOfIslands,
-    numberOfSwamps,
-    setNumberOfSwamps,
-    numberOfMountains,
-    setNumberOfMountains,
-    numberOfForests,
-    setNumberOfForests,
+    basicsControlPanel,
+    totalBasics,
+    copyPicksToClipboard,
 }) {
     const cookieName = `draft-${draftId}`;
-    const totalBasics = numberOfPlains + numberOfIslands + numberOfSwamps + numberOfMountains + numberOfForests;
 
     useEffect(getPicks, []);
 
@@ -50,41 +34,29 @@ export function PicksView({
                 <h2>
                     Deck{" "}
                     <small>
-                        ({flatten(deckCreatures).length + flatten(deckNonCreatures).length} cards
+                        ({flatten(picks.deckCreatures).length + flatten(picks.deckNonCreatures).length} cards
                         {totalBasics > 0 ? `, ${totalBasics} basics` : ""})
                     </small>
                 </h2>
                 {showDeckbuilderPanels && (
                     <>
-                        <BasicsControlPanel
-                            {...{
-                                draftId,
-                                numberOfPlains,
-                                setNumberOfPlains,
-                                numberOfIslands,
-                                setNumberOfIslands,
-                                numberOfSwamps,
-                                setNumberOfSwamps,
-                                numberOfMountains,
-                                setNumberOfMountains,
-                                numberOfForests,
-                                setNumberOfForests,
-                            }}
-                        />
+                        {basicsControlPanel}
                         <CopyDeckButton copyCallback={copyPicksToClipboard} />
                     </>
                 )}
             </div>
-            <PicksRow row={deckCreatures} cardOnClick={moveCreatureFromDeckToSideboard} />
-            <PicksRow row={deckNonCreatures} cardOnClick={moveNonCreatureFromDeckToSideboard} />
+            <PicksRow row={picks.deckCreatures} cardOnClick={moveCreatureFromDeckToSideboard} />
+            <PicksRow row={picks.deckNonCreatures} cardOnClick={moveNonCreatureFromDeckToSideboard} />
             <div className="picks-heading">
                 <h2>
                     Sideboard{" "}
-                    <small>({flatten(sideboardCreatures).length + flatten(sideboardNonCreatures).length} cards)</small>
+                    <small>
+                        ({flatten(picks.sideboardCreatures).length + flatten(picks.sideboardNonCreatures).length} cards)
+                    </small>
                 </h2>
             </div>
-            <PicksRow row={sideboardCreatures} cardOnClick={moveCreatureFromSideboardToDeck} />
-            <PicksRow row={sideboardNonCreatures} cardOnClick={moveNonCreatureFromSideboardToDeck} />
+            <PicksRow row={picks.sideboardCreatures} cardOnClick={moveCreatureFromSideboardToDeck} />
+            <PicksRow row={picks.sideboardNonCreatures} cardOnClick={moveNonCreatureFromSideboardToDeck} />
         </div>
     );
 
@@ -105,10 +77,10 @@ export function PicksView({
 
     function setCookie() {
         const cookiePicksCardIds = {
-            deckCreatures: deckCreatures.map((column) => column.map((card) => card.id)),
-            deckNonCreatures: deckNonCreatures.map((column) => column.map((card) => card.id)),
-            sideboardCreatures: sideboardCreatures.map((column) => column.map((card) => card.id)),
-            sideboardNonCreatures: sideboardNonCreatures.map((column) => column.map((card) => card.id)),
+            deckCreatures: picks.deckCreatures.map((column) => column.map((card) => card.id)),
+            deckNonCreatures: picks.deckNonCreatures.map((column) => column.map((card) => card.id)),
+            sideboardCreatures: picks.sideboardCreatures.map((column) => column.map((card) => card.id)),
+            sideboardNonCreatures: picks.sideboardNonCreatures.map((column) => column.map((card) => card.id)),
         };
         CookieHelper.set(cookieName, cookiePicksCardIds);
     }
@@ -148,10 +120,12 @@ export function PicksView({
                 cookieDeckNonCreatures[column].push(card);
             }
         });
-        setDeckCreatures(cookieDeckCreatures);
-        setDeckNonCreatures(cookieDeckNonCreatures);
-        setSideboardCreatures(cookieSideboardCreatures);
-        setSideboardNonCreatures(cookieSideboardNonCreatures);
+        setPicks({
+            deckCreatures: cookieDeckCreatures,
+            deckNonCreatures: cookieDeckNonCreatures,
+            sideboardCreatures: cookieSideboardCreatures,
+            sideboardNonCreatures: cookieSideboardNonCreatures,
+        });
     }
 
     function getEmptyRow() {
@@ -173,59 +147,30 @@ export function PicksView({
     }
 
     function moveCreatureFromDeckToSideboard(column, row) {
-        sideboardCreatures[column].push(deckCreatures[column][row]);
-        deckCreatures[column].splice(row, 1);
-        setSideboardCreatures([...sideboardCreatures]);
-        setDeckCreatures([...deckCreatures]);
+        picks.sideboardCreatures[column].push(picks.deckCreatures[column][row]);
+        picks.deckCreatures[column].splice(row, 1);
+        setPicks({ ...picks });
         setCookie();
     }
 
     function moveNonCreatureFromDeckToSideboard(column, row) {
-        sideboardNonCreatures[column].push(deckNonCreatures[column][row]);
-        deckNonCreatures[column].splice(row, 1);
-        setSideboardNonCreatures([...sideboardNonCreatures]);
-        setDeckNonCreatures([...deckNonCreatures]);
+        picks.sideboardNonCreatures[column].push(picks.deckNonCreatures[column][row]);
+        picks.deckNonCreatures[column].splice(row, 1);
+        setPicks({ ...picks });
         setCookie();
     }
 
     function moveCreatureFromSideboardToDeck(column, row) {
-        deckCreatures[column].push(sideboardCreatures[column][row]);
-        sideboardCreatures[column].splice(row, 1);
-        setDeckCreatures([...deckCreatures]);
-        setSideboardCreatures([...sideboardCreatures]);
+        picks.deckCreatures[column].push(picks.sideboardCreatures[column][row]);
+        picks.sideboardCreatures[column].splice(row, 1);
+        setPicks({ ...picks });
         setCookie();
     }
 
     function moveNonCreatureFromSideboardToDeck(column, row) {
-        deckNonCreatures[column].push(sideboardNonCreatures[column][row]);
-        sideboardNonCreatures[column].splice(row, 1);
-        setDeckNonCreatures([...deckNonCreatures]);
-        setSideboardNonCreatures([...sideboardNonCreatures]);
+        picks.deckNonCreatures[column].push(picks.sideboardNonCreatures[column][row]);
+        picks.sideboardNonCreatures[column].splice(row, 1);
+        setPicks({ ...picks });
         setCookie();
-    }
-
-    function copyPicksToClipboard() {
-        const deck = [...flatten(deckCreatures), ...flatten(deckNonCreatures)].map((card) => `1 ${card.name}`);
-        if (numberOfPlains) {
-            deck.push(`${numberOfPlains} Plains`);
-        }
-        if (numberOfIslands) {
-            deck.push(`${numberOfIslands} Island`);
-        }
-        if (numberOfSwamps) {
-            deck.push(`${numberOfSwamps} Swamp`);
-        }
-        if (numberOfMountains) {
-            deck.push(`${numberOfMountains} Mountain`);
-        }
-        if (numberOfForests) {
-            deck.push(`${numberOfForests} Forest`);
-        }
-        const sideboard = [...flatten(sideboardCreatures), ...flatten(sideboardNonCreatures)].map(
-            (card) => `1 ${card.name}`
-        );
-        sideboard.push("10 Plains", "10 Island", "10 Swamp", "10 Mountain", "10 Forest");
-
-        copy(deck.join("\n") + "\n\n" + sideboard.join("\n"));
     }
 }

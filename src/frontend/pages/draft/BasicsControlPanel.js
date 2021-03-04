@@ -19,6 +19,8 @@ export function BasicsControlPanel({
     setNumberOfMountains,
     numberOfForests,
     setNumberOfForests,
+    landsLoaded,
+    setLandsLoaded,
 }) {
     const cookieName = `draft-${draftId}-lands`;
     useEffect(getLandsFromCookie, []);
@@ -35,12 +37,15 @@ export function BasicsControlPanel({
     );
 
     function getLandsFromCookie() {
-        const cookieLands = CookieHelper.get(cookieName, [0, 0, 0, 0, 0]);
-        setNumberOfPlains(cookieLands[0]);
-        setNumberOfIslands(cookieLands[1]);
-        setNumberOfSwamps(cookieLands[2]);
-        setNumberOfMountains(cookieLands[3]);
-        setNumberOfForests(cookieLands[4]);
+        if (!landsLoaded) {
+            const cookieLands = CookieHelper.get(cookieName, [0, 0, 0, 0, 0]);
+            setNumberOfPlains(cookieLands[0]);
+            setNumberOfIslands(cookieLands[1]);
+            setNumberOfSwamps(cookieLands[2]);
+            setNumberOfMountains(cookieLands[3]);
+            setNumberOfForests(cookieLands[4]);
+            setLandsLoaded(true);
+        }
     }
 
     function updateCookie(landArray) {
