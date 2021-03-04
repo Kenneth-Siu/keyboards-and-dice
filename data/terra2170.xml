@@ -8,19 +8,19 @@
     </set>
     <cards>
     <card>
-        <name>Military</name>
-        <text></text>
+        <name>Police</name>
+        <text>Vigilance</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Token Creature — Military </type>
+            <type>Token Creature — Police </type>
             <maintype>Token Creature</maintype>
             <manacost></manacost>
             <cmc>0</cmc>
             <coloridentity>W</coloridentity>
-            <pt>1/1</pt>
+            <pt>2/2</pt>
         </prop>
-        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Military.jpg">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Police.jpg">T2170</set>
         <token>1</token>
         <tablerow>2</tablerow>
     </card>
@@ -40,19 +40,19 @@
         <tablerow>1</tablerow>
     </card>
     <card>
-        <name>Police</name>
-        <text>Vigilance</text>
+        <name>Soldier</name>
+        <text></text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Token Creature — Police </type>
+            <type>Token Creature — Soldier </type>
             <maintype>Token Creature</maintype>
             <manacost></manacost>
             <cmc>0</cmc>
             <coloridentity>W</coloridentity>
-            <pt>2/2</pt>
+            <pt>1/1</pt>
         </prop>
-        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Police.jpg">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Soldier.jpg">T2170</set>
         <token>1</token>
         <tablerow>2</tablerow>
     </card>
@@ -126,7 +126,7 @@
     </card>
     <card>
         <name>Bring to Justice</name>
-        <text>Exile target creature or planeswalker if it’s tapped or if you control three or more artifacts. Scry 1.</text>
+        <text>Exile target creature or planeswalker if it’s tapped or if you control three or more artifacts.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -296,7 +296,7 @@ Equip 2</text>
     </card>
     <card>
         <name>Cryonics Facility</name>
-        <text>1W, T: Exile target creature. Return it to the battlefield under its owner’s control at the beginning of the next end step. Activate this ability only any time you could cast a sorcery.</text>
+        <text>1W, T: Exile target creature you control. Return it to the battlefield under its owner’s control at the beginning of the next end step. Activate this ability only any time you could cast a sorcery.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -382,7 +382,7 @@ Whenever Dropship attacks and isn’t blocked, you may put a creature card exile
     <card>
         <name>Emergency Landing</name>
         <text>Destroy up to one target artifact or enchantment.
-Create two 1/1 white Military creature tokens.</text>
+Create two 1/1 white Soldier creature tokens.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -394,7 +394,7 @@ Create two 1/1 white Military creature tokens.</text>
             <coloridentity>W</coloridentity>
         </prop>
         <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Emergency%20Landing.jpg">T2170</set>
-        <related count="2">Military</related>
+        <related count="2">Soldier</related>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -431,15 +431,15 @@ Create two 1/1 white Military creature tokens.</text>
     </card>
     <card>
         <name>Head Detective</name>
-        <text>Hexproof
-When Head Detective enters the battlefield, you may exile another target creature or planeswalker until Head Detective leaves the battlefield.</text>
+        <text>When Head Detective enters the battlefield, exile target creature or planeswalker an opponent controls until Head Detective leaves the battlefield.
+5: Return the exiled card to the battlefield under its owner’s control. Any player may activate this ability but only any time they could cast a sorcery.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
             <type>Creature — Police Advisor </type>
             <maintype>Creature</maintype>
-            <manacost>2WW</manacost>
-            <cmc>4</cmc>
+            <manacost>2W</manacost>
+            <cmc>3</cmc>
             <colors>W</colors>
             <coloridentity>W</coloridentity>
             <pt>2/2</pt>
@@ -468,8 +468,8 @@ Equip 6</text>
     <card>
         <name>Helios Comms Satellite</name>
         <text>Flying
-At the beginning of each upkeep, put a charge counter on Helios Comms Satellite.
-2/W2/W2/W, Remove a charge counter from Helios Comms Satellite: Until end of turn, creatures you control get +1/+1 or gain your choice of first strike, vigilance, or lifelink. Any player may activate this ability. (2/W can be paid with any two mana or with W.)</text>
+At the beginning of your upkeep, put a charge counter on Helios Comms Satellite.
+Remove three charge counters from Helios Comms Satellite: Until end of turn, creatures you control get +1/+1 or gain your choice of first strike, vigilance, or lifelink.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -643,8 +643,8 @@ Equip 2</text>
         <tablerow>1</tablerow>
     </card>
     <card>
-        <name>Raise the Siren</name>
-        <text>Create two 1/1 white Military creature tokens.</text>
+        <name>Raise the Alarm</name>
+        <text>Create two 1/1 white Soldier creature tokens.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -655,8 +655,8 @@ Equip 2</text>
             <colors>W</colors>
             <coloridentity>W</coloridentity>
         </prop>
-        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Raise%20the%20Siren.jpg">T2170</set>
-        <related count="2">Military</related>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Raise%20the%20Alarm.jpg">T2170</set>
+        <related count="2">Soldier</related>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -665,7 +665,7 @@ Equip 2</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Creature — Rebel Commando </type>
+            <type>Creature — Rebel Soldier </type>
             <maintype>Creature</maintype>
             <manacost>1W</manacost>
             <cmc>2</cmc>
@@ -706,7 +706,7 @@ W, T: You gain 1 life.</text>
             <cmc>2</cmc>
             <colors>W</colors>
             <coloridentity>W</coloridentity>
-            <pt>1/2</pt>
+            <pt>1/1</pt>
         </prop>
         <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Remote%20Paralyzer.jpg">T2170</set>
         <tablerow>2</tablerow>
@@ -757,7 +757,7 @@ Whenever one or more Police creatures you control block, create a 2/2 white Poli
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Creature — Police Commando </type>
+            <type>Creature — Police Soldier </type>
             <maintype>Creature</maintype>
             <manacost>3WW</manacost>
             <cmc>5</cmc>
@@ -830,7 +830,7 @@ When Suppression Patrol enters the battlefield, tap target creature an opponent 
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Creature — Military Commando </type>
+            <type>Creature — Military Soldier </type>
             <maintype>Creature</maintype>
             <manacost>2W</manacost>
             <cmc>3</cmc>
@@ -861,7 +861,7 @@ When Time Traveller enters the battlefield, you choose which creatures attack th
     </card>
     <card>
         <name>Turn the Tide of Battle</name>
-        <text>If you control fewer creatures than an opponent, create five 1/1 white Military creature tokens. Otherwise, create three of those tokens.
+        <text>If you control fewer creatures than an opponent, create five 1/1 white Soldier creature tokens. Otherwise, create three of those tokens.
 If you have less life than an opponent, you gain 5 life. Otherwise, you gain 3 life.</text>
         <prop>
             <layout>normal</layout>
@@ -874,7 +874,7 @@ If you have less life than an opponent, you gain 5 life. Otherwise, you gain 3 l
             <coloridentity>W</coloridentity>
         </prop>
         <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Turn%20the%20Tide%20of%20Battle.jpg">T2170</set>
-        <related count="5">Military</related>
+        <related count="x">Soldier</related>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -896,7 +896,7 @@ If you have less life than an opponent, you gain 5 life. Otherwise, you gain 3 l
     </card>
     <card>
         <name>Wartime Recruitment</name>
-        <text>At the beginning of your upkeep, look at the top card of your library. If it’s a land card, you may reveal it and pay 1W. If you do, create two 1/1 white Military creature tokens.</text>
+        <text>At the beginning of your upkeep, look at the top card of your library. If it’s a land card, you may reveal it and pay 1W. If you do, create two 1/1 white Soldier creature tokens.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -908,17 +908,17 @@ If you have less life than an opponent, you gain 5 life. Otherwise, you gain 3 l
             <coloridentity>W</coloridentity>
         </prop>
         <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Wartime%20Recruitment.jpg">T2170</set>
-        <related count="2">Military</related>
+        <related count="2">Soldier</related>
         <tablerow>1</tablerow>
     </card>
     <card>
         <name>Warzone Mentor</name>
         <text>First strike
-When Warzone Mentor enters the battlefield, create a 1/1 white Military creature token.</text>
+When Warzone Mentor enters the battlefield, create a 1/1 white Soldier creature token.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Creature — Military Assault </type>
+            <type>Creature — Military Soldier </type>
             <maintype>Creature</maintype>
             <manacost>2W</manacost>
             <cmc>3</cmc>
@@ -927,26 +927,26 @@ When Warzone Mentor enters the battlefield, create a 1/1 white Military creature
             <pt>2/1</pt>
         </prop>
         <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Warzone%20Mentor.jpg">T2170</set>
-        <related>Military</related>
+        <related>Soldier</related>
         <tablerow>2</tablerow>
     </card>
     <card>
         <name>Wiendahl Carrier</name>
         <text>Flying
-Whenever you gain life, you may pay X, where X is less than or equal to the amount of life you gained. If you do, create X 1/1 white Military creature tokens.</text>
+Whenever you gain life, you may pay X, where X is less than or equal to the amount of life you gained. If you do, create X 1/1 white Soldier creature tokens.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Artifact Creature — Carrier </type>
+            <type>Artifact Creature — Military Carrier </type>
             <maintype>Artifact Creature</maintype>
             <manacost>4WW</manacost>
             <cmc>6</cmc>
             <colors>W</colors>
             <coloridentity>W</coloridentity>
-            <pt>4/5</pt>
+            <pt>4/4</pt>
         </prop>
         <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Wiendahl%20Carrier.jpg">T2170</set>
-        <related count="x">Military</related>
+        <related count="x">Soldier</related>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -1016,6 +1016,24 @@ Teleport 1U (You may cast this card for its teleport cost while you’re looking
             <coloridentity>U</coloridentity>
         </prop>
         <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Brain%20Drain.jpg">T2170</set>
+        <tablerow>3</tablerow>
+    </card>
+    <card>
+        <name>Breach Firewall</name>
+        <text>Target player returns a creature they control to its owner’s hand.
+Target player returns a creature they control to its owner’s hand.
+Target player returns a creature they control to its owner’s hand.</text>
+        <prop>
+            <layout>normal</layout>
+            <side>front</side>
+            <type>Instant</type>
+            <maintype>Instant</maintype>
+            <manacost>4UU</manacost>
+            <cmc>6</cmc>
+            <colors>U</colors>
+            <coloridentity>U</coloridentity>
+        </prop>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Breach%20Firewall.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -1115,8 +1133,8 @@ Teleport 1U (You may cast this card for its teleport cost while you’re looking
             <side>front</side>
             <type>Creature — Saboteur </type>
             <maintype>Creature</maintype>
-            <manacost>2U</manacost>
-            <cmc>3</cmc>
+            <manacost>3U</manacost>
+            <cmc>4</cmc>
             <colors>U</colors>
             <coloridentity>U</coloridentity>
             <pt>2/2</pt>
@@ -1130,7 +1148,7 @@ Teleport 1U (You may cast this card for its teleport cost while you’re looking
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Creature — Engineer </type>
+            <type>Creature — Corporate Engineer </type>
             <maintype>Creature</maintype>
             <manacost>2U</manacost>
             <cmc>3</cmc>
@@ -1199,7 +1217,7 @@ Guidance Pods gets +1/+0 as long as there are two or more instants and/or sorcer
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Artifact Creature — Corporate Shuttle </type>
+            <type>Artifact Creature — Corporate Fighter </type>
             <maintype>Artifact Creature</maintype>
             <manacost>U</manacost>
             <cmc>1</cmc>
@@ -1266,7 +1284,7 @@ Flying</text>
     <card>
         <name>Kushak Exile</name>
         <text>Hexproof
-Mutate (When this creature dies, reveal cards from the top of your library until you reveal a creature card that costs less. Put that card onto the battlefield and the rest on the bottom of your library in a random order.)</text>
+Reconstitute (When this creature dies, reveal cards from the top of your library until you reveal a creature card that costs less. Put that card onto the battlefield and the rest on the bottom of your library in a random order.)</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -1288,7 +1306,7 @@ Whenever Lambert Stealth Bomber attacks and isn’t blocked, switch its power an
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Artifact Creature — Cruiser </type>
+            <type>Artifact Creature — Military Cruiser </type>
             <maintype>Artifact Creature</maintype>
             <manacost>5U</manacost>
             <cmc>6</cmc>
@@ -1314,24 +1332,6 @@ Teleport 3U (You may cast this card for its teleport cost while you’re looking
             <coloridentity>U</coloridentity>
         </prop>
         <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Lost%20in%20Space.jpg">T2170</set>
-        <tablerow>3</tablerow>
-    </card>
-    <card>
-        <name>Matter Redistribution</name>
-        <text>Target player returns a creature they control to its owner’s hand.
-Target player returns a creature they control to its owner’s hand.
-Target player returns a creature they control to its owner’s hand.</text>
-        <prop>
-            <layout>normal</layout>
-            <side>front</side>
-            <type>Instant</type>
-            <maintype>Instant</maintype>
-            <manacost>4UU</manacost>
-            <cmc>6</cmc>
-            <colors>U</colors>
-            <coloridentity>U</coloridentity>
-        </prop>
-        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Matter%20Redistribution.jpg">T2170</set>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -1368,9 +1368,9 @@ Target player returns a creature they control to its owner’s hand.</text>
         <tablerow>1</tablerow>
     </card>
     <card>
-        <name>Mindmelded Sysadmin</name>
+        <name>Mindmeld Netrunner</name>
         <text>Infiltrate (Whenever this creature attacks with exactly one other creature, it can’t be blocked this turn.)
-When Mindmelded Sysadmin enters the battlefield, look at the top five cards of your library, then put them back in any order.</text>
+When Mindmeld Netrunner enters the battlefield, scry 3.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -1382,7 +1382,7 @@ When Mindmelded Sysadmin enters the battlefield, look at the top five cards of y
             <coloridentity>U</coloridentity>
             <pt>1/1</pt>
         </prop>
-        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Mindmelded%20Sysadmin.jpg">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Mindmeld%20Netrunner.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -1397,7 +1397,7 @@ When Mindmelded Sysadmin enters the battlefield, look at the top five cards of y
             <cmc>5</cmc>
             <colors>U</colors>
             <coloridentity>U</coloridentity>
-            <pt>2/1</pt>
+            <pt>0/1</pt>
         </prop>
         <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Nanoreplicator%20Zero.jpg">T2170</set>
         <tablerow>2</tablerow>
@@ -1472,7 +1472,7 @@ When Mindmelded Sysadmin enters the battlefield, look at the top five cards of y
     <card>
         <name>Scorned Researcher</name>
         <text>When Scorned Researcher enters the battlefield, draw two cards.
-Mutate (When this creature dies, reveal cards from the top of your library until you reveal a creature card that costs less. Put that card onto the battlefield and the rest on the bottom of your library in a random order.)</text>
+Reconstitute (When this creature dies, reveal cards from the top of your library until you reveal a creature card that costs less. Put that card onto the battlefield and the rest on the bottom of your library in a random order.)</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -1528,7 +1528,7 @@ Teleport 1U (You may cast this card for its teleport cost while you’re looking
     <card>
         <name>Supercoolant Technician</name>
         <text>Artifact spells you cast cost 1 less to cast.
-3U, T: Exile target creature. Return it to the battlefield under its owner’s control at the beginning of the next end step.</text>
+3U, T: Exile target creature you control. Return it to the battlefield under its owner’s control at the beginning of the next end step.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -1753,8 +1753,8 @@ Create a 1/1 colorless Mech artifact creature token.</text>
     </card>
     <card>
         <name>Cloning Vats</name>
-        <text>T: Exile target creature card from a graveyard.
-T: Create a tapped token that’s a copy of an exiled creature card, then put that card into its owner’s graveyard.</text>
+        <text>1, T: Exile target creature card from a graveyard.
+1, T: Create a tapped token that’s a copy of an exiled creature card, then put that card into its owner’s graveyard.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -1767,6 +1767,25 @@ T: Create a tapped token that’s a copy of an exiled creature card, then put th
         </prop>
         <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Cloning%20Vats.jpg">T2170</set>
         <tablerow>1</tablerow>
+    </card>
+    <card>
+        <name>Consortium Bodyguard</name>
+        <text>When Consortium Bodyguard dies, create a 1/1 colorless Mech artifact creature token.
+Teleport 3B (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)</text>
+        <prop>
+            <layout>normal</layout>
+            <side>front</side>
+            <type>Artifact Creature — Corporate Mech </type>
+            <maintype>Artifact Creature</maintype>
+            <manacost>1B</manacost>
+            <cmc>2</cmc>
+            <colors>B</colors>
+            <coloridentity>B</coloridentity>
+            <pt>2/1</pt>
+        </prop>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Consortium%20Bodyguard.jpg">T2170</set>
+        <related>Mech</related>
+        <tablerow>2</tablerow>
     </card>
     <card>
         <name>Contract Killer</name>
@@ -1841,6 +1860,22 @@ Teleport 4B (You may cast this card for its teleport cost while you’re looking
         <tablerow>3</tablerow>
     </card>
     <card>
+        <name>Drown in Sorrow</name>
+        <text>All creatures get -2/-2 until end of turn. Scry 1.</text>
+        <prop>
+            <layout>normal</layout>
+            <side>front</side>
+            <type>Sorcery</type>
+            <maintype>Sorcery</maintype>
+            <manacost>1BB</manacost>
+            <cmc>3</cmc>
+            <colors>B</colors>
+            <coloridentity>B</coloridentity>
+        </prop>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Drown%20in%20Sorrow.jpg">T2170</set>
+        <tablerow>3</tablerow>
+    </card>
+    <card>
         <name>Engineered Endemic</name>
         <text>As Engineered Endemic enters the battlefield, name a card.
 Nonartifact creatures with the chosen name get -6/-6.</text>
@@ -1859,7 +1894,7 @@ Nonartifact creatures with the chosen name get -6/-6.</text>
     </card>
     <card>
         <name>Figment of Death</name>
-        <text>Mutate (When this creature dies, reveal cards from the top of your library until you reveal a creature card that costs less. Put that card onto the battlefield and the rest on the bottom of your library in a random order.)</text>
+        <text>Reconstitute (When this creature dies, reveal cards from the top of your library until you reveal a creature card that costs less. Put that card onto the battlefield and the rest on the bottom of your library in a random order.)</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -1957,9 +1992,9 @@ Draw two cards.</text>
         <tablerow>3</tablerow>
     </card>
     <card>
-        <name>Mindmeld Torturer</name>
+        <name>Mindmeld Sadist</name>
         <text>Deathtouch
-When Mindmeld Torturer dies, each opponent loses 2 life and you gain 2 life.</text>
+When Mindmeld Sadist dies, each opponent loses 2 life and you gain 2 life.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -1971,14 +2006,14 @@ When Mindmeld Torturer dies, each opponent loses 2 life and you gain 2 life.</te
             <coloridentity>B</coloridentity>
             <pt>1/1</pt>
         </prop>
-        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Mindmeld%20Torturer.jpg">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Mindmeld%20Sadist.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
         <name>Mortality</name>
         <text>Each 2 life you pay while casting Mortality reduces its cost by 1.
 Lifelink
-Mutate (When this creature dies, reveal cards from the top of your library until you reveal a creature card that costs less. Put that card onto the battlefield and the rest on the bottom of your library in a random order.)</text>
+Reconstitute (When this creature dies, reveal cards from the top of your library until you reveal a creature card that costs less. Put that card onto the battlefield and the rest on the bottom of your library in a random order.)</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -2049,9 +2084,8 @@ Creatures you control can’t attack unless exactly two creatures attack.</text>
     <card>
         <name>Peacekeeper Satellite</name>
         <text>Flying
-At the beginning of each upkeep, put a charge counter on Peacekeeper Satellite.
-2/B2/B2/B, Remove a charge counter from Peacekeeper Satellite: Destroy another target creature that dealt or was dealt damage this turn. Any player may activate this ability.
-(2/B can be paid with any two mana or with B.)</text>
+At the beginning of your upkeep, put a charge counter on Peacekeeper Satellite.
+Remove three charge counters from Peacekeeper Satellite: Destroy target creature that dealt or was dealt damage this turn.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -2169,28 +2203,9 @@ Each creature you control that’s an Assassin or a Saboteur has deathtouch.</te
         <tablerow>1</tablerow>
     </card>
     <card>
-        <name>Security Detail</name>
-        <text>When Security Detail dies, create a 1/1 colorless Mech artifact creature token.
-Teleport 2B (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)</text>
-        <prop>
-            <layout>normal</layout>
-            <side>front</side>
-            <type>Artifact Creature — Corporate Mech </type>
-            <maintype>Artifact Creature</maintype>
-            <manacost>1B</manacost>
-            <cmc>2</cmc>
-            <colors>B</colors>
-            <coloridentity>B</coloridentity>
-            <pt>2/1</pt>
-        </prop>
-        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Security%20Detail.jpg">T2170</set>
-        <related>Mech</related>
-        <tablerow>2</tablerow>
-    </card>
-    <card>
         <name>Sewer Slitherer</name>
         <text>Lifelink
-Mutate (When this creature dies, reveal cards from the top of your library until you reveal a creature card that costs less. Put that card onto the battlefield and the rest on the bottom of your library in a random order.)</text>
+Reconstitute (When this creature dies, reveal cards from the top of your library until you reveal a creature card that costs less. Put that card onto the battlefield and the rest on the bottom of your library in a random order.)</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -2248,8 +2263,8 @@ When Sink into the Oceans is put into a graveyard from the battlefield, each opp
             <side>front</side>
             <type>Enchantment — Aura </type>
             <maintype>Enchantment</maintype>
-            <manacost>1B</manacost>
-            <cmc>2</cmc>
+            <manacost>2B</manacost>
+            <cmc>3</cmc>
             <colors>B</colors>
             <coloridentity>B</coloridentity>
         </prop>
@@ -2291,22 +2306,6 @@ Whenever The Tartarus enters the battlefield or attacks, you may put target crea
         <tablerow>2</tablerow>
     </card>
     <card>
-        <name>Tragedy of War</name>
-        <text>Creatures your opponents control get -2/-2 until end of turn.</text>
-        <prop>
-            <layout>normal</layout>
-            <side>front</side>
-            <type>Sorcery</type>
-            <maintype>Sorcery</maintype>
-            <manacost>3BB</manacost>
-            <cmc>5</cmc>
-            <colors>B</colors>
-            <coloridentity>B</coloridentity>
-        </prop>
-        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Tragedy%20of%20War.jpg">T2170</set>
-        <tablerow>3</tablerow>
-    </card>
-    <card>
         <name>Tundra Strider</name>
         <text>Infiltrate (Whenever this creature attacks with exactly one other creature, it can’t be blocked this turn.)
 Lifelink
@@ -2345,7 +2344,7 @@ Teleport 4B (You may cast this card for its teleport cost while you’re looking
     <card>
         <name>Urban Revenant</name>
         <text>Whenever another nonland permanent is put into a graveyard from the battlefield, put a +1/+1 counter on Urban Revenant.
-Mutate (When this creature dies, reveal cards from the top of your library until you reveal a creature card that costs less. Put that card onto the battlefield and the rest on the bottom of your library in a random order.)</text>
+Reconstitute (When this creature dies, reveal cards from the top of your library until you reveal a creature card that costs less. Put that card onto the battlefield and the rest on the bottom of your library in a random order.)</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -2407,7 +2406,7 @@ B, Pay 2 life, Sacrifice another nonland permanent: Choose a card name. Reveal c
             <cmc>6</cmc>
             <colors>B</colors>
             <coloridentity>B</coloridentity>
-            <pt>5/4</pt>
+            <pt>4/4</pt>
         </prop>
         <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Warship%20Sinistra.jpg">T2170</set>
         <tablerow>2</tablerow>
@@ -2432,7 +2431,7 @@ B, Pay 2 life, Sacrifice another nonland permanent: Choose a card name. Reveal c
     <card>
         <name>Adopted Wanderer</name>
         <text>Trample
-Whenever Adopted Wanderer attacks or blocks, sacrifice an artifact at end of combat.</text>
+At end of combat, if Adopted Wanderer attacked or blocked this turn, sacrifice an artifact.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -2449,8 +2448,7 @@ Whenever Adopted Wanderer attacks or blocks, sacrifice an artifact at end of com
     </card>
     <card>
         <name>Al Maham Protector</name>
-        <text>Reach
-Whenever a creature you control becomes the target of a spell, Al Maham Protector deals 2 damage to each opponent.</text>
+        <text>Whenever a creature you control becomes the target of a spell, Al Maham Protector deals 2 damage to each opponent.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -2471,7 +2469,7 @@ Whenever a creature you control becomes the target of a spell, Al Maham Protecto
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Creature — Rebel Assault </type>
+            <type>Creature — Rebel Soldier </type>
             <maintype>Creature</maintype>
             <manacost>R</manacost>
             <cmc>1</cmc>
@@ -2542,8 +2540,8 @@ Whenever a creature you control becomes the target of a spell, Al Maham Protecto
             <side>front</side>
             <type>Instant</type>
             <maintype>Instant</maintype>
-            <manacost>R</manacost>
-            <cmc>1</cmc>
+            <manacost>1R</manacost>
+            <cmc>2</cmc>
             <colors>R</colors>
             <coloridentity>R</coloridentity>
         </prop>
@@ -2568,11 +2566,11 @@ Whenever a creature you control becomes the target of a spell, Al Maham Protecto
     </card>
     <card>
         <name>Coulomb Chargers</name>
-        <text>Creatures have base toughness equal to their base power.</text>
+        <text>Creatures you control have base toughness equal to their base power.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Artifact Creature — Mech Assault </type>
+            <type>Artifact Creature — Mech </type>
             <maintype>Artifact Creature</maintype>
             <manacost>4R</manacost>
             <cmc>5</cmc>
@@ -2582,6 +2580,22 @@ Whenever a creature you control becomes the target of a spell, Al Maham Protecto
         </prop>
         <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Coulomb%20Chargers.jpg">T2170</set>
         <tablerow>2</tablerow>
+    </card>
+    <card>
+        <name>Demolish</name>
+        <text>Destroy target artifact or land.</text>
+        <prop>
+            <layout>normal</layout>
+            <side>front</side>
+            <type>Sorcery</type>
+            <maintype>Sorcery</maintype>
+            <manacost>3R</manacost>
+            <cmc>4</cmc>
+            <colors>R</colors>
+            <coloridentity>R</coloridentity>
+        </prop>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Demolish.jpg">T2170</set>
+        <tablerow>3</tablerow>
     </card>
     <card>
         <name>Electric Arc</name>
@@ -2602,14 +2616,14 @@ Teleport 2R (You may cast this card for its teleport cost while you’re looking
     </card>
     <card>
         <name>Execute Takeover Protocol</name>
-        <text>Untap all artifacts and gain control of them until end of turn. Artifacts you control gain haste and double strike until end of turn.</text>
+        <text>Untap all artifacts and gain control of them until end of turn. They gain haste and double strike until end of turn.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
             <type>Sorcery</type>
             <maintype>Sorcery</maintype>
-            <manacost>4RR</manacost>
-            <cmc>6</cmc>
+            <manacost>5RR</manacost>
+            <cmc>7</cmc>
             <colors>R</colors>
             <coloridentity>R</coloridentity>
         </prop>
@@ -2626,8 +2640,8 @@ Sacrifice four artifacts: Flagship Warapur deals 4 damage to any target.</text>
             <side>front</side>
             <type>Artifact Creature — Mercenary Cruiser </type>
             <maintype>Artifact Creature</maintype>
-            <manacost>3RR</manacost>
-            <cmc>5</cmc>
+            <manacost>4RR</manacost>
+            <cmc>6</cmc>
             <colors>R</colors>
             <coloridentity>R</coloridentity>
             <pt>4/4</pt>
@@ -2648,7 +2662,7 @@ Sacrifice four artifacts: Flagship Warapur deals 4 damage to any target.</text>
             <cmc>2</cmc>
             <colors>R</colors>
             <coloridentity>R</coloridentity>
-            <pt>2/1</pt>
+            <pt>1/1</pt>
         </prop>
         <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Frantic%20Investigator.jpg">T2170</set>
         <tablerow>2</tablerow>
@@ -2677,7 +2691,7 @@ Guerilla Fighters enters the battlefield armed. (Create a colorless Equipment ar
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Creature — Rebel Assault </type>
+            <type>Creature — Rebel Soldier </type>
             <maintype>Creature</maintype>
             <manacost>3R</manacost>
             <cmc>4</cmc>
@@ -2744,7 +2758,7 @@ Equip 1</text>
     <card>
         <name>Iridium Magneto-Knife</name>
         <text>Equipped creature gets +2/+0.
-Whenever a creature enters the battlefield under your control or another equipment becomes attached to a creature you control, you may attach Iridium Magneto-Knife to that creature.
+Whenever another equipment becomes attached to a creature you control, you may attach Iridium Magneto-Knife to that creature.
 Equip 2</text>
         <prop>
             <layout>normal</layout>
@@ -2818,7 +2832,7 @@ Teleport 1R (You may cast this card for its teleport cost while you’re looking
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Artifact Creature — Mech Assault </type>
+            <type>Artifact Creature — Mech </type>
             <maintype>Artifact Creature</maintype>
             <manacost>3R</manacost>
             <cmc>4</cmc>
@@ -2837,7 +2851,7 @@ Teleport 1R (You may cast this card for its teleport cost while you’re looking
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Creature — Mercenary Commando </type>
+            <type>Creature — Mercenary Saboteur </type>
             <maintype>Creature</maintype>
             <manacost>2R</manacost>
             <cmc>3</cmc>
@@ -2918,13 +2932,13 @@ Teleport 2R (You may cast this card for its teleport cost while you’re looking
         <tablerow>3</tablerow>
     </card>
     <card>
-        <name>Scavenged X-17</name>
+        <name>Scavenged Rampager</name>
         <text>Trample
-Scavenged X-17 gets +1/+0 for each artifact you control.</text>
+Scavenged Rampager gets +1/+0 for each artifact you control.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Artifact Creature — Rebel Mech Assault </type>
+            <type>Artifact Creature — Rebel Mech </type>
             <maintype>Artifact Creature</maintype>
             <manacost>2R</manacost>
             <cmc>3</cmc>
@@ -2932,7 +2946,7 @@ Scavenged X-17 gets +1/+0 for each artifact you control.</text>
             <coloridentity>R</coloridentity>
             <pt>0/4</pt>
         </prop>
-        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Scavenged%20X-17.jpg">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Scavenged%20Rampager.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -2952,22 +2966,6 @@ Scavenged X-17 gets +1/+0 for each artifact you control.</text>
         <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Scrapyard%20Salvager.jpg">T2170</set>
         <related count="2">Mech</related>
         <tablerow>2</tablerow>
-    </card>
-    <card>
-        <name>Self-Destruct Sequence</name>
-        <text>Destroy target artifact or land. Scry 1.</text>
-        <prop>
-            <layout>normal</layout>
-            <side>front</side>
-            <type>Sorcery</type>
-            <maintype>Sorcery</maintype>
-            <manacost>3R</manacost>
-            <cmc>4</cmc>
-            <colors>R</colors>
-            <coloridentity>R</coloridentity>
-        </prop>
-        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Self-Destruct%20Sequence.jpg">T2170</set>
-        <tablerow>3</tablerow>
     </card>
     <card>
         <name>Slagthrower</name>
@@ -3005,34 +3003,18 @@ Teleport 1R (You may cast this card for its teleport cost while you’re looking
         <tablerow>2</tablerow>
     </card>
     <card>
-        <name>Supervolcanic Fallout</name>
-        <text>Up to three target creatures can’t block this turn.</text>
-        <prop>
-            <layout>normal</layout>
-            <side>front</side>
-            <type>Sorcery</type>
-            <maintype>Sorcery</maintype>
-            <manacost>2R</manacost>
-            <cmc>3</cmc>
-            <colors>R</colors>
-            <coloridentity>R</coloridentity>
-        </prop>
-        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Supervolcanic%20Fallout.jpg">T2170</set>
-        <tablerow>3</tablerow>
-    </card>
-    <card>
         <name>Supply Runner</name>
         <text>Whenever Supply Runner attacks, scry 1.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Artifact Creature — Rebel Mech Assault </type>
+            <type>Artifact Creature — Rebel Mech </type>
             <maintype>Artifact Creature</maintype>
             <manacost>1R</manacost>
             <cmc>2</cmc>
             <colors>R</colors>
             <coloridentity>R</coloridentity>
-            <pt>2/2</pt>
+            <pt>2/1</pt>
         </prop>
         <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Supply%20Runner.jpg">T2170</set>
         <tablerow>2</tablerow>
@@ -3057,7 +3039,7 @@ Teleport 1R (You may cast this card for its teleport cost while you’re looking
         <name>Throw to the Wind</name>
         <text>As an additional cost to cast Throw to the Wind, discard a card.
 Draw two cards.
-Teleport R (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)</text>
+Teleport 1R (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -3077,7 +3059,7 @@ Teleport R (You may cast this card for its teleport cost while you’re looking 
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Artifact Creature — Mech Assault </type>
+            <type>Artifact Creature — Mech </type>
             <maintype>Artifact Creature</maintype>
             <manacost>5R</manacost>
             <cmc>6</cmc>
@@ -3094,7 +3076,7 @@ Teleport R (You may cast this card for its teleport cost while you’re looking 
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Artifact Creature — Mech Nomad </type>
+            <type>Artifact Creature — Mech </type>
             <maintype>Artifact Creature</maintype>
             <manacost>1RR</manacost>
             <cmc>3</cmc>
@@ -3111,7 +3093,7 @@ Teleport R (You may cast this card for its teleport cost while you’re looking 
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Creature — Mercenary Commando </type>
+            <type>Creature — Mercenary Saboteur </type>
             <maintype>Creature</maintype>
             <manacost>3R</manacost>
             <cmc>4</cmc>
@@ -3157,6 +3139,22 @@ Teleport 0 (You may cast this card for its teleport cost while you’re looking 
         <tablerow>3</tablerow>
     </card>
     <card>
+        <name>Wrap in Flames</name>
+        <text>Wrap in Flames deals 1 damage to each of up to three target creatures. Those creatures can’t block this turn.</text>
+        <prop>
+            <layout>normal</layout>
+            <side>front</side>
+            <type>Sorcery</type>
+            <maintype>Sorcery</maintype>
+            <manacost>3R</manacost>
+            <cmc>4</cmc>
+            <colors>R</colors>
+            <coloridentity>R</coloridentity>
+        </prop>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Wrap%20in%20Flames.jpg">T2170</set>
+        <tablerow>3</tablerow>
+    </card>
+    <card>
         <name>Al Maham Pathfinder</name>
         <text>When Al Maham Pathfinder enters the battlefield, create a 1/1 colorless Mech artifact creature token.
 Whenever a creature you control becomes the target of a spell, creatures you control get +1/+1 until end of turn.</text>
@@ -3194,8 +3192,8 @@ Whenever a creature you control becomes the target of a spell, creatures you con
     </card>
     <card>
         <name>Angling Constrictor</name>
-        <text>Whenever Angling Constrictor or another creature enters the battlefield under your control, if it entered from your library or was cast from your library, put a +1/+1 counter on that creature and a +1/+1 counter on Angling Constrictor.
-Mutate</text>
+        <text>Whenever Angling Constrictor or another creature enters the battlefield under your control, if it entered from your library or was cast from your library, put a +1/+1 counter on the creature that entered the battlefield and a +1/+1 counter on Angling Constrictor.
+Reconstitute</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -3205,7 +3203,7 @@ Mutate</text>
             <cmc>3</cmc>
             <colors>G</colors>
             <coloridentity>G</coloridentity>
-            <pt>3/3</pt>
+            <pt>2/2</pt>
         </prop>
         <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Angling%20Constrictor.jpg">T2170</set>
         <tablerow>2</tablerow>
@@ -3571,7 +3569,7 @@ Teleport 0 (You may cast this card for its teleport cost while you’re looking 
             <cmc>4</cmc>
             <colors>G</colors>
             <coloridentity>G</coloridentity>
-            <pt>4/3</pt>
+            <pt>3/3</pt>
         </prop>
         <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Kushak%20Research%20Council.jpg">T2170</set>
         <tablerow>2</tablerow>
@@ -3617,7 +3615,7 @@ Each other creature you control that’s a Mutant or a Xeno gets +1/+1.
     <card>
         <name>Myth of Baljurashi</name>
         <text>When Myth of Baljurashi enters the battlefield, reveal the top five cards of your library. Put all land cards revealed this way into your hand and the rest into your graveyard.
-Mutate (When this creature dies, reveal cards from the top of your library until you reveal a creature card that costs less. Put that card onto the battlefield and the rest on the bottom of your library in a random order.)</text>
+Reconstitute (When this creature dies, reveal cards from the top of your library until you reveal a creature card that costs less. Put that card onto the battlefield and the rest on the bottom of your library in a random order.)</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -3634,7 +3632,7 @@ Mutate (When this creature dies, reveal cards from the top of your library until
     </card>
     <card>
         <name>Radium Tracker</name>
-        <text>Mutate (When this creature dies, reveal cards from the top of your library until you reveal a creature card that costs less. Put that card onto the battlefield and the rest on the bottom of your library in a random order.)</text>
+        <text>Reconstitute (When this creature dies, reveal cards from the top of your library until you reveal a creature card that costs less. Put that card onto the battlefield and the rest on the bottom of your library in a random order.)</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -3739,7 +3737,7 @@ Put a +1/+1 counter on target creature you control. Then that creature fights ta
     <card>
         <name>Sewer Monster</name>
         <text>While casting Sewer Monster, each creature you sacrifice after you’re done activating mana abilities reduces its cost by 2.
-Mutate (When this creature dies, reveal cards from the top of your library until you reveal a creature card that costs less. Put that card onto the battlefield and the rest on the bottom of your library in a random order.)</text>
+Reconstitute (When this creature dies, reveal cards from the top of your library until you reveal a creature card that costs less. Put that card onto the battlefield and the rest on the bottom of your library in a random order.)</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -3779,7 +3777,7 @@ G, Sacrifice Spawning Grounds: Create a 1/1 green Xeno Scion creature token for 
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Creature — Rebel Commando </type>
+            <type>Creature — Rebel Soldier </type>
             <maintype>Creature</maintype>
             <manacost>2G</manacost>
             <cmc>3</cmc>
@@ -3804,7 +3802,7 @@ Whenever an opponent activates their first non-mana ability each turn, counter t
             <cmc>6</cmc>
             <colors>G</colors>
             <coloridentity>G</coloridentity>
-            <pt>6/6</pt>
+            <pt>6/5</pt>
         </prop>
         <set rarity="mythic rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Suppressor%20of%20Worlds.jpg">T2170</set>
         <tablerow>2</tablerow>
@@ -4089,7 +4087,7 @@ When Ingolf dies, destroy each creature with power 4 or greater.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Legendary Creature — Rebel Commando </type>
+            <type>Legendary Creature — Rebel Soldier </type>
             <maintype>Legendary Creature</maintype>
             <manacost>2GW</manacost>
             <cmc>4</cmc>
@@ -4265,7 +4263,7 @@ Teleport UR (You may cast this card for its teleport cost while you’re looking
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Creature — Mercenary Commando </type>
+            <type>Creature — Mercenary Saboteur </type>
             <maintype>Creature</maintype>
             <manacost>1BG</manacost>
             <cmc>3</cmc>
@@ -4278,7 +4276,7 @@ Teleport UR (You may cast this card for its teleport cost while you’re looking
     </card>
     <card>
         <name>Titan of Shisuku Sewers</name>
-        <text>Mutate, mutate (When this creature dies, reveal cards from the top of your library until you reveal two creature cards that cost less. Put those cards onto the battlefield and the rest on the bottom of your library in a random order.)</text>
+        <text>Reconstitute, reconstitute (When this creature dies, reveal cards from the top of your library until you reveal two creature cards that cost less. Put those cards onto the battlefield and the rest on the bottom of your library in a random order.)</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -4300,7 +4298,7 @@ Whenever Acquisitor Delwani deals combat damage to a player, arm each Rebel crea
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Legendary Creature — Rebel Saboteur </type>
+            <type>Legendary Creature — Rebel Soldier </type>
             <maintype>Legendary Creature</maintype>
             <manacost>1RW</manacost>
             <cmc>3</cmc>
@@ -4318,7 +4316,7 @@ Whenever Acquisitor Delwani deals combat damage to a player, arm each Rebel crea
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Creature — Rebel Assault </type>
+            <type>Creature — Rebel Soldier </type>
             <maintype>Creature</maintype>
             <manacost>1RW</manacost>
             <cmc>3</cmc>
@@ -4465,15 +4463,15 @@ Sacrifice Faraday Transmitter: Return target artifact to its owner’s hand.</te
     <card>
         <name>Gravitic Collector</name>
         <text>Flying
-At the beginning of each upkeep, put a charge counter on Gravitic Collector.
-2/U2/R, Remove a charge counter from Gravitic Collector: Another target gains flying until end of turn. At the beginning of the next end step, Gravitic Collector deals 2 damage to that creature. Any player may activate this ability. (2/U can be paid with any two mana or with U.)</text>
+At the beginning of your upkeep, put a charge counter on Gravitic Collector.
+Remove three charge counters from Gravitic Collector: Target creature gains flying until end of turn.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
             <type>Artifact Creature — Station </type>
             <maintype>Artifact Creature</maintype>
-            <manacost>4</manacost>
-            <cmc>4</cmc>
+            <manacost>3</manacost>
+            <cmc>3</cmc>
             <coloridentity>UR</coloridentity>
             <pt>2/2</pt>
         </prop>
@@ -4787,7 +4785,7 @@ Scry 2. (B/R can be paid with either B or R.)</text>
     <card>
         <name>Hong Wai Factory</name>
         <text>T: Add C.
-3, T: Put a +1/+1 counter on target artifact creature.
+4, T: Put a +1/+1 counter on target artifact creature.
 2, T: You may remove two +1/+1 counters from target artifact creature you control. If you do, put an indestructible counter on it.
 1, T: You may remove two indestructible counters from target artifact creature you control. If you do, create seven tokens that are copies of it.</text>
         <prop>

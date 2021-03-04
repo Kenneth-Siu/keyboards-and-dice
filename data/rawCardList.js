@@ -25,7 +25,7 @@ import _23 from "./cardImages/Mongrel Companion.jpg";
 import _24 from "./cardImages/Observation Blimp.jpg";
 import _25 from "./cardImages/Personal Forcefield.jpg";
 import _26 from "./cardImages/Police Badge.jpg";
-import _27 from "./cardImages/Raise the Siren.jpg";
+import _27 from "./cardImages/Raise the Alarm.jpg";
 import _28 from "./cardImages/Rangor Watchmen.jpg";
 import _29 from "./cardImages/Reconnaisance Mule.jpg";
 import _30 from "./cardImages/Remote Paralyzer.jpg";
@@ -46,27 +46,27 @@ import _44 from "./cardImages/Ambassadorship.jpg";
 import _45 from "./cardImages/Arrester Droid.jpg";
 import _46 from "./cardImages/Atmospheric Survey.jpg";
 import _47 from "./cardImages/Brain Drain.jpg";
-import _48 from "./cardImages/Breakdown.jpg";
-import _49 from "./cardImages/Build Better.jpg";
-import _50 from "./cardImages/The Chronos.jpg";
-import _51 from "./cardImages/Cloud Darter.jpg";
-import _52 from "./cardImages/Collapse Consciousness.jpg";
-import _53 from "./cardImages/Coordinate Scrambler.jpg";
-import _54 from "./cardImages/Engine Welder.jpg";
-import _55 from "./cardImages/Escape the City.jpg";
-import _56 from "./cardImages/Exiled Xenologist.jpg";
-import _57 from "./cardImages/Future Insight.jpg";
-import _58 from "./cardImages/Guidance Pods.jpg";
-import _59 from "./cardImages/Holoship Fleet.jpg";
-import _60 from "./cardImages/Hong Wai Prototype.jpg";
-import _61 from "./cardImages/Kitefin Racer.jpg";
-import _62 from "./cardImages/Kushak Exile.jpg";
-import _63 from "./cardImages/Lambert Stealth Bomber.jpg";
-import _64 from "./cardImages/Lost in Space.jpg";
-import _65 from "./cardImages/Matter Redistribution.jpg";
+import _48 from "./cardImages/Breach Firewall.jpg";
+import _49 from "./cardImages/Breakdown.jpg";
+import _50 from "./cardImages/Build Better.jpg";
+import _51 from "./cardImages/The Chronos.jpg";
+import _52 from "./cardImages/Cloud Darter.jpg";
+import _53 from "./cardImages/Collapse Consciousness.jpg";
+import _54 from "./cardImages/Coordinate Scrambler.jpg";
+import _55 from "./cardImages/Engine Welder.jpg";
+import _56 from "./cardImages/Escape the City.jpg";
+import _57 from "./cardImages/Exiled Xenologist.jpg";
+import _58 from "./cardImages/Future Insight.jpg";
+import _59 from "./cardImages/Guidance Pods.jpg";
+import _60 from "./cardImages/Holoship Fleet.jpg";
+import _61 from "./cardImages/Hong Wai Prototype.jpg";
+import _62 from "./cardImages/Kitefin Racer.jpg";
+import _63 from "./cardImages/Kushak Exile.jpg";
+import _64 from "./cardImages/Lambert Stealth Bomber.jpg";
+import _65 from "./cardImages/Lost in Space.jpg";
 import _66 from "./cardImages/Migratory City.jpg";
 import _67 from "./cardImages/Military Intelligence.jpg";
-import _68 from "./cardImages/Mindmelded Sysadmin.jpg";
+import _68 from "./cardImages/Mindmeld Netrunner.jpg";
 import _69 from "./cardImages/Nanoreplicator Zero.jpg";
 import _70 from "./cardImages/Neutron Flow.jpg";
 import _71 from "./cardImages/Open Speculation.jpg";
@@ -89,37 +89,37 @@ import _87 from "./cardImages/Backalley Trafficker.jpg";
 import _88 from "./cardImages/Boardroom Keeper.jpg";
 import _89 from "./cardImages/Brain Rewiring.jpg";
 import _90 from "./cardImages/Cloning Vats.jpg";
-import _91 from "./cardImages/Contract Killer.jpg";
-import _92 from "./cardImages/Corporate Spy.jpg";
-import _93 from "./cardImages/Crux of Space-Time.jpg";
-import _94 from "./cardImages/Disassemble.jpg";
-import _95 from "./cardImages/Engineered Endemic.jpg";
-import _96 from "./cardImages/Figment of Death.jpg";
-import _97 from "./cardImages/Gambling Ring.jpg";
-import _98 from "./cardImages/Grasp of The Left Hand.jpg";
-import _99 from "./cardImages/Hypercollider.jpg";
-import _100 from "./cardImages/Interrogate.jpg";
-import _101 from "./cardImages/Mesmerising Performance.jpg";
-import _102 from "./cardImages/Mindmeld Torturer.jpg";
-import _103 from "./cardImages/Mortality.jpg";
-import _104 from "./cardImages/Murmur the Cleaner.jpg";
-import _105 from "./cardImages/Mystic of the Under.jpg";
-import _106 from "./cardImages/Neural Devourer.jpg";
-import _107 from "./cardImages/Peacekeeper Satellite.jpg";
-import _108 from "./cardImages/Prototype Evader.jpg";
-import _109 from "./cardImages/Punitive Counterstrike.jpg";
-import _110 from "./cardImages/Rebuild Stronger.jpg";
-import _111 from "./cardImages/Reincarnation Program.jpg";
-import _112 from "./cardImages/Rumormonger.jpg";
-import _113 from "./cardImages/Rumors and Whispers.jpg";
-import _114 from "./cardImages/Security Detail.jpg";
-import _115 from "./cardImages/Sewer Slitherer.jpg";
-import _116 from "./cardImages/Shiryu Collector.jpg";
-import _117 from "./cardImages/Silent Infiltrator.jpg";
-import _118 from "./cardImages/Sink into the Oceans.jpg";
-import _119 from "./cardImages/Surprise Round.jpg";
-import _120 from "./cardImages/The Tartarus.jpg";
-import _121 from "./cardImages/Tragedy of War.jpg";
+import _91 from "./cardImages/Consortium Bodyguard.jpg";
+import _92 from "./cardImages/Contract Killer.jpg";
+import _93 from "./cardImages/Corporate Spy.jpg";
+import _94 from "./cardImages/Crux of Space-Time.jpg";
+import _95 from "./cardImages/Disassemble.jpg";
+import _96 from "./cardImages/Drown in Sorrow.jpg";
+import _97 from "./cardImages/Engineered Endemic.jpg";
+import _98 from "./cardImages/Figment of Death.jpg";
+import _99 from "./cardImages/Gambling Ring.jpg";
+import _100 from "./cardImages/Grasp of The Left Hand.jpg";
+import _101 from "./cardImages/Hypercollider.jpg";
+import _102 from "./cardImages/Interrogate.jpg";
+import _103 from "./cardImages/Mesmerising Performance.jpg";
+import _104 from "./cardImages/Mindmeld Sadist.jpg";
+import _105 from "./cardImages/Mortality.jpg";
+import _106 from "./cardImages/Murmur the Cleaner.jpg";
+import _107 from "./cardImages/Mystic of the Under.jpg";
+import _108 from "./cardImages/Neural Devourer.jpg";
+import _109 from "./cardImages/Peacekeeper Satellite.jpg";
+import _110 from "./cardImages/Prototype Evader.jpg";
+import _111 from "./cardImages/Punitive Counterstrike.jpg";
+import _112 from "./cardImages/Rebuild Stronger.jpg";
+import _113 from "./cardImages/Reincarnation Program.jpg";
+import _114 from "./cardImages/Rumormonger.jpg";
+import _115 from "./cardImages/Rumors and Whispers.jpg";
+import _116 from "./cardImages/Sewer Slitherer.jpg";
+import _117 from "./cardImages/Shiryu Collector.jpg";
+import _118 from "./cardImages/Silent Infiltrator.jpg";
+import _119 from "./cardImages/Sink into the Oceans.jpg";
+import _120 from "./cardImages/Surprise Round.jpg";
+import _121 from "./cardImages/The Tartarus.jpg";
 import _122 from "./cardImages/Tundra Strider.jpg";
 import _123 from "./cardImages/Undercity Janitor.jpg";
 import _124 from "./cardImages/Urban Revenant.jpg";
@@ -136,39 +136,39 @@ import _134 from "./cardImages/Chentsov Scylla.jpg";
 import _135 from "./cardImages/Combined Effort.jpg";
 import _136 from "./cardImages/Coordinated Assault.jpg";
 import _137 from "./cardImages/Coulomb Chargers.jpg";
-import _138 from "./cardImages/Electric Arc.jpg";
-import _139 from "./cardImages/Execute Takeover Protocol.jpg";
-import _140 from "./cardImages/Flagship Warapur.jpg";
-import _141 from "./cardImages/Frantic Investigator.jpg";
-import _142 from "./cardImages/Genius or Grifter.jpg";
-import _143 from "./cardImages/Guerilla Fighters.jpg";
-import _144 from "./cardImages/Hired Artillery.jpg";
-import _145 from "./cardImages/Homeostimulation Suit.jpg";
-import _146 from "./cardImages/Hyperadrenaline.jpg";
-import _147 from "./cardImages/Iridium Magneto-Knife.jpg";
-import _148 from "./cardImages/Leave Behind.jpg";
-import _149 from "./cardImages/Mindmeld Battlesuit.jpg";
-import _150 from "./cardImages/The Moirai.jpg";
-import _151 from "./cardImages/Ohmwrecker.jpg";
-import _152 from "./cardImages/Rangor Contractor.jpg";
-import _153 from "./cardImages/Reckless Troubleshooter.jpg";
-import _154 from "./cardImages/Reverse Polarity.jpg";
-import _155 from "./cardImages/Rip Space-Time.jpg";
-import _156 from "./cardImages/Rocket Salvo.jpg";
-import _157 from "./cardImages/Scavenged X-17.jpg";
-import _158 from "./cardImages/Scrapyard Salvager.jpg";
-import _159 from "./cardImages/Self-Destruct Sequence.jpg";
+import _138 from "./cardImages/Demolish.jpg";
+import _139 from "./cardImages/Electric Arc.jpg";
+import _140 from "./cardImages/Execute Takeover Protocol.jpg";
+import _141 from "./cardImages/Flagship Warapur.jpg";
+import _142 from "./cardImages/Frantic Investigator.jpg";
+import _143 from "./cardImages/Genius or Grifter.jpg";
+import _144 from "./cardImages/Guerilla Fighters.jpg";
+import _145 from "./cardImages/Hired Artillery.jpg";
+import _146 from "./cardImages/Homeostimulation Suit.jpg";
+import _147 from "./cardImages/Hyperadrenaline.jpg";
+import _148 from "./cardImages/Iridium Magneto-Knife.jpg";
+import _149 from "./cardImages/Leave Behind.jpg";
+import _150 from "./cardImages/Mindmeld Battlesuit.jpg";
+import _151 from "./cardImages/The Moirai.jpg";
+import _152 from "./cardImages/Ohmwrecker.jpg";
+import _153 from "./cardImages/Rangor Contractor.jpg";
+import _154 from "./cardImages/Reckless Troubleshooter.jpg";
+import _155 from "./cardImages/Reverse Polarity.jpg";
+import _156 from "./cardImages/Rip Space-Time.jpg";
+import _157 from "./cardImages/Rocket Salvo.jpg";
+import _158 from "./cardImages/Scavenged Rampager.jpg";
+import _159 from "./cardImages/Scrapyard Salvager.jpg";
 import _160 from "./cardImages/Slagthrower.jpg";
 import _161 from "./cardImages/Slipstream Hunter.jpg";
-import _162 from "./cardImages/Supervolcanic Fallout.jpg";
-import _163 from "./cardImages/Supply Runner.jpg";
-import _164 from "./cardImages/Take Hostage.jpg";
-import _165 from "./cardImages/Throw to the Wind.jpg";
-import _166 from "./cardImages/Vulcan Devastators.jpg";
-import _167 from "./cardImages/Walking Furnace.jpg";
-import _168 from "./cardImages/Wanted Speedster.jpg";
-import _169 from "./cardImages/Wild Game Huntmaster.jpg";
-import _170 from "./cardImages/Wormcallers Assurance.jpg";
+import _162 from "./cardImages/Supply Runner.jpg";
+import _163 from "./cardImages/Take Hostage.jpg";
+import _164 from "./cardImages/Throw to the Wind.jpg";
+import _165 from "./cardImages/Vulcan Devastators.jpg";
+import _166 from "./cardImages/Walking Furnace.jpg";
+import _167 from "./cardImages/Wanted Speedster.jpg";
+import _168 from "./cardImages/Wild Game Huntmaster.jpg";
+import _169 from "./cardImages/Wormcallers Assurance.jpg";
+import _170 from "./cardImages/Wrap in Flames.jpg";
 import _171 from "./cardImages/Al Maham Pathfinder.jpg";
 import _172 from "./cardImages/Al Maham Traders.jpg";
 import _173 from "./cardImages/Angling Constrictor.jpg";
@@ -453,7 +453,7 @@ colorIdentity: "W"
         "notes": {
 grade: "C+",
 colorIdentity: "W",
-cockatrice_related: "Military",
+cockatrice_related: "Soldier",
 cockatrice_related_count: "2"
         }
     },
@@ -488,14 +488,14 @@ colorIdentity: "W"
     {
         "name": "Head Detective",
         "imageName": _15,
-        "cost": "2WW",
-        "manaValue": 4,
+        "cost": "2W",
+        "manaValue": 3,
         "color": "W",
         "type": "Creature — Police Advisor ",
         "id": 15,
         "rarity": "U",
         "notes": {
-grade: "B+",
+grade: "B",
 colorIdentity: "W"
         }
     },
@@ -652,12 +652,12 @@ colorIdentity: "W"
         "id": 26,
         "rarity": "U",
         "notes": {
-grade: "D",
+grade: "C",
 colorIdentity: "W"
         }
     },
     {
-        "name": "Raise the Siren",
+        "name": "Raise the Alarm",
         "imageName": _27,
         "cost": "1W",
         "manaValue": 2,
@@ -668,7 +668,7 @@ colorIdentity: "W"
         "notes": {
 grade: "D+",
 colorIdentity: "W",
-cockatrice_related: "Military",
+cockatrice_related: "Soldier",
 cockatrice_related_count: "2"
         }
     },
@@ -678,7 +678,7 @@ cockatrice_related_count: "2"
         "cost": "1W",
         "manaValue": 2,
         "color": "W",
-        "type": "Creature — Rebel Commando ",
+        "type": "Creature — Rebel Soldier ",
         "id": 28,
         "rarity": "C",
         "notes": {
@@ -710,7 +710,7 @@ colorIdentity: "W"
         "id": 30,
         "rarity": "C",
         "notes": {
-grade: "C-",
+grade: "C+",
 colorIdentity: "W"
         }
     },
@@ -750,7 +750,7 @@ cockatrice_related: "Equipment"
         "cost": "3WW",
         "manaValue": 5,
         "color": "W",
-        "type": "Creature — Police Commando ",
+        "type": "Creature — Police Soldier ",
         "id": 33,
         "rarity": "R",
         "notes": {
@@ -808,7 +808,7 @@ colorIdentity: "W"
         "cost": "2W",
         "manaValue": 3,
         "color": "W",
-        "type": "Creature — Military Commando ",
+        "type": "Creature — Military Soldier ",
         "id": 37,
         "rarity": "U",
         "notes": {
@@ -842,8 +842,8 @@ colorIdentity: "W"
         "notes": {
 grade: "B",
 colorIdentity: "W",
-cockatrice_related: "Military",
-cockatrice_related_count: "5"
+cockatrice_related: "Soldier",
+cockatrice_related_count: "x"
         }
     },
     {
@@ -870,9 +870,9 @@ colorIdentity: "W"
         "id": 41,
         "rarity": "U",
         "notes": {
-grade: "D",
+grade: "C",
 colorIdentity: "W",
-cockatrice_related: "Military",
+cockatrice_related: "Soldier",
 cockatrice_related_count: "2"
         }
     },
@@ -882,13 +882,13 @@ cockatrice_related_count: "2"
         "cost": "2W",
         "manaValue": 3,
         "color": "W",
-        "type": "Creature — Military Assault ",
+        "type": "Creature — Military Soldier ",
         "id": 42,
         "rarity": "C",
         "notes": {
 grade: "C+",
 colorIdentity: "W",
-cockatrice_related: "Military"
+cockatrice_related: "Soldier"
         }
     },
     {
@@ -897,13 +897,13 @@ cockatrice_related: "Military"
         "cost": "4WW",
         "manaValue": 6,
         "color": "W",
-        "type": "Artifact Creature — Carrier ",
+        "type": "Artifact Creature — Military Carrier ",
         "id": 43,
         "rarity": "R",
         "notes": {
 grade: "B+",
 colorIdentity: "W",
-cockatrice_related: "Military",
+cockatrice_related: "Soldier",
 cockatrice_related_count: "x"
         }
     },
@@ -964,41 +964,55 @@ colorIdentity: "U"
         }
     },
     {
-        "name": "Breakdown",
+        "name": "Breach Firewall",
         "imageName": _48,
+        "cost": "4UU",
+        "manaValue": 6,
+        "color": "U",
+        "type": "Instant",
+        "id": 48,
+        "rarity": "U",
+        "notes": {
+grade: "B-",
+colorIdentity: "U"
+        }
+    },
+    {
+        "name": "Breakdown",
+        "imageName": _49,
         "cost": "1UU",
         "manaValue": 3,
         "color": "U",
         "type": "Enchantment — Aura ",
-        "id": 48,
+        "id": 49,
         "rarity": "C",
         "notes": {
-grade: "C+",
+grade: "B-",
 colorIdentity: "U"
         }
     },
     {
         "name": "Build Better",
-        "imageName": _49,
+        "imageName": _50,
         "cost": "2UU",
         "manaValue": 4,
         "color": "U",
         "type": "Instant",
-        "id": 49,
+        "id": 50,
         "rarity": "U",
         "notes": {
-grade: "D+",
+grade: "C-",
 colorIdentity: "U"
         }
     },
     {
         "name": "The Chronos",
-        "imageName": _50,
+        "imageName": _51,
         "cost": "5UU",
         "manaValue": 7,
         "color": "U",
         "type": "Legendary Artifact Creature — Battleship ",
-        "id": 50,
+        "id": 51,
         "rarity": "M",
         "notes": {
 grade: "B-",
@@ -1007,12 +1021,12 @@ colorIdentity: "U"
     },
     {
         "name": "Cloud Darter",
-        "imageName": _51,
+        "imageName": _52,
         "cost": "1UU",
         "manaValue": 3,
         "color": "U",
         "type": "Artifact Creature — Police Fighter ",
-        "id": 51,
+        "id": 52,
         "rarity": "R",
         "notes": {
 grade: "B+",
@@ -1021,12 +1035,12 @@ colorIdentity: "U"
     },
     {
         "name": "Collapse Consciousness",
-        "imageName": _52,
+        "imageName": _53,
         "cost": "1UU",
         "manaValue": 3,
         "color": "U",
         "type": "Instant",
-        "id": 52,
+        "id": 53,
         "rarity": "U",
         "notes": {
 grade: "C+",
@@ -1035,26 +1049,26 @@ colorIdentity: "U"
     },
     {
         "name": "Coordinate Scrambler",
-        "imageName": _53,
-        "cost": "2U",
-        "manaValue": 3,
+        "imageName": _54,
+        "cost": "3U",
+        "manaValue": 4,
         "color": "U",
         "type": "Creature — Saboteur ",
-        "id": 53,
+        "id": 54,
         "rarity": "R",
         "notes": {
-grade: "B-",
+grade: "B",
 colorIdentity: "U"
         }
     },
     {
         "name": "Engine Welder",
-        "imageName": _54,
+        "imageName": _55,
         "cost": "2U",
         "manaValue": 3,
         "color": "U",
-        "type": "Creature — Engineer ",
-        "id": 54,
+        "type": "Creature — Corporate Engineer ",
+        "id": 55,
         "rarity": "C",
         "notes": {
 grade: "C+",
@@ -1063,12 +1077,12 @@ colorIdentity: "U"
     },
     {
         "name": "Escape the City",
-        "imageName": _55,
+        "imageName": _56,
         "cost": "4UU",
         "manaValue": 6,
         "color": "U",
         "type": "Instant",
-        "id": 55,
+        "id": 56,
         "rarity": "U",
         "notes": {
 grade: "B",
@@ -1079,12 +1093,12 @@ cockatrice_related_count: "2"
     },
     {
         "name": "Exiled Xenologist",
-        "imageName": _56,
+        "imageName": _57,
         "cost": "1U",
         "manaValue": 2,
         "color": "U",
         "type": "Creature — Researcher ",
-        "id": 56,
+        "id": 57,
         "rarity": "U",
         "notes": {
 grade: "B",
@@ -1093,12 +1107,12 @@ colorIdentity: "U"
     },
     {
         "name": "Future Insight",
-        "imageName": _57,
+        "imageName": _58,
         "cost": "2UU",
         "manaValue": 4,
         "color": "U",
         "type": "Instant",
-        "id": 57,
+        "id": 58,
         "rarity": "R",
         "notes": {
 grade: "B+",
@@ -1107,12 +1121,12 @@ colorIdentity: "U"
     },
     {
         "name": "Guidance Pods",
-        "imageName": _58,
+        "imageName": _59,
         "cost": "U",
         "manaValue": 1,
         "color": "U",
-        "type": "Artifact Creature — Corporate Shuttle ",
-        "id": 58,
+        "type": "Artifact Creature — Corporate Fighter ",
+        "id": 59,
         "rarity": "C",
         "notes": {
 grade: "C+",
@@ -1121,12 +1135,12 @@ colorIdentity: "U"
     },
     {
         "name": "Holoship Fleet",
-        "imageName": _59,
+        "imageName": _60,
         "cost": "4UU",
         "manaValue": 6,
         "color": "U",
         "type": "Artifact Creature — Hologram Cruiser ",
-        "id": 59,
+        "id": 60,
         "rarity": "R",
         "notes": {
 grade: "A-",
@@ -1135,12 +1149,12 @@ colorIdentity: "U"
     },
     {
         "name": "Hong Wai Prototype",
-        "imageName": _60,
+        "imageName": _61,
         "cost": "2U",
         "manaValue": 3,
         "color": "U",
         "type": "Artifact Creature — Fighter ",
-        "id": 60,
+        "id": 61,
         "rarity": "U",
         "notes": {
 grade: "B",
@@ -1149,12 +1163,12 @@ colorIdentity: "U"
     },
     {
         "name": "Kitefin Racer",
-        "imageName": _61,
+        "imageName": _62,
         "cost": "3U",
         "manaValue": 4,
         "color": "U",
         "type": "Artifact Creature — Fish Mech Mutant ",
-        "id": 61,
+        "id": 62,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -1163,12 +1177,12 @@ colorIdentity: "U"
     },
     {
         "name": "Kushak Exile",
-        "imageName": _62,
+        "imageName": _63,
         "cost": "5U",
         "manaValue": 6,
         "color": "U",
         "type": "Creature — Xeno Mutant ",
-        "id": 62,
+        "id": 63,
         "rarity": "C",
         "notes": {
 grade: "D",
@@ -1177,12 +1191,12 @@ colorIdentity: "U"
     },
     {
         "name": "Lambert Stealth Bomber",
-        "imageName": _63,
+        "imageName": _64,
         "cost": "5U",
         "manaValue": 6,
         "color": "U",
-        "type": "Artifact Creature — Cruiser ",
-        "id": 63,
+        "type": "Artifact Creature — Military Cruiser ",
+        "id": 64,
         "rarity": "U",
         "notes": {
 grade: "B-",
@@ -1191,29 +1205,15 @@ colorIdentity: "U"
     },
     {
         "name": "Lost in Space",
-        "imageName": _64,
+        "imageName": _65,
         "cost": "4U",
         "manaValue": 5,
         "color": "U",
         "type": "Sorcery",
-        "id": 64,
+        "id": 65,
         "rarity": "C",
         "notes": {
 grade: "C-",
-colorIdentity: "U"
-        }
-    },
-    {
-        "name": "Matter Redistribution",
-        "imageName": _65,
-        "cost": "4UU",
-        "manaValue": 6,
-        "color": "U",
-        "type": "Instant",
-        "id": 65,
-        "rarity": "U",
-        "notes": {
-grade: "B-",
 colorIdentity: "U"
         }
     },
@@ -1246,7 +1246,7 @@ colorIdentity: "U"
         }
     },
     {
-        "name": "Mindmelded Sysadmin",
+        "name": "Mindmeld Netrunner",
         "imageName": _68,
         "cost": "1U",
         "manaValue": 2,
@@ -1573,13 +1573,28 @@ colorIdentity: "B"
         }
     },
     {
-        "name": "Contract Killer",
+        "name": "Consortium Bodyguard",
         "imageName": _91,
+        "cost": "1B",
+        "manaValue": 2,
+        "color": "B",
+        "type": "Artifact Creature — Corporate Mech ",
+        "id": 91,
+        "rarity": "C",
+        "notes": {
+grade: "C-",
+colorIdentity: "B",
+cockatrice_related: "Mech"
+        }
+    },
+    {
+        "name": "Contract Killer",
+        "imageName": _92,
         "cost": "BB",
         "manaValue": 2,
         "color": "B",
         "type": "Creature — Mercenary Assassin ",
-        "id": 91,
+        "id": 92,
         "rarity": "R",
         "notes": {
 grade: "C+",
@@ -1588,12 +1603,12 @@ colorIdentity: "B"
     },
     {
         "name": "Corporate Spy",
-        "imageName": _92,
+        "imageName": _93,
         "cost": "1B",
         "manaValue": 2,
         "color": "B",
         "type": "Creature — Corporate Saboteur ",
-        "id": 92,
+        "id": 93,
         "rarity": "C",
         "notes": {
 grade: "C-",
@@ -1602,12 +1617,12 @@ colorIdentity: "B"
     },
     {
         "name": "Crux of Space-Time",
-        "imageName": _93,
+        "imageName": _94,
         "cost": "3BB",
         "manaValue": 5,
         "color": "B",
         "type": "Sorcery",
-        "id": 93,
+        "id": 94,
         "rarity": "R",
         "notes": {
 grade: "A-",
@@ -1616,12 +1631,12 @@ colorIdentity: "B"
     },
     {
         "name": "Disassemble",
-        "imageName": _94,
+        "imageName": _95,
         "cost": "3B",
         "manaValue": 4,
         "color": "B",
         "type": "Sorcery",
-        "id": 94,
+        "id": 95,
         "rarity": "C",
         "notes": {
 grade: "B-",
@@ -1629,13 +1644,27 @@ colorIdentity: "B"
         }
     },
     {
+        "name": "Drown in Sorrow",
+        "imageName": _96,
+        "cost": "1BB",
+        "manaValue": 3,
+        "color": "B",
+        "type": "Sorcery",
+        "id": 96,
+        "rarity": "U",
+        "notes": {
+grade: "B-",
+colorIdentity: "B"
+        }
+    },
+    {
         "name": "Engineered Endemic",
-        "imageName": _95,
+        "imageName": _97,
         "cost": "1B",
         "manaValue": 2,
         "color": "B",
         "type": "Enchantment",
-        "id": 95,
+        "id": 97,
         "rarity": "R",
         "notes": {
 grade: "A-",
@@ -1644,12 +1673,12 @@ colorIdentity: "B"
     },
     {
         "name": "Figment of Death",
-        "imageName": _96,
+        "imageName": _98,
         "cost": "3B",
         "manaValue": 4,
         "color": "B",
         "type": "Creature — Nightmare Hallucination ",
-        "id": 96,
+        "id": 98,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -1658,12 +1687,12 @@ colorIdentity: "B"
     },
     {
         "name": "Gambling Ring",
-        "imageName": _97,
+        "imageName": _99,
         "cost": "1BB",
         "manaValue": 3,
         "color": "B",
         "type": "Enchantment",
-        "id": 97,
+        "id": 99,
         "rarity": "U",
         "notes": {
 grade: "B-",
@@ -1673,26 +1702,26 @@ cockatrice_related: "Mech"
     },
     {
         "name": "Grasp of The Left Hand",
-        "imageName": _98,
+        "imageName": _100,
         "cost": "B",
         "manaValue": 1,
         "color": "B",
         "type": "Instant",
-        "id": 98,
+        "id": 100,
         "rarity": "U",
         "notes": {
-grade: "A-",
+grade: "B",
 colorIdentity: "B"
         }
     },
     {
         "name": "Hypercollider",
-        "imageName": _99,
+        "imageName": _101,
         "cost": "BB",
         "manaValue": 2,
         "color": "B",
         "type": "Artifact",
-        "id": 99,
+        "id": 101,
         "rarity": "R",
         "notes": {
 grade: "B-",
@@ -1701,12 +1730,12 @@ colorIdentity: "B"
     },
     {
         "name": "Interrogate",
-        "imageName": _100,
+        "imageName": _102,
         "cost": "1B",
         "manaValue": 2,
         "color": "B",
         "type": "Instant",
-        "id": 100,
+        "id": 102,
         "rarity": "C",
         "notes": {
 grade: "C-",
@@ -1715,12 +1744,12 @@ colorIdentity: "B"
     },
     {
         "name": "Mesmerising Performance",
-        "imageName": _101,
+        "imageName": _103,
         "cost": "2B",
         "manaValue": 3,
         "color": "B",
         "type": "Instant",
-        "id": 101,
+        "id": 103,
         "rarity": "U",
         "notes": {
 grade: "D-",
@@ -1728,13 +1757,13 @@ colorIdentity: "B"
         }
     },
     {
-        "name": "Mindmeld Torturer",
-        "imageName": _102,
+        "name": "Mindmeld Sadist",
+        "imageName": _104,
         "cost": "2B",
         "manaValue": 3,
         "color": "B",
         "type": "Creature — Mercenary Assassin ",
-        "id": 102,
+        "id": 104,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -1743,12 +1772,12 @@ colorIdentity: "B"
     },
     {
         "name": "Mortality",
-        "imageName": _103,
+        "imageName": _105,
         "cost": "9BB",
         "manaValue": 11,
         "color": "B",
         "type": "Creature — Nightmare Hallucination ",
-        "id": 103,
+        "id": 105,
         "rarity": "M",
         "notes": {
 grade: "B+",
@@ -1757,12 +1786,12 @@ colorIdentity: "B"
     },
     {
         "name": "Murmur, the Cleaner",
-        "imageName": _104,
+        "imageName": _106,
         "cost": "3BB",
         "manaValue": 5,
         "color": "B",
         "type": "Legendary Planeswalker — Murmur ",
-        "id": 104,
+        "id": 106,
         "rarity": "M",
         "notes": {
 grade: "A-",
@@ -1772,12 +1801,12 @@ cockatrice_related: "Assassin"
     },
     {
         "name": "Mystic of the Under",
-        "imageName": _105,
+        "imageName": _107,
         "cost": "1B",
         "manaValue": 2,
         "color": "B",
         "type": "Artifact Creature — Mech Advisor ",
-        "id": 105,
+        "id": 107,
         "rarity": "U",
         "notes": {
 grade: "B-",
@@ -1786,12 +1815,12 @@ colorIdentity: "B"
     },
     {
         "name": "Neural Devourer",
-        "imageName": _106,
+        "imageName": _108,
         "cost": "2B",
         "manaValue": 3,
         "color": "B",
         "type": "Creature — Squid Mutant ",
-        "id": 106,
+        "id": 108,
         "rarity": "U",
         "notes": {
 grade: "B-",
@@ -1800,12 +1829,12 @@ colorIdentity: "B"
     },
     {
         "name": "Peacekeeper Satellite",
-        "imageName": _107,
+        "imageName": _109,
         "cost": "2B",
         "manaValue": 3,
         "color": "B",
         "type": "Artifact Creature — Station ",
-        "id": 107,
+        "id": 109,
         "rarity": "R",
         "notes": {
 grade: "B",
@@ -1814,12 +1843,12 @@ colorIdentity: "B"
     },
     {
         "name": "Prototype Evader",
-        "imageName": _108,
+        "imageName": _110,
         "cost": "2B",
         "manaValue": 3,
         "color": "B",
         "type": "Artifact Creature — Fighter ",
-        "id": 108,
+        "id": 110,
         "rarity": "C",
         "notes": {
 grade: "C-",
@@ -1828,12 +1857,12 @@ colorIdentity: "B"
     },
     {
         "name": "Punitive Counterstrike",
-        "imageName": _109,
+        "imageName": _111,
         "cost": "XBB",
         "manaValue": 2,
         "color": "B",
         "type": "Instant",
-        "id": 109,
+        "id": 111,
         "rarity": "C",
         "notes": {
 grade: "C+",
@@ -1842,12 +1871,12 @@ colorIdentity: "B"
     },
     {
         "name": "Rebuild Stronger",
-        "imageName": _110,
+        "imageName": _112,
         "cost": "4B",
         "manaValue": 5,
         "color": "B",
         "type": "Sorcery",
-        "id": 110,
+        "id": 112,
         "rarity": "U",
         "notes": {
 grade: "D",
@@ -1856,12 +1885,12 @@ colorIdentity: "B"
     },
     {
         "name": "Reincarnation Program",
-        "imageName": _111,
+        "imageName": _113,
         "cost": "B",
         "manaValue": 1,
         "color": "B",
         "type": "Instant",
-        "id": 111,
+        "id": 113,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -1870,12 +1899,12 @@ colorIdentity: "B"
     },
     {
         "name": "Rumormonger",
-        "imageName": _112,
+        "imageName": _114,
         "cost": "2B",
         "manaValue": 3,
         "color": "B",
         "type": "Creature — Mercenary Saboteur ",
-        "id": 112,
+        "id": 114,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -1884,12 +1913,12 @@ colorIdentity: "B"
     },
     {
         "name": "Rumors and Whispers",
-        "imageName": _113,
+        "imageName": _115,
         "cost": "3B",
         "manaValue": 4,
         "color": "B",
         "type": "Enchantment",
-        "id": 113,
+        "id": 115,
         "rarity": "U",
         "notes": {
 grade: "B-",
@@ -1897,28 +1926,13 @@ colorIdentity: "B"
         }
     },
     {
-        "name": "Security Detail",
-        "imageName": _114,
-        "cost": "1B",
-        "manaValue": 2,
-        "color": "B",
-        "type": "Artifact Creature — Corporate Mech ",
-        "id": 114,
-        "rarity": "C",
-        "notes": {
-grade: "C-",
-colorIdentity: "B",
-cockatrice_related: "Mech"
-        }
-    },
-    {
         "name": "Sewer Slitherer",
-        "imageName": _115,
+        "imageName": _116,
         "cost": "4B",
         "manaValue": 5,
         "color": "B",
         "type": "Artifact Creature — Mech Leech Mutant ",
-        "id": 115,
+        "id": 116,
         "rarity": "C",
         "notes": {
 grade: "C-",
@@ -1927,12 +1941,12 @@ colorIdentity: "B"
     },
     {
         "name": "Shiryu Collector",
-        "imageName": _116,
+        "imageName": _117,
         "cost": "5B",
         "manaValue": 6,
         "color": "B",
         "type": "Artifact Creature — Mech ",
-        "id": 116,
+        "id": 117,
         "rarity": "C",
         "notes": {
 grade: "D+",
@@ -1941,12 +1955,12 @@ colorIdentity: "B"
     },
     {
         "name": "Silent Infiltrator",
-        "imageName": _117,
+        "imageName": _118,
         "cost": "3B",
         "manaValue": 4,
         "color": "B",
         "type": "Creature — Mercenary Saboteur ",
-        "id": 117,
+        "id": 118,
         "rarity": "U",
         "notes": {
 grade: "B+",
@@ -1955,26 +1969,26 @@ colorIdentity: "B"
     },
     {
         "name": "Sink into the Oceans",
-        "imageName": _118,
-        "cost": "1B",
-        "manaValue": 2,
+        "imageName": _119,
+        "cost": "2B",
+        "manaValue": 3,
         "color": "B",
         "type": "Enchantment — Aura ",
-        "id": 118,
+        "id": 119,
         "rarity": "C",
         "notes": {
-grade: "C-",
+grade: "D",
 colorIdentity: "B"
         }
     },
     {
         "name": "Surprise Round",
-        "imageName": _119,
+        "imageName": _120,
         "cost": "B",
         "manaValue": 1,
         "color": "B",
         "type": "Instant",
-        "id": 119,
+        "id": 120,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -1983,27 +1997,13 @@ colorIdentity: "B"
     },
     {
         "name": "The Tartarus",
-        "imageName": _120,
+        "imageName": _121,
         "cost": "5BB",
         "manaValue": 7,
         "color": "B",
         "type": "Legendary Artifact Creature — Battleship ",
-        "id": 120,
-        "rarity": "M",
-        "notes": {
-grade: "B+",
-colorIdentity: "B"
-        }
-    },
-    {
-        "name": "Tragedy of War",
-        "imageName": _121,
-        "cost": "3BB",
-        "manaValue": 5,
-        "color": "B",
-        "type": "Sorcery",
         "id": 121,
-        "rarity": "U",
+        "rarity": "M",
         "notes": {
 grade: "B+",
 colorIdentity: "B"
@@ -2141,7 +2141,7 @@ colorIdentity: "R"
         "cost": "R",
         "manaValue": 1,
         "color": "R",
-        "type": "Creature — Rebel Assault ",
+        "type": "Creature — Rebel Soldier ",
         "id": 131,
         "rarity": "C",
         "notes": {
@@ -2197,8 +2197,8 @@ cockatrice_related_count: "x"
     {
         "name": "Combined Effort",
         "imageName": _135,
-        "cost": "R",
-        "manaValue": 1,
+        "cost": "1R",
+        "manaValue": 2,
         "color": "R",
         "type": "Instant",
         "id": 135,
@@ -2228,7 +2228,7 @@ colorIdentity: "R"
         "cost": "4R",
         "manaValue": 5,
         "color": "R",
-        "type": "Artifact Creature — Mech Assault ",
+        "type": "Artifact Creature — Mech ",
         "id": 137,
         "rarity": "R",
         "notes": {
@@ -2237,13 +2237,27 @@ colorIdentity: "R"
         }
     },
     {
-        "name": "Electric Arc",
+        "name": "Demolish",
         "imageName": _138,
-        "cost": "2RR",
+        "cost": "3R",
         "manaValue": 4,
         "color": "R",
         "type": "Sorcery",
         "id": 138,
+        "rarity": "C",
+        "notes": {
+grade: "C",
+colorIdentity: "R"
+        }
+    },
+    {
+        "name": "Electric Arc",
+        "imageName": _139,
+        "cost": "2RR",
+        "manaValue": 4,
+        "color": "R",
+        "type": "Sorcery",
+        "id": 139,
         "rarity": "U",
         "notes": {
 grade: "B-",
@@ -2252,12 +2266,12 @@ colorIdentity: "R"
     },
     {
         "name": "Execute Takeover Protocol",
-        "imageName": _139,
-        "cost": "4RR",
-        "manaValue": 6,
+        "imageName": _140,
+        "cost": "5RR",
+        "manaValue": 7,
         "color": "R",
         "type": "Sorcery",
-        "id": 139,
+        "id": 140,
         "rarity": "M",
         "notes": {
 grade: "B+",
@@ -2266,12 +2280,12 @@ colorIdentity: "R"
     },
     {
         "name": "Flagship Warapur",
-        "imageName": _140,
-        "cost": "3RR",
-        "manaValue": 5,
+        "imageName": _141,
+        "cost": "4RR",
+        "manaValue": 6,
         "color": "R",
         "type": "Artifact Creature — Mercenary Cruiser ",
-        "id": 140,
+        "id": 141,
         "rarity": "R",
         "notes": {
 grade: "A-",
@@ -2281,12 +2295,12 @@ cockatrice_related: "Mech"
     },
     {
         "name": "Frantic Investigator",
-        "imageName": _141,
+        "imageName": _142,
         "cost": "1R",
         "manaValue": 2,
         "color": "R",
         "type": "Creature — Researcher ",
-        "id": 141,
+        "id": 142,
         "rarity": "U",
         "notes": {
 grade: "B",
@@ -2295,15 +2309,15 @@ colorIdentity: "R"
     },
     {
         "name": "Genius or Grifter",
-        "imageName": _142,
+        "imageName": _143,
         "cost": "3R",
         "manaValue": 4,
         "color": "R",
         "type": "Instant",
-        "id": 142,
+        "id": 143,
         "rarity": "U",
         "notes": {
-grade: "C+",
+grade: "C-",
 colorIdentity: "R",
 cockatrice_related: "Equipment",
 cockatrice_related_count: "x"
@@ -2311,12 +2325,12 @@ cockatrice_related_count: "x"
     },
     {
         "name": "Guerilla Fighters",
-        "imageName": _143,
+        "imageName": _144,
         "cost": "3R",
         "manaValue": 4,
         "color": "R",
-        "type": "Creature — Rebel Assault ",
-        "id": 143,
+        "type": "Creature — Rebel Soldier ",
+        "id": 144,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -2326,12 +2340,12 @@ cockatrice_related: "Equipment"
     },
     {
         "name": "Hired Artillery",
-        "imageName": _144,
+        "imageName": _145,
         "cost": "2R",
         "manaValue": 3,
         "color": "R",
         "type": "Artifact Creature — Mech Mercenary ",
-        "id": 144,
+        "id": 145,
         "rarity": "C",
         "notes": {
 grade: "C+",
@@ -2341,12 +2355,12 @@ cockatrice_related: "Equipment"
     },
     {
         "name": "Homeostimulation Suit",
-        "imageName": _145,
+        "imageName": _146,
         "cost": "R",
         "manaValue": 1,
         "color": "R",
         "type": "Artifact — Equipment ",
-        "id": 145,
+        "id": 146,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -2355,12 +2369,12 @@ colorIdentity: "R"
     },
     {
         "name": "Hyperadrenaline",
-        "imageName": _146,
+        "imageName": _147,
         "cost": "1R",
         "manaValue": 2,
         "color": "R",
         "type": "Instant",
-        "id": 146,
+        "id": 147,
         "rarity": "C",
         "notes": {
 grade: "D+",
@@ -2369,12 +2383,12 @@ colorIdentity: "R"
     },
     {
         "name": "Iridium Magneto-Knife",
-        "imageName": _147,
+        "imageName": _148,
         "cost": "1R",
         "manaValue": 2,
         "color": "R",
         "type": "Artifact — Equipment ",
-        "id": 147,
+        "id": 148,
         "rarity": "U",
         "notes": {
 grade: "B",
@@ -2383,25 +2397,11 @@ colorIdentity: "R"
     },
     {
         "name": "Leave Behind",
-        "imageName": _148,
+        "imageName": _149,
         "cost": "3RR",
         "manaValue": 5,
         "color": "R",
         "type": "Sorcery",
-        "id": 148,
-        "rarity": "R",
-        "notes": {
-grade: "A-",
-colorIdentity: "R"
-        }
-    },
-    {
-        "name": "Mindmeld Battlesuit",
-        "imageName": _149,
-        "cost": "1RR",
-        "manaValue": 3,
-        "color": "R",
-        "type": "Artifact — Equipment ",
         "id": 149,
         "rarity": "R",
         "notes": {
@@ -2410,13 +2410,27 @@ colorIdentity: "R"
         }
     },
     {
-        "name": "The Moirai",
+        "name": "Mindmeld Battlesuit",
         "imageName": _150,
+        "cost": "1RR",
+        "manaValue": 3,
+        "color": "R",
+        "type": "Artifact — Equipment ",
+        "id": 150,
+        "rarity": "R",
+        "notes": {
+grade: "A-",
+colorIdentity: "R"
+        }
+    },
+    {
+        "name": "The Moirai",
+        "imageName": _151,
         "cost": "5RR",
         "manaValue": 7,
         "color": "R",
         "type": "Legendary Artifact Creature — Battleship ",
-        "id": 150,
+        "id": 151,
         "rarity": "M",
         "notes": {
 grade: "B+",
@@ -2425,12 +2439,12 @@ colorIdentity: "R"
     },
     {
         "name": "Ohmwrecker",
-        "imageName": _151,
+        "imageName": _152,
         "cost": "3R",
         "manaValue": 4,
         "color": "R",
-        "type": "Artifact Creature — Mech Assault ",
-        "id": 151,
+        "type": "Artifact Creature — Mech ",
+        "id": 152,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -2439,12 +2453,12 @@ colorIdentity: "R"
     },
     {
         "name": "Rangor Contractor",
-        "imageName": _152,
+        "imageName": _153,
         "cost": "2R",
         "manaValue": 3,
         "color": "R",
-        "type": "Creature — Mercenary Commando ",
-        "id": 152,
+        "type": "Creature — Mercenary Saboteur ",
+        "id": 153,
         "rarity": "C",
         "notes": {
 grade: "C-",
@@ -2453,12 +2467,12 @@ colorIdentity: "R"
     },
     {
         "name": "Reckless Troubleshooter",
-        "imageName": _153,
+        "imageName": _154,
         "cost": "R",
         "manaValue": 1,
         "color": "R",
         "type": "Creature — Mercenary Saboteur ",
-        "id": 153,
+        "id": 154,
         "rarity": "R",
         "notes": {
 grade: "B",
@@ -2467,12 +2481,12 @@ colorIdentity: "R"
     },
     {
         "name": "Reverse Polarity",
-        "imageName": _154,
+        "imageName": _155,
         "cost": "2R",
         "manaValue": 3,
         "color": "R",
         "type": "Sorcery",
-        "id": 154,
+        "id": 155,
         "rarity": "U",
         "notes": {
 grade: "D",
@@ -2481,12 +2495,12 @@ colorIdentity: "R"
     },
     {
         "name": "Rip Space-Time",
-        "imageName": _155,
+        "imageName": _156,
         "cost": "4R",
         "manaValue": 5,
         "color": "R",
         "type": "Instant",
-        "id": 155,
+        "id": 156,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -2495,12 +2509,12 @@ colorIdentity: "R"
     },
     {
         "name": "Rocket Salvo",
-        "imageName": _156,
+        "imageName": _157,
         "cost": "1R",
         "manaValue": 2,
         "color": "R",
         "type": "Instant",
-        "id": 156,
+        "id": 157,
         "rarity": "C",
         "notes": {
 grade: "B-",
@@ -2508,13 +2522,13 @@ colorIdentity: "R"
         }
     },
     {
-        "name": "Scavenged X-17",
-        "imageName": _157,
+        "name": "Scavenged Rampager",
+        "imageName": _158,
         "cost": "2R",
         "manaValue": 3,
         "color": "R",
-        "type": "Artifact Creature — Rebel Mech Assault ",
-        "id": 157,
+        "type": "Artifact Creature — Rebel Mech ",
+        "id": 158,
         "rarity": "U",
         "notes": {
 grade: "C+",
@@ -2523,32 +2537,18 @@ colorIdentity: "R"
     },
     {
         "name": "Scrapyard Salvager",
-        "imageName": _158,
+        "imageName": _159,
         "cost": "1R",
         "manaValue": 2,
         "color": "R",
         "type": "Artifact Creature — Mech Engineer ",
-        "id": 158,
+        "id": 159,
         "rarity": "R",
         "notes": {
 grade: "C+",
 colorIdentity: "R",
 cockatrice_related: "Mech",
 cockatrice_related_count: "2"
-        }
-    },
-    {
-        "name": "Self-Destruct Sequence",
-        "imageName": _159,
-        "cost": "3R",
-        "manaValue": 4,
-        "color": "R",
-        "type": "Sorcery",
-        "id": 159,
-        "rarity": "C",
-        "notes": {
-grade: "C",
-colorIdentity: "R"
         }
     },
     {
@@ -2580,27 +2580,13 @@ colorIdentity: "R"
         }
     },
     {
-        "name": "Supervolcanic Fallout",
-        "imageName": _162,
-        "cost": "2R",
-        "manaValue": 3,
-        "color": "R",
-        "type": "Sorcery",
-        "id": 162,
-        "rarity": "C",
-        "notes": {
-grade: "D+",
-colorIdentity: "R"
-        }
-    },
-    {
         "name": "Supply Runner",
-        "imageName": _163,
+        "imageName": _162,
         "cost": "1R",
         "manaValue": 2,
         "color": "R",
-        "type": "Artifact Creature — Rebel Mech Assault ",
-        "id": 163,
+        "type": "Artifact Creature — Rebel Mech ",
+        "id": 162,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -2609,9 +2595,23 @@ colorIdentity: "R"
     },
     {
         "name": "Take Hostage",
-        "imageName": _164,
+        "imageName": _163,
         "cost": "2R",
         "manaValue": 3,
+        "color": "R",
+        "type": "Sorcery",
+        "id": 163,
+        "rarity": "C",
+        "notes": {
+grade: "C-",
+colorIdentity: "R"
+        }
+    },
+    {
+        "name": "Throw to the Wind",
+        "imageName": _164,
+        "cost": "1R",
+        "manaValue": 2,
         "color": "R",
         "type": "Sorcery",
         "id": 164,
@@ -2622,27 +2622,13 @@ colorIdentity: "R"
         }
     },
     {
-        "name": "Throw to the Wind",
-        "imageName": _165,
-        "cost": "1R",
-        "manaValue": 2,
-        "color": "R",
-        "type": "Sorcery",
-        "id": 165,
-        "rarity": "C",
-        "notes": {
-grade: "C-",
-colorIdentity: "R"
-        }
-    },
-    {
         "name": "Vulcan Devastators",
-        "imageName": _166,
+        "imageName": _165,
         "cost": "5R",
         "manaValue": 6,
         "color": "R",
-        "type": "Artifact Creature — Mech Assault ",
-        "id": 166,
+        "type": "Artifact Creature — Mech ",
+        "id": 165,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -2651,12 +2637,12 @@ colorIdentity: "R"
     },
     {
         "name": "Walking Furnace",
-        "imageName": _167,
+        "imageName": _166,
         "cost": "1RR",
         "manaValue": 3,
         "color": "R",
-        "type": "Artifact Creature — Mech Nomad ",
-        "id": 167,
+        "type": "Artifact Creature — Mech ",
+        "id": 166,
         "rarity": "U",
         "notes": {
 grade: "B-",
@@ -2665,12 +2651,12 @@ colorIdentity: "R"
     },
     {
         "name": "Wanted Speedster",
-        "imageName": _168,
+        "imageName": _167,
         "cost": "3R",
         "manaValue": 4,
         "color": "R",
-        "type": "Creature — Mercenary Commando ",
-        "id": 168,
+        "type": "Creature — Mercenary Saboteur ",
+        "id": 167,
         "rarity": "U",
         "notes": {
 grade: "B-",
@@ -2679,12 +2665,12 @@ colorIdentity: "R"
     },
     {
         "name": "Wild Game Huntmaster",
-        "imageName": _169,
+        "imageName": _168,
         "cost": "2RR",
         "manaValue": 4,
         "color": "R",
         "type": "Creature — Nomad ",
-        "id": 169,
+        "id": 168,
         "rarity": "U",
         "notes": {
 grade: "B+",
@@ -2693,15 +2679,29 @@ colorIdentity: "R"
     },
     {
         "name": "Wormcaller’s Assurance",
-        "imageName": _170,
+        "imageName": _169,
         "cost": "2R",
         "manaValue": 3,
         "color": "R",
         "type": "Sorcery",
-        "id": 170,
+        "id": 169,
         "rarity": "R",
         "notes": {
 grade: "C+",
+colorIdentity: "R"
+        }
+    },
+    {
+        "name": "Wrap in Flames",
+        "imageName": _170,
+        "cost": "3R",
+        "manaValue": 4,
+        "color": "R",
+        "type": "Sorcery",
+        "id": 170,
+        "rarity": "C",
+        "notes": {
+grade: "D+",
 colorIdentity: "R"
         }
     },
@@ -3218,7 +3218,7 @@ cockatrice_related_count: "x"
         "cost": "2G",
         "manaValue": 3,
         "color": "G",
-        "type": "Creature — Rebel Commando ",
+        "type": "Creature — Rebel Soldier ",
         "id": 206,
         "rarity": "C",
         "notes": {
@@ -3458,7 +3458,7 @@ colorIdentity: "RG"
         "cost": "2GW",
         "manaValue": 4,
         "color": "GW",
-        "type": "Legendary Creature — Rebel Commando ",
+        "type": "Legendary Creature — Rebel Soldier ",
         "id": 223,
         "rarity": "M",
         "notes": {
@@ -3588,7 +3588,7 @@ cockatrice_related: "Mech"
         "cost": "1BG",
         "manaValue": 3,
         "color": "BG",
-        "type": "Creature — Mercenary Commando ",
+        "type": "Creature — Mercenary Saboteur ",
         "id": 232,
         "rarity": "U",
         "notes": {
@@ -3616,7 +3616,7 @@ colorIdentity: "BG"
         "cost": "1RW",
         "manaValue": 3,
         "color": "RW",
-        "type": "Legendary Creature — Rebel Saboteur ",
+        "type": "Legendary Creature — Rebel Soldier ",
         "id": 234,
         "rarity": "R",
         "notes": {
@@ -3632,7 +3632,7 @@ cockatrice_related_count: "x"
         "cost": "1RW",
         "manaValue": 3,
         "color": "RW",
-        "type": "Creature — Rebel Assault ",
+        "type": "Creature — Rebel Soldier ",
         "id": 235,
         "rarity": "U",
         "notes": {
@@ -3755,8 +3755,8 @@ colorIdentity: ""
     {
         "name": "Gravitic Collector",
         "imageName": _244,
-        "cost": "4",
-        "manaValue": 4,
+        "cost": "3",
+        "manaValue": 3,
         "color": "",
         "type": "Artifact Creature — Station ",
         "id": 244,
