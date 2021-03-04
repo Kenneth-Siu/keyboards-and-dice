@@ -76,6 +76,7 @@ export default function SingleDraft({ loggedInUser }) {
                             <ReadyToStartView
                                 draftId={draftId}
                                 numberOfBots={Math.max(0, DEFAULT_PLAYERS_IN_DRAFT - playersInSeatOrder.length)}
+                                getDraft={getDraft}
                                 startDraftCallback={getDraft}
                                 isOwner={isDraftOwner}
                             />

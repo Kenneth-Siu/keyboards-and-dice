@@ -6,8 +6,11 @@ import { PillButton } from "../../components/pillButton/PillButton";
 import { asyncTry } from "../../helpers/asyncTry";
 import * as DraftsApi from "../../api/DraftsApi.js";
 import { RotatingLoadingIcon } from "../../components/rotatingLoadingIcon/RotatingLoadingIcon";
+import { useAutoRefresh } from "../../helpers/useAutoRefresh";
 
-export function ReadyToStartView({ draftId, numberOfBots, startDraftCallback, isOwner }) {
+export function ReadyToStartView({ draftId, numberOfBots, getDraft, startDraftCallback, isOwner }) {
+    useAutoRefresh(getDraft);
+
     return (
         <div className="ready-to-start-view">
             {isOwner ? (

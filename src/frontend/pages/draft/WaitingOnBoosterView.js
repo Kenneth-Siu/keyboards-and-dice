@@ -1,17 +1,10 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { RotatingLoadingIcon } from "../../components/rotatingLoadingIcon/RotatingLoadingIcon";
-import { AUTO_REFRESH_INTERVAL } from "../../config";
+import { useAutoRefresh } from "../../helpers/useAutoRefresh";
 import "./WaitingOnBoosterView.scss";
 
 export function RefreshButtonView({ getDraft }) {
-    const intervalRef = useRef();
-
-    useEffect(() => {
-        intervalRef.current = setInterval(() => getDraft(), AUTO_REFRESH_INTERVAL);
-        return () => {
-            clearInterval(intervalRef.current);
-        };
-    }, []);
+    useAutoRefresh(getDraft);
 
     return (
         <div className="refresh-button-view">
