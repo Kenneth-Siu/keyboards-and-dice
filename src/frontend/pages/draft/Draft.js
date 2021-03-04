@@ -12,6 +12,8 @@ import { ReadyToStartView } from "./ReadyToStartView";
 import { Button } from "../../components/button/Button";
 import { PicksView } from "./PicksView";
 import { BasicsControlPanel } from "./BasicsControlPanel";
+import { flatten } from "lodash";
+import copy from "copy-to-clipboard";
 
 export default function SingleDraft({ loggedInUser }) {
     const { draftId } = useParams();
@@ -25,7 +27,7 @@ export default function SingleDraft({ loggedInUser }) {
         sideboardNonCreatures: [[], [], [], [], [], [], [], []],
     });
 
-    const [firstTimeDraftLoading, setFirstTimeDraftLoading] = useState(true);
+    const [draftLoaded, setDraftLoaded] = useState(false);
     const [boosterLoading, setBoosterLoading] = useState(false);
     const [playersInSeatOrder, setPlayersInSeatOrder] = useState([]);
     const [draftStatus, setDraftStatus] = useState(null);
@@ -33,14 +35,16 @@ export default function SingleDraft({ loggedInUser }) {
     const [packNumber, setPackNumber] = useState(null);
     const [pickNumber, setPickNumber] = useState(null);
 
-    const [numberOfPlains, setNumberOfPlains] = useState(0);
-    const [numberOfIslands, setNumberOfIslands] = useState(0);
-    const [numberOfSwamps, setNumberOfSwamps] = useState(0);
-    const [numberOfMountains, setNumberOfMountains] = useState(0);
-    const [numberOfForests, setNumberOfForests] = useState(0);
+    const [basics, setBasics] = useState({
+        plains: 0,
+        islands: 0,
+        swamps: 0,
+        mountains: 0,
+        forests: 0,
+    });
 
     const [picksLoaded, setPicksLoaded] = useState(false);
-    const [landsLoaded, setLandsLoaded] = useState(false);
+    const [basicsLoaded, setBasicsLoaded] = useState(false);
 
     useEffect(getDraft, []);
 
@@ -55,7 +59,7 @@ export default function SingleDraft({ loggedInUser }) {
                         : ""}
                     {draftStatus === DRAFT_STATUSES.COMPLETE ? " Complete!" : ""}
                 </h1>
-                {firstTimeDraftLoading ? (
+                {!draftLoaded ? (
                     <LoadingSpinner />
                 ) : (
                     <>
@@ -103,24 +107,14 @@ export default function SingleDraft({ loggedInUser }) {
                             <BasicsControlPanel
                                 {...{
                                     draftId,
-                                    numberOfPlains,
-                                    setNumberOfPlains,
-                                    numberOfIslands,
-                                    setNumberOfIslands,
-                                    numberOfSwamps,
-                                    setNumberOfSwamps,
-                                    numberOfMountains,
-                                    setNumberOfMountains,
-                                    numberOfForests,
-                                    setNumberOfForests,
-                                    landsLoaded,
-                                    setLandsLoaded,
+                                    basicsLoaded,
+                                    setBasicsLoaded,
+                                    basics,
+                                    setBasics,
                                 }}
                             />
                         }
-                        totalBasics={
-                            numberOfPlains + numberOfIslands + numberOfSwamps + numberOfMountains + numberOfForests
-                        }
+                        totalBasics={basics.plains + basics.islands + basics.swamps + basics.mountains + basics.forests}
                     />
                 )}
             </>
@@ -166,7 +160,7 @@ export default function SingleDraft({ loggedInUser }) {
                 setPlayersInSeatOrder(responseDraft.players.sort((a, b) => a.seatNumber - b.seatNumber));
                 setDraftStatus(responseDraft.status);
                 setPackNumber(responseDraft.packNumber);
-                setFirstTimeDraftLoading(false);
+                setDraftLoaded(true);
 
                 switch (responseDraft.status) {
                     case DRAFT_STATUSES.READY_TO_START:
@@ -235,20 +229,20 @@ export default function SingleDraft({ loggedInUser }) {
         const deck = [...flatten(picks.deckCreatures), ...flatten(picks.deckNonCreatures)].map(
             (card) => `1 ${card.name}`
         );
-        if (numberOfPlains) {
-            deck.push(`${numberOfPlains} Plains`);
+        if (basics.plains) {
+            deck.push(`${basics.plains} Plains`);
         }
-        if (numberOfIslands) {
-            deck.push(`${numberOfIslands} Island`);
+        if (basics.islands) {
+            deck.push(`${basics.islands} Island`);
         }
-        if (numberOfSwamps) {
-            deck.push(`${numberOfSwamps} Swamp`);
+        if (basics.swamps) {
+            deck.push(`${basics.swamps} Swamp`);
         }
-        if (numberOfMountains) {
-            deck.push(`${numberOfMountains} Mountain`);
+        if (basics.mountains) {
+            deck.push(`${basics.mountains} Mountain`);
         }
-        if (numberOfForests) {
-            deck.push(`${numberOfForests} Forest`);
+        if (basics.forests) {
+            deck.push(`${basics.forests} Forest`);
         }
         const sideboard = [...flatten(picks.sideboardCreatures), ...flatten(picks.sideboardNonCreatures)].map(
             (card) => `1 ${card.name}`

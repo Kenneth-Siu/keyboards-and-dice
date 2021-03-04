@@ -7,74 +7,77 @@ import redManaSymbol from "../../../../data/redManaSymbol.svg";
 import greenManaSymbol from "../../../../data/greenManaSymbol.svg";
 import { MdAddCircleOutline, MdRemoveCircleOutline } from "react-icons/md";
 
-export function BasicsControlPanel({
-    draftId,
-    numberOfPlains,
-    setNumberOfPlains,
-    numberOfIslands,
-    setNumberOfIslands,
-    numberOfSwamps,
-    setNumberOfSwamps,
-    numberOfMountains,
-    setNumberOfMountains,
-    numberOfForests,
-    setNumberOfForests,
-    landsLoaded,
-    setLandsLoaded,
-}) {
+export function BasicsControlPanel({ draftId, basicsLoaded, setBasicsLoaded, basics, setBasics }) {
     const cookieName = `draft-${draftId}-lands`;
     useEffect(getLandsFromCookie, []);
 
     return (
         <div className="basics-control-panel">
             Basic lands:
-            <BasicLandControl iconUrl={whiteManaSymbol} landState={numberOfPlains} setLandState={setPlains} />
-            <BasicLandControl iconUrl={blueManaSymbol} landState={numberOfIslands} setLandState={setIslands} />
-            <BasicLandControl iconUrl={blackManaSymbol} landState={numberOfSwamps} setLandState={setSwamps} />
-            <BasicLandControl iconUrl={redManaSymbol} landState={numberOfMountains} setLandState={setMountains} />
-            <BasicLandControl iconUrl={greenManaSymbol} landState={numberOfForests} setLandState={setForests} />
+            <BasicLandControl iconUrl={whiteManaSymbol} landState={basics.plains} setLandState={setPlains} />
+            <BasicLandControl iconUrl={blueManaSymbol} landState={basics.islands} setLandState={setIslands} />
+            <BasicLandControl iconUrl={blackManaSymbol} landState={basics.swamps} setLandState={setSwamps} />
+            <BasicLandControl iconUrl={redManaSymbol} landState={basics.mountains} setLandState={setMountains} />
+            <BasicLandControl iconUrl={greenManaSymbol} landState={basics.forests} setLandState={setForests} />
         </div>
     );
 
     function getLandsFromCookie() {
-        if (!landsLoaded) {
-            const cookieLands = CookieHelper.get(cookieName, [0, 0, 0, 0, 0]);
-            setNumberOfPlains(cookieLands[0]);
-            setNumberOfIslands(cookieLands[1]);
-            setNumberOfSwamps(cookieLands[2]);
-            setNumberOfMountains(cookieLands[3]);
-            setNumberOfForests(cookieLands[4]);
-            setLandsLoaded(true);
+        if (!basicsLoaded) {
+            const cookieBasics = CookieHelper.get(cookieName, {
+                plains: 0,
+                islands: 0,
+                swamps: 0,
+                mountains: 0,
+                forests: 0,
+            });
+            setBasics(cookieBasics);
+            setBasicsLoaded(true);
         }
     }
 
-    function updateCookie(landArray) {
-        CookieHelper.set(cookieName, landArray);
+    function updateCookie() {
+        CookieHelper.set(cookieName, basics);
     }
 
     function setPlains(num) {
-        updateCookie([num, numberOfIslands, numberOfSwamps, numberOfMountains, numberOfForests]);
-        setNumberOfPlains(num);
+        basics.plains = num;
+        setBasics({
+            ...basics,
+        });
+        updateCookie();
     }
 
     function setIslands(num) {
-        updateCookie([numberOfPlains, num, numberOfSwamps, numberOfMountains, numberOfForests]);
-        setNumberOfIslands(num);
+        basics.islands = num;
+        setBasics({
+            ...basics,
+        });
+        updateCookie();
     }
 
     function setSwamps(num) {
-        updateCookie([numberOfPlains, numberOfIslands, num, numberOfMountains, numberOfForests]);
-        setNumberOfSwamps(num);
+        basics.swamps = num;
+        setBasics({
+            ...basics,
+        });
+        updateCookie();
     }
 
     function setMountains(num) {
-        updateCookie([numberOfPlains, numberOfIslands, numberOfSwamps, num, numberOfForests]);
-        setNumberOfMountains(num);
+        basics.mountains = num;
+        setBasics({
+            ...basics,
+        });
+        updateCookie();
     }
 
     function setForests(num) {
-        updateCookie([numberOfPlains, numberOfIslands, numberOfSwamps, numberOfMountains, num]);
-        setNumberOfForests(num);
+        basics.forests = num;
+        setBasics({
+            ...basics,
+        });
+        updateCookie();
     }
 }
 
