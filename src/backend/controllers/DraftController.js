@@ -126,4 +126,19 @@ router.post("/:draftId/pick", ensureLoggedIn, (req, res) => {
         });
 });
 
+router.delete("/:draftId", ensureLoggedIn, (req, res) => {
+    DraftService.deleteDraft(req.params.draftId, req.user.id)
+        .then(() => {
+            res.sendStatus(200);
+        })
+        .catch((err) => {
+            if (err.name === NotFoundErrorName) {
+                res.status(404).send(err.message);
+            } else {
+                console.log(err);
+                res.sendStatus(500);
+            }
+        });
+});
+
 export default router;

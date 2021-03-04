@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { MdRefresh, MdContentCopy, MdDelete } from "react-icons/md";
+import { MdContentCopy, MdDelete } from "react-icons/md";
 import { Link } from "react-router-dom";
 import copy from "copy-to-clipboard";
 import LoadingSpinner from "../../components/loadingSpinner/LoadingSpinner.js";
@@ -15,17 +15,19 @@ export default function Drafts({ loggedInUser }) {
     useEffect(getDrafts, []);
     return (
         <>
-            <title>Draft · Terra 2170</title>
+            <title>Your Drafts · Terra 2170</title>
             <main className="draft-page">
-                <h1>Draft</h1>
-                <p>Hi, {loggedInUser.displayName}!</p>
+                <h1>Your Drafts</h1>
+                <p>
+                    Hi, {loggedInUser.displayName}!{" "}
+                    <small>
+                        If this is not you, <a href="/api/logout">click here</a> to log out.
+                    </small>
+                </p>
                 {!drafts ? (
                     <LoadingSpinner />
                 ) : (
                     <>
-                        <button className="refresh-button" aria-label="Refresh" onClick={getDrafts} disabled={busy}>
-                            <MdRefresh />
-                        </button>
                         <DraftsTable />
                         <CreateDraftForm />
                         <JoinDraftForm />
@@ -39,6 +41,19 @@ export default function Drafts({ loggedInUser }) {
         if (!drafts) {
             return null;
         }
+        if (drafts.length === 0) {
+            return (
+                <table>
+                    <tbody>
+                        <tr>
+                            <td className="no-drafts" colSpan="2">
+                                You aren't in any drafts at the moment... <span className="emoji">🌧</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            );
+        }
         return (
             <table>
                 <thead>
@@ -48,17 +63,11 @@ export default function Drafts({ loggedInUser }) {
                     </tr>
                 </thead>
                 <tbody>
-                    {drafts.length === 0 ? (
-                        <tr>
-                            <td className="no-drafts" colSpan="2">
-                                You aren't in any drafts at the moment... <span className="emoji">🌧</span>
-                            </td>
-                        </tr>
-                    ) : (
-                        drafts
-                            .sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt))
-                            .map((draft) => <DraftsTableRow draft={draft} key={draft.id} />)
-                    )}
+                    {drafts
+                        .sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt))
+                        .map((draft) => (
+                            <DraftsTableRow draft={draft} key={draft.id} />
+                        ))}
                 </tbody>
             </table>
         );
@@ -78,23 +87,25 @@ export default function Drafts({ loggedInUser }) {
                         />
                     </div>
                 </td>
-                <td>{draft.statusName}</td>
-                <td className="controls">
-                    {draft.status === 0 ? (
-                        <button className="copy" aria-label="Copy" onClick={() => copy(draft.id)}>
-                            <MdContentCopy />
+                <td colSpan={draft.ownerId === loggedInUser.id ? 1 : 2}>{draft.statusName}</td>
+                {draft.ownerId === loggedInUser.id && (
+                    <td className="controls">
+                        {draft.status === 0 ? (
+                            <button className="copy" aria-label="Copy" onClick={() => copy(draft.id)}>
+                                <MdContentCopy />
+                            </button>
+                        ) : null}
+                        <button
+                            className="delete"
+                            aria-label="Delete"
+                            onClick={() => {
+                                deleteDraft(draft.id);
+                            }}
+                        >
+                            <MdDelete />
                         </button>
-                    ) : null}
-                    <button
-                        className="delete"
-                        aria-label="Delete"
-                        onClick={() => {
-                            /* TODO */
-                        }}
-                    >
-                        <MdDelete />
-                    </button>
-                </td>
+                    </td>
+                )}
             </tr>
         );
     }
@@ -160,6 +171,19 @@ export default function Drafts({ loggedInUser }) {
         asyncTry(
             async () => {
                 await DraftsApi.createDraft();
+                getDrafts();
+            },
+            () => {
+                setBusy(false);
+            }
+        );
+    }
+
+    function deleteDraft(draftId) {
+        setBusy(true);
+        asyncTry(
+            async () => {
+                await DraftsApi.deleteDraft(draftId);
                 getDrafts();
             },
             () => {

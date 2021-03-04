@@ -119,3 +119,11 @@ export async function makePick(draftId, userId, pickNumber, cardId) {
     }
     await new DraftOperations().makePick(draftId, player.id, booster, card);
 }
+
+export async function deleteDraft(draftId, userId) {
+    const draft = await DraftRepo.find(draftId);
+    if (!draft || draft.ownerId !== userId) {
+        throw new NotFoundError(`Draft not found`);
+    }
+    await DraftRepo.deleteCascade(draftId);
+}

@@ -15,7 +15,8 @@ export function CopyDeckButton({ copyCallback }) {
         copyCallback();
         setDeckCopied(true);
         setTimeout(() => {
-            setDeckCopied(false);
+            setDeckCopied(false);   // Still triggers if you navigate away from the page.
+            // TODO set up unsubscribe in a useEffect cleanup function
         }, 5000);
     }
 }

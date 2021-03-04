@@ -10,6 +10,10 @@ export async function post(url, body, expectJsonResponse) {
     return await makeFetch(url, "POST", body, expectJsonResponse);
 }
 
+export async function delete_(url) {
+    return await makeFetch(url, "DELETE", null, false);
+}
+
 export async function makeFetch(url, method, body, expectJsonResponse) {
     const options = {
         method: method || "GET",

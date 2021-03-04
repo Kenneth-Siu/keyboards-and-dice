@@ -1,4 +1,4 @@
-import { get, post, put } from "./Api.js";
+import { get, post, put, delete_ } from "./Api.js";
 
 const baseUrl = "/api/drafts";
 
@@ -32,4 +32,8 @@ export async function startDraft(draftId) {
 
 export async function submitPick(draftId, pickNumber, cardId) {
     return await post(baseUrl + `/${draftId}/pick`, { pickNumber: pickNumber, cardId: cardId });
+}
+
+export async function deleteDraft(draftId) {
+    return await delete_(baseUrl + `/${draftId}`);
 }

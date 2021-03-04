@@ -72,3 +72,73 @@ export async function isOwnedByUser(id, userId) {
         throw error;
     }
 }
+
+export async function deleteCascade(id) {
+    const client = await pool.connect();
+    try {
+        await client.query("BEGIN");
+
+        const playersResult = await client.query(
+            `SELECT id
+            FROM players
+            WHERE players.draft_id = $1`,
+            [id]
+        );
+        const playerIds = playersResult.rows.map((row) => row.id);
+
+        if (playerIds.length > 0) {
+            const boostersResult = await client.query(
+                `SELECT id
+                FROM boosters
+                WHERE player_id IN (${playerIds.map((_, index) => `$${index + 1}`).join(", ")})`,
+                playerIds
+            );
+            const boosterIds = boostersResult.rows.map((row) => row.id);
+
+            if (boosterIds.length > 0) {
+                await pool.query(
+                    `DELETE FROM cards
+                    WHERE booster_id IN (${boosterIds.map((_, index) => `$${index + 1}`).join(", ")})`,
+                    boosterIds
+                );
+            }
+
+            await pool.query(
+                `DELETE FROM picks
+                WHERE player_id IN (${playerIds.map((_, index) => `$${index + 1}`).join(", ")})`,
+                playerIds
+            );
+
+            await pool.query(
+                `DELETE FROM memories
+                WHERE player_id IN (${playerIds.map((_, index) => `$${index + 1}`).join(", ")})`,
+                playerIds
+            );
+
+            await pool.query(
+                `DELETE FROM boosters
+                WHERE player_id IN (${playerIds.map((_, index) => `$${index + 1}`).join(", ")})`,
+                playerIds
+            );
+
+            await pool.query(
+                `DELETE FROM players
+                WHERE draft_id = $1`,
+                [id]
+            );
+        }
+
+        await pool.query(
+            `DELETE FROM drafts
+            WHERE id = $1`,
+            [id]
+        );
+
+        await client.query("COMMIT");
+    } catch (error) {
+        await client.query("ROLLBACK");
+        throw error;
+    } finally {
+        client.release();
+    }
+}

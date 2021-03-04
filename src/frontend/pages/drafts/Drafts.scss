@@ -23,29 +23,17 @@
         margin-top: 0.5rem;
         margin-bottom: 1rem;
         line-height: 1.2;
+
+        small {
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
     }
 
     button {
         cursor: pointer;
         svg {
             display: block;
-        }
-    }
-
-    .refresh-button {
-        padding: 0;
-        line-height: 1;
-        color: $color-1;
-        font-size: 1.2rem;
-        border: none;
-        background: none;
-        position: absolute;
-        right: 0.3rem;
-        transform: translateY(-100%);
-
-        &:disabled {
-            opacity: 0.2;
-            cursor: default;
         }
     }
 
