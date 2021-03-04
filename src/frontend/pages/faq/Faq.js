@@ -104,10 +104,10 @@ export default function Faq() {
                 <section>
                     <img src={radiumTracker} />
                     <div>
-                        <h2>Mutate</h2>
+                        <h2>Reconstitute</h2>
                         <blockquote>
                             <p>
-                                <b>Mutate</b> is a <em>keyword ability</em> that triggers upon the creature dying to
+                                <b>Reconstitute</b> is a <em>keyword ability</em> that triggers upon the creature dying to
                                 find another creature in your deck that costs less and put it onto the battlefield. It
                                 is a <em>triggered ability</em> with the following rules:
                             </p>
@@ -134,7 +134,7 @@ export default function Faq() {
                         <blockquote>
                             <p>
                                 <b>Teleport</b> is a <em>keyword ability</em> that allows the player to pay an
-                                alternative cost to castt the spell directly from their library if the player is looking
+                                alternative cost to cast the spell directly from their library if the player is looking
                                 at or revealing the card. It is a <em>static ability</em> with the following rules:
                             </p>
                             <p>
@@ -164,8 +164,8 @@ export default function Faq() {
                                     then resolve the teleported spell.
                                 </li>
                                 <li>
-                                    While resolving Mutate, finish revealing all the cards first, then choose whether or
-                                    not to teleport any cards, then put the mutated creature onto the battlefield.
+                                    While resolving Reconstitute, finish revealing all the cards first, then choose whether or
+                                    not to teleport any cards, then put the reconstituted creature onto the battlefield.
                                 </li>
                             </ul>
                         </blockquote>
@@ -200,7 +200,7 @@ export default function Faq() {
                             </li>
                             <li>
                                 If an effect causes you to look at or reveal multiple cards in your library (for
-                                example, a creature with Mutate died), finish looking at or revealing all the cards
+                                example, a creature with Reconstitute died), finish looking at or revealing all the cards
                                 first, then teleport spells, then finish resolving the original effect.
                             </li>
                             <li>
@@ -210,9 +210,9 @@ export default function Faq() {
                             </li>
                             <li>
                                 If an effect attempts to interact with a card that you teleported (for example, you
-                                teleported a creature card you were about to put into play from Mutate), that part of
+                                teleported a creature card you were about to put into play from Reconstitute), that part of
                                 the original effect fails and you continue resolving the rest of the effect. (In this
-                                example, no creature would be put into play with the Mutate ability)
+                                example, no creature would be put into play with the Reconstitute ability)
                             </li>
                         </ul>
                     </div>
@@ -501,7 +501,7 @@ export default function Faq() {
                     <div>
                         <h3>Titan of Shisuku Sewers</h3>
                         <ul>
-                            <li>If a creature has multiple instances of mutate, each triggers separately.</li>
+                            <li>If a creature has multiple instances of Reconstitute, each triggers separately.</li>
                         </ul>
                     </div>
                 </section>
@@ -523,7 +523,7 @@ export default function Faq() {
                     <div>
                         <h3>Umida Koto</h3>
                         <ul>
-                            <li>If a creature has multiple instances of mutate, each triggers separately.</li>
+                            <li>If a creature has multiple instances of Reconstitute, each triggers separately.</li>
                         </ul>
                     </div>
                 </section>
