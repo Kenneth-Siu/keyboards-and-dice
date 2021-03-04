@@ -8,17 +8,15 @@ import "./Draft.scss";
 import { asyncTry } from "../../helpers/asyncTry";
 import { CHEVRON_DIRECTION, PlayerList } from "../../components/playerList/PlayerList";
 import { ReadyToStartView } from "./ReadyToStartView";
-import { PillButton } from "../../components/pillButton/PillButton";
 import { PicksView } from "./PicksView";
 import { BasicsControlPanel } from "./BasicsControlPanel";
 import { flatten } from "lodash";
 import copy from "copy-to-clipboard";
 import { RotatingLoadingIcon } from "../../components/rotatingLoadingIcon/RotatingLoadingIcon";
+import { BoosterView } from "./BoosterView";
 
 export default function SingleDraft({ loggedInUser }) {
     const { draftId } = useParams();
-
-    const [selectedCardIndex, setSelectedCardIndex] = useState(null);
 
     const [picks, setPicks] = useState({
         deckCreatures: [[], [], [], [], [], [], [], []],
@@ -74,92 +72,60 @@ export default function SingleDraft({ loggedInUser }) {
                                 }
                             />
                         </div>
-                        <MainView />
+                        {draftStatus === DRAFT_STATUSES.READY_TO_START && (
+                            <ReadyToStartView
+                                draftId={draftId}
+                                numberOfBots={Math.max(0, DEFAULT_PLAYERS_IN_DRAFT - playersInSeatOrder.length)}
+                                startDraftCallback={() => getDraft()}
+                                isOwner={isDraftOwner}
+                            />
+                        )}
+                        {draftStatus === DRAFT_STATUSES.IN_PROGRESS &&
+                            (boosterLoading ? (
+                                <div
+                                    className={`booster-loading ${
+                                        pickNumber === null || pickNumber < 8 ? "two-rows" : "one-row"
+                                    }`}
+                                >
+                                    <LoadingSpinner />
+                                </div>
+                            ) : boosterCards ? (
+                                <BoosterView cards={boosterCards} submitPick={submitPick} />
+                            ) : (
+                                <RefreshButtonView />
+                            ))}
+                        {draftStatus !== DRAFT_STATUSES.READY_TO_START && (
+                            <PicksView
+                                showDeckbuilderPanels={draftStatus === DRAFT_STATUSES.COMPLETE}
+                                {...{
+                                    draftId,
+                                    picksLoaded,
+                                    setPicksLoaded,
+                                    picks,
+                                    setPicks,
+                                    copyPicksToClipboard,
+                                }}
+                                basicsControlPanel={
+                                    <BasicsControlPanel
+                                        {...{
+                                            draftId,
+                                            basicsLoaded,
+                                            setBasicsLoaded,
+                                            basics,
+                                            setBasics,
+                                        }}
+                                    />
+                                }
+                                totalBasics={
+                                    basics.plains + basics.islands + basics.swamps + basics.mountains + basics.forests
+                                }
+                            />
+                        )}
                     </>
                 )}
             </main>
         </>
     );
-
-    function MainView() {
-        return (
-            <>
-                {draftStatus === DRAFT_STATUSES.READY_TO_START && (
-                    <ReadyToStartView
-                        draftId={draftId}
-                        numberOfBots={Math.max(0, DEFAULT_PLAYERS_IN_DRAFT - playersInSeatOrder.length)}
-                        startDraftCallback={() => getDraft()}
-                        isOwner={isDraftOwner}
-                    />
-                )}
-                {draftStatus === DRAFT_STATUSES.IN_PROGRESS &&
-                    (boosterLoading ? (
-                        <div className={`booster-loading ${pickNumber === null || pickNumber < 8 ? "two-rows" : "one-row"}`}>
-                            <LoadingSpinner />
-                        </div>
-                    ) : boosterCards ? (
-                        <BoosterView />
-                    ) : (
-                        <RefreshButtonView />
-                    ))}
-                {draftStatus !== DRAFT_STATUSES.READY_TO_START && (
-                    <PicksView
-                        showDeckbuilderPanels={draftStatus === DRAFT_STATUSES.COMPLETE}
-                        {...{
-                            draftId,
-                            picksLoaded,
-                            setPicksLoaded,
-                            picks,
-                            setPicks,
-                            copyPicksToClipboard,
-                        }}
-                        basicsControlPanel={
-                            <BasicsControlPanel
-                                {...{
-                                    draftId,
-                                    basicsLoaded,
-                                    setBasicsLoaded,
-                                    basics,
-                                    setBasics,
-                                }}
-                            />
-                        }
-                        totalBasics={basics.plains + basics.islands + basics.swamps + basics.mountains + basics.forests}
-                    />
-                )}
-            </>
-        );
-    }
-
-    function BoosterView() {
-        return (
-            <>
-                <div className="booster">
-                    {boosterCards.map((card, index) => (
-                        <button
-                            onClick={() => setSelectedCardIndex(index)}
-                            key={index}
-                            className={`${selectedCardIndex === index ? "selected" : ""}`}
-                        >
-                            <img className="card" src={card.imageName} loading="lazy" />
-                        </button>
-                    ))}
-                </div>
-                <PillButton onClick={submitPick} className="submit-pick" disabled={selectedCardIndex === null}>
-                    Submit Pick
-                </PillButton>
-            </>
-        );
-    }
-
-    function RefreshButtonView() {
-        return (
-            <div className="refresh-button-view">
-                <h2>Waiting for others to make their picks...</h2>
-                <RotatingLoadingIcon />
-            </div>
-        );
-    }
 
     function getDraft() {
         asyncTry(
@@ -211,13 +177,12 @@ export default function SingleDraft({ loggedInUser }) {
         );
     }
 
-    function submitPick() {
+    function submitPick(index) {
         setBoosterLoading(true);
         asyncTry(
             async () => {
-                const submittedCard = boosterCards[selectedCardIndex];
+                const submittedCard = boosterCards[index];
                 await DraftsApi.submitPick(draftId, pickNumber, submittedCard.id);
-                setSelectedCardIndex(null);
                 const column = submittedCard.manaValue === 0 ? 7 : Math.min(6, submittedCard.manaValue - 1);
                 if (submittedCard.type.includes("Creature")) {
                     picks.deckCreatures[column].push(submittedCard);
@@ -260,4 +225,13 @@ export default function SingleDraft({ loggedInUser }) {
 
         copy(deck.join("\n") + "\n\n" + sideboard.join("\n"));
     }
+}
+
+function RefreshButtonView() {
+    return (
+        <div className="refresh-button-view">
+            <h2>Waiting for others to make their picks...</h2>
+            <RotatingLoadingIcon />
+        </div>
+    );
 }

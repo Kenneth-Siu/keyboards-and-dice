@@ -32,7 +32,12 @@
     }
 
     .start-draft {
-        @include bigButton;
+        @include button;
+        font-size: 1.4rem;
+        font-weight: 600;
+        padding: 0.4rem 0.8rem;
+        color: $color-2;
         background-color: $color-5-strong;
+        margin: 0 0.4rem;
     }
 }
