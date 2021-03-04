@@ -165,6 +165,8 @@ export default function SingleDraft({ loggedInUser }) {
                 const response = await DraftsApi.getBooster(draftId);
                 if (response.cards) {
                     setBoosterCards(response.cards.map((cardId) => getCard(cardId)));
+                } else {
+                    setBoosterCards(null);
                 }
                 if (response.pickNumber !== undefined) {
                     setPickNumber(response.pickNumber);
