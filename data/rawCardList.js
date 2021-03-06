@@ -203,7 +203,7 @@ import _201 from "./cardImages/S.A.M. Team.jpg";
 import _202 from "./cardImages/Screeching Terror.jpg";
 import _203 from "./cardImages/Sewer Ambush.jpg";
 import _204 from "./cardImages/Sewer Monster.jpg";
-import _205 from "./cardImages/Spawning Grounds.jpg";
+import _205 from "./cardImages/Spawning Site.jpg";
 import _206 from "./cardImages/Supply Scavengers.jpg";
 import _207 from "./cardImages/Suppressor of Worlds.jpg";
 import _208 from "./cardImages/Surge of Fervor.jpg";
@@ -762,8 +762,8 @@ cockatrice_related: "Police"
     {
         "name": "Starlight Crusade Orator",
         "imageName": _34,
-        "cost": "1WW",
-        "manaValue": 3,
+        "cost": "2WW",
+        "manaValue": 4,
         "color": "W",
         "type": "Creature — Advisor ",
         "id": 34,
@@ -1192,7 +1192,7 @@ colorIdentity: "U"
     {
         "name": "Lambert Stealth Bomber",
         "imageName": _64,
-        "cost": "5U",
+        "cost": "4UU",
         "manaValue": 6,
         "color": "U",
         "type": "Artifact Creature — Military Cruiser ",
@@ -1865,7 +1865,7 @@ colorIdentity: "B"
         "id": 111,
         "rarity": "C",
         "notes": {
-grade: "C+",
+grade: "C",
 colorIdentity: "B"
         }
     },
@@ -3197,7 +3197,7 @@ colorIdentity: "G"
         }
     },
     {
-        "name": "Spawning Grounds",
+        "name": "Spawning Site",
         "imageName": _205,
         "cost": "G",
         "manaValue": 1,
@@ -3426,8 +3426,8 @@ colorIdentity: "RG"
     {
         "name": "The Honored Wormcaller",
         "imageName": _221,
-        "cost": "3RG",
-        "manaValue": 5,
+        "cost": "4RG",
+        "manaValue": 6,
         "color": "RG",
         "type": "Legendary Creature — Nomad ",
         "id": 221,
@@ -3732,7 +3732,7 @@ colorIdentity: ""
         "color": "",
         "type": "Artifact Creature — Mech ",
         "id": 242,
-        "rarity": "R",
+        "rarity": "M",
         "notes": {
 grade: "B",
 colorIdentity: ""
@@ -3798,8 +3798,8 @@ colorIdentity: ""
     {
         "name": "Hoverbike",
         "imageName": _247,
-        "cost": "3",
-        "manaValue": 3,
+        "cost": "2",
+        "manaValue": 2,
         "color": "",
         "type": "Artifact — Equipment ",
         "id": 247,
@@ -3944,7 +3944,7 @@ colorIdentity: ""
         "color": "",
         "type": "Artifact Creature — Mech Mutant ",
         "id": 257,
-        "rarity": "M",
+        "rarity": "R",
         "notes": {
 grade: "D",
 colorIdentity: ""

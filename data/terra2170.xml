@@ -374,7 +374,7 @@ Whenever Dropship attacks and isn’t blocked, you may put a creature card exile
             <cmc>3</cmc>
             <colors>W</colors>
             <coloridentity>W</coloridentity>
-            <pt>2/3</pt>
+            <pt>2/2</pt>
         </prop>
         <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Dropship.jpg">T2170</set>
         <tablerow>2</tablerow>
@@ -487,7 +487,7 @@ Remove three charge counters from Helios Comms Satellite: Until end of turn, cre
     <card>
         <name>The Hemera</name>
         <text>Flying, vigilance
-Whenever The Hemera enters the battlefield or attacks, arm each other creature you control. (Create a colorless Equipment artifact token attached to those creatures. It has “Equipped creature gets +1/+1” and equip 2.)</text>
+Whenever The Hemera enters the battlefield or attacks, arm each other creature you control. (Create a colorless Equipment artifact token attached to each of those creatures. It has “Equipped creature gets +1/+1” and equip 2.)</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -778,8 +778,8 @@ Other creatures you control get +1/+1 as long as you control four or more creatu
             <side>front</side>
             <type>Creature — Advisor </type>
             <maintype>Creature</maintype>
-            <manacost>1WW</manacost>
-            <cmc>3</cmc>
+            <manacost>2WW</manacost>
+            <cmc>4</cmc>
             <colors>W</colors>
             <coloridentity>W</coloridentity>
             <pt>*/*</pt>
@@ -854,15 +854,15 @@ When Time Traveller enters the battlefield, you choose which creatures attack th
             <cmc>5</cmc>
             <colors>W</colors>
             <coloridentity>W</coloridentity>
-            <pt>2/2</pt>
+            <pt>1/2</pt>
         </prop>
         <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Time%20Traveller.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
         <name>Turn the Tide of Battle</name>
-        <text>If you control fewer creatures than an opponent, create five 1/1 white Soldier creature tokens. Otherwise, create three of those tokens.
-If you have less life than an opponent, you gain 5 life. Otherwise, you gain 3 life.</text>
+        <text>If you control fewer creatures than an opponent, create four 1/1 white Soldier creature tokens. Otherwise, create two of those tokens.
+If you have less life than an opponent, you gain 4 life. Otherwise, you gain 2 life.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -896,7 +896,7 @@ If you have less life than an opponent, you gain 5 life. Otherwise, you gain 3 l
     </card>
     <card>
         <name>Wartime Recruitment</name>
-        <text>At the beginning of your upkeep, look at the top card of your library. If it’s a land card, you may reveal it and pay 1W. If you do, create two 1/1 white Soldier creature tokens.</text>
+        <text>At the beginning of your upkeep, look at the top card of your library. If it’s a land card, you may reveal it and pay 2W. If you do, create two 1/1 white Soldier creature tokens.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -1127,7 +1127,7 @@ Teleport 1U (You may cast this card for its teleport cost while you’re looking
     </card>
     <card>
         <name>Coordinate Scrambler</name>
-        <text>1U, T, Return another creature you control to its owner’s hand: You may put a creature card from your hand onto the battlefield.</text>
+        <text>2U, T, Return another creature you control to its owner’s hand: You may put a creature card from your hand onto the battlefield.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -1230,7 +1230,7 @@ Guidance Pods gets +1/+0 as long as there are two or more instants and/or sorcer
     </card>
     <card>
         <name>Holoship Fleet</name>
-        <text>You may have Holoship Fleet enter the battlefield as a copy of any creature on the battlefield, except it’s an artifact in addition to its other types, it’s a 6/6, and it gains flying and “When this creature becomes the target of a spell, sacrifice it.”</text>
+        <text>You may have Holoship Fleet enter the battlefield as a copy of any creature on the battlefield, except it’s an artifact in addition to its other types, it’s a 5/5, and it gains flying and “When this creature becomes the target of a spell, sacrifice it.”</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -1302,17 +1302,17 @@ Reconstitute (When this creature dies, reveal cards from the top of your library
     <card>
         <name>Lambert Stealth Bomber</name>
         <text>Flying
-Whenever Lambert Stealth Bomber attacks and isn’t blocked, switch its power and toughness until end of turn.</text>
+2U: Lambert Stealth Bomber gets -3/-0 until end of turn and can’t be blocked this turn.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
             <type>Artifact Creature — Military Cruiser </type>
             <maintype>Artifact Creature</maintype>
-            <manacost>5U</manacost>
+            <manacost>4UU</manacost>
             <cmc>6</cmc>
             <colors>U</colors>
             <coloridentity>U</coloridentity>
-            <pt>1/5</pt>
+            <pt>5/1</pt>
         </prop>
         <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Lambert%20Stealth%20Bomber.jpg">T2170</set>
         <tablerow>2</tablerow>
@@ -2396,7 +2396,7 @@ Teleport 0 (You may cast this card for its teleport cost while you’re looking 
     <card>
         <name>Warship Sinistra</name>
         <text>Flying
-B, Pay 2 life, Sacrifice another nonland permanent: Choose a card name. Reveal cards from the top of your library until you reveal a card with the chosen name. Put the rest into your graveyard. (That card stays on top of your library.)</text>
+BB, Pay 2 life, Sacrifice another nonland permanent: Choose a card name. Reveal cards from the top of your library until you reveal a card with the chosen name. Put the rest into your graveyard. (That card stays on top of your library.)</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -2526,7 +2526,7 @@ At end of combat, if Adopted Wanderer attacked or blocked this turn, sacrifice a
             <cmc>1</cmc>
             <colors>R</colors>
             <coloridentity>R</coloridentity>
-            <pt>1/1</pt>
+            <pt>0/0</pt>
         </prop>
         <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Chentsov%20Scylla.jpg">T2170</set>
         <related count="x">Equipment</related>
@@ -2669,7 +2669,7 @@ Sacrifice four artifacts: Flagship Warapur deals 4 damage to any target.</text>
     </card>
     <card>
         <name>Genius or Grifter</name>
-        <text>Reveal the bottom five cards of your library. An opponent may put any number of them into your graveyard. Create that many colorless Equipment artifact tokens with “Equipped creature gets +1/+1” and equip 2. Put the rest of the revealed cards into your hand.</text>
+        <text>Reveal the top five cards of your library. An opponent may put any number of them into your graveyard. Create that many colorless Equipment artifact tokens with “Equipped creature gets +1/+1” and equip 2. Put the rest of the revealed cards into your hand.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -3106,7 +3106,7 @@ Teleport 1R (You may cast this card for its teleport cost while you’re looking
     </card>
     <card>
         <name>Wild Game Huntmaster</name>
-        <text>Whenever a creature you control becomes the target of a spell, Wild Game Huntmaster deals 2 damage to any target.</text>
+        <text>Whenever a creature you control becomes the target of a spell, you may pay R. When you do, Wild Game Huntmaster deals 2 damage to any target.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -3167,7 +3167,7 @@ Whenever a creature you control becomes the target of a spell, creatures you con
             <cmc>3</cmc>
             <colors>G</colors>
             <coloridentity>G</coloridentity>
-            <pt>2/2</pt>
+            <pt>1/1</pt>
         </prop>
         <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Al%20Maham%20Pathfinder.jpg">T2170</set>
         <related>Mech</related>
@@ -3420,7 +3420,7 @@ Teleport 3G (You may cast this card for its teleport cost while you’re looking
     </card>
     <card>
         <name>Gestation Cycle</name>
-        <text>Look at the top five cards of your library. You may reveal a Mutant, Xeno, or land card from among them and put it into your hand. Put the rest on the bottom of your library in any order.</text>
+        <text>Look at the top four cards of your library. You may reveal a Mutant, Xeno, or land card from among them and put it into your hand. Put the rest on the bottom of your library in any order.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -3753,9 +3753,9 @@ Reconstitute (When this creature dies, reveal cards from the top of your library
         <tablerow>2</tablerow>
     </card>
     <card>
-        <name>Spawning Grounds</name>
-        <text>2: Put a spawn counter on Spawning Grounds.
-G, Sacrifice Spawning Grounds: Create a 1/1 green Xeno Scion creature token for each spawn counter on Spawning Grounds. They have “Sacrifice this creature: Add C.”</text>
+        <name>Spawning Site</name>
+        <text>3: Put a spawn counter on Spawning Site.
+G, Sacrifice Spawning Site: Create a 1/1 green Xeno Scion creature token for each spawn counter on Spawning Site. They have “Sacrifice this creature: Add C.”</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -3766,7 +3766,7 @@ G, Sacrifice Spawning Grounds: Create a 1/1 green Xeno Scion creature token for 
             <colors>G</colors>
             <coloridentity>G</coloridentity>
         </prop>
-        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Spawning%20Grounds.jpg">T2170</set>
+        <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Spawning%20Site.jpg">T2170</set>
         <related count="x">Xeno Scion</related>
         <tablerow>1</tablerow>
     </card>
@@ -3790,7 +3790,7 @@ G, Sacrifice Spawning Grounds: Create a 1/1 green Xeno Scion creature token for 
     </card>
     <card>
         <name>Suppressor of Worlds</name>
-        <text>Reach, trample, hexproof
+        <text>Reach, trample
 Whenever you activate your first non-mana ability each turn, copy that ability. You may choose new targets for the copy.
 Whenever an opponent activates their first non-mana ability each turn, counter that ability.</text>
         <prop>
@@ -3802,7 +3802,7 @@ Whenever an opponent activates their first non-mana ability each turn, counter t
             <cmc>6</cmc>
             <colors>G</colors>
             <coloridentity>G</coloridentity>
-            <pt>6/5</pt>
+            <pt>6/6</pt>
         </prop>
         <set rarity="mythic rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Suppressor%20of%20Worlds.jpg">T2170</set>
         <tablerow>2</tablerow>
@@ -4047,8 +4047,8 @@ At the beginning of combat on your turn, you may create Shaitan, a legendary 5/5
             <side>front</side>
             <type>Legendary Creature — Nomad </type>
             <maintype>Legendary Creature</maintype>
-            <manacost>3RG</manacost>
-            <cmc>5</cmc>
+            <manacost>4RG</manacost>
+            <cmc>6</cmc>
             <colors>RG</colors>
             <coloridentity>RG</coloridentity>
             <pt>2/2</pt>
@@ -4441,7 +4441,7 @@ Sacrifice Faraday Transmitter: Return target artifact to its owner’s hand.</te
             <cmc>5</cmc>
             <pt>3/3</pt>
         </prop>
-        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Formling.jpg">T2170</set>
+        <set rarity="mythic rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Formling.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -4510,15 +4510,15 @@ Remove three charge counters from Gravitic Collector: Target creature gains flyi
     </card>
     <card>
         <name>Hoverbike</name>
-        <text>Equipped creature gets +3/+0 and has haste.
-Equip 3</text>
+        <text>Equipped creature gets +1/+0 and has haste.
+Equip 1</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
             <type>Artifact — Equipment </type>
             <maintype>Artifact</maintype>
-            <manacost>3</manacost>
-            <cmc>3</cmc>
+            <manacost>2</manacost>
+            <cmc>2</cmc>
         </prop>
         <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Hoverbike.jpg">T2170</set>
         <tablerow>1</tablerow>
@@ -4672,7 +4672,7 @@ When you cast Swallowers of Civilization, destroy target permanent.</text>
             <cmc>2</cmc>
             <pt>8/8</pt>
         </prop>
-        <set rarity="mythic rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Swallowers%20of%20Civilization.jpg">T2170</set>
+        <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Swallowers%20of%20Civilization.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
