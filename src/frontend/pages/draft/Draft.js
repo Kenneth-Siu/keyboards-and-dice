@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { DEFAULT_PLAYERS_IN_DRAFT, DRAFT_STATUSES } from "../../../config";
+import { CARDS_IN_PACK, DEFAULT_PLAYERS_IN_DRAFT, DRAFT_STATUSES } from "../../../config";
 import LoadingSpinner from "../../components/loadingSpinner/LoadingSpinner.js";
 import { getCard } from "../../../shared/cardList";
 import * as DraftsApi from "../../api/DraftsApi.js";
@@ -93,15 +93,11 @@ export default function SingleDraft({ loggedInUser }) {
                                     </PillButton>
                                 </div>
                                 {boosterLoading ? (
-                                    <div
-                                        className={`booster-loading ${
-                                            pickNumber === null || pickNumber < 8 ? "two-rows" : "one-row"
-                                        }`}
-                                    >
+                                    <div className={`booster-loading cards-${CARDS_IN_PACK + 1 - (pickNumber || 1)}`}>
                                         <LoadingSpinner />
                                     </div>
                                 ) : boosterCards === null ? (
-                                    <RefreshButtonView getDraft={getDraft} />
+                                    <RefreshButtonView getDraft={getDraft} className={`cards-${CARDS_IN_PACK + 1 - (pickNumber || 1)}`} />
                                 ) : (
                                     <BoosterView
                                         cards={boosterCards}
@@ -205,9 +201,10 @@ export default function SingleDraft({ loggedInUser }) {
 
     function submitPick() {
         setBoosterLoading(true);
+        const submittedCard = boosterCards[selectedCardIndex];
+        setSelectedCardIndex(null);
         asyncTry(
             async () => {
-                const submittedCard = boosterCards[selectedCardIndex];
                 await DraftsApi.submitPick(draftId, pickNumber, submittedCard.id);
                 const column = submittedCard.manaValue === 0 ? 7 : Math.min(6, submittedCard.manaValue - 1);
                 if (submittedCard.type.includes("Creature")) {
@@ -217,7 +214,6 @@ export default function SingleDraft({ loggedInUser }) {
                     picks.deckNonCreatures[column].push(submittedCard);
                     setPicks({ ...picks });
                 }
-                setSelectedCardIndex(null);
                 getDraft();
             },
             () => {

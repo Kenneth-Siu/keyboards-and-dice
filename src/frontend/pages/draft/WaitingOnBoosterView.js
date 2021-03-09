@@ -1,15 +1,15 @@
 import React from "react";
-import { RotatingLoadingIcon } from "../../components/rotatingLoadingIcon/RotatingLoadingIcon";
+import LoadingSpinner from "../../components/loadingSpinner/LoadingSpinner";
 import { useAutoRefresh } from "../../helpers/useAutoRefresh";
 import "./WaitingOnBoosterView.scss";
 
-export function RefreshButtonView({ getDraft }) {
+export function RefreshButtonView({ getDraft, className }) {
     useAutoRefresh(getDraft);
 
     return (
-        <div className="refresh-button-view">
+        <div className={`refresh-button-view ${className}`}>
             <p>Waiting for others to make their picks...</p>
-            <RotatingLoadingIcon />
+            <LoadingSpinner />
         </div>
     );
 }
