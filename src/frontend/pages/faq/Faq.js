@@ -1,7 +1,7 @@
 import React from "react";
 import karnTheSeeker from "../../../../data/cardImages/Karn the Seeker.jpg";
 import dropship from "../../../../data/cardImages/Dropship.jpg";
-import supplyLineJet from "../../../../data/cardImages/Supply-Line Jet.jpg";
+import cacheMapper from "../../../../data/cardImages/Cache Mapper.jpg";
 import boardroomKeeper from "../../../../data/cardImages/Boardroom Keeper.jpg";
 import radiumTracker from "../../../../data/cardImages/Radium Tracker.jpg";
 import plasmaReclaimer from "../../../../data/cardImages/Plasma Reclaimer.jpg";
@@ -41,7 +41,7 @@ export default function Faq() {
             <main className="faq-page">
                 <h1>Rules FAQ</h1>
                 <section>
-                    <img src={supplyLineJet} />
+                    <img src={cacheMapper} />
                     <div>
                         <h2>Arm</h2>
                         <blockquote>

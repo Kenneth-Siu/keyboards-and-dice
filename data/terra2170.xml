@@ -329,7 +329,7 @@ Equip 2</text>
     <card>
         <name>Cultural Renaissance</name>
         <text>When Cultural Renaissance enters the battlefield, put a +1/+1 counter on each creature you control.
-4WW: Put a +1/+1 counter on each creature you control.</text>
+5WW: Put a +1/+1 counter on each creature you control.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -778,8 +778,8 @@ Other creatures you control get +1/+1 as long as you control four or more creatu
             <side>front</side>
             <type>Creature — Advisor </type>
             <maintype>Creature</maintype>
-            <manacost>2WW</manacost>
-            <cmc>4</cmc>
+            <manacost>3WW</manacost>
+            <cmc>5</cmc>
             <colors>W</colors>
             <coloridentity>W</coloridentity>
             <pt>*/*</pt>
@@ -2448,7 +2448,7 @@ At end of combat, if Adopted Wanderer attacked or blocked this turn, sacrifice a
     </card>
     <card>
         <name>Al Maham Protector</name>
-        <text>Whenever a creature you control becomes the target of a spell, Al Maham Protector deals 2 damage to each opponent.</text>
+        <text>Whenever a creature you control becomes the target of a spell, you may pay 1. When you do, Al Maham Protector deals 2 damage to each opponent.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -3106,7 +3106,7 @@ Teleport 1R (You may cast this card for its teleport cost while you’re looking
     </card>
     <card>
         <name>Wild Game Huntmaster</name>
-        <text>Whenever a creature you control becomes the target of a spell, you may pay R. When you do, Wild Game Huntmaster deals 2 damage to any target.</text>
+        <text>Whenever a creature you control becomes the target of a spell, you may pay 1. When you do, Wild Game Huntmaster deals 2 damage to any target.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -3157,7 +3157,7 @@ Teleport 0 (You may cast this card for its teleport cost while you’re looking 
     <card>
         <name>Al Maham Pathfinder</name>
         <text>When Al Maham Pathfinder enters the battlefield, create a 1/1 colorless Mech artifact creature token.
-Whenever a creature you control becomes the target of a spell, creatures you control get +1/+1 until end of turn.</text>
+Whenever a creature you control becomes the target of a spell, you may pay 1. When you do, creatures you control get +1/+1 until end of turn.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -3175,7 +3175,7 @@ Whenever a creature you control becomes the target of a spell, creatures you con
     </card>
     <card>
         <name>Al Maham Traders</name>
-        <text>Whenever a creature you control becomes the target of a spell, put a +1/+1 counter on it.</text>
+        <text>Whenever a creature you control becomes the target of a spell, you may pay 1. When you do, put a +1/+1 counter on it.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -3318,7 +3318,7 @@ As Deep Jungle Hunter enters the battlefield, sacrifice any number of other crea
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Creature — Snake Mutant </type>
+            <type>Creature — Dinosaur Snake Mutant </type>
             <maintype>Creature</maintype>
             <manacost>3G</manacost>
             <cmc>4</cmc>
@@ -3457,7 +3457,7 @@ Enchanted creature gets +6/+6 and has reach.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Creature — Mutant </type>
+            <type>Creature — Fish Hippo Mutant </type>
             <maintype>Creature</maintype>
             <manacost>3G</manacost>
             <cmc>4</cmc>
@@ -3741,7 +3741,7 @@ Reconstitute (When this creature dies, reveal cards from the top of your library
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Creature — Frog Mutant </type>
+            <type>Creature — Frog Turtle Mutant </type>
             <maintype>Creature</maintype>
             <manacost>7GG</manacost>
             <cmc>9</cmc>
@@ -4670,7 +4670,7 @@ When you cast Swallowers of Civilization, destroy target permanent.</text>
             <maintype>Artifact Creature</maintype>
             <manacost>2</manacost>
             <cmc>2</cmc>
-            <pt>8/8</pt>
+            <pt>7/7</pt>
         </prop>
         <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Swallowers%20of%20Civilization.jpg">T2170</set>
         <tablerow>2</tablerow>

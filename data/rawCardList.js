@@ -762,8 +762,8 @@ cockatrice_related: "Police"
     {
         "name": "Starlight Crusade Orator",
         "imageName": _34,
-        "cost": "2WW",
-        "manaValue": 4,
+        "cost": "3WW",
+        "manaValue": 5,
         "color": "W",
         "type": "Creature — Advisor ",
         "id": 34,
@@ -2131,7 +2131,7 @@ colorIdentity: "B"
         "id": 130,
         "rarity": "C",
         "notes": {
-grade: "C-",
+grade: "C",
 colorIdentity: "R"
         }
     },
@@ -2842,7 +2842,7 @@ colorIdentity: "G"
         "cost": "3G",
         "manaValue": 4,
         "color": "G",
-        "type": "Creature — Snake Mutant ",
+        "type": "Creature — Dinosaur Snake Mutant ",
         "id": 180,
         "rarity": "U",
         "notes": {
@@ -2902,7 +2902,7 @@ colorIdentity: "G"
         "id": 184,
         "rarity": "U",
         "notes": {
-grade: "B-",
+grade: "C+",
 colorIdentity: "G"
         }
     },
@@ -2956,7 +2956,7 @@ colorIdentity: "G"
         "cost": "3G",
         "manaValue": 4,
         "color": "G",
-        "type": "Creature — Mutant ",
+        "type": "Creature — Fish Hippo Mutant ",
         "id": 188,
         "rarity": "C",
         "notes": {
@@ -3188,7 +3188,7 @@ colorIdentity: "G"
         "cost": "7GG",
         "manaValue": 9,
         "color": "G",
-        "type": "Creature — Frog Mutant ",
+        "type": "Creature — Frog Turtle Mutant ",
         "id": 204,
         "rarity": "C",
         "notes": {
