@@ -68,9 +68,10 @@
 
         .submit-pick {
             position: absolute;
+            margin: 0;
             top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            @include responsive(right, 0, 50%);
+            @include responsive(transform, translateY(-50%), translate(50%, -50%));
         }
     }
 
