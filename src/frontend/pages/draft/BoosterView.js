@@ -1,13 +1,8 @@
-import React, { useState } from "react";
-import { PillButton } from "../../components/pillButton/PillButton.js";
+import React from "react";
 import "./BoosterView.scss";
 
-export function BoosterView({cards, submitPick}) {
-
-    const [selectedCardIndex, setSelectedCardIndex] = useState(null);
-
+export function BoosterView({ cards, selectedCardIndex, setSelectedCardIndex }) {
     return (
-        <>
             <div className="booster">
                 {cards.map((card, index) => (
                     <button
@@ -19,14 +14,5 @@ export function BoosterView({cards, submitPick}) {
                     </button>
                 ))}
             </div>
-            <PillButton onClick={onClick} className="submit-pick" disabled={selectedCardIndex === null}>
-                Submit Pick
-            </PillButton>
-        </>
     );
-
-    function onClick() {
-        submitPick(selectedCardIndex);
-        setSelectedCardIndex(null);
-    }
 }

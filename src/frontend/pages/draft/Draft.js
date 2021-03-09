@@ -14,6 +14,7 @@ import { flatten } from "lodash";
 import copy from "copy-to-clipboard";
 import { BoosterView } from "./BoosterView";
 import { RefreshButtonView } from "./WaitingOnBoosterView";
+import { PillButton } from "../../components/pillButton/PillButton.js";
 
 export default function SingleDraft({ loggedInUser }) {
     const { draftId } = useParams();
@@ -33,6 +34,7 @@ export default function SingleDraft({ loggedInUser }) {
     const [packNumber, setPackNumber] = useState(null);
     const [pickNumber, setPickNumber] = useState(null);
     const [isDraftOwner, setIsDraftOwner] = useState(false);
+    const [selectedCardIndex, setSelectedCardIndex] = useState(null);
 
     const [basics, setBasics] = useState({
         plains: 0,
@@ -51,13 +53,7 @@ export default function SingleDraft({ loggedInUser }) {
         <>
             <title>Draft · Terra 2170</title>
             <main className="single-draft-page">
-                <h1>
-                    Draft
-                    {draftStatus === DRAFT_STATUSES.IN_PROGRESS
-                        ? ` — Pack ${packNumber}${pickNumber !== null ? `, Pick ${pickNumber}` : ""}`
-                        : ""}
-                    {draftStatus === DRAFT_STATUSES.COMPLETE ? " Complete!" : ""}
-                </h1>
+                <h1>Draft{draftStatus === DRAFT_STATUSES.COMPLETE ? " Complete!" : ""}</h1>
                 {!draftLoaded ? (
                     <LoadingSpinner />
                 ) : (
@@ -81,20 +77,47 @@ export default function SingleDraft({ loggedInUser }) {
                                 isOwner={isDraftOwner}
                             />
                         )}
-                        {draftStatus === DRAFT_STATUSES.IN_PROGRESS &&
-                            (boosterCards === null ? (
-                                <RefreshButtonView getDraft={getDraft} />
-                            ) : boosterLoading ? (
-                                <div
-                                    className={`booster-loading ${
-                                        pickNumber === null || pickNumber < 8 ? "two-rows" : "one-row"
-                                    }`}
-                                >
-                                    <LoadingSpinner />
+                        {draftStatus === DRAFT_STATUSES.IN_PROGRESS && (
+                            <>
+                                <div className="pack-heading">
+                                    <h2>
+                                        Pack {packNumber}
+                                        {pickNumber !== null ? `, Pick ${pickNumber}` : ""}
+                                    </h2>
+                                    <PillButton
+                                        onClick={submitPick}
+                                        className="submit-pick"
+                                        disabled={selectedCardIndex === null}
+                                    >
+                                        Submit Pick
+                                    </PillButton>
                                 </div>
-                            ) : (
-                                <BoosterView cards={boosterCards} submitPick={submitPick} />
-                            ))}
+                                {boosterLoading ? (
+                                    <div
+                                        className={`booster-loading ${
+                                            pickNumber === null || pickNumber < 8 ? "two-rows" : "one-row"
+                                        }`}
+                                    >
+                                        <LoadingSpinner />
+                                    </div>
+                                ) : boosterCards === null ? (
+                                    <RefreshButtonView getDraft={getDraft} />
+                                ) : (
+                                    <BoosterView
+                                        cards={boosterCards}
+                                        selectedCardIndex={selectedCardIndex}
+                                        setSelectedCardIndex={setSelectedCardIndex}
+                                    />
+                                )}
+                                <PillButton
+                                    onClick={submitPick}
+                                    className="submit-pick"
+                                    disabled={selectedCardIndex === null}
+                                >
+                                    Submit Pick
+                                </PillButton>
+                            </>
+                        )}
                         {draftStatus !== DRAFT_STATUSES.READY_TO_START && (
                             <PicksView
                                 showDeckbuilderPanels={draftStatus === DRAFT_STATUSES.COMPLETE}
@@ -180,11 +203,11 @@ export default function SingleDraft({ loggedInUser }) {
         );
     }
 
-    function submitPick(index) {
+    function submitPick() {
         setBoosterLoading(true);
         asyncTry(
             async () => {
-                const submittedCard = boosterCards[index];
+                const submittedCard = boosterCards[selectedCardIndex];
                 await DraftsApi.submitPick(draftId, pickNumber, submittedCard.id);
                 const column = submittedCard.manaValue === 0 ? 7 : Math.min(6, submittedCard.manaValue - 1);
                 if (submittedCard.type.includes("Creature")) {
@@ -194,6 +217,7 @@ export default function SingleDraft({ loggedInUser }) {
                     picks.deckNonCreatures[column].push(submittedCard);
                     setPicks({ ...picks });
                 }
+                setSelectedCardIndex(null);
                 getDraft();
             },
             () => {

@@ -1,28 +1,17 @@
 @import "../../components/colors.scss";
+@import "./Draft.scss";
 
 .picks-view {
     position: relative;
-
+    
     h2 {
-        text-align: left;
-        font-weight: 700;
-        font-size: 1.4rem;
+        @include draft-view-h2;
         margin: 0;
         width: 15rem;
-
-        small {
-            font-size: 1.2rem;
-            font-weight: 500;
-            color: lighten($color-1, 30%);
-        }
     }
 
     .picks-heading {
-        width: 98%;
-        display: inline-flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 0.1rem;
+        @include draft-heading-div;
         margin: 1rem 0;
     }
 }
