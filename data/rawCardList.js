@@ -353,7 +353,7 @@ cockatrice_related: "Equipment"
         "id": 5,
         "rarity": "R",
         "notes": {
-grade: "B-",
+grade: "C+",
 colorIdentity: "W"
         }
     },
@@ -367,7 +367,7 @@ colorIdentity: "W"
         "id": 6,
         "rarity": "C",
         "notes": {
-grade: "D",
+grade: "D+",
 colorIdentity: "W"
         }
     },
@@ -381,7 +381,7 @@ colorIdentity: "W"
         "id": 7,
         "rarity": "U",
         "notes": {
-grade: "C+",
+grade: "B-",
 colorIdentity: "W"
         }
     },
@@ -395,7 +395,7 @@ colorIdentity: "W"
         "id": 8,
         "rarity": "U",
         "notes": {
-grade: "C",
+grade: "B-",
 colorIdentity: "W"
         }
     },
@@ -409,7 +409,7 @@ colorIdentity: "W"
         "id": 9,
         "rarity": "R",
         "notes": {
-grade: "B",
+grade: "B+",
 colorIdentity: "W"
         }
     },
@@ -451,7 +451,7 @@ colorIdentity: "W"
         "id": 12,
         "rarity": "C",
         "notes": {
-grade: "C+",
+grade: "B",
 colorIdentity: "W",
 cockatrice_related: "Soldier",
 cockatrice_related_count: "2"
@@ -467,7 +467,7 @@ cockatrice_related_count: "2"
         "id": 13,
         "rarity": "C",
         "notes": {
-grade: "C+",
+grade: "B-",
 colorIdentity: "W"
         }
     },
@@ -481,7 +481,7 @@ colorIdentity: "W"
         "id": 14,
         "rarity": "C",
         "notes": {
-grade: "D",
+grade: "D+",
 colorIdentity: "W"
         }
     },
@@ -509,7 +509,7 @@ colorIdentity: "W"
         "id": 16,
         "rarity": "M",
         "notes": {
-grade: "A",
+grade: "A+",
 colorIdentity: "W"
         }
     },
@@ -553,7 +553,7 @@ cockatrice_related_count: "x"
         "id": 19,
         "rarity": "C",
         "notes": {
-grade: "C",
+grade: "C+",
 colorIdentity: "W",
 cockatrice_related: "Equipment"
         }
@@ -596,7 +596,7 @@ colorIdentity: "W"
         "id": 22,
         "rarity": "C",
         "notes": {
-grade: "C-",
+grade: "C",
 colorIdentity: "W"
         }
     },
@@ -624,7 +624,7 @@ colorIdentity: "W"
         "id": 24,
         "rarity": "U",
         "notes": {
-grade: "B-",
+grade: "B",
 colorIdentity: "W"
         }
     },
@@ -666,7 +666,7 @@ colorIdentity: "W"
         "id": 27,
         "rarity": "C",
         "notes": {
-grade: "D+",
+grade: "C",
 colorIdentity: "W",
 cockatrice_related: "Soldier",
 cockatrice_related_count: "2"
@@ -682,7 +682,7 @@ cockatrice_related_count: "2"
         "id": 28,
         "rarity": "C",
         "notes": {
-grade: "D+",
+grade: "C",
 colorIdentity: "W"
         }
     },
@@ -724,7 +724,7 @@ colorIdentity: "W"
         "id": 31,
         "rarity": "U",
         "notes": {
-grade: "C+",
+grade: "B",
 colorIdentity: "W",
 cockatrice_related: "Equipment"
         }
@@ -754,7 +754,7 @@ cockatrice_related: "Equipment"
         "id": 33,
         "rarity": "R",
         "notes": {
-grade: "A-",
+grade: "B+",
 colorIdentity: "W",
 cockatrice_related: "Police"
         }
@@ -812,7 +812,7 @@ colorIdentity: "W"
         "id": 37,
         "rarity": "U",
         "notes": {
-grade: "B",
+grade: "B-",
 colorIdentity: "W"
         }
     },
@@ -826,7 +826,7 @@ colorIdentity: "W"
         "id": 38,
         "rarity": "R",
         "notes": {
-grade: "A-",
+grade: "B+",
 colorIdentity: "W"
         }
     },
@@ -856,7 +856,7 @@ cockatrice_related_count: "x=2"
         "id": 40,
         "rarity": "U",
         "notes": {
-grade: "C",
+grade: "C+",
 colorIdentity: "W"
         }
     },
@@ -917,7 +917,7 @@ cockatrice_related_count: "x"
         "id": 44,
         "rarity": "R",
         "notes": {
-grade: "B-",
+grade: "B",
 colorIdentity: "U"
         }
     },
@@ -959,7 +959,7 @@ colorIdentity: "U"
         "id": 47,
         "rarity": "C",
         "notes": {
-grade: "C-",
+grade: "C",
 colorIdentity: "U"
         }
     },
@@ -987,7 +987,7 @@ colorIdentity: "U"
         "id": 49,
         "rarity": "C",
         "notes": {
-grade: "B-",
+grade: "B",
 colorIdentity: "U"
         }
     },
@@ -1015,7 +1015,7 @@ colorIdentity: "U"
         "id": 51,
         "rarity": "M",
         "notes": {
-grade: "B-",
+grade: "B+",
 colorIdentity: "U"
         }
     },
@@ -1043,7 +1043,7 @@ colorIdentity: "U"
         "id": 53,
         "rarity": "U",
         "notes": {
-grade: "C+",
+grade: "C",
 colorIdentity: "U"
         }
     },
@@ -1057,7 +1057,7 @@ colorIdentity: "U"
         "id": 54,
         "rarity": "R",
         "notes": {
-grade: "B",
+grade: "A-",
 colorIdentity: "U"
         }
     },
@@ -1085,7 +1085,7 @@ colorIdentity: "U"
         "id": 56,
         "rarity": "U",
         "notes": {
-grade: "B",
+grade: "B-",
 colorIdentity: "U",
 cockatrice_related: "Mech",
 cockatrice_related_count: "2"
@@ -1115,7 +1115,7 @@ colorIdentity: "U"
         "id": 58,
         "rarity": "R",
         "notes": {
-grade: "B+",
+grade: "B",
 colorIdentity: "U"
         }
     },
@@ -1129,7 +1129,7 @@ colorIdentity: "U"
         "id": 59,
         "rarity": "C",
         "notes": {
-grade: "C+",
+grade: "C",
 colorIdentity: "U"
         }
     },
@@ -1157,7 +1157,7 @@ colorIdentity: "U"
         "id": 61,
         "rarity": "U",
         "notes": {
-grade: "B",
+grade: "B+",
 colorIdentity: "U"
         }
     },
@@ -1199,7 +1199,7 @@ colorIdentity: "U"
         "id": 64,
         "rarity": "U",
         "notes": {
-grade: "B-",
+grade: "B",
 colorIdentity: "U"
         }
     },
@@ -1213,7 +1213,7 @@ colorIdentity: "U"
         "id": 65,
         "rarity": "C",
         "notes": {
-grade: "C-",
+grade: "D+",
 colorIdentity: "U"
         }
     },
@@ -1241,7 +1241,7 @@ colorIdentity: "U"
         "id": 67,
         "rarity": "U",
         "notes": {
-grade: "C+",
+grade: "B-",
 colorIdentity: "U"
         }
     },
@@ -1326,7 +1326,7 @@ colorIdentity: "U"
         "id": 73,
         "rarity": "C",
         "notes": {
-grade: "C-",
+grade: "C",
 colorIdentity: "U"
         }
     },
@@ -1368,7 +1368,7 @@ colorIdentity: "U"
         "id": 76,
         "rarity": "U",
         "notes": {
-grade: "B-",
+grade: "B",
 colorIdentity: "U",
 cockatrice_related: "Mech"
         }
@@ -1397,7 +1397,7 @@ colorIdentity: "U"
         "id": 78,
         "rarity": "C",
         "notes": {
-grade: "D",
+grade: "D-",
 colorIdentity: "U"
         }
     },
@@ -1425,7 +1425,7 @@ colorIdentity: "U"
         "id": 80,
         "rarity": "C",
         "notes": {
-grade: "D+",
+grade: "D",
 colorIdentity: "U",
 cockatrice_related: "Mech"
         }
@@ -1440,7 +1440,7 @@ cockatrice_related: "Mech"
         "id": 81,
         "rarity": "M",
         "notes": {
-grade: "D",
+grade: "C",
 colorIdentity: "U"
         }
     },
@@ -1454,7 +1454,7 @@ colorIdentity: "U"
         "id": 82,
         "rarity": "R",
         "notes": {
-grade: "B",
+grade: "B-",
 colorIdentity: "U"
         }
     },
@@ -1496,7 +1496,7 @@ colorIdentity: "U"
         "id": 85,
         "rarity": "C",
         "notes": {
-grade: "C",
+grade: "C+",
 colorIdentity: "U"
         }
     },
@@ -1568,7 +1568,7 @@ cockatrice_related: "Mech"
         "id": 90,
         "rarity": "R",
         "notes": {
-grade: "B+",
+grade: "A-",
 colorIdentity: "B"
         }
     },
@@ -1582,7 +1582,7 @@ colorIdentity: "B"
         "id": 91,
         "rarity": "C",
         "notes": {
-grade: "C-",
+grade: "C",
 colorIdentity: "B",
 cockatrice_related: "Mech"
         }
@@ -1611,7 +1611,7 @@ colorIdentity: "B"
         "id": 93,
         "rarity": "C",
         "notes": {
-grade: "C-",
+grade: "C",
 colorIdentity: "B"
         }
     },
@@ -1625,7 +1625,7 @@ colorIdentity: "B"
         "id": 94,
         "rarity": "R",
         "notes": {
-grade: "A-",
+grade: "A",
 colorIdentity: "B"
         }
     },
@@ -1639,7 +1639,7 @@ colorIdentity: "B"
         "id": 95,
         "rarity": "C",
         "notes": {
-grade: "B-",
+grade: "B",
 colorIdentity: "B"
         }
     },
@@ -1695,7 +1695,7 @@ colorIdentity: "B"
         "id": 99,
         "rarity": "U",
         "notes": {
-grade: "B-",
+grade: "B",
 colorIdentity: "B",
 cockatrice_related: "Mech"
         }
@@ -1710,7 +1710,7 @@ cockatrice_related: "Mech"
         "id": 100,
         "rarity": "U",
         "notes": {
-grade: "B",
+grade: "B+",
 colorIdentity: "B"
         }
     },
@@ -1752,7 +1752,7 @@ colorIdentity: "B"
         "id": 103,
         "rarity": "U",
         "notes": {
-grade: "D-",
+grade: "C-",
 colorIdentity: "B"
         }
     },
@@ -1907,7 +1907,7 @@ colorIdentity: "B"
         "id": 114,
         "rarity": "C",
         "notes": {
-grade: "C",
+grade: "C+",
 colorIdentity: "B"
         }
     },
@@ -1963,7 +1963,7 @@ colorIdentity: "B"
         "id": 118,
         "rarity": "U",
         "notes": {
-grade: "B+",
+grade: "B",
 colorIdentity: "B"
         }
     },
@@ -1977,7 +1977,7 @@ colorIdentity: "B"
         "id": 119,
         "rarity": "C",
         "notes": {
-grade: "D",
+grade: "C-",
 colorIdentity: "B"
         }
     },
@@ -1991,7 +1991,7 @@ colorIdentity: "B"
         "id": 120,
         "rarity": "C",
         "notes": {
-grade: "C",
+grade: "C+",
 colorIdentity: "B"
         }
     },
@@ -2075,7 +2075,7 @@ colorIdentity: "B"
         "id": 126,
         "rarity": "C",
         "notes": {
-grade: "C-",
+grade: "D+",
 colorIdentity: "B"
         }
     },
@@ -2089,7 +2089,7 @@ colorIdentity: "B"
         "id": 127,
         "rarity": "R",
         "notes": {
-grade: "B",
+grade: "B+",
 colorIdentity: "B"
         }
     },
@@ -2117,7 +2117,7 @@ colorIdentity: "B"
         "id": 129,
         "rarity": "C",
         "notes": {
-grade: "C-",
+grade: "D",
 colorIdentity: "B"
         }
     },
@@ -2173,7 +2173,7 @@ colorIdentity: "R"
         "id": 133,
         "rarity": "U",
         "notes": {
-grade: "B",
+grade: "B+",
 colorIdentity: "R",
 cockatrice_related: "Wildschwein"
         }
@@ -2232,7 +2232,7 @@ colorIdentity: "R"
         "id": 137,
         "rarity": "R",
         "notes": {
-grade: "B-",
+grade: "B",
 colorIdentity: "R"
         }
     },
@@ -2246,7 +2246,7 @@ colorIdentity: "R"
         "id": 138,
         "rarity": "C",
         "notes": {
-grade: "C",
+grade: "C+",
 colorIdentity: "R"
         }
     },
@@ -2303,7 +2303,7 @@ cockatrice_related: "Mech"
         "id": 142,
         "rarity": "U",
         "notes": {
-grade: "B",
+grade: "B-",
 colorIdentity: "R"
         }
     },
@@ -2317,7 +2317,7 @@ colorIdentity: "R"
         "id": 143,
         "rarity": "U",
         "notes": {
-grade: "C-",
+grade: "C+",
 colorIdentity: "R",
 cockatrice_related: "Equipment",
 cockatrice_related_count: "x"
@@ -2333,7 +2333,7 @@ cockatrice_related_count: "x"
         "id": 144,
         "rarity": "C",
         "notes": {
-grade: "C",
+grade: "C-",
 colorIdentity: "R",
 cockatrice_related: "Equipment"
         }
@@ -2363,7 +2363,7 @@ cockatrice_related: "Equipment"
         "id": 146,
         "rarity": "C",
         "notes": {
-grade: "C",
+grade: "C-",
 colorIdentity: "R"
         }
     },
@@ -2405,7 +2405,7 @@ colorIdentity: "R"
         "id": 149,
         "rarity": "R",
         "notes": {
-grade: "A-",
+grade: "A",
 colorIdentity: "R"
         }
     },
@@ -2419,7 +2419,7 @@ colorIdentity: "R"
         "id": 150,
         "rarity": "R",
         "notes": {
-grade: "A-",
+grade: "B+",
 colorIdentity: "R"
         }
     },
@@ -2461,7 +2461,7 @@ colorIdentity: "R"
         "id": 153,
         "rarity": "C",
         "notes": {
-grade: "C-",
+grade: "C",
 colorIdentity: "R"
         }
     },
@@ -2475,7 +2475,7 @@ colorIdentity: "R"
         "id": 154,
         "rarity": "R",
         "notes": {
-grade: "B",
+grade: "B-",
 colorIdentity: "R"
         }
     },
@@ -2503,7 +2503,7 @@ colorIdentity: "R"
         "id": 156,
         "rarity": "C",
         "notes": {
-grade: "C",
+grade: "B-",
 colorIdentity: "R"
         }
     },
@@ -2517,7 +2517,7 @@ colorIdentity: "R"
         "id": 157,
         "rarity": "C",
         "notes": {
-grade: "B-",
+grade: "B",
 colorIdentity: "R"
         }
     },
@@ -2545,7 +2545,7 @@ colorIdentity: "R"
         "id": 159,
         "rarity": "R",
         "notes": {
-grade: "C+",
+grade: "B",
 colorIdentity: "R",
 cockatrice_related: "Mech",
 cockatrice_related_count: "2"
@@ -2603,7 +2603,7 @@ colorIdentity: "R"
         "id": 163,
         "rarity": "C",
         "notes": {
-grade: "C-",
+grade: "D",
 colorIdentity: "R"
         }
     },
@@ -2645,7 +2645,7 @@ colorIdentity: "R"
         "id": 166,
         "rarity": "U",
         "notes": {
-grade: "B-",
+grade: "B",
 colorIdentity: "R"
         }
     },
@@ -2687,7 +2687,7 @@ colorIdentity: "R"
         "id": 169,
         "rarity": "R",
         "notes": {
-grade: "C+",
+grade: "B",
 colorIdentity: "R"
         }
     },
@@ -2701,7 +2701,7 @@ colorIdentity: "R"
         "id": 170,
         "rarity": "C",
         "notes": {
-grade: "D+",
+grade: "D",
 colorIdentity: "R"
         }
     },
@@ -2730,7 +2730,7 @@ cockatrice_related: "Mech"
         "id": 172,
         "rarity": "C",
         "notes": {
-grade: "C+",
+grade: "C",
 colorIdentity: "G"
         }
     },
@@ -2772,7 +2772,7 @@ colorIdentity: "G"
         "id": 175,
         "rarity": "U",
         "notes": {
-grade: "C",
+grade: "B-",
 colorIdentity: "G",
 cockatrice_related: "Xeno Scion",
 cockatrice_related_count: "2"
@@ -2802,7 +2802,7 @@ colorIdentity: "G"
         "id": 177,
         "rarity": "C",
         "notes": {
-grade: "C+",
+grade: "C",
 colorIdentity: "G"
         }
     },
@@ -2846,7 +2846,7 @@ colorIdentity: "G"
         "id": 180,
         "rarity": "U",
         "notes": {
-grade: "C",
+grade: "C+",
 colorIdentity: "G"
         }
     },
@@ -2874,7 +2874,7 @@ colorIdentity: "G"
         "id": 182,
         "rarity": "C",
         "notes": {
-grade: "D+",
+grade: "D",
 colorIdentity: "G"
         }
     },
@@ -2888,7 +2888,7 @@ colorIdentity: "G"
         "id": 183,
         "rarity": "U",
         "notes": {
-grade: "B-",
+grade: "B",
 colorIdentity: "G"
         }
     },
@@ -2902,7 +2902,7 @@ colorIdentity: "G"
         "id": 184,
         "rarity": "U",
         "notes": {
-grade: "C+",
+grade: "B-",
 colorIdentity: "G"
         }
     },
@@ -2932,7 +2932,7 @@ cockatrice_related_count: "x"
         "id": 186,
         "rarity": "U",
         "notes": {
-grade: "C",
+grade: "C-",
 colorIdentity: "G"
         }
     },
@@ -2946,7 +2946,7 @@ colorIdentity: "G"
         "id": 187,
         "rarity": "C",
         "notes": {
-grade: "C-",
+grade: "D",
 colorIdentity: "G"
         }
     },
@@ -2960,7 +2960,7 @@ colorIdentity: "G"
         "id": 188,
         "rarity": "C",
         "notes": {
-grade: "C+",
+grade: "C",
 colorIdentity: "G",
 cockatrice_related: "Mech"
         }
@@ -2991,7 +2991,7 @@ cockatrice_related_count: "3"
         "id": 190,
         "rarity": "M",
         "notes": {
-grade: "B",
+grade: "B+",
 colorIdentity: "G",
 cockatrice_related: "Xeno Scion",
 cockatrice_related_count: "3"
@@ -3007,7 +3007,7 @@ cockatrice_related_count: "3"
         "id": 191,
         "rarity": "U",
         "notes": {
-grade: "C+",
+grade: "B-",
 colorIdentity: "G",
 cockatrice_related: "Xeno Scion",
 cockatrice_related_count: "2"
@@ -3051,7 +3051,7 @@ colorIdentity: "G"
         "id": 194,
         "rarity": "R",
         "notes": {
-grade: "B",
+grade: "A-",
 colorIdentity: "G"
         }
     },
@@ -3122,7 +3122,7 @@ colorIdentity: "G"
         "id": 199,
         "rarity": "U",
         "notes": {
-grade: "B-",
+grade: "C+",
 colorIdentity: "G"
         }
     },
@@ -3178,7 +3178,7 @@ colorIdentity: "G"
         "id": 203,
         "rarity": "C",
         "notes": {
-grade: "B-",
+grade: "B",
 colorIdentity: "G"
         }
     },
@@ -3192,7 +3192,7 @@ colorIdentity: "G"
         "id": 204,
         "rarity": "C",
         "notes": {
-grade: "C+",
+grade: "C",
 colorIdentity: "G"
         }
     },
@@ -3222,7 +3222,7 @@ cockatrice_related_count: "x"
         "id": 206,
         "rarity": "C",
         "notes": {
-grade: "C",
+grade: "C-",
 colorIdentity: "G"
         }
     },
@@ -3278,7 +3278,7 @@ colorIdentity: "G"
         "id": 210,
         "rarity": "C",
         "notes": {
-grade: "B-",
+grade: "B",
 colorIdentity: "G"
         }
     },
@@ -3306,7 +3306,7 @@ colorIdentity: "G"
         "id": 212,
         "rarity": "C",
         "notes": {
-grade: "D+",
+grade: "D",
 colorIdentity: "G"
         }
     },
@@ -3348,7 +3348,7 @@ colorIdentity: "WU"
         "id": 215,
         "rarity": "R",
         "notes": {
-grade: "A-",
+grade: "A",
 colorIdentity: "UB",
 cockatrice_related: "Assassin"
         }
@@ -3363,7 +3363,7 @@ cockatrice_related: "Assassin"
         "id": 216,
         "rarity": "U",
         "notes": {
-grade: "B-",
+grade: "B",
 colorIdentity: "UB"
         }
     },
@@ -3377,7 +3377,7 @@ colorIdentity: "UB"
         "id": 217,
         "rarity": "R",
         "notes": {
-grade: "B",
+grade: "A-",
 colorIdentity: "UB"
         }
     },
@@ -3419,7 +3419,7 @@ colorIdentity: "BR"
         "id": 220,
         "rarity": "U",
         "notes": {
-grade: "B",
+grade: "B+",
 colorIdentity: "RG"
         }
     },
@@ -3477,7 +3477,7 @@ cockatrice_related: "Mech (Ingolf)"
         "id": 224,
         "rarity": "R",
         "notes": {
-grade: "B",
+grade: "B+",
 colorIdentity: "GW"
         }
     },
@@ -3507,7 +3507,7 @@ cockatrice_related_count: "2"
         "id": 226,
         "rarity": "U",
         "notes": {
-grade: "B-",
+grade: "B",
 colorIdentity: "WB"
         }
     },
@@ -3521,7 +3521,7 @@ colorIdentity: "WB"
         "id": 227,
         "rarity": "M",
         "notes": {
-grade: "B-",
+grade: "B+",
 colorIdentity: "WB"
         }
     },
@@ -3577,7 +3577,7 @@ colorIdentity: "UR"
         "id": 231,
         "rarity": "R",
         "notes": {
-grade: "B+",
+grade: "A",
 colorIdentity: "UR",
 cockatrice_related: "Mech"
         }
@@ -3606,7 +3606,7 @@ colorIdentity: "BG"
         "id": 233,
         "rarity": "R",
         "notes": {
-grade: "B",
+grade: "B+",
 colorIdentity: "BG"
         }
     },
@@ -3664,7 +3664,7 @@ colorIdentity: "GU"
         "id": 237,
         "rarity": "U",
         "notes": {
-grade: "B",
+grade: "B+",
 colorIdentity: "GU"
         }
     },
@@ -3720,7 +3720,7 @@ colorIdentity: ""
         "id": 241,
         "rarity": "R",
         "notes": {
-grade: "D+",
+grade: "B-",
 colorIdentity: ""
         }
     },
@@ -3734,7 +3734,7 @@ colorIdentity: ""
         "id": 242,
         "rarity": "M",
         "notes": {
-grade: "B",
+grade: "B+",
 colorIdentity: ""
         }
     },
@@ -3748,7 +3748,7 @@ colorIdentity: ""
         "id": 243,
         "rarity": "U",
         "notes": {
-grade: "B-",
+grade: "B",
 colorIdentity: ""
         }
     },
@@ -3762,7 +3762,7 @@ colorIdentity: ""
         "id": 244,
         "rarity": "R",
         "notes": {
-grade: "B",
+grade: "B-",
 colorIdentity: "UR"
         }
     },
@@ -3805,7 +3805,7 @@ colorIdentity: ""
         "id": 247,
         "rarity": "C",
         "notes": {
-grade: "D+",
+grade: "C-",
 colorIdentity: ""
         }
     },
@@ -3819,7 +3819,7 @@ colorIdentity: ""
         "id": 248,
         "rarity": "C",
         "notes": {
-grade: "D+",
+grade: "C-",
 colorIdentity: ""
         }
     },
@@ -3861,7 +3861,7 @@ colorIdentity: ""
         "id": 251,
         "rarity": "R",
         "notes": {
-grade: "C+",
+grade: "B",
 colorIdentity: ""
         }
     },
@@ -3946,7 +3946,7 @@ colorIdentity: ""
         "id": 257,
         "rarity": "R",
         "notes": {
-grade: "D",
+grade: "C+",
 colorIdentity: ""
         }
     },
@@ -3960,7 +3960,7 @@ colorIdentity: ""
         "id": 258,
         "rarity": "U",
         "notes": {
-grade: "C-",
+grade: "D-",
 colorIdentity: ""
         }
     },
@@ -3974,7 +3974,7 @@ colorIdentity: ""
         "id": 259,
         "rarity": "C",
         "notes": {
-grade: "C+",
+grade: "B-",
 colorIdentity: "RG",
 addsMana: "RG",
 cockatrice_cipt: 1
@@ -3990,7 +3990,7 @@ cockatrice_cipt: 1
         "id": 260,
         "rarity": "C",
         "notes": {
-grade: "C+",
+grade: "B-",
 colorIdentity: "GW",
 addsMana: "GW",
 cockatrice_cipt: 1
@@ -4006,7 +4006,7 @@ cockatrice_cipt: 1
         "id": 261,
         "rarity": "C",
         "notes": {
-grade: "C+",
+grade: "B-",
 colorIdentity: "UR",
 addsMana: "UR",
 cockatrice_cipt: 1
@@ -4037,7 +4037,7 @@ addsMana: "WUBRG"
         "id": 263,
         "rarity": "C",
         "notes": {
-grade: "C+",
+grade: "B-",
 colorIdentity: "BR",
 addsMana: "BR",
 cockatrice_cipt: 1
@@ -4067,7 +4067,7 @@ colorIdentity: ""
         "id": 265,
         "rarity": "C",
         "notes": {
-grade: "C+",
+grade: "B-",
 colorIdentity: "WU",
 addsMana: "WU",
 cockatrice_cipt: 1
@@ -4083,7 +4083,7 @@ cockatrice_cipt: 1
         "id": 266,
         "rarity": "C",
         "notes": {
-grade: "C+",
+grade: "B-",
 colorIdentity: "UB",
 addsMana: "UB",
 cockatrice_cipt: 1
@@ -4114,7 +4114,7 @@ cockatrice_cipt: 1
         "id": 268,
         "rarity": "C",
         "notes": {
-grade: "C+",
+grade: "B-",
 colorIdentity: "BG",
 addsMana: "BG",
 cockatrice_cipt: 1
@@ -4130,7 +4130,7 @@ cockatrice_cipt: 1
         "id": 269,
         "rarity": "C",
         "notes": {
-grade: "C+",
+grade: "B-",
 colorIdentity: "RW",
 addsMana: "RW",
 cockatrice_cipt: 1
@@ -4146,7 +4146,7 @@ cockatrice_cipt: 1
         "id": 270,
         "rarity": "C",
         "notes": {
-grade: "C+",
+grade: "B-",
 colorIdentity: "GU",
 addsMana: "GU",
 cockatrice_cipt: 1
@@ -4162,7 +4162,7 @@ cockatrice_cipt: 1
         "id": 271,
         "rarity": "C",
         "notes": {
-grade: "C+",
+grade: "B-",
 colorIdentity: "WB",
 addsMana: "WB",
 cockatrice_cipt: 1
@@ -4178,7 +4178,7 @@ cockatrice_cipt: 1
         "id": 272,
         "rarity": "R",
         "notes": {
-grade: "C+",
+grade: "B",
 colorIdentity: "",
 addsMana: "WUBRG"
         }
