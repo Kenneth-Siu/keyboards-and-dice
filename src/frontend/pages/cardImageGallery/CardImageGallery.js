@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import cardList from "../../../shared/cardList.js";
 import filterBackground from "../../../../data/filterBackground.jpg";
-import whiteManaSymbol from "../../../../data/whiteManaSymbol.svg";
-import blueManaSymbol from "../../../../data/blueManaSymbol.svg";
-import blackManaSymbol from "../../../../data/blackManaSymbol.svg";
-import redManaSymbol from "../../../../data/redManaSymbol.svg";
-import greenManaSymbol from "../../../../data/greenManaSymbol.svg";
-import goldManaSymbol from "../../../../data/goldManaSymbol.svg";
-import colorlessManaSymbol from "../../../../data/colorlessManaSymbol.svg";
-import commonSetSymbol from "../../../../data/commonSetSymbol.svg";
-import uncommonSetSymbol from "../../../../data/uncommonSetSymbol.svg";
-import rareSetSymbol from "../../../../data/rareSetSymbol.svg";
-import mythicSetSymbol from "../../../../data/mythicSetSymbol.svg";
+import WhiteManaSymbol from "../../../../data/whiteManaSymbol.svg";
+import BlueManaSymbol from "../../../../data/blueManaSymbol.svg";
+import BlackManaSymbol from "../../../../data/blackManaSymbol.svg";
+import RedManaSymbol from "../../../../data/redManaSymbol.svg";
+import GreenManaSymbol from "../../../../data/greenManaSymbol.svg";
+import GoldManaSymbol from "../../../../data/goldManaSymbol.svg";
+import ColorlessManaSymbol from "../../../../data/colorlessManaSymbol.svg";
+import CommonSetSymbol from "../../../../data/commonSetSymbol.svg";
+import UncommonSetSymbol from "../../../../data/uncommonSetSymbol.svg";
+import RareSetSymbol from "../../../../data/rareSetSymbol.svg";
+import MythicSetSymbol from "../../../../data/mythicSetSymbol.svg";
 import "./CardImageGallery.scss";
 
 export default function CardImageGallery() {
@@ -30,7 +30,7 @@ export default function CardImageGallery() {
 
     function colorFilterCards(cards) {
         if (whiteFilter || blueFilter || blackFilter || redFilter || greenFilter || goldFilter || colorlessFilter) {
-            return cards.filter(card => {
+            return cards.filter((card) => {
                 if (whiteFilter && card.color.includes("W")) {
                     return true;
                 }
@@ -60,7 +60,7 @@ export default function CardImageGallery() {
 
     function rarityFilterCards(cards) {
         if (commonFilter || uncommonFilter || rareFilter || mythicFilter) {
-            return cards.filter(card => {
+            return cards.filter((card) => {
                 if (commonFilter && card.rarity === "C") {
                     return true;
                 }
@@ -97,43 +97,70 @@ export default function CardImageGallery() {
                 <div className="filter-pane">
                     <img className="background-image" src={filterBackground} />
                     <div className="color-filters">
-                        <button onClick={() => setWhiteFilter(state => !state)} className={whiteFilter ? "selected" : ""}>
-                            <img src={whiteManaSymbol} />
+                        <button
+                            onClick={() => setWhiteFilter((state) => !state)}
+                            className={whiteFilter ? "selected" : ""}
+                        >
+                            <WhiteManaSymbol />
                         </button>
-                        <button onClick={() => setBlueFilter(state => !state)} className={blueFilter ? "selected" : ""}>
-                            <img src={blueManaSymbol} />
+                        <button
+                            onClick={() => setBlueFilter((state) => !state)}
+                            className={blueFilter ? "selected" : ""}
+                        >
+                            <BlueManaSymbol />
                         </button>
-                        <button onClick={() => setBlackFilter(state => !state)} className={blackFilter ? "selected" : ""}>
-                            <img src={blackManaSymbol} />
+                        <button
+                            onClick={() => setBlackFilter((state) => !state)}
+                            className={blackFilter ? "selected" : ""}
+                        >
+                            <BlackManaSymbol />
                         </button>
-                        <button onClick={() => setRedFilter(state => !state)} className={redFilter ? "selected" : ""}>
-                            <img src={redManaSymbol} />
+                        <button onClick={() => setRedFilter((state) => !state)} className={redFilter ? "selected" : ""}>
+                            <RedManaSymbol />
                         </button>
-                        <button onClick={() => setGreenFilter(state => !state)} className={greenFilter ? "selected" : ""}>
-                            <img src={greenManaSymbol} />
+                        <button
+                            onClick={() => setGreenFilter((state) => !state)}
+                            className={greenFilter ? "selected" : ""}
+                        >
+                            <GreenManaSymbol />
                         </button>
-                        <button onClick={() => setGoldFilter(state => !state)} className={goldFilter ? "selected" : ""}>
-                            <img src={goldManaSymbol} />
+                        <button
+                            onClick={() => setGoldFilter((state) => !state)}
+                            className={goldFilter ? "selected" : ""}
+                        >
+                            <GoldManaSymbol />
                         </button>
                         <button
                             onClick={() => setColorlessFilter(!colorlessFilter)}
                             className={colorlessFilter ? "selected" : ""}
                         >
-                            <img src={colorlessManaSymbol} />
+                            <ColorlessManaSymbol />
                         </button>
                     </div>
                     <div className="rarity-filters">
-                        <button onClick={() => setCommonFilter(state => !state)} className={commonFilter ? "selected" : ""}>
-                            <img src={commonSetSymbol} />
+                        <button
+                            onClick={() => setCommonFilter((state) => !state)}
+                            className={commonFilter ? "selected" : ""}
+                        >
+                            <CommonSetSymbol />
                         </button>
-                        <button onClick={() => setUncommonFilter(state => !state)} className={uncommonFilter ? "selected" : ""}>
-                            <img src={uncommonSetSymbol} />
+                        <button
+                            onClick={() => setUncommonFilter((state) => !state)}
+                            className={uncommonFilter ? "selected" : ""}
+                        >
+                            <UncommonSetSymbol />
                         </button>
-                        <button onClick={() => setRareFilter(state => !state)} className={rareFilter ? "selected" : ""}>
-                            <img src={rareSetSymbol} />
+                        <button
+                            onClick={() => setRareFilter((state) => !state)}
+                            className={rareFilter ? "selected" : ""}
+                        >
+                            <RareSetSymbol />
                         </button>
-                        <button onClick={() => setMythicFilter(state => !state)} className={mythicFilter ? "selected" : ""}>
-                            <img src={mythicSetSymbol} />
+                        <button
+                            onClick={() => setMythicFilter((state) => !state)}
+                            className={mythicFilter ? "selected" : ""}
+                        >
+                            <MythicSetSymbol />
                         </button>
                     </div>
                 </div>

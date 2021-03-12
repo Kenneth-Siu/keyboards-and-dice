@@ -1,29 +1,29 @@
 import React from "react";
 import "./Login.scss";
-import terraSymbol from "../../../../data/terraSymbol.svg";
-import googleLogo from "../../../../data/googleIcon.svg";
-import facebookLogo from "../../../../data/facebookIcon.svg";
-import githubLogo from "../../../../data/githubIcon.svg";
+import TerraSymbol from "../../../../data/terraSymbol.svg";
+import GoogleLogo from "../../../../data/googleIcon.svg";
+import FacebookLogo from "../../../../data/facebookIcon.svg";
+import GithubLogo from "../../../../data/githubIcon.svg";
 
 export default function Login() {
     return (
         <>
             <title>Log in · Terra 2170</title>
             <main className="login-page">
-                <img className="terra-symbol" src={terraSymbol} />
+                <TerraSymbol className="terra-symbol" />
                 <h1>Please sign in to continue</h1>
                 <h2>Why? TL;DR: It's to make sure you're not a spammer.</h2>
                 <div className="login-buttons-container">
                     <a className="google login-button" href="/api/login/google">
-                        <img src={googleLogo} />
+                        <GoogleLogo />
                         Sign in with Google
                     </a>
                     <a className="facebook login-button" href="/api/login/facebook">
-                        <img src={facebookLogo} />
+                        <FacebookLogo />
                         Sign in with Facebook
                     </a>
                     <a className="github login-button" href="/api/login/github">
-                        <img src={githubLogo} />
+                        <GithubLogo />
                         Sign in with GitHub
                     </a>
                 </div>

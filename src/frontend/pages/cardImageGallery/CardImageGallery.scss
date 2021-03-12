@@ -84,12 +84,14 @@
             position: relative;
         }
 
-        .color-filters img {
+        .color-filters svg {
+            display: block;
             width: 1rem;
             height: 1rem;
         }
 
-        .rarity-filters img {
+        .rarity-filters svg {
+            display: block;
             height: 1rem;
             width: 1.38rem;
         }

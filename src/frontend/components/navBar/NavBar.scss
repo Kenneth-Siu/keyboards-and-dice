@@ -47,7 +47,7 @@ $navbar-large-height: 3rem;
         flex-grow: 1;
         @include responsive(width, calc(100% - 4rem), calc(100% - 4rem), auto);
 
-        img {
+        svg {
             position: absolute;
             height: 1.8rem;
             width: 2.5rem;

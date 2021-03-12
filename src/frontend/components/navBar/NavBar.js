@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link, useLocation } from "react-router-dom";
 import terraSplashImage from "../../../../data/terraSplash.jpg";
-import commonSetSymbol from "../../../../data/commonSetSymbol.svg";
+import CommonSetSymbol from "../../../../data/commonSetSymbol.svg";
 import "./NavBar.scss";
 
 export default function NavBar() {
@@ -18,7 +18,7 @@ export default function NavBar() {
                 </li>
                 <li className="home">
                     <Link to="/">
-                        <img src={commonSetSymbol} /> Terra 2170
+                        <CommonSetSymbol /> Terra 2170
                     </Link>
                 </li>
                 <li
