@@ -18,6 +18,8 @@ export const RED_COLOR = "R";
 export const GREEN_COLOR = "G";
 export const COLORLESS_COLOR = "";
 
+export const CARD_GRADES = ["A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "D-", "F"];
+
 export const DRAFT_STATUSES = Object.freeze({
     0: "Ready to Start",
     READY_TO_START: 0,

@@ -1,5 +1,19 @@
 import React, { useEffect, useState } from "react";
+import { forceCheck } from "react-lazyload";
+import {
+    BLACK_COLOR,
+    BLUE_COLOR,
+    CARD_GRADES,
+    COMMON_RARITY,
+    GREEN_COLOR,
+    MYTHIC_RARITY,
+    RARE_RARITY,
+    RED_COLOR,
+    UNCOMMON_RARITY,
+    WHITE_COLOR,
+} from "../../../config.js";
 import cardList from "../../../shared/cardList.js";
+import CardImage from "../../components/cardImage/CardImage.js";
 import filterBackground from "../../../../data/filterBackground.jpg";
 import WhiteManaSymbol from "../../../../data/whiteManaSymbol.svg";
 import BlueManaSymbol from "../../../../data/blueManaSymbol.svg";
@@ -12,22 +26,9 @@ import CommonSetSymbol from "../../../../data/commonSetSymbol.svg";
 import UncommonSetSymbol from "../../../../data/uncommonSetSymbol.svg";
 import RareSetSymbol from "../../../../data/rareSetSymbol.svg";
 import MythicSetSymbol from "../../../../data/mythicSetSymbol.svg";
-import "./CardImageGallery.scss";
-import { forceCheck } from "react-lazyload";
-import CardImage from "../../components/cardImage/CardImage.js";
-import {
-    BLACK_COLOR,
-    BLUE_COLOR,
-    COMMON_RARITY,
-    GREEN_COLOR,
-    MYTHIC_RARITY,
-    RARE_RARITY,
-    RED_COLOR,
-    UNCOMMON_RARITY,
-    WHITE_COLOR,
-} from "../../../config.js";
+import "./Rankings.scss";
 
-export default function CardImageGallery() {
+export default function Rankings() {
     const [whiteFilter, setWhiteFilter] = useState(false);
     const [blueFilter, setBlueFilter] = useState(false);
     const [blackFilter, setBlackFilter] = useState(false);
@@ -111,17 +112,16 @@ export default function CardImageGallery() {
         return rarityFilterCards(colorFilterCards(cards));
     }
 
+    const grades = CARD_GRADES.map((grade) => ({
+        grade: grade,
+        cards: filterCards(cardList).filter((card) => card.grade === grade),
+    }));
+
     return (
         <>
-            <title>Card Image Gallery · Terra 2170</title>
-            <main className="card-image-gallery-page">
-                <h1>Card Image Gallery</h1>
-                <p className="num-of-cards">{cardList.length} cards</p>
-                <div className="card-grid">
-                    {filterCards(cardList).map((card) => (
-                        <CardImage imageName={card.imageName} key={card.id} lazy />
-                    ))}
-                </div>
+            <title>Rankings · Terra 2170</title>
+            <main className="rankings-page">
+                <h1>Card Power Rankings</h1>
                 <div className="filter-pane">
                     <img className="background-image" src={filterBackground} />
                     <div className="color-filters">
@@ -192,6 +192,36 @@ export default function CardImageGallery() {
                         </button>
                     </div>
                 </div>
+                <table>
+                    <tbody>
+                        <tr>
+                            {grades.map((grade) => (
+                                <th key={grade.grade}>{grade.grade}</th>
+                            ))}
+                        </tr>
+                        <tr>
+                            {grades.map((grade) => (
+                                <td key={grade.grade} className={grade.cards.length === 0 ? "fade" : ""}>{grade.cards.length}</td>
+                            ))}
+                        </tr>
+                    </tbody>
+                </table>
+                {grades.map((grade) => (
+                    <React.Fragment key={grade.grade}>
+                        <h2>
+                            {grade.grade}{" "}
+                            <small>
+                                ({grade.cards.length} card{grade.cards.length > 1 && "s"})
+                            </small>
+                        </h2>
+                        <div className="grade-section-content">
+                            {grade.cards.map((card) => (
+                                <CardImage imageName={card.imageName} key={card.id} lazy />
+                            ))}
+                            {grade.cards.length === 0 && <p className="no-cards">None</p>}
+                        </div>
+                    </React.Fragment>
+                ))}
             </main>
         </>
     );

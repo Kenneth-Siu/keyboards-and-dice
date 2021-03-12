@@ -12,6 +12,7 @@ import Login from "./login/Login.js";
 import "./cssreset.css";
 import "./App.scss";
 import Draft from "./draft/Draft.js";
+import Rankings from "./rankings/Rankings.js";
 
 export default function App({ loggedInUser }) {
     return (
@@ -37,6 +38,7 @@ export default function App({ loggedInUser }) {
                 />
                 <Route exact path="/downloads" component={Downloads} />
                 <Route exact path="/login" component={Login} />
+                <Route exact path="/rankings" component={Rankings} />
                 <Route component={NotFound} />
             </Switch>
         </>
