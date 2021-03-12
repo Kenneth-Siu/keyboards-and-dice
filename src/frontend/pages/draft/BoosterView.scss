@@ -12,7 +12,7 @@
     button {
         @include button;
         padding: 0;
-        
+
         &:focus {
             outline: 2px darken($color-2, 30%) solid;
         }
@@ -78,19 +78,7 @@
         }
     }
 
-    .card {
-        @include card-image;
+    .card-lazy-wrapper {
         width: 100%;
-        display: block;
     }
-}
-
-.submit-pick {
-    @include button;
-    font-size: 1.4rem;
-    font-weight: 600;
-    padding: 0.4rem 0.8rem;
-    color: $color-2;
-    background-color: $color-5-strong;
-    margin: 0 0.4rem;
 }

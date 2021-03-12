@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import cardList from "../../../shared/cardList.js";
 import filterBackground from "../../../../data/filterBackground.jpg";
 import WhiteManaSymbol from "../../../../data/whiteManaSymbol.svg";
@@ -13,6 +13,8 @@ import UncommonSetSymbol from "../../../../data/uncommonSetSymbol.svg";
 import RareSetSymbol from "../../../../data/rareSetSymbol.svg";
 import MythicSetSymbol from "../../../../data/mythicSetSymbol.svg";
 import "./CardImageGallery.scss";
+import { forceCheck } from "react-lazyload";
+import CardImage from "../../components/cardImage/CardImage.js";
 
 export default function CardImageGallery() {
     const [whiteFilter, setWhiteFilter] = useState(false);
@@ -27,6 +29,21 @@ export default function CardImageGallery() {
     const [uncommonFilter, setUncommonFilter] = useState(false);
     const [rareFilter, setRareFilter] = useState(false);
     const [mythicFilter, setMythicFilter] = useState(false);
+
+    useEffect(() => {
+        forceCheck();
+    }, [
+        whiteFilter,
+        blueFilter,
+        blackFilter,
+        redFilter,
+        greenFilter,
+        goldFilter,
+        colorlessFilter,
+        commonFilter,
+        uncommonFilter,
+        mythicFilter,
+    ]);
 
     function colorFilterCards(cards) {
         if (whiteFilter || blueFilter || blackFilter || redFilter || greenFilter || goldFilter || colorlessFilter) {
@@ -91,7 +108,7 @@ export default function CardImageGallery() {
                 <p className="num-of-cards">{cardList.length} cards</p>
                 <div className="card-grid">
                     {filterCards(cardList).map((card) => (
-                        <img className="card" src={card.imageName} key={card.id} loading="lazy" />
+                        <CardImage imageName={card.imageName} key={card.id} lazy />
                     ))}
                 </div>
                 <div className="filter-pane">

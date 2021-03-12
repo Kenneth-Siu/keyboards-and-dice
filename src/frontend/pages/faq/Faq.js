@@ -33,6 +33,7 @@ import trojanHorse from "../../../../data/cardImages/Trojan Horse.jpg";
 import hongWaiFactory from "../../../../data/cardImages/Hong Wai Factory.jpg";
 import theMartianLens from "../../../../data/cardImages/The Martian Lens.jpg";
 import "./Faq.scss";
+import CardImage from "../../components/cardImage/CardImage";
 
 export default function Faq() {
     return (
@@ -41,8 +42,8 @@ export default function Faq() {
             <main className="faq-page">
                 <h1>Rules FAQ</h1>
                 <section>
-                    <img src={cacheMapper} />
-                    <div>
+                    <CardImage imageName={cacheMapper} lazy />
+                    <div className="section-content">
                         <h2>Arm</h2>
                         <blockquote>
                             <p>
@@ -74,8 +75,8 @@ export default function Faq() {
                     </div>
                 </section>
                 <section>
-                    <img src={boardroomKeeper} />
-                    <div>
+                    <CardImage imageName={boardroomKeeper} lazy />
+                    <div className="section-content">
                         <h2>Infiltrate</h2>
                         <blockquote>
                             <p>
@@ -101,8 +102,8 @@ export default function Faq() {
                     </div>
                 </section>
                 <section>
-                    <img src={radiumTracker} />
-                    <div>
+                    <CardImage imageName={radiumTracker} lazy />
+                    <div className="section-content">
                         <h2>Reconstitute</h2>
                         <blockquote>
                             <p>
@@ -127,8 +128,8 @@ export default function Faq() {
                     </div>
                 </section>
                 <section>
-                    <img src={plasmaReclaimer} />
-                    <div>
+                    <CardImage imageName={plasmaReclaimer} lazy />
+                    <div className="section-content">
                         <h2>Teleport</h2>
                         <blockquote>
                             <p>
@@ -218,8 +219,8 @@ export default function Faq() {
                 </section>
                 <h2>Individual Card FAQs</h2>
                 <section>
-                    <img src={karnTheSeeker} />
-                    <div>
+                    <CardImage imageName={karnTheSeeker} lazy />
+                    <div className="section-content">
                         <h3>Karn, the Seeker</h3>
                         <ul>
                             <li>Scan counters have no effect by themselves.</li>
@@ -227,8 +228,8 @@ export default function Faq() {
                     </div>
                 </section>
                 <section>
-                    <img src={dropship} />
-                    <div>
+                    <CardImage imageName={dropship} lazy />
+                    <div className="section-content">
                         <h3>Dropship</h3>
                         <ul>
                             <li>
@@ -240,8 +241,8 @@ export default function Faq() {
                     </div>
                 </section>
                 <section>
-                    <img src={suspensionSquad} />
-                    <div>
+                    <CardImage imageName={suspensionSquad} lazy />
+                    <div className="section-content">
                         <h3>Suspension Squad</h3>
                         <ul>
                             <li>
@@ -253,8 +254,8 @@ export default function Faq() {
                     </div>
                 </section>
                 <section>
-                    <img src={turnTheTideOfBattle} />
-                    <div>
+                    <CardImage imageName={turnTheTideOfBattle} lazy />
+                    <div className="section-content">
                         <h3>Turn the Tide of Battle</h3>
                         <ul>
                             <li>The creature counts and life totals are checked upon resolution.</li>
@@ -262,8 +263,8 @@ export default function Faq() {
                     </div>
                 </section>
                 <section>
-                    <img src={coordinateScrambler} />
-                    <div>
+                    <CardImage imageName={coordinateScrambler} lazy />
+                    <div className="section-content">
                         <h3>Coordinate Scrambler</h3>
                         <ul>
                             <li>
@@ -284,8 +285,8 @@ export default function Faq() {
                     </div>
                 </section>
                 <section>
-                    <img src={futureInsight} />
-                    <div>
+                    <CardImage imageName={futureInsight} lazy />
+                    <div className="section-content">
                         <h3>Future Insight</h3>
                         <ul>
                             <li>
@@ -296,8 +297,8 @@ export default function Faq() {
                     </div>
                 </section>
                 <section>
-                    <img src={lambertStealthBomber} />
-                    <div>
+                    <CardImage imageName={lambertStealthBomber} lazy />
+                    <div className="section-content">
                         <h3>Lambert Stealth Bomber</h3>
                         <ul>
                             <li>
@@ -308,8 +309,8 @@ export default function Faq() {
                     </div>
                 </section>
                 <section>
-                    <img src={nanoreplicatorZero} />
-                    <div>
+                    <CardImage imageName={nanoreplicatorZero} lazy />
+                    <div className="section-content">
                         <h3>Nanoreplicator Zero</h3>
                         <ul>
                             <li>The cost is paid and the creature chosen all as the ability resolves.</li>
@@ -317,8 +318,8 @@ export default function Faq() {
                     </div>
                 </section>
                 <section>
-                    <img src={neutronFlow} />
-                    <div>
+                    <CardImage imageName={neutronFlow} lazy />
+                    <div className="section-content">
                         <h3>Neutron Flow</h3>
                         <ul>
                             <li>
@@ -329,8 +330,8 @@ export default function Faq() {
                     </div>
                 </section>
                 <section>
-                    <img src={cloningVats} />
-                    <div>
+                    <CardImage imageName={cloningVats} lazy />
+                    <div className="section-content">
                         <h3>Cloning Vats</h3>
                         <ul>
                             <li>
@@ -341,8 +342,8 @@ export default function Faq() {
                     </div>
                 </section>
                 <section>
-                    <img src={murmurTheCleaner} />
-                    <div>
+                    <CardImage imageName={murmurTheCleaner} lazy />
+                    <div className="section-content">
                         <h3>Murmur, the Cleaner</h3>
                         <ul>
                             <li>
@@ -372,8 +373,8 @@ export default function Faq() {
                     </div>
                 </section>
                 <section>
-                    <img src={mysticOfTheUnder} />
-                    <div>
+                    <CardImage imageName={mysticOfTheUnder} lazy />
+                    <div className="section-content">
                         <h3>Mystic of the Under</h3>
                         <ul>
                             <li>
@@ -384,8 +385,8 @@ export default function Faq() {
                     </div>
                 </section>
                 <section>
-                    <img src={iridiumMagnetoKnife} />
-                    <div>
+                    <CardImage imageName={iridiumMagnetoKnife} lazy />
+                    <div className="section-content">
                         <h3>Iridium Magneto-Knife</h3>
                         <ul>
                             <li>
@@ -396,8 +397,8 @@ export default function Faq() {
                     </div>
                 </section>
                 <section>
-                    <img src={theMoirai} />
-                    <div>
+                    <CardImage imageName={theMoirai} lazy />
+                    <div className="section-content">
                         <h3>The Moirai</h3>
                         <ul>
                             <li>
@@ -408,8 +409,8 @@ export default function Faq() {
                     </div>
                 </section>
                 <section>
-                    <img src={throwToTheWind} />
-                    <div>
+                    <CardImage imageName={throwToTheWind} lazy />
+                    <div className="section-content">
                         <h3>Throw to the Wind</h3>
                         <ul>
                             <li>You still have to discard the card, even if you cast it for its teleport cost.</li>
@@ -417,8 +418,8 @@ export default function Faq() {
                     </div>
                 </section>
                 <section>
-                    <img src={wantedSpeedster} />
-                    <div>
+                    <CardImage imageName={wantedSpeedster} lazy />
+                    <div className="section-content">
                         <h3>Wanted Speedster</h3>
                         <ul>
                             <li>
@@ -429,8 +430,8 @@ export default function Faq() {
                     </div>
                 </section>
                 <section>
-                    <img src={bioarchitect} />
-                    <div>
+                    <CardImage imageName={bioarchitect} lazy />
+                    <div className="section-content">
                         <h3>Bioarchitect</h3>
                         <ul>
                             <li>
@@ -441,8 +442,8 @@ export default function Faq() {
                     </div>
                 </section>
                 <section>
-                    <img src={ingolfsCommand} />
-                    <div>
+                    <CardImage imageName={ingolfsCommand} lazy />
+                    <div className="section-content">
                         <h3>
                             Murmur's Command, Wormcaller's Command, Ingolf's Command, Vuissance's Command,
                             Redistribution Command
@@ -475,8 +476,8 @@ export default function Faq() {
                     </div>
                 </section>
                 <section>
-                    <img src={matterRedistributor} />
-                    <div>
+                    <CardImage imageName={matterRedistributor} lazy />
+                    <div className="section-content">
                         <h3>Matter Redistributor</h3>
                         <ul>
                             <li>
@@ -487,8 +488,8 @@ export default function Faq() {
                     </div>
                 </section>
                 <section>
-                    <img src={titanOfShisukuSewers} />
-                    <div>
+                    <CardImage imageName={titanOfShisukuSewers} lazy />
+                    <div className="section-content">
                         <h3>Titan of Shisuku Sewers</h3>
                         <ul>
                             <li>If a creature has multiple instances of Reconstitute, each triggers separately.</li>
@@ -496,8 +497,8 @@ export default function Faq() {
                     </div>
                 </section>
                 <section>
-                    <img src={acquisitorDelwani} />
-                    <div>
+                    <CardImage imageName={acquisitorDelwani} lazy />
+                    <div className="section-content">
                         <h3>Acquisitor Delwani</h3>
                         <ul>
                             <li>
@@ -509,8 +510,8 @@ export default function Faq() {
                     </div>
                 </section>
                 <section>
-                    <img src={umidaKoto} />
-                    <div>
+                    <CardImage imageName={umidaKoto} lazy />
+                    <div className="section-content">
                         <h3>Umida Koto</h3>
                         <ul>
                             <li>If a creature has multiple instances of Reconstitute, each triggers separately.</li>
@@ -518,8 +519,8 @@ export default function Faq() {
                     </div>
                 </section>
                 <section>
-                    <img src={theAion} />
-                    <div>
+                    <CardImage imageName={theAion} lazy />
+                    <div className="section-content">
                         <h3>The Aion</h3>
                         <ul>
                             <li>
@@ -530,8 +531,8 @@ export default function Faq() {
                     </div>
                 </section>
                 <section>
-                    <img src={formling} />
-                    <div>
+                    <CardImage imageName={formling} lazy />
+                    <div className="section-content">
                         <h3>Formling</h3>
                         <ul>
                             <li>
@@ -549,8 +550,8 @@ export default function Faq() {
                     </div>
                 </section>
                 <section>
-                    <img src={moxVoidstone} />
-                    <div>
+                    <CardImage imageName={moxVoidstone} lazy />
+                    <div className="section-content">
                         <h3>Mox Voidstone</h3>
                         <ul>
                             <li>
@@ -562,8 +563,8 @@ export default function Faq() {
                     </div>
                 </section>
                 <section>
-                    <img src={mutagenicSerum} />
-                    <div>
+                    <CardImage imageName={mutagenicSerum} lazy />
+                    <div className="section-content">
                         <h3>Mutagenic Serum</h3>
                         <ul>
                             <li>You reveal Mutagenic Serum from your hand after you have completed mulliganing.</li>
@@ -571,8 +572,8 @@ export default function Faq() {
                     </div>
                 </section>
                 <section>
-                    <img src={trojanHorse} />
-                    <div>
+                    <CardImage imageName={trojanHorse} lazy />
+                    <div className="section-content">
                         <h3>Trojan Horse</h3>
                         <ul>
                             <li>
@@ -588,8 +589,8 @@ export default function Faq() {
                     </div>
                 </section>
                 <section>
-                    <img src={hongWaiFactory} />
-                    <div>
+                    <CardImage imageName={hongWaiFactory} lazy />
+                    <div className="section-content">
                         <h3>Hong Wai Factory</h3>
                         <ul>
                             <li>
@@ -600,8 +601,8 @@ export default function Faq() {
                     </div>
                 </section>
                 <section>
-                    <img src={theMartianLens} />
-                    <div>
+                    <CardImage imageName={theMartianLens} lazy />
+                    <div className="section-content">
                         <h3>The Martian Lens</h3>
                         <ul>
                             <li>

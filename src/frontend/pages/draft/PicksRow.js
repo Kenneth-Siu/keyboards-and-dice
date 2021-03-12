@@ -1,4 +1,5 @@
 import React from "react";
+import CardImage from "../../components/cardImage/CardImage";
 import "./PicksRow.scss";
 
 export function PicksRow({ row, cardOnClick }) {
@@ -22,7 +23,7 @@ export function PicksRow({ row, cardOnClick }) {
                             }}
                             onClick={() => cardOnClick(pileIndex, pickIndex)}
                         >
-                            <img src={pick.imageName} loading="lazy" />
+                            <CardImage imageName={pick.imageName} />
                         </div>
                     ))}
                 </div>

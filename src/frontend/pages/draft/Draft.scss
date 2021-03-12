@@ -1,5 +1,6 @@
 @import "../../components/responsive.scss";
 @import "../../components/colors.scss";
+@import "../../components/mixins.scss";
 @import "../../components/navBar/NavBar.scss";
 
 @mixin draft-view-h2 {
@@ -134,6 +135,16 @@
                 background-color: $color-5-light;
             }
         }
+    }
+
+    .submit-pick {
+        @include button;
+        font-size: 1.4rem;
+        font-weight: 600;
+        padding: 0.4rem 0.8rem;
+        color: $color-2;
+        background-color: $color-5-strong;
+        margin: 0 0.4rem;
     }
 
     .pack-heading {

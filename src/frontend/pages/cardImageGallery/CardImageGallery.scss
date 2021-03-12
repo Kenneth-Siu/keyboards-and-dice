@@ -30,8 +30,7 @@
         justify-content: flex-start;
     }
 
-    .card {
-        @include card-image;
+    .card-lazy-wrapper {
         @media (max-width: 659px) {
             width: 49.25%;
             margin-right: 1.5%;
