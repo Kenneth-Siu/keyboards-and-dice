@@ -843,7 +843,7 @@ colorIdentity: "W"
 grade: "B",
 colorIdentity: "W",
 cockatrice_related: "Soldier",
-cockatrice_related_count: "x"
+cockatrice_related_count: "x=2"
         }
     },
     {
@@ -1285,7 +1285,7 @@ colorIdentity: "U"
         "notes": {
 grade: "C",
 colorIdentity: "U",
-cockatrice_related: "Mech"
+cockatrice_related: "Mech (Neutron Flow)"
         }
     },
     {
@@ -3464,7 +3464,7 @@ colorIdentity: "RG"
         "notes": {
 grade: "B+",
 colorIdentity: "GW",
-cockatrice_related: "Mech"
+cockatrice_related: "Mech (Ingolf)"
         }
     },
     {

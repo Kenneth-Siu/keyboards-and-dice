@@ -31,14 +31,22 @@ script:
 		rarity := rarityFilter(card.rarity)
 		notes := card.notes
 		
-		splitNotes := split_text(card.notes, match: ",")
+		splitNotes := split_text(card.notes, match: ",\n")
 		
 		colorIdentityNotes := split_text(filter_list(splitNotes, filter: { contains(input, match:"colorIdentity:") })[0], match: "\"")
 		colorIdentity := colorIdentityNotes[length(colorIdentityNotes) - 2]
 		
+		overwriteNameNotes := filter_list(splitNotes, filter: { contains(input, match:"cockatrice_name:") })
+		overwriteNameNote := if length(overwriteNameNotes) > 0 then (split_text(overwriteNameNotes[0], match:"\"")) else []
+		name := if length(overwriteNameNote) > 0 then (overwriteNameNote[length(overwriteNameNote) - 2]) else card.name
+		
 		relatedNotes := filter_list(splitNotes, filter: { contains(input, match:"cockatrice_related:") })
 		relatedNote := if length(relatedNotes) > 0 then (split_text(relatedNotes[0], match:"\"")) else []
 		related := if length(relatedNote) > 0 then (relatedNote[length(relatedNote) - 2]) else ""
+		
+		reverseRelatedNotes := filter_list(splitNotes, filter: { contains(input, match:"cockatrice_reverse_related:") })
+		reverseRelatedNote := if length(reverseRelatedNotes) > 0 then (split_text(reverseRelatedNotes[0], match:"\"")) else []
+		reverseRelated := if length(reverseRelatedNote) > 0 then (reverseRelatedNote[length(reverseRelatedNote) - 2]) else ""
 		
 		attach := length(filter_list(splitNotes, filter: { contains(input, match:"cockatrice_related_attach:") })) > 0
 		
@@ -46,7 +54,7 @@ script:
 		countNote := if length(countNotes) > 0 then (split_text(countNotes[0], match:"\"")) else []
 		count := if length(countNote) > 0 then trim(countNote[length(countNote) - 2]) else ""
 		
-		"        \<name>{card.name}\</name>\n"
+		"        \<name>{name}\</name>\n"
 		+"        \<text>{card.rule_text}\</text>\n"
 		+"        \<prop>\n"
 		+"            \<layout>normal\</layout>\n"
@@ -60,7 +68,7 @@ script:
 		+(if card.pt != "" then "            \<pt>{card.pt}\</pt>\n" else "")
 		+(if card.loyalty != "" then "            \<loyalty>{card.loyalty}\</loyalty>\n" else "")
 		+"        \</prop>\n"
-		+"        \<set rarity=\"{card.rarity}\" picurl=\"https://kenneth-siu.github.io/terra-2170-card-images/{urlEncode(imageNameFilter(card.name))}.jpg\">T2170\</set>\n"
+		+"        \<set rarity=\"{card.rarity}\" picurl=\"https://kenneth-siu.github.io/terra-2170-card-images/{urlEncode(imageNameFilter(name))}.jpg\">T2170\</set>\n"
 		+(if related != "" then "        \<related{if attach then " attach=\"attach\"" else ""}{if count != "" then " count=\"{count}\"" else ""}>{related}\</related>\n" else "")
 		+(if card.shape != "token" then "" else "        \<token>1\</token>\n")
 		+"        \<tablerow>{if contains(card.super_type, match:"Creature") then 2 else if contains(card.super_type, match:"Land") then 0 else if contains(card.super_type, match:"Instant") or contains(card.super_type, match:"Sorcery") then 3 else 1}\</tablerow>\n"

@@ -279,7 +279,7 @@ Equip 2</text>
         <tablerow>2</tablerow>
     </card>
     <card>
-        <name>Mech</name>
+        <name>Mech (Neutron Flow)</name>
         <text></text>
         <prop>
             <layout>normal</layout>
@@ -288,9 +288,9 @@ Equip 2</text>
             <maintype>Token Artifact Creature</maintype>
             <manacost></manacost>
             <cmc>0</cmc>
-            <pt>1/1</pt>
+            <pt>X/X</pt>
         </prop>
-        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Mech.jpg">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Mech%20(Neutron%20Flow).jpg">T2170</set>
         <token>1</token>
         <tablerow>2</tablerow>
     </card>
@@ -311,18 +311,18 @@ Equip 2</text>
         <tablerow>1</tablerow>
     </card>
     <card>
-        <name>Wildschwein</name>
-        <text>Haste</text>
+        <name>Mech (Ingolf)</name>
+        <text></text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Token Legendary Artifact Creature — Mech </type>
-            <maintype>Token Legendary Artifact Creature</maintype>
+            <type>Token Artifact Creature — Mech </type>
+            <maintype>Token Artifact Creature</maintype>
             <manacost></manacost>
             <cmc>0</cmc>
-            <pt>3/3</pt>
+            <pt>5/5</pt>
         </prop>
-        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Wildschwein.jpg">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Mech%20(Ingolf).jpg">T2170</set>
         <token>1</token>
         <tablerow>2</tablerow>
     </card>
@@ -344,6 +344,22 @@ Equip 2</text>
         <tablerow>1</tablerow>
     </card>
     <card>
+        <name>Mech</name>
+        <text></text>
+        <prop>
+            <layout>normal</layout>
+            <side>front</side>
+            <type>Token Artifact Creature — Mech </type>
+            <maintype>Token Artifact Creature</maintype>
+            <manacost></manacost>
+            <cmc>0</cmc>
+            <pt>1/1</pt>
+        </prop>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Mech.jpg">T2170</set>
+        <token>1</token>
+        <tablerow>2</tablerow>
+    </card>
+    <card>
         <name>Diplomat’s Prerogative</name>
         <text>Enchant creature
 Enchanted creature has indestructible and can’t attack, block, or be sacrificed.</text>
@@ -359,6 +375,22 @@ Enchanted creature has indestructible and can’t attack, block, or be sacrifice
         </prop>
         <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Diplomats%20Prerogative.jpg">T2170</set>
         <tablerow>1</tablerow>
+    </card>
+    <card>
+        <name>Wildschwein</name>
+        <text>Haste</text>
+        <prop>
+            <layout>normal</layout>
+            <side>front</side>
+            <type>Token Legendary Artifact Creature — Mech </type>
+            <maintype>Token Legendary Artifact Creature</maintype>
+            <manacost></manacost>
+            <cmc>0</cmc>
+            <pt>3/3</pt>
+        </prop>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Wildschwein.jpg">T2170</set>
+        <token>1</token>
+        <tablerow>2</tablerow>
     </card>
     <card>
         <name>Dropship</name>
@@ -874,7 +906,7 @@ If you have less life than an opponent, you gain 4 life. Otherwise, you gain 2 l
             <coloridentity>W</coloridentity>
         </prop>
         <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Turn%20the%20Tide%20of%20Battle.jpg">T2170</set>
-        <related count="x">Soldier</related>
+        <related count="x=2">Soldier</related>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -1416,7 +1448,7 @@ When Mindmeld Netrunner enters the battlefield, scry 3.</text>
             <coloridentity>U</coloridentity>
         </prop>
         <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Neutron%20Flow.jpg">T2170</set>
-        <related>Mech</related>
+        <related>Mech (Neutron Flow)</related>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -4083,7 +4115,7 @@ At the beginning of combat on your turn, you may create Shaitan, a legendary 5/5
     <card>
         <name>Ingolf, the Catalyst</name>
         <text>When Ingolf, the Catalyst enters the battlefield, create a 5/5 colorless Mech artifact creature token.
-When Ingolf dies, destroy each creature with power 4 or greater.</text>
+When Ingolf dies, destroy each creature with power 3 or greater.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -4096,7 +4128,7 @@ When Ingolf dies, destroy each creature with power 4 or greater.</text>
             <pt>1/1</pt>
         </prop>
         <set rarity="mythic rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Ingolf%20the%20Catalyst.jpg">T2170</set>
-        <related>Mech</related>
+        <related>Mech (Ingolf)</related>
         <tablerow>2</tablerow>
     </card>
     <card>
