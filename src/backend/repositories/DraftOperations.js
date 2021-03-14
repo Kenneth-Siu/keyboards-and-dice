@@ -6,7 +6,7 @@ import { Card } from "../models/Card.js";
 import { Booster } from "../models/Booster.js";
 import { getBooster } from "../helpers/DraftHelpers.js";
 import { Draft } from "../models/Draft.js";
-import { Bot } from "../helpers/Bot.js";
+import { Bot } from "../helpers/bot/Bot.js";
 import { Pick } from "../models/Pick.js";
 
 export class DraftOperations {
