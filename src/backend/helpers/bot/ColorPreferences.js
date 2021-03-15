@@ -1,4 +1,4 @@
-import { maxBy } from "lodash";
+import { maxBy, sum } from "lodash";
 
 export class ColorPreferences {
     constructor(picks) {
@@ -10,6 +10,7 @@ export class ColorPreferences {
             { color: "G", weighting: 0 },
         ];
         this.initColorPreferences(picks);
+        console.log(this.colorPreferences);
     }
 
     getBoostToPower(card) {
@@ -17,11 +18,22 @@ export class ColorPreferences {
         const colorWeightings = cardColors.map(
             (color) => this.colorPreferences.find((pref) => pref.color === color).weighting
         );
-        if (colorWeightings.length) {
+        if (colorWeightings.length === 1) {
             return Math.min(...colorWeightings);
+        } else if (colorWeightings.length > 1) {
+            return sum(colorWeightings) - maxBy(this.colorPreferences, (colorPref) => colorPref.weighting).weighting;
         } else {
             return Math.max(...this.colorPreferences.map((pref) => pref.weighting));
         }
+    }
+
+    getMainColors() {
+        const firstColor = maxBy(this.colorPreferences, (colorPref) => colorPref.weighting);
+        const secondColor = maxBy(
+            this.colorPreferences.filter((colorPreference) => colorPreference !== firstColor),
+            (colorPref) => colorPref.weighting
+        );
+        return [firstColor.color, secondColor.color];
     }
 
     initColorPreferences(picks) {
@@ -30,36 +42,33 @@ export class ColorPreferences {
         if (this.colorPreferences.every((colorPref) => colorPref.weighting === 0)) {
             return;
         }
-        if (pickNumber >= 10) {
+        if (pickNumber >= 18) {
             this.setColorPreferencesForSolidlyTwoColors();
+            return;
         }
-        this.scaleColorPreferencesFromRelativeToAbsolute();
-        this.applyPreferenceToPrimaryColor();
+        this.scaleColorPreferencesFromRelativeToAbsolute(pickNumber);
+        this.applyPreferenceToPrimaryColor(pickNumber);
     }
 
     setRelativeColorPreferences(picks) {
         picks.forEach((card, pickNumber) => {
             for (const color of card.colorIdentity) {
-                this.colorPreferences[color] += card.basePower * (1 - 0.3 / pickNumber);
+                this.colorPreferences.find((pref) => pref.color === color).weighting +=
+                    card.basePower * (1 - 0.6 / (pickNumber + 2));
             }
         });
     }
 
     setColorPreferencesForSolidlyTwoColors() {
-        const firstColor = maxBy(this.colorPreferences, (colorPref) => colorPref.weighting);
-        const secondColor = maxBy(
-            this.colorPreferences.filter((colorPreference) => colorPreference !== firstColor),
-            (colorPref) => colorPref.weighting
-        );
+        const [firstColor, secondColor] = this.getMainColors();
         this.colorPreferences.forEach((colorPref) => {
             colorPref.weighting = 0;
         });
-        firstColor.weighting = 152;
-        secondColor.weighting = 150;
-        return;
+        this.colorPreferences.find((pref) => pref.color === firstColor).weighting = 152;
+        this.colorPreferences.find((pref) => pref.color === secondColor).weighting = 150;
     }
 
-    scaleColorPreferencesFromRelativeToAbsolute() {
+    scaleColorPreferencesFromRelativeToAbsolute(pickNumber) {
         const maxBonusByPickNumber = [
             0, // P1P1
             2,
@@ -71,7 +80,15 @@ export class ColorPreferences {
             14,
             16,
             18,
-            20, // P1P11 (shouldn't be used)
+            20, // P1P11
+            20,
+            20,
+            20,
+            20, // P2P1
+            20,
+            20,
+            20,
+            20, // P2P5 (shouldn't be used)
         ];
         const maxBonus = maxBonusByPickNumber[pickNumber];
         const firstColor = maxBy(this.colorPreferences, (colorPref) => colorPref.weighting);
@@ -81,21 +98,30 @@ export class ColorPreferences {
         });
     }
 
-    applyPreferenceToPrimaryColor() {
+    applyPreferenceToPrimaryColor(pickNumber) {
         const firstColorBonuses = [
             0, // P1P1
             0,
             0,
             0,
             0,
-            5, // P1P6
-            6,
-            7,
-            8,
-            9,
-            10, // P1P11 (shouldn't be used)
+            1, // P1P6
+            2,
+            3,
+            4,
+            5,
+            5, // P1P11
+            5,
+            5,
+            5,
+            5, // P2P1
+            5,
+            5,
+            5,
+            5, // P2P5 (shouldn't be used)
         ];
         const firstColorBonus = firstColorBonuses[pickNumber];
+        const firstColor = maxBy(this.colorPreferences, (colorPref) => colorPref.weighting);
         firstColor.weighting += firstColorBonus;
     }
 }

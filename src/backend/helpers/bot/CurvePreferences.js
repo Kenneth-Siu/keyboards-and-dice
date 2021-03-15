@@ -1,21 +1,19 @@
 import { maxBy } from "lodash";
 
-function isCardCurveRelevant(card) {
-    return card.type.includes("Creature") && (card.manaValue === 2 || card.manaValue === 3 || card.manaValue === 4);
-}
-
 export class CurvePreferences {
-    constructor(picks) {
+    constructor(picks, colorPreferences) {
         this.curvePreferences = [
             { manaValue: 2, weighting: 0 },
             { manaValue: 3, weighting: 0 },
             { manaValue: 4, weighting: 0 },
         ];
+        this.colorPreferences = colorPreferences;
         this.initCurvePreferences(picks);
+        console.log(this.curvePreferences);
     }
 
     getBoostToPower(card) {
-        if (isCardCurveRelevant(card)) {
+        if (this.isCardCurveRelevant(card)) {
             return this.curvePreferences.find((pref) => pref.manaValue === card.manaValue).weighting;
         }
         return 0;
@@ -26,6 +24,9 @@ export class CurvePreferences {
 
         this.applyMinimumCurve();
         this.reckonMissingPointsOnCurve(picks);
+        if (this.curvePreferences.every((pref) => pref.weighting === 0)) {
+            return;
+        }
         this.scaleCurvePreferences(pickNumber);
     }
 
@@ -39,7 +40,7 @@ export class CurvePreferences {
 
     reckonMissingPointsOnCurve(picks) {
         picks.forEach((card) => {
-            if (isCardCurveRelevant(card)) {
+            if (this.isCardCurveRelevant(card)) {
                 const pref = this.curvePreferences.find((pref) => pref.manaValue === card.manaValue);
                 pref.weighting = Math.max(0, pref.weighting - 1);
             }
@@ -53,6 +54,7 @@ export class CurvePreferences {
             this.curvePreferences.forEach((pref) => {
                 pref.weighting = 0;
             });
+            return;
         }
 
         const caringness = [
@@ -74,5 +76,14 @@ export class CurvePreferences {
         this.curvePreferences.forEach((pref) => {
             pref.weighting *= multiplier;
         });
+    }
+
+    isCardCurveRelevant(card) {
+        for (const color of card.colorIdentity) {
+            if (!this.colorPreferences.getMainColors().includes(color)) {
+                return false;
+            }
+        }
+        return card.manaValue === 2 || card.manaValue === 3 || card.manaValue === 4;
     }
 }
