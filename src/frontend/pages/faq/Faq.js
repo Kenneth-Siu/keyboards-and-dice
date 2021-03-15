@@ -107,9 +107,9 @@ export default function Faq() {
                         <h2>Reconstitute</h2>
                         <blockquote>
                             <p>
-                                <b>Reconstitute</b> is a <em>keyword ability</em> that triggers upon the creature dying to
-                                find another creature in your deck that costs less and put it onto the battlefield. It
-                                is a <em>triggered ability</em> with the following rules:
+                                <b>Reconstitute</b> is a <em>keyword ability</em> that triggers upon the creature dying
+                                to find another creature in your deck that costs less and put it onto the battlefield.
+                                It is a <em>triggered ability</em> with the following rules:
                             </p>
                             <p>
                                 "When this creature dies, reveal cards from the top of your library until you reveal a
@@ -164,8 +164,9 @@ export default function Faq() {
                                     then resolve the teleported spell.
                                 </li>
                                 <li>
-                                    While resolving Reconstitute, finish revealing all the cards first, then choose whether or
-                                    not to teleport any cards, then put the reconstituted creature onto the battlefield.
+                                    While resolving Reconstitute, finish revealing all the cards first, then choose
+                                    whether or not to teleport any cards, then put the reconstituted creature onto the
+                                    battlefield.
                                 </li>
                             </ul>
                         </blockquote>
@@ -200,8 +201,8 @@ export default function Faq() {
                             </li>
                             <li>
                                 If an effect causes you to look at or reveal multiple cards in your library (for
-                                example, a creature with Reconstitute died), finish looking at or revealing all the cards
-                                first, then teleport spells, then finish resolving the original effect.
+                                example, a creature with Reconstitute died), finish looking at or revealing all the
+                                cards first, then teleport spells, then finish resolving the original effect.
                             </li>
                             <li>
                                 While looking at or revealing cards from your library, you must keep the cards in the
@@ -210,8 +211,8 @@ export default function Faq() {
                             </li>
                             <li>
                                 If an effect attempts to interact with a card that you teleported (for example, you
-                                teleported a creature card you were about to put into play from Reconstitute), that part of
-                                the original effect fails and you continue resolving the rest of the effect. (In this
+                                teleported a creature card you were about to put into play from Reconstitute), that part
+                                of the original effect fails and you continue resolving the rest of the effect. (In this
                                 example, no creature would be put into play with the Reconstitute ability)
                             </li>
                         </ul>
@@ -514,7 +515,24 @@ export default function Faq() {
                     <div className="section-content">
                         <h3>Umida Koto</h3>
                         <ul>
-                            <li>If a creature has multiple instances of Reconstitute, each triggers separately.</li>
+                            <li>
+                                If X is 0, Umida enters the battlefield with no loyalty and is put into his owner’s
+                                graveyard before you can activate his abilities.
+                            </li>
+                            <li>
+                                If a creature has multiple instances of Reconstitute, such as multiple reconstitute
+                                counters from Umida's second ability, each instance triggers separately.
+                            </li>
+                            <li>
+                                The value of X chosen when you activate Umida's third activated ability doesn’t have to
+                                be the same value of X that you chose when you cast him.
+                            </li>
+                            <li>
+                                For Umida's third ability, as an example: If you spend 1 loyalty counter, you'll get a
+                                single creature with mana value 1 or less. If you spend 2 loyalty counters, you'll get
+                                two creatures each with mana value 2 or less. If you spend 3 loyalty counters, you'll
+                                get three creatures, each with mana value 3 or less. And so on.
+                            </li>
                         </ul>
                     </div>
                 </section>
