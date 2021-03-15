@@ -509,7 +509,7 @@ colorIdentity: "W"
         "id": 16,
         "rarity": "M",
         "notes": {
-grade: "A+",
+grade: "A",
 colorIdentity: "W"
         }
     },
@@ -582,7 +582,7 @@ colorIdentity: "W"
         "id": 21,
         "rarity": "C",
         "notes": {
-grade: "F",
+grade: "D",
 colorIdentity: "W"
         }
     },
@@ -769,7 +769,7 @@ cockatrice_related: "Police"
         "id": 34,
         "rarity": "U",
         "notes": {
-grade: "B-",
+grade: "B",
 colorIdentity: "W"
         }
     },
@@ -1667,7 +1667,7 @@ colorIdentity: "B"
         "id": 97,
         "rarity": "R",
         "notes": {
-grade: "A-",
+grade: "B",
 colorIdentity: "B"
         }
     },
@@ -2173,7 +2173,7 @@ colorIdentity: "R"
         "id": 133,
         "rarity": "U",
         "notes": {
-grade: "B+",
+grade: "B",
 colorIdentity: "R",
 cockatrice_related: "Wildschwein"
         }
@@ -2405,7 +2405,7 @@ colorIdentity: "R"
         "id": 149,
         "rarity": "R",
         "notes": {
-grade: "A",
+grade: "B",
 colorIdentity: "R"
         }
     },
@@ -3671,8 +3671,8 @@ colorIdentity: "GU"
     {
         "name": "Umida Koto",
         "imageName": _238,
-        "cost": "1BGU",
-        "manaValue": 4,
+        "cost": "XBGU",
+        "manaValue": 3,
         "color": "BGU",
         "type": "Legendary Planeswalker — Umida ",
         "id": 238,
@@ -3692,7 +3692,7 @@ colorIdentity: "BGU"
         "id": 239,
         "rarity": "M",
         "notes": {
-grade: "B",
+grade: "B+",
 colorIdentity: ""
         }
     },
@@ -3763,7 +3763,7 @@ colorIdentity: ""
         "rarity": "R",
         "notes": {
 grade: "B-",
-colorIdentity: "UR"
+colorIdentity: ""
         }
     },
     {
@@ -3847,7 +3847,7 @@ colorIdentity: ""
         "id": 250,
         "rarity": "U",
         "notes": {
-grade: "D",
+grade: "D-",
 colorIdentity: ""
         }
     },
@@ -3960,7 +3960,7 @@ colorIdentity: ""
         "id": 258,
         "rarity": "U",
         "notes": {
-grade: "D-",
+grade: "D",
 colorIdentity: ""
         }
     },

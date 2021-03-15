@@ -482,7 +482,7 @@ Create two 1/1 white Soldier creature tokens.</text>
     <card>
         <name>Heimdall Mk III</name>
         <text>When Heimdall Mk III enters the battlefield, attach it to target creature you control.
-Equipped creature gets +4/+4 and has flying, first strike, and lifelink.
+Equipped creature gets +4/+4 and has flying and lifelink.
 Equip 6</text>
         <prop>
             <layout>normal</layout>
@@ -2289,7 +2289,7 @@ Reconstitute (When this creature dies, reveal cards from the top of your library
     <card>
         <name>Sink into the Oceans</name>
         <text>Enchant permanent
-When Sink into the Oceans is put into a graveyard from the battlefield, each opponent discards two cards.</text>
+When Sink into the Oceans is put into a graveyard from the battlefield, target player discards two cards. You gain 2 life for each land card discarded this way.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -2321,7 +2321,7 @@ When Sink into the Oceans is put into a graveyard from the battlefield, each opp
     </card>
     <card>
         <name>The Tartarus</name>
-        <text>Flying, deathtouch
+        <text>Flying, menace
 Whenever The Tartarus enters the battlefield or attacks, you may put target creature card from a graveyard onto the battlefield under your control.</text>
         <prop>
             <layout>normal</layout>
@@ -3104,7 +3104,7 @@ Teleport 1R (You may cast this card for its teleport cost while you’re looking
     </card>
     <card>
         <name>Walking Furnace</name>
-        <text>Whenever you sacrifice Walking Furnace or another artifact, you may pay 2. When you do, scry 2 and Walking Furnace deals 2 damage to any target.</text>
+        <text>Whenever you sacrifice another artifact, you may pay 2. When you do, scry 2 and Walking Furnace deals 2 damage to any target.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
