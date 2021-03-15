@@ -97,7 +97,10 @@ export default function SingleDraft({ loggedInUser }) {
                                         <LoadingSpinner />
                                     </div>
                                 ) : boosterCards === null ? (
-                                    <RefreshButtonView getDraft={getDraft} className={`cards-${CARDS_IN_PACK + 1 - (pickNumber || 1)}`} />
+                                    <RefreshButtonView
+                                        getDraft={getDraft}
+                                        className={`cards-${CARDS_IN_PACK + 1 - (pickNumber || 1)}`}
+                                    />
                                 ) : (
                                     <BoosterView
                                         cards={boosterCards}
