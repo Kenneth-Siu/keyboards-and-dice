@@ -108,19 +108,20 @@
         <tablerow>2</tablerow>
     </card>
     <card>
-        <name>Mutant</name>
-        <text></text>
+        <name>Kushak Propagator</name>
+        <text>When this creature dies, create three 1/1 green Kushak Scion creature tokens. They have “Sacrifice this creature: Add C.”</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Token Creature — Mutant </type>
+            <type>Token Creature — Kushak Propagator </type>
             <maintype>Token Creature</maintype>
             <manacost></manacost>
             <cmc>0</cmc>
             <coloridentity>G</coloridentity>
-            <pt>6/6</pt>
+            <pt>2/2</pt>
         </prop>
-        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Mutant.jpg">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Kushak%20Propagator.jpg">T2170</set>
+        <related count="3">Kushak Scion</related>
         <token>1</token>
         <tablerow>2</tablerow>
     </card>
@@ -141,20 +142,19 @@
         <tablerow>3</tablerow>
     </card>
     <card>
-        <name>Xeno Propagator</name>
-        <text>When this creature dies, create three 1/1 green Xeno Scion creature tokens. They have “Sacrifice this creature: Add C.”</text>
+        <name>Kushak Scion</name>
+        <text>Sacrifice this creature: Add C.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Token Creature — Xeno Propagator </type>
+            <type>Token Creature — Kushak Scion </type>
             <maintype>Token Creature</maintype>
             <manacost></manacost>
             <cmc>0</cmc>
             <coloridentity>G</coloridentity>
-            <pt>2/2</pt>
+            <pt>1/1</pt>
         </prop>
-        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Xeno%20Propagator.jpg">T2170</set>
-        <related count="3">Xeno Scion</related>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Kushak%20Scion.jpg">T2170</set>
         <token>1</token>
         <tablerow>2</tablerow>
     </card>
@@ -177,19 +177,19 @@
         <tablerow>2</tablerow>
     </card>
     <card>
-        <name>Xeno Scion</name>
-        <text>Sacrifice this creature: Add C.</text>
+        <name>Mutant</name>
+        <text></text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Token Creature — Xeno Scion </type>
+            <type>Token Creature — Mutant </type>
             <maintype>Token Creature</maintype>
             <manacost></manacost>
             <cmc>0</cmc>
             <coloridentity>G</coloridentity>
-            <pt>1/1</pt>
+            <pt>6/6</pt>
         </prop>
-        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Xeno%20Scion.jpg">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Mutant.jpg">T2170</set>
         <token>1</token>
         <tablerow>2</tablerow>
     </card>
@@ -500,8 +500,8 @@ Equip 6</text>
     <card>
         <name>Helios Comms Satellite</name>
         <text>Flying
-At the beginning of your upkeep, put a charge counter on Helios Comms Satellite.
-Remove three charge counters from Helios Comms Satellite: Until end of turn, creatures you control get +1/+1 or gain your choice of first strike, vigilance, or lifelink.</text>
+At the beginning of your upkeep, if Helios Comms Satellite has one or fewer charge counters on it, put a charge counter on Helios Comms Satellite.
+Remove two charge counters from Helios Comms Satellite: Until end of turn, creatures you control get +1/+1 or gain your choice of first strike, vigilance, or lifelink.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -1255,7 +1255,7 @@ Guidance Pods gets +1/+0 as long as there are two or more instants and/or sorcer
             <cmc>1</cmc>
             <colors>U</colors>
             <coloridentity>U</coloridentity>
-            <pt>1/2</pt>
+            <pt>1/1</pt>
         </prop>
         <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Guidance%20Pods.jpg">T2170</set>
         <tablerow>2</tablerow>
@@ -1320,7 +1320,7 @@ Reconstitute (When this creature dies, reveal cards from the top of your library
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Creature — Xeno Mutant </type>
+            <type>Creature — Kushak Mutant </type>
             <maintype>Creature</maintype>
             <manacost>5U</manacost>
             <cmc>6</cmc>
@@ -2116,8 +2116,8 @@ Creatures you control can’t attack unless exactly two creatures attack.</text>
     <card>
         <name>Peacekeeper Satellite</name>
         <text>Flying
-At the beginning of your upkeep, put a charge counter on Peacekeeper Satellite.
-Remove three charge counters from Peacekeeper Satellite: Destroy target creature that dealt or was dealt damage this turn.</text>
+At the beginning of your upkeep, if Peacekeeper Satellite has one or fewer charge counters on it, put a charge counter on Peacekeeper Satellite.
+Remove two charge counters from Peacekeeper Satellite: Destroy target creature that dealt or was dealt damage this turn.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -3259,7 +3259,7 @@ Reconstitute</text>
     </card>
     <card>
         <name>Basirah Composite</name>
-        <text>Whenever Basirah Composite attacks, create two 1/1 green Xeno Scion creature tokens. They have “Sacrifice this creature: Add C.”</text>
+        <text>Whenever Basirah Composite attacks, create two 1/1 green Kushak Scion creature tokens. They have “Sacrifice this creature: Add C.”</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -3272,7 +3272,7 @@ Reconstitute</text>
             <pt>4/4</pt>
         </prop>
         <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Basirah%20Composite.jpg">T2170</set>
-        <related count="2">Xeno Scion</related>
+        <related count="2">Kushak Scion</related>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -3281,7 +3281,7 @@ Reconstitute</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Creature — Xeno Researcher </type>
+            <type>Creature — Kushak Researcher </type>
             <maintype>Creature</maintype>
             <manacost>1G</manacost>
             <cmc>2</cmc>
@@ -3311,8 +3311,8 @@ Reconstitute</text>
     </card>
     <card>
         <name>Brood Ambush</name>
-        <text>Create two 1/1 green Xeno Scion creature tokens. They have “Sacrifice this creature: Add C.”
-Each creature you control that’s a Mutant or a Xeno gets +1/+1 until end of turn.</text>
+        <text>Create two 1/1 green Kushak Scion creature tokens. They have “Sacrifice this creature: Add C.”
+Each creature you control that’s a Kushak or Mutant gets +1/+1 until end of turn.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -3324,7 +3324,7 @@ Each creature you control that’s a Mutant or a Xeno gets +1/+1 until end of tu
             <coloridentity>G</coloridentity>
         </prop>
         <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Brood%20Ambush.jpg">T2170</set>
-        <related count="2">Xeno Scion</related>
+        <related count="2">Kushak Scion</related>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -3452,7 +3452,7 @@ Teleport 3G (You may cast this card for its teleport cost while you’re looking
     </card>
     <card>
         <name>Gestation Cycle</name>
-        <text>Look at the top four cards of your library. You may reveal a Mutant, Xeno, or land card from among them and put it into your hand. Put the rest on the bottom of your library in any order.</text>
+        <text>Look at the top four cards of your library. You may reveal a Kushak, Mutant, or land card from among them and put it into your hand. Put the rest on the bottom of your library in any order.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -3503,11 +3503,11 @@ Enchanted creature gets +6/+6 and has reach.</text>
     </card>
     <card>
         <name>Incubation Hulk</name>
-        <text>When Incubation Hulk dies, create three 2/2 green Xeno Propagator creature tokens with “When this creature dies, create three 1/1 green Xeno Scion creature tokens. They have ‘Sacrifice this creature: Add C.’”</text>
+        <text>When Incubation Hulk dies, create three 2/2 green Kushak Propagator creature tokens with “When this creature dies, create three 1/1 green Kushak Scion creature tokens. They have ‘Sacrifice this creature: Add C.’”</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Creature — Xeno Incubator </type>
+            <type>Creature — Kushak Incubator </type>
             <maintype>Creature</maintype>
             <manacost>5GG</manacost>
             <cmc>7</cmc>
@@ -3516,13 +3516,13 @@ Enchanted creature gets +6/+6 and has reach.</text>
             <pt>4/4</pt>
         </prop>
         <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Incubation%20Hulk.jpg">T2170</set>
-        <related count="3">Xeno Propagator</related>
+        <related count="3">Kushak Propagator</related>
         <tablerow>2</tablerow>
     </card>
     <card>
         <name>The Kishar</name>
         <text>Flying, trample
-Whenever The Kishar enters the battlefield or attacks, create three 1/1 green Xeno Scion creature tokens. They have “Sacrifice this creature: Add C.”</text>
+Whenever The Kishar enters the battlefield or attacks, create three 1/1 green Kushak Scion creature tokens. They have “Sacrifice this creature: Add C.”</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -3535,16 +3535,16 @@ Whenever The Kishar enters the battlefield or attacks, create three 1/1 green Xe
             <pt>6/6</pt>
         </prop>
         <set rarity="mythic rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/The%20Kishar.jpg">T2170</set>
-        <related count="3">Xeno Scion</related>
+        <related count="3">Kushak Scion</related>
         <tablerow>2</tablerow>
     </card>
     <card>
         <name>Kushak Brood Warden</name>
-        <text>2, T, Sacrifice a creature: Create two 1/1 green Xeno Scion creature tokens. They have “Sacrifice this creature: Add C.”</text>
+        <text>2, T, Sacrifice a creature: Create two 1/1 green Kushak Scion creature tokens. They have “Sacrifice this creature: Add C.”</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Creature — Xeno Propagator </type>
+            <type>Creature — Kushak Propagator </type>
             <maintype>Creature</maintype>
             <manacost>3G</manacost>
             <cmc>4</cmc>
@@ -3553,7 +3553,7 @@ Whenever The Kishar enters the battlefield or attacks, create three 1/1 green Xe
             <pt>3/3</pt>
         </prop>
         <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Kushak%20Brood%20Warden.jpg">T2170</set>
-        <related count="2">Xeno Scion</related>
+        <related count="2">Kushak Scion</related>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -3591,14 +3591,15 @@ Teleport 0 (You may cast this card for its teleport cost while you’re looking 
     </card>
     <card>
         <name>Kushak Research Council</name>
-        <text>Whenever Kushak Research Council or another Mutant or Xeno you control dies, put a +1/+1 counter on each creature you control that’s a Mutant or a Xeno.</text>
+        <text>Whenever Kushak Research Council or another Kushak creature or Mutant creature you control dies, put a +1/+1 counter on each creature you control that’s a Kushak or Mutant.
+Reconstitute (When this creature dies, reveal cards from the top of your library until you reveal a creature card that costs less. Put that card onto the battlefield and the rest on the bottom of your library in a random order.)</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Creature — Xeno Researcher Advisor </type>
+            <type>Creature — Kushak Researcher Advisor </type>
             <maintype>Creature</maintype>
-            <manacost>2GG</manacost>
-            <cmc>4</cmc>
+            <manacost>4G</manacost>
+            <cmc>5</cmc>
             <colors>G</colors>
             <coloridentity>G</coloridentity>
             <pt>3/3</pt>
@@ -3609,12 +3610,12 @@ Teleport 0 (You may cast this card for its teleport cost while you’re looking 
     <card>
         <name>Kushak Subject Prime</name>
         <text>Reach
-Each other creature you control that’s a Mutant or a Xeno gets +1/+1.
-3G: Create a 1/1 green Xeno Scion creature token. It has “Sacrifice this creature: Add C.”</text>
+Each other creature you control that’s a Kushak or Mutant gets +1/+1.
+3G: Create a 1/1 green Kushak Scion creature token. It has “Sacrifice this creature: Add C.”</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Creature — Xeno Mutant </type>
+            <type>Creature — Kushak Mutant </type>
             <maintype>Creature</maintype>
             <manacost>5GG</manacost>
             <cmc>7</cmc>
@@ -3623,7 +3624,7 @@ Each other creature you control that’s a Mutant or a Xeno gets +1/+1.
             <pt>6/6</pt>
         </prop>
         <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Kushak%20Subject%20Prime.jpg">T2170</set>
-        <related>Xeno Scion</related>
+        <related>Kushak Scion</related>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -3787,7 +3788,7 @@ Reconstitute (When this creature dies, reveal cards from the top of your library
     <card>
         <name>Spawning Site</name>
         <text>3: Put a spawn counter on Spawning Site.
-G, Sacrifice Spawning Site: Create a 1/1 green Xeno Scion creature token for each spawn counter on Spawning Site. They have “Sacrifice this creature: Add C.”</text>
+G, Sacrifice Spawning Site: Create a 1/1 green Kushak Scion creature token for each spawn counter on Spawning Site. They have “Sacrifice this creature: Add C.”</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -3799,7 +3800,7 @@ G, Sacrifice Spawning Site: Create a 1/1 green Xeno Scion creature token for eac
             <coloridentity>G</coloridentity>
         </prop>
         <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Spawning%20Site.jpg">T2170</set>
-        <related count="x">Xeno Scion</related>
+        <related count="x">Kushak Scion</related>
         <tablerow>1</tablerow>
     </card>
     <card>
@@ -4403,11 +4404,11 @@ Flying
             <side>front</side>
             <type>Legendary Planeswalker — Umida </type>
             <maintype>Legendary Planeswalker</maintype>
-            <manacost>1BGU</manacost>
-            <cmc>4</cmc>
+            <manacost>XBGU</manacost>
+            <cmc>3</cmc>
             <colors>BGU</colors>
             <coloridentity>BGU</coloridentity>
-            <loyalty>3</loyalty>
+            <loyalty>X</loyalty>
         </prop>
         <set rarity="mythic rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Umida%20Koto.jpg">T2170</set>
         <tablerow>1</tablerow>
@@ -4495,8 +4496,8 @@ Sacrifice Faraday Transmitter: Return target artifact to its owner’s hand.</te
     <card>
         <name>Gravitic Collector</name>
         <text>Flying
-At the beginning of your upkeep, put a charge counter on Gravitic Collector.
-Remove three charge counters from Gravitic Collector: Target creature gains flying until end of turn.</text>
+At the beginning of your upkeep, if Gravitic Collector has one or fewer charge counters on it, put a charge counter on Gravitic Collector.
+Remove two charge counters from Gravitic Collector: Target creature gains flying until end of turn.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -4504,7 +4505,6 @@ Remove three charge counters from Gravitic Collector: Target creature gains flyi
             <maintype>Artifact Creature</maintype>
             <manacost>3</manacost>
             <cmc>3</cmc>
-            <coloridentity>UR</coloridentity>
             <pt>2/2</pt>
         </prop>
         <set rarity="rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Gravitic%20Collector.jpg">T2170</set>
@@ -4664,7 +4664,7 @@ You may reveal Mutagenic Serum from your opening hand. If you do and you have fe
         <name>Subspace Capacitor</name>
         <text>1: Put a charge counter on Subspace Capacitor.
 Remove a charge counter from Subspace Capacitor: Add one mana of any color. Spend this mana only to cast spells from your library.
-Whenever you cast a spell from your library, if there are 5 or more charge counters on Subspace Capacitor, you may copy that spell. You may choose new targets for the copy. (A copy of a permanent spell becomes a token.)</text>
+Whenever you cast a spell from your library, if there are five or more charge counters on Subspace Capacitor, you may copy that spell. You may choose new targets for the copy. (A copy of a permanent spell becomes a token.)</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>

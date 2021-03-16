@@ -1181,7 +1181,7 @@ colorIdentity: "U"
         "cost": "5U",
         "manaValue": 6,
         "color": "U",
-        "type": "Creature — Xeno Mutant ",
+        "type": "Creature — Kushak Mutant ",
         "id": 63,
         "rarity": "C",
         "notes": {
@@ -2774,7 +2774,7 @@ colorIdentity: "G"
         "notes": {
 grade: "B-",
 colorIdentity: "G",
-cockatrice_related: "Xeno Scion",
+cockatrice_related: "Kushak Scion",
 cockatrice_related_count: "2"
         }
     },
@@ -2784,7 +2784,7 @@ cockatrice_related_count: "2"
         "cost": "1G",
         "manaValue": 2,
         "color": "G",
-        "type": "Creature — Xeno Researcher ",
+        "type": "Creature — Kushak Researcher ",
         "id": 176,
         "rarity": "R",
         "notes": {
@@ -2818,7 +2818,7 @@ colorIdentity: "G"
         "notes": {
 grade: "C",
 colorIdentity: "G",
-cockatrice_related: "Xeno Scion",
+cockatrice_related: "Kushak Scion",
 cockatrice_related_count: "2"
         }
     },
@@ -2971,13 +2971,13 @@ cockatrice_related: "Mech"
         "cost": "5GG",
         "manaValue": 7,
         "color": "G",
-        "type": "Creature — Xeno Incubator ",
+        "type": "Creature — Kushak Incubator ",
         "id": 189,
         "rarity": "R",
         "notes": {
 grade: "B-",
 colorIdentity: "G",
-cockatrice_related: "Xeno Propagator",
+cockatrice_related: "Kushak Propagator",
 cockatrice_related_count: "3"
         }
     },
@@ -2993,7 +2993,7 @@ cockatrice_related_count: "3"
         "notes": {
 grade: "B+",
 colorIdentity: "G",
-cockatrice_related: "Xeno Scion",
+cockatrice_related: "Kushak Scion",
 cockatrice_related_count: "3"
         }
     },
@@ -3003,13 +3003,13 @@ cockatrice_related_count: "3"
         "cost": "3G",
         "manaValue": 4,
         "color": "G",
-        "type": "Creature — Xeno Propagator ",
+        "type": "Creature — Kushak Propagator ",
         "id": 191,
         "rarity": "U",
         "notes": {
 grade: "B-",
 colorIdentity: "G",
-cockatrice_related: "Xeno Scion",
+cockatrice_related: "Kushak Scion",
 cockatrice_related_count: "2"
         }
     },
@@ -3044,10 +3044,10 @@ colorIdentity: "G"
     {
         "name": "Kushak Research Council",
         "imageName": _194,
-        "cost": "2GG",
-        "manaValue": 4,
+        "cost": "4G",
+        "manaValue": 5,
         "color": "G",
-        "type": "Creature — Xeno Researcher Advisor ",
+        "type": "Creature — Kushak Researcher Advisor ",
         "id": 194,
         "rarity": "R",
         "notes": {
@@ -3061,13 +3061,13 @@ colorIdentity: "G"
         "cost": "5GG",
         "manaValue": 7,
         "color": "G",
-        "type": "Creature — Xeno Mutant ",
+        "type": "Creature — Kushak Mutant ",
         "id": 195,
         "rarity": "U",
         "notes": {
 grade: "C+",
 colorIdentity: "G",
-cockatrice_related: "Xeno Scion"
+cockatrice_related: "Kushak Scion"
         }
     },
     {
@@ -3208,7 +3208,7 @@ colorIdentity: "G"
         "notes": {
 grade: "C",
 colorIdentity: "G",
-cockatrice_related: "Xeno Scion",
+cockatrice_related: "Kushak Scion",
 cockatrice_related_count: "x"
         }
     },
