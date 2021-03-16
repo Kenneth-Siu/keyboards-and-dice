@@ -6,11 +6,11 @@ import rulesFaqSplash from "../../../../../data/rulesFaqSplash.jpg";
 import downloadsSplash from "../../../../../data/downloadsSplash.jpg";
 import "./Home.scss";
 
-export default function Home() {
+export default function TerraHome() {
     return (
         <>
             <title>Terra 2170</title>
-            <main className="home-page">
+            <main className="terra-home-page">
                 <div className="card-image-gallery tile">
                     <div className="splash">
                         <img className="splashImage" src={cardImageGallerySplash} />

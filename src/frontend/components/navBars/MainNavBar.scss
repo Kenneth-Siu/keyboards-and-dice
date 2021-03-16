@@ -1,18 +1,15 @@
 @import "../colors.scss";
 @import "../responsive.scss";
 
-$navbar-small-height: 4rem;
-$navbar-medium-height: 4rem;
-$navbar-large-height: 3rem;
+$main-navbar-small-height: 4rem;
+$main-navbar-medium-height: 4rem;
+$main-navbar-large-height: 3rem;
 
 .main-nav-bar {
-    z-index: 100;
-    display: block;
-    position: fixed;
-    width: 100%;
+    position: relative;
     overflow: hidden;
     background-color: $color-1;
-    @include responsive(height, $navbar-small-height, $navbar-medium-height, $navbar-large-height);
+    @include responsive(height, $main-navbar-small-height, $main-navbar-medium-height, $main-navbar-large-height);
 
     .background-image {
         margin: -6px;

@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import TerraSymbol from "../../../../../data/terraSymbol.svg";
+import TerraSymbol from "../../../../data/terraSymbol.svg";
 import "./NotFound.scss";
 
-export default function TerraNotFound() {
+export default function NotFound() {
     return (
         <>
             <title>Page Not Found · Terra 2170</title>
-            <main className="terra-not-found-page">
+            <main className="not-found-page">
                 <Link to="/terra">
                     <TerraSymbol />
                 </Link>

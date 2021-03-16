@@ -1,20 +1,20 @@
-@import "../../../components/responsive.scss";
-@import "../../../components/colors.scss";
-@import "../../../components/navBars/TerraNavBar.scss";
+@import "../../components/responsive.scss";
+@import "../../components/colors.scss";
+@import "../../components/navBars/MainNavBar.scss";
 
-.terra-home-page {
+.home-page {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    @include terraNavBarPageTopPadding;
-    @include responsive(height, auto, 100vh);
+    @include responsive(height, auto, calc(100vh - #{$main-navbar-medium-height}), calc(100vh - #{$main-navbar-large-height}));
 
     .tile {
-        min-height: calc((100vh - 4rem) / 2);
-        @include responsive(width, 100%, 50%);
+        @include responsive(min-height, calc((100vh - #{$main-navbar-small-height}) / 2), auto);
+        @include responsive(width, 100vw, auto);
+        flex-grow: 1;
         justify-content: center;
         position: relative;
-        background-color: black;
+        background-color: $color-1;
         display: flex;
         align-items: center;
     }
@@ -77,7 +77,7 @@
         }
     }
 
-    .card-image-gallery {
+    .terra {
         color: $color-3-light;
 
         a {
@@ -90,7 +90,7 @@
         }
     }
 
-    .faq {
+    .darkham {
         color: $color-4-light;
 
         a {
@@ -99,32 +99,6 @@
 
         p a:hover {
             background-color: $color-4-light;
-            color: $color-1;
-        }
-    }
-
-    .draft {
-        color: $color-5-light;
-
-        a {
-            color: $color-5-light;
-        }
-
-        p a:hover {
-            background-color: $color-5-light;
-            color: $color-1;
-        }
-    }
-
-    .downloads {
-        color: $color-6-light;
-
-        a {
-            color: $color-6-light;
-        }
-
-        p a:hover {
-            background-color: $color-6-light;
             color: $color-1;
         }
     }
