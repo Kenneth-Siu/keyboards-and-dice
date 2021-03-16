@@ -6,7 +6,7 @@ import "./NotFound.scss";
 export default function NotFound() {
     return (
         <>
-            <title>Page Not Found · Terra 2170</title>
+            <title>Page Not Found · Keyboards &amp; Dice</title>
             <main className="not-found-page">
                 <Link to="/">
                     <TerraSymbol />

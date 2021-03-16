@@ -1,0 +1,132 @@
+@import "../../../components/responsive.scss";
+@import "../../../components/colors.scss";
+@import "../../../components/navBars/TerraNavBar.scss";
+
+.home-page {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    @include navBarPageTopPadding;
+    @include responsive(height, auto, 100vh);
+
+    .tile {
+        // @include responsive(min-height, calc((100vh - 4rem) / 2), auto);
+        min-height: calc((100vh - 4rem) / 2);
+        @include responsive(width, 100%, 50%);
+        justify-content: center;
+        position: relative;
+        background-color: black;
+        display: flex;
+        align-items: center;
+    }
+
+    .splash {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: $color-1;
+
+        .splashImage {
+            margin: -6px;
+            width: calc(100% + 12px);
+            height: calc(100% + 12px);
+            object-fit: cover;
+            filter: blur(4px) brightness(0.4);
+        }
+    }
+
+    .content {
+        position: relative;
+        max-width: 480px;
+        margin: 2.8rem;
+        line-height: 1.2;
+
+        h1 {
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+
+            a {
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        p {
+            font-style: italic;
+            font-weight: 200;
+            margin-bottom: 0.5rem;
+
+            &.link {
+                margin-top: 1.2rem;
+            }
+
+            em {
+                font-style: normal;
+            }
+
+            a {
+                font-style: normal;
+                font-weight: 600;
+                text-decoration: none;
+                padding: 0.3rem;
+            }
+        }
+    }
+
+    .card-image-gallery {
+        color: $color-3-light;
+
+        a {
+            color: $color-3-light;
+        }
+
+        p a:hover {
+            background-color: $color-3-light;
+            color: $color-1;
+        }
+    }
+
+    .faq {
+        color: $color-4-light;
+
+        a {
+            color: $color-4-light;
+        }
+
+        p a:hover {
+            background-color: $color-4-light;
+            color: $color-1;
+        }
+    }
+
+    .draft {
+        color: $color-5-light;
+
+        a {
+            color: $color-5-light;
+        }
+
+        p a:hover {
+            background-color: $color-5-light;
+            color: $color-1;
+        }
+    }
+
+    .downloads {
+        color: $color-6-light;
+
+        a {
+            color: $color-6-light;
+        }
+
+        p a:hover {
+            background-color: $color-6-light;
+            color: $color-1;
+        }
+    }
+}

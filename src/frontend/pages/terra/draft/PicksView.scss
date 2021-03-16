@@ -1,0 +1,17 @@
+@import "../../../components/colors.scss";
+@import "./Draft.scss";
+
+.picks-view {
+    position: relative;
+    
+    h2 {
+        @include draft-view-h2;
+        margin: 0;
+        width: 15rem;
+    }
+
+    .picks-heading {
+        @include draft-heading-div;
+        margin: 1rem 0;
+    }
+}
