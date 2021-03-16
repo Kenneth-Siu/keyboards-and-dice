@@ -3,7 +3,7 @@
 @import "../../../components/navBars/TerraNavBar.scss";
 
 .card-image-gallery-page {
-    @include navBarPageTopPadding;
+    @include terraNavBarPageTopPadding;
     @include responsive(padding-bottom, 4rem, 2.5rem);
     @include responsive(width, 100%, 100%, $large-container-width);
     @include responsive(margin, 0, 0 auto);

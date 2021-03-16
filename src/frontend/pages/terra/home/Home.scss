@@ -6,7 +6,7 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    @include navBarPageTopPadding;
+    @include terraNavBarPageTopPadding;
     @include responsive(height, auto, 100vh);
 
     .tile {

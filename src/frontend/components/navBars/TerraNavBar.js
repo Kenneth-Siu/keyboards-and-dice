@@ -7,16 +7,10 @@ import "./TerraNavBar.scss";
 export default function TerraNavBar() {
     const pathname = useLocation().pathname;
     return (
-        <nav className="nav-bar">
+        <nav className="terra-nav-bar">
             <img className="background-image" src={terraSplashImage} />
             <ul>
-                <li className="keyboards-and-dice">
-                    <Link to="/">⌨ K&amp;D</Link>
-                    <Link to="/" className="abbreviated" aria-hidden>
-                        ⌨ K&amp;D
-                    </Link>
-                </li>
-                <li className="home">
+                <li className="terra-home">
                     <Link to="/terra">
                         <CommonSetSymbol /> Terra 2170
                     </Link>

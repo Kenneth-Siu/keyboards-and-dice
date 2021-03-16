@@ -1,9 +1,9 @@
 import React from "react";
 import "./Login.scss";
-import TerraSymbol from "../../../../data/terraSymbol.svg";
-import GoogleLogo from "../../../../data/googleIcon.svg";
-import FacebookLogo from "../../../../data/facebookIcon.svg";
-import GithubLogo from "../../../../data/githubIcon.svg";
+import TerraSymbol from "../../../../../data/terraSymbol.svg";
+import GoogleLogo from "../../../../../data/googleIcon.svg";
+import FacebookLogo from "../../../../../data/facebookIcon.svg";
+import GithubLogo from "../../../../../data/githubIcon.svg";
 
 export default function Login() {
     return (

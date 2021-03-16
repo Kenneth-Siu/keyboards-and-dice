@@ -1,8 +1,8 @@
-@import "../../components/responsive.scss";
-@import "../../components/navBars/TerraNavBar.scss";
+@import "../../../components/responsive.scss";
+@import "../../../components/navBars/TerraNavBar.scss";
 
 .not-found-page {
-    @include navBarPageTopPadding;
+    @include terraNavBarPageTopPadding;
     @include container;
     text-align: center;
 

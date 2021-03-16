@@ -29,10 +29,10 @@ app.use(passport.initialize());
 app.use((err, req, res, next) => {
     if (err) {
         req.logout();
-        if (!req.originalUrl === "/login") {
+        if (!req.originalUrl === "/terra/login") {
             next();
         } else {
-            res.redirect("/login");
+            res.redirect("/terra/login");
         }
     } else {
         next();

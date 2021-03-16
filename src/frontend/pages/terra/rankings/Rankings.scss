@@ -2,7 +2,7 @@
 @import "../../../components/navBars/TerraNavBar.scss";
 
 .rankings-page {
-    @include navBarPageTopPadding;
+    @include terraNavBarPageTopPadding;
     @include responsive(padding-bottom, 4rem, 2.5rem);
     width: 98%;
     margin-left: 1%;

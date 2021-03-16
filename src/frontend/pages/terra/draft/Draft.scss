@@ -99,7 +99,7 @@
 }
 
 .single-draft-page {
-    @include navBarPageTopPadding;
+    @include terraNavBarPageTopPadding;
     padding-bottom: 0.5rem;
     position: relative;
     text-align: center;

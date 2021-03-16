@@ -1,33 +1,22 @@
 @import "../colors.scss";
 @import "../responsive.scss";
-@import "./SmallMainNavBar.scss";
 
-$terra-navbar-small-height: 4rem;
-$terra-navbar-medium-height: 4rem;
-$terra-navbar-large-height: 3rem;
+$navbar-small-height: 4rem;
+$navbar-medium-height: 4rem;
+$navbar-large-height: 3rem;
 
-@mixin terraNavBarPageTopPadding {
-    @include responsive(
-        padding-top,
-        $small-main-navbar-height + $terra-navbar-small-height,
-        $small-main-navbar-height + $terra-navbar-medium-height,
-        $small-main-navbar-height + $terra-navbar-large-height
-    );
-}
-
-.terra-nav-bar {
+.main-nav-bar {
     z-index: 100;
     display: block;
     position: fixed;
-    @include responsive(top, $small-main-navbar-height, $small-main-navbar-height, $small-main-navbar-height);
     width: 100%;
     overflow: hidden;
     background-color: $color-1;
-    @include responsive(height, $terra-navbar-small-height, $terra-navbar-medium-height, $terra-navbar-large-height);
+    @include responsive(height, $navbar-small-height, $navbar-medium-height, $navbar-large-height);
 
     .background-image {
         margin: -6px;
-        filter: blur(4px) brightness(0.4);
+        filter: blur(4px) grayscale(0.6) contrast(0.3) brightness(0.35);
         width: calc(100% + 12px);
         height: calc(100% + 12px);
         object-fit: cover;
@@ -50,9 +39,9 @@ $terra-navbar-large-height: 3rem;
         text-decoration: none;
     }
 
-    .terra-home {
+    .home {
         flex-grow: 1;
-        @include responsive(width, calc(100%), calc(100%), auto);
+        @include responsive(width, calc(100% - 4rem), calc(100% - 4rem), auto);
 
         svg {
             position: absolute;
@@ -78,7 +67,7 @@ $terra-navbar-large-height: 3rem;
         }
     }
 
-    li:not(.terra-home) a {
+    li:not(.home) a {
         position: relative;
         font-weight: 500;
         text-transform: uppercase;
@@ -98,8 +87,8 @@ $terra-navbar-large-height: 3rem;
         }
     }
 
-    li.is-current-page a::after,
-    li:not(.terra-home) a:hover::after {
+    a.is-current-page::after,
+    li:not(.home) a:hover::after {
         content: "";
         position: absolute;
         top: 100%;
@@ -110,17 +99,7 @@ $terra-navbar-large-height: 3rem;
         border-bottom-style: solid;
     }
 
-    .keyboards-and-dice a {
-        color: $color-2;
-        font-weight: 700;
-        font-size: 1.2rem;
-
-        &::after {
-            border-bottom-color: $color-2;
-        }
-    }
-
-    .card-image-gallery a {
+    .terra a {
         color: $color-3-light;
 
         &::after {
@@ -128,27 +107,11 @@ $terra-navbar-large-height: 3rem;
         }
     }
 
-    .faq a {
+    .darkham a {
         color: $color-4-light;
 
         &::after {
             border-bottom-color: $color-4-light;
-        }
-    }
-
-    .draft a {
-        color: $color-5-light;
-
-        &::after {
-            border-bottom-color: $color-5-light;
-        }
-    }
-
-    .downloads a {
-        color: $color-6-light;
-
-        &::after {
-            border-bottom-color: $color-6-light;
         }
     }
 }

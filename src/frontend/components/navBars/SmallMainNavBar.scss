@@ -1,0 +1,108 @@
+@import "../colors.scss";
+@import "../responsive.scss";
+
+$small-main-navbar-height: 1.5rem;
+
+.small-main-nav-bar {
+    z-index: 100;
+    display: block;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    background-color: $color-1;
+    height: $small-main-navbar-height;
+
+    .background-image {
+        margin: -6px;
+        filter: blur(4px) grayscale(0.6) contrast(0.3) brightness(0.35);
+        width: calc(100% + 12px);
+        height: calc(100% + 12px);
+        object-fit: cover;
+        position: absolute;
+    }
+
+    ul {
+        position: relative;
+        display: flex;
+        @include container;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .home {
+        flex-grow: 1;
+
+        svg {
+            position: absolute;
+            height: 0.9rem;
+            width: 1.25rem;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0.5rem;
+        }
+
+        a {
+            position: relative;
+            color: $color-2;
+            font-weight: 700;
+            font-size: 0.7rem;
+            height: 100%;
+            padding: 0.45rem 0.4rem 0.45rem 2rem;
+        }
+    }
+
+    li:not(.home) a {
+        position: relative;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        padding: 0.4rem 0.4rem;
+
+        &.abbreviated {
+            display: none;
+        }
+        @media (max-width: 405px) {
+            &:not(.abbreviated) {
+                display: none;
+            }
+            &.abbreviated {
+                display: inline;
+            }
+        }
+    }
+
+    a.is-current-page::after,
+    li:not(.home) a:hover::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        transform: translateY(-3px);
+        border-bottom-width: 4px;
+        border-bottom-style: solid;
+    }
+
+    .terra a {
+        color: $color-3-light;
+
+        &::after {
+            border-bottom-color: $color-3-light;
+        }
+    }
+
+    .darkham a {
+        color: $color-4-light;
+
+        &::after {
+            border-bottom-color: $color-4-light;
+        }
+    }
+}
