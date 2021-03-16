@@ -3,7 +3,6 @@
 @import "../../../components/navBars/TerraNavBar.scss";
 
 .login-page {
-    @include terraNavBarPageTopPadding;
     @include container;
     padding-right: 0.3rem;
     padding-left: 0.3rem;

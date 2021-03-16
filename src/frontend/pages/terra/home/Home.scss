@@ -1,16 +1,26 @@
 @import "../../../components/responsive.scss";
 @import "../../../components/colors.scss";
+@import "../../../components/navBars/SmallMainNavBar.scss";
 @import "../../../components/navBars/TerraNavBar.scss";
 
 .terra-home-page {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    @include terraNavBarPageTopPadding;
-    @include responsive(height, auto, 100vh);
+    @include responsive(
+        height,
+        auto,
+        calc(100vh - #{$terra-navbar-medium-height + $small-main-navbar-height}),
+        calc(100vh - #{$terra-navbar-large-height + $small-main-navbar-height})
+    );
 
     .tile {
-        min-height: calc((100vh - 4rem) / 2);
+        @include responsive(
+            min-height,
+            calc((100vh - #{$terra-navbar-small-height + $small-main-navbar-height}) / 2),
+            calc((100vh - #{$terra-navbar-medium-height + $small-main-navbar-height}) / 2),
+            calc((100vh - #{$terra-navbar-large-height + $small-main-navbar-height}) / 2)
+        );
         @include responsive(width, 100%, 50%);
         justify-content: center;
         position: relative;

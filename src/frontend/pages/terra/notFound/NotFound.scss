@@ -2,7 +2,6 @@
 @import "../../../components/navBars/TerraNavBar.scss";
 
 .terra-not-found-page {
-    @include terraNavBarPageTopPadding;
     @include container;
     text-align: center;
 

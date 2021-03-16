@@ -3,7 +3,6 @@
 @import "../../../components/navBars/TerraNavBar.scss";
 
 .downloads-page {
-    @include terraNavBarPageTopPadding;
     @include container;
     line-height: 1.2;
     padding-right: 0.3rem;
