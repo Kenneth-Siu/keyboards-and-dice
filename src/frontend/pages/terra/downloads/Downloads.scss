@@ -4,7 +4,7 @@
 @import "../../../components/navBars/TerraNavBar.scss";
 
 .downloads-page {
-    @include blurred-page-background(0.15);
+    @include blurred-page-background(0.2);
 
     .container {
         @include container;
