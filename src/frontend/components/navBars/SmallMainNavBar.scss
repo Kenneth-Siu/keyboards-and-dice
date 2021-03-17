@@ -1,22 +1,13 @@
 @import "../colors.scss";
+@import "../mixins.scss";
 @import "../responsive.scss";
 
 $small-main-navbar-height: 1.5rem;
 
 .small-main-nav-bar {
     position: relative;
-    overflow: hidden;
-    background-color: $color-1;
     height: $small-main-navbar-height;
-
-    .background-image {
-        margin: -6px;
-        filter: blur(4px) grayscale(0.6) contrast(0.3) brightness(0.35);
-        width: calc(100% + 12px);
-        height: calc(100% + 12px);
-        object-fit: cover;
-        position: absolute;
-    }
+    @include blurred-background-image(0.2);
 
     ul {
         position: relative;
@@ -47,7 +38,7 @@ $small-main-navbar-height: 1.5rem;
 
         a {
             position: relative;
-            color: $color-2;
+            color: $color-1;
             font-weight: 700;
             font-size: 0.7rem;
             height: 100%;

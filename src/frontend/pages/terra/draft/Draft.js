@@ -15,6 +15,7 @@ import copy from "copy-to-clipboard";
 import { BoosterView } from "./BoosterView";
 import { RefreshButtonView } from "./WaitingOnBoosterView";
 import { PillButton } from "../../../components/pillButton/PillButton.js";
+import draftSplash from "../../../../../data/draftSplash.jpg";
 
 export default function SingleDraft({ loggedInUser }) {
     const { draftId } = useParams();
@@ -53,37 +54,67 @@ export default function SingleDraft({ loggedInUser }) {
         <>
             <title>Draft · Terra 2170</title>
             <main className="single-draft-page">
-                <h1>Draft{draftStatus === DRAFT_STATUSES.COMPLETE ? " Complete!" : ""}</h1>
-                {!draftLoaded ? (
-                    <LoadingSpinner />
-                ) : (
-                    <>
-                        <div className={`player-list`}>
-                            <PlayerList
-                                players={playersInSeatOrder}
-                                loggedInUser={loggedInUser}
-                                chevronDirection={
-                                    draftStatus === DRAFT_STATUSES.IN_PROGRESS &&
-                                    (packNumber === 2 ? CHEVRON_DIRECTION.RIGHT : CHEVRON_DIRECTION.LEFT)
-                                }
-                            />
-                        </div>
-                        {draftStatus === DRAFT_STATUSES.READY_TO_START && (
-                            <ReadyToStartView
-                                draftId={draftId}
-                                numberOfBots={Math.max(0, DEFAULT_PLAYERS_IN_DRAFT - playersInSeatOrder.length)}
-                                getDraft={getDraft}
-                                startDraftCallback={getDraft}
-                                isOwner={isDraftOwner}
-                            />
-                        )}
-                        {draftStatus === DRAFT_STATUSES.IN_PROGRESS && (
-                            <>
-                                <div className="pack-heading">
-                                    <h2>
-                                        Pack {packNumber}
-                                        {pickNumber !== null ? `, Pick ${pickNumber}` : ""}
-                                    </h2>
+                <div className="background-image-container">
+                    <img className="background-image" src={draftSplash} />
+                </div>
+                <div className="container">
+                    <h1>Draft{draftStatus === DRAFT_STATUSES.COMPLETE ? " Complete!" : ""}</h1>
+                    {!draftLoaded ? (
+                        <LoadingSpinner />
+                    ) : (
+                        <>
+                            <div className={`player-list`}>
+                                <PlayerList
+                                    players={playersInSeatOrder}
+                                    loggedInUser={loggedInUser}
+                                    chevronDirection={
+                                        draftStatus === DRAFT_STATUSES.IN_PROGRESS &&
+                                        (packNumber === 2 ? CHEVRON_DIRECTION.RIGHT : CHEVRON_DIRECTION.LEFT)
+                                    }
+                                />
+                            </div>
+                            {draftStatus === DRAFT_STATUSES.READY_TO_START && (
+                                <ReadyToStartView
+                                    draftId={draftId}
+                                    numberOfBots={Math.max(0, DEFAULT_PLAYERS_IN_DRAFT - playersInSeatOrder.length)}
+                                    getDraft={getDraft}
+                                    startDraftCallback={getDraft}
+                                    isOwner={isDraftOwner}
+                                />
+                            )}
+                            {draftStatus === DRAFT_STATUSES.IN_PROGRESS && (
+                                <>
+                                    <div className="pack-heading">
+                                        <h2>
+                                            Pack {packNumber}
+                                            {pickNumber !== null ? `, Pick ${pickNumber}` : ""}
+                                        </h2>
+                                        <PillButton
+                                            onClick={submitPick}
+                                            className="submit-pick"
+                                            disabled={selectedCardIndex === null}
+                                        >
+                                            Submit Pick
+                                        </PillButton>
+                                    </div>
+                                    {boosterLoading ? (
+                                        <div
+                                            className={`booster-loading cards-${CARDS_IN_PACK + 1 - (pickNumber || 1)}`}
+                                        >
+                                            <LoadingSpinner />
+                                        </div>
+                                    ) : boosterCards === null ? (
+                                        <RefreshButtonView
+                                            getDraft={getDraft}
+                                            className={`cards-${CARDS_IN_PACK + 1 - (pickNumber || 1)}`}
+                                        />
+                                    ) : (
+                                        <BoosterView
+                                            cards={boosterCards}
+                                            selectedCardIndex={selectedCardIndex}
+                                            setSelectedCardIndex={setSelectedCardIndex}
+                                        />
+                                    )}
                                     <PillButton
                                         onClick={submitPick}
                                         className="submit-pick"
@@ -91,61 +122,42 @@ export default function SingleDraft({ loggedInUser }) {
                                     >
                                         Submit Pick
                                     </PillButton>
-                                </div>
-                                {boosterLoading ? (
-                                    <div className={`booster-loading cards-${CARDS_IN_PACK + 1 - (pickNumber || 1)}`}>
-                                        <LoadingSpinner />
-                                    </div>
-                                ) : boosterCards === null ? (
-                                    <RefreshButtonView
-                                        getDraft={getDraft}
-                                        className={`cards-${CARDS_IN_PACK + 1 - (pickNumber || 1)}`}
-                                    />
-                                ) : (
-                                    <BoosterView
-                                        cards={boosterCards}
-                                        selectedCardIndex={selectedCardIndex}
-                                        setSelectedCardIndex={setSelectedCardIndex}
-                                    />
-                                )}
-                                <PillButton
-                                    onClick={submitPick}
-                                    className="submit-pick"
-                                    disabled={selectedCardIndex === null}
-                                >
-                                    Submit Pick
-                                </PillButton>
-                            </>
-                        )}
-                        {draftStatus !== DRAFT_STATUSES.READY_TO_START && (
-                            <PicksView
-                                showDeckbuilderPanels={draftStatus === DRAFT_STATUSES.COMPLETE}
-                                {...{
-                                    draftId,
-                                    picksLoaded,
-                                    setPicksLoaded,
-                                    picks,
-                                    setPicks,
-                                    copyPicksToClipboard,
-                                }}
-                                basicsControlPanel={
-                                    <BasicsControlPanel
-                                        {...{
-                                            draftId,
-                                            basicsLoaded,
-                                            setBasicsLoaded,
-                                            basics,
-                                            setBasics,
-                                        }}
-                                    />
-                                }
-                                totalBasics={
-                                    basics.plains + basics.islands + basics.swamps + basics.mountains + basics.forests
-                                }
-                            />
-                        )}
-                    </>
-                )}
+                                </>
+                            )}
+                            {draftStatus !== DRAFT_STATUSES.READY_TO_START && (
+                                <PicksView
+                                    showDeckbuilderPanels={draftStatus === DRAFT_STATUSES.COMPLETE}
+                                    {...{
+                                        draftId,
+                                        picksLoaded,
+                                        setPicksLoaded,
+                                        picks,
+                                        setPicks,
+                                        copyPicksToClipboard,
+                                    }}
+                                    basicsControlPanel={
+                                        <BasicsControlPanel
+                                            {...{
+                                                draftId,
+                                                basicsLoaded,
+                                                setBasicsLoaded,
+                                                basics,
+                                                setBasics,
+                                            }}
+                                        />
+                                    }
+                                    totalBasics={
+                                        basics.plains +
+                                        basics.islands +
+                                        basics.swamps +
+                                        basics.mountains +
+                                        basics.forests
+                                    }
+                                />
+                            )}
+                        </>
+                    )}
+                </div>
             </main>
         </>
     );

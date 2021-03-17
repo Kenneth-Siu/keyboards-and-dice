@@ -1,4 +1,5 @@
 @import "../colors.scss";
+@import "../mixins.scss";
 @import "../responsive.scss";
 @import "./SmallMainNavBar.scss";
 
@@ -6,20 +7,19 @@ $terra-navbar-small-height: 4rem;
 $terra-navbar-medium-height: 4rem;
 $terra-navbar-large-height: 3rem;
 
+@mixin terraPageHeightMinusMainNavBar {
+    @include responsive(
+        min-height,
+        calc(100vh - #{$small-main-navbar-height + $terra-navbar-small-height}),
+        calc(100vh - #{$small-main-navbar-height + $terra-navbar-medium-height}),
+        calc(100vh - #{$small-main-navbar-height + $terra-navbar-large-height})
+    );
+}
+
 .terra-nav-bar {
     position: relative;
-    overflow: hidden;
-    background-color: $color-1;
     @include responsive(height, $terra-navbar-small-height, $terra-navbar-medium-height, $terra-navbar-large-height);
-
-    .background-image {
-        margin: -6px;
-        filter: blur(4px) brightness(0.4);
-        width: calc(100% + 12px);
-        height: calc(100% + 12px);
-        object-fit: cover;
-        position: absolute;
-    }
+    @include blurred-background-image(0.2);
 
     ul {
         position: relative;
@@ -52,7 +52,7 @@ $terra-navbar-large-height: 3rem;
 
         a {
             position: relative;
-            color: $color-2;
+            color: $color-1;
             font-weight: 700;
             font-size: 1.2rem;
             height: 100%;
@@ -95,16 +95,6 @@ $terra-navbar-large-height: 3rem;
         transform: translateY(-3px);
         border-bottom-width: 4px;
         border-bottom-style: solid;
-    }
-
-    .keyboards-and-dice a {
-        color: $color-2;
-        font-weight: 700;
-        font-size: 1.2rem;
-
-        &::after {
-            border-bottom-color: $color-2;
-        }
     }
 
     .card-image-gallery a {

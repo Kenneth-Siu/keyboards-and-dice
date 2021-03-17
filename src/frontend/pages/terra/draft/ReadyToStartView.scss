@@ -28,6 +28,7 @@
 
         svg {
             display: block;
+            fill: $color-1;
         }
     }
 
@@ -36,7 +37,7 @@
         font-size: 1.4rem;
         font-weight: 600;
         padding: 0.4rem 0.8rem;
-        color: $color-2;
+        color: $color-1;
         background-color: $color-5-strong;
         margin: 0 0.4rem;
     }

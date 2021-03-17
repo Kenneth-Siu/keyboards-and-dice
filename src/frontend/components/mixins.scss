@@ -1,3 +1,5 @@
+@import "./colors.scss";
+
 @mixin button {
     border: none;
     background: none;
@@ -10,6 +12,52 @@
     }
 }
 
+@mixin underlining-link($color: $color-1) {
+    text-decoration: none;
+    color: $color;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+@mixin inverting-link($color: $color-1, $padding: 0.3em, $inverse-color: $color-2) {
+    padding: $padding;
+    text-decoration: none;
+    color: $color;
+
+    &:hover {
+        background-color: $color;
+        color: $inverse-color;
+    }
+}
+
 @mixin card-image {
-    border-radius: 4.1% / 2.91%;
+    border-radius: 4.46% / 3.2%;
+}
+
+@mixin blurred-background-image($brightness: 0.3) {
+    overflow: hidden;
+    background-color: $color-2;
+
+    .background-image {
+        position: absolute;
+        margin: -8px;
+        width: calc(100% + 16px);
+        height: calc(100% + 16px);
+        object-fit: cover;
+        filter: blur(4px) brightness($brightness);
+        pointer-events: none;
+    }
+}
+
+@mixin blurred-page-background($brightness: 0.3) {
+    .background-image-container {
+        @include blurred-background-image($brightness);
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        z-index: -1;
+    }
 }

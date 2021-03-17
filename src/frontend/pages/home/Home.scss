@@ -1,38 +1,24 @@
 @import "../../components/responsive.scss";
 @import "../../components/colors.scss";
+@import "../../components/mixins.scss";
 @import "../../components/navBars/MainNavBar.scss";
 
 .home-page {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    @include responsive(height, auto, calc(100vh - #{$main-navbar-medium-height}), calc(100vh - #{$main-navbar-large-height}));
+    @include pageHeightMinusMainNavBar;
 
     .tile {
+        @include blurred-background-image;
         @include responsive(min-height, calc((100vh - #{$main-navbar-small-height}) / 2), auto);
         @include responsive(width, 100vw, auto);
         flex-grow: 1;
         justify-content: center;
         position: relative;
-        background-color: $color-1;
+        background-color: $color-2;
         display: flex;
         align-items: center;
-    }
-
-    .splash {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        background-color: $color-1;
-
-        .splashImage {
-            margin: -6px;
-            width: calc(100% + 12px);
-            height: calc(100% + 12px);
-            object-fit: cover;
-            filter: blur(4px) brightness(0.4);
-        }
     }
 
     .content {
@@ -45,14 +31,6 @@
             font-weight: 700;
             font-size: 1.5rem;
             margin-bottom: 1rem;
-
-            a {
-                text-decoration: none;
-
-                &:hover {
-                    text-decoration: underline;
-                }
-            }
         }
 
         p {
@@ -71,8 +49,6 @@
             a {
                 font-style: normal;
                 font-weight: 600;
-                text-decoration: none;
-                padding: 0.3rem;
             }
         }
     }
@@ -80,26 +56,24 @@
     .terra {
         color: $color-3-light;
 
-        a {
-            color: $color-3-light;
+        h1 a {
+            @include underlining-link($color-3-light);
         }
 
-        p a:hover {
-            background-color: $color-3-light;
-            color: $color-1;
+        p a {
+            @include inverting-link($color-3-light);
         }
     }
 
     .darkham {
         color: $color-4-light;
 
-        a {
-            color: $color-4-light;
+        h1 a {
+            @include underlining-link($color-4-light);
         }
 
-        p a:hover {
-            background-color: $color-4-light;
-            color: $color-1;
+        p a {
+            @include inverting-link($color-4-light);
         }
     }
 }

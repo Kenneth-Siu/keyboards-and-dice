@@ -3,10 +3,16 @@
 @import "../../../components/navBars/TerraNavBar.scss";
 
 .login-page {
-    @include container;
-    padding-right: 0.3rem;
-    padding-left: 0.3rem;
-    padding-bottom: 0.5rem;
+    @include blurred-page-background;
+
+    .container {
+        @include container;
+        padding-right: 0.3rem;
+        padding-left: 0.3rem;
+        padding-bottom: 0.5rem;
+        position: relative;
+        color: $color-1;
+    }
 
     .terra-symbol {
         @include responsive(display, none, block);
@@ -61,9 +67,9 @@
     }
 
     .google {
-        background-color: white;
-        border-color: rgb(55, 55, 55);
-        color: rgb(55, 55, 55);
+        background: white;
+        border-color: white;
+        color: rgb(60, 60, 60);
     }
 
     .facebook {

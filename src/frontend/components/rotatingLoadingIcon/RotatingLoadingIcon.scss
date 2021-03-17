@@ -2,7 +2,7 @@
 
 .rotating-loading-icon {
     font-size: 10rem;
-    color: darken($color-2, 30%);
+    color: scale-color($color-1, $alpha: -30%);
     animation: rotation 10s infinite linear;
 }
 

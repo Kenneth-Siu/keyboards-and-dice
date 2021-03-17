@@ -4,10 +4,16 @@
 
 .card-image-gallery-page {
     @include responsive(padding-bottom, 4rem, 2.5rem);
-    @include responsive(width, 100%, 100%, $large-container-width);
-    @include responsive(margin, 0, 0 auto);
-    text-align: center;
     position: relative;
+    @include blurred-page-background;
+
+    .container {
+        @include responsive(width, 100%, 100%, $large-container-width);
+        @include responsive(margin, 0, 0 auto);
+        text-align: center;
+        color: $color-1;
+        position: relative;
+    }
 
     h1 {
         font-weight: 700;
@@ -67,16 +73,7 @@
         border-top-left-radius: 0.4rem;
         border-top-right-radius: 0.4rem;
         padding: 0.2rem;
-        overflow: hidden;
-
-        .background-image {
-            margin: -6px;
-            filter: blur(4px) brightness(0.4);
-            width: calc(100% + 12px);
-            height: calc(100% + 12px);
-            object-fit: cover;
-            position: absolute;
-        }
+        @include blurred-background-image;
 
         .color-filters,
         .rarity-filters {
@@ -99,9 +96,9 @@
             margin: 0.1rem;
             @include responsive(padding, 0.25rem 0.4rem, 0.4rem 0.5rem);
             background: none;
-            color: $color-2;
+            color: $color-1;
             border-radius: 0.3rem;
-            border: 1px $color-2 solid;
+            border: 1px $color-1 solid;
             line-height: 1rem;
 
             img {
@@ -110,7 +107,7 @@
 
             &:hover {
                 cursor: pointer;
-                background: rgba(255, 255, 255, 0.15);
+                background: scale-color($color-1, $alpha: -85%);
             }
 
             &:focus {
@@ -119,11 +116,11 @@
             }
 
             &.selected {
-                background: rgba(255, 255, 255, 0.3);
+                background: scale-color($color-1, $alpha: -70%);
             }
 
             &:active {
-                background: rgba(255, 255, 255, 0.45);
+                background: scale-color($color-1, $alpha: -55%);
             }
         }
     }

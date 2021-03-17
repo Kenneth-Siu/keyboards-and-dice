@@ -1,13 +1,20 @@
 @import "../../../components/responsive.scss";
 @import "../../../components/colors.scss";
+@import "../../../components/mixins.scss";
 @import "../../../components/navBars/TerraNavBar.scss";
 
 .downloads-page {
-    @include container;
-    line-height: 1.2;
-    padding-right: 0.3rem;
-    padding-left: 0.3rem;
-    padding-bottom: 0.5rem;
+    @include blurred-page-background(0.15);
+
+    .container {
+        @include container;
+        line-height: 1.2;
+        padding-right: 0.3rem;
+        padding-left: 0.3rem;
+        padding-bottom: 0.5rem;
+        position: relative;
+        color: $color-1;
+    }
 
     h1 {
         text-align: center;
@@ -37,7 +44,7 @@
         width: 100%;
         font-family: monospace;
         font-size: 0.95rem;
-        border: solid 1px darken($color-2, 20%);
+        border: solid 1px scale-color($color-1, $alpha: -20%);
         padding: 0 0.2rem;
         border-radius: 0.2rem;
     }
@@ -53,5 +60,9 @@
     li {
         margin-top: 0.2rem;
         margin-bottom: 0.2rem;
+    }
+
+    a {
+        color: $color-1;
     }
 }

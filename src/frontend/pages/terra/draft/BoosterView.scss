@@ -14,7 +14,7 @@
         padding: 0;
 
         &:focus {
-            outline: 2px darken($color-2, 30%) solid;
+            outline: 2px darken($color-1, 30%) solid;
         }
 
         &.selected {

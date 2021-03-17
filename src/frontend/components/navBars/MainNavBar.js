@@ -15,15 +15,13 @@ export default function MainNavBar() {
                     </Link>
                 </li>
                 <li className="terra">
-                    <NavLink to="/terra" activeClassName="is-current-page">Terra 2170</NavLink>
-                    <NavLink to="/terra" className="abbreviated" activeClassName="is-current-page" aria-hidden>
-                        Terra
+                    <NavLink to="/terra" activeClassName="is-current-page">
+                        Terra 2170
                     </NavLink>
                 </li>
                 <li className="darkham">
-                    <NavLink to="/darkham" activeClassName="is-current-page">Darkham Horror</NavLink>
-                    <NavLink to="/darkham" className="abbreviated" activeClassName="is-current-page" aria-hidden>
-                        Darkham
+                    <NavLink to="/darkham" activeClassName="is-current-page">
+                        Darkham Horror
                     </NavLink>
                 </li>
             </ul>

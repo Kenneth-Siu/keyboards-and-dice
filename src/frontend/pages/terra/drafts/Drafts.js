@@ -7,6 +7,7 @@ import { CreateDraftForm } from "./CreateDraftForm.js";
 import "./Drafts.scss";
 import { JoinDraftForm } from "./JoinDraftForm.js";
 import { DraftsTable } from "./DraftsTable.js";
+import draftSplash from "../../../../../data/draftSplash.jpg";
 
 export default function Drafts({ loggedInUser }) {
     const history = useHistory();
@@ -18,27 +19,32 @@ export default function Drafts({ loggedInUser }) {
         <>
             <title>Your Drafts · Terra 2170</title>
             <main className="draft-page">
-                <h1>Your Drafts</h1>
-                <p>
-                    Hi, {loggedInUser.displayName}!{" "}
-                    <small>
-                        If this is not you, <a href="/api/logout">log out here</a>.
-                    </small>
-                </p>
-                {!drafts ? (
-                    <LoadingSpinner />
-                ) : (
-                    <>
-                        <DraftsTable drafts={drafts} loggedInUser={loggedInUser} deleteDraft={deleteDraft} />
-                        <CreateDraftForm createDraft={createDraft} busy={busy} />
-                        <JoinDraftForm
-                            joinDraftId={joinDraftId}
-                            setJoinDraftId={setJoinDraftId}
-                            joinDraft={joinDraft}
-                            busy={busy}
-                        />
-                    </>
-                )}
+                <div className="background-image-container">
+                    <img className="background-image" src={draftSplash} />
+                </div>
+                <div className="container">
+                    <h1>Your Drafts</h1>
+                    <p>
+                        Hi, {loggedInUser.displayName}!{" "}
+                        <small>
+                            If this is not you, <a href="/api/logout">log out here</a>.
+                        </small>
+                    </p>
+                    {!drafts ? (
+                        <LoadingSpinner />
+                    ) : (
+                        <>
+                            <DraftsTable drafts={drafts} loggedInUser={loggedInUser} deleteDraft={deleteDraft} />
+                            <CreateDraftForm createDraft={createDraft} busy={busy} />
+                            <JoinDraftForm
+                                joinDraftId={joinDraftId}
+                                setJoinDraftId={setJoinDraftId}
+                                joinDraft={joinDraft}
+                                busy={busy}
+                            />
+                        </>
+                    )}
+                </div>
             </main>
         </>
     );

@@ -26,6 +26,7 @@ import CommonSetSymbol from "../../../../../data/commonSetSymbol.svg";
 import UncommonSetSymbol from "../../../../../data/uncommonSetSymbol.svg";
 import RareSetSymbol from "../../../../../data/rareSetSymbol.svg";
 import MythicSetSymbol from "../../../../../data/mythicSetSymbol.svg";
+import cardImageGallerySplash from "../../../../../data/cardImageGallerySplash.jpg";
 import "./Rankings.scss";
 
 export default function Rankings() {
@@ -121,107 +122,117 @@ export default function Rankings() {
         <>
             <title>Rankings · Terra 2170</title>
             <main className="rankings-page">
-                <h1>Card Power Rankings</h1>
-                <div className="filter-pane">
-                    <img className="background-image" src={filterBackground} />
-                    <div className="color-filters">
-                        <button
-                            onClick={() => setWhiteFilter((state) => !state)}
-                            className={whiteFilter ? "selected" : ""}
-                        >
-                            <WhiteManaSymbol />
-                        </button>
-                        <button
-                            onClick={() => setBlueFilter((state) => !state)}
-                            className={blueFilter ? "selected" : ""}
-                        >
-                            <BlueManaSymbol />
-                        </button>
-                        <button
-                            onClick={() => setBlackFilter((state) => !state)}
-                            className={blackFilter ? "selected" : ""}
-                        >
-                            <BlackManaSymbol />
-                        </button>
-                        <button onClick={() => setRedFilter((state) => !state)} className={redFilter ? "selected" : ""}>
-                            <RedManaSymbol />
-                        </button>
-                        <button
-                            onClick={() => setGreenFilter((state) => !state)}
-                            className={greenFilter ? "selected" : ""}
-                        >
-                            <GreenManaSymbol />
-                        </button>
-                        <button
-                            onClick={() => setGoldFilter((state) => !state)}
-                            className={goldFilter ? "selected" : ""}
-                        >
-                            <GoldManaSymbol />
-                        </button>
-                        <button
-                            onClick={() => setColorlessFilter(!colorlessFilter)}
-                            className={colorlessFilter ? "selected" : ""}
-                        >
-                            <ColorlessManaSymbol />
-                        </button>
-                    </div>
-                    <div className="rarity-filters">
-                        <button
-                            onClick={() => setCommonFilter((state) => !state)}
-                            className={commonFilter ? "selected" : ""}
-                        >
-                            <CommonSetSymbol />
-                        </button>
-                        <button
-                            onClick={() => setUncommonFilter((state) => !state)}
-                            className={uncommonFilter ? "selected" : ""}
-                        >
-                            <UncommonSetSymbol />
-                        </button>
-                        <button
-                            onClick={() => setRareFilter((state) => !state)}
-                            className={rareFilter ? "selected" : ""}
-                        >
-                            <RareSetSymbol />
-                        </button>
-                        <button
-                            onClick={() => setMythicFilter((state) => !state)}
-                            className={mythicFilter ? "selected" : ""}
-                        >
-                            <MythicSetSymbol />
-                        </button>
-                    </div>
+                <div className="background-image-container">
+                    <img className="background-image" src={cardImageGallerySplash} />
                 </div>
-                <table>
-                    <tbody>
-                        <tr>
-                            {grades.map((grade) => (
-                                <th key={grade.grade}>{grade.grade}</th>
-                            ))}
-                        </tr>
-                        <tr>
-                            {grades.map((grade) => (
-                                <td key={grade.grade} className={grade.cards.length === 0 ? "fade" : ""}>{grade.cards.length}</td>
-                            ))}
-                        </tr>
-                    </tbody>
-                </table>
-                {grades.map((grade) => (
-                    <React.Fragment key={grade.grade}>
-                        <h2>
-                            {grade.grade}{" "}
-                            <small>
-                                ({grade.cards.length} card{grade.cards.length > 1 && "s"})
-                            </small>
-                        </h2>
-                        <div className="grade-section-content">
-                            {grade.cards.map((card) => (
-                                <CardImage imageName={card.imageName} key={card.id} lazy />
-                            ))}
-                            {grade.cards.length === 0 && <p className="no-cards">None</p>}
+                <div className="container">
+                    <h1>Card Power Rankings</h1>
+                    <div className="filter-pane">
+                        <img className="background-image" src={filterBackground} />
+                        <div className="color-filters">
+                            <button
+                                onClick={() => setWhiteFilter((state) => !state)}
+                                className={whiteFilter ? "selected" : ""}
+                            >
+                                <WhiteManaSymbol />
+                            </button>
+                            <button
+                                onClick={() => setBlueFilter((state) => !state)}
+                                className={blueFilter ? "selected" : ""}
+                            >
+                                <BlueManaSymbol />
+                            </button>
+                            <button
+                                onClick={() => setBlackFilter((state) => !state)}
+                                className={blackFilter ? "selected" : ""}
+                            >
+                                <BlackManaSymbol />
+                            </button>
+                            <button
+                                onClick={() => setRedFilter((state) => !state)}
+                                className={redFilter ? "selected" : ""}
+                            >
+                                <RedManaSymbol />
+                            </button>
+                            <button
+                                onClick={() => setGreenFilter((state) => !state)}
+                                className={greenFilter ? "selected" : ""}
+                            >
+                                <GreenManaSymbol />
+                            </button>
+                            <button
+                                onClick={() => setGoldFilter((state) => !state)}
+                                className={goldFilter ? "selected" : ""}
+                            >
+                                <GoldManaSymbol />
+                            </button>
+                            <button
+                                onClick={() => setColorlessFilter(!colorlessFilter)}
+                                className={colorlessFilter ? "selected" : ""}
+                            >
+                                <ColorlessManaSymbol />
+                            </button>
                         </div>
-                    </React.Fragment>
-                ))}
+                        <div className="rarity-filters">
+                            <button
+                                onClick={() => setCommonFilter((state) => !state)}
+                                className={commonFilter ? "selected" : ""}
+                            >
+                                <CommonSetSymbol />
+                            </button>
+                            <button
+                                onClick={() => setUncommonFilter((state) => !state)}
+                                className={uncommonFilter ? "selected" : ""}
+                            >
+                                <UncommonSetSymbol />
+                            </button>
+                            <button
+                                onClick={() => setRareFilter((state) => !state)}
+                                className={rareFilter ? "selected" : ""}
+                            >
+                                <RareSetSymbol />
+                            </button>
+                            <button
+                                onClick={() => setMythicFilter((state) => !state)}
+                                className={mythicFilter ? "selected" : ""}
+                            >
+                                <MythicSetSymbol />
+                            </button>
+                        </div>
+                    </div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                {grades.map((grade) => (
+                                    <th key={grade.grade}>{grade.grade}</th>
+                                ))}
+                            </tr>
+                            <tr>
+                                {grades.map((grade) => (
+                                    <td key={grade.grade} className={grade.cards.length === 0 ? "fade" : ""}>
+                                        {grade.cards.length || "−"}
+                                    </td>
+                                ))}
+                            </tr>
+                        </tbody>
+                    </table>
+                    {grades.map((grade) => (
+                        <React.Fragment key={grade.grade}>
+                            <h2>
+                                {grade.grade}{" "}
+                                <small>
+                                    ({grade.cards.length} card{grade.cards.length !== 1 && "s"})
+                                </small>
+                            </h2>
+                            <div className="grade-section-content">
+                                {grade.cards.map((card) => (
+                                    <CardImage imageName={card.imageName} key={card.id} lazy />
+                                ))}
+                                {grade.cards.length === 0 && <p className="no-cards">None</p>}
+                            </div>
+                        </React.Fragment>
+                    ))}
+                </div>
             </main>
         </>
     );

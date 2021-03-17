@@ -11,7 +11,7 @@
     small {
         font-size: 1.2rem;
         font-weight: 500;
-        color: lighten($color-1, 30%);
+        color: scale-color($color-1, $alpha: -30%);
     }
 }
 
@@ -99,9 +99,15 @@
 }
 
 .single-draft-page {
-    padding-bottom: 0.5rem;
+    @include blurred-page-background(0.2);
     position: relative;
-    text-align: center;
+
+    .container {
+        padding-bottom: 0.5rem;
+        position: relative;
+        color: $color-1;
+        text-align: center;
+    }
 
     h1 {
         text-align: center;
@@ -113,7 +119,7 @@
         small {
             font-size: 1.2rem;
             font-weight: 500;
-            color: lighten($color-1, 30%);
+            color: scale-color($color-1, $alpha: -30%);
         }
     }
 
@@ -128,10 +134,10 @@
         margin-bottom: 0.8rem;
 
         .player-pill {
-            background-color: darken($color-2, 5%);
+            background-color: scale-color($color-1, $alpha: -60%);
 
             &.current-user {
-                background-color: $color-5-light;
+                background-color: scale-color($color-5-light, $alpha: -60%);
             }
         }
     }
@@ -141,7 +147,7 @@
         font-size: 1.4rem;
         font-weight: 600;
         padding: 0.4rem 0.8rem;
-        color: $color-2;
+        color: $color-1;
         background-color: $color-5-strong;
         margin: 0 0.4rem;
     }

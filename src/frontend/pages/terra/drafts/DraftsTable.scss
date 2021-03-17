@@ -10,7 +10,7 @@
 
     th,
     td {
-        border: 2px solid darken($color-2, 30%);
+        border: 2px solid darken($color-1, 30%);
         padding: 0.2rem;
         text-align: center;
         vertical-align: middle;
@@ -21,7 +21,7 @@
         font-size: 1.2rem;
         font-style: italic;
         font-weight: 200;
-        color: lighten($color-1, 20%);
+        color: scale-color($color-1, $alpha: -20%);
 
         .emoji {
             font-style: normal;
@@ -46,10 +46,10 @@
     }
 
     .player-pill {
-        background-color: darken($color-2, 5%);
+        background-color: scale-color($color-1, $alpha: -60%);
 
         &.current-user {
-            background-color: $color-5-light;
+            background-color: scale-color($color-5-light, $alpha: -60%);
         }
     }
 
@@ -58,6 +58,10 @@
         font-size: 1rem;
         padding: 0.2rem;
         margin: 0 0.1rem;
+
+        &.copy svg {
+            fill: $color-1;
+        }
 
         &.delete svg {
             fill: crimson;

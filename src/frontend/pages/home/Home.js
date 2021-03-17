@@ -10,9 +10,7 @@ export default function Home() {
             <title>Keyboards &amp; Dice</title>
             <main className="home-page">
                 <div className="terra tile">
-                    <div className="splash">
-                        <img className="splashImage" src={terraSplash} />
-                    </div>
+                    <img className="background-image" src={terraSplash} />
                     <div className="content">
                         <h1>
                             <Link to="/terra">Terra 2170</Link>
@@ -32,9 +30,7 @@ export default function Home() {
                 </div>
 
                 <div className="darkham tile">
-                    <div className="splash">
-                        <img className="splashImage" src={darkhamSplash} />
-                    </div>
+                    <img className="background-image" src={darkhamSplash} />
                     <div className="content">
                         <h1>
                             <Link to="/darkham">Darkham Horror</Link>

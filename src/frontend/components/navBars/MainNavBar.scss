@@ -1,24 +1,24 @@
 @import "../colors.scss";
+@import "../mixins.scss";
 @import "../responsive.scss";
 
 $main-navbar-small-height: 4rem;
-$main-navbar-medium-height: 4rem;
+$main-navbar-medium-height: 3rem;
 $main-navbar-large-height: 3rem;
+
+@mixin pageHeightMinusMainNavBar {
+    @include responsive(
+        min-height,
+        calc(100vh - #{$main-navbar-small-height}),
+        calc(100vh - #{$main-navbar-medium-height}),
+        calc(100vh - #{$main-navbar-large-height})
+    );
+}
 
 .main-nav-bar {
     position: relative;
-    overflow: hidden;
-    background-color: $color-1;
     @include responsive(height, $main-navbar-small-height, $main-navbar-medium-height, $main-navbar-large-height);
-
-    .background-image {
-        margin: -6px;
-        filter: blur(4px) grayscale(0.6) contrast(0.3) brightness(0.35);
-        width: calc(100% + 12px);
-        height: calc(100% + 12px);
-        object-fit: cover;
-        position: absolute;
-    }
+    @include blurred-background-image(0.2);
 
     ul {
         position: relative;
@@ -38,7 +38,7 @@ $main-navbar-large-height: 3rem;
 
     .home {
         flex-grow: 1;
-        @include responsive(width, calc(100% - 4rem), calc(100% - 4rem), auto);
+        @include responsive(width, 100%, auto);
 
         svg {
             position: absolute;
@@ -51,13 +51,12 @@ $main-navbar-large-height: 3rem;
 
         a {
             position: relative;
-            color: $color-2;
+            color: $color-1;
             font-weight: 700;
             font-size: 1.2rem;
             height: 100%;
             @include responsive(
                 padding,
-                0.5rem 0.5rem 0.5rem 3.4rem,
                 0.5rem 0.5rem 0.5rem 3.4rem,
                 0.9rem 0.8rem 0.9rem 3.5rem
             );
@@ -69,19 +68,7 @@ $main-navbar-large-height: 3rem;
         font-weight: 500;
         text-transform: uppercase;
         font-size: 0.8rem;
-        @include responsive(padding, 0.5rem 0.5rem, 0.5rem 0.5rem, 1.1rem 0.8rem);
-
-        &.abbreviated {
-            display: none;
-        }
-        @media (max-width: 550px) {
-            &:not(.abbreviated) {
-                display: none;
-            }
-            &.abbreviated {
-                display: inline;
-            }
-        }
+        @include responsive(padding, 0.5rem 0.5rem, 1.1rem 0.8rem);
     }
 
     a.is-current-page::after,

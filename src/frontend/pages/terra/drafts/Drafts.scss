@@ -3,11 +3,17 @@
 @import "../../../components/navBars/TerraNavBar.scss";
 
 .draft-page {
-    @include container;
-    padding-right: 0.3rem;
-    padding-left: 0.3rem;
-    padding-bottom: 0.5rem;
+    @include blurred-page-background(0.2);
     position: relative;
+
+    .container {
+        @include container;
+        padding-right: 0.3rem;
+        padding-left: 0.3rem;
+        padding-bottom: 0.5rem;
+        position: relative;
+        color: $color-1;
+    }
 
     h1 {
         text-align: center;
@@ -27,5 +33,9 @@
             font-size: 0.8rem;
             font-weight: 300;
         }
+    }
+
+    a {
+        color: $color-1;
     }
 }

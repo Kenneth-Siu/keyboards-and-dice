@@ -15,11 +15,11 @@ export function BasicsControlPanel({ draftId, basicsLoaded, setBasicsLoaded, bas
     return (
         <div className="basics-control-panel">
             Basic lands:
-            <BasicLandControl icon={<WhiteManaSymbol/>} landState={basics.plains} setLandState={setPlains} />
-            <BasicLandControl icon={<BlueManaSymbol/>} landState={basics.islands} setLandState={setIslands} />
-            <BasicLandControl icon={<BlackManaSymbol/>} landState={basics.swamps} setLandState={setSwamps} />
-            <BasicLandControl icon={<RedManaSymbol/>} landState={basics.mountains} setLandState={setMountains} />
-            <BasicLandControl icon={<GreenManaSymbol/>} landState={basics.forests} setLandState={setForests} />
+            <BasicLandControl icon={<WhiteManaSymbol />} landState={basics.plains} setLandState={setPlains} />
+            <BasicLandControl icon={<BlueManaSymbol />} landState={basics.islands} setLandState={setIslands} />
+            <BasicLandControl icon={<BlackManaSymbol />} landState={basics.swamps} setLandState={setSwamps} />
+            <BasicLandControl icon={<RedManaSymbol />} landState={basics.mountains} setLandState={setMountains} />
+            <BasicLandControl icon={<GreenManaSymbol />} landState={basics.forests} setLandState={setForests} />
         </div>
     );
 
@@ -90,7 +90,7 @@ function BasicLandControl({ icon, landState, setLandState }) {
             </button>
             <div className={`symbol-div${landState > 0 ? " fade" : ""}`}>
                 {icon}
-                {landState > 0 ? landState : ""}
+                <div className="basic-number">{landState > 0 ? landState : ""}</div>
             </div>
             <button onClick={() => setLandState(landState + 1)}>
                 <MdAddCircleOutline />
