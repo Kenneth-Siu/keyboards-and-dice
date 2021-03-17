@@ -9,7 +9,6 @@ import suspensionSquad from "../../../../../data/cardImages/Suspension Squad.jpg
 import turnTheTideOfBattle from "../../../../../data/cardImages/Turn the Tide of Battle.jpg";
 import coordinateScrambler from "../../../../../data/cardImages/Coordinate Scrambler.jpg";
 import futureInsight from "../../../../../data/cardImages/Future Insight.jpg";
-import lambertStealthBomber from "../../../../../data/cardImages/Lambert Stealth Bomber.jpg";
 import nanoreplicatorZero from "../../../../../data/cardImages/Nanoreplicator Zero.jpg";
 import neutronFlow from "../../../../../data/cardImages/Neutron Flow.jpg";
 import cloningVats from "../../../../../data/cardImages/Cloning Vats.jpg";
@@ -101,8 +100,8 @@ export default function Faq() {
                                 </li>
                                 <li>
                                     If there isn't exactly one other attacking creature as the ability resolves (for
-                                    example, if the other attacking creature is removed from play), then the ability
-                                    will still resolve and the creature can't be blocked this turn.
+                                    example, if the other attacking creature is removed from play), the ability will
+                                    still resolve and the creature still can't be blocked this turn.
                                 </li>
                             </ul>
                         </div>
@@ -165,18 +164,26 @@ export default function Faq() {
                                 <p>
                                     <b>TL;DR:</b>
                                 </p>
-                                <ul>
+                                <ol>
                                     <li>
-                                        Teleporting a card takes it out of the looked at/revealed cards. Cast the spell
-                                        for its teleport cost, finish resolving the effect with the teleported card
-                                        taken out, then resolve the teleported spell.
+                                        Complete the looking at/revealing of all relevant cards. (e.g. For reconstitute,
+                                        keep revealing until you find a creature that costs less; only then move on.)
                                     </li>
                                     <li>
-                                        While resolving Reconstitute, finish revealing all the cards first, then choose
-                                        whether or not to teleport any cards, then put the reconstituted creature onto
-                                        the battlefield.
+                                        You have an opportunity now to cast any number of Teleport cards from among them
+                                        for their Teleport cost. Any cards you teleport are removed from the looked
+                                        at/revealed cards and put onto the stack (but don't start resolving yet).
                                     </li>
-                                </ul>
+                                    <li>
+                                        Finish off the original effect. (e.g. For reconstitute, put onto the battlefield
+                                        the creature that costs less. If you teleported that creature, it is no longer
+                                        revealed and this part of the reconstitute effect doesn't happen.)
+                                    </li>
+                                    <li>
+                                        Resume resolving all spells and abilities on the stack from top the bottom.
+                                        Usually this will mean you start resolving the cards you teleported.
+                                    </li>
+                                </ol>
                             </blockquote>
                             <ul>
                                 <li>
@@ -210,7 +217,7 @@ export default function Faq() {
                                 </li>
                                 <li>
                                     If an effect causes you to look at or reveal multiple cards in your library (for
-                                    example, a creature with Reconstitute died), finish looking at or revealing all the
+                                    example, a creature with reconstitute died), finish looking at or revealing all the
                                     cards first, then teleport spells, then finish resolving the original effect.
                                 </li>
                                 <li>
@@ -220,9 +227,9 @@ export default function Faq() {
                                 </li>
                                 <li>
                                     If an effect attempts to interact with a card that you teleported (for example, you
-                                    teleported a creature card you were about to put into play from Reconstitute), that
+                                    teleported a creature card you were about to put into play from reconstitute), that
                                     part of the original effect fails and you continue resolving the rest of the effect.
-                                    (In this example, no creature would be put into play with the Reconstitute ability)
+                                    (In this example, no creature would be put into play with reconstitute)
                                 </li>
                             </ul>
                         </div>
@@ -302,18 +309,6 @@ export default function Faq() {
                                 <li>
                                     If X is 2 or less, you won't be able to put the full 3 cards into your hand and will
                                     have to make do with fewer.
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
-                    <section>
-                        <CardImage imageName={lambertStealthBomber} lazy />
-                        <div className="section-content">
-                            <h3>Lambert Stealth Bomber</h3>
-                            <ul>
-                                <li>
-                                    Effects that switch power and toughness apply after all other effects that change
-                                    power and/or toughness, regardless of which effect was created first.
                                 </li>
                             </ul>
                         </div>
@@ -504,7 +499,7 @@ export default function Faq() {
                         <div className="section-content">
                             <h3>Titan of Shisuku Sewers</h3>
                             <ul>
-                                <li>If a creature has multiple instances of Reconstitute, each triggers separately.</li>
+                                <li>If a creature has multiple instances of reconstitute, each triggers separately.</li>
                             </ul>
                         </div>
                     </section>
@@ -531,7 +526,7 @@ export default function Faq() {
                                     graveyard before you can activate his abilities.
                                 </li>
                                 <li>
-                                    If a creature has multiple instances of Reconstitute, such as multiple reconstitute
+                                    If a creature has multiple instances of reconstitute, such as multiple reconstitute
                                     counters from Umida's second ability, each instance triggers separately.
                                 </li>
                                 <li>
@@ -569,12 +564,11 @@ export default function Faq() {
                                     retain its original abilities.
                                 </li>
                                 <li>
-                                    Copy effects are generally applied in layer 1. If in the same turn you previously
-                                    activated Formling's first ability to give it infiltrate, it will become a copy of
-                                    the other creature in layer 1 and then gain the infiltrate ability in layer 6. This
-                                    results in Formling becoming a copy of the other creature and also having
-                                    infiltrate. (The same principle can be applied to Formling's last ability of +1/-1
-                                    or -1/+1.)
+                                    If an effect begins to apply to Formling before it becomes a copy of another
+                                    permanent, that effect will continue to apply. For example, if Formling's first
+                                    ability is activated to give it infiltrate, and then it is made to copy a Storm
+                                    Crow, the effects of the first ability continue to apply while Mirage Mirror is a
+                                    copy of Storm Crow so it will still have infiltrate.
                                 </li>
                             </ul>
                         </div>
@@ -606,14 +600,11 @@ export default function Faq() {
                         <div className="section-content">
                             <h3>Trojan Horse</h3>
                             <ul>
+                                <li>The player who activates the last ability is the one who skips the turn.</li>
                                 <li>
-                                    The last ability can be activated by any player, but will usually be activated by an
-                                    opponent. The player activating the ability is the one who skips the turn.
-                                </li>
-                                <li>
-                                    Skipping a turn will only happen if Trojan Horse is on the battlefield as the
-                                    ability resolves, so if Trojan Horse is removed in response to the ability going on
-                                    the stack, nobody skips any turns.
+                                    Skipping a turn will only happen if Trojan Horse is on the battlefield to be
+                                    sacrificed as the last ability resolves, so if Trojan Horse is not in play as the
+                                    last ability resolves, nobody skips any turns.
                                 </li>
                             </ul>
                         </div>
@@ -625,7 +616,8 @@ export default function Faq() {
                             <ul>
                                 <li>
                                     For its second and third abilities, while resolving the ability you either remove no
-                                    counters or two counters.
+                                    counters or as many as you can up to two. If you don't remove the full two counters,
+                                    the second part of these abilities has no effect.
                                 </li>
                             </ul>
                         </div>
@@ -637,7 +629,7 @@ export default function Faq() {
                             <ul>
                                 <li>
                                     Remember that this is a search effect and not a "look at" or "reveal" effect. You
-                                    cannot teleport cards using its ability.
+                                    cannot teleport cards using The Martian Lens's last ability.
                                 </li>
                                 <li>
                                     Any replacement effects are considered by The Martian Lens when determining the
