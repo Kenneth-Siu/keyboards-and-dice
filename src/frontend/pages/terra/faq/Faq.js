@@ -167,10 +167,10 @@ export default function Faq() {
                                 <ol>
                                     <li>
                                         Complete the looking at/revealing of all relevant cards. (e.g. For reconstitute,
-                                        keep revealing until you find a creature that costs less; only then move on.)
+                                        keep revealing until you find a creature that costs less.)
                                     </li>
                                     <li>
-                                        You have an opportunity now to cast any number of Teleport cards from among them
+                                        You now have an opportunity to cast any number of Teleport cards from among them
                                         for their Teleport cost. Any cards you teleport are removed from the looked
                                         at/revealed cards and put onto the stack (but don't start resolving yet).
                                     </li>
@@ -180,7 +180,7 @@ export default function Faq() {
                                         revealed and this part of the reconstitute effect doesn't happen.)
                                     </li>
                                     <li>
-                                        Resume resolving all spells and abilities on the stack from top the bottom.
+                                        Resume resolving all spells and abilities on the stack from top to bottom.
                                         Usually this will mean you start resolving the cards you teleported.
                                     </li>
                                 </ol>
