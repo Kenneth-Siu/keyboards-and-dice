@@ -17,6 +17,7 @@ import MainNavBar from "../components/navBars/MainNavBar.js";
 import SmallMainNavBar from "../components/navBars/SmallMainNavBar.js";
 import Home from "./home/Home.js";
 import NotFound from "./notFound/NotFound.js";
+import Darkham from "./darkham/Darkham.js";
 
 export default function App({ loggedInUser }) {
     return (
@@ -52,6 +53,7 @@ export default function App({ loggedInUser }) {
                 <Route path="/">
                     {MainNavBar()}
                     <Switch>
+                        <Route exact path="/darkham" component={Darkham} />
                         <Route exact path="/" component={Home} />
                         <Route component={NotFound} />
                     </Switch>

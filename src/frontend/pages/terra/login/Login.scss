@@ -7,8 +7,8 @@
 
     .container {
         @include container;
-        padding-right: 0.3rem;
-        padding-left: 0.3rem;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
         padding-bottom: 0.5rem;
         position: relative;
         color: $color-1;
