@@ -11,15 +11,17 @@
 
     button {
         @include button;
+        @include card-image;
         padding: 0;
 
         &:focus {
-            outline: 2px darken($color-1, 30%) solid;
+            box-shadow: 0 0 0.2rem 0.2rem scale-color($color-1, $alpha: -70%);
+            outline: none;
         }
 
         &.selected {
             box-shadow: 0 0 0.2rem 0.2rem $color-5-strong;
-            outline: 2px $color-5-strong solid;
+            outline: none;
         }
 
         @media (max-width: 659px) {
