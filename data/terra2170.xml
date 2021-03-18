@@ -1652,8 +1652,8 @@ Teleport 3UU (You may cast this card for its teleport cost while you’re lookin
             <side>front</side>
             <type>Enchantment</type>
             <maintype>Enchantment</maintype>
-            <manacost>3U</manacost>
-            <cmc>4</cmc>
+            <manacost>3UU</manacost>
+            <cmc>5</cmc>
             <colors>U</colors>
             <coloridentity>U</coloridentity>
         </prop>
@@ -2983,7 +2983,7 @@ Scavenged Rampager gets +1/+0 for each artifact you control.</text>
     </card>
     <card>
         <name>Scrapyard Salvager</name>
-        <text>2R, Sacrifice an artifact: Create two 1/1 colorless Mech artifact creature tokens.</text>
+        <text>3R, Sacrifice an artifact: Create two 1/1 colorless Mech artifact creature tokens.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -3346,7 +3346,7 @@ Each creature you control that’s a Kushak or Mutant gets +1/+1 until end of tu
     <card>
         <name>Deep Jungle Hunter</name>
         <text>Flash
-As Deep Jungle Hunter enters the battlefield, sacrifice any number of other creatures. Deep Jungle Hunter enters the battlefield with that many +1/+1 counters on it.</text>
+At the beginning of your end step, if you didn’t cast a spell this turn, put a +1/+1 counter on Deep Jungle Hunter.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -3591,7 +3591,7 @@ Teleport 0 (You may cast this card for its teleport cost while you’re looking 
     </card>
     <card>
         <name>Kushak Research Council</name>
-        <text>Whenever Kushak Research Council or another Kushak creature or Mutant creature you control dies, put a +1/+1 counter on each creature you control that’s a Kushak or Mutant.
+        <text>Whenever Kushak Research Council or another Kushak or Mutant creature you control dies, put a +1/+1 counter on each creature you control that’s a Kushak or Mutant.
 Reconstitute (When this creature dies, reveal cards from the top of your library until you reveal a creature card that costs less. Put that card onto the battlefield and the rest on the bottom of your library in a random order.)</text>
         <prop>
             <layout>normal</layout>
@@ -4233,7 +4233,7 @@ Whenever a creature dies, if it wasn’t sacrificed, remove an authority counter
     <card>
         <name>Matter Redistributor</name>
         <text>T, Sacrifice another artifact: Put 1 or X charge counters on Matter Redistributor, where X is the sacrificed artifact’s mana value.
-T, Remove X charge counters from Matter Redistributor: Look at the top twice X cards of your library and put an artifact card with mana value twice X or less from among them onto the battlefield.</text>
+T, Remove X charge counters from Matter Redistributor: Look at the top twice X cards of your library and put an artifact card with mana value twice X or less from among them onto the battlefield. Put the rest on the bottom of your library in a random order.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>

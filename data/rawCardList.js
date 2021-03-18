@@ -1447,8 +1447,8 @@ colorIdentity: "U"
     {
         "name": "Transcend Space-Time",
         "imageName": _82,
-        "cost": "3U",
-        "manaValue": 4,
+        "cost": "3UU",
+        "manaValue": 5,
         "color": "U",
         "type": "Enchantment",
         "id": 82,
@@ -2545,7 +2545,7 @@ colorIdentity: "R"
         "id": 159,
         "rarity": "R",
         "notes": {
-grade: "B",
+grade: "B-",
 colorIdentity: "R",
 cockatrice_related: "Mech",
 cockatrice_related_count: "2"
