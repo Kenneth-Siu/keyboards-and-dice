@@ -1,4 +1,4 @@
-import _0 from "./cardImages/Karn the Seeker.jpg";
+import _0 from "./cardImages/Karn the Penitent.jpg";
 import _1 from "./cardImages/Ajani Sunchaser.jpg";
 import _2 from "./cardImages/Biomech Team.jpg";
 import _3 from "./cardImages/Bring to Justice.jpg";
@@ -273,7 +273,7 @@ import _271 from "./cardImages/Siderite Mine.jpg";
 import _272 from "./cardImages/Spire of Industry.jpg";
 const rawCardList = [
     {
-        "name": "Karn, the Seeker",
+        "name": "Karn the Penitent",
         "imageName": _0,
         "cost": "3",
         "manaValue": 3,

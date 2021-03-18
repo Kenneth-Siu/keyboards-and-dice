@@ -25,7 +25,7 @@
         <tablerow>2</tablerow>
     </card>
     <card>
-        <name>Karn, the Seeker</name>
+        <name>Karn the Penitent</name>
         <text></text>
         <prop>
             <layout>normal</layout>
@@ -36,7 +36,7 @@
             <cmc>3</cmc>
             <loyalty>3</loyalty>
         </prop>
-        <set rarity="mythic rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Karn%20the%20Seeker.jpg">T2170</set>
+        <set rarity="mythic rare" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Karn%20the%20Penitent.jpg">T2170</set>
         <tablerow>1</tablerow>
     </card>
     <card>

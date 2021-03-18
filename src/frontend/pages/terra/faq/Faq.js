@@ -1,5 +1,5 @@
 import React from "react";
-import karnTheSeeker from "../../../../../data/cardImages/Karn the Seeker.jpg";
+import karnThePenitent from "../../../../../data/cardImages/Karn the Penitent.jpg";
 import dropship from "../../../../../data/cardImages/Dropship.jpg";
 import cacheMapper from "../../../../../data/cardImages/Cache Mapper.jpg";
 import boardroomKeeper from "../../../../../data/cardImages/Boardroom Keeper.jpg";
@@ -236,9 +236,9 @@ export default function Faq() {
                     </section>
                     <h2>Individual Card FAQs</h2>
                     <section>
-                        <CardImage imageName={karnTheSeeker} lazy />
+                        <CardImage imageName={karnThePenitent} lazy />
                         <div className="section-content">
-                            <h3>Karn, the Seeker</h3>
+                            <h3>Karn the Penitent</h3>
                             <ul>
                                 <li>Scan counters have no effect by themselves.</li>
                             </ul>

@@ -11,7 +11,7 @@ import timeParadox from "../../../../../data/cardImages/Time Paradox.jpg";
 import kushakResearchCouncil from "../../../../../data/cardImages/Kushak Research Council.jpg";
 import shadowlightInfiltrator from "../../../../../data/cardImages/Shadowlight Infiltrator.jpg";
 import acquisitorDelwani from "../../../../../data/cardImages/Acquisitor Delwani.jpg";
-import karnTheSeeker from "../../../../../data/cardImages/Karn the Seeker.jpg";
+import karnThePenitent from "../../../../../data/cardImages/Karn the Penitent.jpg";
 import cryonicsFacility from "../../../../../data/cardImages/Cryonics Facility.jpg";
 import tundraStrider from "../../../../../data/cardImages/Tundra Strider.jpg";
 import hongWaiPrototype from "../../../../../data/cardImages/Hong Wai Prototype.jpg";
@@ -82,7 +82,7 @@ export default function TerraHome() {
                         </p>
                         <div className="draft-showcase">
                         <div className="draft-showcase-elements">
-                            <CardImage imageName={karnTheSeeker} />
+                            <CardImage imageName={karnThePenitent} />
                             <CardImage imageName={cryonicsFacility} />
                             <CardImage imageName={tundraStrider} />
                             <CardImage imageName={hongWaiPrototype} />
