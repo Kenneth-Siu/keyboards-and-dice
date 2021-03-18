@@ -7,7 +7,7 @@ import Drafts from "./terra/drafts/Drafts.js";
 import TerraNotFound from "./terra/notFound/NotFound.js";
 import TerraNavBar from "../components/navBars/TerraNavBar.js";
 import Faq from "./terra/faq/Faq.js";
-import Downloads from "./terra/downloads/Downloads.js";
+import TerraDownloads from "./terra/downloads/Downloads.js";
 import Login from "./terra/login/Login.js";
 import "./cssreset.css";
 import "./App.scss";
@@ -18,6 +18,7 @@ import SmallMainNavBar from "../components/navBars/SmallMainNavBar.js";
 import Home from "./home/Home.js";
 import NotFound from "./notFound/NotFound.js";
 import Darkham from "./darkham/Darkham.js";
+import DarkhamDownloads from "./darkham/downloads/Downloads.js";
 
 export default function App({ loggedInUser }) {
     return (
@@ -43,7 +44,7 @@ export default function App({ loggedInUser }) {
                             authed={!!loggedInUser}
                             loggedInUser={loggedInUser}
                         />
-                        <Route exact path="/terra/downloads" component={Downloads} />
+                        <Route exact path="/terra/downloads" component={TerraDownloads} />
                         <Route exact path="/terra/rankings" component={Rankings} />
                         <Route exact path="/terra/login" component={Login} />
                         <Route exact path="/terra" component={TerraHome} />
@@ -53,6 +54,7 @@ export default function App({ loggedInUser }) {
                 <Route path="/">
                     {MainNavBar()}
                     <Switch>
+                        <Route exact path="/darkham/downloads" component={DarkhamDownloads} />
                         <Route exact path="/darkham" component={Darkham} />
                         <Route exact path="/" component={Home} />
                         <Route component={NotFound} />

@@ -15,4 +15,204 @@
         position: relative;
         color: $color-1;
     }
+
+    h1 {
+        font-weight: 700;
+        font-size: 1.4rem;
+        @include responsive(margin-top, 1.5rem, 1.5rem, 1rem);
+        margin-bottom: 0.5rem;
+    }
+
+    h2 {
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        margin-top: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    b {
+        font-weight: bold;
+    }
+
+    em {
+        font-style: italic;
+    }
+
+    a {
+        @include inverting-link($color-4-light);
+        font-weight: 600;
+    }
+
+    div.box-div {
+        margin-top: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    div.box-canvas {
+        position: relative;
+        @include responsive(width, 100%, 100%, 50%);
+        overflow: hidden;
+
+        .box-elements {
+            width: 100%;
+            padding-bottom: 116%;
+            transform: rotateX(-15deg) rotateY(22deg);
+            transform-style: preserve-3d;
+        }
+        .box-cover {
+            position: absolute;
+            width: 72%;
+            top: 7%;
+            left: 15%;
+        }
+        .box-side {
+            position: absolute;
+            width: 11.87%;
+            top: 7%;
+            left: 15%;
+            transform-origin: 0 0;
+            transform: rotateY(90deg);
+            filter: brightness(0.65);
+        }
+        .box-top {
+            position: absolute;
+            width: 72%;
+            top: 7%;
+            left: 15%;
+            transform-origin: 0 0;
+            transform: rotateX(-90deg);
+        }
+    }
+
+    div.box-side-download-link {
+        @include responsive(width, 100%, 100%, 50%);
+        @include responsive(padding-left, 0, 0, 3%);
+        @include responsive(text-align, center, center, left);
+    }
+
+    div.canvas {
+        position: relative;
+        @include responsive(width, 100%, 100%, 800px);
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+    }
+
+    @mixin darkham-card($card-width) {
+        img.card {
+            @include card-image;
+            position: absolute;
+            width: $card-width;
+            box-shadow: 0 0 0.17vw 0.17vw rgba(0, 0, 0, 0.3);
+
+            &.landscape {
+                border-radius: 3.2% / 4.46%;
+                width: $card-width * 1.4;
+            }
+        }
+    }
+
+    .canvas.overview {
+        @include darkham-card(32%);
+        @include responsive(padding-bottom, 75.5%, 75.5%, 600px);
+        .damnations-gift {
+            top: 7%;
+            left: 5%;
+            transform: rotateZ(-12deg);
+        }
+        .moirai-shroud {
+            top: 6%;
+            left: 22%;
+            transform: rotateZ(-6deg);
+        }
+        .forgotten-mirror {
+            top: 2%;
+            left: 42%;
+        }
+        .beyond-space-and-time {
+            top: 6%;
+            left: 64%;
+            transform: rotateZ(8deg);
+        }
+        .abdul-alhazred {
+            top: 52%;
+            left: 8%;
+            transform: rotateZ(-4deg);
+        }
+        .under-torchlight {
+            top: 53%;
+            left: 50%;
+            transform: rotateZ(3deg);
+        }
+    }
+
+    .canvas.encounters {
+        @include darkham-card(34%);
+        @include responsive(padding-bottom, 60%, 60%, 480px);
+
+        .the-collector {
+            top: 16%;
+            left: 51%;
+            transform: rotateX(-20deg) rotateY(-15deg);
+        }
+        .collected-0 {
+            top: 9%;
+            left: 58%;
+            transform: rotateX(-20deg) rotateY(-15deg);
+        }
+        .collected-1 {
+            top: 6%;
+            left: 61%;
+            transform: rotateX(-20deg) rotateY(-15deg);
+        }
+        .collected-2 {
+            top: 3%;
+            left: 64%;
+            transform: rotateX(-20deg) rotateY(-15deg);
+        }
+        .dangers-in-the-dark {
+            top: 5%;
+            left: 2%;
+            transform: rotateX(20deg) rotateY(-15deg);
+        }
+        .stalking-shadow {
+            top: 16%;
+            left: 15%;
+            transform: rotateX(20deg) rotateY(-15deg);
+        }
+    }
+
+    .canvas.player-cards {
+        @include darkham-card(38%);
+        @include responsive(padding-bottom, 68%, 68%, 550px);
+
+        .abdul-alhazred {
+            top: 40%;
+            left: 6%;
+        }
+        .abdul-alhazred-back {
+            top: 7%;
+            left: 7%;
+            transform: rotateZ(-8deg);
+        }
+        .mentors-skull {
+            top: 10%;
+            left: 58%;
+            transform: rotateZ(3deg);
+        }
+    }
+
+    .final-download-link {
+        text-align: center;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
 }

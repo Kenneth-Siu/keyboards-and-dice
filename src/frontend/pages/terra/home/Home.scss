@@ -34,7 +34,6 @@
 
             p {
                 font-style: italic;
-                font-weight: 200;
                 margin-bottom: 0.5rem;
 
                 &.link {
@@ -184,7 +183,6 @@
             margin: 0;
             color: scale-color($color-1, $alpha: -40%);
             font-size: 0.8rem;
-            font-weight: 200;
         }
     }
 }
