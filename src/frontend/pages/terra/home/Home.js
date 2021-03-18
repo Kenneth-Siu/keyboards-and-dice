@@ -11,6 +11,20 @@ import timeParadox from "../../../../../data/cardImages/Time Paradox.jpg";
 import kushakResearchCouncil from "../../../../../data/cardImages/Kushak Research Council.jpg";
 import shadowlightInfiltrator from "../../../../../data/cardImages/Shadowlight Infiltrator.jpg";
 import acquisitorDelwani from "../../../../../data/cardImages/Acquisitor Delwani.jpg";
+import karnTheSeeker from "../../../../../data/cardImages/Karn the Seeker.jpg";
+import cryonicsFacility from "../../../../../data/cardImages/Cryonics Facility.jpg";
+import tundraStrider from "../../../../../data/cardImages/Tundra Strider.jpg";
+import hongWaiPrototype from "../../../../../data/cardImages/Hong Wai Prototype.jpg";
+import homeostimulationSuit from "../../../../../data/cardImages/Homeostimulation Suit.jpg";
+import warapurCompanyDrudge from "../../../../../data/cardImages/Warapur Company Drudge.jpg";
+import hoverbike from "../../../../../data/cardImages/Hoverbike.jpg";
+import reconstructionSpecialist from "../../../../../data/cardImages/Reconstruction Specialist.jpg";
+import ripSpaceTime from "../../../../../data/cardImages/Rip Space-Time.jpg";
+import broodAmbush from "../../../../../data/cardImages/Brood Ambush.jpg";
+import warzoneMentor from "../../../../../data/cardImages/Warzone Mentor.jpg";
+import vulcanDevastators from "../../../../../data/cardImages/Vulcan Devastators.jpg";
+import biomechTeam from "../../../../../data/cardImages/Biomech Team.jpg";
+import radiumTracker from "../../../../../data/cardImages/Radium Tracker.jpg";
 import { getRandomKarnFlavorText } from "./karnFlavorTexts.js";
 
 export default function TerraHome() {
@@ -60,12 +74,30 @@ export default function TerraHome() {
                     <div className="content">
                         <h1>Draft in your browser</h1>
                         <p>
-                            Grab some friends and draft <em>Terra 2170</em> in your browser!
+                            Draft <em>Terra 2170</em> in your browser.
                         </p>
-                        <p>Don't have eight people? No problem, fill in the missing places with bots.</p>
+                        <p>You don't need the full eight people! Fill in the missing places with bots.</p>
                         <p className="draft-link">
                             <Link to="/terra/drafts">ᐳ Draft now</Link>
                         </p>
+                        <div className="draft-showcase">
+                        <div className="draft-showcase-elements">
+                            <CardImage imageName={karnTheSeeker} />
+                            <CardImage imageName={cryonicsFacility} />
+                            <CardImage imageName={tundraStrider} />
+                            <CardImage imageName={hongWaiPrototype} />
+                            <CardImage imageName={homeostimulationSuit} />
+                            <CardImage imageName={warapurCompanyDrudge} />
+                            <CardImage imageName={hoverbike} />
+                            <CardImage imageName={reconstructionSpecialist} />
+                            <CardImage imageName={ripSpaceTime} />
+                            <CardImage imageName={broodAmbush} />
+                            <CardImage imageName={warzoneMentor} />
+                            <CardImage imageName={vulcanDevastators} />
+                            <CardImage imageName={biomechTeam} />
+                            <CardImage imageName={radiumTracker} />
+                        </div>
+                        </div>
                     </div>
                 </section>
                 <section className="faq">
