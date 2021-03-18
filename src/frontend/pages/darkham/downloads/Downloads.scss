@@ -3,7 +3,7 @@
 @import "../../../components/mixins.scss";
 @import "../../../components/navBars/TerraNavBar.scss";
 
-.downloads-page {
+.darkham-downloads-page {
     @include blurred-page-background(0.45);
 
     .container {

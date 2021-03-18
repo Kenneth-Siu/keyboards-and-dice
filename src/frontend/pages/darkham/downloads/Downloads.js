@@ -6,7 +6,7 @@ export default function Downloads() {
     return (
         <>
             <title>Darkham Horror Downloads · Keyboards &amp; Dice</title>
-            <main className="downloads-page">
+            <main className="darkham-downloads-page">
                 <div className="background-image-container">
                     <img className="background-image" src={downloadsSplash} />
                 </div>
