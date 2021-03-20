@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link, NavLink } from "react-router-dom";
 import keyboardsAndDiceSplash from "../../../../data/keyboardsAndDiceSplash.jpg";
-import CommonSetSymbol from "../../../../data/commonSetSymbol.svg";
+import KndLogo from "../../../../data/kndLogo.svg";
 import "./SmallMainNavBar.scss";
 
 export default function SmallMainNavBar() {
@@ -11,7 +11,7 @@ export default function SmallMainNavBar() {
             <ul>
                 <li className="home">
                     <Link to="/">
-                        <CommonSetSymbol /> Keyboards &amp; Dice
+                        <KndLogo /> Keyboards &amp; Dice
                     </Link>
                 </li>
                 <li className="terra">
