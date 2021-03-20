@@ -1340,7 +1340,7 @@ colorIdentity: "U"
         "id": 74,
         "rarity": "U",
         "notes": {
-grade: "B+",
+grade: "B",
 colorIdentity: "U"
         }
     },
@@ -2613,7 +2613,7 @@ colorIdentity: "R"
         "cost": "1R",
         "manaValue": 2,
         "color": "R",
-        "type": "Sorcery",
+        "type": "Instant",
         "id": 164,
         "rarity": "C",
         "notes": {
@@ -3535,7 +3535,7 @@ colorIdentity: "WB"
         "id": 228,
         "rarity": "R",
         "notes": {
-grade: "A-",
+grade: "B+",
 colorIdentity: "WB"
         }
     },

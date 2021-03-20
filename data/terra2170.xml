@@ -263,7 +263,7 @@ Equip 2</text>
     </card>
     <card>
         <name>Control Overseer</name>
-        <text>Whenever another creature enters the battlefield under your control, you gain 1 life and scry 1.</text>
+        <text>At the beginning of each end step, if a creature entered the battlefield under your control this turn, you gain 1 life, then scry 1.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -1019,7 +1019,7 @@ When Arrester Droid enters the battlefield, you may return another creature you 
     </card>
     <card>
         <name>Atmospheric Survey</name>
-        <text>Draw a card. Scry 2.
+        <text>At the beginning of the next turn’s upkeep, draw a card, then scry 2.
 Teleport 1U (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)</text>
         <prop>
             <layout>normal</layout>
@@ -1124,7 +1124,7 @@ Whenever The Chronos enters the battlefield or attacks, take an extra turn after
     <card>
         <name>Cloud Darter</name>
         <text>Flying
-0: Cloud Darter’s owner shuffles it into their library. If they do, they reveal cards from the top of that library until a card named Cloud Darter is revealed, then exiles all cards revealed this way.
+When Cloud Darter dies, shuffle it into its owner’s library, then its owner reveals cards from the top of their library until a card named Cloud Darter is revealed and exiles all cards revealed this way.
 Teleport 1U (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)</text>
         <prop>
             <layout>normal</layout>
@@ -1193,7 +1193,8 @@ Teleport 1U (You may cast this card for its teleport cost while you’re looking
     </card>
     <card>
         <name>Escape the City</name>
-        <text>Draw two cards. Scry 2. Create two 1/1 colorless Mech artifact creature tokens.
+        <text>Create two 1/1 colorless Mech artifact creature tokens.
+At the beginning of the next turn’s upkeep, draw two cards, then scry 2.
 Teleport 2UU (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)</text>
         <prop>
             <layout>normal</layout>
@@ -1351,7 +1352,7 @@ Reconstitute (When this creature dies, reveal cards from the top of your library
     </card>
     <card>
         <name>Lost in Space</name>
-        <text>Put target nonland permanent into its owner’s library second from the top.
+        <text>Put target nonland permanent you don’t control into its owner’s library second from the top.
 Teleport 3U (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)</text>
         <prop>
             <layout>normal</layout>
@@ -1503,7 +1504,7 @@ When Mindmeld Netrunner enters the battlefield, scry 3.</text>
     </card>
     <card>
         <name>Scorned Researcher</name>
-        <text>When Scorned Researcher enters the battlefield, draw two cards.
+        <text>When Scorned Researcher leaves the battlefield, draw two cards.
 Reconstitute (When this creature dies, reveal cards from the top of your library until you reveal a creature card that costs less. Put that card onto the battlefield and the rest on the bottom of your library in a random order.)</text>
         <prop>
             <layout>normal</layout>
@@ -3001,7 +3002,7 @@ Scavenged Rampager gets +1/+0 for each artifact you control.</text>
     </card>
     <card>
         <name>Slagthrower</name>
-        <text>At the beginning of your end step, you may sacrifice an artifact. If you do, scry 1 and Slagthrower deals 1 damage to each opponent.</text>
+        <text>At the beginning of your end step, you may sacrifice an artifact. If you do, scry 1, then Slagthrower deals 1 damage to each opponent.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -3069,14 +3070,13 @@ Teleport 1R (You may cast this card for its teleport cost while you’re looking
     </card>
     <card>
         <name>Throw to the Wind</name>
-        <text>As an additional cost to cast Throw to the Wind, discard a card.
-Draw two cards.
+        <text>At the beginning of the next turn’s upkeep, you may discard a card. If you do, draw two cards.
 Teleport 1R (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Sorcery</type>
-            <maintype>Sorcery</maintype>
+            <type>Instant</type>
+            <maintype>Instant</maintype>
             <manacost>1R</manacost>
             <cmc>2</cmc>
             <colors>R</colors>
@@ -3104,7 +3104,7 @@ Teleport 1R (You may cast this card for its teleport cost while you’re looking
     </card>
     <card>
         <name>Walking Furnace</name>
-        <text>Whenever you sacrifice another artifact, you may pay 2. When you do, scry 2 and Walking Furnace deals 2 damage to any target.</text>
+        <text>Whenever you sacrifice another artifact, you may pay 2. When you do, scry 2, then Walking Furnace deals 2 damage to any target.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -3647,7 +3647,7 @@ Each other creature you control that’s a Kushak or Mutant gets +1/+1.
     </card>
     <card>
         <name>Myth of Baljurashi</name>
-        <text>When Myth of Baljurashi enters the battlefield, reveal the top five cards of your library. Put all land cards revealed this way into your hand and the rest into your graveyard.
+        <text>As you reconstitute Myth of Baljurashi, you may put any number of land cards from among the revealed cards onto the battlefield tapped.
 Reconstitute (When this creature dies, reveal cards from the top of your library until you reveal a creature card that costs less. Put that card onto the battlefield and the rest on the bottom of your library in a random order.)</text>
         <prop>
             <layout>normal</layout>
@@ -3658,7 +3658,7 @@ Reconstitute (When this creature dies, reveal cards from the top of your library
             <cmc>5</cmc>
             <colors>G</colors>
             <coloridentity>G</coloridentity>
-            <pt>2/2</pt>
+            <pt>4/3</pt>
         </prop>
         <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Myth%20of%20Baljurashi.jpg">T2170</set>
         <tablerow>2</tablerow>
@@ -4097,9 +4097,8 @@ At the beginning of combat on your turn, you may create Shaitan, a legendary 5/5
 • Target creature you control fights target
 　creature you don’t control.
 • Destroy target artifact.
-• Target player searches their library for a land
-　card, reveals it, put it into their hand, then
-　shuffles.</text>
+• Target player may put a land card from
+　their hand onto the battlefield tapped.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -4250,7 +4249,7 @@ T, Remove X charge counters from Matter Redistributor: Look at the top twice X c
     <card>
         <name>Neutron Evader</name>
         <text>Flying
-When Neutron Evader enters or leaves the battlefield, scry 1 and Neutron Evader deals 1 damage to each opponent.
+Whenever Neutron Evader attacks, it deals 1 damage to each opponent. Scry 1.
 Teleport UR (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)</text>
         <prop>
             <layout>normal</layout>
@@ -4362,7 +4361,7 @@ Whenever Acquisitor Delwani deals combat damage to a player, arm each Rebel crea
     </card>
     <card>
         <name>Maleck, Umida Division Head</name>
-        <text>At the beginning of your draw step, you may draw an additional card. If you do, skip each main phase this turn.</text>
+        <text>At the beginning of your end step, if you didn’t cast a spell this turn, draw a card.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -4479,8 +4478,8 @@ Sacrifice Faraday Transmitter: Return target artifact to its owner’s hand.</te
     </card>
     <card>
         <name>Foundry Analyst</name>
-        <text>Whenever another artifact enters the battlefield under your control, scry 1.
-2, Sacrifice Foundry Analyst: Target artifact gains hexproof until end of turn.</text>
+        <text>At the beginning of each end step, if an artifact entered the battlefield under your control, scry 1.
+Sacrifice Foundry Analyst: Target artifact gains hexproof until end of turn.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -4488,7 +4487,7 @@ Sacrifice Faraday Transmitter: Return target artifact to its owner’s hand.</te
             <maintype>Artifact Creature</maintype>
             <manacost>3</manacost>
             <cmc>3</cmc>
-            <pt>2/2</pt>
+            <pt>3/2</pt>
         </prop>
         <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Foundry%20Analyst.jpg">T2170</set>
         <tablerow>2</tablerow>
@@ -4873,7 +4872,7 @@ Scry 2. (U/B can be paid with either U or B.)</text>
         <name>The Martian Lens</name>
         <text>The Martian Lens enters the battlefield tapped.
 T: Add one mana of any type that a land you control could produce.
-WUBRG, T, Sacrifice The Martian Lens: Search your library for any number of land cards and put them onto the battlefield tapped. Then shuffle. You may have your life total become the number of lands you control.</text>
+2WUBRG, T: Look at the top three cards of your library. You may cast a spell from among them without paying its mana cost. Put the rest on the bottom of your library in a random order.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
