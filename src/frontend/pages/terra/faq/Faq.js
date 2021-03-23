@@ -414,15 +414,6 @@ export default function Faq() {
                         </div>
                     </section>
                     <section>
-                        <CardImage imageName={throwToTheWind} lazy />
-                        <div className="section-content">
-                            <h3>Throw to the Wind</h3>
-                            <ul>
-                                <li>You still have to discard the card, even if you cast it for its teleport cost.</li>
-                            </ul>
-                        </div>
-                    </section>
-                    <section>
                         <CardImage imageName={wantedSpeedster} lazy />
                         <div className="section-content">
                             <h3>Wanted Speedster</h3>

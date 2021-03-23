@@ -41,9 +41,8 @@ export default function Darkham() {
                             <Link to="/darkham/downloads">ᐳ Download for Tabletop Simulator</Link>
                         </div>
                     </div>
-                    <h1>Darkham Horror</h1>
                     <p>
-                        In distant rural France, a small seaside hamlet slumbers under the long shadow of a clifftop
+                        In rural France, a small seaside hamlet slumbers under the long shadow of a clifftop
                         manor. Despite the town's small stature, it has a venerable and sorrowful history, riddled with
                         pacts and secrets, for the ancient manor that overlooks it was built with an unnamable purpose.
                         What will you find beneath the manor?
@@ -54,7 +53,7 @@ export default function Darkham() {
                     </p>
                     <p>
                         In this campaign, the players take the role of a group of investigators looking into the
-                        mysteries of the mysterious manor that the lead investigator has inherited from their
+                        mysteries of the manor that the lead investigator has inherited from their
                         long-missing ancestor. With both new encounter cards and new player cards, what ancient plans
                         will you uncover?
                     </p>
