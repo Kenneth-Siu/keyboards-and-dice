@@ -9,7 +9,7 @@
     },
     "scripts": {
         "dev": "razzle start",
-        "build": "razzle build",
+        "build": "razzle build --noninteractive",
         "test": "razzle test --env=jsdom",
         "start": "node build/server.js"
     },
