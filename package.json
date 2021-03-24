@@ -10,7 +10,7 @@
         "dev": "razzle start",
         "build": "razzle build",
         "test": "razzle test --env=jsdom",
-        "serve": "node build/server.js"
+        "start": "node build/server.js"
     },
     "dependencies": {
         "body-parser": "^1.19.0",
