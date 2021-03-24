@@ -1,3 +1,8 @@
+const svgrWebpackMod = require("./svgrWebpackMod");
+
 module.exports = {
-    plugins: ["scss", "svgr"],
+    plugins: ["scss"],
+    modifyWebpackConfig(opts) {
+        return svgrWebpackMod(opts);
+    },
 };
