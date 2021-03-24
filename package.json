@@ -1,7 +1,7 @@
 {
-    "name": "terra-2170",
-    "version": "0.1.0",
-    "description": "Terra 2170",
+    "name": "keyboards-and-dice",
+    "version": "1.0.0",
+    "description": "Keyboards & Dice",
     "author": "Kenneth Siu",
     "engines": {
         "node": "14.x",
@@ -35,7 +35,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Kenneth-Siu/terra-2170.git"
+        "url": "git+https://github.com/Kenneth-Siu/keyboards-and-dice.git"
     },
     "devDependencies": {
         "@svgr/webpack": "^5.5.0",
