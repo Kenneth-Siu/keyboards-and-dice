@@ -32,9 +32,10 @@
     }
 }
 
-@mixin card-image {
+@mixin card-image-corners {
     border-radius: 4.46% / 3.2%;
 }
+$card-height-width-ratio: 523/375;
 
 @mixin blurred-background-image($brightness: 0.3) {
     overflow: hidden;

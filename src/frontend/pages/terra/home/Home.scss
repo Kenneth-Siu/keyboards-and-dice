@@ -93,8 +93,11 @@
                 font-weight: 600;
             }
 
-            .card-image {
+            .card-lazy-wrapper {
                 width: 12rem;
+                padding-bottom: 12rem * $card-height-width-ratio;
+            }
+            .card-image {
                 box-shadow: 0 0 0.2rem 0.2rem $color-3-strong;
             }
         }
@@ -143,6 +146,7 @@
         }
 
         .card-image {
+            display: block;
             width: 22%;
             position: absolute;
             transform-style: preserve-3d;

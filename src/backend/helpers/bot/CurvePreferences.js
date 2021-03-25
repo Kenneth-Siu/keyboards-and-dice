@@ -9,7 +9,6 @@ export class CurvePreferences {
         ];
         this.colorPreferences = colorPreferences;
         this.initCurvePreferences(picks);
-        console.log(this.curvePreferences);
     }
 
     getBoostToPower(card) {

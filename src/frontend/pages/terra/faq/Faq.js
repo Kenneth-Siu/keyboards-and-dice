@@ -16,7 +16,6 @@ import murmurTheCleaner from "../../../../../data/cardImages/Murmur the Cleaner.
 import mysticOfTheUnder from "../../../../../data/cardImages/Mystic of the Under.jpg";
 import iridiumMagnetoKnife from "../../../../../data/cardImages/Iridium Magneto-Knife.jpg";
 import theMoirai from "../../../../../data/cardImages/The Moirai.jpg";
-import throwToTheWind from "../../../../../data/cardImages/Throw to the Wind.jpg";
 import wantedSpeedster from "../../../../../data/cardImages/Wanted Speedster.jpg";
 import bioarchitect from "../../../../../data/cardImages/Bioarchitect.jpg";
 import ingolfsCommand from "../../../../../data/cardImages/Ingolfs Command.jpg";

@@ -10,7 +10,6 @@ export class ColorPreferences {
             { color: "G", weighting: 0 },
         ];
         this.initColorPreferences(picks);
-        console.log(this.colorPreferences);
     }
 
     getBoostToPower(card) {

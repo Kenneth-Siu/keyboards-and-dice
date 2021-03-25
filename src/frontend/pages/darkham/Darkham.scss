@@ -108,7 +108,7 @@
 
     @mixin darkham-card($card-width) {
         img.card {
-            @include card-image;
+            @include card-image-corners;
             position: absolute;
             width: $card-width;
             box-shadow: 0 0 0.17vw 0.17vw rgba(0, 0, 0, 0.3);

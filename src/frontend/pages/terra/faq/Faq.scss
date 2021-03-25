@@ -35,6 +35,12 @@
             flex-shrink: 0;
             max-width: 375px;
             @include responsive(width, 90%, 375px, 250px);
+            @include responsive(
+                padding-bottom,
+                90% * $card-height-width-ratio,
+                375px * $card-height-width-ratio,
+                250px * $card-height-width-ratio
+            );
             @include responsive(margin-bottom, 0.5rem, 0.5rem, 0);
         }
     }

@@ -51,19 +51,19 @@ export default function TerraHome() {
                         </div>
                         <div className="mechanics-showcase">
                             <figure>
-                                <CardImage imageName={timeParadox} />
+                                <CardImage lazy imageName={timeParadox} />
                                 <figcaption>New Mechanic: Teleport</figcaption>
                             </figure>
                             <figure>
-                                <CardImage imageName={kushakResearchCouncil} />
+                                <CardImage lazy imageName={kushakResearchCouncil} />
                                 <figcaption>New Mechanic: Reconstitute</figcaption>
                             </figure>
                             <figure>
-                                <CardImage imageName={shadowlightInfiltrator} />
+                                <CardImage lazy imageName={shadowlightInfiltrator} />
                                 <figcaption>New Mechanic: Infiltrate</figcaption>
                             </figure>
                             <figure>
-                                <CardImage imageName={acquisitorDelwani} />
+                                <CardImage lazy imageName={acquisitorDelwani} />
                                 <figcaption>New Mechanic: Arm</figcaption>
                             </figure>
                         </div>
@@ -81,22 +81,22 @@ export default function TerraHome() {
                             <Link to="/terra/drafts">ᐳ Draft now</Link>
                         </p>
                         <div className="draft-showcase">
-                        <div className="draft-showcase-elements">
-                            <CardImage imageName={karnThePenitent} />
-                            <CardImage imageName={cryonicsFacility} />
-                            <CardImage imageName={tundraStrider} />
-                            <CardImage imageName={hongWaiPrototype} />
-                            <CardImage imageName={homeostimulationSuit} />
-                            <CardImage imageName={warapurCompanyDrudge} />
-                            <CardImage imageName={hoverbike} />
-                            <CardImage imageName={reconstructionSpecialist} />
-                            <CardImage imageName={ripSpaceTime} />
-                            <CardImage imageName={broodAmbush} />
-                            <CardImage imageName={warzoneMentor} />
-                            <CardImage imageName={vulcanDevastators} />
-                            <CardImage imageName={biomechTeam} />
-                            <CardImage imageName={radiumTracker} />
-                        </div>
+                            <div className="draft-showcase-elements">
+                                <CardImage imageName={karnThePenitent} />
+                                <CardImage imageName={cryonicsFacility} />
+                                <CardImage imageName={tundraStrider} />
+                                <CardImage imageName={hongWaiPrototype} />
+                                <CardImage imageName={homeostimulationSuit} />
+                                <CardImage imageName={warapurCompanyDrudge} />
+                                <CardImage imageName={hoverbike} />
+                                <CardImage imageName={reconstructionSpecialist} />
+                                <CardImage imageName={ripSpaceTime} />
+                                <CardImage imageName={broodAmbush} />
+                                <CardImage imageName={warzoneMentor} />
+                                <CardImage imageName={vulcanDevastators} />
+                                <CardImage imageName={biomechTeam} />
+                                <CardImage imageName={radiumTracker} />
+                            </div>
                         </div>
                     </div>
                 </section>

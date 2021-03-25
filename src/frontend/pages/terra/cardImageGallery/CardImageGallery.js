@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import cardList from "../../../../shared/cardList.js";
 import cardImageGallerySplash from "../../../../../data/cardImageGallerySplash.jpg";
 import filterBackground from "../../../../../data/filterBackground.jpg";
@@ -14,7 +14,6 @@ import UncommonSetSymbol from "../../../../../data/uncommonSetSymbol.svg";
 import RareSetSymbol from "../../../../../data/rareSetSymbol.svg";
 import MythicSetSymbol from "../../../../../data/mythicSetSymbol.svg";
 import "./CardImageGallery.scss";
-import { forceCheck } from "react-lazyload";
 import CardImage from "../../../components/cardImages/MagicCardImage.js";
 import {
     BLACK_COLOR,
@@ -41,21 +40,6 @@ export default function CardImageGallery() {
     const [uncommonFilter, setUncommonFilter] = useState(false);
     const [rareFilter, setRareFilter] = useState(false);
     const [mythicFilter, setMythicFilter] = useState(false);
-
-    useEffect(() => {
-        forceCheck();
-    }, [
-        whiteFilter,
-        blueFilter,
-        blackFilter,
-        redFilter,
-        greenFilter,
-        goldFilter,
-        colorlessFilter,
-        commonFilter,
-        uncommonFilter,
-        mythicFilter,
-    ]);
 
     function colorFilterCards(cards) {
         if (whiteFilter || blueFilter || blackFilter || redFilter || greenFilter || goldFilter || colorlessFilter) {

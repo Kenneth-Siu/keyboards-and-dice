@@ -31,9 +31,14 @@
                 z-index: 1;
             }
 
+            .card-lazy-wrapper {
+                width: 100%;
+                padding-bottom: 100% * $card-height-width-ratio;
+                pointer-events: none;
+            }
+
             img {
                 pointer-events: none;
-                width: 100%;
             }
         }
     }

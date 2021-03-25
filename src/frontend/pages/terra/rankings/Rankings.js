@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { forceCheck } from "react-lazyload";
+import React, { useState } from "react";
 import {
     BLACK_COLOR,
     BLUE_COLOR,
@@ -42,21 +41,6 @@ export default function Rankings() {
     const [uncommonFilter, setUncommonFilter] = useState(false);
     const [rareFilter, setRareFilter] = useState(false);
     const [mythicFilter, setMythicFilter] = useState(false);
-
-    useEffect(() => {
-        forceCheck();
-    }, [
-        whiteFilter,
-        blueFilter,
-        blackFilter,
-        redFilter,
-        greenFilter,
-        goldFilter,
-        colorlessFilter,
-        commonFilter,
-        uncommonFilter,
-        mythicFilter,
-    ]);
 
     function colorFilterCards(cards) {
         if (whiteFilter || blueFilter || blackFilter || redFilter || greenFilter || goldFilter || colorlessFilter) {
