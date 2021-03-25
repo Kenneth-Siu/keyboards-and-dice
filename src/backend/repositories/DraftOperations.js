@@ -1,6 +1,6 @@
 import pool from "./pool.js";
 import { Player } from "../models/Player.js";
-import { BOT_USER_IDS, CARDS_IN_PACK, DEFAULT_PLAYERS_IN_DRAFT, DRAFT_STATUSES } from "../../config.js";
+import { CARDS_IN_PACK, DEFAULT_PLAYERS_IN_DRAFT, DRAFT_STATUSES } from "../../config.js";
 import { flatMap, sampleSize, shuffle } from "lodash";
 import { Card } from "../models/Card.js";
 import { Booster } from "../models/Booster.js";
@@ -8,6 +8,7 @@ import { getBooster } from "../helpers/DraftHelpers.js";
 import { Draft } from "../models/Draft.js";
 import { Bot } from "../helpers/bot/Bot.js";
 import { Pick } from "../models/Pick.js";
+import { BOT_USER_IDS } from "../config.js";
 
 export class DraftOperations {
     async startDraft(draftId) {
