@@ -2,6 +2,7 @@ import express from "express";
 import ensureLoggedIn from "../ensureLoggedIn.js";
 import { DraftLimitReachedErrorName } from "../errors/DraftLimitReachedError.js";
 import { NotFoundErrorName } from "../errors/NotFoundError.js";
+import { OwnerCantLeaveErrorName } from "../errors/OwnerCantLeaveError.js";
 import * as DraftService from "../services/DraftService.js";
 
 const router = express.Router();
@@ -83,6 +84,23 @@ router.put("/:draftId/join", ensureLoggedIn, (req, res) => {
         .catch((err) => {
             if (err.name === DraftLimitReachedErrorName) {
                 res.status(400).send(err.message);
+            } else if (err.name === NotFoundErrorName) {
+                res.status(404).send(err.message);
+            } else {
+                console.log(err);
+                res.sendStatus(500);
+            }
+        });
+});
+
+router.put("/:draftId/leave", ensureLoggedIn, (req, res) => {
+    DraftService.leaveDraft(req.params.draftId, req.user.id)
+        .then(() => {
+            res.sendStatus(201);
+        })
+        .catch((err) => {
+            if (err.name === OwnerCantLeaveErrorName) {
+                res.status(403).send(err.message);
             } else if (err.name === NotFoundErrorName) {
                 res.status(404).send(err.message);
             } else {

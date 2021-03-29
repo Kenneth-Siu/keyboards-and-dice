@@ -1,7 +1,7 @@
 import pool from "./pool.js";
 import { Player } from "../models/Player.js";
 import { CARDS_IN_PACK, DEFAULT_PLAYERS_IN_DRAFT, DRAFT_STATUSES } from "../../config.js";
-import { flatMap, sampleSize, shuffle } from "lodash";
+import { difference, flatMap, sample, sampleSize, shuffle } from "lodash";
 import { Card } from "../models/Card.js";
 import { Booster } from "../models/Booster.js";
 import { getBooster } from "../helpers/DraftHelpers.js";
@@ -16,7 +16,7 @@ export class DraftOperations {
         try {
             await this.client.query("BEGIN");
 
-            const humanPlayers = await this.getHumanPlayers(draftId);
+            const humanPlayers = await this.getPlayers(draftId);
             const botPlayers = await this.createAndGetBotPlayers(
                 DEFAULT_PLAYERS_IN_DRAFT - humanPlayers.length,
                 draftId
@@ -49,6 +49,29 @@ export class DraftOperations {
             await this.client.query("BEGIN");
 
             await this.pickOperations(draftId, playerId, booster, card);
+
+            await this.client.query("COMMIT");
+        } catch (error) {
+            await this.client.query("ROLLBACK");
+            throw error;
+        } finally {
+            this.client.release();
+        }
+    }
+
+    async convertHumanToBot(draftId, playerId) {
+        this.client = await pool.connect();
+        try {
+            await this.client.query("BEGIN");
+
+            const players = await this.getPlayers(draftId);
+            const userIds = players.map((player) => player.userId);
+
+            const replacementBotId = sample(difference(BOT_USER_IDS, userIds));
+
+            await this.replaceHumanPlayerWithBot(playerId, replacementBotId);
+
+            await this.makeBotPicks(draftId);
 
             await this.client.query("COMMIT");
         } catch (error) {
@@ -127,7 +150,7 @@ export class DraftOperations {
         return Booster.createManyFromDb(result.rows);
     }
 
-    async getHumanPlayers(draftId) {
+    async getPlayers(draftId) {
         const result = await this.client.query(
             `SELECT * FROM players 
             WHERE draft_id = $1`,
@@ -267,6 +290,15 @@ export class DraftOperations {
             SET pack_number = $1
             WHERE id = $2`,
             [draft.packNumber + 1, draft.id]
+        );
+    }
+
+    async replaceHumanPlayerWithBot(playerId, botId) {
+        await this.client.query(
+            `UPDATE players
+            SET user_id = $1
+            WHERE id = $2`,
+            [botId, playerId]
         );
     }
 }

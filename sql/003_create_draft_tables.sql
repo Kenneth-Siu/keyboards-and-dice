@@ -58,7 +58,10 @@ CREATE TABLE drafts (
     created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
     CONSTRAINT fk_status
         FOREIGN KEY(status)
-        REFERENCES draft_statuses(id)
+        REFERENCES draft_statuses(id),
+    CONSTRAINT fk_owner
+        FOREIGN KEY(owner_id)
+        REFERENCES users(id)
 );
 
 CREATE TABLE players (

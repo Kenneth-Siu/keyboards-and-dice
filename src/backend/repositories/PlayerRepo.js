@@ -97,3 +97,57 @@ export async function findDisplayNamesForDraft(draftId) {
         throw error;
     }
 }
+
+export async function deleteCascade(playerId) {
+    const client = await pool.connect();
+    try {
+        await client.query("BEGIN");
+
+        const boostersResult = await client.query(
+            `SELECT id
+            FROM boosters
+            WHERE player_id = $1`,
+            [playerId]
+        );
+        const boosterIds = boostersResult.rows.map((row) => row.id);
+
+        if (boosterIds.length > 0) {
+            await pool.query(
+                `DELETE FROM cards
+                WHERE booster_id IN (${boosterIds.map((_, index) => `$${index + 1}`).join(", ")})`,
+                boosterIds
+            );
+        }
+
+        await pool.query(
+            `DELETE FROM picks
+            WHERE player_id = $1`,
+            [playerId]
+        );
+
+        await pool.query(
+            `DELETE FROM memories
+            WHERE player_id = $1`,
+            [playerId]
+        );
+
+        await pool.query(
+            `DELETE FROM boosters
+            WHERE player_id = $1`,
+            [playerId]
+        );
+
+        await pool.query(
+            `DELETE FROM players
+            WHERE id = $1`,
+            [playerId]
+        );
+
+        await client.query("COMMIT");
+    } catch (error) {
+        await client.query("ROLLBACK");
+        throw error;
+    } finally {
+        client.release();
+    }
+}

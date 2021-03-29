@@ -9,6 +9,7 @@ import * as BoosterRepo from "../repositories/BoosterRepo.js";
 import * as CardRepo from "../repositories/CardRepo.js";
 import * as PickRepo from "../repositories/PickRepo.js";
 import { minBy } from "lodash";
+import OwnerCantLeaveErrorName from "../errors/OwnerCantLeaveError.js";
 
 export async function getDraftsForUser(userId) {
     const drafts = await DraftRepo.findAllForUser(userId);
@@ -89,6 +90,27 @@ export async function joinDraft(draftId, userId) {
     const player = await PlayerRepo.find(userId, draftId);
     if (!player) {
         return await PlayerRepo.create(userId, draftId);
+    }
+    return;
+}
+
+export async function leaveDraft(draftId, userId) {
+    const draft = await DraftRepo.find(draftId);
+    if (!draft) {
+        throw new NotFoundError(`Draft not found`);
+    }
+    if (draft.ownerId === userId) {
+        throw new OwnerCantLeaveErrorName(`Can't leave your own draft`);
+    }
+    const player = await PlayerRepo.find(userId, draftId);
+    if (!player) {
+        throw new NotFoundError(`Draft not found`);
+    }
+    if (draft.status === DRAFT_STATUSES.IN_PROGRESS) {
+        await new DraftOperations().convertHumanToBot(draftId, player.id);
+    }
+    if (draft.status === DRAFT_STATUSES.READY_TO_START || draft.status === DRAFT_STATUSES.COMPLETE) {
+        await PlayerRepo.deleteCascade(player.id);
     }
     return;
 }
