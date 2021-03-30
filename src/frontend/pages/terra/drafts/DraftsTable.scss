@@ -62,7 +62,8 @@
             fill: $color-1;
         }
 
-        &.delete svg {
+        &.delete svg,
+        &.leave svg {
             fill: crimson;
         }
     }

@@ -1,11 +1,11 @@
 import copy from "copy-to-clipboard";
 import React from "react";
-import { MdContentCopy, MdDelete } from "react-icons/md";
+import { MdContentCopy, MdDelete, MdExitToApp } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { PlayerList } from "../../../components/playerList/PlayerList.js";
 import "./DraftsTable.scss";
 
-export function DraftsTable({ drafts, loggedInUser, deleteDraft }) {
+export function DraftsTable({ drafts, loggedInUser, deleteDraft, leaveDraft }) {
     if (!drafts) {
         return null;
     }
@@ -36,6 +36,7 @@ export function DraftsTable({ drafts, loggedInUser, deleteDraft }) {
                                     draft={draft}
                                     loggedInUser={loggedInUser}
                                     deleteDraft={deleteDraft}
+                                    leaveDraft={leaveDraft}
                                 />
                             ))}
                     </tbody>
@@ -45,7 +46,7 @@ export function DraftsTable({ drafts, loggedInUser, deleteDraft }) {
     );
 }
 
-function DraftsTableRow({ draft, loggedInUser, deleteDraft, ...rest }) {
+function DraftsTableRow({ draft, loggedInUser, deleteDraft, leaveDraft, ...rest }) {
     return (
         <tr {...rest}>
             <td className="draft-id">
@@ -59,25 +60,28 @@ function DraftsTableRow({ draft, loggedInUser, deleteDraft, ...rest }) {
                     />
                 </div>
             </td>
-            <td colSpan={draft.ownerId === loggedInUser.id ? 1 : 2}>{draft.statusName}</td>
-            {draft.ownerId === loggedInUser.id && (
-                <td className="controls">
-                    {draft.status === 0 ? (
-                        <button className="copy" aria-label="Copy" onClick={() => copy(draft.id)}>
-                            <MdContentCopy />
-                        </button>
-                    ) : null}
-                    <button
-                        className="delete"
-                        aria-label="Delete"
-                        onClick={() => {
-                            deleteDraft(draft.id);
-                        }}
-                    >
+            <td>{draft.statusName}</td>
+            <td className="controls">
+                {draft.status === 0 ? (
+                    <button title="Copy draft ID" className="copy" aria-label="Copy" onClick={() => copy(draft.id)}>
+                        <MdContentCopy />
+                    </button>
+                ) : null}
+                {draft.ownerId === loggedInUser.id ? (
+                    <button title="Delete" className="delete" aria-label="Delete" onClick={() => deleteDraft(draft.id)}>
                         <MdDelete />
                     </button>
-                </td>
-            )}
+                ) : (
+                    <button
+                        title="Leave draft"
+                        className="leave"
+                        aria-label="Leave draft"
+                        onClick={() => leaveDraft(draft.id)}
+                    >
+                        <MdExitToApp />
+                    </button>
+                )}
+            </td>
         </tr>
     );
 }

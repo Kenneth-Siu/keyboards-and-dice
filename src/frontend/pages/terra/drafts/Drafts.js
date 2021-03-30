@@ -34,7 +34,12 @@ export default function Drafts({ loggedInUser }) {
                         <LoadingSpinner />
                     ) : (
                         <>
-                            <DraftsTable drafts={drafts} loggedInUser={loggedInUser} deleteDraft={deleteDraft} />
+                            <DraftsTable
+                                drafts={drafts}
+                                loggedInUser={loggedInUser}
+                                deleteDraft={deleteDraft}
+                                leaveDraft={leaveDraft}
+                            />
                             <CreateDraftForm createDraft={createDraft} busy={busy} />
                             <JoinDraftForm
                                 joinDraftId={joinDraftId}
@@ -91,15 +96,32 @@ export default function Drafts({ loggedInUser }) {
     }
 
     function deleteDraft(draftId) {
-        setBusy(true);
-        asyncTry(
-            async () => {
-                await DraftsApi.deleteDraft(draftId);
-                getDrafts();
-            },
-            () => {
-                setBusy(false);
-            }
-        );
+        if (window.confirm("This will delete the draft. You cannot undo this!")) {
+            setBusy(true);
+            asyncTry(
+                async () => {
+                    await DraftsApi.deleteDraft(draftId);
+                    getDrafts();
+                },
+                () => {
+                    setBusy(false);
+                }
+            );
+        }
+    }
+
+    function leaveDraft(draftId) {
+        if (window.confirm("You will leave the draft. If the draft has started, you cannot undo this!")) {
+            setBusy(true);
+            asyncTry(
+                async () => {
+                    await DraftsApi.leaveDraft(draftId);
+                    getDrafts();
+                },
+                () => {
+                    setBusy(false);
+                }
+            );
+        }
     }
 }

@@ -37,3 +37,7 @@ export async function submitPick(draftId, pickNumber, cardId) {
 export async function deleteDraft(draftId) {
     return await delete_(baseUrl + `/${draftId}`);
 }
+
+export async function leaveDraft(draftId) {
+    return await put(baseUrl + `/${draftId}/leave`);
+}
