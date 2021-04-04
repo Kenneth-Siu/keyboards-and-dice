@@ -4,7 +4,7 @@
 @import "../../components/navBars/TerraNavBar.scss";
 
 .darkham-page {
-    @include blurred-page-background(0.3);
+    @include blurred-page-background(0.1);
 
     .container {
         @include container;
@@ -93,8 +93,10 @@
     }
 
     div.box-side-download-link {
+        @include responsive(font-size, 1rem, 1.3rem);
         @include responsive(width, 100%, 100%, 50%);
-        @include responsive(padding-left, 0, 0, 3%);
+        @include responsive(margin-top, 0, 1rem, 0);
+        @include responsive(margin-bottom, 0.5rem, 1.5rem, 0);
         @include responsive(text-align, center, center, left);
     }
 

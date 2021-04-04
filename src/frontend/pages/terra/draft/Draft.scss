@@ -99,7 +99,7 @@
 }
 
 .single-draft-page {
-    @include blurred-page-background(0.2);
+    @include blurred-page-background(0.14);
     position: relative;
 
     .container {
