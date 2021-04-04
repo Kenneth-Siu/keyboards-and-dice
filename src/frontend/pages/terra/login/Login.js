@@ -3,6 +3,7 @@ import "./Login.scss";
 import TerraSymbol from "../../../../../data/terraSymbol.svg";
 import GoogleLogo from "../../../../../data/googleIcon.svg";
 import FacebookLogo from "../../../../../data/facebookIcon.svg";
+import DiscordLogo from "../../../../../data/discordIcon.svg";
 import GithubLogo from "../../../../../data/githubIcon.svg";
 import loginSplash from "../../../../../data/loginSplash.jpg";
 
@@ -25,6 +26,10 @@ export default function Login() {
                         <a className="facebook login-button" href="/api/login/facebook">
                             <FacebookLogo />
                             Sign in with Facebook
+                        </a>
+                        <a className="discord login-button" href="/api/login/discord">
+                            <DiscordLogo />
+                            Sign in with Discord
                         </a>
                         <a className="github login-button" href="/api/login/github">
                             <GithubLogo />

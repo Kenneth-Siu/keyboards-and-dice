@@ -2,6 +2,7 @@ import passport from "passport";
 import { Strategy as GoogleStrategy } from "passport-google-oauth20";
 import { Strategy as FacebookStrategy } from "passport-facebook";
 import { Strategy as GithubStrategy } from "passport-github2";
+import { Strategy as DiscordStrategy } from "passport-discord";
 import * as UserRepo from "./repositories/UserRepo.js";
 
 export default function configurePassport() {
@@ -33,6 +34,26 @@ export default function configurePassport() {
             },
             (accessToken, refreshToken, profile, done) => {
                 UserRepo.findOrCreate(profile)
+                    .then((user) => {
+                        done(null, user);
+                    })
+                    .catch((err) => {
+                        done(err);
+                    });
+            }
+        )
+    );
+
+    passport.use(
+        new DiscordStrategy(
+            {
+                clientID: process.env.DISCORD_CLIENT_ID,
+                clientSecret: process.env.DISCORD_CLIENT_SECRET,
+                callbackURL: process.env.CALLBACK_URL_BASE + "/api/login/discord/return",
+                scope: ["identify"],
+            },
+            (accessToken, refreshToken, profile, done) => {
+                UserRepo.findOrCreate({ displayName: profile.username, ...profile })
                     .then((user) => {
                         done(null, user);
                     })
