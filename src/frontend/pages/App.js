@@ -13,6 +13,7 @@ import "./cssreset.css";
 import "./App.scss";
 import Draft from "./terra/draft/Draft.js";
 import Rankings from "./terra/rankings/Rankings.js";
+import PrintAndPlay from "./terra/printAndPlay/PrintAndPlay.js";
 import MainNavBar from "../components/navBars/MainNavBar.js";
 import SmallMainNavBar from "../components/navBars/SmallMainNavBar.js";
 import Home from "./home/Home.js";
@@ -24,6 +25,7 @@ export default function App({ loggedInUser }) {
     return (
         <>
             <Switch>
+                <Route exact path="/terra/print-and-play" component={PrintAndPlay} />
                 <Route path="/terra">
                     {SmallMainNavBar()}
                     {TerraNavBar()}

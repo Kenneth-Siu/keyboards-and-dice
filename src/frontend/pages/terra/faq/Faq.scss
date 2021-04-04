@@ -37,7 +37,7 @@
             @include responsive(width, 90%, 375px, 250px);
             @include responsive(
                 padding-bottom,
-                90% * $card-height-width-ratio,
+                min(#{90% * $card-height-width-ratio}, #{375px * $card-height-width-ratio}),
                 375px * $card-height-width-ratio,
                 250px * $card-height-width-ratio
             );
@@ -87,6 +87,10 @@
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
         margin-left: 1.4rem;
+
+        li {
+            padding-left: 0.5rem;
+        }
     }
 
     ul {

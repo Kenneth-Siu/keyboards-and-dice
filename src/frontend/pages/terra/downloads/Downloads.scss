@@ -4,65 +4,91 @@
 @import "../../../components/navBars/TerraNavBar.scss";
 
 .downloads-page {
-    @include blurred-page-background(0.2);
+    position: relative;
+    display: flex;
+    @include responsive(flex-wrap, wrap, wrap, nowrap);
+    @include terraPageHeightMinusMainNavBar;
 
-    .container {
-        @include container;
-        line-height: 1.2;
+    .tile {
+        @include blurred-background-image;
+        @include responsive(min-height, calc((100vh - #{$terra-navbar-small-height}) / 2), auto);
+        @include responsive(width, 100%, 100%, 50%);
         padding-right: 0.5rem;
         padding-left: 0.5rem;
-        padding-bottom: 0.5rem;
+        flex-grow: 0;
+        flex-shrink: 0;
+        justify-content: center;
         position: relative;
-        color: $color-1;
+        background-color: $color-2;
+        display: flex;
     }
 
-    h1 {
-        text-align: center;
-        font-weight: 700;
-        font-size: 1.4rem;
-        margin-top: 1rem;
-        margin-bottom: 0.5rem;
+    .content {
+        position: relative;
+        @include responsive(max-width, 100%, $medium-container-width, $large-container-width);
+        @include responsive(margin-top, 1.4rem, 1.4rem, 2.8rem);
+        @include responsive(margin-bottom, 1.4rem, 1.4rem, 2.8rem);
+        @include breakpoint(large) {
+            margin: 2.8rem;
+        }
+        line-height: 1.2;
+
+        h1 {
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 0.5rem;
+
+            .mono-space {
+                width: 100%;
+                font-family: monospace;
+                font-size: 0.95rem;
+                border: solid 1px scale-color($color-1, $alpha: -20%);
+                padding: 0 0.2rem;
+                border-radius: 0.2rem;
+            }
+        }
+
+        em {
+            font-style: italic;
+        }
+
+        a {
+            font-weight: 600;
+            color: $color-1;
+        }
+
+        ol {
+            list-style-type: decimal;
+            list-style-position: outside;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            margin-left: 1.4rem;
+
+            li {
+                padding-left: 0.5rem;
+            }
+        }
+
+        li {
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        blockquote {
+            margin: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: scale-color($color-6-light, $alpha: -80%);
+        }
     }
 
-    h2 {
-        font-weight: 600;
-        font-size: 1.2rem;
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
+    .cockatrice {
     }
 
-    b {
-        font-weight: bold;
-    }
-
-    p {
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .mono-space {
-        width: 100%;
-        font-family: monospace;
-        font-size: 0.95rem;
-        border: solid 1px scale-color($color-1, $alpha: -20%);
-        padding: 0 0.2rem;
-        border-radius: 0.2rem;
-    }
-
-    ol {
-        list-style-type: decimal;
-        list-style-position: outside;
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-        margin-left: 1.4rem;
-    }
-
-    li {
-        margin-top: 0.2rem;
-        margin-bottom: 0.2rem;
-    }
-
-    a {
-        color: $color-1;
+    .print {
+        @include blurred-background-image(0.2);
     }
 }

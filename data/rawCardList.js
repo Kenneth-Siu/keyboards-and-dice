@@ -3348,7 +3348,7 @@ colorIdentity: "WU"
         "id": 215,
         "rarity": "R",
         "notes": {
-grade: "A",
+grade: "A-",
 colorIdentity: "UB",
 cockatrice_related: "Assassin"
         }
@@ -3577,7 +3577,7 @@ colorIdentity: "UR"
         "id": 231,
         "rarity": "R",
         "notes": {
-grade: "A",
+grade: "A-",
 colorIdentity: "UR",
 cockatrice_related: "Mech"
         }
