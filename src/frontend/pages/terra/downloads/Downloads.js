@@ -73,7 +73,7 @@ export default function Downloads() {
                                 </em>
                             </li>
                             <li>
-                                The cards should be sized to fit inside a sleeve in front of a{" "}
+                                The cards should already be sized to fit inside a sleeve in front of a{" "}
                                 <em>Magic: the Gathering</em> card, so check that scaling is set to 100%. Your sleeves
                                 and setup may differ though, so consider printing out a page now as a test run.
                             </li>
@@ -92,8 +92,8 @@ export default function Downloads() {
                         </ol>
                         <blockquote>
                             <p>
-                                You can just shuffle up all of the cards and form a cube for drafting! The rarities are
-                                close to actual boosters.
+                                You can just shuffle up all of the cards and form a cube for drafting! The distribution
+                                of rarities mimics actual boosters pretty well.
                             </p>
                             <p>
                                 However, for a more realistic drafting experience, consider setting up boosters ahead of

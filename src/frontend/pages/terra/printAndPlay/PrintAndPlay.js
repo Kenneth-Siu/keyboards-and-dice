@@ -14,7 +14,7 @@ export default function Rankings() {
                     ...cardList.filter((card) => card.rarity === RARE_RARITY),
                     ...cardList.filter((card) => card.rarity === UNCOMMON_RARITY),
                     ...cardList.filter((card) => card.rarity === COMMON_RARITY),
-                ].map((card, index) => {
+                ].map((card) => {
                     if (card.rarity === COMMON_RARITY) {
                         return (
                             <React.Fragment key={card.id}>
