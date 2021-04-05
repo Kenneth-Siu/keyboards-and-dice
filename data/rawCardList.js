@@ -279,7 +279,7 @@ const rawCardList = [
         "manaValue": 3,
         "color": "",
         "type": "Legendary Planeswalker — Karn ",
-        "id": 0,
+        "cardId": 0,
         "rarity": "M",
         "notes": {
 grade: "A-",
@@ -293,7 +293,7 @@ colorIdentity: ""
         "manaValue": 4,
         "color": "W",
         "type": "Legendary Planeswalker — Ajani ",
-        "id": 1,
+        "cardId": 1,
         "rarity": "M",
         "notes": {
 grade: "A-",
@@ -307,7 +307,7 @@ colorIdentity: "W"
         "manaValue": 2,
         "color": "W",
         "type": "Creature — Police Engineer Medic ",
-        "id": 2,
+        "cardId": 2,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -321,7 +321,7 @@ colorIdentity: "W"
         "manaValue": 3,
         "color": "W",
         "type": "Sorcery",
-        "id": 3,
+        "cardId": 3,
         "rarity": "C",
         "notes": {
 grade: "B-",
@@ -335,7 +335,7 @@ colorIdentity: "W"
         "manaValue": 3,
         "color": "W",
         "type": "Creature — Rebel Scout ",
-        "id": 4,
+        "cardId": 4,
         "rarity": "C",
         "notes": {
 grade: "C+",
@@ -350,7 +350,7 @@ cockatrice_related: "Equipment"
         "manaValue": 2,
         "color": "W",
         "type": "Artifact — Equipment ",
-        "id": 5,
+        "cardId": 5,
         "rarity": "R",
         "notes": {
 grade: "C+",
@@ -364,7 +364,7 @@ colorIdentity: "W"
         "manaValue": 4,
         "color": "W",
         "type": "Artifact Creature — Police Mech ",
-        "id": 6,
+        "cardId": 6,
         "rarity": "C",
         "notes": {
 grade: "D+",
@@ -378,7 +378,7 @@ colorIdentity: "W"
         "manaValue": 4,
         "color": "W",
         "type": "Creature — Police Advisor ",
-        "id": 7,
+        "cardId": 7,
         "rarity": "U",
         "notes": {
 grade: "B-",
@@ -392,7 +392,7 @@ colorIdentity: "W"
         "manaValue": 4,
         "color": "W",
         "type": "Artifact",
-        "id": 8,
+        "cardId": 8,
         "rarity": "U",
         "notes": {
 grade: "B-",
@@ -406,7 +406,7 @@ colorIdentity: "W"
         "manaValue": 3,
         "color": "W",
         "type": "Enchantment",
-        "id": 9,
+        "cardId": 9,
         "rarity": "R",
         "notes": {
 grade: "B+",
@@ -420,7 +420,7 @@ colorIdentity: "W"
         "manaValue": 3,
         "color": "W",
         "type": "Enchantment — Aura ",
-        "id": 10,
+        "cardId": 10,
         "rarity": "U",
         "notes": {
 grade: "B+",
@@ -434,7 +434,7 @@ colorIdentity: "W"
         "manaValue": 3,
         "color": "W",
         "type": "Artifact Creature — Military Carrier ",
-        "id": 11,
+        "cardId": 11,
         "rarity": "R",
         "notes": {
 grade: "B+",
@@ -448,7 +448,7 @@ colorIdentity: "W"
         "manaValue": 4,
         "color": "W",
         "type": "Sorcery",
-        "id": 12,
+        "cardId": 12,
         "rarity": "C",
         "notes": {
 grade: "B",
@@ -464,7 +464,7 @@ cockatrice_related_count: "2"
         "manaValue": 2,
         "color": "W",
         "type": "Enchantment",
-        "id": 13,
+        "cardId": 13,
         "rarity": "C",
         "notes": {
 grade: "B-",
@@ -478,7 +478,7 @@ colorIdentity: "W"
         "manaValue": 3,
         "color": "W",
         "type": "Sorcery",
-        "id": 14,
+        "cardId": 14,
         "rarity": "C",
         "notes": {
 grade: "D+",
@@ -492,7 +492,7 @@ colorIdentity: "W"
         "manaValue": 3,
         "color": "W",
         "type": "Creature — Police Advisor ",
-        "id": 15,
+        "cardId": 15,
         "rarity": "U",
         "notes": {
 grade: "B",
@@ -506,7 +506,7 @@ colorIdentity: "W"
         "manaValue": 6,
         "color": "W",
         "type": "Legendary Artifact — Equipment ",
-        "id": 16,
+        "cardId": 16,
         "rarity": "M",
         "notes": {
 grade: "A",
@@ -520,7 +520,7 @@ colorIdentity: "W"
         "manaValue": 3,
         "color": "W",
         "type": "Artifact Creature — Station ",
-        "id": 17,
+        "cardId": 17,
         "rarity": "R",
         "notes": {
 grade: "B",
@@ -534,7 +534,7 @@ colorIdentity: "W"
         "manaValue": 7,
         "color": "W",
         "type": "Legendary Artifact Creature — Battleship ",
-        "id": 18,
+        "cardId": 18,
         "rarity": "M",
         "notes": {
 grade: "B+",
@@ -550,7 +550,7 @@ cockatrice_related_count: "x"
         "manaValue": 1,
         "color": "W",
         "type": "Instant",
-        "id": 19,
+        "cardId": 19,
         "rarity": "C",
         "notes": {
 grade: "C+",
@@ -565,7 +565,7 @@ cockatrice_related: "Equipment"
         "manaValue": 2,
         "color": "W",
         "type": "Instant",
-        "id": 20,
+        "cardId": 20,
         "rarity": "R",
         "notes": {
 grade: "B+",
@@ -579,7 +579,7 @@ colorIdentity: "W"
         "manaValue": 1,
         "color": "W",
         "type": "Sorcery",
-        "id": 21,
+        "cardId": 21,
         "rarity": "C",
         "notes": {
 grade: "D",
@@ -593,7 +593,7 @@ colorIdentity: "W"
         "manaValue": 5,
         "color": "W",
         "type": "Artifact Creature — Military Carrier ",
-        "id": 22,
+        "cardId": 22,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -607,7 +607,7 @@ colorIdentity: "W"
         "manaValue": 1,
         "color": "W",
         "type": "Artifact Creature — Police Mech Dog ",
-        "id": 23,
+        "cardId": 23,
         "rarity": "C",
         "notes": {
 grade: "D",
@@ -621,7 +621,7 @@ colorIdentity: "W"
         "manaValue": 4,
         "color": "W",
         "type": "Artifact Creature — Police Airship ",
-        "id": 24,
+        "cardId": 24,
         "rarity": "U",
         "notes": {
 grade: "B",
@@ -635,7 +635,7 @@ colorIdentity: "W"
         "manaValue": 2,
         "color": "W",
         "type": "Artifact — Equipment ",
-        "id": 25,
+        "cardId": 25,
         "rarity": "C",
         "notes": {
 grade: "D+",
@@ -649,7 +649,7 @@ colorIdentity: "W"
         "manaValue": 2,
         "color": "W",
         "type": "Artifact — Equipment ",
-        "id": 26,
+        "cardId": 26,
         "rarity": "U",
         "notes": {
 grade: "C",
@@ -663,7 +663,7 @@ colorIdentity: "W"
         "manaValue": 2,
         "color": "W",
         "type": "Instant",
-        "id": 27,
+        "cardId": 27,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -679,7 +679,7 @@ cockatrice_related_count: "2"
         "manaValue": 2,
         "color": "W",
         "type": "Creature — Rebel Soldier ",
-        "id": 28,
+        "cardId": 28,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -693,7 +693,7 @@ colorIdentity: "W"
         "manaValue": 6,
         "color": "W",
         "type": "Artifact Creature — Military Mech ",
-        "id": 29,
+        "cardId": 29,
         "rarity": "C",
         "notes": {
 grade: "D+",
@@ -707,7 +707,7 @@ colorIdentity: "W"
         "manaValue": 2,
         "color": "W",
         "type": "Creature — Police Saboteur ",
-        "id": 30,
+        "cardId": 30,
         "rarity": "C",
         "notes": {
 grade: "C+",
@@ -721,7 +721,7 @@ colorIdentity: "W"
         "manaValue": 4,
         "color": "W",
         "type": "Artifact Creature — Military Cruiser ",
-        "id": 31,
+        "cardId": 31,
         "rarity": "U",
         "notes": {
 grade: "B",
@@ -736,7 +736,7 @@ cockatrice_related: "Equipment"
         "manaValue": 4,
         "color": "W",
         "type": "Creature — Rebel Scout ",
-        "id": 32,
+        "cardId": 32,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -751,7 +751,7 @@ cockatrice_related: "Equipment"
         "manaValue": 5,
         "color": "W",
         "type": "Creature — Police Soldier ",
-        "id": 33,
+        "cardId": 33,
         "rarity": "R",
         "notes": {
 grade: "B+",
@@ -766,7 +766,7 @@ cockatrice_related: "Police"
         "manaValue": 5,
         "color": "W",
         "type": "Creature — Advisor ",
-        "id": 34,
+        "cardId": 34,
         "rarity": "U",
         "notes": {
 grade: "B",
@@ -780,7 +780,7 @@ colorIdentity: "W"
         "manaValue": 3,
         "color": "W",
         "type": "Artifact Creature — Rebel Fighter ",
-        "id": 35,
+        "cardId": 35,
         "rarity": "U",
         "notes": {
 grade: "B",
@@ -795,7 +795,7 @@ cockatrice_related: "Equipment"
         "manaValue": 3,
         "color": "W",
         "type": "Artifact Creature — Police Mech ",
-        "id": 36,
+        "cardId": 36,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -809,7 +809,7 @@ colorIdentity: "W"
         "manaValue": 3,
         "color": "W",
         "type": "Creature — Military Soldier ",
-        "id": 37,
+        "cardId": 37,
         "rarity": "U",
         "notes": {
 grade: "B-",
@@ -823,7 +823,7 @@ colorIdentity: "W"
         "manaValue": 5,
         "color": "W",
         "type": "Creature — Researcher ",
-        "id": 38,
+        "cardId": 38,
         "rarity": "R",
         "notes": {
 grade: "B+",
@@ -837,7 +837,7 @@ colorIdentity: "W"
         "manaValue": 5,
         "color": "W",
         "type": "Sorcery",
-        "id": 39,
+        "cardId": 39,
         "rarity": "U",
         "notes": {
 grade: "B",
@@ -853,7 +853,7 @@ cockatrice_related_count: "x=2"
         "manaValue": 1,
         "color": "W",
         "type": "Creature — Rebel Saboteur ",
-        "id": 40,
+        "cardId": 40,
         "rarity": "U",
         "notes": {
 grade: "C+",
@@ -867,7 +867,7 @@ colorIdentity: "W"
         "manaValue": 3,
         "color": "W",
         "type": "Enchantment",
-        "id": 41,
+        "cardId": 41,
         "rarity": "U",
         "notes": {
 grade: "C",
@@ -883,7 +883,7 @@ cockatrice_related_count: "2"
         "manaValue": 3,
         "color": "W",
         "type": "Creature — Military Soldier ",
-        "id": 42,
+        "cardId": 42,
         "rarity": "C",
         "notes": {
 grade: "C+",
@@ -898,7 +898,7 @@ cockatrice_related: "Soldier"
         "manaValue": 6,
         "color": "W",
         "type": "Artifact Creature — Military Carrier ",
-        "id": 43,
+        "cardId": 43,
         "rarity": "R",
         "notes": {
 grade: "B+",
@@ -914,7 +914,7 @@ cockatrice_related_count: "x"
         "manaValue": 4,
         "color": "U",
         "type": "Enchantment — Aura ",
-        "id": 44,
+        "cardId": 44,
         "rarity": "R",
         "notes": {
 grade: "B",
@@ -928,7 +928,7 @@ colorIdentity: "U"
         "manaValue": 3,
         "color": "U",
         "type": "Artifact Creature — Police Mech ",
-        "id": 45,
+        "cardId": 45,
         "rarity": "C",
         "notes": {
 grade: "C-",
@@ -942,7 +942,7 @@ colorIdentity: "U"
         "manaValue": 2,
         "color": "U",
         "type": "Instant",
-        "id": 46,
+        "cardId": 46,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -956,7 +956,7 @@ colorIdentity: "U"
         "manaValue": 2,
         "color": "U",
         "type": "Instant",
-        "id": 47,
+        "cardId": 47,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -970,7 +970,7 @@ colorIdentity: "U"
         "manaValue": 6,
         "color": "U",
         "type": "Instant",
-        "id": 48,
+        "cardId": 48,
         "rarity": "U",
         "notes": {
 grade: "B-",
@@ -984,7 +984,7 @@ colorIdentity: "U"
         "manaValue": 3,
         "color": "U",
         "type": "Enchantment — Aura ",
-        "id": 49,
+        "cardId": 49,
         "rarity": "C",
         "notes": {
 grade: "B",
@@ -998,7 +998,7 @@ colorIdentity: "U"
         "manaValue": 4,
         "color": "U",
         "type": "Instant",
-        "id": 50,
+        "cardId": 50,
         "rarity": "U",
         "notes": {
 grade: "C-",
@@ -1012,7 +1012,7 @@ colorIdentity: "U"
         "manaValue": 7,
         "color": "U",
         "type": "Legendary Artifact Creature — Battleship ",
-        "id": 51,
+        "cardId": 51,
         "rarity": "M",
         "notes": {
 grade: "B+",
@@ -1026,7 +1026,7 @@ colorIdentity: "U"
         "manaValue": 3,
         "color": "U",
         "type": "Artifact Creature — Police Fighter ",
-        "id": 52,
+        "cardId": 52,
         "rarity": "R",
         "notes": {
 grade: "B+",
@@ -1040,7 +1040,7 @@ colorIdentity: "U"
         "manaValue": 3,
         "color": "U",
         "type": "Instant",
-        "id": 53,
+        "cardId": 53,
         "rarity": "U",
         "notes": {
 grade: "C",
@@ -1054,7 +1054,7 @@ colorIdentity: "U"
         "manaValue": 4,
         "color": "U",
         "type": "Creature — Saboteur ",
-        "id": 54,
+        "cardId": 54,
         "rarity": "R",
         "notes": {
 grade: "A-",
@@ -1068,7 +1068,7 @@ colorIdentity: "U"
         "manaValue": 3,
         "color": "U",
         "type": "Creature — Corporate Engineer ",
-        "id": 55,
+        "cardId": 55,
         "rarity": "C",
         "notes": {
 grade: "C+",
@@ -1082,7 +1082,7 @@ colorIdentity: "U"
         "manaValue": 6,
         "color": "U",
         "type": "Instant",
-        "id": 56,
+        "cardId": 56,
         "rarity": "U",
         "notes": {
 grade: "B-",
@@ -1098,7 +1098,7 @@ cockatrice_related_count: "2"
         "manaValue": 2,
         "color": "U",
         "type": "Creature — Researcher ",
-        "id": 57,
+        "cardId": 57,
         "rarity": "U",
         "notes": {
 grade: "B",
@@ -1112,7 +1112,7 @@ colorIdentity: "U"
         "manaValue": 4,
         "color": "U",
         "type": "Instant",
-        "id": 58,
+        "cardId": 58,
         "rarity": "R",
         "notes": {
 grade: "B",
@@ -1126,7 +1126,7 @@ colorIdentity: "U"
         "manaValue": 1,
         "color": "U",
         "type": "Artifact Creature — Corporate Fighter ",
-        "id": 59,
+        "cardId": 59,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -1140,7 +1140,7 @@ colorIdentity: "U"
         "manaValue": 6,
         "color": "U",
         "type": "Artifact Creature — Hologram Cruiser ",
-        "id": 60,
+        "cardId": 60,
         "rarity": "R",
         "notes": {
 grade: "A-",
@@ -1154,7 +1154,7 @@ colorIdentity: "U"
         "manaValue": 3,
         "color": "U",
         "type": "Artifact Creature — Fighter ",
-        "id": 61,
+        "cardId": 61,
         "rarity": "U",
         "notes": {
 grade: "B+",
@@ -1168,7 +1168,7 @@ colorIdentity: "U"
         "manaValue": 4,
         "color": "U",
         "type": "Artifact Creature — Fish Mech Mutant ",
-        "id": 62,
+        "cardId": 62,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -1182,7 +1182,7 @@ colorIdentity: "U"
         "manaValue": 6,
         "color": "U",
         "type": "Creature — Kushak Mutant ",
-        "id": 63,
+        "cardId": 63,
         "rarity": "C",
         "notes": {
 grade: "D",
@@ -1196,7 +1196,7 @@ colorIdentity: "U"
         "manaValue": 6,
         "color": "U",
         "type": "Artifact Creature — Military Cruiser ",
-        "id": 64,
+        "cardId": 64,
         "rarity": "U",
         "notes": {
 grade: "B",
@@ -1210,7 +1210,7 @@ colorIdentity: "U"
         "manaValue": 5,
         "color": "U",
         "type": "Sorcery",
-        "id": 65,
+        "cardId": 65,
         "rarity": "C",
         "notes": {
 grade: "D+",
@@ -1224,7 +1224,7 @@ colorIdentity: "U"
         "manaValue": 2,
         "color": "U",
         "type": "Artifact Creature — Mech ",
-        "id": 66,
+        "cardId": 66,
         "rarity": "C",
         "notes": {
 grade: "C-",
@@ -1238,7 +1238,7 @@ colorIdentity: "U"
         "manaValue": 2,
         "color": "U",
         "type": "Enchantment",
-        "id": 67,
+        "cardId": 67,
         "rarity": "U",
         "notes": {
 grade: "B-",
@@ -1252,7 +1252,7 @@ colorIdentity: "U"
         "manaValue": 2,
         "color": "U",
         "type": "Artifact Creature — Mutant Saboteur ",
-        "id": 68,
+        "cardId": 68,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -1266,7 +1266,7 @@ colorIdentity: "U"
         "manaValue": 5,
         "color": "U",
         "type": "Artifact Creature — Nanobot ",
-        "id": 69,
+        "cardId": 69,
         "rarity": "R",
         "notes": {
 grade: "A-",
@@ -1280,7 +1280,7 @@ colorIdentity: "U"
         "manaValue": 3,
         "color": "U",
         "type": "Sorcery",
-        "id": 70,
+        "cardId": 70,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -1295,7 +1295,7 @@ cockatrice_related: "Mech (Neutron Flow)"
         "manaValue": 4,
         "color": "U",
         "type": "Instant",
-        "id": 71,
+        "cardId": 71,
         "rarity": "C",
         "notes": {
 grade: "C-",
@@ -1309,7 +1309,7 @@ colorIdentity: "U"
         "manaValue": 4,
         "color": "U",
         "type": "Artifact Creature — Mech ",
-        "id": 72,
+        "cardId": 72,
         "rarity": "C",
         "notes": {
 grade: "D",
@@ -1323,7 +1323,7 @@ colorIdentity: "U"
         "manaValue": 5,
         "color": "U",
         "type": "Creature — Police Advisor ",
-        "id": 73,
+        "cardId": 73,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -1337,7 +1337,7 @@ colorIdentity: "U"
         "manaValue": 5,
         "color": "U",
         "type": "Creature — Mutant Researcher ",
-        "id": 74,
+        "cardId": 74,
         "rarity": "U",
         "notes": {
 grade: "B",
@@ -1351,7 +1351,7 @@ colorIdentity: "U"
         "manaValue": 4,
         "color": "U",
         "type": "Artifact Creature — Police Mech ",
-        "id": 75,
+        "cardId": 75,
         "rarity": "U",
         "notes": {
 grade: "B",
@@ -1365,7 +1365,7 @@ colorIdentity: "U"
         "manaValue": 3,
         "color": "U",
         "type": "Artifact",
-        "id": 76,
+        "cardId": 76,
         "rarity": "U",
         "notes": {
 grade: "B",
@@ -1380,7 +1380,7 @@ cockatrice_related: "Mech"
         "manaValue": 2,
         "color": "U",
         "type": "Creature — Corporate Engineer ",
-        "id": 77,
+        "cardId": 77,
         "rarity": "U",
         "notes": {
 grade: "B",
@@ -1394,7 +1394,7 @@ colorIdentity: "U"
         "manaValue": 1,
         "color": "U",
         "type": "Instant",
-        "id": 78,
+        "cardId": 78,
         "rarity": "C",
         "notes": {
 grade: "D-",
@@ -1408,7 +1408,7 @@ colorIdentity: "U"
         "manaValue": 3,
         "color": "U",
         "type": "Artifact Creature — Police Mech ",
-        "id": 79,
+        "cardId": 79,
         "rarity": "U",
         "notes": {
 grade: "B-",
@@ -1422,7 +1422,7 @@ colorIdentity: "U"
         "manaValue": 2,
         "color": "U",
         "type": "Instant",
-        "id": 80,
+        "cardId": 80,
         "rarity": "C",
         "notes": {
 grade: "D",
@@ -1437,7 +1437,7 @@ cockatrice_related: "Mech"
         "manaValue": 8,
         "color": "U",
         "type": "Instant",
-        "id": 81,
+        "cardId": 81,
         "rarity": "M",
         "notes": {
 grade: "C",
@@ -1451,7 +1451,7 @@ colorIdentity: "U"
         "manaValue": 5,
         "color": "U",
         "type": "Enchantment",
-        "id": 82,
+        "cardId": 82,
         "rarity": "R",
         "notes": {
 grade: "B-",
@@ -1465,7 +1465,7 @@ colorIdentity: "U"
         "manaValue": 2,
         "color": "U",
         "type": "Instant",
-        "id": 83,
+        "cardId": 83,
         "rarity": "R",
         "notes": {
 grade: "D-",
@@ -1479,7 +1479,7 @@ colorIdentity: "U"
         "manaValue": 4,
         "color": "U",
         "type": "Artifact Creature — Police Mech Saboteur ",
-        "id": 84,
+        "cardId": 84,
         "rarity": "C",
         "notes": {
 grade: "B-",
@@ -1493,7 +1493,7 @@ colorIdentity: "U"
         "manaValue": 2,
         "color": "U",
         "type": "Instant",
-        "id": 85,
+        "cardId": 85,
         "rarity": "C",
         "notes": {
 grade: "C+",
@@ -1507,7 +1507,7 @@ colorIdentity: "U"
         "manaValue": 4,
         "color": "B",
         "type": "Sorcery",
-        "id": 86,
+        "cardId": 86,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -1521,7 +1521,7 @@ colorIdentity: "B"
         "manaValue": 3,
         "color": "B",
         "type": "Creature — Advisor ",
-        "id": 87,
+        "cardId": 87,
         "rarity": "U",
         "notes": {
 grade: "C",
@@ -1536,7 +1536,7 @@ cockatrice_related: "Mech"
         "manaValue": 3,
         "color": "B",
         "type": "Creature — Corporate Assassin ",
-        "id": 88,
+        "cardId": 88,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -1550,7 +1550,7 @@ colorIdentity: "B"
         "manaValue": 2,
         "color": "B",
         "type": "Sorcery",
-        "id": 89,
+        "cardId": 89,
         "rarity": "C",
         "notes": {
 grade: "C-",
@@ -1565,7 +1565,7 @@ cockatrice_related: "Mech"
         "manaValue": 3,
         "color": "B",
         "type": "Artifact",
-        "id": 90,
+        "cardId": 90,
         "rarity": "R",
         "notes": {
 grade: "A-",
@@ -1579,7 +1579,7 @@ colorIdentity: "B"
         "manaValue": 2,
         "color": "B",
         "type": "Artifact Creature — Corporate Mech ",
-        "id": 91,
+        "cardId": 91,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -1594,7 +1594,7 @@ cockatrice_related: "Mech"
         "manaValue": 2,
         "color": "B",
         "type": "Creature — Mercenary Assassin ",
-        "id": 92,
+        "cardId": 92,
         "rarity": "R",
         "notes": {
 grade: "C+",
@@ -1608,7 +1608,7 @@ colorIdentity: "B"
         "manaValue": 2,
         "color": "B",
         "type": "Creature — Corporate Saboteur ",
-        "id": 93,
+        "cardId": 93,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -1622,7 +1622,7 @@ colorIdentity: "B"
         "manaValue": 5,
         "color": "B",
         "type": "Sorcery",
-        "id": 94,
+        "cardId": 94,
         "rarity": "R",
         "notes": {
 grade: "A",
@@ -1636,7 +1636,7 @@ colorIdentity: "B"
         "manaValue": 4,
         "color": "B",
         "type": "Sorcery",
-        "id": 95,
+        "cardId": 95,
         "rarity": "C",
         "notes": {
 grade: "B",
@@ -1650,7 +1650,7 @@ colorIdentity: "B"
         "manaValue": 3,
         "color": "B",
         "type": "Sorcery",
-        "id": 96,
+        "cardId": 96,
         "rarity": "U",
         "notes": {
 grade: "B-",
@@ -1664,7 +1664,7 @@ colorIdentity: "B"
         "manaValue": 2,
         "color": "B",
         "type": "Enchantment",
-        "id": 97,
+        "cardId": 97,
         "rarity": "R",
         "notes": {
 grade: "B",
@@ -1678,7 +1678,7 @@ colorIdentity: "B"
         "manaValue": 4,
         "color": "B",
         "type": "Creature — Nightmare Hallucination ",
-        "id": 98,
+        "cardId": 98,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -1692,7 +1692,7 @@ colorIdentity: "B"
         "manaValue": 3,
         "color": "B",
         "type": "Enchantment",
-        "id": 99,
+        "cardId": 99,
         "rarity": "U",
         "notes": {
 grade: "B",
@@ -1707,7 +1707,7 @@ cockatrice_related: "Mech"
         "manaValue": 1,
         "color": "B",
         "type": "Instant",
-        "id": 100,
+        "cardId": 100,
         "rarity": "U",
         "notes": {
 grade: "B+",
@@ -1721,7 +1721,7 @@ colorIdentity: "B"
         "manaValue": 2,
         "color": "B",
         "type": "Artifact",
-        "id": 101,
+        "cardId": 101,
         "rarity": "R",
         "notes": {
 grade: "B-",
@@ -1735,7 +1735,7 @@ colorIdentity: "B"
         "manaValue": 2,
         "color": "B",
         "type": "Instant",
-        "id": 102,
+        "cardId": 102,
         "rarity": "C",
         "notes": {
 grade: "C-",
@@ -1749,7 +1749,7 @@ colorIdentity: "B"
         "manaValue": 3,
         "color": "B",
         "type": "Instant",
-        "id": 103,
+        "cardId": 103,
         "rarity": "U",
         "notes": {
 grade: "C-",
@@ -1763,7 +1763,7 @@ colorIdentity: "B"
         "manaValue": 3,
         "color": "B",
         "type": "Creature — Mercenary Assassin ",
-        "id": 104,
+        "cardId": 104,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -1777,7 +1777,7 @@ colorIdentity: "B"
         "manaValue": 11,
         "color": "B",
         "type": "Creature — Nightmare Hallucination ",
-        "id": 105,
+        "cardId": 105,
         "rarity": "M",
         "notes": {
 grade: "B+",
@@ -1791,7 +1791,7 @@ colorIdentity: "B"
         "manaValue": 5,
         "color": "B",
         "type": "Legendary Planeswalker — Murmur ",
-        "id": 106,
+        "cardId": 106,
         "rarity": "M",
         "notes": {
 grade: "A-",
@@ -1806,7 +1806,7 @@ cockatrice_related: "Assassin"
         "manaValue": 2,
         "color": "B",
         "type": "Artifact Creature — Mech Advisor ",
-        "id": 107,
+        "cardId": 107,
         "rarity": "U",
         "notes": {
 grade: "B-",
@@ -1820,7 +1820,7 @@ colorIdentity: "B"
         "manaValue": 3,
         "color": "B",
         "type": "Creature — Squid Mutant ",
-        "id": 108,
+        "cardId": 108,
         "rarity": "U",
         "notes": {
 grade: "B-",
@@ -1834,7 +1834,7 @@ colorIdentity: "B"
         "manaValue": 3,
         "color": "B",
         "type": "Artifact Creature — Station ",
-        "id": 109,
+        "cardId": 109,
         "rarity": "R",
         "notes": {
 grade: "B",
@@ -1848,7 +1848,7 @@ colorIdentity: "B"
         "manaValue": 3,
         "color": "B",
         "type": "Artifact Creature — Fighter ",
-        "id": 110,
+        "cardId": 110,
         "rarity": "C",
         "notes": {
 grade: "C-",
@@ -1862,7 +1862,7 @@ colorIdentity: "B"
         "manaValue": 2,
         "color": "B",
         "type": "Instant",
-        "id": 111,
+        "cardId": 111,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -1876,7 +1876,7 @@ colorIdentity: "B"
         "manaValue": 5,
         "color": "B",
         "type": "Sorcery",
-        "id": 112,
+        "cardId": 112,
         "rarity": "U",
         "notes": {
 grade: "D",
@@ -1890,7 +1890,7 @@ colorIdentity: "B"
         "manaValue": 1,
         "color": "B",
         "type": "Instant",
-        "id": 113,
+        "cardId": 113,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -1904,7 +1904,7 @@ colorIdentity: "B"
         "manaValue": 3,
         "color": "B",
         "type": "Creature — Mercenary Saboteur ",
-        "id": 114,
+        "cardId": 114,
         "rarity": "C",
         "notes": {
 grade: "C+",
@@ -1918,7 +1918,7 @@ colorIdentity: "B"
         "manaValue": 4,
         "color": "B",
         "type": "Enchantment",
-        "id": 115,
+        "cardId": 115,
         "rarity": "U",
         "notes": {
 grade: "B-",
@@ -1932,7 +1932,7 @@ colorIdentity: "B"
         "manaValue": 5,
         "color": "B",
         "type": "Artifact Creature — Mech Leech Mutant ",
-        "id": 116,
+        "cardId": 116,
         "rarity": "C",
         "notes": {
 grade: "C-",
@@ -1946,7 +1946,7 @@ colorIdentity: "B"
         "manaValue": 6,
         "color": "B",
         "type": "Artifact Creature — Mech ",
-        "id": 117,
+        "cardId": 117,
         "rarity": "C",
         "notes": {
 grade: "D+",
@@ -1960,7 +1960,7 @@ colorIdentity: "B"
         "manaValue": 4,
         "color": "B",
         "type": "Creature — Mercenary Saboteur ",
-        "id": 118,
+        "cardId": 118,
         "rarity": "U",
         "notes": {
 grade: "B",
@@ -1974,7 +1974,7 @@ colorIdentity: "B"
         "manaValue": 3,
         "color": "B",
         "type": "Enchantment — Aura ",
-        "id": 119,
+        "cardId": 119,
         "rarity": "C",
         "notes": {
 grade: "C-",
@@ -1988,7 +1988,7 @@ colorIdentity: "B"
         "manaValue": 1,
         "color": "B",
         "type": "Instant",
-        "id": 120,
+        "cardId": 120,
         "rarity": "C",
         "notes": {
 grade: "C+",
@@ -2002,7 +2002,7 @@ colorIdentity: "B"
         "manaValue": 7,
         "color": "B",
         "type": "Legendary Artifact Creature — Battleship ",
-        "id": 121,
+        "cardId": 121,
         "rarity": "M",
         "notes": {
 grade: "B+",
@@ -2016,7 +2016,7 @@ colorIdentity: "B"
         "manaValue": 3,
         "color": "B",
         "type": "Creature — Corporate Assassin ",
-        "id": 122,
+        "cardId": 122,
         "rarity": "U",
         "notes": {
 grade: "B",
@@ -2030,7 +2030,7 @@ colorIdentity: "B"
         "manaValue": 4,
         "color": "B",
         "type": "Artifact Creature — Mech Mercenary ",
-        "id": 123,
+        "cardId": 123,
         "rarity": "U",
         "notes": {
 grade: "C",
@@ -2044,7 +2044,7 @@ colorIdentity: "B"
         "manaValue": 4,
         "color": "B",
         "type": "Creature — Nightmare Hallucination ",
-        "id": 124,
+        "cardId": 124,
         "rarity": "U",
         "notes": {
 grade: "B-",
@@ -2058,7 +2058,7 @@ colorIdentity: "B"
         "manaValue": 3,
         "color": "B",
         "type": "Instant",
-        "id": 125,
+        "cardId": 125,
         "rarity": "R",
         "notes": {
 grade: "B+",
@@ -2072,7 +2072,7 @@ colorIdentity: "B"
         "manaValue": 1,
         "color": "B",
         "type": "Artifact Creature — Mech Mercenary ",
-        "id": 126,
+        "cardId": 126,
         "rarity": "C",
         "notes": {
 grade: "D+",
@@ -2086,7 +2086,7 @@ colorIdentity: "B"
         "manaValue": 6,
         "color": "B",
         "type": "Artifact Creature — Cruiser ",
-        "id": 127,
+        "cardId": 127,
         "rarity": "R",
         "notes": {
 grade: "B+",
@@ -2100,7 +2100,7 @@ colorIdentity: "B"
         "manaValue": 2,
         "color": "B",
         "type": "Artifact Creature — Mech Mercenary ",
-        "id": 128,
+        "cardId": 128,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -2114,7 +2114,7 @@ colorIdentity: "B"
         "manaValue": 2,
         "color": "R",
         "type": "Artifact Creature — Mech Nomad ",
-        "id": 129,
+        "cardId": 129,
         "rarity": "C",
         "notes": {
 grade: "D",
@@ -2128,7 +2128,7 @@ colorIdentity: "B"
         "manaValue": 5,
         "color": "R",
         "type": "Artifact Creature — Mech Nomad ",
-        "id": 130,
+        "cardId": 130,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -2142,7 +2142,7 @@ colorIdentity: "R"
         "manaValue": 1,
         "color": "R",
         "type": "Creature — Rebel Soldier ",
-        "id": 131,
+        "cardId": 131,
         "rarity": "C",
         "notes": {
 grade: "C-",
@@ -2156,7 +2156,7 @@ colorIdentity: "R"
         "manaValue": 2,
         "color": "R",
         "type": "Instant",
-        "id": 132,
+        "cardId": 132,
         "rarity": "C",
         "notes": {
 grade: "C-",
@@ -2170,7 +2170,7 @@ colorIdentity: "R"
         "manaValue": 4,
         "color": "R",
         "type": "Creature — Engineer ",
-        "id": 133,
+        "cardId": 133,
         "rarity": "U",
         "notes": {
 grade: "B",
@@ -2185,7 +2185,7 @@ cockatrice_related: "Wildschwein"
         "manaValue": 1,
         "color": "R",
         "type": "Artifact Creature — Mech ",
-        "id": 134,
+        "cardId": 134,
         "rarity": "R",
         "notes": {
 grade: "A-",
@@ -2201,7 +2201,7 @@ cockatrice_related_count: "x"
         "manaValue": 2,
         "color": "R",
         "type": "Instant",
-        "id": 135,
+        "cardId": 135,
         "rarity": "U",
         "notes": {
 grade: "B+",
@@ -2215,7 +2215,7 @@ colorIdentity: "R"
         "manaValue": 1,
         "color": "R",
         "type": "Instant",
-        "id": 136,
+        "cardId": 136,
         "rarity": "U",
         "notes": {
 grade: "B",
@@ -2229,7 +2229,7 @@ colorIdentity: "R"
         "manaValue": 5,
         "color": "R",
         "type": "Artifact Creature — Mech ",
-        "id": 137,
+        "cardId": 137,
         "rarity": "R",
         "notes": {
 grade: "B",
@@ -2243,7 +2243,7 @@ colorIdentity: "R"
         "manaValue": 4,
         "color": "R",
         "type": "Sorcery",
-        "id": 138,
+        "cardId": 138,
         "rarity": "C",
         "notes": {
 grade: "C+",
@@ -2257,7 +2257,7 @@ colorIdentity: "R"
         "manaValue": 4,
         "color": "R",
         "type": "Sorcery",
-        "id": 139,
+        "cardId": 139,
         "rarity": "U",
         "notes": {
 grade: "B-",
@@ -2271,7 +2271,7 @@ colorIdentity: "R"
         "manaValue": 7,
         "color": "R",
         "type": "Sorcery",
-        "id": 140,
+        "cardId": 140,
         "rarity": "M",
         "notes": {
 grade: "B+",
@@ -2285,7 +2285,7 @@ colorIdentity: "R"
         "manaValue": 6,
         "color": "R",
         "type": "Artifact Creature — Mercenary Cruiser ",
-        "id": 141,
+        "cardId": 141,
         "rarity": "R",
         "notes": {
 grade: "A-",
@@ -2300,7 +2300,7 @@ cockatrice_related: "Mech"
         "manaValue": 2,
         "color": "R",
         "type": "Creature — Researcher ",
-        "id": 142,
+        "cardId": 142,
         "rarity": "U",
         "notes": {
 grade: "B-",
@@ -2314,7 +2314,7 @@ colorIdentity: "R"
         "manaValue": 4,
         "color": "R",
         "type": "Instant",
-        "id": 143,
+        "cardId": 143,
         "rarity": "U",
         "notes": {
 grade: "C+",
@@ -2330,7 +2330,7 @@ cockatrice_related_count: "x"
         "manaValue": 4,
         "color": "R",
         "type": "Creature — Rebel Soldier ",
-        "id": 144,
+        "cardId": 144,
         "rarity": "C",
         "notes": {
 grade: "C-",
@@ -2345,7 +2345,7 @@ cockatrice_related: "Equipment"
         "manaValue": 3,
         "color": "R",
         "type": "Artifact Creature — Mech Mercenary ",
-        "id": 145,
+        "cardId": 145,
         "rarity": "C",
         "notes": {
 grade: "C+",
@@ -2360,7 +2360,7 @@ cockatrice_related: "Equipment"
         "manaValue": 1,
         "color": "R",
         "type": "Artifact — Equipment ",
-        "id": 146,
+        "cardId": 146,
         "rarity": "C",
         "notes": {
 grade: "C-",
@@ -2374,7 +2374,7 @@ colorIdentity: "R"
         "manaValue": 2,
         "color": "R",
         "type": "Instant",
-        "id": 147,
+        "cardId": 147,
         "rarity": "C",
         "notes": {
 grade: "D+",
@@ -2388,7 +2388,7 @@ colorIdentity: "R"
         "manaValue": 2,
         "color": "R",
         "type": "Artifact — Equipment ",
-        "id": 148,
+        "cardId": 148,
         "rarity": "U",
         "notes": {
 grade: "B",
@@ -2402,7 +2402,7 @@ colorIdentity: "R"
         "manaValue": 5,
         "color": "R",
         "type": "Sorcery",
-        "id": 149,
+        "cardId": 149,
         "rarity": "R",
         "notes": {
 grade: "B",
@@ -2416,7 +2416,7 @@ colorIdentity: "R"
         "manaValue": 3,
         "color": "R",
         "type": "Artifact — Equipment ",
-        "id": 150,
+        "cardId": 150,
         "rarity": "R",
         "notes": {
 grade: "B+",
@@ -2430,7 +2430,7 @@ colorIdentity: "R"
         "manaValue": 7,
         "color": "R",
         "type": "Legendary Artifact Creature — Battleship ",
-        "id": 151,
+        "cardId": 151,
         "rarity": "M",
         "notes": {
 grade: "B+",
@@ -2444,7 +2444,7 @@ colorIdentity: "R"
         "manaValue": 4,
         "color": "R",
         "type": "Artifact Creature — Mech ",
-        "id": 152,
+        "cardId": 152,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -2458,7 +2458,7 @@ colorIdentity: "R"
         "manaValue": 3,
         "color": "R",
         "type": "Creature — Mercenary Saboteur ",
-        "id": 153,
+        "cardId": 153,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -2472,7 +2472,7 @@ colorIdentity: "R"
         "manaValue": 1,
         "color": "R",
         "type": "Creature — Mercenary Saboteur ",
-        "id": 154,
+        "cardId": 154,
         "rarity": "R",
         "notes": {
 grade: "B-",
@@ -2486,7 +2486,7 @@ colorIdentity: "R"
         "manaValue": 3,
         "color": "R",
         "type": "Sorcery",
-        "id": 155,
+        "cardId": 155,
         "rarity": "U",
         "notes": {
 grade: "D",
@@ -2500,7 +2500,7 @@ colorIdentity: "R"
         "manaValue": 5,
         "color": "R",
         "type": "Instant",
-        "id": 156,
+        "cardId": 156,
         "rarity": "C",
         "notes": {
 grade: "B-",
@@ -2514,7 +2514,7 @@ colorIdentity: "R"
         "manaValue": 2,
         "color": "R",
         "type": "Instant",
-        "id": 157,
+        "cardId": 157,
         "rarity": "C",
         "notes": {
 grade: "B",
@@ -2528,7 +2528,7 @@ colorIdentity: "R"
         "manaValue": 3,
         "color": "R",
         "type": "Artifact Creature — Rebel Mech ",
-        "id": 158,
+        "cardId": 158,
         "rarity": "U",
         "notes": {
 grade: "C+",
@@ -2542,7 +2542,7 @@ colorIdentity: "R"
         "manaValue": 2,
         "color": "R",
         "type": "Artifact Creature — Mech Engineer ",
-        "id": 159,
+        "cardId": 159,
         "rarity": "R",
         "notes": {
 grade: "B-",
@@ -2558,7 +2558,7 @@ cockatrice_related_count: "2"
         "manaValue": 3,
         "color": "R",
         "type": "Artifact Creature — Mech ",
-        "id": 160,
+        "cardId": 160,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -2572,7 +2572,7 @@ colorIdentity: "R"
         "manaValue": 4,
         "color": "R",
         "type": "Artifact Creature — Mech Cat Nomad ",
-        "id": 161,
+        "cardId": 161,
         "rarity": "U",
         "notes": {
 grade: "B",
@@ -2586,7 +2586,7 @@ colorIdentity: "R"
         "manaValue": 2,
         "color": "R",
         "type": "Artifact Creature — Rebel Mech ",
-        "id": 162,
+        "cardId": 162,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -2600,7 +2600,7 @@ colorIdentity: "R"
         "manaValue": 3,
         "color": "R",
         "type": "Sorcery",
-        "id": 163,
+        "cardId": 163,
         "rarity": "C",
         "notes": {
 grade: "D",
@@ -2614,7 +2614,7 @@ colorIdentity: "R"
         "manaValue": 2,
         "color": "R",
         "type": "Instant",
-        "id": 164,
+        "cardId": 164,
         "rarity": "C",
         "notes": {
 grade: "C-",
@@ -2628,7 +2628,7 @@ colorIdentity: "R"
         "manaValue": 6,
         "color": "R",
         "type": "Artifact Creature — Mech ",
-        "id": 165,
+        "cardId": 165,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -2642,7 +2642,7 @@ colorIdentity: "R"
         "manaValue": 3,
         "color": "R",
         "type": "Artifact Creature — Mech ",
-        "id": 166,
+        "cardId": 166,
         "rarity": "U",
         "notes": {
 grade: "B",
@@ -2656,7 +2656,7 @@ colorIdentity: "R"
         "manaValue": 4,
         "color": "R",
         "type": "Creature — Mercenary Saboteur ",
-        "id": 167,
+        "cardId": 167,
         "rarity": "U",
         "notes": {
 grade: "B-",
@@ -2670,7 +2670,7 @@ colorIdentity: "R"
         "manaValue": 4,
         "color": "R",
         "type": "Creature — Nomad ",
-        "id": 168,
+        "cardId": 168,
         "rarity": "U",
         "notes": {
 grade: "B+",
@@ -2684,7 +2684,7 @@ colorIdentity: "R"
         "manaValue": 3,
         "color": "R",
         "type": "Sorcery",
-        "id": 169,
+        "cardId": 169,
         "rarity": "R",
         "notes": {
 grade: "B",
@@ -2698,7 +2698,7 @@ colorIdentity: "R"
         "manaValue": 4,
         "color": "R",
         "type": "Sorcery",
-        "id": 170,
+        "cardId": 170,
         "rarity": "C",
         "notes": {
 grade: "D",
@@ -2712,7 +2712,7 @@ colorIdentity: "R"
         "manaValue": 3,
         "color": "G",
         "type": "Creature — Nomad ",
-        "id": 171,
+        "cardId": 171,
         "rarity": "U",
         "notes": {
 grade: "B",
@@ -2727,7 +2727,7 @@ cockatrice_related: "Mech"
         "manaValue": 3,
         "color": "G",
         "type": "Creature — Nomad ",
-        "id": 172,
+        "cardId": 172,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -2741,7 +2741,7 @@ colorIdentity: "G"
         "manaValue": 3,
         "color": "G",
         "type": "Creature — Fish Squid Mutant ",
-        "id": 173,
+        "cardId": 173,
         "rarity": "R",
         "notes": {
 grade: "B",
@@ -2755,7 +2755,7 @@ colorIdentity: "G"
         "manaValue": 5,
         "color": "G",
         "type": "Artifact Creature — Mech Mutant Nomad ",
-        "id": 174,
+        "cardId": 174,
         "rarity": "C",
         "notes": {
 grade: "C-",
@@ -2769,7 +2769,7 @@ colorIdentity: "G"
         "manaValue": 5,
         "color": "G",
         "type": "Artifact Creature — Mech Mutant ",
-        "id": 175,
+        "cardId": 175,
         "rarity": "U",
         "notes": {
 grade: "B-",
@@ -2785,7 +2785,7 @@ cockatrice_related_count: "2"
         "manaValue": 2,
         "color": "G",
         "type": "Creature — Kushak Researcher ",
-        "id": 176,
+        "cardId": 176,
         "rarity": "R",
         "notes": {
 grade: "C+",
@@ -2799,7 +2799,7 @@ colorIdentity: "G"
         "manaValue": 4,
         "color": "G",
         "type": "Artifact Creature — Corporate Mech ",
-        "id": 177,
+        "cardId": 177,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -2813,7 +2813,7 @@ colorIdentity: "G"
         "manaValue": 4,
         "color": "G",
         "type": "Instant",
-        "id": 178,
+        "cardId": 178,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -2829,7 +2829,7 @@ cockatrice_related_count: "2"
         "manaValue": 2,
         "color": "G",
         "type": "Instant",
-        "id": 179,
+        "cardId": 179,
         "rarity": "C",
         "notes": {
 grade: "C-",
@@ -2843,7 +2843,7 @@ colorIdentity: "G"
         "manaValue": 4,
         "color": "G",
         "type": "Creature — Dinosaur Snake Mutant ",
-        "id": 180,
+        "cardId": 180,
         "rarity": "U",
         "notes": {
 grade: "C+",
@@ -2857,7 +2857,7 @@ colorIdentity: "G"
         "manaValue": 6,
         "color": "G",
         "type": "Sorcery",
-        "id": 181,
+        "cardId": 181,
         "rarity": "U",
         "notes": {
 grade: "B-",
@@ -2871,7 +2871,7 @@ colorIdentity: "G"
         "manaValue": 1,
         "color": "G",
         "type": "Creature — Mutant ",
-        "id": 182,
+        "cardId": 182,
         "rarity": "C",
         "notes": {
 grade: "D",
@@ -2885,7 +2885,7 @@ colorIdentity: "G"
         "manaValue": 2,
         "color": "G",
         "type": "Sorcery",
-        "id": 183,
+        "cardId": 183,
         "rarity": "U",
         "notes": {
 grade: "B",
@@ -2899,7 +2899,7 @@ colorIdentity: "G"
         "manaValue": 2,
         "color": "G",
         "type": "Artifact Creature — Mech Medic ",
-        "id": 184,
+        "cardId": 184,
         "rarity": "U",
         "notes": {
 grade: "B-",
@@ -2913,7 +2913,7 @@ colorIdentity: "G"
         "manaValue": 6,
         "color": "G",
         "type": "Sorcery",
-        "id": 185,
+        "cardId": 185,
         "rarity": "R",
         "notes": {
 grade: "B",
@@ -2929,7 +2929,7 @@ cockatrice_related_count: "x"
         "manaValue": 1,
         "color": "G",
         "type": "Sorcery",
-        "id": 186,
+        "cardId": 186,
         "rarity": "U",
         "notes": {
 grade: "C-",
@@ -2943,7 +2943,7 @@ colorIdentity: "G"
         "manaValue": 7,
         "color": "G",
         "type": "Enchantment — Aura ",
-        "id": 187,
+        "cardId": 187,
         "rarity": "C",
         "notes": {
 grade: "D",
@@ -2957,7 +2957,7 @@ colorIdentity: "G"
         "manaValue": 4,
         "color": "G",
         "type": "Creature — Fish Hippo Mutant ",
-        "id": 188,
+        "cardId": 188,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -2972,7 +2972,7 @@ cockatrice_related: "Mech"
         "manaValue": 7,
         "color": "G",
         "type": "Creature — Kushak Incubator ",
-        "id": 189,
+        "cardId": 189,
         "rarity": "R",
         "notes": {
 grade: "B-",
@@ -2988,7 +2988,7 @@ cockatrice_related_count: "3"
         "manaValue": 7,
         "color": "G",
         "type": "Legendary Artifact Creature — Battleship ",
-        "id": 190,
+        "cardId": 190,
         "rarity": "M",
         "notes": {
 grade: "B+",
@@ -3004,7 +3004,7 @@ cockatrice_related_count: "3"
         "manaValue": 4,
         "color": "G",
         "type": "Creature — Kushak Propagator ",
-        "id": 191,
+        "cardId": 191,
         "rarity": "U",
         "notes": {
 grade: "B-",
@@ -3020,7 +3020,7 @@ cockatrice_related_count: "2"
         "manaValue": 5,
         "color": "G",
         "type": "Artifact",
-        "id": 192,
+        "cardId": 192,
         "rarity": "R",
         "notes": {
 grade: "B-",
@@ -3034,7 +3034,7 @@ colorIdentity: "G"
         "manaValue": 3,
         "color": "G",
         "type": "Instant",
-        "id": 193,
+        "cardId": 193,
         "rarity": "R",
         "notes": {
 grade: "B",
@@ -3048,7 +3048,7 @@ colorIdentity: "G"
         "manaValue": 5,
         "color": "G",
         "type": "Creature — Kushak Researcher Advisor ",
-        "id": 194,
+        "cardId": 194,
         "rarity": "R",
         "notes": {
 grade: "A-",
@@ -3062,7 +3062,7 @@ colorIdentity: "G"
         "manaValue": 7,
         "color": "G",
         "type": "Creature — Kushak Mutant ",
-        "id": 195,
+        "cardId": 195,
         "rarity": "U",
         "notes": {
 grade: "C+",
@@ -3077,7 +3077,7 @@ cockatrice_related: "Kushak Scion"
         "manaValue": 2,
         "color": "G",
         "type": "Creature — Elk Mutant Nomad ",
-        "id": 196,
+        "cardId": 196,
         "rarity": "C",
         "notes": {
 grade: "C+",
@@ -3091,7 +3091,7 @@ colorIdentity: "G"
         "manaValue": 5,
         "color": "G",
         "type": "Creature — Plant Mutant Nomad ",
-        "id": 197,
+        "cardId": 197,
         "rarity": "U",
         "notes": {
 grade: "B",
@@ -3105,7 +3105,7 @@ colorIdentity: "G"
         "manaValue": 4,
         "color": "G",
         "type": "Creature — Dog Mutant ",
-        "id": 198,
+        "cardId": 198,
         "rarity": "C",
         "notes": {
 grade: "C+",
@@ -3119,7 +3119,7 @@ colorIdentity: "G"
         "manaValue": 6,
         "color": "G",
         "type": "Sorcery",
-        "id": 199,
+        "cardId": 199,
         "rarity": "U",
         "notes": {
 grade: "C+",
@@ -3133,7 +3133,7 @@ colorIdentity: "G"
         "manaValue": 2,
         "color": "G",
         "type": "Artifact Creature — Nanobot ",
-        "id": 200,
+        "cardId": 200,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -3147,7 +3147,7 @@ colorIdentity: "G"
         "manaValue": 3,
         "color": "G",
         "type": "Artifact Creature — Rebel Mech ",
-        "id": 201,
+        "cardId": 201,
         "rarity": "C",
         "notes": {
 grade: "C-",
@@ -3161,7 +3161,7 @@ colorIdentity: "G"
         "manaValue": 6,
         "color": "G",
         "type": "Creature — Insect Mutant ",
-        "id": 202,
+        "cardId": 202,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -3175,7 +3175,7 @@ colorIdentity: "G"
         "manaValue": 3,
         "color": "G",
         "type": "Sorcery",
-        "id": 203,
+        "cardId": 203,
         "rarity": "C",
         "notes": {
 grade: "B",
@@ -3189,7 +3189,7 @@ colorIdentity: "G"
         "manaValue": 9,
         "color": "G",
         "type": "Creature — Frog Turtle Mutant ",
-        "id": 204,
+        "cardId": 204,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -3203,7 +3203,7 @@ colorIdentity: "G"
         "manaValue": 1,
         "color": "G",
         "type": "Enchantment",
-        "id": 205,
+        "cardId": 205,
         "rarity": "U",
         "notes": {
 grade: "C",
@@ -3219,7 +3219,7 @@ cockatrice_related_count: "x"
         "manaValue": 3,
         "color": "G",
         "type": "Creature — Rebel Soldier ",
-        "id": 206,
+        "cardId": 206,
         "rarity": "C",
         "notes": {
 grade: "C-",
@@ -3233,7 +3233,7 @@ colorIdentity: "G"
         "manaValue": 6,
         "color": "G",
         "type": "Artifact Creature — Mech Mutant ",
-        "id": 207,
+        "cardId": 207,
         "rarity": "M",
         "notes": {
 grade: "B+",
@@ -3247,7 +3247,7 @@ colorIdentity: "G"
         "manaValue": 3,
         "color": "G",
         "type": "Instant",
-        "id": 208,
+        "cardId": 208,
         "rarity": "U",
         "notes": {
 grade: "B",
@@ -3261,7 +3261,7 @@ colorIdentity: "G"
         "manaValue": 3,
         "color": "G",
         "type": "Enchantment",
-        "id": 209,
+        "cardId": 209,
         "rarity": "R",
         "notes": {
 grade: "C+",
@@ -3275,7 +3275,7 @@ colorIdentity: "G"
         "manaValue": 3,
         "color": "G",
         "type": "Instant",
-        "id": 210,
+        "cardId": 210,
         "rarity": "C",
         "notes": {
 grade: "B",
@@ -3289,7 +3289,7 @@ colorIdentity: "G"
         "manaValue": 3,
         "color": "G",
         "type": "Enchantment — Aura ",
-        "id": 211,
+        "cardId": 211,
         "rarity": "C",
         "notes": {
 grade: "C",
@@ -3303,7 +3303,7 @@ colorIdentity: "G"
         "manaValue": 4,
         "color": "G",
         "type": "Sorcery",
-        "id": 212,
+        "cardId": 212,
         "rarity": "C",
         "notes": {
 grade: "D",
@@ -3317,7 +3317,7 @@ colorIdentity: "G"
         "manaValue": 4,
         "color": "WU",
         "type": "Legendary Creature — Advisor ",
-        "id": 213,
+        "cardId": 213,
         "rarity": "R",
         "notes": {
 grade: "B+",
@@ -3331,7 +3331,7 @@ colorIdentity: "WU"
         "manaValue": 2,
         "color": "WU",
         "type": "Artifact Creature — Police Mech ",
-        "id": 214,
+        "cardId": 214,
         "rarity": "U",
         "notes": {
 grade: "B",
@@ -3345,7 +3345,7 @@ colorIdentity: "WU"
         "manaValue": 2,
         "color": "UB",
         "type": "Instant",
-        "id": 215,
+        "cardId": 215,
         "rarity": "R",
         "notes": {
 grade: "A-",
@@ -3360,7 +3360,7 @@ cockatrice_related: "Assassin"
         "manaValue": 4,
         "color": "UB",
         "type": "Artifact Creature — Mech Insect ",
-        "id": 216,
+        "cardId": 216,
         "rarity": "U",
         "notes": {
 grade: "B",
@@ -3374,7 +3374,7 @@ colorIdentity: "UB"
         "manaValue": 3,
         "color": "UB",
         "type": "Creature — Corporate Saboteur ",
-        "id": 217,
+        "cardId": 217,
         "rarity": "R",
         "notes": {
 grade: "A-",
@@ -3388,7 +3388,7 @@ colorIdentity: "UB"
         "manaValue": 2,
         "color": "BR",
         "type": "Legendary Artifact Creature — Mech ",
-        "id": 218,
+        "cardId": 218,
         "rarity": "R",
         "notes": {
 grade: "B+",
@@ -3402,7 +3402,7 @@ colorIdentity: "BR"
         "manaValue": 3,
         "color": "BR",
         "type": "Creature — Dog Mutant Mercenary ",
-        "id": 219,
+        "cardId": 219,
         "rarity": "U",
         "notes": {
 grade: "B",
@@ -3416,7 +3416,7 @@ colorIdentity: "BR"
         "manaValue": 4,
         "color": "RG",
         "type": "Artifact Creature — Mech Insect ",
-        "id": 220,
+        "cardId": 220,
         "rarity": "U",
         "notes": {
 grade: "B+",
@@ -3430,7 +3430,7 @@ colorIdentity: "RG"
         "manaValue": 6,
         "color": "RG",
         "type": "Legendary Creature — Nomad ",
-        "id": 221,
+        "cardId": 221,
         "rarity": "M",
         "notes": {
 grade: "A",
@@ -3445,7 +3445,7 @@ cockatrice_related: "Shaitan"
         "manaValue": 2,
         "color": "RG",
         "type": "Instant",
-        "id": 222,
+        "cardId": 222,
         "rarity": "R",
         "notes": {
 grade: "B+",
@@ -3459,7 +3459,7 @@ colorIdentity: "RG"
         "manaValue": 4,
         "color": "GW",
         "type": "Legendary Creature — Rebel Soldier ",
-        "id": 223,
+        "cardId": 223,
         "rarity": "M",
         "notes": {
 grade: "B+",
@@ -3474,7 +3474,7 @@ cockatrice_related: "Mech (Ingolf)"
         "manaValue": 2,
         "color": "GW",
         "type": "Instant",
-        "id": 224,
+        "cardId": 224,
         "rarity": "R",
         "notes": {
 grade: "B+",
@@ -3488,7 +3488,7 @@ colorIdentity: "GW"
         "manaValue": 4,
         "color": "GW",
         "type": "Creature — Rebel Saboteur ",
-        "id": 225,
+        "cardId": 225,
         "rarity": "U",
         "notes": {
 grade: "B",
@@ -3504,7 +3504,7 @@ cockatrice_related_count: "2"
         "manaValue": 3,
         "color": "WB",
         "type": "Artifact Creature — Mech Advisor ",
-        "id": 226,
+        "cardId": 226,
         "rarity": "U",
         "notes": {
 grade: "B",
@@ -3518,7 +3518,7 @@ colorIdentity: "WB"
         "manaValue": 4,
         "color": "WB",
         "type": "Legendary Creature — Advisor ",
-        "id": 227,
+        "cardId": 227,
         "rarity": "M",
         "notes": {
 grade: "B+",
@@ -3532,7 +3532,7 @@ colorIdentity: "WB"
         "manaValue": 2,
         "color": "WB",
         "type": "Instant",
-        "id": 228,
+        "cardId": 228,
         "rarity": "R",
         "notes": {
 grade: "B+",
@@ -3546,7 +3546,7 @@ colorIdentity: "WB"
         "manaValue": 2,
         "color": "UR",
         "type": "Artifact",
-        "id": 229,
+        "cardId": 229,
         "rarity": "R",
         "notes": {
 grade: "B-",
@@ -3560,7 +3560,7 @@ colorIdentity: "UR"
         "manaValue": 4,
         "color": "UR",
         "type": "Artifact Creature — Fighter ",
-        "id": 230,
+        "cardId": 230,
         "rarity": "U",
         "notes": {
 grade: "B",
@@ -3574,7 +3574,7 @@ colorIdentity: "UR"
         "manaValue": 2,
         "color": "UR",
         "type": "Instant",
-        "id": 231,
+        "cardId": 231,
         "rarity": "R",
         "notes": {
 grade: "A-",
@@ -3589,7 +3589,7 @@ cockatrice_related: "Mech"
         "manaValue": 3,
         "color": "BG",
         "type": "Creature — Mercenary Saboteur ",
-        "id": 232,
+        "cardId": 232,
         "rarity": "U",
         "notes": {
 grade: "B",
@@ -3603,7 +3603,7 @@ colorIdentity: "BG"
         "manaValue": 6,
         "color": "BG",
         "type": "Legendary Creature — Turtle Mutant ",
-        "id": 233,
+        "cardId": 233,
         "rarity": "R",
         "notes": {
 grade: "B+",
@@ -3617,7 +3617,7 @@ colorIdentity: "BG"
         "manaValue": 3,
         "color": "RW",
         "type": "Legendary Creature — Rebel Soldier ",
-        "id": 234,
+        "cardId": 234,
         "rarity": "R",
         "notes": {
 grade: "B+",
@@ -3633,7 +3633,7 @@ cockatrice_related_count: "x"
         "manaValue": 3,
         "color": "RW",
         "type": "Creature — Rebel Soldier ",
-        "id": 235,
+        "cardId": 235,
         "rarity": "U",
         "notes": {
 grade: "B-",
@@ -3647,7 +3647,7 @@ colorIdentity: "RW"
         "manaValue": 2,
         "color": "GU",
         "type": "Legendary Creature — Corporate Researcher ",
-        "id": 236,
+        "cardId": 236,
         "rarity": "R",
         "notes": {
 grade: "B+",
@@ -3661,7 +3661,7 @@ colorIdentity: "GU"
         "manaValue": 3,
         "color": "GU",
         "type": "Creature — Squid Mutant ",
-        "id": 237,
+        "cardId": 237,
         "rarity": "U",
         "notes": {
 grade: "B+",
@@ -3675,7 +3675,7 @@ colorIdentity: "GU"
         "manaValue": 3,
         "color": "BGU",
         "type": "Legendary Planeswalker — Umida ",
-        "id": 238,
+        "cardId": 238,
         "rarity": "M",
         "notes": {
 grade: "B+",
@@ -3689,7 +3689,7 @@ colorIdentity: "BGU"
         "manaValue": 7,
         "color": "",
         "type": "Legendary Artifact Creature — Battleship ",
-        "id": 239,
+        "cardId": 239,
         "rarity": "M",
         "notes": {
 grade: "B+",
@@ -3703,7 +3703,7 @@ colorIdentity: ""
         "manaValue": 1,
         "color": "",
         "type": "Artifact — Equipment ",
-        "id": 240,
+        "cardId": 240,
         "rarity": "C",
         "notes": {
 grade: "D",
@@ -3717,7 +3717,7 @@ colorIdentity: ""
         "manaValue": 3,
         "color": "",
         "type": "Artifact",
-        "id": 241,
+        "cardId": 241,
         "rarity": "R",
         "notes": {
 grade: "B-",
@@ -3731,7 +3731,7 @@ colorIdentity: ""
         "manaValue": 5,
         "color": "",
         "type": "Artifact Creature — Mech ",
-        "id": 242,
+        "cardId": 242,
         "rarity": "M",
         "notes": {
 grade: "B+",
@@ -3745,7 +3745,7 @@ colorIdentity: ""
         "manaValue": 3,
         "color": "",
         "type": "Artifact Creature — Mech ",
-        "id": 243,
+        "cardId": 243,
         "rarity": "U",
         "notes": {
 grade: "B",
@@ -3759,7 +3759,7 @@ colorIdentity: ""
         "manaValue": 3,
         "color": "",
         "type": "Artifact Creature — Station ",
-        "id": 244,
+        "cardId": 244,
         "rarity": "R",
         "notes": {
 grade: "B-",
@@ -3773,7 +3773,7 @@ colorIdentity: ""
         "manaValue": 7,
         "color": "",
         "type": "Artifact Creature — Mech ",
-        "id": 245,
+        "cardId": 245,
         "rarity": "C",
         "notes": {
 grade: "D",
@@ -3788,7 +3788,7 @@ cockatrice_related: "Equipment"
         "manaValue": 3,
         "color": "",
         "type": "Artifact",
-        "id": 246,
+        "cardId": 246,
         "rarity": "R",
         "notes": {
 grade: "F",
@@ -3802,7 +3802,7 @@ colorIdentity: ""
         "manaValue": 2,
         "color": "",
         "type": "Artifact — Equipment ",
-        "id": 247,
+        "cardId": 247,
         "rarity": "C",
         "notes": {
 grade: "C-",
@@ -3816,7 +3816,7 @@ colorIdentity: ""
         "manaValue": 2,
         "color": "",
         "type": "Artifact — Equipment ",
-        "id": 248,
+        "cardId": 248,
         "rarity": "C",
         "notes": {
 grade: "C-",
@@ -3830,7 +3830,7 @@ colorIdentity: ""
         "manaValue": 0,
         "color": "",
         "type": "Legendary Artifact",
-        "id": 249,
+        "cardId": 249,
         "rarity": "M",
         "notes": {
 grade: "F",
@@ -3844,7 +3844,7 @@ colorIdentity: ""
         "manaValue": 3,
         "color": "",
         "type": "Artifact",
-        "id": 250,
+        "cardId": 250,
         "rarity": "U",
         "notes": {
 grade: "D-",
@@ -3858,7 +3858,7 @@ colorIdentity: ""
         "manaValue": 3,
         "color": "",
         "type": "Artifact",
-        "id": 251,
+        "cardId": 251,
         "rarity": "R",
         "notes": {
 grade: "B",
@@ -3872,7 +3872,7 @@ colorIdentity: ""
         "manaValue": 2,
         "color": "",
         "type": "Artifact",
-        "id": 252,
+        "cardId": 252,
         "rarity": "C",
         "notes": {
 grade: "C-",
@@ -3887,7 +3887,7 @@ addsMana: "WUBRG"
         "manaValue": 4,
         "color": "",
         "type": "Artifact Creature — Mech Nomad ",
-        "id": 253,
+        "cardId": 253,
         "rarity": "C",
         "notes": {
 grade: "D",
@@ -3901,7 +3901,7 @@ colorIdentity: ""
         "manaValue": 2,
         "color": "",
         "type": "Artifact Creature — Mech ",
-        "id": 254,
+        "cardId": 254,
         "rarity": "C",
         "notes": {
 grade: "D",
@@ -3915,7 +3915,7 @@ colorIdentity: ""
         "manaValue": 2,
         "color": "",
         "type": "Artifact",
-        "id": 255,
+        "cardId": 255,
         "rarity": "R",
         "notes": {
 grade: "C",
@@ -3929,7 +3929,7 @@ colorIdentity: ""
         "manaValue": 2,
         "color": "",
         "type": "Artifact",
-        "id": 256,
+        "cardId": 256,
         "rarity": "C",
         "notes": {
 grade: "D+",
@@ -3943,7 +3943,7 @@ colorIdentity: ""
         "manaValue": 2,
         "color": "",
         "type": "Artifact Creature — Mech Mutant ",
-        "id": 257,
+        "cardId": 257,
         "rarity": "R",
         "notes": {
 grade: "C+",
@@ -3957,7 +3957,7 @@ colorIdentity: ""
         "manaValue": 4,
         "color": "",
         "type": "Artifact",
-        "id": 258,
+        "cardId": 258,
         "rarity": "U",
         "notes": {
 grade: "D",
@@ -3971,7 +3971,7 @@ colorIdentity: ""
         "manaValue": 0,
         "color": "",
         "type": "Land",
-        "id": 259,
+        "cardId": 259,
         "rarity": "C",
         "notes": {
 grade: "B-",
@@ -3987,7 +3987,7 @@ cockatrice_cipt: 1
         "manaValue": 0,
         "color": "",
         "type": "Land",
-        "id": 260,
+        "cardId": 260,
         "rarity": "C",
         "notes": {
 grade: "B-",
@@ -4003,7 +4003,7 @@ cockatrice_cipt: 1
         "manaValue": 0,
         "color": "",
         "type": "Land",
-        "id": 261,
+        "cardId": 261,
         "rarity": "C",
         "notes": {
 grade: "B-",
@@ -4019,7 +4019,7 @@ cockatrice_cipt: 1
         "manaValue": 0,
         "color": "",
         "type": "Land",
-        "id": 262,
+        "cardId": 262,
         "rarity": "C",
         "notes": {
 grade: "D+",
@@ -4034,7 +4034,7 @@ addsMana: "WUBRG"
         "manaValue": 0,
         "color": "",
         "type": "Land",
-        "id": 263,
+        "cardId": 263,
         "rarity": "C",
         "notes": {
 grade: "B-",
@@ -4050,7 +4050,7 @@ cockatrice_cipt: 1
         "manaValue": 0,
         "color": "",
         "type": "Land",
-        "id": 264,
+        "cardId": 264,
         "rarity": "R",
         "notes": {
 grade: "B-",
@@ -4064,7 +4064,7 @@ colorIdentity: ""
         "manaValue": 0,
         "color": "",
         "type": "Land",
-        "id": 265,
+        "cardId": 265,
         "rarity": "C",
         "notes": {
 grade: "B-",
@@ -4080,7 +4080,7 @@ cockatrice_cipt: 1
         "manaValue": 0,
         "color": "",
         "type": "Land",
-        "id": 266,
+        "cardId": 266,
         "rarity": "C",
         "notes": {
 grade: "B-",
@@ -4096,7 +4096,7 @@ cockatrice_cipt: 1
         "manaValue": 0,
         "color": "",
         "type": "Legendary Land",
-        "id": 267,
+        "cardId": 267,
         "rarity": "R",
         "notes": {
 grade: "C",
@@ -4111,7 +4111,7 @@ cockatrice_cipt: 1
         "manaValue": 0,
         "color": "",
         "type": "Land",
-        "id": 268,
+        "cardId": 268,
         "rarity": "C",
         "notes": {
 grade: "B-",
@@ -4127,7 +4127,7 @@ cockatrice_cipt: 1
         "manaValue": 0,
         "color": "",
         "type": "Land",
-        "id": 269,
+        "cardId": 269,
         "rarity": "C",
         "notes": {
 grade: "B-",
@@ -4143,7 +4143,7 @@ cockatrice_cipt: 1
         "manaValue": 0,
         "color": "",
         "type": "Land",
-        "id": 270,
+        "cardId": 270,
         "rarity": "C",
         "notes": {
 grade: "B-",
@@ -4159,7 +4159,7 @@ cockatrice_cipt: 1
         "manaValue": 0,
         "color": "",
         "type": "Land",
-        "id": 271,
+        "cardId": 271,
         "rarity": "C",
         "notes": {
 grade: "B-",
@@ -4175,7 +4175,7 @@ cockatrice_cipt: 1
         "manaValue": 0,
         "color": "",
         "type": "Land",
-        "id": 272,
+        "cardId": 272,
         "rarity": "R",
         "notes": {
 grade: "B",

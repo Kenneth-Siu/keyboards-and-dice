@@ -77,10 +77,10 @@ export function PicksView({
 
     function setCookie() {
         const cookiePicksCardIds = {
-            deckCreatures: picks.deckCreatures.map((column) => column.map((card) => card.id)),
-            deckNonCreatures: picks.deckNonCreatures.map((column) => column.map((card) => card.id)),
-            sideboardCreatures: picks.sideboardCreatures.map((column) => column.map((card) => card.id)),
-            sideboardNonCreatures: picks.sideboardNonCreatures.map((column) => column.map((card) => card.id)),
+            deckCreatures: picks.deckCreatures.map((column) => column.map((card) => card.cardId)),
+            deckNonCreatures: picks.deckNonCreatures.map((column) => column.map((card) => card.cardId)),
+            sideboardCreatures: picks.sideboardCreatures.map((column) => column.map((card) => card.cardId)),
+            sideboardNonCreatures: picks.sideboardNonCreatures.map((column) => column.map((card) => card.cardId)),
         };
         CookieHelper.set(cookieName, cookiePicksCardIds);
     }
@@ -132,7 +132,7 @@ export function PicksView({
         const newCards = [];
         while (incomingCards.length) {
             const card = incomingCards.shift();
-            const index = existingCards.findIndex((cookieCard) => cookieCard.id === card.id);
+            const index = existingCards.findIndex((cookieCard) => cookieCard.cardId === card.cardId);
             if (index !== -1) {
                 existingCards.splice(index, 1);
             } else {

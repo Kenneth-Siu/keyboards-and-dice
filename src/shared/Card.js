@@ -1,6 +1,6 @@
 export default class Card {
     constructor(rawCard) {
-        this.id = rawCard.id;
+        this.cardId = rawCard.cardId;
         this.name = rawCard.name;
         this.imageName = rawCard.imageName;
         this.cost = rawCard.cost;

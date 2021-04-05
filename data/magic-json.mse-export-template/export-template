@@ -30,7 +30,7 @@ script:
 		+"        \"manaValue\": {card.cmc},\n"
 		+"        \"color\": \"{colorFilter(card.casting_cost)}\",\n"
 		+"        \"type\": \"{card.type}\",\n"
-		+"        \"id\": {cardNumber},\n"
+		+"        \"cardId\": {cardNumber},\n"
 		+"        \"rarity\": \"{rarityFilter(card.rarity)}\",\n"
 		+"        \"notes\": \{\n{card.notes}\n        \}\n"
 	}

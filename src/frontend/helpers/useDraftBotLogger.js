@@ -11,9 +11,7 @@ export function useDraftBotLogger(boosterLoading, picksLoaded, boosterCards, pic
                 ...flattenDeep(picks.sideboardCreatures),
                 ...flattenDeep(picks.sideboardNonCreatures),
             ];
-            new Bot(flattenDeep(picksAsList.map((card) => ({ cardId: card.id, ...card }))), true).decidePick(
-                boosterCards.map((card) => ({ cardId: card.id, ...card }))
-            );
+            new Bot(flattenDeep(picksAsList), true).decidePick(boosterCards);
         }
     }, [boosterLoading, picksLoaded]);
 }

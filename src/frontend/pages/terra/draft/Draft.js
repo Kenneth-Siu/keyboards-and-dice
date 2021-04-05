@@ -199,7 +199,7 @@ export default function SingleDraft({ loggedInUser }) {
             async () => {
                 const response = await DraftsApi.getBooster(draftId);
                 if (response.cards) {
-                    setBoosterCards(response.cards.map((cardId) => getCard(cardId)));
+                    setBoosterCards(response.cards.map((card) => getCard(card.cardId)));
                 } else {
                     setBoosterCards(null);
                 }
@@ -220,7 +220,7 @@ export default function SingleDraft({ loggedInUser }) {
         setSelectedCardIndex(null);
         asyncTry(
             async () => {
-                await DraftsApi.submitPick(draftId, pickNumber, submittedCard.id);
+                await DraftsApi.submitPick(draftId, pickNumber, submittedCard.cardId);
                 const column = submittedCard.manaValue === 0 ? 7 : Math.min(6, submittedCard.manaValue - 1);
                 if (submittedCard.type.includes("Creature")) {
                     picks.deckCreatures[column].push(submittedCard);

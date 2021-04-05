@@ -59,7 +59,7 @@ export async function getBooster(draftId, userId) {
     const cards = await CardRepo.findAllForBooster(booster.id);
     return {
         pickNumber: booster.pickNumber,
-        cards: cards.map((card) => card.cardId),
+        cards: cards,
     };
 }
 
@@ -68,8 +68,7 @@ export async function getPicks(draftId, userId) {
     if (!player) {
         throw new NotFoundError(`Draft not found`);
     }
-    const picks = await PickRepo.findAllForPlayer(player.id);
-    return picks.map((pick) => pick.cardId);
+    return await PickRepo.findAllForPlayer(player.id);
 }
 
 export async function createDraft(userId) {

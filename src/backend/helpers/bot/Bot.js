@@ -40,6 +40,6 @@ export class Bot {
 
         const pick = maxBy(cards, (card) => card.power);
 
-        return boosterCards.find((card) => card.cardId === pick.id);
+        return boosterCards.find((card) => card.cardId === pick.cardId);
     }
 }

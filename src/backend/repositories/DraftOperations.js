@@ -214,7 +214,7 @@ export class DraftOperations {
 
     async createCards(boosterIds) {
         const cards = flatMap(boosterIds, (boosterId) =>
-            getBooster().map((card) => new Card(null, boosterId, card.id))
+            getBooster().map((card) => new Card(null, boosterId, card.cardId))
         );
         await this.client.query(
             `INSERT INTO cards (booster_id, card_id)
