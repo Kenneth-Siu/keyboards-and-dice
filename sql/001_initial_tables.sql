@@ -1,3 +1,8 @@
+CREATE TABLE users (
+    id TEXT PRIMARY KEY,
+    display_name TEXT NOT NULL
+);
+
 INSERT INTO users(id, display_name) VALUES ('00', 'Angrath Bot');
 INSERT INTO users(id, display_name) VALUES ('01', 'Arlinn Bot');
 INSERT INTO users(id, display_name) VALUES ('02', 'Ashiok Bot');
@@ -41,6 +46,17 @@ INSERT INTO users(id, display_name) VALUES ('39', 'Vivien Bot');
 INSERT INTO users(id, display_name) VALUES ('40', 'Vraska Bot');
 INSERT INTO users(id, display_name) VALUES ('41', 'Will Bot');
 
+CREATE TABLE "session" (
+    "sid" varchar NOT NULL COLLATE "default",
+	"sess" json NOT NULL,
+	"expire" timestamp(6) NOT NULL
+)
+WITH (OIDS=FALSE);
+
+ALTER TABLE "session" ADD CONSTRAINT "session_pkey" PRIMARY KEY ("sid") NOT DEFERRABLE INITIALLY IMMEDIATE;
+
+CREATE INDEX "IDX_session_expire" ON "session" ("expire");
+
 CREATE TABLE draft_statuses (
     id SMALLINT PRIMARY KEY NOT NULL,
     display_name TEXT NOT NULL
@@ -65,7 +81,7 @@ CREATE TABLE drafts (
 );
 
 CREATE TABLE players (
-    id SERIAL PRIMARY KEY NOT NULL,
+    id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     user_id TEXT NOT NULL,
     draft_id TEXT NOT NULL,
     seat_number SMALLINT,
@@ -78,7 +94,7 @@ CREATE TABLE players (
 );
 
 CREATE TABLE boosters (
-    id SERIAL PRIMARY KEY NOT NULL,
+    id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     pick_number SMALLINT NOT NULL,
     player_id INTEGER NOT NULL,
     CONSTRAINT fk_player
@@ -87,7 +103,7 @@ CREATE TABLE boosters (
 );
 
 CREATE TABLE cards (
-    id SERIAL PRIMARY KEY NOT NULL,
+    id INTEGER GENERATED ALWAYS AS IDENTITY (START WITH 100) PRIMARY KEY,
     booster_id INTEGER NOT NULL,
     card_id SMALLINT NOT NULL,
     CONSTRAINT fk_booster
@@ -95,8 +111,17 @@ CREATE TABLE cards (
         REFERENCES boosters(id)
 );
 
-CREATE TABLE memories (
+CREATE TABLE picks (
+    id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     player_id INTEGER NOT NULL,
+    card_id SMALLINT NOT NULL,
+    CONSTRAINT fk_player
+        FOREIGN KEY(player_id)
+        REFERENCES players(id)
+);
+
+CREATE TABLE memories (
+    player_id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     memory TEXT NOT NULL,
     CONSTRAINT fk_player
         FOREIGN KEY(player_id)
