@@ -1,0 +1,10 @@
+@import "../../../components/colors.scss";
+@import "../../../components/mixins.scss";
+
+.picks-column {
+    position: relative;
+    margin-right: 1.858%;
+    &:nth-child(8n) {
+        margin-right: 0;
+    }
+}

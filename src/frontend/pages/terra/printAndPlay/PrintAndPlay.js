@@ -18,22 +18,22 @@ export default function Rankings() {
                     if (card.rarity === COMMON_RARITY) {
                         return (
                             <React.Fragment key={card.cardId}>
-                                <CardImage imageName={card.imageName} />
-                                <CardImage imageName={card.imageName} />
-                                <CardImage imageName={card.imageName} />
-                                <CardImage imageName={card.imageName} />
+                                <CardImage src={card.imageName} />
+                                <CardImage src={card.imageName} />
+                                <CardImage src={card.imageName} />
+                                <CardImage src={card.imageName} />
                             </React.Fragment>
                         );
                     }
                     if (card.rarity === UNCOMMON_RARITY) {
                         return (
                             <React.Fragment key={card.cardId}>
-                                <CardImage imageName={card.imageName} />
-                                <CardImage imageName={card.imageName} />
+                                <CardImage src={card.imageName} />
+                                <CardImage src={card.imageName} />
                             </React.Fragment>
                         );
                     }
-                    return <CardImage key={card.cardId} imageName={card.imageName} />;
+                    return <CardImage key={card.cardId} src={card.imageName} />;
                 })}
             </main>
         </>

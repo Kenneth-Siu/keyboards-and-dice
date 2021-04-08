@@ -1,0 +1,8 @@
+@import "../../../components/colors.scss";
+@import "../../../components/mixins.scss";
+@import "./Draft.scss";
+
+.picks-heading {
+    @include draft-heading-div;
+    margin: 1rem 0;
+}

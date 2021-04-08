@@ -17,7 +17,7 @@ export default function Login() {
                 </div>
                 <div className="container">
                     <TerraSymbol className="terra-symbol" />
-                    <h1>Please sign in to continue</h1>
+                    <h1>Hello! What should I call you?</h1>
                     <div className="login-buttons-container">
                         <a className="google login-button" href="/api/login/google">
                             <GoogleLogo />

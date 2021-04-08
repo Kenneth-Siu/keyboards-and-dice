@@ -23,7 +23,7 @@ export function PicksRow({ row, cardOnClick }) {
                             }}
                             onClick={() => cardOnClick(pileIndex, pickIndex)}
                         >
-                            <CardImage imageName={pick.imageName} lazy />
+                            <CardImage src={pick.imageName} lazy />
                         </div>
                     ))}
                 </div>

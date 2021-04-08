@@ -11,7 +11,7 @@ export function BoosterView({ cards, selectedCardIndex, setSelectedCardIndex }) 
                     key={index}
                     className={`${selectedCardIndex === index ? "selected" : ""}`}
                 >
-                    <CardImage imageName={card.imageName} lazy />
+                    <CardImage src={card.imageName} lazy />
                 </button>
             ))}
         </div>

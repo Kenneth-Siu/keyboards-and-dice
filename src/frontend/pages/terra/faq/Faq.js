@@ -45,7 +45,7 @@ export default function Faq() {
                 <div className="container">
                     <h1>Rules FAQ</h1>
                     <section>
-                        <CardImage imageName={cacheMapper} lazy />
+                        <CardImage src={cacheMapper} lazy />
                         <div className="section-content">
                             <h2>Arm</h2>
                             <blockquote>
@@ -78,7 +78,7 @@ export default function Faq() {
                         </div>
                     </section>
                     <section>
-                        <CardImage imageName={boardroomKeeper} lazy />
+                        <CardImage src={boardroomKeeper} lazy />
                         <div className="section-content">
                             <h2>Infiltrate</h2>
                             <blockquote>
@@ -106,7 +106,7 @@ export default function Faq() {
                         </div>
                     </section>
                     <section>
-                        <CardImage imageName={radiumTracker} lazy />
+                        <CardImage src={radiumTracker} lazy />
                         <div className="section-content">
                             <h2>Reconstitute</h2>
                             <blockquote>
@@ -133,7 +133,7 @@ export default function Faq() {
                         </div>
                     </section>
                     <section>
-                        <CardImage imageName={plasmaReclaimer} lazy />
+                        <CardImage src={plasmaReclaimer} lazy />
                         <div className="section-content">
                             <h2>Teleport</h2>
                             <blockquote>
@@ -235,7 +235,7 @@ export default function Faq() {
                     </section>
                     <h2>Individual Card FAQs</h2>
                     <section>
-                        <CardImage imageName={karnThePenitent} lazy />
+                        <CardImage src={karnThePenitent} lazy />
                         <div className="section-content">
                             <h3>Karn the Penitent</h3>
                             <ul>
@@ -244,7 +244,7 @@ export default function Faq() {
                         </div>
                     </section>
                     <section>
-                        <CardImage imageName={dropship} lazy />
+                        <CardImage src={dropship} lazy />
                         <div className="section-content">
                             <h3>Dropship</h3>
                             <ul>
@@ -257,7 +257,7 @@ export default function Faq() {
                         </div>
                     </section>
                     <section>
-                        <CardImage imageName={suspensionSquad} lazy />
+                        <CardImage src={suspensionSquad} lazy />
                         <div className="section-content">
                             <h3>Suspension Squad</h3>
                             <ul>
@@ -270,7 +270,7 @@ export default function Faq() {
                         </div>
                     </section>
                     <section>
-                        <CardImage imageName={turnTheTideOfBattle} lazy />
+                        <CardImage src={turnTheTideOfBattle} lazy />
                         <div className="section-content">
                             <h3>Turn the Tide of Battle</h3>
                             <ul>
@@ -279,7 +279,7 @@ export default function Faq() {
                         </div>
                     </section>
                     <section>
-                        <CardImage imageName={coordinateScrambler} lazy />
+                        <CardImage src={coordinateScrambler} lazy />
                         <div className="section-content">
                             <h3>Coordinate Scrambler</h3>
                             <ul>
@@ -301,7 +301,7 @@ export default function Faq() {
                         </div>
                     </section>
                     <section>
-                        <CardImage imageName={futureInsight} lazy />
+                        <CardImage src={futureInsight} lazy />
                         <div className="section-content">
                             <h3>Future Insight</h3>
                             <ul>
@@ -313,7 +313,7 @@ export default function Faq() {
                         </div>
                     </section>
                     <section>
-                        <CardImage imageName={nanoreplicatorZero} lazy />
+                        <CardImage src={nanoreplicatorZero} lazy />
                         <div className="section-content">
                             <h3>Nanoreplicator Zero</h3>
                             <ul>
@@ -322,7 +322,7 @@ export default function Faq() {
                         </div>
                     </section>
                     <section>
-                        <CardImage imageName={neutronFlow} lazy />
+                        <CardImage src={neutronFlow} lazy />
                         <div className="section-content">
                             <h3>Neutron Flow</h3>
                             <ul>
@@ -334,7 +334,7 @@ export default function Faq() {
                         </div>
                     </section>
                     <section>
-                        <CardImage imageName={cloningVats} lazy />
+                        <CardImage src={cloningVats} lazy />
                         <div className="section-content">
                             <h3>Cloning Vats</h3>
                             <ul>
@@ -346,7 +346,7 @@ export default function Faq() {
                         </div>
                     </section>
                     <section>
-                        <CardImage imageName={murmurTheCleaner} lazy />
+                        <CardImage src={murmurTheCleaner} lazy />
                         <div className="section-content">
                             <h3>Murmur, the Cleaner</h3>
                             <ul>
@@ -377,7 +377,7 @@ export default function Faq() {
                         </div>
                     </section>
                     <section>
-                        <CardImage imageName={mysticOfTheUnder} lazy />
+                        <CardImage src={mysticOfTheUnder} lazy />
                         <div className="section-content">
                             <h3>Mystic of the Under</h3>
                             <ul>
@@ -389,7 +389,7 @@ export default function Faq() {
                         </div>
                     </section>
                     <section>
-                        <CardImage imageName={iridiumMagnetoKnife} lazy />
+                        <CardImage src={iridiumMagnetoKnife} lazy />
                         <div className="section-content">
                             <h3>Iridium Magneto-Knife</h3>
                             <ul>
@@ -401,7 +401,7 @@ export default function Faq() {
                         </div>
                     </section>
                     <section>
-                        <CardImage imageName={theMoirai} lazy />
+                        <CardImage src={theMoirai} lazy />
                         <div className="section-content">
                             <h3>The Moirai</h3>
                             <ul>
@@ -413,7 +413,7 @@ export default function Faq() {
                         </div>
                     </section>
                     <section>
-                        <CardImage imageName={wantedSpeedster} lazy />
+                        <CardImage src={wantedSpeedster} lazy />
                         <div className="section-content">
                             <h3>Wanted Speedster</h3>
                             <ul>
@@ -426,7 +426,7 @@ export default function Faq() {
                         </div>
                     </section>
                     <section>
-                        <CardImage imageName={bioarchitect} lazy />
+                        <CardImage src={bioarchitect} lazy />
                         <div className="section-content">
                             <h3>Bioarchitect</h3>
                             <ul>
@@ -438,7 +438,7 @@ export default function Faq() {
                         </div>
                     </section>
                     <section>
-                        <CardImage imageName={ingolfsCommand} lazy />
+                        <CardImage src={ingolfsCommand} lazy />
                         <div className="section-content">
                             <h3>
                                 Murmur's Command, Wormcaller's Command, Ingolf's Command, Vuissance's Command,
@@ -473,7 +473,7 @@ export default function Faq() {
                         </div>
                     </section>
                     <section>
-                        <CardImage imageName={matterRedistributor} lazy />
+                        <CardImage src={matterRedistributor} lazy />
                         <div className="section-content">
                             <h3>Matter Redistributor</h3>
                             <ul>
@@ -485,7 +485,7 @@ export default function Faq() {
                         </div>
                     </section>
                     <section>
-                        <CardImage imageName={titanOfShisukuSewers} lazy />
+                        <CardImage src={titanOfShisukuSewers} lazy />
                         <div className="section-content">
                             <h3>Titan of Shisuku Sewers</h3>
                             <ul>
@@ -494,7 +494,7 @@ export default function Faq() {
                         </div>
                     </section>
                     <section>
-                        <CardImage imageName={acquisitorDelwani} lazy />
+                        <CardImage src={acquisitorDelwani} lazy />
                         <div className="section-content">
                             <h3>Acquisitor Delwani</h3>
                             <ul>
@@ -507,7 +507,7 @@ export default function Faq() {
                         </div>
                     </section>
                     <section>
-                        <CardImage imageName={umidaKoto} lazy />
+                        <CardImage src={umidaKoto} lazy />
                         <div className="section-content">
                             <h3>Umida Koto</h3>
                             <ul>
@@ -533,7 +533,7 @@ export default function Faq() {
                         </div>
                     </section>
                     <section>
-                        <CardImage imageName={theAion} lazy />
+                        <CardImage src={theAion} lazy />
                         <div className="section-content">
                             <h3>The Aion</h3>
                             <ul>
@@ -545,7 +545,7 @@ export default function Faq() {
                         </div>
                     </section>
                     <section>
-                        <CardImage imageName={formling} lazy />
+                        <CardImage src={formling} lazy />
                         <div className="section-content">
                             <h3>Formling</h3>
                             <ul>
@@ -564,7 +564,7 @@ export default function Faq() {
                         </div>
                     </section>
                     <section>
-                        <CardImage imageName={moxVoidstone} lazy />
+                        <CardImage src={moxVoidstone} lazy />
                         <div className="section-content">
                             <h3>Mox Voidstone</h3>
                             <ul>
@@ -577,7 +577,7 @@ export default function Faq() {
                         </div>
                     </section>
                     <section>
-                        <CardImage imageName={mutagenicSerum} lazy />
+                        <CardImage src={mutagenicSerum} lazy />
                         <div className="section-content">
                             <h3>Mutagenic Serum</h3>
                             <ul>
@@ -586,7 +586,7 @@ export default function Faq() {
                         </div>
                     </section>
                     <section>
-                        <CardImage imageName={trojanHorse} lazy />
+                        <CardImage src={trojanHorse} lazy />
                         <div className="section-content">
                             <h3>Trojan Horse</h3>
                             <ul>
@@ -600,7 +600,7 @@ export default function Faq() {
                         </div>
                     </section>
                     <section>
-                        <CardImage imageName={hongWaiFactory} lazy />
+                        <CardImage src={hongWaiFactory} lazy />
                         <div className="section-content">
                             <h3>Hong Wai Factory</h3>
                             <ul>
@@ -613,7 +613,7 @@ export default function Faq() {
                         </div>
                     </section>
                     <section>
-                        <CardImage imageName={theMartianLens} lazy />
+                        <CardImage src={theMartianLens} lazy />
                         <div className="section-content">
                             <h3>The Martian Lens</h3>
                             <ul>

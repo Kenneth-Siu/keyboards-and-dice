@@ -108,7 +108,7 @@ export default function CardImageGallery() {
                     <p className="num-of-cards">{cardList.length} cards</p>
                     <div className="card-grid">
                         {filterCards(cardList).map((card) => (
-                            <CardImage imageName={card.imageName} key={card.cardId} lazy />
+                            <CardImage src={card.imageName} key={card.cardId} lazy />
                         ))}
                     </div>
                     <div className="filter-pane">

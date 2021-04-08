@@ -210,7 +210,7 @@ export default function Rankings() {
                             </h2>
                             <div className="grade-section-content">
                                 {grade.cards.map((card) => (
-                                    <CardImage key={card.cardId} imageName={card.imageName} lazy />
+                                    <CardImage key={card.cardId} src={card.imageName} lazy />
                                 ))}
                                 {grade.cards.length === 0 && <p className="no-cards">None</p>}
                             </div>
