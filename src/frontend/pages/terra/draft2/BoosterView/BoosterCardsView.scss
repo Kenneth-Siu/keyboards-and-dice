@@ -1,0 +1,48 @@
+@import "../../../../components/colors.scss";
+@import "../../../../components/mixins.scss";
+
+.booster-cards-view {
+    position: relative;
+    display: grid;
+    margin-bottom: 0.6rem;
+
+    @media (max-width: 659px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (min-width: 660px) and (max-width: 919px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media (min-width: 920px) and (max-width: 1223px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    @media (min-width: 1223px) and (max-width: 1535px) {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    @media (min-width: 1536px) and (max-width: 1839px) {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    @media (min-width: 1840px) {
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    button {
+        @include button;
+        @include card-image-corners;
+        padding: 0;
+        margin: 0.2rem;
+
+        &:focus {
+            box-shadow: 0 0 0.2rem 0.2rem scale-color($color-1, $alpha: -70%);
+            outline: none;
+        }
+
+        &.selected {
+            box-shadow: 0 0 0.2rem 0.2rem $color-5-strong;
+            outline: none;
+        }
+    }
+
+    .card-image {
+        width: 100%;
+    }
+}

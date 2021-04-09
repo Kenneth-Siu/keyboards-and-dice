@@ -1,0 +1,54 @@
+@import "../../../components/colors.scss";
+@import "../../../components/mixins.scss";
+
+.draft-page {
+    @include blurred-page-background(0.14);
+    position: relative;
+
+    .container {
+        padding: 0 0.5rem 0.5rem 0.5rem;
+        position: relative;
+        color: $color-1;
+    }
+
+    h1 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.4rem;
+        margin-top: 1rem;
+        margin-bottom: 0.8rem;
+
+        small {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: scale-color($color-1, $alpha: -30%);
+        }
+    }
+
+    h2 {
+        font-weight: 700;
+        font-size: 1.4rem;
+        margin-left: 0.5rem;
+
+        small {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: scale-color($color-1, $alpha: -30%);
+        }
+    }
+
+    .player-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 0.8rem;
+
+        .player-pill {
+            background-color: scale-color($color-1, $alpha: -60%);
+
+            &.current-user {
+                background-color: scale-color($color-5-light, $alpha: -60%);
+            }
+        }
+    }
+}

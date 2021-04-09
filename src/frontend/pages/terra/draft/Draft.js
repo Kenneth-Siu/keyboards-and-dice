@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { CARDS_IN_PACK, DEFAULT_PLAYERS_IN_DRAFT, DRAFT_STATUSES } from "../../../../config";
+import { DEFAULT_PLAYERS_IN_DRAFT, DRAFT_STATUSES } from "../../../../config";
 import LoadingSpinner from "../../../components/loadingSpinner/LoadingSpinner.js";
 import { getCard } from "../../../../shared/cardList";
 import * as DraftsApi from "../../../api/DraftsApi.js";
@@ -8,32 +8,14 @@ import "./Draft.scss";
 import { asyncTry } from "../../../helpers/asyncTry";
 import { CHEVRON_DIRECTION, PlayerList } from "../../../components/playerList/PlayerList";
 import { ReadyToStartView } from "./ReadyToStartView";
-import { PicksView } from "./PicksView";
 import { SortablePicks } from "./SortablePicks";
 import { BasicsControlPanel } from "./BasicsControlPanel";
 import { flatten } from "lodash";
 import copy from "copy-to-clipboard";
-import { BoosterView } from "./BoosterView";
-import { RefreshButtonView } from "./WaitingOnBoosterView";
-import { PillButton } from "../../../components/pillButton/PillButton.js";
 import draftSplash from "../../../../../data/draftSplash.jpg";
-import {
-    DndContext,
-    DragOverlay,
-    closestCenter,
-    closestCorners,
-    KeyboardSensor,
-    PointerSensor,
-    useSensor,
-    useSensors,
-} from "@dnd-kit/core";
-import {restrictToWindowEdges} from "@dnd-kit/modifiers";
-import {
-    arrayMove,
-    SortableContext,
-    sortableKeyboardCoordinates,
-    verticalListSortingStrategy,
-} from "@dnd-kit/sortable";
+import { DndContext, DragOverlay, KeyboardSensor, PointerSensor, useSensor, useSensors } from "@dnd-kit/core";
+import { restrictToWindowEdges } from "@dnd-kit/modifiers";
+import { arrayMove, sortableKeyboardCoordinates } from "@dnd-kit/sortable";
 import CardImage from "../../../components/cardImages/MagicCardImage";
 import { InProgressView } from "./InProgressView";
 
@@ -111,7 +93,7 @@ export default function SingleDraft({ loggedInUser }) {
         onDragStart: handleDragStart,
         onDragOver: handleDragOver,
         onDragEnd: handleDragEnd,
-        modifiers: [restrictToWindowEdges]
+        modifiers: [restrictToWindowEdges],
     };
 
     const playerListProps = draftLoaded && {
@@ -162,6 +144,7 @@ export default function SingleDraft({ loggedInUser }) {
                 }}
             />
         ),
+        copyPicksToClipboard
     };
 
     return (

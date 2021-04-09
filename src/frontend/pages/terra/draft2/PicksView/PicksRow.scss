@@ -1,0 +1,11 @@
+@import "../../../../components/colors.scss";
+
+.picks-row {
+    display: grid;
+    grid-template: 1fr / repeat(8, 1fr);
+    width: 98%;
+    margin: 0.5%;
+    padding: 0.3%;
+    background-color: scale-color($color-1, $alpha: -80%);
+    border-radius: 0.7rem;
+}
