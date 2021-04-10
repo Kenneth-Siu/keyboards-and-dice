@@ -8,6 +8,9 @@ $name-bar-height-to-card-width-ratio: 0.155;
         position: absolute;
         left: 0;
     }
+    &:focus {
+        outline: none;
+    }
 }
 
 .card-image.sortable {

@@ -194,22 +194,29 @@ export default function Draft({ loggedInUser }) {
     }
 
     function handleDragOver({ active, over, draggingRect }) {
-        if (!active || !over) {
+        const overId = over?.id;
+
+        if (!overId) {
             return;
         }
-        const overContainerId = findContainerId(over.id);
+
+        const overContainerId = findContainerId(overId);
         const activeContainerId = findContainerId(active.id);
+
+        if (!overContainerId || !activeContainerId) {
+            return;
+        }
 
         if (activeContainerId !== overContainerId) {
             setSortablePicks((sortablePicks) => {
                 const activeContainer = sortablePicks[activeContainerId];
                 const overContainer = sortablePicks[overContainerId];
-                const overIndex = overContainer.indexOf(over.id);
+                const overIndex = overContainer.indexOf(overId);
                 const activeIndex = activeContainer.indexOf(active.id);
 
                 let newIndex;
 
-                if (over.id in sortablePicks) {
+                if (overId in sortablePicks) {
                     newIndex = overContainer.length + 1;
                 } else {
                     const isBelowLastItem =
@@ -232,21 +239,33 @@ export default function Draft({ loggedInUser }) {
                     ],
                 };
             });
-        } else if (active.id !== over.id) {
-            setSortablePicks((sortablePicks) => {
-                const activeContainer = sortablePicks[activeContainerId];
-                const oldIndex = activeContainer.indexOf(active.id);
-                const newIndex = activeContainer.indexOf(over.id);
-
-                return {
-                    ...sortablePicks,
-                    [activeContainerId]: arrayMove(activeContainer, oldIndex, newIndex),
-                };
-            });
         }
     }
 
-    function handleDragEnd() {
+    function handleDragEnd({ active, over }) {
+        const activeContainerId = findContainerId(active.id);
+
+        if (!activeContainerId) {
+            setDndActiveCardId(null);
+            return;
+        }
+
+        const overId = over?.id;
+
+        const overContainerId = findContainerId(overId);
+
+        if (activeContainerId && overContainerId) {
+            const activeIndex = sortablePicks[activeContainerId].indexOf(active.id);
+            const overIndex = sortablePicks[overContainerId].indexOf(overId);
+
+            if (activeIndex !== overIndex) {
+                setSortablePicks((sortablePicks) => ({
+                    ...sortablePicks,
+                    [overContainerId]: arrayMove(sortablePicks[overContainerId], activeIndex, overIndex),
+                }));
+            }
+        }
+
         setDndActiveCardId(null);
     }
 }

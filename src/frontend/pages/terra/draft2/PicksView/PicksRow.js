@@ -18,10 +18,11 @@ export default function PicksRow({ picks, sortablePicks, containerIdStartsWith }
                         strategy={verticalListSortingStrategy}
                     >
                         <PicksColumn id={containerId} column={sortablePicks[containerId]}>
-                            {sortablePicks[containerId].map((pickId) => (
+                            {sortablePicks[containerId].map((pickId, index) => (
                                 <PicksCard
                                     key={pickId}
                                     id={pickId}
+                                    index={index}
                                     src={picks.find((pick) => pick.id === pickId).imageName}
                                 />
                             ))}

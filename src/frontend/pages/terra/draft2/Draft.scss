@@ -2,7 +2,7 @@
 @import "../../../components/mixins.scss";
 
 .draft-page {
-    @include blurred-page-background(0.14);
+    @include blurred-page-background(0.18);
     position: relative;
 
     .container {

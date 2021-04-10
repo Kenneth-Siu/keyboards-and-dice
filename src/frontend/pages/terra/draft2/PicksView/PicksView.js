@@ -4,12 +4,13 @@ import copy from "copy-to-clipboard";
 
 import { DRAFT_STATUSES } from "../../../../../config";
 import { getCard } from "../../../../../shared/cardList";
-import * as DraftsApi from "../../../../api/DraftsApi.js";
+import * as DraftsApi from "../../../../api/DraftsApi";
 import { asyncTry } from "../../../../helpers/asyncTry";
 import { CopyDeckButton } from "./CopyDeckButton";
 import PicksRow from "./PicksRow";
 
 import "./PicksView.scss";
+import { sum } from "lodash";
 
 export default function PicksView({ draft, picks, setPicks, sortablePicks, setSortablePicks }) {
     const { draftId } = useParams();
@@ -19,12 +20,16 @@ export default function PicksView({ draft, picks, setPicks, sortablePicks, setSo
     useEffect(getPicks, []);
 
     const totalBasics = basics && basics.plains + basics.islands + basics.swamps + basics.mountains + basics.forests;
-    // TODO incorrect:
-    const numOfCardsInMaindeck = Object.keys(sortablePicks).filter((containerId) => containerId.startsWith("deck"))
-        .length;
-    const numOfCardsInSideboard = Object.keys(sortablePicks).filter((containerId) =>
-        containerId.startsWith("sideboard")
-    ).length;
+    const numOfCardsInMaindeck = sum(
+        Object.keys(sortablePicks)
+            .filter((containerId) => containerId.startsWith("deck"))
+            .map((key) => sortablePicks[key].length)
+    );
+    const numOfCardsInSideboard = sum(
+        Object.keys(sortablePicks)
+            .filter((containerId) => containerId.startsWith("sideboard"))
+            .map((key) => sortablePicks[key].length)
+    );
 
     return (
         <>
