@@ -25,11 +25,17 @@
         grid-template-columns: repeat(7, 1fr);
     }
 
+    .booster-card-container {
+        margin: 0.2rem;
+        display: flex;
+    }
+
     button {
         @include button;
         @include card-image-corners;
-        padding: 0;
-        margin: 0.2rem;
+        position: relative;
+        width: 100%;
+        padding-bottom: 100% * $card-height-width-ratio;
 
         &:focus {
             box-shadow: 0 0 0.2rem 0.2rem scale-color($color-1, $alpha: -70%);
@@ -43,6 +49,10 @@
     }
 
     .card-image {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
+        height: 100%;
     }
 }

@@ -73,13 +73,15 @@ export default function PicksView({ draft, picks, setPicks, sortablePicks, setSo
                         })
                     );
 
+                    const cookieSortablePicks = CookieHelper.get(getDraftCookieName(draftId)) || sortablePicks;
                     const responsePicksCardIds = responsePicks.map((card) => card.id);
-                    const cookieSortablePicks = CookieHelper.get(getDraftCookieName(draftId));
                     const deck = flatten(
                         Object.keys(cookieSortablePicks).map((containerId) => cookieSortablePicks[containerId])
                     );
                     const unsortedCards = difference(responsePicksCardIds, deck);
-                    unsortedCards.forEach(cardId => cookieSortablePicks[getDefaultRowColumnForCard(getCard(cardId))].push(getCard(cardId)));
+                    unsortedCards.forEach((cardId) =>
+                        cookieSortablePicks[getDefaultRowColumnForCard(getCard(cardId))].push(getCard(cardId))
+                    );
 
                     setSortablePicks(cookieSortablePicks);
                 },

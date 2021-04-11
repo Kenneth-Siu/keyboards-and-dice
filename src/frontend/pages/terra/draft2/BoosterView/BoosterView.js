@@ -7,7 +7,7 @@ import BoosterLoadingZone from "./BoosterLoadingZone";
 
 import "./BoosterView.scss";
 
-export default function BoosterView({ draft, getDraft, booster, isBoosterLoading, sortableBooster, submitPick }) {
+export default function BoosterView({ draft, getDraft, booster, submitPick }) {
     const [selectedCardId, setSelectedCardId] = useState(null);
 
     return (
@@ -21,12 +21,10 @@ export default function BoosterView({ draft, getDraft, booster, isBoosterLoading
                     Submit Pick
                 </PillButton>
             </div>
-            {booster && !booster.cards && <WaitingOnBoosterView getDraft={getDraft} pickNumber={booster?.pickNumber} />}
-            {!(booster && !booster.cards) && isBoosterLoading && (
-                <BoosterLoadingZone pickNumber={booster?.pickNumber} />
-            )}
-            {!isBoosterLoading && booster?.cards && (
-                <BoosterCardsView {...{ booster, sortableBooster, selectedCardId, setSelectedCardId }} />
+            {!booster.cards && <WaitingOnBoosterView getDraft={getDraft} pickNumber={booster?.pickNumber} />}
+            {booster.isLoading && booster.cards && <BoosterLoadingZone pickNumber={booster?.pickNumber} />}
+            {!booster.isLoading && booster.cards && (
+                <BoosterCardsView {...{ booster, selectedCardId, setSelectedCardId }} />
             )}
             <div className="booster-view-footer">
                 <PillButton onClick={handleSubmit} className="submit-pick" disabled={!selectedCardId}>

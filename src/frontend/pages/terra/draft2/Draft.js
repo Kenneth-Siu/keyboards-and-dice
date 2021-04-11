@@ -23,13 +23,10 @@ export default function Draft({ loggedInUser }) {
     const { draftId } = useParams();
 
     const [draft, setDraft] = useState(null);
-    const [booster, setBooster] = useState(null);
+    const [booster, setBooster] = useState({ cards: [], isLoading: true });
     const [picks, setPicks] = useState(null);
 
-    const [isBoosterLoading, setIsBoosterLoading] = useState(true);
-
     const [dndActiveCardId, setDndActiveCardId] = useState(null);
-    const [sortableBooster, setSortableBooster] = useState(null);
     const [sortablePicks, setSortablePicks] = useState({
         deckRow0Column0: [],
         deckRow0Column1: [],
@@ -103,9 +100,7 @@ export default function Draft({ loggedInUser }) {
                                 <ReadyToStartView {...{ draft, getDraft }} />
                             )}
                             {draft.status === DRAFT_STATUSES.IN_PROGRESS && (
-                                <BoosterView
-                                    {...{ draft, getDraft, booster, isBoosterLoading, sortableBooster, submitPick }}
-                                />
+                                <BoosterView {...{ draft, getDraft, booster, submitPick }} />
                             )}
                             {draft.status !== DRAFT_STATUSES.READY_TO_START && (
                                 <PicksView {...{ draft, picks, setPicks, sortablePicks, setSortablePicks }} />
@@ -144,26 +139,21 @@ export default function Draft({ loggedInUser }) {
     }
 
     function getBooster() {
-        setIsBoosterLoading(true);
+        setBooster((booster) => ({ ...booster, isLoading: true }));
         asyncTry(
             async () => {
                 const response = await DraftsApi.getBooster(draftId);
                 const cards = response.cards?.map((card) => ({ ...card, ...getCard(card.cardId) }));
+                const sortableCards = response.cards?.map((card) => card.id);
                 const pickNumber = response.pickNumber !== undefined ? response.pickNumber : booster?.pickNumber;
-                setBooster({ cards, pickNumber });
-
-                if (response.cards) {
-                    setSortableBooster([...response.cards.map((card) => card.id)]);
-                }
-
-                setIsBoosterLoading(false);
+                setBooster({ cards, sortableCards, pickNumber, isLoading: false });
             },
             () => {}
         );
     }
 
     function submitPick(cardId) {
-        setIsBoosterLoading(true);
+        setBooster((booster) => ({ ...booster, isLoading: true }));
         const submittedCard = booster.cards.find((card) => card.id === cardId);
 
         setPicks((picks) => [...picks, submittedCard]);
