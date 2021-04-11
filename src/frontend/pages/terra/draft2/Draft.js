@@ -12,7 +12,7 @@ import { getCard } from "../../../../shared/cardList";
 import LoadingSpinner from "../../../components/loadingSpinner/LoadingSpinner";
 import { PlayerList, CHEVRON_DIRECTION } from "../../../components/playerList/PlayerList";
 import DndFramework from "./DndFramework";
-import { getDraftCookieName, getDefaultRowColumnForCard } from "./DraftHelpers";
+import { getDraftCookieName, getDefaultRowColumnForCard, boosterContainerId } from "./DraftHelpers";
 import BoosterView from "./BoosterView/BoosterView";
 import PicksView from "./PicksView/PicksView";
 import ReadyToStartView from "./ReadyToStartView/ReadyToStartView";
@@ -23,7 +23,7 @@ export default function Draft({ loggedInUser }) {
     const { draftId } = useParams();
 
     const [draft, setDraft] = useState(null);
-    const [booster, setBooster] = useState({ cards: [], isLoading: true });
+    const [booster, setBooster] = useState({ cards: [], sortableCards: [], isLoading: true });
     const [picks, setPicks] = useState(null);
 
     const [dndActiveCardId, setDndActiveCardId] = useState(null);
@@ -103,7 +103,7 @@ export default function Draft({ loggedInUser }) {
                                 <BoosterView {...{ draft, getDraft, booster, submitPick }} />
                             )}
                             {draft.status !== DRAFT_STATUSES.READY_TO_START && (
-                                <PicksView {...{ draft, picks, setPicks, sortablePicks, setSortablePicks }} />
+                                <PicksView {...{ draft, booster, picks, setPicks, sortablePicks, setSortablePicks }} />
                             )}
                         </DndFramework>
                     )}
@@ -175,12 +175,21 @@ export default function Draft({ loggedInUser }) {
         );
     }
 
-    function findContainerId(id) {
-        if (id in sortablePicks) {
-            return id;
+    function findContainerId(itemId) {
+        if (itemId in sortablePicks) {
+            return itemId;
         }
 
-        return Object.keys(sortablePicks).find((key) => sortablePicks[key].includes(id));
+        return booster?.sortableCards.includes(itemId)
+            ? boosterContainerId
+            : Object.keys(sortablePicks).find((key) => sortablePicks[key].includes(itemId));
+    }
+
+    function findContainer(containerId) {
+        if (containerId === boosterContainerId) {
+            return booster.sortableCards;
+        }
+        return sortablePicks[containerId];
     }
 
     function handleDragStart(event) {
@@ -197,46 +206,60 @@ export default function Draft({ loggedInUser }) {
         const overContainerId = findContainerId(overId);
         const activeContainerId = findContainerId(active.id);
 
-        if (!overContainerId || !activeContainerId) {
+        if (
+            !overContainerId ||
+            !activeContainerId ||
+            (overContainerId === boosterContainerId && !booster.cards.find((card) => card.id === active.id))
+        ) {
             return;
         }
 
         if (activeContainerId !== overContainerId) {
-            setSortablePicks((sortablePicks) => {
-                const activeContainer = sortablePicks[activeContainerId];
-                const overContainer = sortablePicks[overContainerId];
-                const overIndex = overContainer.indexOf(overId);
-                const activeIndex = activeContainer.indexOf(active.id);
+            const activeContainer = findContainer(activeContainerId);
+            const overContainer = findContainer(overContainerId);
+            const overIndex = overContainer.indexOf(overId);
+            const activeIndex = activeContainer.indexOf(active.id);
 
-                let newIndex;
+            let newIndex;
 
-                if (overId in sortablePicks) {
-                    newIndex = overContainer.length + 1;
-                } else {
-                    const isBelowLastItem =
-                        over &&
-                        overIndex === overContainer.length - 1 &&
-                        draggingRect.offsetTop > over.rect.offsetTop + over.rect.height;
+            if (overId in sortablePicks) {
+                newIndex = overContainer.length + 1;
+            } else {
+                const isBelowLastItem =
+                    over &&
+                    overIndex === overContainer.length - 1 &&
+                    draggingRect.offsetTop > over.rect.offsetTop + over.rect.height;
 
-                    const modifier = isBelowLastItem ? 1 : 0;
+                const modifier = isBelowLastItem ? 1 : 0;
 
-                    newIndex = overIndex >= 0 ? overIndex + modifier : overContainer.length + 1;
-                }
+                newIndex = overIndex >= 0 ? overIndex + modifier : overContainer.length + 1;
+            }
 
-                const newSortablePicks = {
-                    ...sortablePicks,
-                    [activeContainerId]: [...sortablePicks[activeContainerId].filter((item) => item !== active.id)],
-                    [overContainerId]: [
-                        ...sortablePicks[overContainerId].slice(0, newIndex),
-                        sortablePicks[activeContainerId][activeIndex],
-                        ...sortablePicks[overContainerId].slice(newIndex, sortablePicks[overContainerId].length),
-                    ],
-                };
+            let newSortableCards = [...booster.sortableCards];
+            const newSortablePicks = { ...sortablePicks };
 
-                CookieHelper.set(getDraftCookieName(draftId), newSortablePicks);
+            if (overContainerId === boosterContainerId) {
+                newSortableCards = [
+                    ...overContainer.slice(0, newIndex),
+                    activeContainer[activeIndex],
+                    ...overContainer.slice(newIndex, overContainer.length),
+                ];
+            } else {
+                newSortablePicks[overContainerId] = [
+                    ...overContainer.slice(0, newIndex),
+                    activeContainer[activeIndex],
+                    ...overContainer.slice(newIndex, overContainer.length),
+                ];
+            }
 
-                return newSortablePicks;
-            });
+            if (activeContainerId === boosterContainerId) {
+                newSortableCards = [...activeContainer.filter((item) => item !== active.id)];
+            } else {
+                newSortablePicks[activeContainerId] = [...activeContainer.filter((item) => item !== active.id)];
+            }
+
+            setBooster({ ...booster, sortableCards: newSortableCards });
+            setSortablePicks(newSortablePicks);
         }
     }
 
@@ -253,18 +276,30 @@ export default function Draft({ loggedInUser }) {
         const overContainerId = findContainerId(overId);
 
         if (activeContainerId && overContainerId) {
-            const activeIndex = sortablePicks[activeContainerId].indexOf(active.id);
-            const overIndex = sortablePicks[overContainerId].indexOf(overId);
+            const activeContainer = findContainer(activeContainerId);
+            const overContainer = findContainer(overContainerId);
+            const activeIndex = activeContainer.indexOf(active.id);
+            const overIndex = overContainer.indexOf(overId);
 
-            if (activeIndex !== overIndex) {
-                const newSortablePicks = {
-                    ...sortablePicks,
-                    [overContainerId]: arrayMove(sortablePicks[overContainerId], activeIndex, overIndex),
-                };
+            if (activeContainerId === boosterContainerId && overContainerId === boosterContainerId) {
+                if (activeIndex !== overIndex) {
+                    const newSortableCards = arrayMove(booster.sortableCards, activeIndex, overIndex);
 
-                CookieHelper.set(getDraftCookieName(draftId), newSortablePicks);
+                    setBooster({ ...booster, sortableCards: newSortableCards });
+                }
+            } else if (activeContainerId !== boosterContainerId && overContainerId !== boosterContainerId) {
+                if (activeIndex !== overIndex) {
+                    const newSortablePicks = {
+                        ...sortablePicks,
+                        [overContainerId]: arrayMove(sortablePicks[overContainerId], activeIndex, overIndex),
+                    };
 
-                setSortablePicks(newSortablePicks);
+                    CookieHelper.set(getDraftCookieName(draftId), newSortablePicks);
+
+                    setSortablePicks(newSortablePicks);
+                }
+            } else if (activeContainerId === boosterContainerId && overContainerId !== boosterContainerId) {
+                // MAKE PICK
             }
         }
 

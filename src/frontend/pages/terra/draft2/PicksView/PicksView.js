@@ -15,7 +15,7 @@ import PicksRow from "./PicksRow";
 import "./PicksView.scss";
 import { getDefaultRowColumnForCard, getDraftCookieName } from "../DraftHelpers";
 
-export default function PicksView({ draft, picks, setPicks, sortablePicks, setSortablePicks }) {
+export default function PicksView({ draft, booster, picks, setPicks, sortablePicks, setSortablePicks }) {
     const { draftId } = useParams();
 
     const [basics, setBasics] = useState(null);
@@ -50,15 +50,15 @@ export default function PicksView({ draft, picks, setPicks, sortablePicks, setSo
                     </>
                 )}
             </div>
-            <PicksRow containerIdStartsWith="deckRow0" {...{ picks, sortablePicks }} />
-            <PicksRow containerIdStartsWith="deckRow1" {...{ picks, sortablePicks }} />
+            <PicksRow containerIdStartsWith="deckRow0" {...{ booster, picks, sortablePicks }} />
+            <PicksRow containerIdStartsWith="deckRow1" {...{ booster, picks, sortablePicks }} />
             <div className="picks-view-heading">
                 <h2>
                     Sideboard <small>({numOfCardsInSideboard} cards)</small>
                 </h2>
             </div>
-            <PicksRow containerIdStartsWith="sideboardRow0" {...{ picks, sortablePicks }} />
-            <PicksRow containerIdStartsWith="sideboardRow1" {...{ picks, sortablePicks }} />
+            <PicksRow containerIdStartsWith="sideboardRow0" {...{ booster, picks, sortablePicks }} />
+            <PicksRow containerIdStartsWith="sideboardRow1" {...{ booster, picks, sortablePicks }} />
         </>
     );
 

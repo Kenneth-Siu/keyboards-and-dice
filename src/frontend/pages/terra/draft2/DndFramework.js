@@ -28,7 +28,7 @@ export default function DndFramework({
     const dragOverlayImageSrc =
         dndActiveCardId &&
         (picks.find((pick) => pick.id === dndActiveCardId)?.imageName ||
-            booster?.cards.find((card) => card.id === activeId)?.imageName);
+            booster?.cards.find((card) => card.id === dndActiveCardId)?.imageName);
 
     return (
         <DndContext {...dndContextProps}>

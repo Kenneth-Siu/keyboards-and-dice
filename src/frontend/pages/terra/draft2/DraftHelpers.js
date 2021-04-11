@@ -7,3 +7,5 @@ export function getDefaultRowColumnForCard(card) {
 export function getDraftCookieName(draftId) {
     return `draft-${draftId}-cards`;
 }
+
+export const boosterContainerId = "booster";

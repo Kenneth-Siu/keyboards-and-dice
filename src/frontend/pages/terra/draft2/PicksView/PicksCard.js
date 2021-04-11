@@ -11,7 +11,7 @@ export default function PicksCard({ id, index, src, ...rest }) {
     const style = {
         opacity: isDragging ? 0.5 : null,
         transform: CSS.Transform.toString(transform),
-        transition,
+        // transition,
         zIndex: (isDragging && overIndex !== -1 ? overIndex : index) * 2 + (isDragging ? 1 : 0),
     };
 

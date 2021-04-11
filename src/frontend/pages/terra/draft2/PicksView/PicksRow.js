@@ -6,7 +6,7 @@ import PicksColumn from "./PicksColumn";
 
 import "./PicksRow.scss";
 
-export default function PicksRow({ picks, sortablePicks, containerIdStartsWith }) {
+export default function PicksRow({ booster, picks, sortablePicks, containerIdStartsWith }) {
     return (
         <div className="picks-row">
             {Object.keys(sortablePicks)
@@ -23,7 +23,12 @@ export default function PicksRow({ picks, sortablePicks, containerIdStartsWith }
                                     key={pickId}
                                     id={pickId}
                                     index={index}
-                                    src={picks.find((pick) => pick.id === pickId).imageName}
+                                    src={
+                                        (
+                                            picks.find((pick) => pick.id === pickId) ||
+                                            booster.cards.find((card) => card.id === pickId)
+                                        ).imageName
+                                    }
                                 />
                             ))}
                         </PicksColumn>
