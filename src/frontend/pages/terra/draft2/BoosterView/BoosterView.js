@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 
-import { CARDS_IN_PACK } from "../../../../../config";
 import { PillButton } from "../../../../components/pillButton/PillButton";
-import LoadingSpinner from "../../../../components/loadingSpinner/LoadingSpinner";
 import WaitingOnBoosterView from "./WaitingOnBoosterView";
 import BoosterCardsView from "./BoosterCardsView";
+import BoosterLoadingZone from "./BoosterLoadingZone";
 
 import "./BoosterView.scss";
 
@@ -22,15 +21,13 @@ export default function BoosterView({ draft, getDraft, booster, isBoosterLoading
                     Submit Pick
                 </PillButton>
             </div>
-            {isBoosterLoading && (
-                <div className={`booster-loading cards-${CARDS_IN_PACK + 1 - (booster?.pickNumber || 1)}`}>
-                    <LoadingSpinner />
-                </div>
+            {booster && !booster.cards && <WaitingOnBoosterView getDraft={getDraft} pickNumber={booster?.pickNumber} />}
+            {!(booster && !booster.cards) && isBoosterLoading && (
+                <BoosterLoadingZone pickNumber={booster?.pickNumber} />
             )}
-            {!isBoosterLoading && !booster?.cards && (
-                <WaitingOnBoosterView getDraft={getDraft} pickNumber={booster?.pickNumber} />
+            {!isBoosterLoading && booster?.cards && (
+                <BoosterCardsView {...{ booster, sortableBooster, selectedCardId, setSelectedCardId }} />
             )}
-            {!isBoosterLoading && booster?.cards && <BoosterCardsView {...{ booster, sortableBooster, selectedCardId, setSelectedCardId }} />}
             <div className="booster-view-footer">
                 <PillButton onClick={handleSubmit} className="submit-pick" disabled={!selectedCardId}>
                     Submit Pick

@@ -1,16 +1,19 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import copy from "copy-to-clipboard";
+import { difference, flatten, sum } from "lodash";
 
 import { DRAFT_STATUSES } from "../../../../../config";
+import * as CookieHelper from "../../../../helpers/CookieHelper";
 import { getCard } from "../../../../../shared/cardList";
 import * as DraftsApi from "../../../../api/DraftsApi";
 import { asyncTry } from "../../../../helpers/asyncTry";
-import { CopyDeckButton } from "./CopyDeckButton";
+import BasicsControlPanel from "./BasicsControlPanel";
+import CopyDeckButton from "./CopyDeckButton";
 import PicksRow from "./PicksRow";
 
 import "./PicksView.scss";
-import { sum } from "lodash";
+import { getDefaultRowColumnForCard, getDraftCookieName } from "../DraftHelpers";
 
 export default function PicksView({ draft, picks, setPicks, sortablePicks, setSortablePicks }) {
     const { draftId } = useParams();
@@ -69,10 +72,16 @@ export default function PicksView({ draft, picks, setPicks, sortablePicks, setSo
                             return { id: card.id, ...getCard(card.cardId) };
                         })
                     );
-                    setSortablePicks((sortablePicks) => {
-                        return { ...sortablePicks, deckRow0Cmc0: responsePicks.map((card) => card.id) };
-                    });
-                    // getFromCookie(responsePicks.map((cardId) => getCard(cardId)));
+
+                    const responsePicksCardIds = responsePicks.map((card) => card.id);
+                    const cookieSortablePicks = CookieHelper.get(getDraftCookieName(draftId));
+                    const deck = flatten(
+                        Object.keys(cookieSortablePicks).map((containerId) => cookieSortablePicks[containerId])
+                    );
+                    const unsortedCards = difference(responsePicksCardIds, deck);
+                    unsortedCards.forEach(cardId => cookieSortablePicks[getDefaultRowColumnForCard(getCard(cardId))].push(getCard(cardId)));
+
+                    setSortablePicks(cookieSortablePicks);
                 },
                 () => {}
             );
@@ -80,28 +89,35 @@ export default function PicksView({ draft, picks, setPicks, sortablePicks, setSo
     }
 
     function copyPicksToClipboard() {
-        // const deck = [...flatten(picks.deckCreatures), ...flatten(picks.deckNonCreatures)].map(
-        //     (card) => `1 ${card.name}`
-        // );
-        // if (basics.plains) {
-        //     deck.push(`${basics.plains} Plains`);
-        // }
-        // if (basics.islands) {
-        //     deck.push(`${basics.islands} Island`);
-        // }
-        // if (basics.swamps) {
-        //     deck.push(`${basics.swamps} Swamp`);
-        // }
-        // if (basics.mountains) {
-        //     deck.push(`${basics.mountains} Mountain`);
-        // }
-        // if (basics.forests) {
-        //     deck.push(`${basics.forests} Forest`);
-        // }
-        // const sideboard = [...flatten(picks.sideboardCreatures), ...flatten(picks.sideboardNonCreatures)].map(
-        //     (card) => `1 ${card.name}`
-        // );
-        // sideboard.push("10 Plains", "10 Island", "10 Swamp", "10 Mountain", "10 Forest");
-        // copy(deck.join("\n") + "\n\n" + sideboard.join("\n"));
+        const deck = flatten(
+            Object.keys(sortablePicks)
+                .filter((containerId) => containerId.startsWith("deck"))
+                .map((containerId) => sortablePicks[containerId])
+        ).map((id) => `1 ${picks.find((pick) => pick.id === id).name}`);
+
+        if (basics?.plains) {
+            deck.push(`${basics.plains} Plains`);
+        }
+        if (basics?.islands) {
+            deck.push(`${basics.islands} Island`);
+        }
+        if (basics?.swamps) {
+            deck.push(`${basics.swamps} Swamp`);
+        }
+        if (basics?.mountains) {
+            deck.push(`${basics.mountains} Mountain`);
+        }
+        if (basics?.forests) {
+            deck.push(`${basics.forests} Forest`);
+        }
+
+        const sideboard = flatten(
+            Object.keys(sortablePicks)
+                .filter((containerId) => containerId.startsWith("sideboard"))
+                .map((containerId) => sortablePicks[containerId])
+        ).map((id) => `1 ${picks.find((pick) => pick.id === id).name}`);
+        sideboard.push("10 Plains", "10 Island", "10 Swamp", "10 Mountain", "10 Forest");
+
+        copy(deck.join("\n") + "\n\n" + sideboard.join("\n"));
     }
 }

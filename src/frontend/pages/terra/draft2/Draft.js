@@ -7,10 +7,12 @@ import draftSplash from "../../../../../data/draftSplash.jpg";
 import { DRAFT_STATUSES } from "../../../../config";
 import * as DraftsApi from "../../../api/DraftsApi";
 import { asyncTry } from "../../../helpers/asyncTry";
+import * as CookieHelper from "../../../helpers/CookieHelper";
 import { getCard } from "../../../../shared/cardList";
 import LoadingSpinner from "../../../components/loadingSpinner/LoadingSpinner";
 import { PlayerList, CHEVRON_DIRECTION } from "../../../components/playerList/PlayerList";
 import DndFramework from "./DndFramework";
+import { getDraftCookieName, getDefaultRowColumnForCard } from "./DraftHelpers";
 import BoosterView from "./BoosterView/BoosterView";
 import PicksView from "./PicksView/PicksView";
 import ReadyToStartView from "./ReadyToStartView/ReadyToStartView";
@@ -29,38 +31,38 @@ export default function Draft({ loggedInUser }) {
     const [dndActiveCardId, setDndActiveCardId] = useState(null);
     const [sortableBooster, setSortableBooster] = useState(null);
     const [sortablePicks, setSortablePicks] = useState({
-        deckRow0Cmc0: [],
-        deckRow0Cmc1: [],
-        deckRow0Cmc2: [],
-        deckRow0Cmc3: [],
-        deckRow0Cmc4: [],
-        deckRow0Cmc5: [],
-        deckRow0Cmc6: [],
-        deckRow0Cmc7: [],
-        deckRow1Cmc0: [],
-        deckRow1Cmc1: [],
-        deckRow1Cmc2: [],
-        deckRow1Cmc3: [],
-        deckRow1Cmc4: [],
-        deckRow1Cmc5: [],
-        deckRow1Cmc6: [],
-        deckRow1Cmc7: [],
-        sideboardRow0Cmc0: [],
-        sideboardRow0Cmc1: [],
-        sideboardRow0Cmc2: [],
-        sideboardRow0Cmc3: [],
-        sideboardRow0Cmc4: [],
-        sideboardRow0Cmc5: [],
-        sideboardRow0Cmc6: [],
-        sideboardRow0Cmc7: [],
-        sideboardRow1Cmc0: [],
-        sideboardRow1Cmc1: [],
-        sideboardRow1Cmc2: [],
-        sideboardRow1Cmc3: [],
-        sideboardRow1Cmc4: [],
-        sideboardRow1Cmc5: [],
-        sideboardRow1Cmc6: [],
-        sideboardRow1Cmc7: [],
+        deckRow0Column0: [],
+        deckRow0Column1: [],
+        deckRow0Column2: [],
+        deckRow0Column3: [],
+        deckRow0Column4: [],
+        deckRow0Column5: [],
+        deckRow0Column6: [],
+        deckRow0Column7: [],
+        deckRow1Column0: [],
+        deckRow1Column1: [],
+        deckRow1Column2: [],
+        deckRow1Column3: [],
+        deckRow1Column4: [],
+        deckRow1Column5: [],
+        deckRow1Column6: [],
+        deckRow1Column7: [],
+        sideboardRow0Column0: [],
+        sideboardRow0Column1: [],
+        sideboardRow0Column2: [],
+        sideboardRow0Column3: [],
+        sideboardRow0Column4: [],
+        sideboardRow0Column5: [],
+        sideboardRow0Column6: [],
+        sideboardRow0Column7: [],
+        sideboardRow1Column0: [],
+        sideboardRow1Column1: [],
+        sideboardRow1Column2: [],
+        sideboardRow1Column3: [],
+        sideboardRow1Column4: [],
+        sideboardRow1Column5: [],
+        sideboardRow1Column6: [],
+        sideboardRow1Column7: [],
     });
 
     useEffect(getDraft, []);
@@ -146,9 +148,8 @@ export default function Draft({ loggedInUser }) {
         asyncTry(
             async () => {
                 const response = await DraftsApi.getBooster(draftId);
-
                 const cards = response.cards?.map((card) => ({ ...card, ...getCard(card.cardId) }));
-                const pickNumber = response.pickNumber !== undefined ? response.pickNumber : booster.pickNumber;
+                const pickNumber = response.pickNumber !== undefined ? response.pickNumber : booster?.pickNumber;
                 setBooster({ cards, pickNumber });
 
                 if (response.cards) {
@@ -164,17 +165,20 @@ export default function Draft({ loggedInUser }) {
     function submitPick(cardId) {
         setIsBoosterLoading(true);
         const submittedCard = booster.cards.find((card) => card.id === cardId);
+
+        setPicks((picks) => [...picks, submittedCard]);
+
+        const containerId = getDefaultRowColumnForCard(submittedCard);
+        const newSortablePicks = {
+            ...sortablePicks,
+            [containerId]: [...sortablePicks[containerId], submittedCard.id],
+        };
+        setSortablePicks(newSortablePicks);
+
         asyncTry(
             async () => {
                 await DraftsApi.submitPick(draftId, booster.pickNumber, submittedCard.cardId);
-                // const column = submittedCard.manaValue === 0 ? 7 : Math.min(6, submittedCard.manaValue - 1);
-                // if (submittedCard.type.includes("Creature")) {
-                //     picks.deckCreatures[column].push(submittedCard);
-                //     setPicks({ ...picks });
-                // } else {
-                //     picks.deckNonCreatures[column].push(submittedCard);
-                //     setPicks({ ...picks });
-                // }
+                CookieHelper.set(getDraftCookieName(draftId), newSortablePicks);
                 getDraft();
             },
             () => {}
@@ -229,7 +233,7 @@ export default function Draft({ loggedInUser }) {
                     newIndex = overIndex >= 0 ? overIndex + modifier : overContainer.length + 1;
                 }
 
-                return {
+                const newSortablePicks = {
                     ...sortablePicks,
                     [activeContainerId]: [...sortablePicks[activeContainerId].filter((item) => item !== active.id)],
                     [overContainerId]: [
@@ -238,6 +242,10 @@ export default function Draft({ loggedInUser }) {
                         ...sortablePicks[overContainerId].slice(newIndex, sortablePicks[overContainerId].length),
                     ],
                 };
+
+                CookieHelper.set(getDraftCookieName(draftId), newSortablePicks);
+
+                return newSortablePicks;
             });
         }
     }
@@ -259,10 +267,14 @@ export default function Draft({ loggedInUser }) {
             const overIndex = sortablePicks[overContainerId].indexOf(overId);
 
             if (activeIndex !== overIndex) {
-                setSortablePicks((sortablePicks) => ({
+                const newSortablePicks = {
                     ...sortablePicks,
                     [overContainerId]: arrayMove(sortablePicks[overContainerId], activeIndex, overIndex),
-                }));
+                };
+
+                CookieHelper.set(getDraftCookieName(draftId), newSortablePicks);
+
+                setSortablePicks(newSortablePicks);
             }
         }
 

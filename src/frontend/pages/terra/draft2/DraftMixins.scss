@@ -1,5 +1,5 @@
-@import "../../../../components/responsive.scss";
-@import "../../../../components/mixins.scss";
+@import "../../../components/responsive.scss";
+@import "../../../components/mixins.scss";
 
 @mixin card-responsive($tiny, $small, $medium, $large, $very-large, $super-large) {
     @media (max-width: 659px) {

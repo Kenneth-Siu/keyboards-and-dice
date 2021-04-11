@@ -1,0 +1,45 @@
+@import "../../../../components/mixins.scss";
+
+.booster-loading-zone {
+    position: relative;
+    display: grid;
+    margin-bottom: 0.6rem;
+
+    @media (max-width: 659px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (min-width: 660px) and (max-width: 919px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media (min-width: 920px) and (max-width: 1223px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    @media (min-width: 1223px) and (max-width: 1535px) {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    @media (min-width: 1536px) and (max-width: 1839px) {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    @media (min-width: 1840px) {
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    .spacer {
+        padding-bottom: 100% * $card-height-width-ratio;
+        margin: 0.2rem;
+    }
+
+    .content {
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%) translateY(-6rem);
+    }
+
+    .loading-spinner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

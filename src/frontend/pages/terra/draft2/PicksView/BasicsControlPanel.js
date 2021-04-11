@@ -10,7 +10,7 @@ import * as CookieHelper from "../../../../helpers/CookieHelper";
 import BasicsControl from "./BasicsControl";
 import "./BasicsControlPanel.scss";
 
-export function BasicsControlPanel({ basics, setBasics }) {
+export default function BasicsControlPanel({ basics, setBasics }) {
     const { draftId } = useParams();
     const cookieName = `draft-${draftId}-lands`;
     useEffect(getLandsFromCookie, []);
