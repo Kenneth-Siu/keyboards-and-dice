@@ -1,65 +1,102 @@
 @import "../../../components/responsive.scss";
 @import "../../../components/mixins.scss";
 
-@mixin card-responsive($tiny, $small, $medium, $large, $very-large, $super-large) {
-    @media (max-width: 659px) {
-        padding-bottom: calc(#{$tiny} - 2px);
+$name-bar-height-to-card-width-ratio: 0.16;
+
+$tiny-card: 46.8vw;
+$small-card: 31.1vw;
+$medium-card: 23.32vw;
+$large-card: 18.67vw;
+$huge-card: 15.61vw;
+$enormous-card: 13.4vw;
+
+@mixin draft-responsive($property, $tiny, $small, $medium, $large, $huge, $enormous) {
+    @media (max-width: 541px) {
+        #{$property}: $tiny;
     }
-    @media (min-width: 660px) and (max-width: 919px) {
-        padding-bottom: calc(#{$small} - 2px);
+    @media (min-width: 542px) and (max-width: 724px) {
+        #{$property}: $small;
     }
-    @media (min-width: 920px) and (max-width: 1223px) {
-        padding-bottom: calc(#{$medium} - 2px);
+    @media (min-width: 725px) and (max-width: 909px) {
+        #{$property}: $medium;
     }
-    @media (min-width: 1223px) and (max-width: 1535px) {
-        padding-bottom: calc(#{$large} - 2px);
+    @media (min-width: 910px) and (max-width: 1079px) {
+        #{$property}: $large;
     }
-    @media (min-width: 1536px) and (max-width: 1839px) {
-        padding-bottom: calc(#{$very-large} - 2px);
+    @media (min-width: 1080px) and (max-width: 1279px) {
+        #{$property}: $huge;
     }
-    @media (min-width: 1840px) {
-        padding-bottom: calc(#{$super-large} - 2px);
+    @media (min-width: 1280px) {
+        #{$property}: $enormous;
     }
 }
 
-@mixin match-booster-height-loading-div {
+@mixin card-width {
+    @include card-relative-responsive(width);
+}
 
-    &.cards-1 {
-        @include card-responsive(68.779%, 45.614%, 34.136%, 27.263%, 22.698%, 19.461%);
+@mixin card-width-zoom {
+    @include card-relative-responsive(width, 1.5);
+}
+
+@mixin card-dnd-wrapper {
+    position: relative;
+    @include card-relative-responsive(padding-bottom, $name-bar-height-to-card-width-ratio);
+    touch-action: none;
+    .card-image {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
-    &.cards-2 {
-        @include card-responsive(68.779%, 45.614%, 34.136%, 27.263%, 22.698%, 19.461%);
+    &:focus {
+        outline: none;
     }
-    &.cards-3 {
-        @include card-responsive(137.552%, 45.614%, 34.136%, 27.263%, 22.698%, 19.461%);
+}
+
+@mixin draft-grid {
+    display: grid;
+    @include draft-responsive(gap, 0.8vw, 0.6vw, 0.5vw, 0.4vw, 0.3vw, 0.2vw);
+}
+
+@mixin booster-grid {
+    @include draft-responsive(
+        grid-template-columns,
+        repeat(2, $tiny-card),
+        repeat(3, $small-card),
+        repeat(4, $medium-card),
+        repeat(5, $large-card),
+        repeat(6, $huge-card),
+        repeat(7, $enormous-card)
+    );
+    justify-content: center;
+    .booster-card-container {
+        @include card-relative-responsive(
+            margin-bottom,
+            $card-height-width-ratio - $name-bar-height-to-card-width-ratio
+        );
     }
-    &.cards-4 {
-        @include card-responsive(137.552%, 91.23%, 34.136%, 27.263%, 22.698%, 19.461%);
-    }
-    &.cards-5 {
-        @include card-responsive(206.341%, 91.23%, 68.271%, 27.263%, 22.698%, 19.461%);
-    }
-    &.cards-6 {
-        @include card-responsive(206.341%, 91.23%, 68.271%, 54.53%, 22.698%, 19.461%);
-    }
-    &.cards-7 {
-        @include card-responsive(275.113%, 136.844%, 68.271%, 54.53%, 45.398%, 19.461%);
-    }
-    &.cards-8 {
-        @include card-responsive(275.113%, 136.844%, 68.271%, 54.53%, 45.398%, 38.919%);
-    }
-    &.cards-9 {
-        @include card-responsive(343.895%, 136.844%, 102.407%, 54.53%, 45.398%, 38.919%);
-    }
-    &.cards-10 {
-        @include card-responsive(343.895%, 182.46%, 102.407%, 54.53%, 45.398%, 38.919%);
-    }
-    &.cards-11,
-    &.cards-12 {
-        @include card-responsive(412.632%, 182.46%, 102.407%, 81.8%, 45.398%, 38.919%);
-    }
-    &.cards-13,
-    &.cards-14 {
-        @include card-responsive(481.453%, 228.063%, 136.533%, 81.8%, 68.096%, 38.919%);
-    }
+}
+
+@mixin picks-grid {
+    grid-auto-flow: column;
+    @include draft-responsive(justify-content, start, start, start, start, start, center);
+    @include card-relative-responsive(grid-auto-columns);
+}
+
+@mixin picks-columns {
+    @include card-relative-responsive(padding-bottom, $card-height-width-ratio - $name-bar-height-to-card-width-ratio);
+    @include card-relative-responsive(min-height, $card-height-width-ratio);
+}
+
+@mixin card-relative-responsive($property, $factor: 1) {
+    @include draft-responsive(
+        $property,
+        $tiny-card * $factor,
+        $small-card * $factor,
+        $medium-card * $factor,
+        $large-card * $factor,
+        $huge-card * $factor,
+        $enormous-card * $factor
+    );
 }

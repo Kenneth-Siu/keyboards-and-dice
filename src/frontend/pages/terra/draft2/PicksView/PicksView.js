@@ -8,12 +8,12 @@ import * as CookieHelper from "../../../../helpers/CookieHelper";
 import { getCard } from "../../../../../shared/cardList";
 import * as DraftsApi from "../../../../api/DraftsApi";
 import { asyncTry } from "../../../../helpers/asyncTry";
+import { getDefaultRowColumnForCard, getDraftCookieName } from "../DraftHelpers";
 import BasicsControlPanel from "./BasicsControlPanel";
 import CopyDeckButton from "./CopyDeckButton";
 import PicksRow from "./PicksRow";
 
 import "./PicksView.scss";
-import { getDefaultRowColumnForCard, getDraftCookieName } from "../DraftHelpers";
 
 export default function PicksView({ draft, booster, picks, setPicks, sortablePicks, setSortablePicks }) {
     const { draftId } = useParams();
@@ -43,6 +43,12 @@ export default function PicksView({ draft, booster, picks, setPicks, sortablePic
                         ({numOfCardsInMaindeck} cards{totalBasics && `, ${totalBasics} basics`})
                     </small>
                 </h2>
+                <h2 className="scroll-hint">
+                    <small>
+                        <span>Scroll your cards ⇆</span>
+                    </small>
+                </h2>
+
                 {draft.status === DRAFT_STATUSES.COMPLETE && (
                     <>
                         <BasicsControlPanel {...{ basics, setBasics }} />
@@ -67,20 +73,21 @@ export default function PicksView({ draft, booster, picks, setPicks, sortablePic
             asyncTry(
                 async () => {
                     const responsePicks = await DraftsApi.getPicks(draftId);
-                    setPicks(
-                        responsePicks.map((card) => {
-                            return { id: card.id, ...getCard(card.cardId) };
-                        })
-                    );
+                    const newPicks = responsePicks.map((card) => {
+                        return { id: card.id, ...getCard(card.cardId) };
+                    });
+                    setPicks(newPicks);
 
                     const cookieSortablePicks = CookieHelper.get(getDraftCookieName(draftId)) || sortablePicks;
-                    const responsePicksCardIds = responsePicks.map((card) => card.id);
+                    const responsePicksCardIds = newPicks.map((card) => card.id);
                     const deck = flatten(
                         Object.keys(cookieSortablePicks).map((containerId) => cookieSortablePicks[containerId])
                     );
                     const unsortedCards = difference(responsePicksCardIds, deck);
                     unsortedCards.forEach((cardId) =>
-                        cookieSortablePicks[getDefaultRowColumnForCard(getCard(cardId))].push(getCard(cardId))
+                        cookieSortablePicks[
+                            getDefaultRowColumnForCard(newPicks.find((pick) => pick.id === cardId))
+                        ].push(cardId)
                     );
 
                     setSortablePicks(cookieSortablePicks);

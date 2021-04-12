@@ -16,20 +16,8 @@ export default function BoosterCard({ id, onClick, selected, src, ...rest }) {
     };
 
     return (
-        <div
-            className="booster-card-container"
-            ref={setNodeRef}
-            style={style}
-            {...attributes}
-            {...listeners}
-            {...rest}
-        >
-            <button
-                onClick={onClick}
-                className={`booster-card ${selected && "selected"}`}
-            >
-                <CardImage src={src} />
-            </button>
+        <div className="booster-card-container" ref={setNodeRef} style={style} {...attributes} {...listeners} {...rest}>
+            <CardImage src={src} />
         </div>
     );
 }

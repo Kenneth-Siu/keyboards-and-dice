@@ -35,7 +35,6 @@ export default function Draft({ loggedInUser }) {
         deckRow0Column4: [],
         deckRow0Column5: [],
         deckRow0Column6: [],
-        deckRow0Column7: [],
         deckRow1Column0: [],
         deckRow1Column1: [],
         deckRow1Column2: [],
@@ -43,7 +42,6 @@ export default function Draft({ loggedInUser }) {
         deckRow1Column4: [],
         deckRow1Column5: [],
         deckRow1Column6: [],
-        deckRow1Column7: [],
         sideboardRow0Column0: [],
         sideboardRow0Column1: [],
         sideboardRow0Column2: [],
@@ -51,7 +49,6 @@ export default function Draft({ loggedInUser }) {
         sideboardRow0Column4: [],
         sideboardRow0Column5: [],
         sideboardRow0Column6: [],
-        sideboardRow0Column7: [],
         sideboardRow1Column0: [],
         sideboardRow1Column1: [],
         sideboardRow1Column2: [],
@@ -59,7 +56,6 @@ export default function Draft({ loggedInUser }) {
         sideboardRow1Column4: [],
         sideboardRow1Column5: [],
         sideboardRow1Column6: [],
-        sideboardRow1Column7: [],
     });
 
     useEffect(getDraft, []);

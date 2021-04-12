@@ -1,9 +1,11 @@
 import React from "react";
-import { DndContext, DragOverlay, KeyboardSensor, PointerSensor, useSensor, useSensors } from "@dnd-kit/core";
+import { rectIntersection, DndContext, DragOverlay, KeyboardSensor, PointerSensor, useSensor, useSensors } from "@dnd-kit/core";
 import { restrictToWindowEdges } from "@dnd-kit/modifiers";
 import { sortableKeyboardCoordinates } from "@dnd-kit/sortable";
 
 import CardImage from "../../../components/cardImages/MagicCardImage";
+
+import "./DndFramework.scss";
 
 export default function DndFramework({
     children,
@@ -15,6 +17,7 @@ export default function DndFramework({
     onDragEnd,
 }) {
     const dndContextProps = {
+        collisionDetection: rectIntersection,
         sensors: useSensors(
             useSensor(PointerSensor),
             useSensor(KeyboardSensor, { coordinateGetter: sortableKeyboardCoordinates })
@@ -33,7 +36,7 @@ export default function DndFramework({
     return (
         <DndContext {...dndContextProps}>
             {children}
-            <DragOverlay>{dndActiveCardId && <CardImage className="sortable" src={dragOverlayImageSrc} />}</DragOverlay>
+            <DragOverlay>{dndActiveCardId && <CardImage className="overlay" src={dragOverlayImageSrc} />}</DragOverlay>
         </DndContext>
     );
 }

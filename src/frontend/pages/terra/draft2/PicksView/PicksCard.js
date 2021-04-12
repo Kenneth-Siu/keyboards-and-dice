@@ -11,13 +11,13 @@ export default function PicksCard({ id, index, src, ...rest }) {
     const style = {
         opacity: isDragging ? 0.5 : null,
         transform: CSS.Transform.toString(transform),
-        // transition,
+        transition,
         zIndex: (isDragging && overIndex !== -1 ? overIndex : index) * 2 + (isDragging ? 1 : 0),
     };
 
     return (
         <div className="picks-card-wrapper" ref={setNodeRef} style={style} {...attributes} {...listeners} {...rest}>
-            <CardImage className="sortable" src={src} />
+            <CardImage src={src} />
         </div>
     );
 }

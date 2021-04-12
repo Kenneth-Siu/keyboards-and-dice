@@ -1,18 +1,6 @@
-$name-bar-height-to-card-width-ratio: 0.155;
+@import "../DraftMixins.scss";
 
 .picks-card-wrapper {
-    position: relative;
-    padding-bottom: 100% * $name-bar-height-to-card-width-ratio;
-    touch-action: none;
-    .card-image {
-        position: absolute;
-        left: 0;
-    }
-    &:focus {
-        outline: none;
-    }
-}
-
-.card-image.sortable {
-    width: 100%;
+    @include card-width;
+    @include card-dnd-wrapper;
 }
