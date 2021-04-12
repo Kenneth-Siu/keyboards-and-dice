@@ -96,7 +96,7 @@ export default function Draft({ loggedInUser }) {
                                 <ReadyToStartView {...{ draft, getDraft }} />
                             )}
                             {draft.status === DRAFT_STATUSES.IN_PROGRESS && (
-                                <BoosterView {...{ draft, getDraft, booster, submitPick }} />
+                                <BoosterView {...{ draft, getDraft, booster, handlePickSubmission }} />
                             )}
                             {draft.status !== DRAFT_STATUSES.READY_TO_START && (
                                 <PicksView {...{ draft, booster, picks, setPicks, sortablePicks, setSortablePicks }} />
@@ -148,8 +148,7 @@ export default function Draft({ loggedInUser }) {
         );
     }
 
-    function submitPick(cardId) {
-        setBooster((booster) => ({ ...booster, isLoading: true }));
+    function handlePickSubmission(cardId) {
         const submittedCard = booster.cards.find((card) => card.id === cardId);
 
         setPicks((picks) => [...picks, submittedCard]);
@@ -160,11 +159,16 @@ export default function Draft({ loggedInUser }) {
             [containerId]: [...sortablePicks[containerId], submittedCard.id],
         };
         setSortablePicks(newSortablePicks);
+        
+        CookieHelper.set(getDraftCookieName(draftId), newSortablePicks);
+        submitPick(cardId);
+    }
 
+    function submitPick(cardId) {
+        setBooster((booster) => ({ ...booster, isLoading: true }));
         asyncTry(
             async () => {
-                await DraftsApi.submitPick(draftId, booster.pickNumber, submittedCard.cardId);
-                CookieHelper.set(getDraftCookieName(draftId), newSortablePicks);
+                await DraftsApi.submitPick(draftId, booster.pickNumber, cardId);
                 getDraft();
             },
             () => {}
@@ -284,18 +288,25 @@ export default function Draft({ loggedInUser }) {
                     setBooster({ ...booster, sortableCards: newSortableCards });
                 }
             } else if (activeContainerId !== boosterContainerId && overContainerId !== boosterContainerId) {
+                if (booster.cards.find((card) => card.id === active.id)) {
+                    setPicks([...picks, booster.cards.find((card) => card.id === active.id)]);
+                    setBooster({ ...booster, cards: booster.cards.filter((card) => card.id !== active.id) });
+                    submitPick(active.id);
+                }
+
+                const newSortablePicks = { ...sortablePicks };
                 if (activeIndex !== overIndex) {
-                    const newSortablePicks = {
-                        ...sortablePicks,
-                        [overContainerId]: arrayMove(sortablePicks[overContainerId], activeIndex, overIndex),
-                    };
-
-                    CookieHelper.set(getDraftCookieName(draftId), newSortablePicks);
-
+                    newSortablePicks[overContainerId] = arrayMove(
+                        sortablePicks[overContainerId],
+                        activeIndex,
+                        overIndex
+                    );
                     setSortablePicks(newSortablePicks);
                 }
-            } else if (activeContainerId === boosterContainerId && overContainerId !== boosterContainerId) {
-                // MAKE PICK
+
+                CookieHelper.set(getDraftCookieName(draftId), newSortablePicks);
+            } else {
+                console.error("This shouldn't ever happen. Can you let me know, please?");
             }
         }
 

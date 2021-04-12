@@ -7,7 +7,7 @@ import BoosterLoadingZone from "./BoosterLoadingZone";
 
 import "./BoosterView.scss";
 
-export default function BoosterView({ draft, getDraft, booster, submitPick }) {
+export default function BoosterView({ draft, getDraft, booster, handlePickSubmission }) {
     const [selectedCardId, setSelectedCardId] = useState(null);
 
     return (
@@ -35,7 +35,7 @@ export default function BoosterView({ draft, getDraft, booster, submitPick }) {
     );
 
     function handleSubmit() {
-        submitPick(selectedCardId);
+        handlePickSubmission(selectedCardId);
         setSelectedCardId(null);
     }
 }

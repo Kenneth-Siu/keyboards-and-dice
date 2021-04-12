@@ -14,12 +14,12 @@ export async function findAllForBooster(boosterId) {
     }
 }
 
-export async function findCard(boosterId, cardId) {
+export async function findCard(id, boosterId) {
     try {
         const result = await pool.query(
             `SELECT * FROM cards
-            WHERE booster_id = $1 AND card_id = $2`,
-            [boosterId, cardId]
+            WHERE booster_id = $1 AND id = $2`,
+            [boosterId, id]
         );
         if (result.rows.length > 0) {
             return Card.createFromDb(result.rows[0]);

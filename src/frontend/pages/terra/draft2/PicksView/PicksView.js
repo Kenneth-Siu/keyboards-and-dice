@@ -90,6 +90,11 @@ export default function PicksView({ draft, booster, picks, setPicks, sortablePic
                         ].push(cardId)
                     );
 
+                    const fakeCards = difference(deck, responsePicksCardIds);
+                    Object.keys(cookieSortablePicks).forEach((key) => {
+                        cookieSortablePicks[key] = cookieSortablePicks[key].filter((card) => !fakeCards.includes(card));
+                    });
+
                     setSortablePicks(cookieSortablePicks);
                 },
                 () => {}

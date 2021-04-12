@@ -135,7 +135,7 @@ export async function makePick(draftId, userId, pickNumber, cardId) {
     if (booster.pickNumber !== pickNumber) {
         throw new NotFoundError("Card not found");
     }
-    const card = await CardRepo.findCard(booster.id, cardId);
+    const card = await CardRepo.findCard(cardId, booster.id);
     if (!card) {
         throw new NotFoundError("Card not found");
     }
