@@ -5,6 +5,7 @@
 .picks-row-container {
     background-color: scale-color($color-1, $alpha: -80%);
     overflow-x: auto;
+    overflow-y: hidden;
     @include draft-responsive(margin-top, 1%, 0.9%, 0.8%, 0.7%, 0.6%, 0.5%);
     @include draft-responsive(margin-bottom, 1%, 0.9%, 0.8%, 0.7%, 0.6%, 0.5%);
     @include draft-responsive(padding, 1%, 0.9%, 0.8%, 0.7%, 0.6%, 0.5%);

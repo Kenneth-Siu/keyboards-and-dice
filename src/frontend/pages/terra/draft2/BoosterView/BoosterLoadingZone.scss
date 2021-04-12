@@ -1,3 +1,4 @@
+@import "../../../../components/mixins.scss";
 @import "../DraftMixins.scss";
 
 .booster-loading-zone {
@@ -6,6 +7,10 @@
     align-items: start;
     position: relative;
     margin-bottom: 0.6rem;
+
+    .spacer {
+        padding-bottom: 100% * $card-height-width-ratio;
+    }
 
     .content {
         position: absolute;
