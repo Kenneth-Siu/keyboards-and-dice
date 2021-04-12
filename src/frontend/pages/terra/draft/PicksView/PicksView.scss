@@ -1,0 +1,6 @@
+@import "../DraftMixins.scss";
+
+.picks-view-heading .scroll-hint {
+    margin-top: 0;
+    @include draft-responsive(display, block, block, block, block, block, none);
+}

@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
-import { PillButton } from "../../../components/pillButton/PillButton";
+import { PillButton } from "../../../../components/pillButton/PillButton";
 import "./CopyDeckButton.scss";
 
-export function CopyDeckButton({ copyCallback }) {
+export default function CopyDeckButton({ copyCallback }) {
     const [deckCopied, setDeckCopied] = useState(false);
     const timeoutRef = useRef();
 

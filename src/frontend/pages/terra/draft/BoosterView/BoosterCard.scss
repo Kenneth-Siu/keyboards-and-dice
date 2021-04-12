@@ -1,0 +1,10 @@
+@import "../DraftMixins.scss";
+
+.booster-card-container {
+    @include card-width;
+    @include card-dnd-wrapper;
+    &.selected .card-image {
+        box-shadow: 0 0 0.15rem 0.15rem $color-5-strong;
+        outline: none;
+    }
+}

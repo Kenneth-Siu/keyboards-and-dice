@@ -42,20 +42,20 @@ export default function Darkham() {
                         </div>
                     </div>
                     <p>
-                        In rural France, a small seaside hamlet slumbers under the long shadow of a clifftop
-                        manor. Despite the town's small stature, it has a venerable and sorrowful history, riddled with
-                        pacts and secrets, for the ancient manor that overlooks it was built with an unnamable purpose.
-                        What will you find beneath the manor?
+                        In rural France, a small seaside hamlet slumbers under the long shadow of a clifftop manor.
+                        Despite the town's small stature, it has a venerable and sorrowful history, riddled with pacts
+                        and secrets, for the ancient estate that overlooks it was built with an unnamable purpose. What
+                        will you find beneath the manor?
                     </p>
                     <p>
                         <em>Darkham Horror</em> is a custom campaign for <em>Arkham Horror: The Card Game</em> for one
                         to four players, based upon the setting of <em>Darkest Dungeon</em>.
                     </p>
                     <p>
-                        In this campaign, the players take the role of a group of investigators looking into the
-                        mysteries of the manor that the lead investigator has inherited from their
-                        long-missing ancestor. With both new encounter cards and new player cards, what ancient plans
-                        will you uncover?
+                        In this campaign, the lead investigator has inherited a manor from their long-missing ancestor,
+                        and the players take the role of a group of investigators looking into the mysteries that
+                        surround it. With both new encounter cards and new player cards, what ancient plans will you
+                        uncover?
                     </p>
                     <div className="canvas overview">
                         <img src={damnationsGift} className="card damnations-gift" />
@@ -81,17 +81,18 @@ export default function Darkham() {
                     </div>
                     <p>
                         From part-way through the first scenario, you will be fighting against the shadow with your
-                        limited, fading light. Although there surely cannot be many living beings left in the dark
-                        dungeons, there are still many dangers that lurk in the dark, from The Collector and their
-                        “collection” to the ravenous sufferers of the Crimson Curse. But remember that not all threats
-                        lurk in the physical world...
+                        limited, fading light. Although there surely cannot be many living beings left in the dungeons,
+                        there are still many dangers that lurk in the dark, from The Collector and their “collection” to
+                        the ravenous sufferers of the Crimson Curse. But remember that not all threats lurk in the
+                        physical world.
                     </p>
-                    <h2>Double-Edged Sword</h2>
+                    <h2>Double-Edged Swords</h2>
                     <p>
                         Just as the inhabitants of the manor sought power from unlikely places, you can grasp at
                         greatness with your own hands. New player cards introduce a host of powerful effects that add a
                         weakness to your deck as part of its cost, though perhaps you might find a way to take advantage
-                        of your weaknesses? Perhaps the strong and the weak are really two sides of the same coin.
+                        of your weaknesses. You might say that strength and weakness are really two sides of the same
+                        coin.
                     </p>
                     <div className="canvas player-cards">
                         <img src={abdulAlhazredBack} className="card landscape abdul-alhazred-back" />
@@ -99,13 +100,13 @@ export default function Darkham() {
                         <img src={abdulAlhazredFront} className="card landscape abdul-alhazred" />
                     </div>
                     <p>
-                        One of the five new investigators, the author of the original Necronomicon, Abdul Alhazred, toys
-                        with eldritch power in new ways. He is able to find any whatever spell or ritual he needs at a
-                        moment's notice, but also has to draw a weakness to do so. Additionally, his dabbling in the
-                        eldritch has widened the possible spells and rituals he can add to his deck, but each one means
-                        he has to add extra basic weakness deck too. With his unparalleled access to a variety of dark
-                        magics, he will be a potent addition to any group of investigators, and the price is surely
-                        worth it...
+                        Abdul Alhazred, the author of the original Necronomicon, is one of the five new investigators
+                        and toys with eldritch power in new ways. He is able to find any whatever spell or ritual he
+                        needs at a moment's notice, but also has to draw a weakness to do so. Additionally, his dabbling
+                        in the eldritch has widened the possible spells and rituals he can add to his deck, but delving
+                        too deep means he has to add extra basic weaknesses too. With his unparalleled access to a
+                        variety of magic, he will be a potent addition to any group of investigators, and the price is
+                        surely worth it...
                     </p>
                     <h2>Evil Within</h2>
                     <p>

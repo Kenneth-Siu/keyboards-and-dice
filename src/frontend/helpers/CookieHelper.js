@@ -4,10 +4,10 @@ export function set(cookieName, data) {
     document.cookie = `${cookieName}=${JSON.stringify(data)}; path=/; expires=${date.toUTCString()}`;
 }
 
-export function get(cookieName, defaultData) {
+export function get(cookieName) {
     const storedJson = document.cookie.split("; ").find((row) => row.startsWith(`${cookieName}=`));
     if (!storedJson) {
-        return defaultData;
+        return null;
     }
     return JSON.parse(storedJson.split("=")[1]);
 }

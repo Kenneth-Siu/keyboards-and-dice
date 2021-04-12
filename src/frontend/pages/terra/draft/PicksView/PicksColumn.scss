@@ -1,0 +1,6 @@
+@import "../DraftMixins.scss";
+
+.picks-column {
+    @include picks-columns;
+    position: relative;
+}

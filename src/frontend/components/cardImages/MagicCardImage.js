@@ -1,19 +1,28 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import cardPlaceholder from "../../../../data/cardPlaceholder.png";
 import "./MagicCardImage.scss";
 
-export default function CardImage({ imageName, lazy, ...rest }) {
+const CardImage = forwardRef(({ src, lazy, className, ...rest }, ref) => {
     if (lazy) {
         return (
             <LazyLoadImage
-                wrapperClassName="card-lazy-wrapper"
+                wrapperClassName={`card-lazy-wrapper${className ? ` ${className}` : ""}`}
                 className="card-image"
                 placeholderSrc={cardPlaceholder}
-                src={imageName}
+                src={src}
                 {...rest}
             />
         );
     }
-    return <img className="card-image" src={imageName} {...rest} />;
-}
+    return (
+        <img
+            className={`card-image${className ? ` ${className}` : ""}`}
+            src={src}
+            ref={ref}
+            {...rest}
+        />
+    );
+});
+
+export default CardImage;

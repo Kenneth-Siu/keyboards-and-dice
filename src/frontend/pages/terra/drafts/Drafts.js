@@ -18,7 +18,7 @@ export default function Drafts({ loggedInUser }) {
     return (
         <>
             <title>Your Drafts · Terra 2170</title>
-            <main className="draft-page">
+            <main className="drafts-page">
                 <div className="background-image-container">
                     <img className="background-image" src={draftSplash} />
                 </div>

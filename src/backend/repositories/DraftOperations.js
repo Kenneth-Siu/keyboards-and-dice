@@ -214,7 +214,7 @@ export class DraftOperations {
 
     async createCards(boosterIds) {
         const cards = flatMap(boosterIds, (boosterId) =>
-            getBooster().map((card) => new Card(null, boosterId, card.id))
+            getBooster().map((card) => new Card(null, boosterId, card.cardId))
         );
         await this.client.query(
             `INSERT INTO cards (booster_id, card_id)
@@ -233,9 +233,9 @@ export class DraftOperations {
 
     async createPick(playerId, card) {
         await this.client.query(
-            `INSERT INTO picks (player_id, card_id)
-            VALUES ($1, $2)`,
-            [playerId, card.cardId]
+            `INSERT INTO picks (id, player_id, card_id)
+            VALUES ($1, $2, $3)`,
+            [card.id, playerId, card.cardId]
         );
     }
 
