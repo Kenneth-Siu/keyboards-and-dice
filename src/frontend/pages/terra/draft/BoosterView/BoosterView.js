@@ -14,7 +14,7 @@ export default function BoosterView({ draft, getDraft, booster, handlePickSubmis
             <div className="booster-view-header">
                 <h2>
                     Pack {draft?.packNumber}
-                    {booster?.pickNumber && `, Pick ${booster?.pickNumber}`}
+                    {booster?.pickNumber ? `, Pick ${booster?.pickNumber}` : ""}
                 </h2>
                 <PillButton onClick={handleSubmit} className="submit-pick" disabled={!selectedCardId}>
                     Submit Pick

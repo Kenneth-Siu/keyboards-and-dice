@@ -205,7 +205,7 @@ export default function Rankings() {
                             <h2>
                                 {grade.grade}{" "}
                                 <small>
-                                    ({grade.cards.length} card{grade.cards.length !== 1 && "s"})
+                                    ({grade.cards.length} card{grade.cards.length !== 1 ? "s" : ""})
                                 </small>
                             </h2>
                             <div className="grade-section-content">

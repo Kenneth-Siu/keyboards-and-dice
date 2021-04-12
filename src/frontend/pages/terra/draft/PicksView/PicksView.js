@@ -37,15 +37,10 @@ export default function PicksView({ draft, booster, picks, setPicks, sortablePic
     return (
         <>
             <div className="picks-view-heading">
-                <h2>
+                <h2 className="main-header">
                     Deck{" "}
                     <small>
-                        ({numOfCardsInMaindeck} cards{totalBasics && `, ${totalBasics} basics`})
-                    </small>
-                </h2>
-                <h2 className="scroll-hint">
-                    <small>
-                        <span>Scroll your cards ⇆</span>
+                        ({numOfCardsInMaindeck} cards{totalBasics ? `, ${totalBasics} basics` : ""})
                     </small>
                 </h2>
 
@@ -55,6 +50,11 @@ export default function PicksView({ draft, booster, picks, setPicks, sortablePic
                         <CopyDeckButton copyCallback={copyPicksToClipboard} />
                     </>
                 )}
+                <h2 className="scroll-hint">
+                    <small>
+                        <span>Scroll your cards ⇆</span>
+                    </small>
+                </h2>
             </div>
             <PicksRow containerIdStartsWith="deckRow0" {...{ booster, picks, sortablePicks }} />
             <PicksRow containerIdStartsWith="deckRow1" {...{ booster, picks, sortablePicks }} />

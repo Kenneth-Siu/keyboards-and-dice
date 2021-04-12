@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useParams } from "react-router-dom";
 
 import WhiteManaSymbol from "../../../../../../data/whiteManaSymbol.svg";
 import BlueManaSymbol from "../../../../../../data/blueManaSymbol.svg";

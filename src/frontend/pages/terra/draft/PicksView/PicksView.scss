@@ -1,6 +1,31 @@
 @import "../DraftMixins.scss";
 
-.picks-view-heading .scroll-hint {
-    margin-top: 0;
-    @include draft-responsive(display, block, block, block, block, block, none);
+.picks-view-heading {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+
+    .main-header {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .basics-control-panel {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .copy-deck-button {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .scroll-hint {
+        @include draft-responsive(display, block, block, block, block, block, none);
+        width: 100%;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
 }

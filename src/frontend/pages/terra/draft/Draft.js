@@ -87,7 +87,7 @@ export default function Draft({ loggedInUser }) {
                     <img className="background-image" src={draftSplash} />
                 </div>
                 <div className="container">
-                    <h1>Draft{draft?.status === DRAFT_STATUSES.COMPLETE && " Complete!"}</h1>
+                    <h1>Draft{draft?.status === DRAFT_STATUSES.COMPLETE ? " Complete!" : ""}</h1>
                     {!draft && <LoadingSpinner />}
                     {draft && (
                         <DndFramework {...dndFrameworkProps}>
