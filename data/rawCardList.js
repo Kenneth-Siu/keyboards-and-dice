@@ -941,7 +941,7 @@ colorIdentity: "U"
         "cost": "1U",
         "manaValue": 2,
         "color": "U",
-        "type": "Instant",
+        "type": "Enchantment",
         "cardId": 46,
         "rarity": "C",
         "notes": {
@@ -1081,7 +1081,7 @@ colorIdentity: "U"
         "cost": "4UU",
         "manaValue": 6,
         "color": "U",
-        "type": "Instant",
+        "type": "Enchantment",
         "cardId": 56,
         "rarity": "U",
         "notes": {
@@ -2447,7 +2447,7 @@ colorIdentity: "R"
         "cardId": 152,
         "rarity": "C",
         "notes": {
-grade: "C",
+grade: "C+",
 colorIdentity: "R"
         }
     },
@@ -2613,7 +2613,7 @@ colorIdentity: "R"
         "cost": "1R",
         "manaValue": 2,
         "color": "R",
-        "type": "Instant",
+        "type": "Enchantment",
         "cardId": 164,
         "rarity": "C",
         "notes": {

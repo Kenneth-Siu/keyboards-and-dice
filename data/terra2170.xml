@@ -1019,20 +1019,21 @@ When Arrester Droid enters the battlefield, you may return another creature you 
     </card>
     <card>
         <name>Atmospheric Survey</name>
-        <text>At the beginning of the next turn’s upkeep, draw a card, then scry 2.
+        <text>Flash
+At the beginning of your upkeep, sacrifice Atmospheric Survey. Draw a card, then scry 2.
 Teleport 1U (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Instant</type>
-            <maintype>Instant</maintype>
+            <type>Enchantment</type>
+            <maintype>Enchantment</maintype>
             <manacost>1U</manacost>
             <cmc>2</cmc>
             <colors>U</colors>
             <coloridentity>U</coloridentity>
         </prop>
         <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Atmospheric%20Survey.jpg">T2170</set>
-        <tablerow>3</tablerow>
+        <tablerow>1</tablerow>
     </card>
     <card>
         <name>Brain Drain</name>
@@ -1193,14 +1194,14 @@ Teleport 1U (You may cast this card for its teleport cost while you’re looking
     </card>
     <card>
         <name>Escape the City</name>
-        <text>Create two 1/1 colorless Mech artifact creature tokens.
-At the beginning of the next turn’s upkeep, draw two cards, then scry 2.
+        <text>Flash
+At the beginning of your upkeep, sacrifice Escape the City. Create two 1/1 colorless Mech artifact creature tokens, draw two cards, then scry 2.
 Teleport 2UU (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Instant</type>
-            <maintype>Instant</maintype>
+            <type>Enchantment</type>
+            <maintype>Enchantment</maintype>
             <manacost>4UU</manacost>
             <cmc>6</cmc>
             <colors>U</colors>
@@ -1208,7 +1209,7 @@ Teleport 2UU (You may cast this card for its teleport cost while you’re lookin
         </prop>
         <set rarity="uncommon" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Escape%20the%20City.jpg">T2170</set>
         <related count="2">Mech</related>
-        <tablerow>3</tablerow>
+        <tablerow>1</tablerow>
     </card>
     <card>
         <name>Exiled Xenologist</name>
@@ -1246,7 +1247,7 @@ Teleport 2UU (You may cast this card for its teleport cost while you’re lookin
     <card>
         <name>Guidance Pods</name>
         <text>Flying
-Guidance Pods gets +1/+0 as long as there are two or more instants and/or sorcery cards in your graveyard.</text>
+Guidance Pods gets +1/+0 as long as there are two or more noncreature, nonland cards in your graveyard.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -1542,7 +1543,7 @@ Teleport 1U (You may cast this card for its teleport cost while you’re looking
     </card>
     <card>
         <name>Solar Power Transmitters</name>
-        <text>Whenever you cast an instant or sorcery spell, create a 1/1 colorless Mech artifact creature token.
+        <text>Whenever you cast a noncreature spell, create a 1/1 colorless Mech artifact creature token.
 2, T, Sacrifice two other artifacts: Scry 2.</text>
         <prop>
             <layout>normal</layout>
@@ -1804,7 +1805,7 @@ Create a 1/1 colorless Mech artifact creature token.</text>
     <card>
         <name>Consortium Bodyguard</name>
         <text>When Consortium Bodyguard dies, create a 1/1 colorless Mech artifact creature token.
-Teleport 3B (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)</text>
+Teleport 2B (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -2342,7 +2343,7 @@ Whenever The Tartarus enters the battlefield or attacks, you may put target crea
         <name>Tundra Strider</name>
         <text>Infiltrate (Whenever this creature attacks with exactly one other creature, it can’t be blocked this turn.)
 Lifelink
-Teleport 4B (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)</text>
+Teleport 2BB (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -2871,7 +2872,7 @@ Teleport 1R (You may cast this card for its teleport cost while you’re looking
             <cmc>4</cmc>
             <colors>R</colors>
             <coloridentity>R</coloridentity>
-            <pt>5/4</pt>
+            <pt>5/5</pt>
         </prop>
         <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Ohmwrecker.jpg">T2170</set>
         <tablerow>2</tablerow>
@@ -3070,20 +3071,21 @@ Teleport 1R (You may cast this card for its teleport cost while you’re looking
     </card>
     <card>
         <name>Throw to the Wind</name>
-        <text>At the beginning of the next turn’s upkeep, you may discard a card. If you do, draw two cards.
+        <text>Flash
+At the beginning of your upkeep, sacrifice Throw to the Wind and discard a card. Draw two cards.
 Teleport 1R (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Instant</type>
-            <maintype>Instant</maintype>
+            <type>Enchantment</type>
+            <maintype>Enchantment</maintype>
             <manacost>1R</manacost>
             <cmc>2</cmc>
             <colors>R</colors>
             <coloridentity>R</coloridentity>
         </prop>
         <set rarity="common" picurl="https://kenneth-siu.github.io/terra-2170-card-images/Throw%20to%20the%20Wind.jpg">T2170</set>
-        <tablerow>3</tablerow>
+        <tablerow>1</tablerow>
     </card>
     <card>
         <name>Vulcan Devastators</name>
@@ -3384,7 +3386,7 @@ At the beginning of your end step, if you didn’t cast a spell this turn, put a
     <card>
         <name>Escaped Test Subject</name>
         <text>5G: All creatures able to block Escaped Test Subject this turn do so.
-Teleport 3G (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)</text>
+Teleport 1G (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -3875,7 +3877,7 @@ Whenever an opponent activates their first non-mana ability each turn, counter t
     <card>
         <name>Ultramagnetic Interference</name>
         <text>Destroy target artifact or enchantment.
-Teleport 4G (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)</text>
+Teleport 3G (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -4055,7 +4057,7 @@ Whenever Shadowlight Infiltrator deals combat damage to a player, choose one —
     </card>
     <card>
         <name>Canyon Skitterer</name>
-        <text>Whenever you cast an instant or sorcery spell, if that instant or sorcery targets Canyon Skitterer, you may copy that spell. You may choose new targets for the copy.</text>
+        <text>Whenever you cast an instant or sorcery spell, if that spell targets Canyon Skitterer, you may copy that spell. You may choose new targets for the copy.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -4646,7 +4648,7 @@ You may reveal Mutagenic Serum from your opening hand. If you do and you have fe
     </card>
     <card>
         <name>Slipstream Snapper</name>
-        <text>Teleport 3 (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)</text>
+        <text>Teleport 2 (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
