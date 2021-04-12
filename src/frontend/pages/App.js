@@ -11,7 +11,7 @@ import TerraDownloads from "./terra/downloads/Downloads.js";
 import Login from "./terra/login/Login.js";
 import "./cssreset.css";
 import "./App.scss";
-import Draft from "./terra/draft2/Draft.js";
+import Draft from "./terra/draft/Draft.js";
 import Rankings from "./terra/rankings/Rankings.js";
 import PrintAndPlay from "./terra/printAndPlay/PrintAndPlay.js";
 import MainNavBar from "../components/navBars/MainNavBar.js";
