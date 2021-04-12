@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { PillButton } from "../../../../components/pillButton/PillButton";
 import WaitingOnBoosterView from "./WaitingOnBoosterView";
@@ -7,8 +7,7 @@ import BoosterLoadingZone from "./BoosterLoadingZone";
 
 import "./BoosterView.scss";
 
-export default function BoosterView({ draft, getDraft, booster, handlePickSubmission }) {
-    const [selectedCardId, setSelectedCardId] = useState(null);
+export default function BoosterView({ draft, getDraft, booster, handlePickSubmission, selectedCardId }) {
 
     return (
         <>
@@ -24,7 +23,7 @@ export default function BoosterView({ draft, getDraft, booster, handlePickSubmis
             {!booster.cards && <WaitingOnBoosterView getDraft={getDraft} pickNumber={booster?.pickNumber} />}
             {booster.isLoading && booster.cards && <BoosterLoadingZone pickNumber={booster?.pickNumber} />}
             {!booster.isLoading && booster.cards && (
-                <BoosterCardsView {...{ booster, selectedCardId, setSelectedCardId }} />
+                <BoosterCardsView {...{ booster, selectedCardId }} />
             )}
             <div className="booster-view-footer">
                 <PillButton onClick={handleSubmit} className="submit-pick" disabled={!selectedCardId}>
@@ -36,6 +35,5 @@ export default function BoosterView({ draft, getDraft, booster, handlePickSubmis
 
     function handleSubmit() {
         handlePickSubmission(selectedCardId);
-        setSelectedCardId(null);
     }
 }

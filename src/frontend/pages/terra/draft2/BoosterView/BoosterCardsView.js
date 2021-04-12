@@ -7,7 +7,7 @@ import BoosterCard from "./BoosterCard";
 
 import "./BoosterCardsView.scss";
 
-export default function BoosterCardsView({ booster, selectedCardId, setSelectedCardId }) {
+export default function BoosterCardsView({ booster, selectedCardId }) {
     const { setNodeRef } = useDroppable({ id: boosterContainerId });
 
     return (
@@ -17,7 +17,6 @@ export default function BoosterCardsView({ booster, selectedCardId, setSelectedC
                     <BoosterCard
                         id={id}
                         key={id}
-                        onClick={() => setSelectedCardId(id)}
                         selected={selectedCardId === id}
                         src={booster.cards.find((card) => card.id === id).imageName}
                     />

@@ -58,6 +58,8 @@ export default function Draft({ loggedInUser }) {
         sideboardRow1Column6: [],
     });
 
+    const [selectedCardId, setSelectedCardId] = useState(null);
+
     useEffect(getDraft, []);
 
     const playerListProps = draft && {
@@ -96,7 +98,7 @@ export default function Draft({ loggedInUser }) {
                                 <ReadyToStartView {...{ draft, getDraft }} />
                             )}
                             {draft.status === DRAFT_STATUSES.IN_PROGRESS && (
-                                <BoosterView {...{ draft, getDraft, booster, handlePickSubmission }} />
+                                <BoosterView {...{ draft, getDraft, booster, handlePickSubmission, selectedCardId }} />
                             )}
                             {draft.status !== DRAFT_STATUSES.READY_TO_START && (
                                 <PicksView {...{ draft, booster, picks, setPicks, sortablePicks, setSortablePicks }} />
@@ -149,6 +151,8 @@ export default function Draft({ loggedInUser }) {
     }
 
     function handlePickSubmission(cardId) {
+        setSelectedCardId(null);
+
         const submittedCard = booster.cards.find((card) => card.id === cardId);
 
         setPicks((picks) => [...picks, submittedCard]);
@@ -159,7 +163,7 @@ export default function Draft({ loggedInUser }) {
             [containerId]: [...sortablePicks[containerId], submittedCard.id],
         };
         setSortablePicks(newSortablePicks);
-        
+
         CookieHelper.set(getDraftCookieName(draftId), newSortablePicks);
         submitPick(cardId);
     }
@@ -192,8 +196,11 @@ export default function Draft({ loggedInUser }) {
         return sortablePicks[containerId];
     }
 
-    function handleDragStart(event) {
-        setDndActiveCardId(event.active.id);
+    function handleDragStart({ active }) {
+        setDndActiveCardId(active.id);
+        if (booster.cards.find((card) => card.id === active.id)) {
+            setSelectedCardId(active.id);
+        }
     }
 
     function handleDragOver({ active, over, draggingRect }) {

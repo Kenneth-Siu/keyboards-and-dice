@@ -6,7 +6,7 @@ import CardImage from "../../../../components/cardImages/MagicCardImage";
 
 import "./BoosterCard.scss";
 
-export default function BoosterCard({ id, onClick, selected, src, ...rest }) {
+export default function BoosterCard({ id, selected, src, ...rest }) {
     const { attributes, isDragging, listeners, setNodeRef, transform, transition } = useSortable({ id: id });
 
     const style = {
@@ -16,7 +16,14 @@ export default function BoosterCard({ id, onClick, selected, src, ...rest }) {
     };
 
     return (
-        <div className="booster-card-container" ref={setNodeRef} style={style} {...attributes} {...listeners} {...rest}>
+        <div
+            className={`booster-card-container${selected ? " selected" : ""}`}
+            ref={setNodeRef}
+            style={style}
+            {...attributes}
+            {...listeners}
+            {...rest}
+        >
             <CardImage src={src} />
         </div>
     );
