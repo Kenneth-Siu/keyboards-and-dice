@@ -20,6 +20,7 @@ import Home from "./home/Home.js";
 import NotFound from "./notFound/NotFound.js";
 import Darkham from "./darkham/Darkham.js";
 import DarkhamDownloads from "./darkham/downloads/Downloads.js";
+import DarkhamCardImageGallery from "./darkham/cardImageGallery/CardImageGallery.js";
 
 export default function App({ loggedInUser }) {
     return (
@@ -56,6 +57,7 @@ export default function App({ loggedInUser }) {
                 <Route path="/">
                     {MainNavBar()}
                     <Switch>
+                        <Route exact path="/darkham/card-image-gallery" component={DarkhamCardImageGallery} />
                         <Route exact path="/darkham/downloads" component={DarkhamDownloads} />
                         <Route exact path="/darkham" component={Darkham} />
                         <Route exact path="/" component={Home} />

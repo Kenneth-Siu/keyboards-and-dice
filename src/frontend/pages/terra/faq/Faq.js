@@ -31,7 +31,7 @@ import trojanHorse from "../../../../../data/cardImages/Trojan Horse.jpg";
 import hongWaiFactory from "../../../../../data/cardImages/Hong Wai Factory.jpg";
 import theMartianLens from "../../../../../data/cardImages/The Martian Lens.jpg";
 import "./Faq.scss";
-import CardImage from "../../../components/cardImages/MagicCardImage";
+import CardImage from "../../../components/cardImages/CardImage";
 import rulesFaqSplash from "../../../../../data/rulesFaqSplash.jpg";
 
 export default function Faq() {

@@ -1,7 +1,7 @@
 import React from "react";
 import { COMMON_RARITY, MYTHIC_RARITY, RARE_RARITY, UNCOMMON_RARITY } from "../../../../config.js";
 import cardList from "../../../../shared/cardList.js";
-import CardImage from "../../../components/cardImages/MagicCardImage.js";
+import CardImage from "../../../components/cardImages/CardImage.js";
 import "./PrintAndPlay.scss";
 
 export default function Rankings() {

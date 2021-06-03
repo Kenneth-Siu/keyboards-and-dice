@@ -12,7 +12,7 @@ import {
     WHITE_COLOR,
 } from "../../../../config.js";
 import cardList from "../../../../shared/cardList.js";
-import CardImage from "../../../components/cardImages/MagicCardImage.js";
+import CardImage from "../../../components/cardImages/CardImage.js";
 import filterBackground from "../../../../../data/filterBackground.jpg";
 import WhiteManaSymbol from "../../../../../data/whiteManaSymbol.svg";
 import BlueManaSymbol from "../../../../../data/blueManaSymbol.svg";

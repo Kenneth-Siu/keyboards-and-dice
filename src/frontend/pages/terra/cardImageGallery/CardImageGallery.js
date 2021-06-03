@@ -14,7 +14,7 @@ import UncommonSetSymbol from "../../../../../data/uncommonSetSymbol.svg";
 import RareSetSymbol from "../../../../../data/rareSetSymbol.svg";
 import MythicSetSymbol from "../../../../../data/mythicSetSymbol.svg";
 import "./CardImageGallery.scss";
-import CardImage from "../../../components/cardImages/MagicCardImage.js";
+import CardImage from "../../../components/cardImages/CardImage.js";
 import {
     BLACK_COLOR,
     BLUE_COLOR,

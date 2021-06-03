@@ -6,7 +6,7 @@ import rulesFaqSplash from "../../../../../data/rulesFaqSplash.jpg";
 import downloadsSplash from "../../../../../data/downloadsSplash.jpg";
 import karnSplash from "../../../../../data/karnSplash.jpg";
 import "./Home.scss";
-import CardImage from "../../../components/cardImages/MagicCardImage";
+import CardImage from "../../../components/cardImages/CardImage";
 import timeParadox from "../../../../../data/cardImages/Time Paradox.jpg";
 import kushakResearchCouncil from "../../../../../data/cardImages/Kushak Research Council.jpg";
 import shadowlightInfiltrator from "../../../../../data/cardImages/Shadowlight Infiltrator.jpg";

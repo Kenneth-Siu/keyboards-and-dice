@@ -38,6 +38,8 @@ export default function Darkham() {
                             </div>
                         </div>
                         <div className="box-side-download-link">
+                            <Link to="/darkham/card-image-gallery">ᐳ View the player cards</Link>
+                            <Link to="/darkham/downloads">ᐳ Print and play</Link>
                             <Link to="/darkham/downloads">ᐳ Download for Tabletop Simulator</Link>
                         </div>
                     </div>
@@ -113,7 +115,8 @@ export default function Darkham() {
                         The mysteries of your ancestor await you. Will you claim your birthright or will you succumb to
                         death and madness?
                     </p>
-                    <p className="final-download-link">
+                    <p className="final-links">
+                        <Link to="/darkham/card-image-gallery">ᐳ View full card image gallery</Link>
                         <Link to="/darkham/downloads">ᐳ Download for Tabletop Simulator</Link>
                     </p>
                 </div>

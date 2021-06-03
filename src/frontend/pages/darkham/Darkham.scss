@@ -1,7 +1,6 @@
 @import "../../components/responsive.scss";
 @import "../../components/colors.scss";
 @import "../../components/mixins.scss";
-@import "../../components/navBars/TerraNavBar.scss";
 
 .darkham-page {
     @include blurred-page-background(0.1);
@@ -98,6 +97,9 @@
         @include responsive(margin-top, 0, 1rem, 0);
         @include responsive(margin-bottom, 0.5rem, 1.5rem, 0);
         @include responsive(text-align, center, center, left);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     div.canvas {
@@ -116,7 +118,7 @@
             box-shadow: 0 0 0.17vw 0.17vw rgba(0, 0, 0, 0.3);
 
             &.landscape {
-                border-radius: 3.2% / 4.46%;
+                @include landscape-card-image-corners;
                 width: $card-width * 1.4;
             }
         }
@@ -212,9 +214,10 @@
         }
     }
 
-    .final-download-link {
-        text-align: center;
+    .final-links {
         margin-top: 2.5rem;
         margin-bottom: 2.5rem;
+        display: flex;
+        justify-content: space-evenly;
     }
 }

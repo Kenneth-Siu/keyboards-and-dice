@@ -3,7 +3,7 @@ import { rectIntersection, DndContext, DragOverlay, KeyboardSensor, PointerSenso
 import { restrictToWindowEdges } from "@dnd-kit/modifiers";
 import { sortableKeyboardCoordinates } from "@dnd-kit/sortable";
 
-import CardImage from "../../../components/cardImages/MagicCardImage";
+import CardImage from "../../../components/cardImages/CardImage";
 
 import "./DndFramework.scss";
 
