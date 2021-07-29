@@ -16,35 +16,15 @@ export default function Downloads() {
                     <h2>Play on Tabletop Simulator</h2>
                     <p>
                         You should already have installed{" "}
-                        <a href="https://www.tabletopsimulator.com/">Tabletop Simulator</a> and the Arkham Super
+                        <a href="https://www.tabletopsimulator.com/">Tabletop Simulator</a> on Steam, and the Arkham Super
                         Complete Edition mod (no longer available on Steam Workshop).
                     </p>
                     <ol>
                         <li>
-                            Find your Tabletop Simulator saved objects folder.
-                        </li>
-                        <blockquote>
-                            It is likely to be: <span className="mono-space">Documents / My Games / Tabletop Simulator / 
-                            Saves / Saved Objects</span>
-                        </blockquote>
-                        <li>
-                            Click <a href={darkhamSave} download>this link</a>, and save it anywhere you like.
+                            Install the mod <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2560750339">from here</a>, and follow the instructions.
                         </li>
                         <li>
-                            Extract its contents into the Tabletop Simulator saved objects folder. There should be two files: 
-                            "Darkham Horror.json" and "Darkham Horror.jpg".
-                        </li>
-                        <li>
-                            Start Tabletop Simulator and load the Arkham Super Complete Edition mod.
-                        </li>
-                        <li>
-                            Click "Objects" at the top of your screen, then "Saved Objects" in the window that opens.
-                        </li>
-                        <li>
-                            Click-and-drag the saved object called "Darkham Horror" onto the table.
-                        </li>
-                        <li>
-                            You're done! Everything you should need is inside this box, from player cards to scenarios.
+                            That's it. Enjoy!
                         </li>
                     </ol>
                 </div>
