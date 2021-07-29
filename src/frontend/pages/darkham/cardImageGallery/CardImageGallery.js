@@ -1,21 +1,21 @@
 import * as React from "react";
 import darkhamSplash from "../../../../../data/darkhamSplash.jpg";
-import _1 from "../../../../../data/Darkham/Investigators/Renaud-de-Châtillon-Front-Face.jpg";
-import _1a from "../../../../../data/Darkham/Investigators/Renaud-de-Châtillon-Back-Face.jpg";
+import _1 from "../../../../../data/Darkham/Investigators/Reynauld-de-Châtillon-Front-Face.jpg";
+import _1a from "../../../../../data/Darkham/Investigators/Reynauld-de-Châtillon-Back-Face.jpg";
 import _2 from "../../../../../data/Darkham/Investigators/Audrey-Bourassa-Front-Face.jpg";
 import _2a from "../../../../../data/Darkham/Investigators/Audrey-Bourassa-Back-Face.jpg";
 import _3 from "../../../../../data/Darkham/Investigators/Sarmentus-Front-Face.jpg";
 import _3a from "../../../../../data/Darkham/Investigators/Sarmentus-Back-Face.jpg";
 import _4 from "../../../../../data/Darkham/Investigators/Abdul-Alhazred-Front-Face.jpg";
 import _4a from "../../../../../data/Darkham/Investigators/Abdul-Alhazred-Back-Face.jpg";
-import _5 from "../../../../../data/Darkham/Investigators/Henry-Bigby-the-abomination-Front-Face.jpg";
-import _5a from "../../../../../data/Darkham/Investigators/Henry-Bigby-the-abomination-Back-Face.jpg";
-import _6 from "../../../../../data/Darkham/Investigators/Henry-Bigby-beast-within-Front-Face.jpg";
-import _6a from "../../../../../data/Darkham/Investigators/Henry-Bigby-beast-within-Back-Face.jpg";
+import _5 from "../../../../../data/Darkham/Investigators/Henry-Bigby-Front-Face.jpg";
+import _5a from "../../../../../data/Darkham/Investigators/Henry-Bigby-Back-Face.jpg";
+import _6 from "../../../../../data/Darkham/Investigators/Beast-Within-Front-Face.jpg";
+import _6a from "../../../../../data/Darkham/Investigators/Beast-Within-Back-Face.jpg";
 import _7 from "../../../../../data/Darkham/Investigators/The-Long-Crusade-Front-Face.jpg";
 import _8 from "../../../../../data/Darkham/Investigators/Thirst-for-Justice-Front-Face.jpg";
 import _9 from "../../../../../data/Darkham/Investigators/Shadowlace-Front-Face.jpg";
-import _10 from "../../../../../data/Darkham/Investigators/Fall-from-Grace-Front-Face.jpg";
+import _10 from "../../../../../data/Darkham/Investigators/Reclaiming-the-Family-Name-Front-Face.jpg";
 import _11 from "../../../../../data/Darkham/Investigators/Finale-Front-Face.jpg";
 import _12 from "../../../../../data/Darkham/Investigators/Tyrant's-Enforcer-Front-Face.jpg";
 import _13 from "../../../../../data/Darkham/Investigators/Mentor's-Skull-Front-Face.jpg";
@@ -34,11 +34,11 @@ import _25 from "../../../../../data/Darkham/PlayerCards/Seeker/Forgotten-Mirror
 import _26 from "../../../../../data/Darkham/PlayerCards/Seeker/Beyond-Space-and-Time-Front-Face.jpg";
 import _27 from "../../../../../data/Darkham/PlayerCards/Seeker/Guidance-Front-Face.jpg";
 import _28 from "../../../../../data/Darkham/PlayerCards/Seeker/Overthinking-It-Front-Face.jpg";
-import _29 from "../../../../../data/Darkham/PlayerCards/Rogue/Beginner's-Luck-Front-Face.jpg";
-import _30 from "../../../../../data/Darkham/PlayerCards/Rogue/Henry-Wan-Front-Face.jpg";
-import _31 from "../../../../../data/Darkham/PlayerCards/Rogue/Moirai-Shroud-Front-Face.jpg";
-import _32 from "../../../../../data/Darkham/PlayerCards/Rogue/Not-a-Problem-Front-Face.jpg";
-import _33 from "../../../../../data/Darkham/PlayerCards/Rogue/Drinking-Problem-Front-Face.jpg";
+import _29 from "../../../../../data/Darkham/PlayerCards/Rogue/Celebration-Drinks-Front-Face.jpg";
+import _30 from "../../../../../data/Darkham/PlayerCards/Rogue/Hangover-Front-Face.jpg";
+import _31 from "../../../../../data/Darkham/PlayerCards/Rogue/Henry-Wan-Front-Face.jpg";
+import _32 from "../../../../../data/Darkham/PlayerCards/Rogue/Moirai-Shroud-Front-Face.jpg";
+import _33 from "../../../../../data/Darkham/PlayerCards/Rogue/On-a-Roll-Front-Face.jpg";
 import _34 from "../../../../../data/Darkham/PlayerCards/Mystic/Dance-of-Sarnath-Front-Face.jpg";
 import _35 from "../../../../../data/Darkham/PlayerCards/Mystic/Deal-with-Devils-Front-Face.jpg";
 import _36 from "../../../../../data/Darkham/PlayerCards/Mystic/Devil-Collector-Front-Face.jpg";
@@ -68,31 +68,48 @@ export default function Darkham() {
                 <div className="container">
                     <h1>Card Image Gallery</h1>
                     <h2>Investigators</h2>
-                    <section className="investigators-grid">
-                        <CardImage src={_1} lazy />
-                        <CardImage src={_1a} lazy />
-                        <CardImage src={_2} lazy />
-                        <CardImage src={_2a} lazy />
-                        <CardImage src={_3} lazy />
-                        <CardImage src={_3a} lazy />
-                        <CardImage src={_4} lazy />
-                        <CardImage src={_4a} lazy />
-                        <CardImage src={_5} lazy />
-                        <CardImage src={_5a} lazy />
-                        <CardImage src={_6} lazy />
-                        <CardImage src={_6a} lazy />
-                    </section>
-                    <h2>Investigator Signatures</h2>
-                    <section className="card-grid">
-                        <CardImage src={_7} lazy />
-                        <CardImage src={_8} lazy />
-                        <CardImage src={_9} lazy />
-                        <CardImage src={_10} lazy />
-                        <CardImage src={_11} lazy />
-                        <CardImage src={_12} lazy />
-                        <CardImage src={_13} lazy />
-                        <CardImage src={_14} lazy />
-                        <CardImage src={_15} lazy />
+                    <section className="investigators">
+                        <div className="investigators-grid">
+                            <CardImage src={_1} lazy className="landscape" />
+                            <CardImage src={_1a} lazy />
+                        </div>
+                        <div className="card-grid">
+                            <CardImage src={_7} lazy />
+                            <CardImage src={_8} lazy />
+                        </div>
+                        <div className="investigators-grid">
+                            <CardImage src={_2} lazy />
+                            <CardImage src={_2a} lazy />
+                        </div>
+                        <div className="card-grid">
+                            <CardImage src={_9} lazy />
+                            <CardImage src={_10} lazy />
+                        </div>
+                        <div className="investigators-grid">
+                            <CardImage src={_3} lazy />
+                            <CardImage src={_3a} lazy />
+                        </div>
+                        <div className="card-grid">
+                            <CardImage src={_11} lazy />
+                            <CardImage src={_12} lazy />
+                        </div>
+                        <div className="investigators-grid">
+                            <CardImage src={_4} lazy />
+                            <CardImage src={_4a} lazy />
+                        </div>
+                        <div className="card-grid">
+                            <CardImage src={_13} lazy />
+                        </div>
+                        <div className="investigators-grid">
+                            <CardImage src={_5} lazy />
+                            <CardImage src={_5a} lazy />
+                            <CardImage src={_6} lazy />
+                            <CardImage src={_6a} lazy />
+                        </div>
+                        <div className="card-grid">
+                            <CardImage src={_14} lazy />
+                            <CardImage src={_15} lazy />
+                        </div>
                     </section>
                     <h2>Guardian</h2>
                     <section className="card-grid">

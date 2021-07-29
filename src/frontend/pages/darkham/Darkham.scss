@@ -127,21 +127,21 @@
     .canvas.overview {
         @include darkham-card(32%);
         @include responsive(padding-bottom, 75.5%, 75.5%, 600px);
-        .damnations-gift {
+        .moirai-shroud {
             top: 7%;
             left: 5%;
             transform: rotateZ(-12deg);
         }
-        .moirai-shroud {
+        .troubling-memories {
             top: 6%;
             left: 22%;
             transform: rotateZ(-6deg);
         }
-        .forgotten-mirror {
+        .happier-times {
             top: 2%;
             left: 42%;
         }
-        .beyond-space-and-time {
+        .setting-sun {
             top: 6%;
             left: 64%;
             transform: rotateZ(8deg);
@@ -187,7 +187,7 @@
             left: 2%;
             transform: rotateX(20deg) rotateY(-15deg);
         }
-        .stalking-shadow {
+        .the-shadow {
             top: 16%;
             left: 15%;
             transform: rotateX(20deg) rotateY(-15deg);

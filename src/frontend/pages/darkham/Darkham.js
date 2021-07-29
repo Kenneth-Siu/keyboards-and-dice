@@ -4,15 +4,15 @@ import abdulAlhazredFront from "../../../../data/Darkham/Abdul-Alhazred-Front-Fa
 import abdulAlhazredBack from "../../../../data/Darkham/Abdul-Alhazred-Back-Face.jpg";
 import underTorchlight from "../../../../data/Darkham/Under-Torchlight-I-Front-Face.jpg";
 import moiraiShroud from "../../../../data/Darkham/Moirai-Shroud-Front-Face.jpg";
-import damnationsGift from "../../../../data/Darkham/Damnation's-Gift-Front-Face.jpg";
-import beyondSpaceAndTime from "../../../../data/Darkham/Beyond-Space-and-Time-Front-Face.jpg";
-import forgottenMirror from "../../../../data/Darkham/Forgotten-Mirror-Front-Face.jpg";
+import troublingMemories from "../../../../data/Darkham/Troubling-Memories-Front-Face.jpg";
+import happierTimes from "../../../../data/Darkham/Happier-Times-Front-Face.jpg";
+import settingSun from "../../../../data/Darkham/Setting-Sun-Front-Face.jpg";
 import theCollector from "../../../../data/Darkham/The-Collector-Front-Face.jpg";
 import collected0 from "../../../../data/Darkham/Collected-Front-Face - Copy.jpg";
 import collected1 from "../../../../data/Darkham/Collected-Front-Face - Copy (2).jpg";
 import collected2 from "../../../../data/Darkham/Collected-Front-Face.jpg";
 import dangersInTheDark from "../../../../data/Darkham/Dangers-in-the-Dark-Front-Face.jpg";
-import stalkingShadow from "../../../../data/Darkham/Stalking-Shadow.jpg";
+import theShadow from "../../../../data/Darkham/The-Shadow.jpg";
 import mentorsSkull from "../../../../data/Darkham/Mentor's-Skull-Front-Face.jpg";
 import boxCover from "../../../../data/Darkham/BoxCover.jpg";
 import boxTop from "../../../../data/Darkham/BoxTop.jpg";
@@ -39,7 +39,6 @@ export default function Darkham() {
                         </div>
                         <div className="box-side-download-link">
                             <Link to="/darkham/card-image-gallery">ᐳ View the player cards</Link>
-                            <Link to="/darkham/downloads">ᐳ Print and play</Link>
                             <Link to="/darkham/downloads">ᐳ Download for Tabletop Simulator</Link>
                         </div>
                     </div>
@@ -60,10 +59,10 @@ export default function Darkham() {
                         uncover?
                     </p>
                     <div className="canvas overview">
-                        <img src={damnationsGift} className="card damnations-gift" />
                         <img src={moiraiShroud} className="card moirai-shroud" />
-                        <img src={forgottenMirror} className="card forgotten-mirror" />
-                        <img src={beyondSpaceAndTime} className="card beyond-space-and-time" />
+                        <img src={troublingMemories} className="card troubling-memories" />
+                        <img src={happierTimes} className="card happier-times" />
+                        <img src={settingSun} className="card setting-sun" />
                         <img src={underTorchlight} className="card landscape under-torchlight" />
                         <img src={abdulAlhazredFront} className="card landscape abdul-alhazred" />
                     </div>
@@ -79,7 +78,7 @@ export default function Darkham() {
                         <img src={collected0} className="card collected-0" />
                         <img src={theCollector} className="card the-collector" />
                         <img src={dangersInTheDark} className="card dangers-in-the-dark" />
-                        <img src={stalkingShadow} className="card stalking-shadow" />
+                        <img src={theShadow} className="card the-shadow" />
                     </div>
                     <p>
                         From part-way through the first scenario, you will be fighting against the shadow with your
@@ -116,7 +115,7 @@ export default function Darkham() {
                         death and madness?
                     </p>
                     <p className="final-links">
-                        <Link to="/darkham/card-image-gallery">ᐳ View full card image gallery</Link>
+                        <Link to="/darkham/card-image-gallery">ᐳ View the player card image gallery</Link>
                         <Link to="/darkham/downloads">ᐳ Download for Tabletop Simulator</Link>
                     </p>
                 </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Downloads.scss";
 import downloadsSplash from "../../../../../data/Darkham/downloadsSplash.jpg";
+import darkhamSave from "../../../../../data/Darkham/DarkhamHorror/DarkhamHorror.zip";
 
 export default function Downloads() {
     return (
@@ -20,7 +21,30 @@ export default function Downloads() {
                     </p>
                     <ol>
                         <li>
-                            Sorry, WIP!
+                            Find your Tabletop Simulator saved objects folder.
+                        </li>
+                        <blockquote>
+                            It is likely to be: <span className="mono-space">Documents / My Games / Tabletop Simulator / 
+                            Saves / Saved Objects</span>
+                        </blockquote>
+                        <li>
+                            Click <a href={darkhamSave} download>this link</a>, and save it anywhere you like.
+                        </li>
+                        <li>
+                            Extract its contents into the Tabletop Simulator saved objects folder. There should be two files: 
+                            "Darkham Horror.json" and "Darkham Horror.jpg".
+                        </li>
+                        <li>
+                            Start Tabletop Simulator and load the Arkham Super Complete Edition mod.
+                        </li>
+                        <li>
+                            Click "Objects" at the top of your screen, then "Saved Objects" in the window that opens.
+                        </li>
+                        <li>
+                            Click-and-drag the saved object called "Darkham Horror" onto the table.
+                        </li>
+                        <li>
+                            You're done! Everything you should need is inside this box, from player cards to scenarios.
                         </li>
                     </ol>
                 </div>
