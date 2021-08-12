@@ -1,0 +1,30 @@
+@import "../../../components/responsive.scss";
+@import "../../../components/mixins.scss";
+@import "../../../components/navBars/TerraNavBar.scss";
+
+.darkham-print-and-play-page {
+    -webkit-print-color-adjust: exact !important;
+    color: black;
+    line-height: 0;
+
+    section {
+        break-inside: avoid-page;
+
+        &.investigator-tokens {
+            break-before: page;
+        }
+    }
+
+    h1,
+    h2 {
+        line-height: 1;
+    }
+
+    img {
+        width: 62mm;
+
+        &.investigator-token {
+            width: 41mm;
+        }
+    }
+}

@@ -40,6 +40,7 @@ export default function Darkham() {
                         <div className="box-side-download-link">
                             <Link to="/darkham/card-image-gallery">ᐳ View the player cards</Link>
                             <Link to="/darkham/downloads">ᐳ Download for Tabletop Simulator</Link>
+                            <Link to="/darkham/downloads">ᐳ Print &amp; Play</Link>
                         </div>
                     </div>
                     <p>
@@ -115,8 +116,9 @@ export default function Darkham() {
                         death and madness?
                     </p>
                     <p className="final-links">
-                        <Link to="/darkham/card-image-gallery">ᐳ View the player card image gallery</Link>
-                        <Link to="/darkham/downloads">ᐳ Download for Tabletop Simulator</Link>
+                        <Link to="/darkham/card-image-gallery">ᐳ View the player cards</Link>
+                        <Link to="/darkham/downloads">ᐳ Download for TTS</Link>
+                        <Link to="/darkham/downloads">ᐳ Print &amp; Play</Link>
                     </p>
                 </div>
             </main>

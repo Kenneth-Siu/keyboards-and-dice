@@ -21,12 +21,16 @@ import NotFound from "./notFound/NotFound.js";
 import Darkham from "./darkham/Darkham.js";
 import DarkhamDownloads from "./darkham/downloads/Downloads.js";
 import DarkhamCardImageGallery from "./darkham/cardImageGallery/CardImageGallery.js";
+import DarkhamPrintAndPlayScenario from "./darkham/printAndPlay/PrintAndPlayScenario.js";
+import DarkhamPrintAndPlayPlayer from "./darkham/printAndPlay/PrintAndPlayPlayer.js";
 
 export default function App({ loggedInUser }) {
     return (
         <>
             <Switch>
                 <Route exact path="/terra/print-and-play" component={PrintAndPlay} />
+                <Route exact path="/darkham/print-and-play-scenario" component={DarkhamPrintAndPlayScenario} />
+                <Route exact path="/darkham/print-and-play-player" component={DarkhamPrintAndPlayPlayer} />
                 <Route path="/terra">
                     {SmallMainNavBar()}
                     {TerraNavBar()}
