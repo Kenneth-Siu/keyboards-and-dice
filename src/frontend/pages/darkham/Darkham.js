@@ -2,7 +2,7 @@ import * as React from "react";
 import darkhamSplash from "../../../../data/darkhamSplash.jpg";
 import abdulAlhazredFront from "../../../../data/Darkham/Abdul-Alhazred-Front-Face.jpg";
 import abdulAlhazredBack from "../../../../data/Darkham/Abdul-Alhazred-Back-Face.jpg";
-import underTorchlight from "../../../../data/Darkham/Under-Torchlight-I-Front-Face.jpg";
+import underTorchlight from "../../../../data/Darkham/Under-Torchlight-(v.-I)-Front-Face.jpg";
 import moiraiShroud from "../../../../data/Darkham/Moirai-Shroud-Front-Face.jpg";
 import troublingMemories from "../../../../data/Darkham/Troubling-Memories-Front-Face.jpg";
 import happierTimes from "../../../../data/Darkham/Happier-Times-Front-Face.jpg";

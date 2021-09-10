@@ -37,7 +37,7 @@ export default function Downloads() {
                     <img className="background-image" src={printAndPlaySplash} />
                     <div className="content">
                         <h1>Print and Play</h1>
-                        <p>You can also print out the cards and play in person.</p>
+                        <p>You can also print out the cards and play in person. These PDFs are sized for printing in A4 or Letter.</p>
                         <ol>
                             <li>
                                 The{" "}
@@ -50,117 +50,40 @@ export default function Downloads() {
                                 .
                             </li>
                             <li>
-                                The investigator cards:{" "}
+                                The{" "}
                                 <a
-                                    href="https://kenneth-siu.github.io/darkham-horror-card-images/DarkhamHorrorPlayerCards_A4.pdf"
+                                    href="https://kenneth-siu.github.io/darkham-horror-card-images/DarkhamHorrorPlayerCards.pdf"
                                     target="_blank"
                                 >
-                                    A4 paper size
-                                </a>{" "}
-                                or{" "}
-                                <a
-                                    href="https://kenneth-siu.github.io/darkham-horror-card-images/DarkhamHorrorPlayerCards_Letter.pdf"
-                                    target="_blank"
-                                >
-                                    Letter paper size
+                                    investigator cards
                                 </a>
                                 .
                             </li>
                             <li>
-                                The campaign cards: <em>(Warning! It's a big file ~ 50MB!)</em>
-                                <ul>
-                                    <li>
-                                        1 player:{" "}
-                                        <a
-                                            href="https://kenneth-siu.github.io/darkham-horror-card-images/DarkhamHorrorPlayerCards_A4.pdf"
-                                            target="_blank"
-                                        >
-                                            A4 paper size
-                                        </a>{" "}
-                                        or{" "}
-                                        <a
-                                            href="https://kenneth-siu.github.io/darkham-horror-card-images/DarkhamHorrorPlayerCards_Letter.pdf"
-                                            target="_blank"
-                                        >
-                                            Letter paper size
-                                        </a>
-                                    </li>
-                                    <li>
-                                        2 players:{" "}
-                                        <a
-                                            href="https://kenneth-siu.github.io/darkham-horror-card-images/DarkhamHorrorPlayerCards_A4.pdf"
-                                            target="_blank"
-                                        >
-                                            A4 paper size
-                                        </a>{" "}
-                                        or{" "}
-                                        <a
-                                            href="https://kenneth-siu.github.io/darkham-horror-card-images/DarkhamHorrorPlayerCards_Letter.pdf"
-                                            target="_blank"
-                                        >
-                                            Letter paper size
-                                        </a>
-                                    </li>
-                                    <li>
-                                        3 players:{" "}
-                                        <a
-                                            href="https://kenneth-siu.github.io/darkham-horror-card-images/DarkhamHorrorPlayerCards_A4.pdf"
-                                            target="_blank"
-                                        >
-                                            A4 paper size
-                                        </a>{" "}
-                                        or{" "}
-                                        <a
-                                            href="https://kenneth-siu.github.io/darkham-horror-card-images/DarkhamHorrorPlayerCards_Letter.pdf"
-                                            target="_blank"
-                                        >
-                                            Letter paper size
-                                        </a>
-                                    </li>
-                                    <li>
-                                        4 players:{" "}
-                                        <a
-                                            href="https://kenneth-siu.github.io/darkham-horror-card-images/DarkhamHorrorPlayerCards_A4.pdf"
-                                            target="_blank"
-                                        >
-                                            A4 paper size
-                                        </a>{" "}
-                                        or{" "}
-                                        <a
-                                            href="https://kenneth-siu.github.io/darkham-horror-card-images/DarkhamHorrorPlayerCards_Letter.pdf"
-                                            target="_blank"
-                                        >
-                                            Letter paper size
-                                        </a>
-                                    </li>
-                                </ul>
+                                The{" "}
+                                <a
+                                    href="https://kenneth-siu.github.io/darkham-horror-card-images/DarkhamHorrorCampaignCards.pdf"
+                                    target="_blank"
+                                >
+                                    campaign cards
+                                </a>
+                                .<em> (Warning! It's a big file ~ 50MB!)</em>
                             </li>
                         </ol>
                         <blockquote>
-                            Don't want to print in A4 or Letter? You can also print directly from your browser.
+                            Don't want to print in A4 or Letter? Know a bit of CSS and want to adjust the image spacing
+                            or the background color? You can also print directly from your browser.
                             <ol>
                                 <li>
                                     Click on the links for:{" "}
                                     <Link to="/darkham/print-and-play-player" target="_blank">
                                         the investigator cards
                                     </Link>{" "}
-                                    and the campaign cards for{" "}
-                                    <Link to="/darkham/print-and-play-scenario?players=1" target="_blank">
-                                        one
+                                    and the{" "}
+                                    <Link to="/darkham/print-and-play-scenario" target="_blank">
+                                        campaign cards
                                     </Link>
-                                    ,{" "}
-                                    <Link to="/darkham/print-and-play-scenario?players=2" target="_blank">
-                                        two
-                                    </Link>
-                                    ,{" "}
-                                    <Link to="/darkham/print-and-play-scenario?players=3" target="_blank">
-                                        three
-                                    </Link>
-                                    , or{" "}
-                                    <Link to="/darkham/print-and-play-scenario?players=4" target="_blank">
-                                        four
-                                    </Link>{" "}
-                                    players.{" "}
+                                    .{" "}
                                     <em>
                                         (Warning! There are a lot of images to load. Check your browser has loaded them
                                         all before printing.)
@@ -173,7 +96,7 @@ export default function Downloads() {
                                     Your sleeves and setup may differ though, so consider printing out a page now as a
                                     test run.
                                 </li>
-                                <li>Finally, adjust your margins to fit a good number of cards on each page.</li>
+                                <li>Adjust your margins to fit a good number of cards on each page.</li>
                                 <li>
                                     Once you've printed out the cards, cut them out and sleeve them up in front of
                                     actual cards.
