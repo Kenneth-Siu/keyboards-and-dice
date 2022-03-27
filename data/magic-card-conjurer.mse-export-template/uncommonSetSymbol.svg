@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="-100 -70 200 140">
+    <defs>
+        <linearGradient id="gradient" x1="0%" x2="100%" y1="0%" y2="100%">
+            <stop offset="40%" style="stop-color:rgb(175,175,175);stop-opacity:1" />
+            <stop offset="55%" style="stop-color:rgb(222,222,222);stop-opacity:1" />
+            <stop offset="70%" style="stop-color:rgb(175,175,175);stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    <path d="M-100,1 a2.5,1 0 0,0 200,0" fill="none" stroke="black" stroke-width="6" transform="rotate(155)" stroke-linecap="round" />
+    <path d="M-94,1 a2.76,1 0 0,0 188,0" fill="none" stroke="rgb(175,175,175)" stroke-width="6" transform="rotate(155)" stroke-linecap="round" />
+    <path d="M-88,1 a3.13,1 0 0,0 176,0" fill="none" stroke="black" stroke-width="6" transform="rotate(155)" stroke-linecap="round" />
+    <circle fill="url(#gradient)" cx="0" cy="0" r="50" stroke="black" stroke-width="6" />
+    <path d="M-100,-1 a2.5,1 0 0,0 200,0" fill="none" stroke="black" stroke-width="6" transform="rotate(-25)" stroke-linecap="round" />
+    <path d="M-94,-1 a2.76,1 0 0,0 188,0" fill="none" stroke="rgb(175,175,175)" stroke-width="6" transform="rotate(-25)" stroke-linecap="round" />
+    <path d="M-88,-1 a3.13,1 0 0,0 176,0" fill="none" stroke="black" stroke-width="6" transform="rotate(-25)" stroke-linecap="round" />
+    <circle fill="url(#gradient)" cx="38" cy="18" r="23" stroke="black" stroke-width="6" />
+</svg>
