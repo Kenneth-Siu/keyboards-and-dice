@@ -1,0 +1,342 @@
+﻿mse version: 2.0.0
+short name: Card Conjurer
+full name: Card Conjurer Exporter
+position hint: 0
+version: 0.1.0
+
+depends on:
+	package: magic.mse-game
+	version: 2015-04-08
+
+game: magic
+file type: *.cardconjurer
+
+script:
+	lengthenColor := {
+		if input == "W" then "White"
+		else if input == "U" then "Blue"
+		else if input == "B" then "Black"
+		else if input == "R" then "Red"
+		else if input == "G" then "Green"
+		else if input == "" then "Artifact"
+		else "Multicolored"
+	}
+	
+	shortColorFilter := replace@(match:"[0-9|X]", replace:"")+
+		replace@(match:"(.)(\\1)+", replace: "\\1")
+	
+	rarityFilter := {
+		shortRarity := substring(input, end:1)
+		to_upper(shortRarity)
+	}
+
+	getPlaneswalkerFrame := {
+		if length(input) == 0 then "                \{ \"name\": \"Artifact Frame\", \"src\": \"/img/frames/planeswalker/regular/planeswalkerFrameA.png\", \"masks\": [] \}\n"
+		else if length(input) > 2 then "                \{ \"name\": \"Multicolored Frame\", \"src\": \"/img/frames/planeswalker/regular/planeswalkerFrameM.png\", \"masks\": [] \}\n"
+		else "                \{ \"name\": \"{lengthenColor(input)} Frame\", \"src\": \"/img/frames/planeswalker/regular/planeswalkerFrame{input}.png\", \"masks\": [] \}\n"
+	}
+
+	getLandFrame := {
+		splitNotes := split_text(card.notes, match: ",\n")
+		addsManaNotes := split_text(filter_list(splitNotes, filter: { contains(input, match:"addsMana:") })[0], match: "\"")
+		addsMana := addsManaNotes[length(addsManaNotes) - 2]
+		landFrames := "                \{ \"name\": \"Colorless Frame\", \"src\": \"/img/frames/m15/regular/ll.png\", \"masks\": [] \}\n"
+		if length(addsMana) > 2 then (
+			landFrames := "                \{ \"name\": \"Multicolored Frame\", \"src\": \"/img/frames/m15/regular/lm.png\", \"masks\": [\{\"src\": \"/img/frames/m15/regular/m15MaskRules.png\", \"name\": \"Rules\"\}] \},\n"
+				+"                \{ \"name\": \"Multicolored Frame\", \"src\": \"/img/frames/m15/regular/lm.png\", \"masks\": [\{\"src\": \"/img/frames/m15/regular/m15MaskPinline.png\", \"name\": \"Pinline\"\}] \},\n"
+				+"                \{ \"name\": \"Multicolored Frame\", \"src\": \"/img/frames/m15/regular/lm.png\", \"masks\": [\{\"src\": \"/img/frames/m15/regular/m15MaskTitle.png\", \"name\": \"Title\"\}] \},\n"
+				+"                \{ \"name\": \"Multicolored Frame\", \"src\": \"/img/frames/m15/regular/lm.png\", \"masks\": [\{\"src\": \"/img/frames/m15/regular/m15MaskType.png\", \"name\": \"Type\"\}] \},\n"
+				+landFrames
+		)
+		else if length(addsMana) == 2 then (
+			firstLandColor := substring(addsMana, end:1)
+			secondLandColor := substring(addsMana, begin:1, end:2)
+			landFrames := "                \{ \"name\": \"{lengthenColor(secondLandColor)} Frame\", \"src\": \"/img/frames/m15/regular/l{to_lower(secondLandColor)}.png\", \"masks\": [\{\"src\": \"/img/frames/m15/regular/m15MaskRules.png\", \"name\": \"Rules\"\}, \{\"src\": \"/img/frames/maskRightHalf.png\", \"name\": \"Right Half\"\}] \},\n"
+				+"                \{ \"name\": \"{lengthenColor(secondLandColor)} Frame\", \"src\": \"/img/frames/m15/regular/l{to_lower(secondLandColor)}.png\", \"masks\": [\{\"src\": \"/img/frames/m15/regular/m15MaskPinline.png\", \"name\": \"Pinline\"\}, \{\"src\": \"/img/frames/maskRightHalf.png\", \"name\": \"Right Half\"\}] \},\n"
+				+"                \{ \"name\": \"{lengthenColor(firstLandColor)} Frame\", \"src\": \"/img/frames/m15/regular/l{to_lower(firstLandColor)}.png\", \"masks\": [\{\"src\": \"/img/frames/m15/regular/m15MaskRules.png\", \"name\": \"Rules\"\}] \},\n"
+				+"                \{ \"name\": \"{lengthenColor(firstLandColor)} Frame\", \"src\": \"/img/frames/m15/regular/l{to_lower(firstLandColor)}.png\", \"masks\": [\{\"src\": \"/img/frames/m15/regular/m15MaskPinline.png\", \"name\": \"Pinline\"\}] \},\n"
+				+landFrames
+		)
+		"" + landFrames
+	}
+
+	frameFilter := {
+		shortColor := shortColorFilter(input.casting_cost)
+		firstColor := substring(shortColor, end:1)
+		frames := ""
+		if contains(card.type, match:"Planeswalker") then (
+			frames := frames + getPlaneswalkerFrame(shortColor)
+		)
+		else if contains(card.type, match:"Land") then (
+			frames := frames + getLandFrame()
+		)
+		else (
+			if length(shortColor) == 0 then (
+				frames := frames + "                \{ \"name\": \"Artifact Frame\", \"src\": \"/img/frames/m15/regular/m15FrameA.png\", \"masks\": [] \}"
+			)
+			else (
+				frames := frames + "                \{ \"name\": \"{lengthenColor(firstColor)} Frame\", \"src\": \"/img/frames/m15/regular/m15Frame{firstColor}.png\", \"masks\": [] \}"
+			)
+
+			if length(shortColor) > 1 then (
+				secondColor := substring(shortColor, begin:1, end:2)
+				frames := "                \{ \"name\": \"Multicolored Frame\", \"src\": \"/img/frames/m15/regular/m15FrameM.png\", \"masks\": [\{\"src\": \"/img/frames/m15/regular/m15MaskType.png\", \"name\": \"Type\"\}] \},\n"
+					+"                \{ \"name\": \"Multicolored Frame\", \"src\": \"/img/frames/m15/regular/m15FrameM.png\", \"masks\": [\{\"src\": \"/img/frames/m15/regular/m15MaskTitle.png\", \"name\": \"Title\"\}] \},\n"
+					+"                \{ \"name\": \"Multicolored Frame\", \"src\": \"/img/frames/m15/regular/m15FrameM.png\", \"masks\": [\{\"src\": \"/img/frames/m15/regular/m15MaskFrame.png\", \"name\": \"Frame\"\}] \},\n"
+					+"                \{ \"name\": \"{lengthenColor(secondColor)} Frame\", \"src\": \"/img/frames/m15/regular/m15Frame{secondColor}.png\", \"masks\": [\{\"src\": \"/img/frames/m15/regular/m15MaskRules.png\", \"name\": \"Rules\"\}, \{\"src\": \"/img/frames/maskRightHalf.png\", \"name\": \"Right Half\"\}] \},\n"
+					+"                \{ \"name\": \"{lengthenColor(secondColor)} Frame\", \"src\": \"/img/frames/m15/regular/m15Frame{secondColor}.png\", \"masks\": [\{\"src\": \"/img/frames/m15/regular/m15MaskPinline.png\", \"name\": \"Pinline\"\}, \{\"src\": \"/img/frames/maskRightHalf.png\", \"name\": \"Right Half\"\}] \},\n"
+					+frames
+			)
+
+			if contains(card.type, match:"Artifact") then (
+				frames := "                \{ \"name\": \"Artifact Frame\", \"src\": \"/img/frames/m15/regular/m15FrameA.png\", \"masks\": [\{\"src\": \"/img/frames/m15/regular/m15MaskFrame.png\", \"name\": \"Frame\"}] \},\n"
+					+frames
+			)
+
+			if length(card.pt) > 0 then (
+				frameShortColor := if length(shortColor) > 1 then "M" else if length(shortColor) == 0 then "A" else shortColor
+				frames := "                \{ \"name\": \"{lengthenColor(shortColor)} Power/Toughness\", \"src\": \"/img/frames/m15/regular/m15PT{frameShortColor}.png\", \"masks\": [], \"bounds\": \{\"x\": 0.7573, \"y\": 0.8848, \"width\": 0.188, \"height\": 0.0733\} \},\n"
+					+frames
+			)
+		)
+
+		"[\n"
+		+"{frames}"
+		+"            ]"
+	}
+	
+	rulesTextFilter := replace@(match: "\\n", replace: "\\\\n")+
+		replace@(match: "\\(", replace: "\\\{i\\\}\\(")+
+		replace@(match: "\\)", replace: "\\)\\\{/i\\\}")+
+		replace@(match: "<sym-auto>([TWUBRGCX\\d])<\\/sym-auto>", replace: "\\\{\\1\\\}")+
+		replace@(match: "<sym-auto>([TWUBRGCX\\d])([TWUBRGCX\\d])<\\/sym-auto>", replace: "\\\{\\1\\\}\\\{\\2\\\}")+
+		replace@(match: "<sym-auto>([TWUBRGCX\\d])([TWUBRGCX\\d])([TWUBRGCX\\d])<\\/sym-auto>", replace: "\\\{\\1\\\}\\\{\\2\\\}\\\{\\3\\\}")+
+		replace@(match: "<sym-auto>([TWUBRGCX\\d])([TWUBRGCX\\d])([TWUBRGCX\\d])([TWUBRGCX\\d])<\\/sym-auto>", replace: "\\\{\\1\\\}\\\{\\2\\\}\\\{\\3\\\}\\\{\\4\\\}")+
+		replace@(match: "<sym-auto>([TWUBRGCX\\d])([TWUBRGCX\\d])([TWUBRGCX\\d])([TWUBRGCX\\d])([TWUBRGCX\\d])<\\/sym-auto>", replace: "\\\{\\1\\\}\\\{\\2\\\}\\\{\\3\\\}\\\{\\4\\\}\\\{\\5\\\}")+
+		replace@(match: "<sym-auto>([TWUBRGCX\\d])([TWUBRGCX\\d])([TWUBRGCX\\d])([TWUBRGCX\\d])([TWUBRGCX\\d])([TWUBRGCX\\d])<\\/sym-auto>", replace: "\\\{\\1\\\}\\\{\\2\\\}\\\{\\3\\\}\\\{\\4\\\}\\\{\\5\\\}\\\{\\6\\\}")+
+		replace@(match: "<sym>([TWUBRGCX\\d])<\\/sym>", replace: "\\\{\\1\\\}")+
+		replace@(match: "<sym>([TWUBRGCX\\d])([TWUBRGCX\\d])<\\/sym>", replace: "\\\{\\1\\\}\\\{\\2\\\}")+
+		replace@(match: "<sym>([TWUBRGCX\\d])([TWUBRGCX\\d])([TWUBRGCX\\d])<\\/sym>", replace: "\\\{\\1\\\}\\\{\\2\\\}\\\{\\3\\\}")+
+		replace@(match: "<sym>([TWUBRGCX\\d])([TWUBRGCX\\d])([TWUBRGCX\\d])([TWUBRGCX\\d])<\\/sym>", replace: "\\\{\\1\\\}\\\{\\2\\\}\\\{\\3\\\}\\\{\\4\\\}")+
+		replace@(match: "<sym>([TWUBRGCX\\d])([TWUBRGCX\\d])([TWUBRGCX\\d])([TWUBRGCX\\d])([TWUBRGCX\\d])<\\/sym>", replace: "\\\{\\1\\\}\\\{\\2\\\}\\\{\\3\\\}\\\{\\4\\\}\\\{\\5\\\}")+
+		replace@(match: "<sym>([TWUBRGCX\\d])([TWUBRGCX\\d])([TWUBRGCX\\d])([TWUBRGCX\\d])([TWUBRGCX\\d])([TWUBRGCX\\d])<\\/sym>", replace: "\\\{\\1\\\}\\\{\\2\\\}\\\{\\3\\\}\\\{\\4\\\}\\\{\\5\\\}\\\{\\6\\\}")+
+		replace@(match: "<sym-auto>([TWUBRGCX\\d])([TWUBRGCX\\d])\\/([TWUBRGCX\\d])<\\/sym-auto>", replace: "\\\{\\1\\\}\\\{\\2/\\3\\\}")+
+		replace@(match: "•<\\/error-spelling:en_us:\\/magic\\.mse-game\\/magic-words> ", replace: "•<\\/error-spelling:en_us:\\/magic\\.mse-game\\/magic-words> \\\{indent\\\}")+
+		replace@(match: "<error-spelling:en_us:/magic.mse-game/magic-words>•<\\/error-spelling:en_us:\\/magic\\.mse-game\\/magic-words>(.+\\\\n)<error-spelling:en_us:/magic.mse-game/magic-words>•<\\/error-spelling:en_us:\\/magic\\.mse-game\\/magic-words>(.+\\\\n)<error-spelling:en_us:/magic.mse-game/magic-words>•<\\/error-spelling:en_us:\\/magic\\.mse-game\\/magic-words>(.+\\\\n)<error-spelling:en_us:/magic.mse-game/magic-words>•<\\/error-spelling:en_us:\\/magic\\.mse-game\\/magic-words>", replace: "\{up4\\\}•\\1\\\{up8\\\}•\\2\\\{up8\\\}•\\3\\\{up8\\\}•")+
+		replace@(match: "<error-spelling:en_us:/magic.mse-game/magic-words>•<\\/error-spelling:en_us:\\/magic\\.mse-game\\/magic-words>(.+\\\\n)<error-spelling:en_us:/magic.mse-game/magic-words>•<\\/error-spelling:en_us:\\/magic\\.mse-game\\/magic-words>(.+\\\\n)<error-spelling:en_us:/magic.mse-game/magic-words>•<\\/error-spelling:en_us:\\/magic\\.mse-game\\/magic-words>", replace: "\{up4\\\}•\\1\\\{up8\\\}•\\2\\\{up8\\\}•")+
+		replace@(match: "<error-spelling:en_us:/magic.mse-game/magic-words>•<\\/error-spelling:en_us:\\/magic\\.mse-game\\/magic-words>(.+\\\\n)<error-spelling:en_us:/magic.mse-game/magic-words>•<\\/error-spelling:en_us:\\/magic\\.mse-game\\/magic-words>", replace: "\{up4\\\}•\\1\\\{up8\\\}•")
+	
+	flavorTextFilter := replace@(match: "\\n", replace: "\{lns\}")+
+		replace@(match:"<i>", replace: "\{i\}")+
+		replace@(match:"<\\/i>", replace: "\{\\/i\}")
+	
+	write_card_data := {
+		splitNotes := split_text(card.notes, match: ",\n")
+		manaCost := replace(match: "(.)", replace: "\\0 ", card.casting_cost)
+		rulesText := rulesTextFilter(card.rule_text)
+		if length(card.flavor_text) > 21 then (
+			rulesText := rulesText + "\{/indent\}\{flavor\}" + flavorTextFilter(card.flavor_text)
+		)
+
+		# Add font size reduction
+		rulesFontShrinkNotes := filter_list(splitNotes, filter: { contains(input, match:"cc_rules_font_shrink:") })
+		rulesFontShrinkNote := if length(rulesFontShrinkNotes) > 0 then (split_text(rulesFontShrinkNotes[0], match:"\"")) else []
+		rulesFontShrink := if length(rulesFontShrinkNote) > 0 then (rulesFontShrinkNote[length(rulesFontShrinkNote) - 2]) else ""
+		rulesText := "\{fontsize-{rulesFontShrink}\}" + rulesText
+		typeFontShrinkNotes := filter_list(splitNotes, filter: { contains(input, match:"cc_type_font_shrink:") })
+		typeFontShrinkNote := if length(typeFontShrinkNotes) > 0 then (split_text(typeFontShrinkNotes[0], match:"\"")) else []
+		typeFontShrink := if length(typeFontShrinkNote) > 0 then (typeFontShrinkNote[length(typeFontShrinkNote) - 2]) else ""
+		cardType := "\{fontsize-{typeFontShrink}\}" + card.type
+
+		artSourceNotes := filter_list(splitNotes, filter: { contains(input, match:"art_source:") })
+		artSourceNote := if length(artSourceNotes) > 0 then (split_text(artSourceNotes[0], match:"\"")) else []
+		artSource := if length(artSourceNote) > 0 then (artSourceNote[length(artSourceNote) - 2]) else ""
+
+		frames := frameFilter(card)
+		"            \"width\": 1500,\n"
+		+"            \"height\": 2100,\n"
+		+"            \"marginX\": 0,\n"
+		+"            \"marginY\": 0,\n"
+		+"            \"frames\": {frames},\n"
+		+"            \"artSource\": \"{artSource}\",\n"
+		+"            \"artX\": 0.076,\n"
+		+"            \"artY\": 0.0113,\n"
+		+"            \"artZoom\": 1,\n"
+		+"            \"artRotate\": \"0\",\n"
+		+"            \"setSymbolSource\": \"https://raw.githubusercontent.com/Kenneth-Siu/keyboards-and-dice/main/data/magic-card-conjurer.mse-export-template/{split_text(card.rarity, match: " ")[0]}SetSymbol.svg\",\n"
+		+"            \"setSymbolX\": 0.842,\n"
+		+"            \"setSymbolY\": 0.5704761904761905,\n"
+		+"            \"setSymbolZoom\": 0.573,\n"
+		+"            \"watermarkSource\": \"https://card-conjurer.storage.googleapis.com/img/blank.png\",\n"
+		+"            \"watermarkX\": 0.33866666666666667,\n"
+		+"            \"watermarkY\": 0.660952380952381,\n"
+		+"            \"watermarkZoom\": 484,\n"
+		+"            \"watermarkLeft\": \"#b79d58\",\n"
+		+"            \"watermarkRight\": \"none\",\n"
+		+"            \"watermarkOpacity\": 0.4,\n"
+		+"            \"version\": \"m15Regular\",\n"
+		+"            \"manaSymbols\": [],\n"
+		+"            \"infoYear\": \"2022\",\n"
+		+"            \"margins\": false,\n"
+		+"            \"bottomInfo\": \{\n"
+		+"                \"midLeft\": \{\n"
+		+"                    \"text\": \"\{elemidinfo-set\} • \{elemidinfo-language\}  \{savex\}\{fontbelerenbsc\}\{fontsize2\}\{upinline1\}￮\{elemidinfo-artist\}\",\n"
+		+"                    \"x\": 0.0647,\n"
+		+"                    \"y\": 0.9548,\n"
+		+"                    \"width\": 0.8707,\n"
+		+"                    \"height\": 0.0171,\n"
+		+"                    \"oneLine\": true,\n"
+		+"                    \"font\": \"gothammedium\",\n"
+		+"                    \"size\": 0.0171,\n"
+		+"                    \"color\": \"white\",\n"
+		+"                    \"outlineWidth\": 0.003\n"
+		+"                \},\n"
+		+"                \"topLeft\": \{\n"
+		+"                    \"text\": \"\{elemidinfo-number\}  \{loadx\}\{elemidinfo-rarity\}   NOT FOR SALE\",\n"
+		+"                    \"x\": 0.0647,\n"
+		+"                    \"y\": 0.9377,\n"
+		+"                    \"width\": 0.8707,\n"
+		+"                    \"height\": 0.0171,\n"
+		+"                    \"oneLine\": true,\n"
+		+"                    \"font\": \"gothammedium\",\n"
+		+"                    \"size\": 0.0171,\n"
+		+"                    \"color\": \"white\",\n"
+		+"                    \"outlineWidth\": 0.003\n"
+		+"                \},\n"
+		+"                \"bottomLeft\": \{\n"
+		+"                    \"text\": \"\",\n"
+		+"                    \"x\": 0.0647,\n"
+		+"                    \"y\": 0.9719,\n"
+		+"                    \"width\": 0.8707,\n"
+		+"                    \"height\": 0.0143,\n"
+		+"                    \"oneLine\": true,\n"
+		+"                    \"font\": \"gothammedium\",\n"
+		+"                    \"size\": 0.0143,\n"
+		+"                    \"color\": \"white\",\n"
+		+"                    \"outlineWidth\": 0.003\n"
+		+"                \},\n"
+		+"                \"wizards\": \{\n"
+		+"                    \"name\": \"wizards\",\n"
+		+"                    \"text\": \"\{ptshift0,0.0172\}™ & © \{elemidinfo-year\} Wizards of the Coast\",\n"
+		+"                    \"x\": 0.0647,\n"
+		+"                    \"y\": 0.9377,\n"
+		+"                    \"width\": 0.8707,\n"
+		+"                    \"height\": 0.0167,\n"
+		+"                    \"oneLine\": true,\n"
+		+"                    \"font\": \"mplantin\",\n"
+		+"                    \"size\": 0.0162,\n"
+		+"                    \"color\": \"white\",\n"
+		+"                    \"align\": \"right\",\n"
+		+"                    \"outlineWidth\": 0.003\n"
+		+"                \},\n"
+		+"                \"bottomRight\": \{\n"
+		+"                    \"text\": \"\{ptshift0,0.0172\}\",\n"
+		+"                    \"x\": 0.0647,\n"
+		+"                    \"y\": 0.9548,\n"
+		+"                    \"width\": 0.8707,\n"
+		+"                    \"height\": 0.0143,\n"
+		+"                    \"oneLine\": true,\n"
+		+"                    \"font\": \"mplantin\",\n"
+		+"                    \"size\": 0.0143,\n"
+		+"                    \"color\": \"white\",\n"
+		+"                    \"align\": \"right\",\n"
+		+"                    \"outlineWidth\": 0.003\n"
+		+"                \}\n"
+		+"            \},\n"
+		+"            \"infoNumber\": \"{if cardNumber+1 < 10 then "00" else if cardNumber+1 < 100 then "0" else ""}{cardNumber+1}/{totalCards}\",\n"
+		+"            \"infoRarity\": \"{rarityFilter(card.rarity)}\",\n"
+		+"            \"infoSet\": \"STC\",\n"
+		+"            \"infoLanguage\": \"EN\",\n"
+		+"            \"infoArtist\": \"{card.illustrator}\",\n"
+		+"            \"onload\": null,\n"
+		+"            \"artBounds\": \{ \"x\": 0.0767, \"y\": 0.1129, \"width\": 0.8476, \"height\": 0.4429 \},\n"
+		+"            \"setSymbolBounds\": \{\n"
+		+"                \"x\": 0.9213,\n"
+		+"                \"y\": 0.591,\n"
+		+"                \"width\": 0.12,\n"
+		+"                \"height\": 0.041,\n"
+		+"                \"vertical\": \"center\",\n"
+		+"                \"horizontal\": \"right\"\n"
+		+"            \},\n"
+		+"            \"watermarkBounds\": \{ \"x\": 0.5, \"y\": 0.7762, \"width\": 0.75, \"height\": 0.2305 \},\n"
+		+"            \"text\": \{\n"
+		+"                \"mana\": \{\n"
+		+"                    \"name\": \"Mana Cost\",\n"
+		+"                    \"text\": \"{manaCost}\",\n"
+		+"                    \"y\": 0.0613,\n"
+		+"                    \"width\": 0.9292,\n"
+		+"                    \"height\": 0.03380952380952381,\n"
+		+"                    \"oneLine\": true,\n"
+		+"                    \"size\": 0.043345543345543344,\n"
+		+"                    \"align\": \"right\",\n"
+		+"                    \"shadowX\": -0.001,\n"
+		+"                    \"shadowY\": 0.0029,\n"
+		+"                    \"manaCost\": true,\n"
+		+"                    \"manaSpacing\": 0\n"
+		+"                \},\n"
+		+"                \"title\": \{\n"
+		+"                    \"name\": \"Title\",\n"
+		+"                    \"text\": \"{card.name}\",\n"
+		+"                    \"x\": 0.0854,\n"
+		+"                    \"y\": 0.0522,\n"
+		+"                    \"width\": 0.8292,\n"
+		+"                    \"height\": 0.0543,\n"
+		+"                    \"oneLine\": true,\n"
+		+"                    \"font\": \"belerenb\",\n"
+		+"                    \"size\": 0.0381\n"
+		+"                \},\n"
+		+"                \"type\": \{\n"
+		+"                    \"name\": \"Type\",\n"
+		+"                    \"text\": \"{cardType}\",\n"
+		+"                    \"x\": 0.0854,\n"
+		+"                    \"y\": 0.5664,\n"
+		+"                    \"width\": 0.8292,\n"
+		+"                    \"height\": 0.0543,\n"
+		+"                    \"oneLine\": true,\n"
+		+"                    \"font\": \"belerenb\",\n"
+		+"                    \"size\": 0.0324\n"
+		+"                \},\n"
+		+"                \"rules\": \{\n"
+		+"                    \"name\": \"Rules Text\",\n"
+		+"                    \"text\": \"{rulesText}\",\n"
+		+"                    \"x\": 0.086,\n"
+		+"                    \"y\": 0.6303,\n"
+		+"                    \"width\": 0.828,\n"
+		+"                    \"height\": 0.2875,\n"
+		+"                    \"size\": 0.0362\n"
+		+"                \},\n"
+		+"                \"pt\": \{\n"
+		+"                    \"name\": \"Power/Toughness\",\n"
+		+"                    \"text\": \"{card.pt}\",\n"
+		+"                    \"x\": 0.7928,\n"
+		+"                    \"y\": 0.902,\n"
+		+"                    \"width\": 0.1367,\n"
+		+"                    \"height\": 0.0372,\n"
+		+"                    \"size\": 0.0372,\n"
+		+"                    \"font\": \"belerenbsc\",\n"
+		+"                    \"oneLine\": true,\n"
+		+"                    \"align\": \"center\"\n"
+		+"                \}\n"
+		+"            \}\n"
+	}
+	
+	write_card := {
+		cardData := write_card_data()
+		comma := if cardNumber+1 != totalCards then ",\n" else ""
+		"    \{\n"
+		+"        \"key\": \"{card.name}\",\n"
+		+"        \"data\": \{\n"
+		+"{cardData}"
+		+"        \}\n"
+		+"    \}" + comma
+	}
+	
+	write_cards := {
+		cardList := filter_list(sort_list(cards, order_by: {input.card_number}), filter: { input.shape != "token" })
+		totalCards := length(cardList)
+		to_text(for each cardNumber:card in cardList do write_card())
+	}
+	
+	to_string("[\n"
+		+write_cards()
+		+"]")
