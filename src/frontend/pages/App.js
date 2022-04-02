@@ -1,19 +1,19 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import PrivateRoute from "./PrivateRoute.js";
-import TerraHome from "./terra/home/Home.js";
-import CardImageGallery from "./terra/cardImageGallery/CardImageGallery.js";
-import Drafts from "./terra/drafts/Drafts.js";
-import TerraNotFound from "./terra/notFound/NotFound.js";
-import TerraNavBar from "../components/navBars/TerraNavBar.js";
-import Faq from "./terra/faq/Faq.js";
-import TerraDownloads from "./terra/downloads/Downloads.js";
-import Login from "./terra/login/Login.js";
+import StcHome from "./stc/home/Home.js";
+import CardImageGallery from "./stc/cardImageGallery/CardImageGallery.js";
+import Drafts from "./stc/drafts/Drafts.js";
+import StcNotFound from "./stc/notFound/NotFound.js";
+import StcNavBar from "../components/navBars/StcNavBar.js";
+import Faq from "./stc/faq/Faq.js";
+import StcDownloads from "./stc/downloads/Downloads.js";
+import Login from "./stc/login/Login.js";
 import "./cssreset.css";
 import "./App.scss";
-import Draft from "./terra/draft/Draft.js";
-import Rankings from "./terra/rankings/Rankings.js";
-import PrintAndPlay from "./terra/printAndPlay/PrintAndPlay.js";
+import Draft from "./stc/draft/Draft.js";
+import Rankings from "./stc/rankings/Rankings.js";
+import PrintAndPlay from "./stc/printAndPlay/PrintAndPlay.js";
 import MainNavBar from "../components/navBars/MainNavBar.js";
 import SmallMainNavBar from "../components/navBars/SmallMainNavBar.js";
 import Home from "./home/Home.js";
@@ -28,34 +28,34 @@ export default function App({ loggedInUser }) {
     return (
         <>
             <Switch>
-                <Route exact path="/terra/print-and-play" component={PrintAndPlay} />
+                <Route exact path="/stc/print-and-play" component={PrintAndPlay} />
                 <Route exact path="/darkham/print-and-play-scenario" component={DarkhamPrintAndPlayScenario} />
                 <Route exact path="/darkham/print-and-play-player" component={DarkhamPrintAndPlayPlayer} />
-                <Route path="/terra">
+                <Route path="/stc">
                     {SmallMainNavBar()}
-                    {TerraNavBar()}
+                    {StcNavBar()}
                     <Switch>
-                        <Route exact path="/terra/card-image-gallery" component={CardImageGallery} />
-                        <Route exact path="/terra/faq" component={Faq} />
+                        <Route exact path="/stc/card-image-gallery" component={CardImageGallery} />
+                        <Route exact path="/stc/faq" component={Faq} />
                         <PrivateRoute
                             exact
-                            path="/terra/drafts"
+                            path="/stc/drafts"
                             component={Drafts}
                             authed={!!loggedInUser}
                             loggedInUser={loggedInUser}
                         />
                         <PrivateRoute
                             exact
-                            path="/terra/drafts/:draftId"
+                            path="/stc/drafts/:draftId"
                             component={Draft}
                             authed={!!loggedInUser}
                             loggedInUser={loggedInUser}
                         />
-                        <Route exact path="/terra/downloads" component={TerraDownloads} />
-                        <Route exact path="/terra/rankings" component={Rankings} />
-                        <Route exact path="/terra/login" component={Login} />
-                        <Route exact path="/terra" component={TerraHome} />
-                        <Route path="/terra" component={TerraNotFound} />
+                        <Route exact path="/stc/downloads" component={StcDownloads} />
+                        <Route exact path="/stc/rankings" component={Rankings} />
+                        <Route exact path="/stc/login" component={Login} />
+                        <Route exact path="/stc" component={StcHome} />
+                        <Route path="/stc" component={StcNotFound} />
                     </Switch>
                 </Route>
                 <Route path="/">

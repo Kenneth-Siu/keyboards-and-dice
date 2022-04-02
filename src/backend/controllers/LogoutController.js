@@ -4,7 +4,7 @@ const router = express.Router();
 
 router.get("", (req, res) => {
     req.logout();
-    res.redirect("/terra/login");
+    res.redirect("/stc/login");
 });
 
 export default router;

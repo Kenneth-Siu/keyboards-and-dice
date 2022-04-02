@@ -1,0 +1,131 @@
+@import "../colors.scss";
+@import "../mixins.scss";
+@import "../responsive.scss";
+@import "./SmallMainNavBar.scss";
+
+$stc-navbar-small-height: 4rem;
+$stc-navbar-medium-height: 4rem;
+$stc-navbar-large-height: 3rem;
+
+@mixin stcPageHeightMinusMainNavBar {
+    @include responsive(
+        min-height,
+        calc(100vh - #{$small-main-navbar-height + $stc-navbar-small-height}),
+        calc(100vh - #{$small-main-navbar-height + $stc-navbar-medium-height}),
+        calc(100vh - #{$small-main-navbar-height + $stc-navbar-large-height})
+    );
+}
+
+.stc-nav-bar {
+    position: relative;
+    @include responsive(height, $stc-navbar-small-height, $stc-navbar-medium-height, $stc-navbar-large-height);
+    @include blurred-background-image(0.2);
+
+    ul {
+        position: relative;
+        display: flex;
+        @include container;
+        @include responsive(flex-wrap, wrap, wrap, nowrap);
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .stc-home {
+        flex-grow: 1;
+        @include responsive(width, calc(100%), calc(100%), auto);
+
+        svg {
+            position: absolute;
+            height: 1.8rem;
+            width: 2.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0.5rem;
+        }
+
+        a {
+            position: relative;
+            color: $color-1;
+            font-weight: 700;
+            font-size: 1.2rem;
+            height: 100%;
+            @include responsive(
+                padding,
+                0.5rem 0.5rem 0.5rem 3.4rem,
+                0.5rem 0.5rem 0.5rem 3.4rem,
+                0.9rem 0.8rem 0.9rem 3.5rem
+            );
+        }
+    }
+
+    li:not(.stc-home) a {
+        position: relative;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        @include responsive(padding, 0.5rem 0.5rem, 0.5rem 0.5rem, 1.1rem 0.8rem);
+
+        &.abbreviated {
+            display: none;
+        }
+        @media (max-width: 550px) {
+            &:not(.abbreviated) {
+                display: none;
+            }
+            &.abbreviated {
+                display: inline;
+            }
+        }
+    }
+
+    li.is-current-page a::after,
+    li:not(.stc-home) a:hover::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        transform: translateY(-3px);
+        border-bottom-width: 4px;
+        border-bottom-style: solid;
+    }
+
+    .card-image-gallery a {
+        color: $color-3-light;
+
+        &::after {
+            border-bottom-color: $color-3-light;
+        }
+    }
+
+    .faq a {
+        color: $color-4-light;
+
+        &::after {
+            border-bottom-color: $color-4-light;
+        }
+    }
+
+    .draft a {
+        color: $color-5-light;
+
+        &::after {
+            border-bottom-color: $color-5-light;
+        }
+    }
+
+    .downloads a {
+        color: $color-6-light;
+
+        &::after {
+            border-bottom-color: $color-6-light;
+        }
+    }
+}

@@ -14,9 +14,9 @@ export default function MainNavBar() {
                         <KndLogo /> Keyboards &amp; Dice
                     </Link>
                 </li>
-                <li className="terra">
-                    <NavLink to="/terra" activeClassName="is-current-page">
-                        Terra 2170
+                <li className="stc">
+                    <NavLink to="/stc" activeClassName="is-current-page">
+                        Space the Convergence
                     </NavLink>
                 </li>
                 <li className="darkham">

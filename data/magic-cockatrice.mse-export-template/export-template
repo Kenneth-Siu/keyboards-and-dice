@@ -68,7 +68,7 @@ script:
 		+(if card.pt != "" then "            \<pt>{card.pt}\</pt>\n" else "")
 		+(if card.loyalty != "" then "            \<loyalty>{card.loyalty}\</loyalty>\n" else "")
 		+"        \</prop>\n"
-		+"        \<set rarity=\"{card.rarity}\" picurl=\"https://kenneth-siu.github.io/terra-2170-card-images/{urlEncode(imageNameFilter(name))}.jpg\">T2170\</set>\n"
+		+"        \<set rarity=\"{card.rarity}\" picurl=\"https://kenneth-siu.github.io/space-the-convergence-images/{urlEncode(imageNameFilter(name))}.jpg\">T2170\</set>\n"
 		+(if related != "" then "        \<related{if attach then " attach=\"attach\"" else ""}{if count != "" then " count=\"{count}\"" else ""}>{related}\</related>\n" else "")
 		+(if card.shape != "token" then "" else "        \<token>1\</token>\n")
 		+"        \<tablerow>{if contains(card.super_type, match:"Creature") then 2 else if contains(card.super_type, match:"Land") then 0 else if contains(card.super_type, match:"Instant") or contains(card.super_type, match:"Sorcery") then 3 else 1}\</tablerow>\n"
@@ -91,10 +91,10 @@ script:
 	to_string("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
 		+"<cockatrice_carddatabase version=\"4\">\n"
 		+"    <set>\n"
-		+"        <name>T2170</name>\n"
-		+"        <longname>Terra 2170</longname>\n"
+		+"        <name>STC</name>\n"
+		+"        <longname>Space the Convergence</longname>\n"
 		+"        <settype>Custom</settype>\n"
-		+"        <releasedate>2021-02-27</releasedate>\n"
+		+"        <releasedate>2022-04-02</releasedate>\n"
 		+"    </set>\n"
 		+"    <cards>\n"
 		+write_cards()

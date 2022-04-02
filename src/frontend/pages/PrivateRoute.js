@@ -9,7 +9,7 @@ export default function PrivateRoute({ component: Component, authed, ...rest }) 
                 authed ? (
                     <Component {...rest} {...props} />
                 ) : (
-                    <Redirect to={{ pathname: "/terra/login", state: { from: props.location } }} />
+                    <Redirect to={{ pathname: "/stc/login", state: { from: props.location } }} />
                 )
             }
         />

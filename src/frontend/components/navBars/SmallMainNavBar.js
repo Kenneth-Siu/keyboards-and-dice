@@ -14,10 +14,10 @@ export default function SmallMainNavBar() {
                         <KndLogo /> Keyboards &amp; Dice
                     </Link>
                 </li>
-                <li className="terra">
-                    <NavLink to="/terra" activeClassName="is-current-page">Terra 2170</NavLink>
-                    <NavLink to="/terra" className="abbreviated" activeClassName="is-current-page" aria-hidden>
-                        Terra
+                <li className="stc">
+                    <NavLink to="/stc" activeClassName="is-current-page">Space the Convergence</NavLink>
+                    <NavLink to="/stc" className="abbreviated" activeClassName="is-current-page" aria-hidden>
+                        STC
                     </NavLink>
                 </li>
                 <li className="darkham">

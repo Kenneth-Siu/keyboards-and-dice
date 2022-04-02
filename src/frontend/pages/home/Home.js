@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import terraSplash from "../../../../data/terraSplash.jpg";
+import stcSplash from "../../../../data/stcSplash.jpg";
 import darkhamSplash from "../../../../data/darkhamSplash.jpg";
 import "./Home.scss";
 
@@ -9,22 +9,22 @@ export default function Home() {
         <>
             <title>Keyboards &amp; Dice</title>
             <main className="home-page">
-                <div className="terra tile">
-                    <img className="background-image" src={terraSplash} />
+                <div className="stc tile">
+                    <img className="background-image" src={stcSplash} />
                     <div className="content">
                         <h1>
-                            <Link to="/terra">Terra 2170</Link>
+                            <Link to="/stc">Space the Convergence</Link>
                         </h1>
                         <p>
                             What new powers and allies would planeswalkers bring to bear if they had access to
                             futuristic Earth technology?
                         </p>
                         <p>
-                            <em>Terra 2170</em> is a science-fiction <em>Magic: the Gathering</em> expansion with 273
+                            <em>Space the Convergence</em> is a science-fiction <em>Magic: the Gathering</em> expansion with 273
                             cards and four new mechanics, created especially for drafting.
                         </p>
                         <p className="link">
-                            <Link to="/terra">ᐳ Find out more</Link>
+                            <Link to="/stc">ᐳ Find out more</Link>
                         </p>
                     </div>
                 </div>
