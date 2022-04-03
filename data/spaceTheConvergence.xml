@@ -673,8 +673,8 @@ Whenever a Police creature enters the battlefield under your control, you may re
             <side>front</side>
             <type>Artifact — Equipment </type>
             <maintype>Artifact</maintype>
-            <manacost>W</manacost>
-            <cmc>1</cmc>
+            <manacost>1W</manacost>
+            <cmc>2</cmc>
             <colors>W</colors>
             <coloridentity>W</coloridentity>
         </prop>
@@ -2046,6 +2046,7 @@ If the sacrificed permanent had mana value 2 or greater, create a 1/1 colorless 
             <coloridentity>B</coloridentity>
         </prop>
         <set rarity="common" picurl="https://kenneth-siu.github.io/space-the-convergence-images/Interrogate.jpg">T2170</set>
+        <related>Mech</related>
         <tablerow>3</tablerow>
     </card>
     <card>
@@ -4071,7 +4072,7 @@ Whenever Shadowlight Infiltrator deals combat damage to a player, choose one —
     </card>
     <card>
         <name>Warapur Company Guard</name>
-        <text>Whenever a player loses life, create a 1/1 colorless Mech artifact creature token. This ability triggers only once each turn.
+        <text>Whenever a player loses life during your turn, create a 1/1 colorless Mech artifact creature token. This ability triggers only once each turn.
 2, Sacrifice another nonland permanent: Target creature can’t block this turn.</text>
         <prop>
             <layout>normal</layout>
@@ -4085,6 +4086,7 @@ Whenever Shadowlight Infiltrator deals combat damage to a player, choose one —
             <pt>3/1</pt>
         </prop>
         <set rarity="uncommon" picurl="https://kenneth-siu.github.io/space-the-convergence-images/Warapur%20Company%20Guard.jpg">T2170</set>
+        <related>Mech</related>
         <tablerow>2</tablerow>
     </card>
     <card>

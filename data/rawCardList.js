@@ -683,8 +683,8 @@ art_source:"https://i.imgur.com/TpcjVcA.jpg"
     {
         "name": "PR-15 Concussive Grenades",
         "imageName": _26,
-        "cost": "W",
-        "manaValue": 1,
+        "cost": "1W",
+        "manaValue": 2,
         "color": "W",
         "type": "Artifact — Equipment ",
         "cardId": 26,
@@ -1903,6 +1903,7 @@ art_source:"https://i.imgur.com/HVc6Z2v.jpg"
         "notes": {
 grade: "C-",
 colorIdentity: "B",
+cockatrice_related: "Mech",
 art_source:"https://i.imgur.com/RRUiJcq.jpg"
         }
     },
@@ -3729,6 +3730,7 @@ art_source:"https://i.imgur.com/8flELQg.jpg"
         "notes": {
 grade: "B",
 colorIdentity: "BR",
+cockatrice_related: "Mech",
 art_source:"https://i.imgur.com/NXgO1R5.jpg"
         }
     },
