@@ -1014,7 +1014,10 @@ At the beginning of your upkeep, enchanted permanent’s owner draws a card.</te
     <card>
         <name>Arrester Droid</name>
         <text>Flash
-When Arrester Droid enters the battlefield, return another target creature you control and target creature you don’t control to their owners’ hands.</text>
+When Arrester Droid enters the battlefield, choose one or both —
+• Exile another target creature you control.
+• Exile target creature you don’t control.
+Return each creature exiled this way to the battlefield under their owners’ control at the beginning of the next end step.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -4202,6 +4205,7 @@ When Ingolf dies, destroy each creature with power 3 or greater.</text>
             <coloridentity>GW</coloridentity>
         </prop>
         <set rarity="rare" picurl="https://kenneth-siu.github.io/space-the-convergence-images/Ingolfs%20Command.jpg">T2170</set>
+        <related>Equipment</related>
         <tablerow>3</tablerow>
     </card>
     <card>
