@@ -391,7 +391,7 @@ art_source:"https://i.imgur.com/Aug8yzf.png"
         "cardId": 7,
         "rarity": "C",
         "notes": {
-grade: "C-",
+grade: "C",
 colorIdentity: "W",
 art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/821376fc-4b6d-45cc-a484-03bd21ab1fc1/d9278sj-81a000d5-6e6a-45e1-ba3c-3a6c6b573c1d.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzgyMTM3NmZjLTRiNmQtNDVjYy1hNDg0LTAzYmQyMWFiMWZjMVwvZDkyNzhzai04MWEwMDBkNS02ZTZhLTQ1ZTEtYmEzYy0zYTZjNmI1NzNjMWQuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0._nV9zaeQuTh8OjENi3zrswOcJCaI2DfgHYYROwyScrM"
         }
@@ -719,7 +719,7 @@ art_source:"https://i.imgur.com/l4XgpbY.jpg"
         "cardId": 28,
         "rarity": "C",
         "notes": {
-grade: "D",
+grade: "C-",
 colorIdentity: "W",
 art_source:"https://i.imgur.com/RtPZKWe.jpg"
         }
@@ -990,7 +990,7 @@ art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e8ebaafa-c
         "cardId": 45,
         "rarity": "C",
         "notes": {
-grade: "C-",
+grade: "C",
 colorIdentity: "U",
 cc_rules_font_shrink: "2",
 art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b1f96af6-56a3-47a8-b7f4-406f243af3a3/d6sw2mi-efe3a31a-85a3-4f01-8ee3-deb34408af7a.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2IxZjk2YWY2LTU2YTMtNDdhOC1iN2Y0LTQwNmYyNDNhZjNhM1wvZDZzdzJtaS1lZmUzYTMxYS04NWEzLTRmMDEtOGVlMy1kZWIzNDQwOGFmN2EuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.1rmaIMrUxg2__M0OSyO88zePRO2eVdr11_XgGH8sNfc"
@@ -1402,7 +1402,7 @@ art_source:"https://i.imgur.com/M0fklS6.jpg"
         "cardId": 71,
         "rarity": "C",
         "notes": {
-grade: "D",
+grade: "C",
 colorIdentity: "U",
 art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b1f96af6-56a3-47a8-b7f4-406f243af3a3/d7augbe-d3b6adc6-0b39-4626-b698-70d44d38e62b.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2IxZjk2YWY2LTU2YTMtNDdhOC1iN2Y0LTQwNmYyNDNhZjNhM1wvZDdhdWdiZS1kM2I2YWRjNi0wYjM5LTQ2MjYtYjY5OC03MGQ0NGQzOGU2MmIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.qrsJc_xFP_ae49ZJ_srw-1fL1diGFg_1CBI7qYK_fMc"
         }
@@ -1633,7 +1633,7 @@ art_source:"https://i.imgur.com/y1xCCHu.jpg"
         "cardId": 86,
         "rarity": "C",
         "notes": {
-grade: "C",
+grade: "C-",
 colorIdentity: "B",
 cc_rules_font_shrink: "4",
 art_source:"https://i.imgur.com/Z1n8uvl.jpg"
@@ -1682,7 +1682,7 @@ art_source:"https://cdna.artstation.com/p/assets/images/images/001/888/340/large
         "cardId": 89,
         "rarity": "U",
         "notes": {
-grade: "B-",
+grade: "C",
 colorIdentity: "B",
 art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5b178c88-b4e2-45b3-8347-61077ff26f8e/d8vqix7-3962a715-2f08-49b1-a252-b938cb8f3f44.jpg/v1/fill/w_600,h_425,q_75,strp/primordial_reaper_by_vincentvanhoof_d8vqix7-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDI1IiwicGF0aCI6IlwvZlwvNWIxNzhjODgtYjRlMi00NWIzLTgzNDctNjEwNzdmZjI2ZjhlXC9kOHZxaXg3LTM5NjJhNzE1LTJmMDgtNDliMS1hMjUyLWI5MzhjYjhmM2Y0NC5qcGciLCJ3aWR0aCI6Ijw9NjAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.JZ1Fb0OSSOYe1Te-AJ8VCzAza2J90Y01nA2vttCC8h8"
         }
@@ -2196,7 +2196,7 @@ art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b1f96af6-5
         "cardId": 122,
         "rarity": "U",
         "notes": {
-grade: "C",
+grade: "C+",
 colorIdentity: "B",
 cc_rules_font_shrink: "11",
 art_source:"https://i.imgur.com/V2edkRr.jpg"
@@ -2870,7 +2870,7 @@ art_source:"https://i.imgur.com/fA7oZ1p.jpg"
         "cardId": 165,
         "rarity": "U",
         "notes": {
-grade: "B-",
+grade: "C",
 colorIdentity: "R",
 cc_rules_font_shrink: "10",
 art_source:"https://i.imgur.com/XyFu1iN.jpg"
@@ -2902,7 +2902,7 @@ art_source:"https://i.imgur.com/FHRWg5M.jpg"
         "cardId": 167,
         "rarity": "U",
         "notes": {
-grade: "B+",
+grade: "B",
 colorIdentity: "R",
 cc_rules_font_shrink: "10",
 art_source:"https://i.imgur.com/171O9V0.jpg"
@@ -3650,7 +3650,7 @@ art_source:"https://i.imgur.com/0JsEHB4.jpg"
         "cardId": 214,
         "rarity": "U",
         "notes": {
-grade: "B",
+grade: "B-",
 colorIdentity: "WU",
 cc_rules_font_shrink: "6",
 art_source:"https://i.imgur.com/EDcN9Sc.jpg"
