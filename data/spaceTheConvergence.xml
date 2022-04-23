@@ -3608,7 +3608,7 @@ Reconstitute (When this creature dies, reveal cards from the top of your library
     <card>
         <name>Kushak Subject Prime</name>
         <text>Reach
-Kushak and Mutant creatures you control get +1/+1.
+Other Kushak and Mutant creatures you control get +1/+1.
 3G: Create a 1/1 green Kushak Scion creature token. It has “Sacrifice this creature: Add C.”</text>
         <prop>
             <layout>normal</layout>
