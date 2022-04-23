@@ -43,7 +43,7 @@ import _41 from "./cardImages/Wartime Recruitment.jpg";
 import _42 from "./cardImages/Warzone Mentor.jpg";
 import _43 from "./cardImages/Wiendahl Carrier.jpg";
 import _44 from "./cardImages/Ambassadorship.jpg";
-import _45 from "./cardImages/Arrester Droid.jpg";
+import _45 from "./cardImages/Assurance Droid.jpg";
 import _46 from "./cardImages/Atmospheric Survey.jpg";
 import _47 from "./cardImages/Brain Drain.jpg";
 import _48 from "./cardImages/Breakdown.jpg";
@@ -384,8 +384,8 @@ art_source:"https://i.imgur.com/Aug8yzf.png"
     {
         "name": "Community Officer",
         "imageName": _7,
-        "cost": "3W",
-        "manaValue": 4,
+        "cost": "1W",
+        "manaValue": 2,
         "color": "W",
         "type": "Artifact Creature — Police Mech ",
         "cardId": 7,
@@ -393,15 +393,14 @@ art_source:"https://i.imgur.com/Aug8yzf.png"
         "notes": {
 grade: "C-",
 colorIdentity: "W",
-cc_rules_font_shrink: "10",
 art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/821376fc-4b6d-45cc-a484-03bd21ab1fc1/d9278sj-81a000d5-6e6a-45e1-ba3c-3a6c6b573c1d.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzgyMTM3NmZjLTRiNmQtNDVjYy1hNDg0LTAzYmQyMWFiMWZjMVwvZDkyNzhzai04MWEwMDBkNS02ZTZhLTQ1ZTEtYmEzYy0zYTZjNmI1NzNjMWQuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0._nV9zaeQuTh8OjENi3zrswOcJCaI2DfgHYYROwyScrM"
         }
     },
     {
         "name": "Control Overseer",
         "imageName": _8,
-        "cost": "3W",
-        "manaValue": 4,
+        "cost": "1W",
+        "manaValue": 2,
         "color": "W",
         "type": "Creature — Police Advisor ",
         "cardId": 8,
@@ -496,8 +495,8 @@ art_source:"https://i.imgur.com/UlEY4Em.jpg"
     {
         "name": "Head Detective",
         "imageName": _14,
-        "cost": "3W",
-        "manaValue": 4,
+        "cost": "2W",
+        "manaValue": 3,
         "color": "W",
         "type": "Creature — Police Advisor ",
         "cardId": 14,
@@ -638,8 +637,8 @@ art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/175361c3-6
     {
         "name": "Observation Blimp",
         "imageName": _23,
-        "cost": "3W",
-        "manaValue": 4,
+        "cost": "2W",
+        "manaValue": 3,
         "color": "W",
         "type": "Artifact Creature — Police Airship ",
         "cardId": 23,
@@ -713,8 +712,8 @@ art_source:"https://i.imgur.com/l4XgpbY.jpg"
     {
         "name": "Reconnaisance Mule",
         "imageName": _28,
-        "cost": "5W",
-        "manaValue": 6,
+        "cost": "3W",
+        "manaValue": 4,
         "color": "W",
         "type": "Artifact Creature — Military Mech ",
         "cardId": 28,
@@ -823,8 +822,8 @@ art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b1f96af6-5
     {
         "name": "Suspension Squad",
         "imageName": _35,
-        "cost": "2W",
-        "manaValue": 3,
+        "cost": "1W",
+        "manaValue": 2,
         "color": "W",
         "type": "Creature — Military Soldier ",
         "cardId": 35,
@@ -982,7 +981,7 @@ art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e8ebaafa-c
         }
     },
     {
-        "name": "Arrester Droid",
+        "name": "Assurance Droid",
         "imageName": _45,
         "cost": "2U",
         "manaValue": 3,
@@ -993,6 +992,7 @@ art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e8ebaafa-c
         "notes": {
 grade: "C-",
 colorIdentity: "U",
+cc_rules_font_shrink: "2",
 art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b1f96af6-56a3-47a8-b7f4-406f243af3a3/d6sw2mi-efe3a31a-85a3-4f01-8ee3-deb34408af7a.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2IxZjk2YWY2LTU2YTMtNDdhOC1iN2Y0LTQwNmYyNDNhZjNhM1wvZDZzdzJtaS1lZmUzYTMxYS04NWEzLTRmMDEtOGVlMy1kZWIzNDQwOGFmN2EuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.1rmaIMrUxg2__M0OSyO88zePRO2eVdr11_XgGH8sNfc"
         }
     },
@@ -1081,7 +1081,7 @@ art_source:"https://i.imgur.com/4jTmAem.jpg"
         "cost": "1UU",
         "manaValue": 3,
         "color": "U",
-        "type": "Artifact Creature — Police Fighter ",
+        "type": "Artifact Creature — Fighter ",
         "cardId": 51,
         "rarity": "R",
         "notes": {
@@ -1224,8 +1224,8 @@ art_source:"https://i.imgur.com/SeDGze8.jpg"
     {
         "name": "Kushak Dissident",
         "imageName": _60,
-        "cost": "4U",
-        "manaValue": 5,
+        "cost": "3U",
+        "manaValue": 4,
         "color": "U",
         "type": "Creature — Kushak Mutant ",
         "cardId": 60,
@@ -1255,8 +1255,8 @@ art_source:"https://i.imgur.com/tqcXcBS.jpg"
     {
         "name": "Lambert Stealth Bomber",
         "imageName": _62,
-        "cost": "5U",
-        "manaValue": 6,
+        "cost": "4U",
+        "manaValue": 5,
         "color": "U",
         "type": "Artifact Creature — Military Cruiser ",
         "cardId": 62,
@@ -1395,8 +1395,8 @@ art_source:"https://i.imgur.com/M0fklS6.jpg"
     {
         "name": "Plasma Reclaimer",
         "imageName": _71,
-        "cost": "3U",
-        "manaValue": 4,
+        "cost": "1U",
+        "manaValue": 2,
         "color": "U",
         "type": "Artifact Creature — Mech ",
         "cardId": 71,
@@ -1404,7 +1404,6 @@ art_source:"https://i.imgur.com/M0fklS6.jpg"
         "notes": {
 grade: "D",
 colorIdentity: "U",
-cc_rules_font_shrink: "1",
 art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b1f96af6-56a3-47a8-b7f4-406f243af3a3/d7augbe-d3b6adc6-0b39-4626-b698-70d44d38e62b.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2IxZjk2YWY2LTU2YTMtNDdhOC1iN2Y0LTQwNmYyNDNhZjNhM1wvZDdhdWdiZS1kM2I2YWRjNi0wYjM5LTQ2MjYtYjY5OC03MGQ0NGQzOGU2MmIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.qrsJc_xFP_ae49ZJ_srw-1fL1diGFg_1CBI7qYK_fMc"
         }
     },
@@ -1462,7 +1461,7 @@ art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/821376fc-4
         "cost": "3U",
         "manaValue": 4,
         "color": "U",
-        "type": "Artifact Creature — Police Mech ",
+        "type": "Artifact Creature — Mech ",
         "cardId": 75,
         "rarity": "U",
         "notes": {
@@ -1627,8 +1626,8 @@ art_source:"https://i.imgur.com/y1xCCHu.jpg"
     {
         "name": "Austere Observer",
         "imageName": _86,
-        "cost": "2B",
-        "manaValue": 3,
+        "cost": "3B",
+        "manaValue": 4,
         "color": "B",
         "type": "Artifact Creature — Corporate Copter ",
         "cardId": 86,
@@ -1659,14 +1658,14 @@ art_source:"https://cdna.artstation.com/p/assets/images/images/004/117/172/large
     {
         "name": "Backroom Trafficker",
         "imageName": _88,
-        "cost": "2B",
-        "manaValue": 3,
+        "cost": "1B",
+        "manaValue": 2,
         "color": "B",
         "type": "Creature — Mercenary Advisor ",
         "cardId": 88,
         "rarity": "U",
         "notes": {
-grade: "C",
+grade: "B-",
 colorIdentity: "B",
 cockatrice_related: "Mech",
 cc_rules_font_shrink: "9",
@@ -1676,8 +1675,8 @@ art_source:"https://cdna.artstation.com/p/assets/images/images/001/888/340/large
     {
         "name": "Baljurashi Thought-Devourer",
         "imageName": _89,
-        "cost": "2B",
-        "manaValue": 3,
+        "cost": "1B",
+        "manaValue": 2,
         "color": "B",
         "type": "Creature — Squid Mutant ",
         "cardId": 89,
@@ -2190,8 +2189,8 @@ art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b1f96af6-5
     {
         "name": "Undercity Janitor",
         "imageName": _122,
-        "cost": "3B",
-        "manaValue": 4,
+        "cost": "2B",
+        "manaValue": 3,
         "color": "B",
         "type": "Artifact Creature — Mech Mercenary ",
         "cardId": 122,
@@ -2632,8 +2631,8 @@ art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8ab8d401-2
     {
         "name": "Rangor Rampager",
         "imageName": _150,
-        "cost": "2R",
-        "manaValue": 3,
+        "cost": "1R",
+        "manaValue": 2,
         "color": "R",
         "type": "Artifact Creature — Rebel Mech ",
         "cardId": 150,
@@ -2741,8 +2740,8 @@ art_source:"https://cdnb.artstation.com/p/assets/images/images/000/192/809/large
     {
         "name": "Slagthrower",
         "imageName": _157,
-        "cost": "2R",
-        "manaValue": 3,
+        "cost": "1R",
+        "manaValue": 2,
         "color": "R",
         "type": "Artifact Creature — Mech ",
         "cardId": 157,
@@ -2864,8 +2863,8 @@ art_source:"https://i.imgur.com/fA7oZ1p.jpg"
     {
         "name": "Wanted Speedster",
         "imageName": _165,
-        "cost": "3R",
-        "manaValue": 4,
+        "cost": "1R",
+        "manaValue": 2,
         "color": "R",
         "type": "Creature — Mercenary Saboteur ",
         "cardId": 165,
@@ -2873,6 +2872,7 @@ art_source:"https://i.imgur.com/fA7oZ1p.jpg"
         "notes": {
 grade: "B-",
 colorIdentity: "R",
+cc_rules_font_shrink: "10",
 art_source:"https://i.imgur.com/XyFu1iN.jpg"
         }
     },
@@ -2895,8 +2895,8 @@ art_source:"https://i.imgur.com/FHRWg5M.jpg"
     {
         "name": "Wild Game Huntmaster",
         "imageName": _167,
-        "cost": "3R",
-        "manaValue": 4,
+        "cost": "2R",
+        "manaValue": 3,
         "color": "R",
         "type": "Creature — Nomad ",
         "cardId": 167,
@@ -2904,7 +2904,7 @@ art_source:"https://i.imgur.com/FHRWg5M.jpg"
         "notes": {
 grade: "B+",
 colorIdentity: "R",
-cc_rules_font_shrink: "11",
+cc_rules_font_shrink: "10",
 art_source:"https://i.imgur.com/171O9V0.jpg"
         }
     },
@@ -2975,8 +2975,8 @@ art_source:"https://i.imgur.com/R1wUw76.jpg"
     {
         "name": "Al Maham Traders",
         "imageName": _172,
-        "cost": "2G",
-        "manaValue": 3,
+        "cost": "1G",
+        "manaValue": 2,
         "color": "G",
         "type": "Creature — Nomad ",
         "cardId": 172,
@@ -3021,8 +3021,8 @@ art_source:"https://i.imgur.com/wsLzx4Z.jpg"
     {
         "name": "Basirah Composite",
         "imageName": _175,
-        "cost": "4G",
-        "manaValue": 5,
+        "cost": "3G",
+        "manaValue": 4,
         "color": "G",
         "type": "Artifact Creature — Mech Mutant ",
         "cardId": 175,
@@ -3212,8 +3212,8 @@ art_source:"https://i.imgur.com/2qKnUA3.jpg"
     {
         "name": "Hunted Coadjulate",
         "imageName": _187,
-        "cost": "3G",
-        "manaValue": 4,
+        "cost": "2G",
+        "manaValue": 3,
         "color": "G",
         "type": "Creature — Fish Hippo Mutant ",
         "cardId": 187,
@@ -3266,8 +3266,8 @@ art_source:"https://i.imgur.com/qqougbj.jpg"
     {
         "name": "Kushak Brood Warden",
         "imageName": _190,
-        "cost": "3G",
-        "manaValue": 4,
+        "cost": "2G",
+        "manaValue": 3,
         "color": "G",
         "type": "Creature — Kushak Propagator ",
         "cardId": 190,
@@ -3643,8 +3643,8 @@ art_source:"https://i.imgur.com/0JsEHB4.jpg"
     {
         "name": "Wings of the Law",
         "imageName": _214,
-        "cost": "1WU",
-        "manaValue": 3,
+        "cost": "WU",
+        "manaValue": 2,
         "color": "WU",
         "type": "Artifact Creature — Police Mech ",
         "cardId": 214,
@@ -3652,6 +3652,7 @@ art_source:"https://i.imgur.com/0JsEHB4.jpg"
         "notes": {
 grade: "B",
 colorIdentity: "WU",
+cc_rules_font_shrink: "6",
 art_source:"https://i.imgur.com/EDcN9Sc.jpg"
         }
     },
@@ -3829,6 +3830,7 @@ art_source:"https://i.imgur.com/MLnIhOs.jpg"
         "notes": {
 grade: "B",
 colorIdentity: "GW",
+cockatrice_related: "Equipment",
 cc_rules_font_shrink: "10",
 art_source:"https://i.imgur.com/pSbQsl3.jpg"
         }
@@ -3897,14 +3899,14 @@ art_source:"https://i.imgur.com/PMIrslp.jpg"
     {
         "name": "Neutron Evader",
         "imageName": _230,
-        "cost": "2UR",
-        "manaValue": 4,
+        "cost": "3UR",
+        "manaValue": 5,
         "color": "UR",
         "type": "Artifact Creature — Fighter ",
         "cardId": 230,
         "rarity": "U",
         "notes": {
-grade: "B",
+grade: "B-",
 colorIdentity: "UR",
 cc_rules_font_shrink: "9",
 art_source:"https://i.imgur.com/t8rxOW8.jpg"
@@ -4012,8 +4014,8 @@ art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/740392b2-2
     {
         "name": "Troposphere Drifter",
         "imageName": _237,
-        "cost": "1GU",
-        "manaValue": 3,
+        "cost": "3GU",
+        "manaValue": 5,
         "color": "GU",
         "type": "Creature — Squid Mutant ",
         "cardId": 237,

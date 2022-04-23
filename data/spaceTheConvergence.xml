@@ -264,20 +264,17 @@ Equip 2</text>
     </card>
     <card>
         <name>Community Officer</name>
-        <text>When Community Officer enters the battlefield, choose one or both —
-• Exile another target creature you control.
-• Exile target creature you don’t control.
-Return each creature exiled this way to the battlefield under their owners’ control at the beginning of the next end step.</text>
+        <text>When Community Officer enters the battlefield, you may return another permanent you control to its owner’s hand.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
             <type>Artifact Creature — Police Mech </type>
             <maintype>Artifact Creature</maintype>
-            <manacost>3W</manacost>
-            <cmc>4</cmc>
+            <manacost>1W</manacost>
+            <cmc>2</cmc>
             <colors>W</colors>
             <coloridentity>W</coloridentity>
-            <pt>3/3</pt>
+            <pt>2/2</pt>
         </prop>
         <set rarity="common" picurl="https://kenneth-siu.github.io/space-the-convergence-images/Community%20Officer.jpg">T2170</set>
         <tablerow>2</tablerow>
@@ -306,11 +303,11 @@ Return each creature exiled this way to the battlefield under their owners’ co
             <side>front</side>
             <type>Creature — Police Advisor </type>
             <maintype>Creature</maintype>
-            <manacost>3W</manacost>
-            <cmc>4</cmc>
+            <manacost>1W</manacost>
+            <cmc>2</cmc>
             <colors>W</colors>
             <coloridentity>W</coloridentity>
-            <pt>3/2</pt>
+            <pt>1/2</pt>
         </prop>
         <set rarity="uncommon" picurl="https://kenneth-siu.github.io/space-the-convergence-images/Control%20Overseer.jpg">T2170</set>
         <tablerow>2</tablerow>
@@ -457,11 +454,11 @@ When Head Detective enters the battlefield, you may exile another target creatur
             <side>front</side>
             <type>Creature — Police Advisor </type>
             <maintype>Creature</maintype>
-            <manacost>3W</manacost>
-            <cmc>4</cmc>
+            <manacost>2W</manacost>
+            <cmc>3</cmc>
             <colors>W</colors>
             <coloridentity>W</coloridentity>
-            <pt>2/2</pt>
+            <pt>1/2</pt>
         </prop>
         <set rarity="uncommon" picurl="https://kenneth-siu.github.io/space-the-convergence-images/Head%20Detective.jpg">T2170</set>
         <tablerow>2</tablerow>
@@ -542,9 +539,9 @@ Teleport 0 (You may cast this card for its teleport cost while you’re looking 
     <card>
         <name>Keep the Peace</name>
         <text>Choose one or both —
-• Exile target creature you control.
-• Exile target creature you don’t control.
-Return each creature exiled this way to the battlefield under their owners’ control at the beginning of the next end step.
+• Exile target permanent you control.
+• Exile target permanent you don’t control.
+Return each permanent exiled this way to the battlefield under their owners’ control at the beginning of the next end step.
 Draw a card.</text>
         <prop>
             <layout>normal</layout>
@@ -620,11 +617,11 @@ When Observation Blimp enters the battlefield, draw a card, then scry 1.</text>
             <side>front</side>
             <type>Artifact Creature — Police Airship </type>
             <maintype>Artifact Creature</maintype>
-            <manacost>3W</manacost>
-            <cmc>4</cmc>
+            <manacost>2W</manacost>
+            <cmc>3</cmc>
             <colors>W</colors>
             <coloridentity>W</coloridentity>
-            <pt>2/2</pt>
+            <pt>1/3</pt>
         </prop>
         <set rarity="uncommon" picurl="https://kenneth-siu.github.io/space-the-convergence-images/Observation%20Blimp.jpg">T2170</set>
         <tablerow>2</tablerow>
@@ -708,11 +705,11 @@ W, T: You gain 1 life.</text>
             <side>front</side>
             <type>Artifact Creature — Military Mech </type>
             <maintype>Artifact Creature</maintype>
-            <manacost>5W</manacost>
-            <cmc>6</cmc>
+            <manacost>3W</manacost>
+            <cmc>4</cmc>
             <colors>W</colors>
             <coloridentity>W</coloridentity>
-            <pt>3/7</pt>
+            <pt>2/4</pt>
         </prop>
         <set rarity="common" picurl="https://kenneth-siu.github.io/space-the-convergence-images/Reconnaisance%20Mule.jpg">T2170</set>
         <tablerow>2</tablerow>
@@ -838,11 +835,11 @@ When Suppression Patrol enters the battlefield, tap target creature an opponent 
             <side>front</side>
             <type>Creature — Military Soldier </type>
             <maintype>Creature</maintype>
-            <manacost>2W</manacost>
-            <cmc>3</cmc>
+            <manacost>1W</manacost>
+            <cmc>2</cmc>
             <colors>W</colors>
             <coloridentity>W</coloridentity>
-            <pt>3/2</pt>
+            <pt>2/1</pt>
         </prop>
         <set rarity="uncommon" picurl="https://kenneth-siu.github.io/space-the-convergence-images/Suspension%20Squad.jpg">T2170</set>
         <tablerow>2</tablerow>
@@ -1012,12 +1009,9 @@ At the beginning of your upkeep, enchanted permanent’s owner draws a card.</te
         <tablerow>1</tablerow>
     </card>
     <card>
-        <name>Arrester Droid</name>
+        <name>Assurance Droid</name>
         <text>Flash
-When Arrester Droid enters the battlefield, choose one or both —
-• Exile another target creature you control.
-• Exile target creature you don’t control.
-Return each creature exiled this way to the battlefield under their owners’ control at the beginning of the next end step.</text>
+When Assurance Droid enters the battlefield, return another permanent you control to its owner’s hand.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -1027,9 +1021,9 @@ Return each creature exiled this way to the battlefield under their owners’ co
             <cmc>3</cmc>
             <colors>U</colors>
             <coloridentity>U</coloridentity>
-            <pt>2/2</pt>
+            <pt>3/3</pt>
         </prop>
-        <set rarity="common" picurl="https://kenneth-siu.github.io/space-the-convergence-images/Arrester%20Droid.jpg">T2170</set>
+        <set rarity="common" picurl="https://kenneth-siu.github.io/space-the-convergence-images/Assurance%20Droid.jpg">T2170</set>
         <tablerow>2</tablerow>
     </card>
     <card>
@@ -1128,7 +1122,7 @@ Teleport 1U (You may cast this card for its teleport cost while you’re looking
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Artifact Creature — Police Fighter </type>
+            <type>Artifact Creature — Fighter </type>
             <maintype>Artifact Creature</maintype>
             <manacost>1UU</manacost>
             <cmc>3</cmc>
@@ -1289,8 +1283,8 @@ Reconstitute (When this creature dies, reveal cards from the top of your library
             <side>front</side>
             <type>Creature — Kushak Mutant </type>
             <maintype>Creature</maintype>
-            <manacost>4U</manacost>
-            <cmc>5</cmc>
+            <manacost>3U</manacost>
+            <cmc>4</cmc>
             <colors>U</colors>
             <coloridentity>U</coloridentity>
             <pt>2/1</pt>
@@ -1319,17 +1313,17 @@ Reconstitute (When this creature dies, reveal cards from the top of your library
     <card>
         <name>Lambert Stealth Bomber</name>
         <text>Flying
-2U: Lambert Stealth Bomber gets -3/-0 until end of turn and can’t be blocked this turn.</text>
+2U: Lambert Stealth Bomber gets -2/-0 until end of turn and can’t be blocked this turn.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
             <type>Artifact Creature — Military Cruiser </type>
             <maintype>Artifact Creature</maintype>
-            <manacost>5U</manacost>
-            <cmc>6</cmc>
+            <manacost>4U</manacost>
+            <cmc>5</cmc>
             <colors>U</colors>
             <coloridentity>U</coloridentity>
-            <pt>5/1</pt>
+            <pt>4/1</pt>
         </prop>
         <set rarity="uncommon" picurl="https://kenneth-siu.github.io/space-the-convergence-images/Lambert%20Stealth%20Bomber.jpg">T2170</set>
         <tablerow>2</tablerow>
@@ -1474,17 +1468,18 @@ When Mindmeld Netrunner enters the battlefield, scry 3.</text>
     </card>
     <card>
         <name>Plasma Reclaimer</name>
-        <text>Teleport 1U (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)</text>
+        <text>3U: Scry 1.
+Teleport U (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
             <type>Artifact Creature — Mech </type>
             <maintype>Artifact Creature</maintype>
-            <manacost>3U</manacost>
-            <cmc>4</cmc>
+            <manacost>1U</manacost>
+            <cmc>2</cmc>
             <colors>U</colors>
             <coloridentity>U</coloridentity>
-            <pt>3/3</pt>
+            <pt>2/1</pt>
         </prop>
         <set rarity="common" picurl="https://kenneth-siu.github.io/space-the-convergence-images/Plasma%20Reclaimer.jpg">T2170</set>
         <tablerow>2</tablerow>
@@ -1551,7 +1546,7 @@ Teleport 1U (You may cast this card for its teleport cost while you’re looking
         <prop>
             <layout>normal</layout>
             <side>front</side>
-            <type>Artifact Creature — Police Mech </type>
+            <type>Artifact Creature — Mech </type>
             <maintype>Artifact Creature</maintype>
             <manacost>3U</manacost>
             <cmc>4</cmc>
@@ -1744,11 +1739,11 @@ Discard a card: Austere Observer gets +1/+1 until end of turn. Scry 1. Activate 
             <side>front</side>
             <type>Artifact Creature — Corporate Copter </type>
             <maintype>Artifact Creature</maintype>
-            <manacost>2B</manacost>
-            <cmc>3</cmc>
+            <manacost>3B</manacost>
+            <cmc>4</cmc>
             <colors>B</colors>
             <coloridentity>B</coloridentity>
-            <pt>2/1</pt>
+            <pt>2/2</pt>
         </prop>
         <set rarity="common" picurl="https://kenneth-siu.github.io/space-the-convergence-images/Austere%20Observer.jpg">T2170</set>
         <tablerow>2</tablerow>
@@ -1779,11 +1774,11 @@ Pay 1 life, discard two cards: Create a 1/1 colorless Mech artifact creature tok
             <side>front</side>
             <type>Creature — Mercenary Advisor </type>
             <maintype>Creature</maintype>
-            <manacost>2B</manacost>
-            <cmc>3</cmc>
+            <manacost>1B</manacost>
+            <cmc>2</cmc>
             <colors>B</colors>
             <coloridentity>B</coloridentity>
-            <pt>3/2</pt>
+            <pt>2/1</pt>
         </prop>
         <set rarity="uncommon" picurl="https://kenneth-siu.github.io/space-the-convergence-images/Backroom%20Trafficker.jpg">T2170</set>
         <related>Mech</related>
@@ -1798,11 +1793,11 @@ Creatures you control can’t attack unless exactly two creatures attack.</text>
             <side>front</side>
             <type>Creature — Squid Mutant </type>
             <maintype>Creature</maintype>
-            <manacost>2B</manacost>
-            <cmc>3</cmc>
+            <manacost>1B</manacost>
+            <cmc>2</cmc>
             <colors>B</colors>
             <coloridentity>B</coloridentity>
-            <pt>3/3</pt>
+            <pt>2/2</pt>
         </prop>
         <set rarity="uncommon" picurl="https://kenneth-siu.github.io/space-the-convergence-images/Baljurashi%20Thought-Devourer.jpg">T2170</set>
         <tablerow>2</tablerow>
@@ -2373,11 +2368,11 @@ Teleport 2BB (You may cast this card for its teleport cost while you’re lookin
             <side>front</side>
             <type>Artifact Creature — Mech Mercenary </type>
             <maintype>Artifact Creature</maintype>
-            <manacost>3B</manacost>
-            <cmc>4</cmc>
+            <manacost>2B</manacost>
+            <cmc>3</cmc>
             <colors>B</colors>
             <coloridentity>B</coloridentity>
-            <pt>4/3</pt>
+            <pt>3/3</pt>
         </prop>
         <set rarity="uncommon" picurl="https://kenneth-siu.github.io/space-the-convergence-images/Undercity%20Janitor.jpg">T2170</set>
         <tablerow>2</tablerow>
@@ -2482,7 +2477,7 @@ BB, Pay 2 life, Sacrifice another nonland permanent: Choose a card name. Reveal 
             <cmc>2</cmc>
             <colors>B</colors>
             <coloridentity>B</coloridentity>
-            <pt>3/3</pt>
+            <pt>3/2</pt>
         </prop>
         <set rarity="common" picurl="https://kenneth-siu.github.io/space-the-convergence-images/Wasteland%20Enforcer.jpg">T2170</set>
         <tablerow>2</tablerow>
@@ -2865,11 +2860,11 @@ Rangor Rampager gets +1/+0 for each artifact you control.</text>
             <side>front</side>
             <type>Artifact Creature — Rebel Mech </type>
             <maintype>Artifact Creature</maintype>
-            <manacost>2R</manacost>
-            <cmc>3</cmc>
+            <manacost>1R</manacost>
+            <cmc>2</cmc>
             <colors>R</colors>
             <coloridentity>R</coloridentity>
-            <pt>0/4</pt>
+            <pt>0/3</pt>
         </prop>
         <set rarity="uncommon" picurl="https://kenneth-siu.github.io/space-the-convergence-images/Rangor%20Rampager.jpg">T2170</set>
         <tablerow>2</tablerow>
@@ -2990,11 +2985,11 @@ Teleport 1R (You may cast this card for its teleport cost while you’re looking
             <side>front</side>
             <type>Artifact Creature — Mech </type>
             <maintype>Artifact Creature</maintype>
-            <manacost>2R</manacost>
-            <cmc>3</cmc>
+            <manacost>1R</manacost>
+            <cmc>2</cmc>
             <colors>R</colors>
             <coloridentity>R</coloridentity>
-            <pt>3/2</pt>
+            <pt>1/3</pt>
         </prop>
         <set rarity="common" picurl="https://kenneth-siu.github.io/space-the-convergence-images/Slagthrower.jpg">T2170</set>
         <tablerow>2</tablerow>
@@ -3120,14 +3115,14 @@ Teleport R (You may cast this card for its teleport cost while you’re looking 
     </card>
     <card>
         <name>Wanted Speedster</name>
-        <text>Whenever Wanted Speedster attacks, gain control of target creature defending player controls until end of turn. Tap that creature. It is now attacking the defending player.</text>
+        <text>Whenever Wanted Speedster attacks, you may sacrifice it. When you do, gain control of target creature defending player controls until end of turn. Tap that creature. It is now attacking the defending player.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
             <type>Creature — Mercenary Saboteur </type>
             <maintype>Creature</maintype>
-            <manacost>3R</manacost>
-            <cmc>4</cmc>
+            <manacost>1R</manacost>
+            <cmc>2</cmc>
             <colors>R</colors>
             <coloridentity>R</coloridentity>
             <pt>2/1</pt>
@@ -3155,18 +3150,17 @@ Teleport R (You may cast this card for its teleport cost while you’re looking 
     </card>
     <card>
         <name>Wild Game Huntmaster</name>
-        <text>Whenever a creature you control becomes the target of a spell, you may pay 1.
-When you do, Wild Game Huntmaster deals 2 damage to any target.</text>
+        <text>Whenever a creature you control becomes the target of a spell, you may pay 1. When you do, Wild Game Huntmaster deals 2 damage to any target.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
             <type>Creature — Nomad </type>
             <maintype>Creature</maintype>
-            <manacost>3R</manacost>
-            <cmc>4</cmc>
+            <manacost>2R</manacost>
+            <cmc>3</cmc>
             <colors>R</colors>
             <coloridentity>R</coloridentity>
-            <pt>3/3</pt>
+            <pt>3/2</pt>
         </prop>
         <set rarity="uncommon" picurl="https://kenneth-siu.github.io/space-the-convergence-images/Wild%20Game%20Huntmaster.jpg">T2170</set>
         <tablerow>2</tablerow>
@@ -3250,11 +3244,11 @@ Whenever a creature you control becomes the target of a spell, you may pay 1. Wh
             <side>front</side>
             <type>Creature — Nomad </type>
             <maintype>Creature</maintype>
-            <manacost>2G</manacost>
-            <cmc>3</cmc>
+            <manacost>1G</manacost>
+            <cmc>2</cmc>
             <colors>G</colors>
             <coloridentity>G</coloridentity>
-            <pt>3/2</pt>
+            <pt>2/2</pt>
         </prop>
         <set rarity="common" picurl="https://kenneth-siu.github.io/space-the-convergence-images/Al%20Maham%20Traders.jpg">T2170</set>
         <tablerow>2</tablerow>
@@ -3302,11 +3296,11 @@ Reconstitute</text>
             <side>front</side>
             <type>Artifact Creature — Mech Mutant </type>
             <maintype>Artifact Creature</maintype>
-            <manacost>4G</manacost>
-            <cmc>5</cmc>
+            <manacost>3G</manacost>
+            <cmc>4</cmc>
             <colors>G</colors>
             <coloridentity>G</coloridentity>
-            <pt>4/4</pt>
+            <pt>3/3</pt>
         </prop>
         <set rarity="uncommon" picurl="https://kenneth-siu.github.io/space-the-convergence-images/Basirah%20Composite.jpg">T2170</set>
         <related count="2">Kushak Scion</related>
@@ -3511,11 +3505,11 @@ Enchanted creature gets +6/+6, has reach, and is a Mutant in addition to its oth
             <side>front</side>
             <type>Creature — Fish Hippo Mutant </type>
             <maintype>Creature</maintype>
-            <manacost>3G</manacost>
-            <cmc>4</cmc>
+            <manacost>2G</manacost>
+            <cmc>3</cmc>
             <colors>G</colors>
             <coloridentity>G</coloridentity>
-            <pt>3/2</pt>
+            <pt>2/1</pt>
         </prop>
         <set rarity="common" picurl="https://kenneth-siu.github.io/space-the-convergence-images/Hunted%20Coadjulate.jpg">T2170</set>
         <related>Mech</related>
@@ -3566,11 +3560,11 @@ Whenever The Kishar enters the battlefield or attacks, create three 1/1 green Ku
             <side>front</side>
             <type>Creature — Kushak Propagator </type>
             <maintype>Creature</maintype>
-            <manacost>3G</manacost>
-            <cmc>4</cmc>
+            <manacost>2G</manacost>
+            <cmc>3</cmc>
             <colors>G</colors>
             <coloridentity>G</coloridentity>
-            <pt>3/3</pt>
+            <pt>2/2</pt>
         </prop>
         <set rarity="uncommon" picurl="https://kenneth-siu.github.io/space-the-convergence-images/Kushak%20Brood%20Warden.jpg">T2170</set>
         <related count="2">Kushak Scion</related>
@@ -3988,8 +3982,8 @@ Whenever another permanent you control leaves the battlefield, put a +1/+1 count
             <side>front</side>
             <type>Artifact Creature — Police Mech </type>
             <maintype>Artifact Creature</maintype>
-            <manacost>1WU</manacost>
-            <cmc>3</cmc>
+            <manacost>WU</manacost>
+            <cmc>2</cmc>
             <colors>WU</colors>
             <coloridentity>WU</coloridentity>
             <pt>1/1</pt>
@@ -4292,11 +4286,11 @@ Teleport UR (You may cast this card for its teleport cost while you’re looking
             <side>front</side>
             <type>Artifact Creature — Fighter </type>
             <maintype>Artifact Creature</maintype>
-            <manacost>2UR</manacost>
-            <cmc>4</cmc>
+            <manacost>3UR</manacost>
+            <cmc>5</cmc>
             <colors>UR</colors>
             <coloridentity>UR</coloridentity>
-            <pt>2/4</pt>
+            <pt>2/5</pt>
         </prop>
         <set rarity="uncommon" picurl="https://kenneth-siu.github.io/space-the-convergence-images/Neutron%20Evader.jpg">T2170</set>
         <tablerow>2</tablerow>
@@ -4421,11 +4415,11 @@ Flying
             <side>front</side>
             <type>Creature — Squid Mutant </type>
             <maintype>Creature</maintype>
-            <manacost>1GU</manacost>
-            <cmc>3</cmc>
+            <manacost>3GU</manacost>
+            <cmc>5</cmc>
             <colors>GU</colors>
             <coloridentity>GU</coloridentity>
-            <pt>2/2</pt>
+            <pt>3/4</pt>
         </prop>
         <set rarity="uncommon" picurl="https://kenneth-siu.github.io/space-the-convergence-images/Troposphere%20Drifter.jpg">T2170</set>
         <tablerow>2</tablerow>
