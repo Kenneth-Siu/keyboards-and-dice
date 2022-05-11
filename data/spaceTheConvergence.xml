@@ -1099,7 +1099,7 @@ Enchanted permanent doesn’t untap during its controller’s untap step and its
         <name>The Chronos</name>
         <text>Flash
 Flying
-Whenever The Chronos enters the battlefield or attacks, take an extra turn after this one. Creatures you control can’t attack that turn.</text>
+Whenever The Chronos enters the battlefield or attacks, you may shuffle your hand and graveyard into your library. If you do, draw four cards.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -1804,8 +1804,8 @@ Creatures you control can’t attack unless exactly two creatures attack.</text>
     </card>
     <card>
         <name>Boardroom Keeper</name>
-        <text>Infiltrate (Whenever this creature attacks with exactly one other creature, it can’t be blocked this turn.)
-Lifelink</text>
+        <text>Lifelink
+Infiltrate (Whenever this creature attacks with exactly one other creature, it can’t be blocked this turn.)</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -1998,7 +1998,7 @@ Nonartifact creatures with the chosen name get -6/-6.</text>
     </card>
     <card>
         <name>Gambling Ring</name>
-        <text>At the beginning your end step, if you lost life this turn, you may pay 1. If you do, create a 1/1 colorless Mech artifact creature token and draw a card.</text>
+        <text>Whenever you lose life during your turn, you may pay 1. If you do, create a 1/1 colorless Mech artifact creature token and draw a card. This ability triggers only once each turn.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -2766,7 +2766,7 @@ Equip 1</text>
     <card>
         <name>Hyperadrenaline</name>
         <text>Choose one —
-• Target attacking creature gets +2/+2 until end of turn.
+• Target attacking creature gets +2/+2 and gains trample until end of turn.
 • Scry 2.</text>
         <prop>
             <layout>normal</layout>
@@ -3065,7 +3065,7 @@ Teleport R (You may cast this card for its teleport cost while you’re looking 
     </card>
     <card>
         <name>Titan’s Strength</name>
-        <text>Target creature gets +3/+1 and gains trample until end of turn. Scry 1.</text>
+        <text>Target creature gets +3/+1 until end of turn. Scry 1.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -4481,8 +4481,8 @@ Sacrifice Faraday Transmitter: Return target artifact to its owner’s hand.</te
             <side>front</side>
             <type>Artifact</type>
             <maintype>Artifact</maintype>
-            <manacost>3</manacost>
-            <cmc>3</cmc>
+            <manacost>2</manacost>
+            <cmc>2</cmc>
         </prop>
         <set rarity="rare" picurl="https://kenneth-siu.github.io/space-the-convergence-images/Faraday%20Transmitter.jpg">T2170</set>
         <tablerow>1</tablerow>
@@ -4572,7 +4572,7 @@ Remove two charge counters from Gravitic Collector: Target creature gains flying
         <name>Hoverbike</name>
         <text>Equipped creature gets +1/+0 and has haste.
 Equip 1
-Teleport 2 (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)</text>
+Teleport 1 (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -4693,7 +4693,7 @@ You may reveal Mutagenic Serum from your opening hand. If you do and you have fe
         <name>Subspace Capacitor</name>
         <text>1: Put a charge counter on Subspace Capacitor.
 Remove a charge counter from Subspace Capacitor: Add one mana of any color. Spend this mana only to cast spells from your library.
-Whenever you cast a spell from your library, if there are five or more charge counters on Subspace Capacitor, you may copy that spell. You may choose new targets for the copy. (A copy of a permanent spell becomes a token.)</text>
+Whenever you cast a spell from your library, if there are three or more charge counters on Subspace Capacitor, you may copy that spell. You may choose new targets for the copy. (A copy of a permanent spell becomes a token.)</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>

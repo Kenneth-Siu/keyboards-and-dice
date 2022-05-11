@@ -1699,7 +1699,7 @@ art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5b178c88-b
         "notes": {
 grade: "C",
 colorIdentity: "B",
-cc_rules_font_shrink: "13",
+cc_rules_font_shrink: "12",
 art_source:"https://cdna.artstation.com/p/assets/images/images/000/162/320/large/jan-clayman-sabotuer.jpg?1407705250"
         }
     },
@@ -1871,6 +1871,7 @@ art_source:"https://i.imgur.com/iXNkbOp.jpg"
         "notes": {
 grade: "B",
 colorIdentity: "B",
+cc_rules_font_shrink: "11",
 cockatrice_related: "Mech",
 art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/06529978-05ab-4cb2-8ea3-dc97b9163a96/d87ewro-df94a62e-197e-48f0-9c87-9657cc29d1a9.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA2NTI5OTc4LTA1YWItNGNiMi04ZWEzLWRjOTdiOTE2M2E5NlwvZDg3ZXdyby1kZjk0YTYyZS0xOTdlLTQ4ZjAtOWM4Ny05NjU3Y2MyOWQxYTkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.VTf1kquUYZ4OoOydC9TTslKbOym8A1RXWW73WCepamo"
         }
@@ -2561,6 +2562,7 @@ art_source:"https://i.imgur.com/UdB2NYN.jpg"
         "notes": {
 grade: "C",
 colorIdentity: "R",
+cc_rules_font_shrink: "2",
 art_source:"https://i.imgur.com/g25ueSM.jpg"
         }
     },
@@ -4076,8 +4078,8 @@ art_source:"https://i.imgur.com/poDXMsL.jpg"
     {
         "name": "Faraday Transmitter",
         "imageName": _241,
-        "cost": "3",
-        "manaValue": 3,
+        "cost": "2",
+        "manaValue": 2,
         "color": "",
         "type": "Artifact",
         "cardId": 241,
@@ -4179,7 +4181,7 @@ art_source:"https://i.imgur.com/y1MzRPn.jpg"
         "cardId": 247,
         "rarity": "C",
         "notes": {
-grade: "C-",
+grade: "C",
 colorIdentity: "",
 cc_rules_font_shrink: "8",
 art_source:"https://i.imgur.com/EPI5qUB.jpg"
