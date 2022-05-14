@@ -2343,8 +2343,8 @@ Whenever The Tartarus enters the battlefield or attacks, you may put target crea
     </card>
     <card>
         <name>Tundra Strider</name>
-        <text>Infiltrate (Whenever this creature attacks with exactly one other creature, it can’t be blocked this turn.)
-Lifelink
+        <text>Lifelink
+Infiltrate (Whenever this creature attacks with exactly one other creature, it can’t be blocked this turn.)
 Teleport 2BB (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)</text>
         <prop>
             <layout>normal</layout>
