@@ -2502,7 +2502,8 @@ At end of combat, if Adopted Wanderer attacked or blocked this turn, sacrifice a
     </card>
     <card>
         <name>Al Maham Protector</name>
-        <text>Whenever a creature you control becomes the target of a spell, you may pay 1. When you do, Al Maham Protector deals 2 damage to each opponent.</text>
+        <text>Reach
+Whenever a creature you control becomes the target of a spell, you may pay 1. When you do, Al Maham Protector deals 2 damage to each opponent.</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
@@ -2641,15 +2642,15 @@ At end of combat, if Adopted Wanderer attacked or blocked this turn, sacrifice a
     </card>
     <card>
         <name>Electric Arc</name>
-        <text>Electric Arc deals 3 damage divided as you choose among any number of targets.
-Teleport 2R (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)</text>
+        <text>Electric Arc deals 3 damage divided as you choose among one, two, or three targets.
+Teleport 1R (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)</text>
         <prop>
             <layout>normal</layout>
             <side>front</side>
             <type>Sorcery</type>
             <maintype>Sorcery</maintype>
-            <manacost>2RR</manacost>
-            <cmc>4</cmc>
+            <manacost>1RR</manacost>
+            <cmc>3</cmc>
             <colors>R</colors>
             <coloridentity>R</coloridentity>
         </prop>
@@ -2704,7 +2705,7 @@ Sacrifice four artifacts: Flagship Warapur deals 4 damage to any target.</text>
             <cmc>2</cmc>
             <colors>R</colors>
             <coloridentity>R</coloridentity>
-            <pt>1/1</pt>
+            <pt>2/1</pt>
         </prop>
         <set rarity="uncommon" picurl="https://kenneth-siu.github.io/space-the-convergence-images/Fugitive%20Investigator.jpg">T2170</set>
         <tablerow>2</tablerow>
@@ -3378,6 +3379,7 @@ At the beginning of your end step, if you didn’t cast a spell this turn, put a
     <card>
         <name>Ecosystem Collapse</name>
         <text>Choose one or more —
+• Destroy target noncreature permanent.
 • Destroy target artifact.
 • Destroy target enchantment.
 • Destroy target land.
@@ -3607,7 +3609,7 @@ Reconstitute (When this creature dies, reveal cards from the top of your library
     </card>
     <card>
         <name>Kushak Subject Prime</name>
-        <text>Reach
+        <text>Reach, ward 2
 Other Kushak and Mutant creatures you control get +1/+1.
 3G: Create a 1/1 green Kushak Scion creature token. It has “Sacrifice this creature: Add C.”</text>
         <prop>
@@ -3619,7 +3621,7 @@ Other Kushak and Mutant creatures you control get +1/+1.
             <cmc>7</cmc>
             <colors>G</colors>
             <coloridentity>G</coloridentity>
-            <pt>6/6</pt>
+            <pt>7/7</pt>
         </prop>
         <set rarity="uncommon" picurl="https://kenneth-siu.github.io/space-the-convergence-images/Kushak%20Subject%20Prime.jpg">T2170</set>
         <related>Kushak Scion</related>
@@ -3672,7 +3674,7 @@ Reconstitute (When this creature dies, reveal cards from the top of your library
             <cmc>5</cmc>
             <colors>G</colors>
             <coloridentity>G</coloridentity>
-            <pt>4/3</pt>
+            <pt>5/4</pt>
         </prop>
         <set rarity="uncommon" picurl="https://kenneth-siu.github.io/space-the-convergence-images/Myth%20of%20Baljurashi.jpg">T2170</set>
         <tablerow>2</tablerow>

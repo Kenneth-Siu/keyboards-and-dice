@@ -297,7 +297,7 @@ art_source: "https://64.media.tumblr.com/863c94a0978c94ce6b056797f00ed54d/tumblr
         "cardId": 1,
         "rarity": "C",
         "notes": {
-grade: "C",
+grade: "C-",
 colorIdentity: "W",
 cockatrice_related: "Equipment",
 art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5bac884a-bdf3-4785-a07b-eab3acf29a62/dfjtaw-c75f0e49-92f5-40b2-b1cf-f2465742b03b.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzViYWM4ODRhLWJkZjMtNDc4NS1hMDdiLWVhYjNhY2YyOWE2MlwvZGZqdGF3LWM3NWYwZTQ5LTkyZjUtNDBiMi1iMWNmLWYyNDY1NzQyYjAzYi5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.3Lb7b-Xc0_x5IJzTgvhonEOss5mFSDqOmhcZbX3Nya0"
@@ -328,7 +328,7 @@ art_source:"https://cdnb.artstation.com/p/assets/images/images/005/491/141/large
         "cardId": 3,
         "rarity": "C",
         "notes": {
-grade: "C-",
+grade: "C",
 colorIdentity: "W",
 art_source:"https://i.imgur.com/McFgYA9.jpg"
         }
@@ -343,7 +343,7 @@ art_source:"https://i.imgur.com/McFgYA9.jpg"
         "cardId": 4,
         "rarity": "C",
         "notes": {
-grade: "C+",
+grade: "C",
 colorIdentity: "W",
 art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9c2182b1-ccb7-4d8b-8e5e-b87e71ecce8a/d96fdfs-7dd94fc4-df6c-4c54-b152-5c8245f7c03f.jpg/v1/fill/w_1024,h_722,q_75,strp/corporate_shadows__protest_by_carlholden_d96fdfs-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIyIiwicGF0aCI6IlwvZlwvOWMyMTgyYjEtY2NiNy00ZDhiLThlNWUtYjg3ZTcxZWNjZThhXC9kOTZmZGZzLTdkZDk0ZmM0LWRmNmMtNGM1NC1iMTUyLTVjODI0NWY3YzAzZi5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.FS_Cy5p6yT-rk1ENXZk2soZ--dLleJeJz17XSEuFeQM"
         }
@@ -422,7 +422,7 @@ art_source:"https://cdnb.artstation.com/p/assets/images/images/000/306/087/large
         "cardId": 9,
         "rarity": "U",
         "notes": {
-grade: "B-",
+grade: "B",
 colorIdentity: "W",
 cc_rules_font_shrink: "4",
 art_source:"https://i.imgur.com/3rhAGX4.jpg"
@@ -453,7 +453,7 @@ art_source:"https://i.imgur.com/WpoZpTM.jpg"
         "cardId": 11,
         "rarity": "C",
         "notes": {
-grade: "C+",
+grade: "B-",
 colorIdentity: "W",
 cockatrice_related: "Soldier",
 cockatrice_related_count: "2",
@@ -550,7 +550,7 @@ art_source:"https://i.imgur.com/nObLazQ.jpg"
         "cardId": 17,
         "rarity": "M",
         "notes": {
-grade: "B+",
+grade: "B",
 colorIdentity: "W",
 cockatrice_related: "Equipment",
 cockatrice_related_count: "x",
@@ -568,7 +568,7 @@ art_source:"https://i.imgur.com/boh4UMZ.jpg"
         "cardId": 18,
         "rarity": "R",
         "notes": {
-grade: "B",
+grade: "C+",
 colorIdentity: "W",
 cc_rules_font_shrink: "8",
 art_source:"https://i.imgur.com/AIMZXdW.jpg"
@@ -584,7 +584,7 @@ art_source:"https://i.imgur.com/AIMZXdW.jpg"
         "cardId": 19,
         "rarity": "C",
         "notes": {
-grade: "D+",
+grade: "C-",
 colorIdentity: "W",
 art_source:"https://i.imgur.com/4EeqVni.jpg"
         }
@@ -629,7 +629,7 @@ art_source:"https://cdna.artstation.com/p/assets/images/images/005/925/120/large
         "cardId": 22,
         "rarity": "C",
         "notes": {
-grade: "C+",
+grade: "C",
 colorIdentity: "W",
 art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/175361c3-62f5-4727-8a23-aa57af282b0c/dbueqpc-e9ebb3ed-8346-4b6c-94a4-245ccf2bc883.png/v1/fill/w_800,h_1200,q_80,strp/dragon_dreams_ii_by_tjota_dbueqpc-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTIwMCIsInBhdGgiOiJcL2ZcLzE3NTM2MWMzLTYyZjUtNDcyNy04YTIzLWFhNTdhZjI4MmIwY1wvZGJ1ZXFwYy1lOWViYjNlZC04MzQ2LTRiNmMtOTRhNC0yNDVjY2YyYmM4ODMucG5nIiwid2lkdGgiOiI8PTgwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.nFTEOcoSIUvrHWfaUBQDGpmPdRbHPD_9ZCQ-k27y2pQ"
         }
@@ -659,7 +659,7 @@ art_source:"https://i.imgur.com/Al2ctnu.jpg"
         "cardId": 24,
         "rarity": "R",
         "notes": {
-grade: "B+",
+grade: "B",
 colorIdentity: "W",
 art_source:"https://i.imgur.com/DvuwwCV.jpg"
         }
@@ -893,7 +893,7 @@ art_source:"https://i.imgur.com/H1KXyij.jpg"
         "cardId": 39,
         "rarity": "U",
         "notes": {
-grade: "C",
+grade: "C+",
 colorIdentity: "W",
 cc_rules_font_shrink: "3",
 art_source:"https://i.imgur.com/IvZIpDl.jpg"
@@ -909,7 +909,7 @@ art_source:"https://i.imgur.com/IvZIpDl.jpg"
         "cardId": 40,
         "rarity": "C",
         "notes": {
-grade: "C",
+grade: "C-",
 colorIdentity: "W",
 art_source:"https://i.imgur.com/93Cgycm.jpg"
         }
@@ -924,7 +924,7 @@ art_source:"https://i.imgur.com/93Cgycm.jpg"
         "cardId": 41,
         "rarity": "U",
         "notes": {
-grade: "C",
+grade: "C+",
 colorIdentity: "W",
 cockatrice_related: "Soldier",
 cockatrice_related_count: "2",
@@ -957,7 +957,7 @@ art_source:"https://i.imgur.com/3NwNf8W.jpg"
         "cardId": 43,
         "rarity": "R",
         "notes": {
-grade: "B+",
+grade: "B",
 colorIdentity: "W",
 cockatrice_related: "Soldier",
 cockatrice_related_count: "x",
@@ -1037,7 +1037,7 @@ art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05e24af2-5
         "cardId": 48,
         "rarity": "C",
         "notes": {
-grade: "B-",
+grade: "C+",
 colorIdentity: "U",
 cc_rules_font_shrink: "9",
 art_source:"https://i.imgur.com/kdL2v9p.png"
@@ -1068,7 +1068,7 @@ art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7d2f37a1-6
         "cardId": 50,
         "rarity": "M",
         "notes": {
-grade: "B+",
+grade: "B",
 colorIdentity: "U",
 cc_type_font_shrink: "7",
 cc_rules_font_shrink: "9",
@@ -1101,7 +1101,7 @@ art_source:"https://i.imgur.com/S4w9vKg.jpg"
         "cardId": 52,
         "rarity": "R",
         "notes": {
-grade: "B+",
+grade: "B",
 colorIdentity: "U",
 cc_rules_font_shrink: "11",
 art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/502f1cd9-311c-4e16-89e4-376ac9180a9a/d82kzzn-7fc63e58-fe02-4c2d-8d69-dd460692b92c.jpg/v1/fill/w_900,h_590,q_75,strp/cyberfunk_haka__by_hybridgothica_d82kzzn-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTkwIiwicGF0aCI6IlwvZlwvNTAyZjFjZDktMzExYy00ZTE2LTg5ZTQtMzc2YWM5MTgwYTlhXC9kODJrenpuLTdmYzYzZTU4LWZlMDItNGMyZC04ZDY5LWRkNDYwNjkyYjkyYy5qcGciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.e3-S890cEc5i6tiHJl1H9dNJyhhx4slFg_5lVY4zaOA"
@@ -1135,7 +1135,7 @@ art_source:"https://i.imgur.com/mHGwr5E.jpg"
         "cardId": 54,
         "rarity": "U",
         "notes": {
-grade: "B",
+grade: "B-",
 colorIdentity: "U",
 art_source:"https://i.imgur.com/uGXL1vt.jpg"
         }
@@ -1355,7 +1355,7 @@ art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/434ffbeb-1
         "cardId": 68,
         "rarity": "R",
         "notes": {
-grade: "A-",
+grade: "B-",
 colorIdentity: "U",
 art_source:"https://i.imgur.com/fBLaUdR.jpg"
         }
@@ -1434,7 +1434,7 @@ art_source:"https://cdna.artstation.com/p/assets/images/images/000/192/812/large
         "cardId": 73,
         "rarity": "U",
         "notes": {
-grade: "B-",
+grade: "C",
 colorIdentity: "U",
 cc_rules_font_shrink: "4",
 art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/502f1cd9-311c-4e16-89e4-376ac9180a9a/d8umdhs-865a7359-4a26-4023-9a1f-077a6170b676.jpg/v1/fill/w_800,h_962,q_75,strp/prime_pearlus__by_hybridgothica_d8umdhs-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTYyIiwicGF0aCI6IlwvZlwvNTAyZjFjZDktMzExYy00ZTE2LTg5ZTQtMzc2YWM5MTgwYTlhXC9kOHVtZGhzLTg2NWE3MzU5LTRhMjYtNDAyMy05YTFmLTA3N2E2MTcwYjY3Ni5qcGciLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.VjOMxAWuVQukqk8mjWNLHQb6EbfkXivCVrqXZqeddow"
@@ -1465,7 +1465,7 @@ art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/821376fc-4
         "cardId": 75,
         "rarity": "U",
         "notes": {
-grade: "B",
+grade: "B-",
 colorIdentity: "U",
 art_source:"https://i.imgur.com/lcLzTkE.jpg"
         }
@@ -1496,7 +1496,7 @@ art_source:"https://i.imgur.com/e1unCEK.jpg"
         "cardId": 77,
         "rarity": "U",
         "notes": {
-grade: "B",
+grade: "B-",
 colorIdentity: "U",
 art_source:"https://i.imgur.com/IQZ0osV.jpg"
         }
@@ -1526,7 +1526,7 @@ art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b1f96af6-5
         "cardId": 79,
         "rarity": "U",
         "notes": {
-grade: "B-",
+grade: "C",
 colorIdentity: "U",
 art_source:"https://i.imgur.com/coImwEJ.jpg"
         }
@@ -1571,7 +1571,7 @@ art_source:"https://i.imgur.com/MMDbAzU.jpg"
         "cardId": 82,
         "rarity": "R",
         "notes": {
-grade: "B-",
+grade: "B",
 colorIdentity: "U",
 art_source:"https://i.imgur.com/YwYfswt.jpg"
         }
@@ -1586,7 +1586,7 @@ art_source:"https://i.imgur.com/YwYfswt.jpg"
         "cardId": 83,
         "rarity": "R",
         "notes": {
-grade: "D-",
+grade: "D",
 colorIdentity: "U",
 cc_rules_font_shrink: "8",
 art_source:"https://i.imgur.com/du11emc.jpg"
@@ -1618,7 +1618,7 @@ art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b1f96af6-5
         "cardId": 85,
         "rarity": "C",
         "notes": {
-grade: "C+",
+grade: "C",
 colorIdentity: "U",
 art_source:"https://i.imgur.com/y1xCCHu.jpg"
         }
@@ -1633,7 +1633,7 @@ art_source:"https://i.imgur.com/y1xCCHu.jpg"
         "cardId": 86,
         "rarity": "C",
         "notes": {
-grade: "C-",
+grade: "C",
 colorIdentity: "B",
 cc_rules_font_shrink: "4",
 art_source:"https://i.imgur.com/Z1n8uvl.jpg"
@@ -1665,7 +1665,7 @@ art_source:"https://cdna.artstation.com/p/assets/images/images/004/117/172/large
         "cardId": 88,
         "rarity": "U",
         "notes": {
-grade: "B-",
+grade: "B",
 colorIdentity: "B",
 cockatrice_related: "Mech",
 cc_rules_font_shrink: "9",
@@ -1713,7 +1713,7 @@ art_source:"https://cdna.artstation.com/p/assets/images/images/000/162/320/large
         "cardId": 91,
         "rarity": "C",
         "notes": {
-grade: "D",
+grade: "C-",
 colorIdentity: "B",
 cockatrice_related: "Mech",
 art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/88ecb9ac-5d37-4bfa-ae57-0f41196c5eb4/db10vrn-8bbc864d-6717-47b6-8f78-7ac4cc964b01.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg4ZWNiOWFjLTVkMzctNGJmYS1hZTU3LTBmNDExOTZjNWViNFwvZGIxMHZybi04YmJjODY0ZC02NzE3LTQ3YjYtOGY3OC03YWM0Y2M5NjRiMDEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.8gdqVnzFHqWzQaoXfJC6JktQzVNJtyu6mFWEhS4SZms"
@@ -1745,7 +1745,7 @@ art_source:"https://i.imgur.com/JEV7fdu.jpg"
         "cardId": 93,
         "rarity": "C",
         "notes": {
-grade: "C",
+grade: "C+",
 colorIdentity: "B",
 cockatrice_related: "Mech",
 art_source:"https://i.imgur.com/7YSBo9X.jpg"
@@ -1777,7 +1777,7 @@ art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b1f96af6-5
         "cardId": 95,
         "rarity": "R",
         "notes": {
-grade: "C+",
+grade: "C",
 colorIdentity: "B",
 cc_rules_font_shrink: "20",
 art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cbfc9e55-f453-4c12-83b8-e99189a97def/d68sb1f-fa6a2289-e1b7-4843-9940-9a0908a36964.jpg/v1/fill/w_1024,h_1366,q_75,strp/rifleman__advanced_by_concept_art_house_d68sb1f-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTM2NiIsInBhdGgiOiJcL2ZcL2NiZmM5ZTU1LWY0NTMtNGMxMi04M2I4LWU5OTE4OWE5N2RlZlwvZDY4c2IxZi1mYTZhMjI4OS1lMWI3LTQ4NDMtOTk0MC05YTA5MDhhMzY5NjQuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.YJOWFKLKXJxPOswbk_qFMjduPp9QBQXqxrcaS27XBGM"
@@ -1901,7 +1901,7 @@ art_source:"https://i.imgur.com/HVc6Z2v.jpg"
         "cardId": 103,
         "rarity": "C",
         "notes": {
-grade: "C-",
+grade: "C",
 colorIdentity: "B",
 cockatrice_related: "Mech",
 art_source:"https://i.imgur.com/RRUiJcq.jpg"
@@ -2027,7 +2027,7 @@ art_source:"https://i.imgur.com/CPo3xA0.jpg"
         "cardId": 111,
         "rarity": "R",
         "notes": {
-grade: "B-",
+grade: "C+",
 colorIdentity: "B",
 art_source:"https://i.imgur.com/pYxCz49.jpg"
         }
@@ -2057,7 +2057,7 @@ art_source:"https://i.imgur.com/KpiNwxn.jpg"
         "cardId": 113,
         "rarity": "C",
         "notes": {
-grade: "C",
+grade: "C-",
 colorIdentity: "B",
 art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5bac884a-bdf3-4785-a07b-eab3acf29a62/d1eidev-d9f5bab3-b70d-4972-9203-2214fe2aca19.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzViYWM4ODRhLWJkZjMtNDc4NS1hMDdiLWVhYjNhY2YyOWE2MlwvZDFlaWRldi1kOWY1YmFiMy1iNzBkLTQ5NzItOTIwMy0yMjE0ZmUyYWNhMTkuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.mEKPxrT6iFMwd725oBzH6bxwW3-Ry4OAw71iPnIFhXg"
         }
@@ -2165,7 +2165,7 @@ art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e8ebaafa-c
         "cardId": 120,
         "rarity": "M",
         "notes": {
-grade: "B+",
+grade: "B",
 colorIdentity: "B",
 cc_type_font_shrink: "7",
 art_source:"https://i.imgur.com/OrjIwjF.jpg"
@@ -2244,7 +2244,7 @@ art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b1f96af6-5
         "cardId": 125,
         "rarity": "R",
         "notes": {
-grade: "B+",
+grade: "B-",
 colorIdentity: "B",
 cc_rules_font_shrink: "8",
 art_source:"https://i.imgur.com/yQsDkQK.jpg"
@@ -2321,7 +2321,7 @@ art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/06529978-0
         "cardId": 130,
         "rarity": "C",
         "notes": {
-grade: "C",
+grade: "C-",
 colorIdentity: "R",
 cc_rules_font_shrink: "9",
 art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b1f96af6-56a3-47a8-b7f4-406f243af3a3/d2l1la0-086c029c-0e2c-4018-a4f1-16a4a217b9de.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2IxZjk2YWY2LTU2YTMtNDdhOC1iN2Y0LTQwNmYyNDNhZjNhM1wvZDJsMWxhMC0wODZjMDI5Yy0wZTJjLTQwMTgtYTRmMS0xNmE0YTIxN2I5ZGUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Z1qpSbpLDD7J-IwCbfLu-7UQgDcz_j_j842o68Xn2xQ"
@@ -2353,7 +2353,7 @@ art_source:"https://cdnb.artstation.com/p/assets/images/images/000/332/073/large
         "cardId": 132,
         "rarity": "R",
         "notes": {
-grade: "A-",
+grade: "B+",
 colorIdentity: "R",
 cockatrice_related: "Equipment",
 cockatrice_related_count: "x",
@@ -2370,7 +2370,7 @@ art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8ab8d401-2
         "cardId": 133,
         "rarity": "U",
         "notes": {
-grade: "B",
+grade: "B-",
 colorIdentity: "R",
 art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/82405b19-8efd-490a-888b-26f2ac240a2e/d5x40v0-826646c5-3e69-433c-8816-ed47e46ddfea.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzgyNDA1YjE5LThlZmQtNDkwYS04ODhiLTI2ZjJhYzI0MGEyZVwvZDV4NDB2MC04MjY2NDZjNS0zZTY5LTQzM2MtODgxNi1lZDQ3ZTQ2ZGRmZWEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Ys6pk8i2Gr9Ob6FYC3o57Uz8d0SwT2WddSSb2JF05XE"
         }
@@ -2385,7 +2385,7 @@ art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/82405b19-8
         "cardId": 134,
         "rarity": "U",
         "notes": {
-grade: "B",
+grade: "B-",
 colorIdentity: "R",
 cc_rules_font_shrink: "2",
 art_source:"https://i.imgur.com/lIC6Mnw.jpg"
@@ -2401,7 +2401,7 @@ art_source:"https://i.imgur.com/lIC6Mnw.jpg"
         "cardId": 135,
         "rarity": "R",
         "notes": {
-grade: "B",
+grade: "C+",
 colorIdentity: "R",
 art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b1f96af6-56a3-47a8-b7f4-406f243af3a3/dy5pg0-01b3eb57-c6b2-4eef-bd04-17b52fb9435a.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2IxZjk2YWY2LTU2YTMtNDdhOC1iN2Y0LTQwNmYyNDNhZjNhM1wvZHk1cGcwLTAxYjNlYjU3LWM2YjItNGVlZi1iZDA0LTE3YjUyZmI5NDM1YS5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.WgRIw0_6u-8lqw-hVAM4NFe78aLwOgww7MSPXWFfbxI"
         }
@@ -2431,7 +2431,7 @@ art_source:"https://i.imgur.com/LC2bTJC.jpg"
         "cardId": 137,
         "rarity": "C",
         "notes": {
-grade: "C+",
+grade: "B-",
 colorIdentity: "R",
 art_source:"https://i.imgur.com/gmTJ8W3.jpg"
         }
@@ -2439,14 +2439,14 @@ art_source:"https://i.imgur.com/gmTJ8W3.jpg"
     {
         "name": "Electric Arc",
         "imageName": _138,
-        "cost": "2RR",
-        "manaValue": 4,
+        "cost": "1RR",
+        "manaValue": 3,
         "color": "R",
         "type": "Sorcery",
         "cardId": 138,
         "rarity": "U",
         "notes": {
-grade: "B-",
+grade: "B",
 colorIdentity: "R",
 art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/50ab2386-0310-4c7c-b297-2a935a79768d/d8gpbve-695277a6-ab5e-4641-87ce-3fbcba56ccec.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzUwYWIyMzg2LTAzMTAtNGM3Yy1iMjk3LTJhOTM1YTc5NzY4ZFwvZDhncGJ2ZS02OTUyNzdhNi1hYjVlLTQ2NDEtODdjZS0zZmJjYmE1NmNjZWMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.3l2jMrPUrF5BTj6RrM0FamBKdTB5bqigHuGr1-9seHs"
         }
@@ -2461,7 +2461,7 @@ art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/50ab2386-0
         "cardId": 139,
         "rarity": "M",
         "notes": {
-grade: "B+",
+grade: "B",
 colorIdentity: "R",
 cc_rules_font_shrink: "10",
 art_source:"https://i.imgur.com/1m9TY6a.jpg"
@@ -2477,7 +2477,7 @@ art_source:"https://i.imgur.com/1m9TY6a.jpg"
         "cardId": 140,
         "rarity": "R",
         "notes": {
-grade: "A-",
+grade: "B+",
 colorIdentity: "R",
 cockatrice_related: "Mech",
 cc_rules_font_shrink: "9",
@@ -2495,7 +2495,7 @@ art_source:"https://i.imgur.com/DBtdI2I.jpg"
         "cardId": 141,
         "rarity": "U",
         "notes": {
-grade: "B",
+grade: "B-",
 colorIdentity: "R",
 cc_rules_font_shrink: "3",
 art_source: "https://cdnb.artstation.com/p/assets/images/images/004/619/421/large/lorenz-hideyoshi-ruwwe-market-final-s.jpg?1485034417"
@@ -2608,7 +2608,7 @@ art_source:"https://i.imgur.com/Gcvs6v2.jpg"
         "cardId": 148,
         "rarity": "M",
         "notes": {
-grade: "B+",
+grade: "B",
 colorIdentity: "R",
 cc_type_font_shrink: "7",
 art_source:"https://i.imgur.com/OPWw1iI.jpg"
@@ -2655,7 +2655,7 @@ art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9220d93a-7
         "cardId": 151,
         "rarity": "R",
         "notes": {
-grade: "B-",
+grade: "B",
 colorIdentity: "R",
 art_source:"https://cdna.artstation.com/p/assets/images/images/001/570/778/large/richard-sashigane-here-we-go-again2-small2.jpg?1448774027"
         }
@@ -2685,7 +2685,7 @@ art_source:"https://i.imgur.com/D47fbNP.jpg"
         "cardId": 153,
         "rarity": "C",
         "notes": {
-grade: "C+",
+grade: "C",
 colorIdentity: "R",
 art_source:"https://i.imgur.com/OELgikJ.png"
         }
@@ -2716,7 +2716,7 @@ art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8ab8d401-2
         "cardId": 155,
         "rarity": "R",
         "notes": {
-grade: "B-",
+grade: "B",
 colorIdentity: "R",
 cockatrice_related: "Mech",
 cockatrice_related_count: "2",
@@ -2749,7 +2749,7 @@ art_source:"https://cdnb.artstation.com/p/assets/images/images/000/192/809/large
         "cardId": 157,
         "rarity": "C",
         "notes": {
-grade: "C-",
+grade: "C",
 colorIdentity: "R",
 art_source:"https://i.imgur.com/m3vIyuU.jpg"
         }
@@ -2764,7 +2764,7 @@ art_source:"https://i.imgur.com/m3vIyuU.jpg"
         "cardId": 158,
         "rarity": "U",
         "notes": {
-grade: "B",
+grade: "B-",
 colorIdentity: "R",
 art_source:"https://i.imgur.com/4bGHTAY.jpg"
         }
@@ -2794,7 +2794,7 @@ art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b1f96af6-5
         "cardId": 160,
         "rarity": "C",
         "notes": {
-grade: "D+",
+grade: "C",
 colorIdentity: "R",
 art_source:"https://i.imgur.com/4zKnTh0.jpg"
         }
@@ -2841,7 +2841,7 @@ art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b03f99ab-3
         "cardId": 163,
         "rarity": "C",
         "notes": {
-grade: "D+",
+grade: "C-",
 colorIdentity: "R",
 art_source:"https://i.imgur.com/DUArVsQ.png"
         }
@@ -2856,7 +2856,7 @@ art_source:"https://i.imgur.com/DUArVsQ.png"
         "cardId": 164,
         "rarity": "U",
         "notes": {
-grade: "B",
+grade: "B+",
 colorIdentity: "R",
 cc_rules_font_shrink: "6",
 art_source:"https://i.imgur.com/fA7oZ1p.jpg"
@@ -2920,7 +2920,7 @@ art_source:"https://i.imgur.com/171O9V0.jpg"
         "cardId": 168,
         "rarity": "R",
         "notes": {
-grade: "B",
+grade: "C",
 colorIdentity: "R",
 cc_rules_font_shrink: "14",
 art_source:"https://i.imgur.com/6ez20rh.jpg"
@@ -2952,7 +2952,7 @@ art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c4d3f848-c
         "cardId": 170,
         "rarity": "U",
         "notes": {
-grade: "C+",
+grade: "B-",
 colorIdentity: "R",
 art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/50ab2386-0310-4c7c-b297-2a935a79768d/d7etqst-02fcf64e-b64b-449f-b2ac-caf50214dcf1.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzUwYWIyMzg2LTAzMTAtNGM3Yy1iMjk3LTJhOTM1YTc5NzY4ZFwvZDdldHFzdC0wMmZjZjY0ZS1iNjRiLTQ0OWYtYjJhYy1jYWY1MDIxNGRjZjEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.gbclewqCXQp2G5sWpsFIWZNwxrhhUcWtc6_mNyEBJv0"
         }
@@ -2984,7 +2984,7 @@ art_source:"https://i.imgur.com/R1wUw76.jpg"
         "cardId": 172,
         "rarity": "C",
         "notes": {
-grade: "C",
+grade: "C+",
 colorIdentity: "G",
 art_source:"http://2.bp.blogspot.com/-kgo22F-TP-Q/UOcIXfY3WRI/AAAAAAAAAUc/_bt58wtgX2Q/s1600/gila%2Bbangat%2B%2Bcopy%2Bcopy%2Bcopy.JPG"
         }
@@ -2999,7 +2999,7 @@ art_source:"http://2.bp.blogspot.com/-kgo22F-TP-Q/UOcIXfY3WRI/AAAAAAAAAUc/_bt58w
         "cardId": 173,
         "rarity": "R",
         "notes": {
-grade: "B",
+grade: "B-",
 colorIdentity: "G",
 art_source:"https://cdnb.artstation.com/p/assets/images/images/001/356/677/large/nagy-norbert-12167191-1123871057630926-484379281-n111.jpg?1444985833"
         }
@@ -3030,7 +3030,7 @@ art_source:"https://i.imgur.com/wsLzx4Z.jpg"
         "cardId": 175,
         "rarity": "U",
         "notes": {
-grade: "B-",
+grade: "C+",
 colorIdentity: "G",
 cockatrice_related: "Kushak Scion",
 cockatrice_related_count: "2",
@@ -3097,7 +3097,7 @@ art_source:"https://i.imgur.com/sQBbaHJ.jpg"
         "cardId": 179,
         "rarity": "U",
         "notes": {
-grade: "C+",
+grade: "C",
 colorIdentity: "G",
 cc_rules_font_shrink: "6",
 art_source:"https://i.imgur.com/uBTnP8J.jpg"
@@ -3113,8 +3113,9 @@ art_source:"https://i.imgur.com/uBTnP8J.jpg"
         "cardId": 180,
         "rarity": "U",
         "notes": {
-grade: "B-",
+grade: "B",
 colorIdentity: "G",
+cc_rules_font_shrink: "6",
 art_source:"https://i.imgur.com/4Wczc29.jpg"
         }
     },
@@ -3143,7 +3144,7 @@ art_source:"https://i.imgur.com/EovwTj9.jpg"
         "cardId": 182,
         "rarity": "U",
         "notes": {
-grade: "B-",
+grade: "C+",
 colorIdentity: "G",
 art_source:"https://i.imgur.com/3MxtE92.png"
         }
@@ -3158,7 +3159,7 @@ art_source:"https://i.imgur.com/3MxtE92.png"
         "cardId": 183,
         "rarity": "U",
         "notes": {
-grade: "B-",
+grade: "C+",
 colorIdentity: "G",
 cc_rules_font_shrink: "1",
 art_source:"https://i.imgur.com/LcE21rQ.jpg"
@@ -3293,7 +3294,7 @@ art_source:"https://i.imgur.com/7YnRfJn.jpg"
         "cardId": 191,
         "rarity": "R",
         "notes": {
-grade: "B",
+grade: "C+",
 colorIdentity: "G",
 art_source:"https://i.imgur.com/7ZikUzW.jpg"
         }
@@ -3308,7 +3309,7 @@ art_source:"https://i.imgur.com/7ZikUzW.jpg"
         "cardId": 192,
         "rarity": "R",
         "notes": {
-grade: "A-",
+grade: "B+",
 colorIdentity: "G",
 cc_type_font_shrink: "3",
 cc_rules_font_shrink: "14",
@@ -3325,7 +3326,7 @@ art_source:"https://i.imgur.com/4N8t1gX.jpg"
         "cardId": 193,
         "rarity": "U",
         "notes": {
-grade: "C+",
+grade: "B",
 colorIdentity: "G",
 cockatrice_related: "Kushak Scion",
 cc_rules_font_shrink: "2",
@@ -3388,7 +3389,7 @@ art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b1f96af6-5
         "cardId": 197,
         "rarity": "C",
         "notes": {
-grade: "C+",
+grade: "C",
 colorIdentity: "G",
 art_source:"https://i.imgur.com/ZjEglIY.jpg"
         }
@@ -3465,7 +3466,7 @@ art_source:"https://i.imgur.com/XS8xiXC.jpg"
         "cardId": 202,
         "rarity": "C",
         "notes": {
-grade: "C",
+grade: "C-",
 colorIdentity: "G",
 art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/82405b19-8efd-490a-888b-26f2ac240a2e/d33xf73-4ead4875-f0da-4bff-a5e6-964a4da2b5a4.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzgyNDA1YjE5LThlZmQtNDkwYS04ODhiLTI2ZjJhYzI0MGEyZVwvZDMzeGY3My00ZWFkNDg3NS1mMGRhLTRiZmYtYTVlNi05NjRhNGRhMmI1YTQuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.efyoZTS0r_nCx68Vcgsm-rEOKZoTzLrx2QB8Ta1LZOs"
         }
@@ -3512,7 +3513,7 @@ art_source:"https://i.imgur.com/Op4ldHW.jpg"
         "cardId": 205,
         "rarity": "U",
         "notes": {
-grade: "C",
+grade: "D+",
 colorIdentity: "G",
 cockatrice_related: "Kushak Scion",
 cockatrice_related_count: "x",
@@ -3530,7 +3531,7 @@ art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c4d3f848-c
         "cardId": 206,
         "rarity": "U",
         "notes": {
-grade: "B",
+grade: "B-",
 colorIdentity: "G",
 art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b1f96af6-56a3-47a8-b7f4-406f243af3a3/d5xpm92-3c7a915e-ff76-4916-baec-56969d628da4.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2IxZjk2YWY2LTU2YTMtNDdhOC1iN2Y0LTQwNmYyNDNhZjNhM1wvZDV4cG05Mi0zYzdhOTE1ZS1mZjc2LTQ5MTYtYmFlYy01Njk2OWQ2MjhkYTQuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.7ovwqcGaW2XlWQORu4zm9wYD7p6Ue4J-tBWjA4yvEOA"
         }
@@ -3560,7 +3561,7 @@ art_source:"https://i.imgur.com/CJN5Nzy.jpg"
         "cardId": 208,
         "rarity": "C",
         "notes": {
-grade: "B",
+grade: "B-",
 colorIdentity: "G",
 art_source:"https://i.imgur.com/KsvDewA.png"
         }
@@ -3621,7 +3622,7 @@ art_source:"https://i.imgur.com/9c3NmZe.jpg"
         "cardId": 212,
         "rarity": "M",
         "notes": {
-grade: "B+",
+grade: "B",
 colorIdentity: "G",
 cc_rules_font_shrink: "11",
 art_source:"https://i.imgur.com/eH6V6jx.jpg"
@@ -3652,7 +3653,7 @@ art_source:"https://i.imgur.com/0JsEHB4.jpg"
         "cardId": 214,
         "rarity": "U",
         "notes": {
-grade: "B-",
+grade: "B",
 colorIdentity: "WU",
 cc_rules_font_shrink: "6",
 art_source:"https://i.imgur.com/EDcN9Sc.jpg"
@@ -3700,7 +3701,7 @@ art_source:"https://i.imgur.com/GCvDASY.png"
         "cardId": 217,
         "rarity": "R",
         "notes": {
-grade: "A-",
+grade: "B+",
 colorIdentity: "UB",
 cc_rules_font_shrink: "9",
 art_source:"https://i.imgur.com/KwtEOfq.jpg"
@@ -3716,7 +3717,7 @@ art_source:"https://i.imgur.com/KwtEOfq.jpg"
         "cardId": 218,
         "rarity": "R",
         "notes": {
-grade: "B+",
+grade: "B",
 colorIdentity: "BR",
 art_source:"https://i.imgur.com/8flELQg.jpg"
         }
@@ -3747,7 +3748,7 @@ art_source:"https://i.imgur.com/NXgO1R5.jpg"
         "cardId": 220,
         "rarity": "U",
         "notes": {
-grade: "B+",
+grade: "B",
 colorIdentity: "RG",
 cc_rules_font_shrink: "12",
 art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b1f96af6-56a3-47a8-b7f4-406f243af3a3/dgntf0-ebd5ea7a-f8fc-48b4-a7aa-abcc50f5e0b1.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2IxZjk2YWY2LTU2YTMtNDdhOC1iN2Y0LTQwNmYyNDNhZjNhM1wvZGdudGYwLWViZDVlYTdhLWY4ZmMtNDhiNC1hN2FhLWFiY2M1MGY1ZTBiMS5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.-U-H4aY3qMpOHGeA2q8E-ZdhJqr4BB1q0nK0JE49yf0"
@@ -3780,7 +3781,7 @@ art_source:"https://i.imgur.com/3TxqtRD.jpg"
         "cardId": 222,
         "rarity": "R",
         "notes": {
-grade: "B+",
+grade: "A-",
 colorIdentity: "RG",
 art_source: "https://cdnb.artstation.com/p/assets/images/images/000/299/685/large/vers-final.jpg?1415903184"
         }
@@ -3863,7 +3864,7 @@ art_source:"https://i.imgur.com/QU3RH4I.jpg"
         "cardId": 227,
         "rarity": "M",
         "notes": {
-grade: "B+",
+grade: "B",
 colorIdentity: "WB",
 art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/661d44ad-694f-4f97-8c95-1df7a5d4b487/d2s6k9s-513a6e78-e2f6-450a-ae0e-57aa44255564.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzY2MWQ0NGFkLTY5NGYtNGY5Ny04Yzk1LTFkZjdhNWQ0YjQ4N1wvZDJzNms5cy01MTNhNmU3OC1lMmY2LTQ1MGEtYWUwZS01N2FhNDQyNTU1NjQuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.uTM1MrtauZP5C7Op7VSehCC-4ypKQIZfy-i9Bq3eW6U"
         }
@@ -3908,7 +3909,7 @@ art_source:"https://i.imgur.com/PMIrslp.jpg"
         "cardId": 230,
         "rarity": "U",
         "notes": {
-grade: "B-",
+grade: "B",
 colorIdentity: "UR",
 cc_rules_font_shrink: "9",
 art_source:"https://i.imgur.com/t8rxOW8.jpg"
@@ -3955,7 +3956,7 @@ art_source:"https://i.imgur.com/VN7JHqp.jpg"
         "cardId": 233,
         "rarity": "R",
         "notes": {
-grade: "B+",
+grade: "A-",
 colorIdentity: "BG",
 cc_rules_font_shrink: "5",
 art_source:"https://i.imgur.com/LhKbAfB.jpg"
@@ -3990,7 +3991,7 @@ art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9220d93a-7
         "cardId": 235,
         "rarity": "U",
         "notes": {
-grade: "B",
+grade: "B-",
 colorIdentity: "RW",
 cc_rules_font_shrink: "5",
 art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5bac884a-bdf3-4785-a07b-eab3acf29a62/d1k9cax-054ae9c1-f178-49e0-855e-ebec6b17a8a3.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzViYWM4ODRhLWJkZjMtNDc4NS1hMDdiLWVhYjNhY2YyOWE2MlwvZDFrOWNheC0wNTRhZTljMS1mMTc4LTQ5ZTAtODU1ZS1lYmVjNmIxN2E4YTMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.zHEHmxJaYyAlvtdCXh2W5R_zEpil4nfiirhh5V7Z290"
@@ -4023,7 +4024,7 @@ art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/740392b2-2
         "cardId": 237,
         "rarity": "U",
         "notes": {
-grade: "B+",
+grade: "B",
 colorIdentity: "GU",
 art_source:"https://i.imgur.com/3fylAks.jpg"
         }
@@ -4053,7 +4054,7 @@ art_source:"https://i.imgur.com/DacAWgf.jpg"
         "cardId": 239,
         "rarity": "M",
         "notes": {
-grade: "B+",
+grade: "B",
 colorIdentity: "",
 cc_rules_font_shrink: "7",
 cc_type_font_shrink: "7",
@@ -4085,7 +4086,7 @@ art_source:"https://i.imgur.com/poDXMsL.jpg"
         "cardId": 241,
         "rarity": "R",
         "notes": {
-grade: "B-",
+grade: "C+",
 colorIdentity: "",
 cc_rules_font_shrink: "13",
 art_source:"https://i.imgur.com/YS4uWfh.jpg"
@@ -4101,7 +4102,7 @@ art_source:"https://i.imgur.com/YS4uWfh.jpg"
         "cardId": 242,
         "rarity": "M",
         "notes": {
-grade: "B+",
+grade: "B",
 colorIdentity: "",
 cc_rules_font_shrink: "19",
 art_source:"https://i.imgur.com/Msi745t.jpg"
@@ -4132,7 +4133,7 @@ art_source:"https://i.imgur.com/T15qjYx.jpg"
         "cardId": 244,
         "rarity": "R",
         "notes": {
-grade: "B-",
+grade: "C+",
 colorIdentity: "",
 cc_rules_font_shrink: "8",
 art_source:"https://i.imgur.com/9DlMjM1.jpg"
@@ -4181,7 +4182,7 @@ art_source:"https://i.imgur.com/y1MzRPn.jpg"
         "cardId": 247,
         "rarity": "C",
         "notes": {
-grade: "C",
+grade: "C-",
 colorIdentity: "",
 cc_rules_font_shrink: "8",
 art_source:"https://i.imgur.com/EPI5qUB.jpg"
@@ -4212,7 +4213,7 @@ art_source:"https://i.imgur.com/4cH6oHP.jpg"
         "cardId": 249,
         "rarity": "M",
         "notes": {
-grade: "C-",
+grade: "C",
 colorIdentity: "",
 cc_rules_font_shrink: "8",
 art_source:"https://i.imgur.com/fK0L8Ui.jpg"
@@ -4243,7 +4244,7 @@ art_source:"https://i.imgur.com/a2fIoZc.jpg"
         "cardId": 251,
         "rarity": "R",
         "notes": {
-grade: "B",
+grade: "C",
 colorIdentity: "",
 cc_rules_font_shrink: "6",
 art_source:"https://i.imgur.com/CbPc04E.jpg"
@@ -4351,7 +4352,7 @@ art_source:"https://i.imgur.com/X3VV0Yz.jpg"
         "cardId": 258,
         "rarity": "U",
         "notes": {
-grade: "D",
+grade: "D+",
 colorIdentity: "",
 cc_rules_font_shrink: "10",
 art_source:"https://i.imgur.com/G80foM6.jpg"
@@ -4589,7 +4590,7 @@ art_source:"https://cdna.artstation.com/p/assets/images/images/003/437/026/large
         "cardId": 272,
         "rarity": "R",
         "notes": {
-grade: "B",
+grade: "C+",
 colorIdentity: "",
 addsMana: "WUBRG",
 art_source:"https://cdnb.artstation.com/p/assets/images/images/003/776/475/large/leon-tukker-hathorindustriesbaseas.jpg?1477385603"
