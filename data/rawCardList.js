@@ -2199,7 +2199,7 @@ art_source:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b1f96af6-5
         "notes": {
 grade: "C+",
 colorIdentity: "B",
-cc_rules_font_shrink: "11",
+cc_rules_font_shrink: "7",
 art_source:"https://i.imgur.com/V2edkRr.jpg"
         }
     },
@@ -2856,9 +2856,8 @@ art_source:"https://i.imgur.com/DUArVsQ.png"
         "cardId": 164,
         "rarity": "U",
         "notes": {
-grade: "B+",
+grade: "B",
 colorIdentity: "R",
-cc_rules_font_shrink: "6",
 art_source:"https://i.imgur.com/fA7oZ1p.jpg"
         }
     },
@@ -3646,8 +3645,8 @@ art_source:"https://i.imgur.com/0JsEHB4.jpg"
     {
         "name": "Wings of the Law",
         "imageName": _214,
-        "cost": "WU",
-        "manaValue": 2,
+        "cost": "2WU",
+        "manaValue": 4,
         "color": "WU",
         "type": "Artifact Creature — Police Mech ",
         "cardId": 214,

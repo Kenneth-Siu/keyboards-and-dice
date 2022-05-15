@@ -68,7 +68,7 @@ script:
 		+(if card.pt != "" then "            \<pt>{card.pt}\</pt>\n" else "")
 		+(if card.loyalty != "" then "            \<loyalty>{card.loyalty}\</loyalty>\n" else "")
 		+"        \</prop>\n"
-		+"        \<set rarity=\"{card.rarity}\" picurl=\"https://kenneth-siu.github.io/space-the-convergence-images/{urlEncode(imageNameFilter(name))}.jpg\">T2170\</set>\n"
+		+"        \<set rarity=\"{card.rarity}\" picurl=\"https://kenneth-siu.github.io/space-the-convergence-images/{urlEncode(imageNameFilter(name))}.jpg\">STC\</set>\n"
 		+(if related != "" then "        \<related{if attach then " attach=\"attach\"" else ""}{if count != "" then " count=\"{count}\"" else ""}>{related}\</related>\n" else "")
 		+(if card.shape != "token" then "" else "        \<token>1\</token>\n")
 		+"        \<tablerow>{if contains(card.super_type, match:"Creature") then 2 else if contains(card.super_type, match:"Land") then 0 else if contains(card.super_type, match:"Instant") or contains(card.super_type, match:"Sorcery") then 3 else 1}\</tablerow>\n"
