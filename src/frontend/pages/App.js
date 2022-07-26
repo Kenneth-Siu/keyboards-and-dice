@@ -13,6 +13,7 @@ import "./cssreset.css";
 import "./App.scss";
 import Draft from "./stc/draft/Draft.js";
 import Rankings from "./stc/rankings/Rankings.js";
+import Archetypes from "./stc/archetypes/Archetypes.js";
 import PrintAndPlay from "./stc/printAndPlay/PrintAndPlay.js";
 import MainNavBar from "../components/navBars/MainNavBar.js";
 import SmallMainNavBar from "../components/navBars/SmallMainNavBar.js";
@@ -53,6 +54,7 @@ export default function App({ loggedInUser }) {
                         />
                         <Route exact path="/stc/downloads" component={StcDownloads} />
                         <Route exact path="/stc/rankings" component={Rankings} />
+                        <Route exact path="/stc/archetypes" component={Archetypes} />
                         <Route exact path="/stc/login" component={Login} />
                         <Route exact path="/stc" component={StcHome} />
                         <Route path="/stc" component={StcNotFound} />
