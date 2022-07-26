@@ -16,12 +16,18 @@ export default function MainNavBar() {
                 </li>
                 <li className="stc">
                     <NavLink to="/stc" activeClassName="is-current-page">
-                        Space the Convergence
+                        <span>Space the Convergence</span>
+                        <span className="abbreviated" aria-hidden>
+                            Space
+                        </span>
                     </NavLink>
                 </li>
                 <li className="darkham">
                     <NavLink to="/darkham" activeClassName="is-current-page">
-                        Darkham Horror
+                        <span>Darkham Horror</span>
+                        <span className="abbreviated" aria-hidden>
+                            Darkham
+                        </span>
                     </NavLink>
                 </li>
             </ul>

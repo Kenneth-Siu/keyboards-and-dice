@@ -57,7 +57,7 @@ $small-main-navbar-height: 1.5rem;
         &.abbreviated {
             display: none;
         }
-        @media (max-width: 405px) {
+        @media (max-width: 491px) {
             &:not(.abbreviated) {
                 display: none;
             }
