@@ -1,3 +1,5 @@
+@use "sass:math";
+
 @import "./colors.scss";
 
 @mixin button {
@@ -33,12 +35,12 @@
 }
 
 @mixin card-image-corners {
-    border-radius: 4.46% / 3.2%;
+    border-radius: math.div(4.46%, 3.2%);
 }
 @mixin landscape-card-image-corners {
-    border-radius: 3.2% / 4.46%;
+    border-radius: math.div(3.2%, 4.46%);
 }
-$card-height-width-ratio: 523/375;
+$card-height-width-ratio: math.div(523, 375);
 
 @mixin blurred-background-image($brightness: 0.3) {
     overflow: hidden;

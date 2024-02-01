@@ -1,3 +1,5 @@
+@use "sass:math";
+
 @import "../../../components/responsive.scss";
 @import "../../../components/colors.scss";
 @import "../../../components/mixins.scss";
@@ -35,13 +37,13 @@
             .card-lazy-wrapper {
                 @media (max-width: 659px) {
                     width: 100%;
-                    padding-bottom: 100% * (1 / $card-height-width-ratio);
+                    padding-bottom: 100% * math.div(1, $card-height-width-ratio);
                     margin-right: 0;
                     margin-bottom: 1.5%;
                 }
                 @media (min-width: 660px) {
                     width: 49.25%;
-                    padding-bottom: 49.25% * (1 / $card-height-width-ratio);
+                    padding-bottom: 49.25% * math.div(1, $card-height-width-ratio);
                     margin-right: 1.5%;
                     margin-bottom: 1.5%;
                     &:nth-child(2n) {
