@@ -116,19 +116,11 @@ $stc-navbar-large-height: 3rem;
         }
     }
 
-    .draft a {
+    .downloads a {
         color: $color-5-light;
 
         &::after {
             border-bottom-color: $color-5-light;
-        }
-    }
-
-    .downloads a {
-        color: $color-6-light;
-
-        &::after {
-            border-bottom-color: $color-6-light;
         }
     }
 }
