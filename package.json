@@ -4,8 +4,8 @@
     "description": "Keyboards & Dice",
     "author": "Kenneth Siu",
     "engines": {
-        "node": "14.x",
-        "npm": "6.14.10"
+        "node": "20.x",
+        "npm": "9.x"
     },
     "scripts": {
         "dev": "razzle start",
@@ -14,11 +14,7 @@
         "start": "node build/server.js"
     },
     "dependencies": {
-        "@dnd-kit/core": "^2.1.2",
-        "@dnd-kit/modifiers": "^1.0.5",
-        "@dnd-kit/sortable": "^2.0.1",
         "cookie-parser": "^1.4.5",
-        "copy-to-clipboard": "^3.3.1",
         "express": "^4.17.1",
         "lodash": "^4.17.21",
         "react": "^16.14.0",
@@ -34,13 +30,12 @@
     },
     "devDependencies": {
         "@svgr/webpack": "^5.5.0",
-        "babel-preset-razzle": "^4.0.3",
+        "babel-preset-razzle": "4.2.18",
         "html-webpack-plugin": "^5.2.0",
-        "mini-css-extract-plugin": "^0.9.0",
         "postcss": "^8.2.8",
-        "razzle": "^4.0.3",
-        "razzle-dev-utils": "^4.0.3",
-        "razzle-plugin-scss": "^4.0.3",
+        "razzle": "4.2.18",
+        "razzle-dev-utils": "4.2.18",
+        "razzle-plugin-scss": "4.2.18",
         "webpack": "^5.24.0",
         "webpack-dev-server": "^3.11.2"
     }
