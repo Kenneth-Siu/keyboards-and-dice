@@ -31,12 +31,6 @@ export default function StcNavBar() {
                         FAQ
                     </Link>
                 </li>
-                <li className={`draft ${pathname.startsWith("/stc/draft") ? "is-current-page" : ""}`}>
-                    <Link to="/stc/drafts">Draft Online</Link>
-                    <Link to="/stc/drafts" className="abbreviated" aria-hidden>
-                        Draft
-                    </Link>
-                </li>
                 <li className={`downloads ${pathname.startsWith("/stc/downloads") ? "is-current-page" : ""}`}>
                     <Link to="/stc/downloads">Downloads</Link>
                     <Link to="/stc/downloads" className="abbreviated" aria-hidden>

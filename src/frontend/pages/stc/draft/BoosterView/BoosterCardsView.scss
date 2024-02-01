@@ -1,8 +1,0 @@
-@import "../DraftMixins.scss";
-
-.booster-cards-view {
-    @include draft-grid;
-    @include booster-grid;
-    position: relative;
-    margin-bottom: 0.6rem;
-}
