@@ -1,1 +1,0 @@
-web: HEROKU_PORT=$PORT npm run start
