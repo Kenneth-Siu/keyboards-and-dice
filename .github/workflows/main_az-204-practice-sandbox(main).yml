@@ -65,6 +65,6 @@ jobs:
               id: deploy-to-webapp
               uses: azure/webapps-deploy@v2
               with:
-                  app-name: "az-204-practice-sandbox/main"
-                  slot-name: "az-204-practice-sandbox-main"
+                  app-name: "az-204-practice-sandbox"
+                  slot-name: "az-204-practice-sandbox/main"
                   package: .
