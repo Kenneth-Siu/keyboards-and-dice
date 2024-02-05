@@ -11,7 +11,7 @@
         "dev": "razzle start",
         "build": "razzle build --noninteractive",
         "test": "razzle test --env=jsdom",
-        "start": "node build/server.js"
+        "start": "npm run build & node build/server.js"
     },
     "dependencies": {
         "cookie-parser": "^1.4.5",
