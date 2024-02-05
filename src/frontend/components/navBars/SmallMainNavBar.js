@@ -26,6 +26,12 @@ export default function SmallMainNavBar() {
                         Darkham
                     </NavLink>
                 </li>
+                <li className="nlc">
+                    <NavLink to="/nlc" activeClassName="is-current-page">Netrunner: Last Contact</NavLink>
+                    <NavLink to="/nlc" className="abbreviated" activeClassName="is-current-page" aria-hidden>
+                        NLC
+                    </NavLink>
+                </li>
             </ul>
         </nav>
     );

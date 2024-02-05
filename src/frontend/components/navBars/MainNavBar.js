@@ -30,6 +30,14 @@ export default function MainNavBar() {
                         </span>
                     </NavLink>
                 </li>
+                <li className="nlc">
+                    <NavLink to="/nlc" activeClassName="is-current-page">
+                        <span>Netrunner: Last Contact</span>
+                        <span className="abbreviated" aria-hidden>
+                            Last Contact
+                        </span>
+                    </NavLink>
+                </li>
             </ul>
         </nav>
     );

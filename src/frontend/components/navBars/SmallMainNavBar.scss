@@ -94,4 +94,12 @@ $small-main-navbar-height: 1.5rem;
             border-bottom-color: $color-4-light;
         }
     }
+
+    .nlc a {
+        color: $color-5-light;
+
+        &::after {
+            border-bottom-color: $color-5-light;
+        }
+    }
 }
