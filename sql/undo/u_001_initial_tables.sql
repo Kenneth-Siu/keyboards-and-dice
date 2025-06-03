@@ -1,9 +1,0 @@
-DROP TABLE memories;
-DROP TABLE picks;
-DROP TABLE cards;
-DROP TABLE boosters;
-DROP TABLE players;
-DROP TABLE drafts;
-DROP TABLE draft_statuses;
-DROP TABLE session;
-DROP TABLE users;

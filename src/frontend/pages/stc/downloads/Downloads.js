@@ -15,11 +15,6 @@ export default function Downloads() {
                     <div className="content">
                         <h1>Play on Cockatrice</h1>
                         <p>
-                            Once you've completed a draft <Link to="/stc/drafts">here</Link>, you can copy your
-                            decklist and save it as a deck in <em>Cockatrice</em>, ready to play against your other
-                            drafters.
-                        </p>
-                        <p>
                             If you haven't already, you should install{" "}
                             <a href="https://cockatrice.github.io/">
                                 <em>Cockatrice</em>
@@ -46,8 +41,7 @@ export default function Downloads() {
                             </li>
                         </ol>
                         <p>
-                            Now, when you start up a game against your other drafters, you should be able to see all the
-                            card images and text.
+                            Now, when you start up a game, you should be able to see all the card images and text.
                         </p>
                     </div>
                 </div>
