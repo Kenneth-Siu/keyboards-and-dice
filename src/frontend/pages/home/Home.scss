@@ -13,6 +13,7 @@
         @include blurred-background-image;
         @include responsive(min-height, calc((100vh - #{$main-navbar-small-height}) / 2), auto);
         @include responsive(width, 100vw, auto);
+        min-width: 40vw;
         flex-grow: 1;
         justify-content: center;
         position: relative;
@@ -64,6 +65,18 @@
         }
     }
 
+    .twoa {
+        color: $color-6-light;
+
+        h1 a {
+            @include underlining-link($color-6-light);
+        }
+
+        p a {
+            @include inverting-link($color-6-light);
+        }
+    }
+
     .darkham {
         color: $color-4-light;
 
@@ -73,6 +86,21 @@
 
         p a {
             @include inverting-link($color-4-light);
+        }
+    }
+
+    .about {
+        color: $color-5-light;
+
+        h1 a {
+            @include underlining-link($color-5-light);
+        }
+
+        p {
+            font-style: normal;
+            a {
+                @include inverting-link($color-5-light);
+            }
         }
     }
 }
