@@ -38,21 +38,27 @@ export default function App() {
                         <Route exact path="/stc/rankings" component={Rankings} />
                         <Route exact path="/stc/archetypes" component={Archetypes} />
                         <Route exact path="/stc" component={StcHome} />
-                        <Route path="/stc" component={StcNotFound} />
+                        <Route component={NotFound} />
                     </Switch>
                 </Route>
-                <Route path="/">
+                <Route path="/darkham">
                     {MainNavBar()}
                     {DarkhamNavBar()}
                     <Switch>
                         <Route exact path="/darkham/card-image-gallery" component={DarkhamCardImageGallery} />
                         <Route exact path="/darkham/downloads" component={DarkhamDownloads} />
                         <Route exact path="/darkham" component={Darkham} />
+                        <Route component={NotFound} />
+                    </Switch>
+                </Route >
+                <Route path="/">
+                    {MainNavBar()}
+                    <Switch>
                         <Route exact path="/" component={Home} />
                         <Route component={NotFound} />
                     </Switch>
                 </Route>
-            </Switch>
+            </Switch >
         </>
     );
 }
