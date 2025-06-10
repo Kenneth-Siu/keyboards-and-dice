@@ -179,7 +179,7 @@ export default function Rankings() {
 
     return (
         <>
-            <title>Archetypes · Space the Convergence</title>
+            <title>Archetypes · Space the Convergence · Keyboards &amp; Dice</title>
             <main className="archetypes-page">
                 <div className="background-image-container">
                     <img className="background-image" src={stcMainSplash} />

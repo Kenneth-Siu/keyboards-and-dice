@@ -104,7 +104,7 @@ export default function Rankings() {
 
     return (
         <>
-            <title>Rankings · Space the Convergence</title>
+            <title>Rankings · Space the Convergence · Keyboards &amp; Dice</title>
             <main className="rankings-page">
                 <div className="background-image-container">
                     <img className="background-image" src={stcMainSplash} />

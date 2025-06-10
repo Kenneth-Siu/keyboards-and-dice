@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 export default function Downloads() {
     return (
         <>
-            <title>Downloads · Space the Convergence</title>
+            <title>Downloads · Space the Convergence · Keyboards &amp; Dice</title>
             <main className="downloads-page">
                 <div className="background-image-container">
                     <img className="background-image" src={stcMainSplash} />

@@ -32,7 +32,7 @@ import stcMainSplash from "../../../../../data/stcMainSplash.jpg";
 export default function Faq() {
     return (
         <>
-            <title>Rules FAQ · Space the Convergence</title>
+            <title>Rules FAQ · Space the Convergence · Keyboards &amp; Dice</title>
             <main className="faq-page">
                 <div className="background-image-container">
                     <img className="background-image" src={stcMainSplash} />

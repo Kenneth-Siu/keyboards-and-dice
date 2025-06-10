@@ -7,7 +7,7 @@ export default function DarkhamPrintAndPlayScenario() {
     const numberOfPlayers = new URLSearchParams(useLocation().search).get("players") || 4;
     return (
         <>
-            <title>Print and Play (Scenario Cards) · Darkham Horror</title>
+            <title>Print and Play (Scenario Cards) · Darkham Horror · Keyboards &amp; Dice</title>
             <main className="darkham-print-and-play-page">
                 <section>
                     <h1>Encounter sets</h1>

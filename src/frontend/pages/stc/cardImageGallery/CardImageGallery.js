@@ -98,7 +98,7 @@ export default function CardImageGallery() {
 
     return (
         <>
-            <title>Card Image Gallery · Space the Convergence</title>
+            <title>Card Image Gallery · Space the Convergence · Keyboards &amp; Dice</title>
             <main className="card-image-gallery-page">
                 <div className="background-image-container">
                     <img className="background-image" src={stcMainSplash} />

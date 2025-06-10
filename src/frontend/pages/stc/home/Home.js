@@ -19,7 +19,7 @@ export default function StcHome() {
     }, []);
     return (
         <>
-            <title>Space the Convergence</title>
+            <title>Space the Convergence · Keyboards &amp; Dice</title>
             <main className="stc-home-page">
                 <section className="mechanics">
                     <img className="background-image" src={stcMainSplash} />

@@ -7,7 +7,7 @@ import "./PrintAndPlay.scss";
 export default function Rankings() {
     return (
         <>
-            <title>Print and Play · Space the Convergence</title>
+            <title>Print and Play · Space the Convergence · Keyboards &amp; Dice</title>
             <main className="print-and-play-page">
                 {[
                     ...cardList.filter((card) => card.rarity === MYTHIC_RARITY),

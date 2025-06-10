@@ -5,7 +5,7 @@ import "./PrintAndPlay.scss";
 export default function DarkhamPrintAndPlayPlayer() {
     return (
         <>
-            <title>Print and Play (Scenario Cards) · Darkham Horror</title>
+            <title>Print and Play (Player Cards) · Darkham Horror · Keyboards &amp; Dice</title>
             <main className="darkham-print-and-play-page">
                 <section>
                     {getCardImages(cardList.investigators)}

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default function Downloads() {
     return (
         <>
-            <title>Darkham Horror Downloads · Keyboards &amp; Dice</title>
+            <title>Downloads · Darkham Horror · Keyboards &amp; Dice</title>
             <main className="darkham-downloads-page">
                 <div className="background-image-container">
                     <img className="background-image" src={darkhamSplash} />
