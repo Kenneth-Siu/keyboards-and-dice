@@ -2,8 +2,12 @@
 @import "../mixins.scss";
 @import "../responsive.scss";
 
+$smallest-screen-width: 380px;
+$smaller-screen-width: 596px;
+$main-navbar-smallest-height: 9.05rem;
+$main-navbar-smaller-height: 5.65rem;
 $main-navbar-small-height: 3.9rem;
-$main-navbar-medium-height: 3rem;
+$main-navbar-medium-height: 3.9rem;
 $main-navbar-large-height: 3rem;
 
 @mixin pageHeightMinusMainNavBar {
@@ -13,11 +17,23 @@ $main-navbar-large-height: 3rem;
         calc(100vh - #{$main-navbar-medium-height}),
         calc(100vh - #{$main-navbar-large-height})
     );
+    @media (max-width: $smaller-screen-width) {
+        min-height: calc(100vh - #{$main-navbar-smaller-height});
+    }
+    @media (max-width: $smallest-screen-width) {
+        min-height: calc(100vh - #{$main-navbar-smallest-height});
+    }
 }
 
 .main-nav-bar {
     position: relative;
     @include responsive(height, $main-navbar-small-height, $main-navbar-medium-height, $main-navbar-large-height);
+    @media (max-width: $smaller-screen-width) {
+        height: $main-navbar-smaller-height;
+    }
+    @media (max-width: $smallest-screen-width) {
+        height: $main-navbar-smallest-height;
+    }
     @include blurred-background-image(0.2);
 
     ul {
@@ -25,6 +41,9 @@ $main-navbar-large-height: 3rem;
         display: flex;
         @include container;
         @include responsive(flex-wrap, wrap, wrap, nowrap);
+        @media (max-width: $smallest-screen-width) {
+            flex-direction: column;
+        }
     }
 
     li {
@@ -38,7 +57,7 @@ $main-navbar-large-height: 3rem;
 
     .home {
         flex-grow: 1;
-        @include responsive(width, 100%, auto);
+        @include responsive(width, 100%, 100%, auto);
 
         svg {
             position: absolute;
@@ -56,11 +75,7 @@ $main-navbar-large-height: 3rem;
             font-weight: 700;
             font-size: 1.2rem;
             height: 100%;
-            @include responsive(
-                padding,
-                0.5rem 0.5rem 0.5rem 2.7rem,
-                0.9rem 0.8rem 0.9rem 2.8rem
-            );
+            @include responsive(padding, 0.5rem 0.5rem 0.5rem 2.7rem, 0.5rem 0.5rem 0.5rem 2.7rem, 0.9rem 0.8rem 0.9rem 2.8rem);
         }
     }
 
@@ -69,20 +84,7 @@ $main-navbar-large-height: 3rem;
         font-weight: 500;
         text-transform: uppercase;
         @include responsive(font-size, 0.7rem, 0.7rem, 0.8rem);
-        @include responsive(padding, 0.5rem 0.5rem, 1.15rem 0.5rem, 1.1rem 0.8rem);
-
-        .abbreviated {
-            display: none;
-        }
-
-        @media (max-width: 341px) {
-            :not(.abbreviated) {
-                display: none;
-            }
-            .abbreviated {
-                display: inline;
-            }
-        }
+        @include responsive(padding, 0.5rem 0.5rem, 0.5rem 0.5rem, 1.1rem 0.8rem);
     }
 
     a.is-current-page::after,
@@ -105,11 +107,33 @@ $main-navbar-large-height: 3rem;
         }
     }
 
+    .twoa a {
+        color: $color-6-light;
+        @media (max-width: $smaller-screen-width) {
+            margin-right: calc(100vw - 19rem);
+        }
+        @media (max-width: $smallest-screen-width) {
+            margin-right: 0;
+        }
+
+        &::after {
+            border-bottom-color: $color-6-light;
+        }
+    }
+
     .darkham a {
         color: $color-4-light;
 
         &::after {
             border-bottom-color: $color-4-light;
+        }
+    }
+
+    .about a {
+        color: $color-5-light;
+
+        &::after {
+            border-bottom-color: $color-5-light;
         }
     }
 }

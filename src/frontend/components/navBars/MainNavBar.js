@@ -17,17 +17,21 @@ export default function MainNavBar() {
                 <li className="stc">
                     <NavLink to="/stc" activeClassName="is-current-page">
                         <span>Space the Convergence</span>
-                        <span className="abbreviated" aria-hidden>
-                            Space
-                        </span>
+                    </NavLink>
+                </li>
+                <li className="twoa">
+                    <NavLink to="/twoa" activeClassName="is-current-page">
+                        <span>Worlds of Android</span>
                     </NavLink>
                 </li>
                 <li className="darkham">
                     <NavLink to="/darkham" activeClassName="is-current-page">
                         <span>Darkham Horror</span>
-                        <span className="abbreviated" aria-hidden>
-                            Darkham
-                        </span>
+                    </NavLink>
+                </li>
+                <li className="about">
+                    <NavLink to="/about" activeClassName="is-current-page">
+                        <span>About</span>
                     </NavLink>
                 </li>
             </ul>
