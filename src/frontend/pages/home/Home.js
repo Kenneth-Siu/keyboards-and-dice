@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import stcSplash from "../../../../data/stcSplash.jpg";
-import darkhamSplash from "../../../../data/darkhamSplash.jpg";
+import darkhamSplash from "../../../../data/Darkham/darkhamSplash.jpg";
 import twoaSplash from "../../../../data/twoaSplash.jpg";
 import aboutSplash from "../../../../data/aboutSplash.jpg";
 import "./Home.scss";

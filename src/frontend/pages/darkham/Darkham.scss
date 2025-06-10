@@ -5,109 +5,99 @@
 .darkham-page {
     @include blurred-page-background(0.1);
 
+    section {
+        @include blurred-background-image(0.25);
+        position: relative;
+        width: 100%;
+    }
+
     .container {
         @include container;
-        line-height: 1.2;
-        padding-right: 0.5rem;
-        padding-left: 0.5rem;
-        padding-bottom: 0.5rem;
         position: relative;
+        line-height: 1.2;
+        padding: 4rem 1rem;
         color: $color-1;
     }
 
     h1 {
-        font-weight: 700;
-        font-size: 1.4rem;
-        @include responsive(margin-top, 1.5rem, 1.5rem, 1rem);
-        margin-bottom: 0.5rem;
-    }
-
-    h2 {
-        font-weight: 600;
-        font-size: 1.2rem;
-        margin-top: 1.5rem;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
     }
 
     p {
-        margin-top: 0.8rem;
-        margin-bottom: 0.8rem;
-    }
+        margin-bottom: 0.5rem;
 
-    b {
-        font-weight: bold;
-    }
-
-    em {
-        font-style: italic;
-    }
-
-    a {
-        @include inverting-link($color-4-light);
-        font-weight: 600;
-    }
-
-    div.box-div {
-        margin-top: 1.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    div.box-canvas {
-        position: relative;
-        @include responsive(width, 100%, 100%, 50%);
-        overflow: hidden;
-
-        .box-elements {
-            width: 100%;
-            padding-bottom: 116%;
-            transform: rotateX(-15deg) rotateY(22deg);
-            transform-style: preserve-3d;
+        &.link {
+            margin-top: 2rem;
+            text-align: center;
         }
-        .box-cover {
-            position: absolute;
-            width: 72%;
-            top: 7%;
-            left: 15%;
-        }
-        .box-side {
-            position: absolute;
-            width: 11.87%;
-            top: 7%;
-            left: 15%;
-            transform-origin: 0 0;
-            transform: rotateY(90deg);
-            filter: brightness(0.65);
-        }
-        .box-top {
-            position: absolute;
-            width: 72%;
-            top: 7%;
-            left: 15%;
-            transform-origin: 0 0;
-            transform: rotateX(-90deg);
+
+        a {
+            font-style: normal;
+            font-weight: 600;
+            text-decoration: none;
+            padding: 0.3rem;
+            @include inverting-link($color-1);
         }
     }
 
-    div.box-side-download-link {
-        @include responsive(font-size, 1rem, 1.3rem);
-        @include responsive(width, 100%, 100%, 50%);
-        @include responsive(margin-top, 0, 1rem, 0);
-        @include responsive(margin-bottom, 0.5rem, 1.5rem, 0);
-        @include responsive(text-align, center, center, left);
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+    .overview {
+        .box-side-blurb {
+            @include responsive(width, 100%, 100%, 50%);
+            @include responsive(margin-top, 0, 1rem, 0);
+            @include responsive(margin-bottom, 0.5rem, 1.5rem, 0);
+            font-style: italic;
+        }
+
+        div.box-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        div.box-canvas {
+            position: relative;
+            @include responsive(width, 100%, 100%, 50%);
+            overflow: hidden;
+            margin: 2rem 0;
+
+            .box-elements {
+                width: 100%;
+                padding-bottom: 116%;
+                transform: rotateX(-15deg) rotateY(-22deg);
+                transform-style: preserve-3d;
+            }
+            .box-cover {
+                position: absolute;
+                width: 72%;
+                top: 7%;
+                left: 13%;
+            }
+            .box-side {
+                position: absolute;
+                width: 11.87%;
+                top: 7%;
+                left: 85%;
+                transform-origin: 0 0;
+                transform: rotateY(90deg);
+                filter: brightness(0.65);
+            }
+            .box-top {
+                position: absolute;
+                width: 72%;
+                top: 7%;
+                left: 13%;
+                transform-origin: 0 0;
+                transform: rotateX(-90deg);
+            }
+        }
     }
 
     div.canvas {
         position: relative;
         @include responsive(width, 100%, 100%, 800px);
-        margin-left: auto;
-        margin-right: auto;
         overflow: hidden;
+        margin: 2rem auto;
     }
 
     @mixin darkham-card($card-width) {
@@ -121,40 +111,6 @@
                 @include landscape-card-image-corners;
                 width: $card-width * 1.4;
             }
-        }
-    }
-
-    .canvas.overview {
-        @include darkham-card(32%);
-        @include responsive(padding-bottom, 75.5%, 75.5%, 600px);
-        .moirai-shroud {
-            top: 7%;
-            left: 5%;
-            transform: rotateZ(-12deg);
-        }
-        .troubling-memories {
-            top: 6%;
-            left: 22%;
-            transform: rotateZ(-6deg);
-        }
-        .happier-times {
-            top: 2%;
-            left: 42%;
-        }
-        .setting-sun {
-            top: 6%;
-            left: 64%;
-            transform: rotateZ(8deg);
-        }
-        .abdul-alhazred {
-            top: 52%;
-            left: 8%;
-            transform: rotateZ(-4deg);
-        }
-        .under-torchlight {
-            top: 53%;
-            left: 50%;
-            transform: rotateZ(3deg);
         }
     }
 
@@ -182,12 +138,12 @@
             left: 64%;
             transform: rotateX(-20deg) rotateY(-15deg);
         }
-        .dangers-in-the-dark {
+        .pressures-of-the-dark {
             top: 5%;
             left: 2%;
             transform: rotateX(20deg) rotateY(-15deg);
         }
-        .the-shadow {
+        .dangers-in-the-dark {
             top: 16%;
             left: 15%;
             transform: rotateX(20deg) rotateY(-15deg);
@@ -212,12 +168,5 @@
             left: 58%;
             transform: rotateZ(3deg);
         }
-    }
-
-    .final-links {
-        margin-top: 2.5rem;
-        margin-bottom: 2.5rem;
-        display: flex;
-        justify-content: space-evenly;
     }
 }

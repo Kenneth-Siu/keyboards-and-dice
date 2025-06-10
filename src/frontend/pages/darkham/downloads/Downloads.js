@@ -1,6 +1,6 @@
 import React from "react";
 import "./Downloads.scss";
-import darkhamSplash from "../../../../../data/darkhamSplash.jpg";
+import darkhamSplash from "../../../../../data/Darkham/darkhamSplash.jpg";
 import { Link } from "react-router-dom";
 
 export default function Downloads() {
@@ -16,8 +16,8 @@ export default function Downloads() {
                         <h1>Play on Tabletop Simulator</h1>
                         <p>
                             You should already have installed{" "}
-                            <a href="https://www.tabletopsimulator.com/">Tabletop Simulator</a> on Steam, and the Arkham
-                            Super Complete Edition mod (no longer available on Steam Workshop).
+                            <a href="https://www.tabletopsimulator.com/"><em>Tabletop Simulator</em></a> on Steam, and the <em>Arkham
+                                Super Complete Edition</em> mod (no longer available on <em>Steam Workshop</em>).
                         </p>
                         <ol>
                             <li>

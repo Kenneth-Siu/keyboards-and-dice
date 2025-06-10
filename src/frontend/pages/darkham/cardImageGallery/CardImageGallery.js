@@ -1,5 +1,5 @@
 import * as React from "react";
-import darkhamSplash from "../../../../../data/darkhamSplash.jpg";
+import darkhamSplash from "../../../../../data/Darkham/darkhamSplash.jpg";
 import _1 from "../../../../../data/Darkham/Investigators/Reynauld-de-Châtillon-Front-Face.jpg";
 import _1a from "../../../../../data/Darkham/Investigators/Reynauld-de-Châtillon-Back-Face.jpg";
 import _2 from "../../../../../data/Darkham/Investigators/Audrey-Bourassa-Front-Face.jpg";

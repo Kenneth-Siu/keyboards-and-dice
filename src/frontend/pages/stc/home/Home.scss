@@ -12,12 +12,11 @@
         width: 100%;
     }
 
-    $content-horizontal-padding: 1rem;
     .content {
         @include container;
         position: relative;
         line-height: 1.2;
-        padding: 4rem $content-horizontal-padding;
+        padding: 4rem 1rem;
     }
 
     h1 {
