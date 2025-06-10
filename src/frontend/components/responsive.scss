@@ -32,6 +32,6 @@ $large-container-width: 1008px;
 }
 
 @mixin container {
-    @include responsive(width, 100%, $medium-container-width, $large-container-width);
+    @include responsive(width, 100%, $medium-container-width - 20px, $large-container-width - 20px);
     @include responsive (margin, 0, 0 auto);
 }
