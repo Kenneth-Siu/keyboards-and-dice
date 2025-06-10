@@ -26,13 +26,21 @@ export default function StcHome() {
                     <div className="content">
                         <h1>The Future is Now</h1>
                         <div className="two-column">
-                            <p>
-                                Apply cutting-edge technological advances to your planeswalker duels. Command armies,
-                                discover alien secrets, and make backroom dealings in a futuristic vision of Earth.
-                            </p>
-                            <p>
-                                <Link to="/stc/card-image-gallery">ᐳ View the cards</Link>
-                            </p>
+                            <div>
+                                <p>
+                                    Apply cutting-edge technological advances to your planeswalker duels. Command armies,
+                                    discover alien secrets, and make backroom dealings in a futuristic vision of Earth.
+                                </p>
+                                <p>
+                                    <em>Space the Convergence</em> is a science-fiction <em>Magic: the Gathering</em> expansion
+                                    with 273 cards and four new mechanics, created especially for drafting.
+                                </p>
+                            </div>
+                            <div>
+                                <p>
+                                    <Link to="/stc/card-image-gallery">ᐳ View the cards</Link>
+                                </p>
+                            </div>
                         </div>
                         <div className="mechanics-showcase">
                             <figure>

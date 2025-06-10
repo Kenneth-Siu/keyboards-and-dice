@@ -58,12 +58,14 @@
             margin-bottom: 2rem;
             @include responsive(flex-wrap, wrap, nowrap);
 
-            p:first-child {
-                flex-grow: 1;
-                @include responsive(padding-right, 0, 2rem);
-                @include responsive(margin-bottom, 1.5rem, 0);
+            div:first-child {
+                p {
+                    flex-grow: 1;
+                    @include responsive(padding-right, 0, 2rem);
+                    @include responsive(margin-bottom, 1.2rem, 1.2rem);
+                }
             }
-            p:last-child {
+            div:nth-child(2) {
                 flex-grow: 1;
                 flex-shrink: 0;
             }
