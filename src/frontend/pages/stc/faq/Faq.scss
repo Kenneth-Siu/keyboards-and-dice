@@ -1,7 +1,7 @@
 @import "../../../components/responsive.scss";
 @import "../../../components/colors.scss";
 @import "../../../components/mixins.scss";
-@import "../../../components/navBars/StcNavBar.scss";
+@import "../../../components/navBars/SubNavBar.scss";
 
 .faq-page {
     @include blurred-page-background(0.18);
@@ -9,7 +9,7 @@
     .container {
         @include container;
         line-height: 1.2;
-        @include responsive(padding-top, $stc-navbar-small-height, $stc-navbar-medium-height, $stc-navbar-large-height);
+        @include responsive(padding-top, $sub-navbar-small-height, $sub-navbar-medium-height, $sub-navbar-large-height);
         padding-right: 0.5rem;
         padding-left: 0.5rem;
         padding-bottom: 0.5rem;

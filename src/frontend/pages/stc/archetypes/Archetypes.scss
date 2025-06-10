@@ -1,6 +1,6 @@
 @import "../../../components/responsive.scss";
 @import "../../../components/mixins.scss";
-@import "../../../components/navBars/StcNavBar.scss";
+@import "../../../components/navBars/SubNavBar.scss";
 @import "../../../components/colors.scss";
 
 .archetypes-page {
@@ -15,7 +15,7 @@
         color: $color-1;
         position: relative;
         @include container;
-        @include responsive(padding-top, $stc-navbar-small-height, $stc-navbar-medium-height, $stc-navbar-large-height);
+        @include responsive(padding-top, $sub-navbar-small-height, $sub-navbar-medium-height, $sub-navbar-large-height);
     }
 
     button {

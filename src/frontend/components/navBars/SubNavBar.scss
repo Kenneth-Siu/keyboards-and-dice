@@ -3,11 +3,11 @@
 @import "../responsive.scss";
 @import "../zindex.scss";
 
-$stc-navbar-small-height: 1.7rem;
-$stc-navbar-medium-height: 1.7rem;
-$stc-navbar-large-height: 2rem;
+$sub-navbar-small-height: 1.7rem;
+$sub-navbar-medium-height: 1.7rem;
+$sub-navbar-large-height: 2rem;
 
-.stc-nav-bar {
+.sub-nav-bar {
     position: absolute;
     margin-top: 0.2rem;
     width: 100%;
@@ -49,25 +49,5 @@ $stc-navbar-large-height: 2rem;
         transform: translateY(-2px);
         border-bottom-width: 2px;
         border-bottom-style: solid;
-    }
-
-    .stc-home {
-        svg {
-            position: absolute;
-            @include responsive(height, 0.99rem, 0.99rem, 1.08rem);
-            @include responsive(width, 1.375rem, 1.375rem, 1.5rem);
-            top: 50%;
-            transform: translateY(-55%);
-            left: 0.3rem;
-        }
-
-        a {
-            position: relative;
-            @include responsive(padding, 0.75rem 1rem, 0.75rem 1rem, 0.9rem 1.05rem);
-
-            span {
-                display: none;
-            }
-        }
     }
 }

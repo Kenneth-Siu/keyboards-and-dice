@@ -156,7 +156,6 @@ function getDungeonSuppliesImages(numberOfPlayers) {
                     );
                 // Food
                 case 2:
-                    console.log(numberOfPlayers);
                     return (
                         <React.Fragment key={index}>
                             {new Array(numberOfPlayers * 1).fill(<img src={cardImage} />)}
