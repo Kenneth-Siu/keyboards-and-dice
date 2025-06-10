@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import cardList from "../../../../shared/cardList.js";
-import cardImageGallerySplash from "../../../../../data/cardImageGallerySplash.jpg";
+import stcMainSplash from "../../../../../data/stcMainSplash.jpg";
 import filterBackground from "../../../../../data/filterBackground.jpg";
 import WhiteManaSymbol from "../../../../../data/whiteManaSymbol.svg";
 import BlueManaSymbol from "../../../../../data/blueManaSymbol.svg";
@@ -101,7 +101,7 @@ export default function CardImageGallery() {
             <title>Card Image Gallery · Space the Convergence</title>
             <main className="card-image-gallery-page">
                 <div className="background-image-container">
-                    <img className="background-image" src={cardImageGallerySplash} />
+                    <img className="background-image" src={stcMainSplash} />
                 </div>
                 <div className="container">
                     <h1>Card Image Gallery</h1>

@@ -4,7 +4,7 @@ import BlueManaSymbol from "../../../../../data/blueManaSymbol.svg";
 import BlackManaSymbol from "../../../../../data/blackManaSymbol.svg";
 import RedManaSymbol from "../../../../../data/redManaSymbol.svg";
 import GreenManaSymbol from "../../../../../data/greenManaSymbol.svg";
-import cardImageGallerySplash from "../../../../../data/cardImageGallerySplash.jpg";
+import stcMainSplash from "../../../../../data/stcMainSplash.jpg";
 import "./Archetypes.scss";
 
 export default function Rankings() {
@@ -182,7 +182,7 @@ export default function Rankings() {
             <title>Archetypes · Space the Convergence</title>
             <main className="archetypes-page">
                 <div className="background-image-container">
-                    <img className="background-image" src={cardImageGallerySplash} />
+                    <img className="background-image" src={stcMainSplash} />
                 </div>
                 <div className="container">
                     <h1>Archetypes</h1>

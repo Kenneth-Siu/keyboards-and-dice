@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import cardImageGallerySplash from "../../../../../data/cardImageGallerySplash.jpg";
+import stcMainSplash from "../../../../../data/stcMainSplash.jpg";
 import rulesFaqSplash from "../../../../../data/rulesFaqSplash.jpg";
 import downloadsSplash from "../../../../../data/downloadsSplash.jpg";
 import karnSplash from "../../../../../data/karnSplash.jpg";
@@ -22,7 +22,7 @@ export default function StcHome() {
             <title>Space the Convergence</title>
             <main className="stc-home-page">
                 <section className="mechanics">
-                    <img className="background-image" src={cardImageGallerySplash} />
+                    <img className="background-image" src={stcMainSplash} />
                     <div className="content">
                         <h1>The Future is Now</h1>
                         <div className="two-column">

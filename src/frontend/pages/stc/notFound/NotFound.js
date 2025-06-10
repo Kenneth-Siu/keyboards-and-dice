@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import StcSymbol from "../../../../../data/stcSymbol.svg";
-import notFoundSplash from "../../../../../data/notFoundSplash.jpg";
+import stcMainSplash from "../../../../../data/stcMainSplash.jpg";
 import "./NotFound.scss";
 
 export default function StcNotFound() {
@@ -9,7 +9,7 @@ export default function StcNotFound() {
         <>
             <title>Page Not Found · Space the Convergence</title>
             <main className="stc-not-found-page">
-                <img className="background-image" src={notFoundSplash} />
+                <img className="background-image" src={stcMainSplash} />
                 <div className="container">
                     <StcSymbol />
                     <p>Whoops! There's nothing here...</p>

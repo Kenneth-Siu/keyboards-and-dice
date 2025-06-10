@@ -25,7 +25,7 @@ import CommonSetSymbol from "../../../../../data/commonSetSymbol.svg";
 import UncommonSetSymbol from "../../../../../data/uncommonSetSymbol.svg";
 import RareSetSymbol from "../../../../../data/rareSetSymbol.svg";
 import MythicSetSymbol from "../../../../../data/mythicSetSymbol.svg";
-import cardImageGallerySplash from "../../../../../data/cardImageGallerySplash.jpg";
+import stcMainSplash from "../../../../../data/stcMainSplash.jpg";
 import "./Rankings.scss";
 
 export default function Rankings() {
@@ -107,7 +107,7 @@ export default function Rankings() {
             <title>Rankings · Space the Convergence</title>
             <main className="rankings-page">
                 <div className="background-image-container">
-                    <img className="background-image" src={cardImageGallerySplash} />
+                    <img className="background-image" src={stcMainSplash} />
                 </div>
                 <div className="container">
                     <h1>Card Power Rankings</h1>

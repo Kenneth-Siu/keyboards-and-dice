@@ -1,8 +1,7 @@
 import React from "react";
 import "./Downloads.scss";
 import cockatriceXml from "../../../../../data/spaceTheConvergence.xml";
-import downloadsSplash from "../../../../../data/downloadsSplash.jpg";
-import printAndPlaySplash from "../../../../../data/printAndPlaySplash.jpg";
+import stcMainSplash from "../../../../../data/stcMainSplash.jpg";
 import { Link } from "react-router-dom";
 
 export default function Downloads() {
@@ -10,7 +9,9 @@ export default function Downloads() {
         <>
             <title>Downloads · Space the Convergence</title>
             <main className="downloads-page">
-                <img className="background-image" src={downloadsSplash} />
+                <div className="background-image-container">
+                    <img className="background-image" src={stcMainSplash} />
+                </div>
                 <div className="content">
                     <section>
                         <h1>Play on Cockatrice</h1>

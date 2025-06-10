@@ -1,11 +1,10 @@
 @import "../../../components/responsive.scss";
 @import "../../../components/colors.scss";
 @import "../../../components/mixins.scss";
-@import "../../../components/navBars/MainNavBar.scss";
 @import "../../../components/navBars/StcNavBar.scss";
 
 .downloads-page {
-    @include blurred-background-image;
+    @include blurred-page-background(0.18);
 
     .content {
         @include container;

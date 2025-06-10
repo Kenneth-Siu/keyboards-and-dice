@@ -27,7 +27,7 @@ import trojanHorse from "../../../../../data/cardImages/Trojan Horse.jpg";
 import theMartianLens from "../../../../../data/cardImages/The Martian Lens.jpg";
 import "./Faq.scss";
 import CardImage from "../../../components/cardImages/CardImage";
-import rulesFaqSplash from "../../../../../data/rulesFaqSplash.jpg";
+import stcMainSplash from "../../../../../data/stcMainSplash.jpg";
 
 export default function Faq() {
     return (
@@ -35,7 +35,7 @@ export default function Faq() {
             <title>Rules FAQ · Space the Convergence</title>
             <main className="faq-page">
                 <div className="background-image-container">
-                    <img className="background-image" src={rulesFaqSplash} />
+                    <img className="background-image" src={stcMainSplash} />
                 </div>
                 <div className="container">
                     <h1>Rules FAQ</h1>
