@@ -15,8 +15,11 @@ export default function Home() {
                     <img className="background-image" src={stcSplash} />
                     <div className="content">
                         <h1>
-                            <Link to="/stc">Space the Convergence</Link>
+                            Magic: The Gathering
                         </h1>
+                        <h2>
+                            <Link to="/stc">Space the Convergence</Link>
+                        </h2>
                         <p>
                             What new powers and allies would planeswalkers bring to bear if they had access to
                             futuristic Earth technology?
@@ -35,14 +38,17 @@ export default function Home() {
                     <img className="background-image" src={twoaSplash} />
                     <div className="content">
                         <h1>
-                            <Link to="/twoa">Arkham Horror: The Worlds of Android</Link>
+                            Arkham Horror: The Card Game
                         </h1>
+                        <h2>
+                            <Link to="/twoa">The Worlds of Android</Link>
+                        </h2>
                         <p>
                             It is the future. The world changed. People did not.
                         </p>
                         <p>
                             <em>The Worlds of Android</em> is an expansion for <em>Arkham Horror: The Card Game</em> themed
-                            around <em>Android: Netrunner</em>, featuring 11 scenarios and new investigators.
+                            around <em>Android: Netrunner</em>, featuring 11 scenarios and 12 new investigators.
                         </p>
                         <p className="link">
                             <Link to="/twoa">ᐳ Find out more</Link>
@@ -54,15 +60,18 @@ export default function Home() {
                     <img className="background-image" src={darkhamSplash} />
                     <div className="content">
                         <h1>
-                            <Link to="/darkham">Darkham Horror</Link>
+                            Arkham Horror: The Card Game
                         </h1>
+                        <h2>
+                            <Link to="/darkham">Darkham Horror</Link>
+                        </h2>
                         <p>
                             A curious letter from a long-lost ancestor reveals a dark mystery. What cosmic horrors will
                             you uncover in your investigation?
                         </p>
                         <p>
                             <em>Darkham Horror</em> is an expansion for <em>Arkham Horror: The Card Game</em> themed
-                            around <em>Darkest Dungeon</em>, featuring 8 scenarios and new investigator cards.
+                            around <em>Darkest Dungeon</em>, featuring 8 scenarios and new player cards.
                         </p>
                         <p className="link">
                             <Link to="/darkham">ᐳ Find out more</Link>
@@ -73,9 +82,9 @@ export default function Home() {
                 <div className="about tile">
                     <img className="background-image" src={aboutSplash} />
                     <div className="content">
-                        <h1>
+                        <h2>
                             <Link to="/about">About</Link>
-                        </h1>
+                        </h2>
                         <p>
                             Hi! Welcome to my cozy corner of the internet.
                         </p>

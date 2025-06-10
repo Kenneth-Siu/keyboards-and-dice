@@ -27,36 +27,45 @@
         max-width: 480px;
         margin: 2.8rem;
         line-height: 1.2;
+    }
 
-        h1 {
-            font-weight: 700;
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
+    h1 {
+        font-weight: 600;
+        font-size: 0.8rem;
+    }
+
+    h2 {
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-style: italic;
+        margin-bottom: 0.5rem;
+
+        &.link {
+            margin-top: 1.2rem;
         }
 
-        p {
-            font-style: italic;
-            margin-bottom: 0.5rem;
+        em {
+            font-style: normal;
+        }
 
-            &.link {
-                margin-top: 1.2rem;
-            }
-
-            em {
-                font-style: normal;
-            }
-
-            a {
-                font-style: normal;
-                font-weight: 600;
-            }
+        a {
+            font-style: normal;
+            font-weight: 600;
         }
     }
 
     .stc {
         color: $color-3-light;
 
-        h1 a {
+        h1 {
+            color: scale-color($color-3-light, $alpha: -30%);
+        }
+
+        h2 a {
             @include underlining-link($color-3-light);
         }
 
@@ -68,7 +77,11 @@
     .twoa {
         color: $color-6-light;
 
-        h1 a {
+        h1 {
+            color: scale-color($color-6-light, $alpha: -30%);
+        }
+
+        h2 a {
             @include underlining-link($color-6-light);
         }
 
@@ -80,7 +93,11 @@
     .darkham {
         color: $color-4-light;
 
-        h1 a {
+        h1 {
+            color: scale-color($color-4-light, $alpha: -30%);
+        }
+
+        h2 a {
             @include underlining-link($color-4-light);
         }
 
@@ -92,7 +109,11 @@
     .about {
         color: $color-5-light;
 
-        h1 a {
+        h1 {
+            color: scale-color($color-5-light, $alpha: -30%);
+        }
+
+        h2 a {
             @include underlining-link($color-5-light);
         }
 
