@@ -19,6 +19,7 @@ import DarkhamDownloads from "./darkham/downloads/Downloads.js";
 import DarkhamCardImageGallery from "./darkham/cardImageGallery/CardImageGallery.js";
 import DarkhamPrintAndPlayScenario from "./darkham/printAndPlay/PrintAndPlayScenario.js";
 import DarkhamPrintAndPlayPlayer from "./darkham/printAndPlay/PrintAndPlayPlayer.js";
+import DarkhamNavBar from "../components/navBars/DarkhamNavBar.js";
 
 export default function App() {
     return (
@@ -42,6 +43,7 @@ export default function App() {
                 </Route>
                 <Route path="/">
                     {MainNavBar()}
+                    {DarkhamNavBar()}
                     <Switch>
                         <Route exact path="/darkham/card-image-gallery" component={DarkhamCardImageGallery} />
                         <Route exact path="/darkham/downloads" component={DarkhamDownloads} />

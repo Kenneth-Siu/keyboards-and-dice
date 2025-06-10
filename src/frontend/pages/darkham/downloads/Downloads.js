@@ -1,7 +1,6 @@
 import React from "react";
 import "./Downloads.scss";
-import downloadsSplash from "../../../../../data/Darkham/downloadsSplash.jpg";
-import printAndPlaySplash from "../../../../../data/Darkham/printAndPlaySplash.jpg";
+import darkhamSplash from "../../../../../data/darkhamSplash.jpg";
 import { Link } from "react-router-dom";
 
 export default function Downloads() {
@@ -9,9 +8,11 @@ export default function Downloads() {
         <>
             <title>Darkham Horror Downloads · Keyboards &amp; Dice</title>
             <main className="darkham-downloads-page">
-                <div className="tts tile">
-                    <img className="background-image" src={downloadsSplash} />
-                    <div className="content">
+                <div className="background-image-container">
+                    <img className="background-image" src={darkhamSplash} />
+                </div>
+                <div className="content">
+                    <section>
                         <h1>Play on Tabletop Simulator</h1>
                         <p>
                             You should already have installed{" "}
@@ -31,11 +32,8 @@ export default function Downloads() {
                             </li>
                             <li>That's it. Enjoy!</li>
                         </ol>
-                    </div>
-                </div>
-                <div className="print tile">
-                    <img className="background-image" src={printAndPlaySplash} />
-                    <div className="content">
+                    </section>
+                    <section>
                         <h1>Print and Play</h1>
                         <p>You can also print out the cards and play in person. These PDFs are sized for printing in A4 or Letter.</p>
                         <ol>
@@ -103,9 +101,9 @@ export default function Downloads() {
                                 </li>
                             </ol>
                         </blockquote>
-                    </div>
+                    </section>
                 </div>
-            </main>
+            </main >
         </>
     );
 }
