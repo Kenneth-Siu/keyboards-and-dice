@@ -12,7 +12,7 @@ export default function StcNotFound() {
                 <img className="background-image" src={notFoundSplash} />
                 <div className="container">
                     <StcSymbol />
-                    <h1>Whoops! There's nothing here...</h1>
+                    <p>Whoops! There's nothing here...</p>
                     <Link to="/stc">ᐳ Back to safety</Link>
                 </div>
             </main>

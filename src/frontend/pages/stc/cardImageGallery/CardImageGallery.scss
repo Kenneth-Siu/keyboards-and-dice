@@ -13,19 +13,13 @@
         text-align: center;
         color: $color-1;
         position: relative;
-    }
-
-    h1 {
-        font-weight: 700;
-        font-size: 1.4rem;
-        margin-top: 1rem;
-        margin-bottom: 0.5rem;
+        @include responsive(padding-top, $stc-navbar-small-height, $stc-navbar-medium-height, $stc-navbar-large-height);
     }
 
     .num-of-cards {
         font-weight: 300;
         font-size: 0.8rem;
-        margin-bottom: 0.8rem;
+        @include responsive(margin-bottom, 1.1rem, 1.1rem, 1.5rem);
     }
 
     .card-grid {

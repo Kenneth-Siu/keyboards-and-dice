@@ -1,4 +1,5 @@
 @import "./colors.scss";
+@import "./zindex.scss";
 
 @mixin button {
     border: none;
@@ -62,6 +63,6 @@ $card-height-width-ratio: 523/375;
         height: 100vh;
         width: 100%;
         top: 0;
-        z-index: -1;
+        z-index: $z-index-background-image;
     }
 }

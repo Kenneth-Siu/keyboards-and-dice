@@ -27,6 +27,7 @@ $main-navbar-large-height: 3rem;
 
 .main-nav-bar {
     position: relative;
+    @include responsive(padding-left, 0.2rem, 0);
     @include responsive(height, $main-navbar-small-height, $main-navbar-medium-height, $main-navbar-large-height);
     @media (max-width: $smaller-screen-width) {
         height: $main-navbar-smaller-height;

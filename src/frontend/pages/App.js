@@ -12,7 +12,6 @@ import Rankings from "./stc/rankings/Rankings.js";
 import Archetypes from "./stc/archetypes/Archetypes.js";
 import PrintAndPlay from "./stc/printAndPlay/PrintAndPlay.js";
 import MainNavBar from "../components/navBars/MainNavBar.js";
-import SmallMainNavBar from "../components/navBars/SmallMainNavBar.js";
 import Home from "./home/Home.js";
 import NotFound from "./notFound/NotFound.js";
 import Darkham from "./darkham/Darkham.js";
@@ -29,7 +28,7 @@ export default function App() {
                 <Route exact path="/darkham/print-and-play-scenario" component={DarkhamPrintAndPlayScenario} />
                 <Route exact path="/darkham/print-and-play-player" component={DarkhamPrintAndPlayPlayer} />
                 <Route path="/stc">
-                    {SmallMainNavBar()}
+                    {MainNavBar()}
                     {StcNavBar()}
                     <Switch>
                         <Route exact path="/stc/card-image-gallery" component={CardImageGallery} />

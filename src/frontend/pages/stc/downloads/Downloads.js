@@ -10,9 +10,9 @@ export default function Downloads() {
         <>
             <title>Downloads · Space the Convergence</title>
             <main className="downloads-page">
-                <div className="cockatrice tile">
-                    <img className="background-image" src={downloadsSplash} />
-                    <div className="content">
+                <img className="background-image" src={downloadsSplash} />
+                <div className="content">
+                    <section>
                         <h1>Play on Cockatrice</h1>
                         <p>
                             If you haven't already, you should install{" "}
@@ -43,12 +43,7 @@ export default function Downloads() {
                         <p>
                             Now, when you start up a game, you should be able to see all the card images and text.
                         </p>
-                    </div>
-                </div>
-
-                <div className="print tile">
-                    <img className="background-image" src={printAndPlaySplash} />
-                    <div className="content">
+                    </section><section>
                         <h1>Print and Play</h1>
                         <p>You can also draft and play in person.</p>
                         <ol>
@@ -117,7 +112,7 @@ export default function Downloads() {
                                 </li>
                             </ol>
                         </blockquote>
-                    </div>
+                    </section>
                 </div>
             </main>
         </>
