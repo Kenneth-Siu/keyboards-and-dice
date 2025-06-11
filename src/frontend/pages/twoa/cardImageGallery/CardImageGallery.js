@@ -63,16 +63,16 @@ import _48 from "../../../../../data/twoa/Investigators/Ireress (Front).jpg";
 import "./CardImageGallery.scss";
 import CardImage from "../../../components/cardImages/CardImage";
 
-export default function PlayerCards() {
+export default function Investigators() {
     return (
         <>
-            <title>Player Cards · The Worlds of Android · Keyboards &amp; Dice</title>
+            <title>Investigators · The Worlds of Android · Keyboards &amp; Dice</title>
             <main className="twoa-card-image-gallery">
                 <div className="background-image-container">
                     <img className="background-image" src={twoaSplash} />
                 </div>
                 <div className="container">
-                    <h1>Player Cards</h1>
+                    <h1>Investigators</h1>
                     <section className="investigators">
                         <div className="investigators-grid">
                             <CardImage src={_1} lazy className="landscape" />

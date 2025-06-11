@@ -125,7 +125,7 @@ export default function Home() {
                             Jack in and make a run with them!
                         </p>
                         <p className="link">
-                            <Link to="/twoa/player-cards">ᐳ View the player cards (coming soon)</Link>
+                            <Link to="/twoa/investigators">ᐳ View the investigators</Link>
                         </p>
                     </div>
                 </section>

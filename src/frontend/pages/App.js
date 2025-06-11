@@ -22,7 +22,7 @@ import DarkhamNavBar from "../components/navBars/DarkhamNavBar.js";
 import TwoaNavBar from "../components/navBars/TwoaNavBar.js";
 import TwoaHome from "./twoa/home/Home.js";
 import TwoaDownloads from "./twoa/downloads/Downloads.js";
-import TwoaPlayerCards from "./twoa/cardImageGallery/CardImageGallery.js";
+import TwoaInvestigators from "./twoa/cardImageGallery/CardImageGallery.js";
 
 export default function App() {
     return (
@@ -48,7 +48,7 @@ export default function App() {
                     {MainNavBar()}
                     {TwoaNavBar()}
                     <Switch>
-                        <Route exact path="/twoa/player-cards" component={TwoaPlayerCards} />
+                        <Route exact path="/twoa/investigators" component={TwoaInvestigators} />
                         <Route exact path="/twoa/downloads" component={TwoaDownloads} />
                         <Route exact path="/twoa" component={TwoaHome} />
                         <Route component={NotFound} />

@@ -14,6 +14,7 @@ export default function Downloads() {
                 <div className="content">
                     <section>
                         <h1>Play on Tabletop Simulator</h1>
+                        <p><em>The mod does not currently contain the investigators. They are coming soon!</em></p>
                         <p>
                             You should already have installed{" "}
                             <a href="https://www.tabletopsimulator.com/"><em>Tabletop Simulator</em></a> on Steam, and the <em>Arkham
@@ -35,7 +36,7 @@ export default function Downloads() {
                     </section>
                     <section>
                         <h1>Print and Play</h1>
-                        <p>Coming soon, once it's out of beta.</p>                        
+                        <p>Coming soon, once it's out of beta.</p>
                     </section>
                 </div>
             </main >
