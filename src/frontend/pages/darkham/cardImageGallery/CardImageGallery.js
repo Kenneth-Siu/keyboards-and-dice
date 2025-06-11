@@ -60,13 +60,13 @@ import CardImage from "../../../components/cardImages/CardImage";
 export default function Darkham() {
     return (
         <>
-            <title>Card Image Gallery · Darkham Horror · Keyboards &amp; Dice</title>
+            <title>Player Cards · Darkham Horror · Keyboards &amp; Dice</title>
             <main className="darkham-card-image-gallery">
                 <div className="background-image-container">
                     <img className="background-image" src={darkhamSplash} />
                 </div>
                 <div className="container">
-                    <h1>Card Image Gallery</h1>
+                    <h1>Player Cards</h1>
                     <h2>Investigators</h2>
                     <section className="investigators">
                         <div className="investigators-grid">

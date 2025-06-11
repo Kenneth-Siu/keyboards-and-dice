@@ -3,7 +3,7 @@
 @import "../../../components/mixins.scss";
 @import "../../../components/navBars/SubNavBar.scss";
 
-.darkham-card-image-gallery {
+.twoa-card-image-gallery {
     @include blurred-page-background(0.25);
 
     .container {
@@ -19,10 +19,13 @@
 
     h1 {
         text-align: center;
+        margin-bottom: 1.2rem;
     }
 
     .investigators {
         .investigators-grid {
+            text-align: center;
+            
             .card-lazy-wrapper {
                 @media (max-width: 659px) {
                     width: 100%;
@@ -80,7 +83,7 @@
                 padding-bottom: 32.75% * $card-height-width-ratio;
                 margin-right: 0.875%;
                 margin-bottom: 0.875%;
-                &:nth-child(3n) {
+                &:nth-child(2n+1):last-child {
                     margin-right: 0;
                 }
             }

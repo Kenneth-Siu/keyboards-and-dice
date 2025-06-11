@@ -3,7 +3,7 @@
 @import "../../../components/mixins.scss";
 @import "../../../components/navBars/SubNavBar.scss";
 
-.darkham-downloads-page {
+.twoa-downloads-page {
     @include blurred-page-background(0.25);
 
     .content {
@@ -24,7 +24,7 @@
     blockquote {
         margin: 1rem;
         padding: 0.5rem 1rem;
-        background-color: scale-color($color-4-light, $alpha: -80%);
+        background-color: scale-color($color-6-light, $alpha: -80%);
     }
 
     ol {

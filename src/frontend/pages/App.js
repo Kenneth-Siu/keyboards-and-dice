@@ -2,7 +2,6 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import StcHome from "./stc/home/Home.js";
 import CardImageGallery from "./stc/cardImageGallery/CardImageGallery.js";
-import StcNotFound from "./stc/notFound/NotFound.js";
 import StcNavBar from "../components/navBars/StcNavBar.js";
 import Faq from "./stc/faq/Faq.js";
 import StcDownloads from "./stc/downloads/Downloads.js";
@@ -20,6 +19,10 @@ import DarkhamCardImageGallery from "./darkham/cardImageGallery/CardImageGallery
 import DarkhamPrintAndPlayScenario from "./darkham/printAndPlay/PrintAndPlayScenario.js";
 import DarkhamPrintAndPlayPlayer from "./darkham/printAndPlay/PrintAndPlayPlayer.js";
 import DarkhamNavBar from "../components/navBars/DarkhamNavBar.js";
+import TwoaNavBar from "../components/navBars/TwoaNavBar.js";
+import TwoaHome from "./twoa/home/Home.js";
+import TwoaDownloads from "./twoa/downloads/Downloads.js";
+import TwoaPlayerCards from "./twoa/cardImageGallery/CardImageGallery.js";
 
 export default function App() {
     return (
@@ -41,11 +44,21 @@ export default function App() {
                         <Route component={NotFound} />
                     </Switch>
                 </Route>
+                <Route path="/twoa">
+                    {MainNavBar()}
+                    {TwoaNavBar()}
+                    <Switch>
+                        <Route exact path="/twoa/player-cards" component={TwoaPlayerCards} />
+                        <Route exact path="/twoa/downloads" component={TwoaDownloads} />
+                        <Route exact path="/twoa" component={TwoaHome} />
+                        <Route component={NotFound} />
+                    </Switch>
+                </Route >
                 <Route path="/darkham">
                     {MainNavBar()}
                     {DarkhamNavBar()}
                     <Switch>
-                        <Route exact path="/darkham/card-image-gallery" component={DarkhamCardImageGallery} />
+                        <Route exact path="/darkham/player-cards" component={DarkhamCardImageGallery} />
                         <Route exact path="/darkham/downloads" component={DarkhamDownloads} />
                         <Route exact path="/darkham" component={Darkham} />
                         <Route component={NotFound} />
