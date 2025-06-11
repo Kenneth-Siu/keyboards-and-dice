@@ -69,8 +69,8 @@ export default function Home() {
                     <div className="container">
                         <h1>Campaign Expansion</h1>
                         <p>
-                            Seemingly at every turn, the corporations are involved in your investigation, tracking your
-                            every movement and hidering you along the way. Is one of them secretly behind the disaster? Or are
+                            Seemingly at every turn, the corporations are inextricably involved, tracking your
+                            movements and hindering your investigation. Is one of them secretly behind the disaster? Or are
                             they simply being short-sighted in overzealously defending their interests?
                         </p>
                         <div className="canvas encounters">
