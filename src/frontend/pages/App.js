@@ -11,6 +11,7 @@ import Rankings from "./stc/rankings/Rankings.js";
 import Archetypes from "./stc/archetypes/Archetypes.js";
 import PrintAndPlay from "./stc/printAndPlay/PrintAndPlay.js";
 import MainNavBar from "../components/navBars/MainNavBar.js";
+import About from "./about/About.js";
 import Home from "./home/Home.js";
 import NotFound from "./notFound/NotFound.js";
 import Darkham from "./darkham/Darkham.js";
@@ -67,6 +68,7 @@ export default function App() {
                 <Route path="/">
                     {MainNavBar()}
                     <Switch>
+                        <Route exact path="/about" component={About} />
                         <Route exact path="/" component={Home} />
                         <Route component={NotFound} />
                     </Switch>

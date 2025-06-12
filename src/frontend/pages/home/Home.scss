@@ -45,6 +45,12 @@
         }
     }
 
+    section.about {
+        .content {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
     .blurb {
         display: flex;
         flex-direction: column;
@@ -131,18 +137,27 @@
     .about {
         color: $color-5-light;
 
-        h1 {
-            color: scale-color($color-5-light, $alpha: -30%);
-        }
-
-        h2 a {
-            @include underlining-link($color-5-light);
+        h2 {
+            a {
+                @include underlining-link($color-5-light);
+            }
         }
 
         p {
             font-style: normal;
             a {
                 @include inverting-link($color-5-light);
+            }
+        }
+
+        @include breakpoint(large) {
+            .headings {
+                text-align: right;
+                padding-right: 2rem;
+            }
+            h2 {
+                margin-top: 0;
+                line-height: 1.15;
             }
         }
     }

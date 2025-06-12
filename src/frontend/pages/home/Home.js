@@ -133,16 +133,16 @@ export default function Home() {
                         </div>
                         <div className="blurb">
                             <p>
-                                Hi! Welcome to my cozy corner of the internet.
+                                Hi! Welcome to my corner of the net.
                             </p>
                             <p>
-                                By day, I work in tech — I'm currently looking for work as an Engineering Manager, so drop me a message if you're in need...
+                                By day, I work in tech — I'm currently looking for work as an Engineering Manager...
                             </p>
                             <p>
-                                By night, I love games of all sorts and I make these silly little things you can see here. Check them out!
+                                By night, I love games of all sorts — obviously! Why would I have made these silly little things if I didn't?
                             </p>
                             <p className="link">
-                                <Link to="/about">ᐳ Find out more</Link>
+                                <Link to="/about">ᐳ More...</Link>
                             </p>
                         </div>
                     </div>
