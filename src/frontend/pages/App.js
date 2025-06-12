@@ -24,11 +24,13 @@ import TwoaNavBar from "../components/navBars/TwoaNavBar.js";
 import TwoaHome from "./twoa/home/Home.js";
 import TwoaDownloads from "./twoa/downloads/Downloads.js";
 import TwoaInvestigators from "./twoa/cardImageGallery/CardImageGallery.js";
+import ScrollToTop from "../components/ScrollToTop.js";
 
 export default function App() {
     return (
         <>
             <Switch>
+                {ScrollToTop()}
                 <Route exact path="/stc/print-and-play" component={PrintAndPlay} />
                 <Route exact path="/darkham/print-and-play-scenario" component={DarkhamPrintAndPlayScenario} />
                 <Route exact path="/darkham/print-and-play-player" component={DarkhamPrintAndPlayPlayer} />
