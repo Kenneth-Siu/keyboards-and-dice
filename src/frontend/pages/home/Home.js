@@ -46,7 +46,7 @@ export default function Home() {
                                 futuristic Earth technology?
                             </p>
                             <p>
-                                <em>Space the Convergence</em> is a science-fiction <em>Magic: the Gathering</em> expansion with 273
+                                <em>Space the Convergence</em> is a science-fiction <em>Magic: the Gathering</em> fan-made expansion with 273
                                 cards and four new mechanics, created especially for drafting.
                             </p>
                             <p className="link">
@@ -80,7 +80,7 @@ export default function Home() {
                                 corporations suspect...
                             </p>
                             <p>
-                                <em>The Worlds of Android</em> is an expansion for <em>Arkham Horror: The Card Game</em> themed
+                                <em>The Worlds of Android</em> is a fan-made expansion for <em>Arkham Horror: The Card Game</em> themed
                                 around <em>Android: Netrunner</em>, featuring 11 scenarios and 12 new investigators.
                             </p>
                             <p className="link">
@@ -113,7 +113,7 @@ export default function Home() {
                                 you uncover in your investigation?
                             </p>
                             <p>
-                                <em>Darkham Horror</em> is an expansion for <em>Arkham Horror: The Card Game</em> themed
+                                <em>Darkham Horror</em> is a fan-made expansion for <em>Arkham Horror: The Card Game</em> themed
                                 around <em>Darkest Dungeon</em>, featuring 8 scenarios and new player cards.
                             </p>
                             <p className="link">

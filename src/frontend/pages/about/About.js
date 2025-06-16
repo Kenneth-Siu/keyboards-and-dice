@@ -22,18 +22,20 @@ export default function About() {
                         <h2>Work</h2>
                         <p>
                             I'm a technical lead with 9+ years of experience in software and tech, and I'm moving toward engineering management
-                            because where I get the most fulfilment is a team where people come together, thrive, and then able to do their best work.
+                            because where I get the most fulfilment is when I'm able to help a team come together, grow, and achieve
+                            something greater than any individual person could.
                         </p>
                         <blockquote>
                             <p>
-                                I grew up solve puzzles and fixing things, and always thought I'd spend my career solving technical problems.
-                                But then I spent 5 years as a trainer nurturing new software developers, and then another year and a half
-                                bringing teams together and resolving conflicts.
+                                I grew up solve puzzles and fixing things, and always thought I'd spend my career solving technical problems...
+                                But then I spent 5 years as a trainer nurturing new software developers, and another year and a half
+                                as a technical lead bringing people together across teams and clients, and supporting them to their goals.
                                 The younger version of myself never would have expected how much helping others brings me joy!
                             </p>
                             <p>
-                                I do still love solving technical problems—but what questions really get me out of bed each morning are things like: how to help people grow,
-                                how to build the processes that support them, and how to lead them with empathy, clarity, and curiosity.
+                                I do still love solving technical problems—but what questions really get me out of bed each morning are things like
+                                how to help people grow,
+                                how to build the processes that support them, and how to create a culture of empathy, clarity, and curiosity.
                             </p>
                         </blockquote>
                         <p>You can find me on:</p>
