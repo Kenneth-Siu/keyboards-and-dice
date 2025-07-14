@@ -28,7 +28,7 @@ export default function About() {
                         <blockquote>
                             <p>
                                 I grew up solve puzzles and fixing things, and always thought I'd spend my career solving technical problems...
-                                But then I spent 5 years as a trainer nurturing new software developers, and another year and a half
+                                But then I spent several years as a trainer nurturing new software developers, and another year and a half
                                 as a technical lead bringing people together across teams and clients, and supporting them to their goals.
                                 The younger version of myself never would have expected how much helping others brings me joy!
                             </p>
